@@ -16,13 +16,13 @@
   <meta name="author" content="Ivan Snow">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这是一篇测试文章">
+    <meta name="description" content="Vim的哲学在编程时, 您大部分时间都花在阅读&amp;#x2F;编辑上, 而不是写作上. 因此, Vim 是一个模态编辑器: 它有不同的插入文本和操作文本的模式. Vim 是可编程的（使用 Vimscript 以及 Python 等其他语言）, 并且 Vim 的界面本身就是一种编程语言: 击键（具有助记名称）是命令, 并且这些命令是可组合的. Vim 避免使用鼠标, 因为它太慢了; Vim 甚至避免使用">
   
   
   
     <script src="/live2d-widget/autoload.js"></script>
   
-  <title>TEST - Snow&#39;s Blog</title>
+  <title>VIM的学习 - Snow&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,7 +205,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="TEST"></span>
+            <span id="subtitle" data-typed-text="VIM的学习"></span>
           
         </div>
 
@@ -221,8 +221,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-16 20:30" pubdate>
-          2023年4月16日 晚上
+        <time datetime="2023-04-17 21:44" pubdate>
+          2023年4月17日 晚上
         </time>
       </span>
     
@@ -233,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          8 字
+          634 字
         
       </span>
     
@@ -244,7 +244,7 @@
         
         
         
-          1 分钟
+          6 分钟
         
       </span>
     
@@ -290,15 +290,24 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">TEST</h1>
+            <h1 style="display: none">VIM的学习</h1>
             
             
               <div class="markdown-body">
                 
-                <p>这是一篇测试文章</p>
-<img src="/2023/04/16/TEST/1.jpg" srcset="/img/loading.gif" lazyload class="" title="测试图片1">
-
-<p><img src="/2023/04/16/TEST/1.jpg" srcset="/img/loading.gif" lazyload alt="测试图片2"></p>
+                <h2 id="Vim的哲学"><a href="#Vim的哲学" class="headerlink" title="Vim的哲学"></a>Vim的哲学</h2><p>在编程时, 您大部分时间都花在阅读&#x2F;编辑上, 而不是写作上. 因此, Vim 是一个模态编辑器: 它有不同的插入文本和操作文本的模式. Vim 是可编程的（使用 Vimscript 以及 Python 等其他语言）, 并且 Vim 的界面本身就是一种编程语言: 击键（具有助记名称）是命令, 并且这些命令是可组合的. Vim 避免使用鼠标, 因为它太慢了; Vim 甚至避免使用箭头键, 因为它需要太多的移动.</p>
+<p>最终结果是一个可以匹配您思考速度的编辑器.</p>
+<h2 id="模态编辑"><a href="#模态编辑" class="headerlink" title="模态编辑"></a>模态编辑</h2><p>Vim有多种运行模式</p>
+<ul>
+<li><code>Normal</code> 用于在文件中移动并进行编辑</li>
+<li><code>Insert</code> 用于插入文本, 按 <code>i</code> 键</li>
+<li><code>Replace</code> 用于替换文本, 按 <code>R</code> 键</li>
+<li><code>Visual</code> 用于选择文本块, 可视模式为 <code>v</code> 键, 可视行模式为<code>V</code> 键, 可视块模式为<code>&lt;C-v&gt;</code> 键</li>
+<li><code>Command-line</code> 用于运行命令, 按 <code>:</code> 键</li>
+</ul>
+<p>击键在不同的操作模式下具有不同的含义. 例如, 字母 <code>x</code> 在插入模式下只会插入一个文字字符 ‘x’ , 但在普通模式下, 它会删除光标下的字符, 而在可视模式下, 它会删除选择的字符.</p>
+<h2 id="缓冲区-选项卡和窗口"><a href="#缓冲区-选项卡和窗口" class="headerlink" title="缓冲区, 选项卡和窗口"></a>缓冲区, 选项卡和窗口</h2><p>Vim 维护一组打开的文件, 称为”缓冲区”. 一个 Vim 会话有许多选项卡, 每个选项卡都有许多窗口( 拆分窗格) . 每个窗口显示一个缓冲区. 与您熟悉的其他程序( 如网络浏览器) 不同, 缓冲区和窗口之间不存在一对一的对应关系, 窗户只是视图. 一个给定的缓冲区可以在多个窗口中打开, 甚至在同一个选项卡中. 这非常方便, 例如, 同时查看文件的两个不同部分.</p>
+<p>默认情况下, Vim 打开一个选项卡, 其中包含一个窗口.</p>
 
                 
               </div>
@@ -317,7 +326,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/test/" class="category-chain-item">test</a>
+  <a href="/categories/coding/" class="category-chain-item">coding</a>
   
   
 
@@ -332,7 +341,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/test/">#test</a>
+        <a href="/tags/coding/">#coding</a>
+      
+        <a href="/tags/vim/">#vim</a>
       
     </div>
   
@@ -344,8 +355,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>TEST</div>
-      <div>https://ivansnow02.github.io/2023/04/16/TEST/</div>
+      <div>VIM的学习</div>
+      <div>https://ivansnow02.github.io/posts/60968/</div>
     </div>
     <div class="license-meta">
       
@@ -357,7 +368,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年4月16日</div>
+          <div>2023年4月17日</div>
         </div>
       
       
@@ -389,15 +400,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/04/17/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/" title="VIM的学习">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">VIM的学习</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/posts/59964/" title="TEST">
+                        <span class="hidden-mobile">TEST</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
