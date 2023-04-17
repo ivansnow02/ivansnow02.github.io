@@ -90,7 +90,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/coding-vim/</loc>
+    <loc>https://ivansnow02.github.io/tags/coding/</loc>
+    <lastmod>2023-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/tags/vim/</loc>
     <lastmod>2023-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
