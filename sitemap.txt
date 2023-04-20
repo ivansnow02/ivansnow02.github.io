@@ -7,8 +7,8 @@ https://ivansnow02.github.io/live2d-widget/demo/demo.html
 https://ivansnow02.github.io/live2d-widget/package.json
 https://ivansnow02.github.io/live2d-widget/README.html
 https://ivansnow02.github.io/
+https://ivansnow02.github.io/tags/test/
 https://ivansnow02.github.io/tags/coding/
 https://ivansnow02.github.io/tags/vim/
-https://ivansnow02.github.io/tags/test/
-https://ivansnow02.github.io/categories/coding/
 https://ivansnow02.github.io/categories/test/
+https://ivansnow02.github.io/categories/coding/
