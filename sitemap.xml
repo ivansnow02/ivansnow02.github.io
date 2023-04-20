@@ -76,29 +76,29 @@
 
   <url>
     <loc>https://ivansnow02.github.io/</loc>
-    <lastmod>2023-04-19</lastmod>
+    <lastmod>2023-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/test/</loc>
-    <lastmod>2023-04-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ivansnow02.github.io/tags/coding/</loc>
-    <lastmod>2023-04-19</lastmod>
+    <lastmod>2023-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ivansnow02.github.io/tags/vim/</loc>
-    <lastmod>2023-04-19</lastmod>
+    <lastmod>2023-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/tags/test/</loc>
+    <lastmod>2023-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -106,15 +106,15 @@
 
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/test/</loc>
-    <lastmod>2023-04-19</lastmod>
+    <loc>https://ivansnow02.github.io/categories/coding/</loc>
+    <lastmod>2023-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/coding/</loc>
-    <lastmod>2023-04-19</lastmod>
+    <loc>https://ivansnow02.github.io/categories/test/</loc>
+    <lastmod>2023-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
