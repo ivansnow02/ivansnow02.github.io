@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>离散数学复习</title>
+    <link href="/posts/12732/"/>
+    <url>/posts/12732/</url>
+    
+    <content type="html"><![CDATA[<h1 id="集合论"><a href="#集合论" class="headerlink" title="集合论"></a>集合论</h1><h2 id="集合的基本概念"><a href="#集合的基本概念" class="headerlink" title="集合的基本概念"></a>集合的基本概念</h2><h3 id="集合的定义"><a href="#集合的定义" class="headerlink" title="集合的定义"></a>集合的定义</h3><p>具有某种特定性质事物的全体</p><p>通常，用大写的英文字母A, B, C,……表示集合</p><h3 id="集合的元素"><a href="#集合的元素" class="headerlink" title="集合的元素"></a>集合的元素</h3><p>组成一个集合的那些对象或单元称为这个集合的元素。<br>通常，用小写的英文字母$a$, $b$, $c$,…，或者$a_1$, $a_2$, $b_1$, $b_2$…表示集合中的元素</p><h3 id="属于-in"><a href="#属于-in" class="headerlink" title="属于 $\in$"></a>属于 $\in$</h3><p>设A是一个集合，a是集合A中的元素，记以$a \in A$，读作 $a$ 属于 $A$；若$a$不是集合$A$中的元素，则记以$a \notin A$，读作 $a$ 不属于 $A$</p><h3 id="有限集"><a href="#有限集" class="headerlink" title="有限集"></a>有限集</h3><p>包含有限个元素的集合，称为有限集或有穷集(finite set)</p><h3 id="无限集"><a href="#无限集" class="headerlink" title="无限集"></a>无限集</h3><p>包含无限个元素的集合，称为无限集或无穷集(infinite set )</p><h3 id="空集"><a href="#空集" class="headerlink" title="空集"></a>空集</h3><p>约定，存在一个没有任何元素的集合，称为空集(empty set) ，记为$\varnothing$，有时也用{}来表示</p><h3 id="全集"><a href="#全集" class="headerlink" title="全集"></a>全集</h3><p>约定，所讨论的对象的全体称为全集(universal set)，记作$E$或$U$，我们所讨论的集合都是全集的子集 </p><p><strong>全集是相对的</strong></p><h3 id="集合的元素数"><a href="#集合的元素数" class="headerlink" title="集合的元素数"></a>集合的元素数</h3><p>设$A$是有穷集合， $A$中元素的个数称为集合$A$的元素数，记为$|A|$，<strong>特别，$|\varnothing|&#x3D;0$</strong></p><h3 id="集合的表示法"><a href="#集合的表示法" class="headerlink" title="集合的表示法"></a>集合的表示法</h3><h4 id="列举法"><a href="#列举法" class="headerlink" title="列举法"></a>列举法</h4><p>将集合中的元素一一列举，或列出足够多的元素以反映集合中元素的特征</p><h4 id="描述法"><a href="#描述法" class="headerlink" title="描述法"></a>描述法</h4><p>通过描述集合中元素的共同特征来表示集合</p><h4 id="文氏图"><a href="#文氏图" class="headerlink" title="文氏图"></a>文氏图</h4><p>用一个大的矩形表示全集，在矩形内画一些圆或其它的几何图形，来表示集合，有时也用一些点来表示集合中的特定元素</p><h3 id="集合的特征"><a href="#集合的特征" class="headerlink" title="集合的特征"></a>集合的特征</h3><h4 id="确定性"><a href="#确定性" class="headerlink" title="确定性"></a>确定性</h4><p>任何一个对象，或者是这个集合的元素，或者不是，二者必居其一</p><h4 id="互异性"><a href="#互异性" class="headerlink" title="互异性"></a>互异性</h4><p>集合中任何两个元素都是不同的，即集合中不允许出现重复的元素</p><h4 id="无序性"><a href="#无序性" class="headerlink" title="无序性"></a>无序性</h4><p>集合与其中的元素的顺序无关</p><h4 id="多样性"><a href="#多样性" class="headerlink" title="多样性"></a>多样性</h4><p>集合中的元素可以是任意的对象，相互独立，不要求一定要具备明显的共同特征</p><h2 id="集合间的关系"><a href="#集合间的关系" class="headerlink" title="集合间的关系"></a>集合间的关系</h2><h3 id="集合相等"><a href="#集合相等" class="headerlink" title="集合相等"></a>集合相等</h3><p>当两个集合$A$和$B$的元素完全一样，即$A$，$B$实际上是同一个集合时，则称集合$A$，$B$相等，记以$A&#x3D;B$</p><h3 id="集合包含"><a href="#集合包含" class="headerlink" title="集合包含"></a>集合包含</h3><p>设$A$，$B$是两个集合，若$A$的元素都是$B$的元素，则称$A$是$B$的子集(subset) ，也称$B$包含$A$，或$A$包含于$B$，记以$A \subseteq B$，或$B \supseteq A$ 。<br>若$A \subseteq B$，且$A \neq B$，则称$A$是$B$的真子集(proper subset)，也称$B$真包含$A$，或$A$真包含于$B$，记以$A \subset B$，或$B \supset A$ 。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Math</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Math</tag>
+      
+      <tag>Discrete Mathematics</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Redis的数据类型</title>
     <link href="/posts/14492/"/>
     <url>/posts/14492/</url>
