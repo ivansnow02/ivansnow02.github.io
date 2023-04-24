@@ -18,7 +18,7 @@
   <meta name="author" content="Ivan Snow">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Redis 支持五种数据类型：  string hash list set zset  Stringstring 是最基本的类型。string 二进制安全，即可以包含任何数据。 string 一个键最大能存储512MB。 String类型的数据结构存储方式有三种int、raw、embstr： intRedis 中规定假如存储的是整数型值，比如set num 123这样的类型，就会使用int的存储方">
+    <meta name="description" content="Redis 支持五种数据类型：  string hash list set zset  Stringstring 是最基本的类型。string 二进制安全，即可以包含任何数据。 string 一个键最大能存储512MB。 string 类型的数据结构存储方式有三种int、raw、embstr： intRedis 中规定假如存储的是整数型值，比如set num 123这样的类型，就会使用int的存储">
   
   
   
@@ -307,7 +307,7 @@
 </ul>
 <h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><p>string 是最基本的类型。string 二进制安全，即可以包含任何数据。</p>
 <p>string 一个键最大能存储512MB。</p>
-<p>String类型的数据结构存储方式有三种<code>int</code>、<code>raw</code>、<code>embstr</code>：</p>
+<p>string 类型的数据结构存储方式有三种<code>int</code>、<code>raw</code>、<code>embstr</code>：</p>
 <h3 id="int"><a href="#int" class="headerlink" title="int"></a>int</h3><p>Redis 中规定假如存储的是<strong>整数型值</strong>，比如<code>set num 123</code>这样的类型，就会使用<code>int</code>的存储方式进行存储，在<code>redisObject</code>的<code>ptr属性</code>中就会保存该值。</p>
 <p><img src="/posts/14492/int-1682306725947-10.png" srcset="/img/loading.gif" lazyload alt="int"></p>
 <h3 id="SDS"><a href="#SDS" class="headerlink" title="SDS"></a>SDS</h3><p>假如存储的<strong>字符串是一个字符串值并且长度大于32个字节</strong>就会使用 SDS（simple dynamic string）方式进行存储，并且<code>encoding</code>设置为<code>raw</code>；若是<strong>字符串长度小于等于32个字节</strong>就会将<code>encoding</code>改为<code>embstr</code>来保存字符串。</p>
