@@ -1,3 +1,4 @@
+https://ivansnow02.github.io/posts/14492/
 https://ivansnow02.github.io/posts/60968/
 https://ivansnow02.github.io/posts/59964/
 https://ivansnow02.github.io/about/index.html
@@ -10,5 +11,7 @@ https://ivansnow02.github.io/
 https://ivansnow02.github.io/tags/test/
 https://ivansnow02.github.io/tags/coding/
 https://ivansnow02.github.io/tags/vim/
+https://ivansnow02.github.io/tags/Redis/
 https://ivansnow02.github.io/categories/test/
 https://ivansnow02.github.io/categories/coding/
+https://ivansnow02.github.io/categories/coding/Redis/
