@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.6k 字
+          3k 字
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          22 分钟
+          25 分钟
         
       </span>
     
@@ -351,7 +351,20 @@
 </ol>
 <img src="/posts/14492/linkedlist.png" srcset="/img/loading.gif" lazyload class="" title="linkedlist">
 
-<h3 id="quicklist"><a href="#quicklist" class="headerlink" title="quicklist"></a>quicklist</h3><h2 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h2><p>Redis 的 Set 是 string 类型的无序集合。</p>
+<h3 id="quicklist"><a href="#quicklist" class="headerlink" title="quicklist"></a>quicklist</h3><p> quicklist 实际上是 zipList 和 linkedList 的混合体，它将 linkedList 按段切分，每一段使用 zipList 来紧凑存储，多个 zipList 之间使用双向指针串接起来。</p>
+<ol>
+<li><code>prev</code>、<code>next</code>指向该节点的前后节点。</li>
+<li><code>zl</code>指向该节点对应的 ziplist 结构。</li>
+<li><code>sz</code>代表整个 ziplist 结构的大小。</li>
+<li><code>encoding</code>代表采用的编码方式：<code>1</code>代表是原生的，<code>2</code>代表使用<code>LZF</code>进行压缩。</li>
+<li><code>container</code>为 quickListNode 节点<code>zl</code>指向的容器类型：<code>1</code>代表<code>none</code>，<code>2</code>代表使用<code>ziplist</code>存储数据。</li>
+<li><code>recompress</code>代表这个节点之前是否是压缩节点，若是，则在使用压缩节点前先进行解压缩，使用后需要重新压缩，此外为<code>1</code>，代表是压缩节点。</li>
+<li><code>attempted_compress</code>测试时使用。</li>
+<li><code>extra</code>为预留。</li>
+</ol>
+<img src="/posts/14492/quicklist.png" srcset="/img/loading.gif" lazyload class="" title="quicklist">
+
+<h2 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h2><p>Redis 的 Set 是 string 类型的无序集合。</p>
 <p>集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是 O(1)。</p>
 <p>集合中最大的成员数为 $2^{32} - 1$。</p>
 <p>Redis 中列表和集合都可以用来存储字符串，但是 <strong>Set 是不可重复的集合，而 List 列表可以存储相同的字符串</strong>。</p>
