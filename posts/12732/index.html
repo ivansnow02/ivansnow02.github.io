@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3k 字
+          8.5k 字
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          17 分钟
+          48 分钟
         
       </span>
     
@@ -297,7 +297,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：几秒前
+                    本文最后更新于：2 分钟前
                   
                 
               </p>
@@ -459,7 +459,207 @@
 <li>左$\Rightarrow$右，右$\Rightarrow$左，左$\Rightarrow$中间式，右$\Rightarrow$中间式；</li>
 <li>根据基本运算符号的定义和运算定律转换。</li>
 </ul>
-<h3 id="集合成员表法"><a href="#集合成员表法" class="headerlink" title="集合成员表法*"></a>集合成员表法*</h3>
+<h3 id="集合成员表法"><a href="#集合成员表法" class="headerlink" title="集合成员表法*"></a>集合成员表法*</h3><h1 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h1><h2 id="序偶和笛卡尔积"><a href="#序偶和笛卡尔积" class="headerlink" title="序偶和笛卡尔积"></a>序偶和笛卡尔积</h2><h3 id="序偶"><a href="#序偶" class="headerlink" title="序偶"></a>序偶</h3><h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><ul>
+<li>对于有序$n$元组，当$n&#x3D;2$时，我们将其称作有序二元组，也称作有序对,或序偶。</li>
+</ul>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ul>
+<li>若$a≠b$,则$(a,b)≠(b,a)$</li>
+<li>两个有序对$(a,b)$和$(c,d)$相等当且仅当$a&#x3D;c$，$b&#x3D;d$</li>
+</ul>
+<h4 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h4><ul>
+<li>成对出现、具有一定的顺序</li>
+</ul>
+<h3 id="笛卡尔积"><a href="#笛卡尔积" class="headerlink" title="笛卡尔积"></a>笛卡尔积</h3><h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><ul>
+<li>设$A$，$B$是两个集合，所有有序对$(x, y)$做成的集合$(其中x∈A，y∈B)$，称为$A$，$B$的笛卡儿积，记为$A×B$，$A×B&#x3D;{(x，y)|x∈A且y∈B}$</li>
+<li>设$A_1,A_2 , …,A_n$是$n$个集合，由所有有序$n$元组($a_1,a_2,…,a_n$)组成的集合$(其中ai∈A_i，i&#x3D;1,2, … ,n)$，称为$A_1,A_2,…,A_n$的笛卡儿积，记以$A_1×A_2 ×…×A_n$，$A_1×A_2 ×…×A_n&#x3D;{(a_1,a_2 ,… ,a_n) | a_i∈A_i，i&#x3D;1,2, … ,n }$</li>
+</ul>
+<h4 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h4><ul>
+<li><p>$|A×B|&#x3D;|A|× |B|$</p>
+</li>
+<li><p>对任意集合$A$，有$A×\varnothing&#x3D;\varnothing$，$\varnothing \times A&#x3D;\varnothing$</p>
+</li>
+<li><p>笛卡儿积运算<strong>不满足</strong>交换律，即$A×B≠B×A$</p>
+</li>
+<li><p>笛卡儿积运算<strong>不满足</strong>结合律，即$(A×B)×C≠A×(B×C)$</p>
+</li>
+<li><p>笛卡儿积运算对并和交运算<strong>满足</strong>分配律， 即</p>
+<ul>
+<li>$A×(B∪C)&#x3D;(A×B)∪(A×C)$</li>
+<li>$(B∪C)×A&#x3D;(B×A)∪(C×A)$</li>
+<li>$A×(B∩C)&#x3D;(A×B)∩(A×C)$</li>
+<li>$(B∩C)×A&#x3D;(B×A)∩(C×A)$</li>
+</ul>
+</li>
+<li><p>设$A$，$B$，$C$，$D$是集合，若$A⊆C$且$B⊆D$，则$A×B ⊆ C×D$</p>
+</li>
+</ul>
+<h2 id="二元关系"><a href="#二元关系" class="headerlink" title="二元关系"></a>二元关系</h2><h3 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>给定任意集合$A$和$B$，若$R⊆A×B$，则称$R$为从$A$到$B$的二元关系，特别在$A&#x3D;B$时，称$R$为$A$上的二元关系</li>
+</ul>
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><ul>
+<li><strong>关系是一个集合，是序偶的集合</strong></li>
+<li>$R$是有序对的集合。若$(x,y)∈R$，则也表示为$x R y$，即$(x,y)∈ R ⇔ x R y$<ul>
+<li>若$R &#x3D;\varnothing$，则称$ R $为$A$到$ B$上<strong>空关系</strong></li>
+<li>若$R &#x3D;A×B$，称$R$为$A $到$ B$上<strong>全域关系</strong></li>
+<li>称$R&#x3D;{(x,x)|x∈A}$为$A$上的<strong>恒等关系</strong>，记为$I_A$</li>
+</ul>
+</li>
+<li>当集合$A,B$都是有限集时，$A×B$共有$2^{|A|\cdot|B|}$个不同的子集，<br>即从$A$到$B$的不同关系共有$2^{|A|\cdot|B|}$个</li>
+</ul>
+<h3 id="定义域、值域和域"><a href="#定义域、值域和域" class="headerlink" title="定义域、值域和域"></a>定义域、值域和域</h3><h4 id="定义-4"><a href="#定义-4" class="headerlink" title="定义"></a>定义</h4><ul>
+<li>令$R \subseteq A \times B $，且<br>$\begin{cases} D (R) &#x3D; { x | (∃y) (x R y ) }\R (R) &#x3D; { y | (∃x) (x R y ) }\F(R) &#x3D; D(R)∪R(R)\end{cases}$则称$D(R)$、$R(R)$ 和 $F(R)$分别是二元关系$R$的定义域、值域和域，显然$D(R) ⊆ A$，$R(R) ⊆ B$</li>
+</ul>
+<h3 id="关系矩阵与关系图"><a href="#关系矩阵与关系图" class="headerlink" title="关系矩阵与关系图"></a>关系矩阵与关系图</h3><h4 id="关系矩阵"><a href="#关系矩阵" class="headerlink" title="关系矩阵"></a>关系矩阵</h4><ul>
+<li>给定集合$A&#x3D;{a_1,a_2,···,a_m }$和$B&#x3D;{b_1,b_2,···,b_n }$，且$R⊆A×B$，若$r_{ij}&#x3D;\begin{cases} 1 ,&amp; {a_i R b_j}\0 ,&amp; \mbox{否则} \end{cases}$<br>则称矩阵$M_R&#x3D;(r _{i j})$ 为$R$的关系矩阵</li>
+</ul>
+<h4 id="关系图"><a href="#关系图" class="headerlink" title="关系图"></a>关系图</h4><ul>
+<li>给定集合$A&#x3D;{a_1,a_2,···,a_m }$和$A$上的关系$R$，且$R⊆A×A$，若：以 $A$中的元素为结点；对$R$中的元素$(a_i ,a_j )$, 以$a_i$ 为起点,以$a_j$为终点,作有向边所构成的图，则称该图为$R$的关系图</li>
+</ul>
+<h2 id="关系运算"><a href="#关系运算" class="headerlink" title="关系运算"></a>关系运算</h2><h3 id="关系的并、交、补、差"><a href="#关系的并、交、补、差" class="headerlink" title="关系的并、交、补、差"></a>关系的并、交、补、差</h3><ul>
+<li>关系是序偶(有序对)的集合，因此可以对关系进行运算。<br>若$R, S⊆A×B$，则$R∪S$，$R ∩S$，$\sim R$，$R-S⊆A×B$</li>
+</ul>
+<h3 id="关系的复合"><a href="#关系的复合" class="headerlink" title="关系的复合"></a>关系的复合</h3><h4 id="定义-5"><a href="#定义-5" class="headerlink" title="定义"></a>定义</h4><ul>
+<li>设$R$是从集合$X$到$Y$的关系，$S$是从$Y$到$Z$的关系，把$X$到$Z$的关系定义为$R\circ S$。称$R\circ S$是关系$R$和$S$的合成关系或复合关系，$R\circ S&#x3D;{(x,z)|∃x∈X, ∃z∈Z, 至少存在一个y∈Y有(x , y)∈R且(y , z)∈S}$</li>
+</ul>
+<h4 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h4><ul>
+<li><p>已知集合$X,Y,Z,W$，关系$R_1,R_2,R_3,R_4$ 如下$X\stackrel {R_1}\longrightarrow Y \stackrel {R_2R_3}\longrightarrow Z \stackrel {R_4}\longrightarrow W$，则有：</p>
+<ul>
+<li>$𝑅<em>1∘(𝑅_2∪𝑅_3)&#x3D;(𝑅_1∘𝑅_2)∪(𝑅</em> 1∘𝑅_3)$</li>
+<li>$R_1∘(R_2∩R_3)⊆(R_1∘R_2)∩(R_1∘R_3)$</li>
+<li>$(𝑅_2∪𝑅_3)∘𝑅_4&#x3D;(𝑅_2∘𝑅_4)∪(𝑅_3∘𝑅_4)$</li>
+<li>$(𝑅_2∩𝑅_3)∘𝑅_4⊆(𝑅_2∘𝑅_4)∩(𝑅_3∘𝑅_4)$</li>
+</ul>
+</li>
+<li><p>已知集合$X, Y, Z, W$，关系$R_1, R_2, R_3$如下$X\stackrel {R_1}\longrightarrow Y \stackrel {R_2}\longrightarrow Z \stackrel {R_3}\longrightarrow W$，则有：$(R_1 \circ R_2)\circ R_3&#x3D;R_1\circ (R_2 \circ R_3)$ <strong>结合律</strong></p>
+</li>
+<li><p>$R\circ R\circ R \circ\dots\circ R&#x3D;R^{(n)}$</p>
+</li>
+<li><p>$R^{(0)}&#x3D;I_X&#x3D;{(x,x)|x\in X}$</p>
+</li>
+</ul>
+<h3 id="逆关系"><a href="#逆关系" class="headerlink" title="逆关系"></a>逆关系</h3><h4 id="定义-6"><a href="#定义-6" class="headerlink" title="定义"></a>定义</h4><ul>
+<li>若$R⊆A×B$ ，则关系$\overline R &#x3D;{(y,x)|(x,y)∈ R}$<br>是集合$B$到$A$的关系，$\overline R$称为关系$R$的逆关系</li>
+</ul>
+<h4 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h4><ul>
+<li><p>$R_1, R_2, R$为$X$到$Y$的二元关系，则</p>
+<ul>
+<li><p>$\overline{R_1∪ R_2} &#x3D;\overline{R_1} ∪\overline{R_2} $</p>
+</li>
+<li><p>$\overline{R_1 \cap R_2}&#x3D;\overline {R_1} \cap \overline {R_2}$</p>
+</li>
+<li><p>$\overline{X \times Y} &#x3D; Y \times X$</p>
+</li>
+<li><p>$\overline{\sim R}&#x3D;\sim \overline{R}$</p>
+</li>
+<li><p>$\overline{R_1-R_2}&#x3D;\overline{R_1}-\overline{R_2}$</p>
+</li>
+<li><p>$S \subseteq R \Leftrightarrow \overline{S}\subseteq\overline{R}$</p>
+</li>
+</ul>
+</li>
+<li><p>已知集合$X, Y, Z$，关系$R, S$如下，$X \stackrel {R}\longrightarrow Y \stackrel {S}\longrightarrow Z$，则有：$\overline{R\circ S}&#x3D;\overline{S}\circ\overline{R}$</p>
+</li>
+</ul>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ul>
+<li>将$R$的关系矩阵转置即得$\overline R$的关系矩阵，即$R$和$\overline R$的关系矩阵互为转置矩阵</li>
+<li>$\overline R$的前域与后域正好是$R$的后域和前域，即$domR&#x3D;ran\overline R$，$dom\overline R&#x3D;ranR$</li>
+<li>$|R|&#x3D;|\overline R|$</li>
+</ul>
+<h2 id="关系性质"><a href="#关系性质" class="headerlink" title="关系性质"></a>关系性质</h2><h3 id="自反性"><a href="#自反性" class="headerlink" title="自反性"></a>自反性</h3><ul>
+<li>令$R⊆A×A$，若对$A$中每个$x$，都有$xRx$，则称$R$是自反的，即$A上关系R是自反的⇔∀x(x∈A→xRx)$</li>
+<li>该定义表明了，在自反的关系$R$中，除其他有序对外，必须包括由每个$x∈A$所组成的元素相同的有序对</li>
+</ul>
+<h3 id="反自反性"><a href="#反自反性" class="headerlink" title="反自反性"></a>反自反性</h3><ul>
+<li>令$R⊆A×A$，若对于$A$中每个$x$，有$(x,x) ∉R$，则称$R$是反自反的，即$A上关系R是反自反的⇔∀x (x∈A→(x,x) ∉R)$</li>
+<li>该定义表明了，一个反自反的关系$R$中，不应包括有任何相同元素的有序对</li>
+<li>应该指出，任何一个不是自反的关系，未必是反自反的；反之，任何一个不是反自反的关系，未必是自反的。这就是说，<strong>存在既不是自反的也不是反自反的二元关系</strong></li>
+</ul>
+<h3 id="对称性"><a href="#对称性" class="headerlink" title="对称性"></a>对称性</h3><ul>
+<li>令$R⊆A×A$，对于$A$中每个$x$和$y$，若$xRy$，则$yRx$，称$R$是对称的，即$在A上关系R是对称的⇔(∀x)(∀y)(x,y∈A且xRy→yRx)$</li>
+<li>该定义表明了，在表示对称的关系$R$的有序对集合中，若有有序对$(x, y)$，则必定还会有有序对$(y, x)$</li>
+</ul>
+<h3 id="反对称性"><a href="#反对称性" class="headerlink" title="反对称性"></a>反对称性</h3><ul>
+<li>令$R⊆A×A$，对于$A$中每个$x$和$y$，若$xRy$且$yRx$，则$x&#x3D;y$，称$R$是反对称的，即$A上关系R是反对称的⇔(∀x)(∀y)(x,y∈A且xRy且yRx→x&#x3D;y)$</li>
+<li>该定义表明了，在表示反对称关系$R$的有序对集合中，若存在有序对$(x, y)$和$(y, x)$，则必定是$x&#x3D;y$。或者说，在$R$中若有有序对$(x, y)$，则除非$x&#x3D;y$，否则必定不会出现$(y, x)$</li>
+</ul>
+<h3 id="传递性"><a href="#传递性" class="headerlink" title="传递性"></a>传递性</h3><ul>
+<li>令$R⊆A×A$，对于$A$中每个$x, y, z$，若$xRy且yRz$，则$xRz$，称$R$是传递的，即$A上关系R是传递的⇔(∀x)(∀y)(∀z)(x,y,z∈A且xRy且yRz→xRz)$</li>
+<li>该定义表明了，在表示可传递关系$R$的有序对集合中，若有有序对$(x, y)$和$(y, z)$，则必有有序对$(x, z)$</li>
+</ul>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><ul>
+<li>关系$R$是自反的$\Rightarrow$ $R$不是反自反的</li>
+<li>关系$R$是自反的$\Leftrightarrow$关系图中每个结点都有环</li>
+<li>关系$R$是反自反的$\Leftrightarrow$关系图中每个结点都无环</li>
+<li>关系$R$是自反的$\Leftrightarrow$关系矩阵的主对角线上全为1</li>
+<li>关系$R$是反自反的$\Leftrightarrow$关系矩阵的主对角线上全为0</li>
+<li>关系$R$是对称的$\Leftrightarrow$关系图中任何一对结点之间，要么有方向相反的两条边，要么无任何边</li>
+<li>关系$R$是反对称的$\Leftrightarrow$关系图中任何一对结点之间，至多有一条边</li>
+<li>关系$R$是对称的$\Leftrightarrow$ $R$的关系矩阵为对称矩阵</li>
+<li>关系$R$是反对称的$\Leftrightarrow$ $R$的关系系矩阵满足$r_{ij}\cdot r_{ji}＝0，i,j&#x3D;1,2,…,n，i≠j$</li>
+<li><strong>非空集合上的空关系</strong>是反自反的，对称的，反对称的和传递的，但不是自反的。<strong>空集合上的空关系</strong>则是自反的，反自反的，对称的，反对称的和传递的</li>
+<li><strong>非空集合上的全域关系</strong>是自反的，对称的和传递的，但不是反自反的和反对称的</li>
+<li>设$R⊆A×A$，若$R$是反自反的和传递的，则$R$是反对称的</li>
+</ul>
+<h2 id="闭包运算"><a href="#闭包运算" class="headerlink" title="闭包运算"></a>闭包运算</h2><h3 id="自反闭包"><a href="#自反闭包" class="headerlink" title="自反闭包"></a>自反闭包</h3><ul>
+<li>设$R $是$ A$上的二元关系，若$R’$是$R$的自反闭包,记作$r(R)$，则：<ul>
+<li>$R’$是自反的</li>
+<li>$R⊆R’$</li>
+<li>对任意的自反关系$R’’$，$ R⊆R’’$ ，则必有$R’⊆R’’$</li>
+</ul>
+</li>
+</ul>
+<h3 id="对称闭包"><a href="#对称闭包" class="headerlink" title="对称闭包"></a>对称闭包</h3><ul>
+<li>设$R $是$ A$上的二元关系，若$R’$是$R$的对称闭包,记作$s(R)$，则：<ul>
+<li>$R’$是对称的</li>
+<li>$R⊆R’$</li>
+<li>对任意的对称关系$R’’$， $R⊆R’’$ ，则必有$R’⊆R’’$</li>
+</ul>
+</li>
+</ul>
+<h3 id="传递闭包"><a href="#传递闭包" class="headerlink" title="传递闭包"></a>传递闭包</h3><ul>
+<li><p>设$R $是$ A$上的二元关系，若$R’$是$R$的传递闭包,记作$t(R)$，则：</p>
+<ul>
+<li>$R’$是传递的</li>
+<li>$R⊆R’$</li>
+<li>对任意的传递关系$R’’$， $R⊆R’’$ ，则必有$R’⊆R’’$</li>
+</ul>
+</li>
+</ul>
+<h3 id="定理-2"><a href="#定理-2" class="headerlink" title="定理"></a>定理</h3><ul>
+<li>R是 X 上的二元关系,则：<ul>
+<li>$r(R)&#x3D;R∪{(x,x)|x∈X}&#x3D;R∪I_x$</li>
+<li>$s(R) &#x3D; R∪ \overline{R}$</li>
+<li>$t(R)&#x3D;R∪ R^{(2)}∪ R^{(3)}…∪ R^{(n)}$，$n$为集合$X$的元素的个数</li>
+<li>$R$是自反的$\Leftrightarrow$$r(R)$</li>
+<li>$R$是对称的$\Leftrightarrow$$s(R)&#x3D;R$</li>
+<li>$R$是传递的$\Leftrightarrow$$t(R)$</li>
+</ul>
+</li>
+</ul>
+<h2 id="等价关系"><a href="#等价关系" class="headerlink" title="等价关系"></a>等价关系</h2><h3 id="定义-7"><a href="#定义-7" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>设$R$是集合$X$上的二元关系，如果$ R$是自反的、对称的、传递的，那么称$R$是等价关系</li>
+</ul>
+<h3 id="划分"><a href="#划分" class="headerlink" title="划分"></a>划分</h3><ul>
+<li>设集合$A&#x3D;{S_1, S_2 , …, S_m}$, $S_i$是$S$的非空子集, 如果称$A$是$S$的一个划分，称$S_i$为划分的块，则：<ul>
+<li>$S_i$之间是不相交的</li>
+<li>$S_1∪S_2∪…∪S_m &#x3D; S$</li>
+</ul>
+</li>
+</ul>
+<h3 id="等价类"><a href="#等价类" class="headerlink" title="等价类"></a>等价类</h3><h4 id="定义-8"><a href="#定义-8" class="headerlink" title="定义"></a>定义</h4><ul>
+<li>$R$是集合$S$上的等价关系, 对任一$x\in S$，均可构造一个$S$的非空子集$[x]_R&#x3D; { y | y\in S 且 xRy }$，也可记为$ [x]$，叫做$x$关于$R$的等价类:</li>
+</ul>
+<h4 id="性质-2"><a href="#性质-2" class="headerlink" title="性质"></a>性质</h4><ul>
+<li>$x\in[x]$</li>
+<li>若$y\in[x]$,  则$[y]&#x3D;[x]$</li>
+<li>若$y\in[x]$,  则$[y]∩[x]&#x3D;\varnothing$</li>
+</ul>
+<h4 id="定理-3"><a href="#定理-3" class="headerlink" title="定理"></a>定理</h4><ul>
+<li>集合$S$上的一个等价关系$R$生成的等价类集合对应$S$的一个划分</li>
+<li>集合$S$上的一个等价关系$R$生成的等价类集合对应$S$的一个划分。此划分称为集合$S$关于$R$的商集，记为$S&#x2F;R$</li>
+<li>集合$S$上的一个划分可产生$S$上的一个等价关系</li>
+</ul>
+
                 
               </div>
             
