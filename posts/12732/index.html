@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          10k 字
+          12k 字
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          58 分钟
+          69 分钟
         
       </span>
     
@@ -1238,6 +1238,211 @@ class="math inline">\(x’\)</span>，均有<span class="math inline">\(x’
 class="math inline">\(Y\)</span>的下确界,记作<span
 class="math inline">\(GLB\)</span> <span
 class="math inline">\(Y\)</span></li>
+</ul></li>
+</ul>
+<h1 id="函数">函数</h1>
+<h2 id="函数及其分类">函数及其分类</h2>
+<h3 id="函数的定义">函数的定义</h3>
+<ul>
+<li>设<span class="math inline">\(f\)</span>是集合<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的关系 若称<span
+class="math inline">\(f\)</span>是集合<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的函数或映射，记作<span
+class="math inline">\(f: A→B\)</span> 或 <span class="math inline">\(A →
+B\)</span>。 当<span
+class="math inline">\((a,b)∈f\)</span>时，通常记为<span
+class="math inline">\(b=f(a)\)</span>，<span
+class="math inline">\(b\)</span>称为<span
+class="math inline">\(a\)</span>在<span
+class="math inline">\(f\)</span>下的像，称<span
+class="math inline">\(a\)</span>为<span
+class="math inline">\(b\)</span>的原像。则<span
+class="math inline">\(f\)</span>满足下列两个条件：
+<ul>
+<li>对每个<span class="math inline">\(a∈A\)</span>，必存在<span
+class="math inline">\(b∈B\)</span>，使得<span
+class="math inline">\((a,b)∈f\)</span>——<strong>存在性条件</strong></li>
+<li>对每个<span class="math inline">\(a∈A\)</span>，只存在一个<span
+class="math inline">\(b∈B\)</span>，使得<span
+class="math inline">\((a,b)∈f\)</span>——<strong>唯一性条件</strong></li>
+</ul></li>
+<li>即：值域为函数的像集合</li>
+</ul>
+<h3 id="函数相等">函数相等</h3>
+<ul>
+<li>设<span class="math inline">\(f:X→Y\)</span>，<span
+class="math inline">\(g:Z→W\)</span>，如果<span
+class="math inline">\(f\)</span>和<span
+class="math inline">\(g\)</span>具有相同的定义域和值域，即<span
+class="math inline">\(X=Z\)</span>和<span
+class="math inline">\(Y=W\)</span>，并且对于所有的<span
+class="math inline">\(x∈X\)</span>和<span
+class="math inline">\(x∈Z\)</span>，都有<span
+class="math inline">\(f(x)=g(x)\)</span>，则称函数<span
+class="math inline">\(f\)</span>和<span
+class="math inline">\(g\)</span>相等，并记作<span
+class="math inline">\(f=g\)</span></li>
+</ul>
+<h3 id="函数个数">函数个数</h3>
+<ul>
+<li>设<span class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>是非空有限集合，则从<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>共有<span
+class="math inline">\(|B|^{|A|}\)</span> 个不同的函数</li>
+<li>因为函数是一种特殊的关系，所以一个函数确定一个关系；但一个关系不一定确定一个函数</li>
+</ul>
+<h3 id="函数的分类">函数的分类</h3>
+<ul>
+<li>设<span class="math inline">\(f: A→B\)</span>是一个函数：
+<ul>
+<li>对任意的<span class="math inline">\(a_1\)</span>和<span
+class="math inline">\(a_2∈A\)</span>，若<span
+class="math inline">\(a_1≠a_2\)</span>，均有<span
+class="math inline">\(f(a_1)≠f(a_2)\)</span>，则称<span
+class="math inline">\(f\)</span>为<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的<strong>单射函数</strong>或<strong>一对一函数</strong>；否则，称<span
+class="math inline">\(f\)</span>为<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的<strong>多对一函数</strong>。</li>
+<li>如果对任意的<span class="math inline">\(b∈B\)</span>，均有<span
+class="math inline">\(a∈A\)</span>，使<span
+class="math inline">\(b=f(a)\)</span>，即<span
+class="math inline">\(C_f=B\)</span>，则<span
+class="math inline">\(f\)</span>为<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的<strong>满射函数</strong>；否则，称<span
+class="math inline">\(f\)</span>为<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的<strong>内射函数</strong>。</li>
+<li>如果<span class="math inline">\(f\)</span>既是<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的<strong>单射</strong>，又是<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的<strong>满射</strong>，则称<span
+class="math inline">\(f\)</span>为<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的<strong>双射函数</strong>或<strong>一一对应函数</strong>。特殊地，在一一对应函数<span
+class="math inline">\(f: A→B\)</span>中，若<span
+class="math inline">\(A=B\)</span>，则此函数叫做<span
+class="math inline">\(A\)</span>的变换。</li>
+</ul></li>
+</ul>
+<h3 id="函数分类结论">函数分类结论</h3>
+<ul>
+<li>设A，B为有限集合，f是从A到B的函数，则：
+<ul>
+<li><span class="math inline">\(f\)</span>是单射的必要条件为<span
+class="math inline">\(|A|≤|B|\)</span></li>
+<li><span class="math inline">\(f\)</span>是满射的必要条件为<span
+class="math inline">\(|B|≤|A|\)</span></li>
+<li><span class="math inline">\(f\)</span>是双射的必要条件为<span
+class="math inline">\(|A|＝|B|\)</span></li>
+</ul></li>
+</ul>
+<h3 id="特殊函数">特殊函数</h3>
+<ul>
+<li>设<span class="math inline">\(f\)</span>是一个函数，若对任意的<span
+class="math inline">\(a∈A\)</span>，均有<span
+class="math inline">\(f(a)=b\)</span>，<span
+class="math inline">\(b∈B\)</span>，则称<span
+class="math inline">\(f\)</span>是从<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的<strong>常值函数</strong>或<strong>常函数</strong></li>
+<li>设<span class="math inline">\(f\)</span>是一个函数，若对任意的<span
+class="math inline">\(a∈A\)</span>，均有<span
+class="math inline">\(f(a)=a\)</span>，则称<span
+class="math inline">\(f\)</span>是<span
+class="math inline">\(A\)</span>上的<strong>恒等函数</strong></li>
+<li>设<span class="math inline">\(f:R→R\)</span>是一个函数，其中<span
+class="math inline">\(R\)</span>为实数集，
+<ul>
+<li>对任意<span class="math inline">\(a,b∈R\)</span>，若<span
+class="math inline">\(a&lt;b\)</span>，必有<span
+class="math inline">\(f(a)≤f(b)\)</span>，则称<span
+class="math inline">\(f\)</span>为单调递增函数</li>
+<li>对任意<span class="math inline">\(a,b∈R\)</span>，若<span
+class="math inline">\(a&lt;b\)</span>，必有<span
+class="math inline">\(f(a)&lt;f(b)\)</span>，则称<span
+class="math inline">\(f\)</span>为严格单调递增函数</li>
+</ul></li>
+<li>设<span class="math inline">\(U\)</span>是全集，且<span
+class="math inline">\(A⊆U\)</span>，函数<span class="math inline">\(\Psi
+_A:U\rightarrow\{0,1\}\)</span>定义为: <span
+class="math inline">\(\Psi_A=\begin{cases} 1,&amp; a \in A\\ 0,&amp; a
+\notin A \end{cases}\)</span> 则称<span
+class="math inline">\(\Psi_A\)</span>是集合<span
+class="math inline">\(A\)</span>的特征函数</li>
+</ul>
+<h2 id="复合函数与逆函数">复合函数与逆函数</h2>
+<h3 id="复合函数">复合函数</h3>
+<h4 id="复合函数定义">复合函数定义</h4>
+<ul>
+<li>函数的合成运算可定义如下：设<span class="math inline">\(f :
+X→Y\)</span>, <span class="math inline">\(g :
+Y→Z\)</span>是两个函数，于是合成函数记为<span
+class="math inline">\(g\circ f : X→Z\)</span> <span
+class="math inline">\(\\g\circ
+f=\{(x,z)|x∈X且z∈Z且存在y∈Y且y=f(x)且z=g(y)\}\)</span> 通常称为函数<span
+class="math inline">\(f\)</span>和<span
+class="math inline">\(g\)</span>的合成，确切的说，<span
+class="math inline">\(g\circ f\)</span>称为<span
+class="math inline">\(f\)</span>和<span
+class="math inline">\(g\)</span>左合成，从<span
+class="math inline">\(f\)</span>和<span
+class="math inline">\(g\)</span>求得<span class="math inline">\(g\circ
+f\)</span>的运算“<span
+class="math inline">\(\circ\)</span>”称为左合成运算
+关系的合成运算为<span class="math inline">\(f\circ
+g\)</span>，函数的合成运算为<span class="math inline">\(g\circ
+f\)</span></li>
+</ul>
+<h4 id="复合函数定理">复合函数定理</h4>
+<ul>
+<li>函数的合成运算是可结合的</li>
+<li>设<span class="math inline">\(f\)</span>和<span
+class="math inline">\(g\)</span>是函数，并且有合成函数<span
+class="math inline">\(g\circ f\)</span>,则
+<ul>
+<li>如果<span class="math inline">\(f\)</span>和<span
+class="math inline">\(g\)</span>都是满射函数，则<span
+class="math inline">\(g \circ f\)</span>也是满射函数</li>
+<li>如果<span class="math inline">\(f\)</span>和<span
+class="math inline">\(g\)</span>都是单射函数，则<span
+class="math inline">\(g\circ f\)</span>也是单射函数</li>
+<li>如果<span class="math inline">\(f\)</span>和<span
+class="math inline">\(g\)</span>都是双射函数，则<span
+class="math inline">\(g\circ f\)</span>也是双射函数</li>
+</ul></li>
+</ul>
+<h3 id="逆函数">逆函数</h3>
+<h4 id="逆函数定义">逆函数定义</h4>
+<ul>
+<li>设<span class="math inline">\(f : A→B\)</span>是一个双射函数 ,
+称<span class="math inline">\(f^{-1} : B→A\)</span>是<span
+class="math inline">\(f\)</span>的逆函数</li>
+<li>在关系部分，曾定义了从集合<span
+class="math inline">\(X\)</span>到<span
+class="math inline">\(Y\)</span>的关系<span
+class="math inline">\(R\)</span>的逆关系，但是对于函数来说，交换序偶中的成员次序并<strong>不一定</strong>能保证得到的仍然是个函数</li>
+<li>设<span
+class="math inline">\(f:A→B\)</span>是一一对应的函数，则<span
+class="math inline">\(f\)</span>的逆关系 称为它的逆函数，记成<span
+class="math inline">\(f^{-1}: B→A\)</span>。这时称函数<span
+class="math inline">\(f\)</span>是可逆的</li>
+</ul>
+<h4 id="逆函数的定理">逆函数的定理</h4>
+<ul>
+<li>函数<span class="math inline">\(f : A→B\)</span>，若存在逆函数<span
+class="math inline">\(f^{-1} : B→A\)</span>，则必须满足：
+<ul>
+<li>对任意的<span class="math inline">\(a∈A\)</span>，必有唯一的<span
+class="math inline">\(b∈B\)</span>与之对应；</li>
+<li>对任意的<span class="math inline">\(b∈B\)</span>，必有唯一的<span
+class="math inline">\(a∈A\)</span>与之对应；</li>
 </ul></li>
 </ul>
 
