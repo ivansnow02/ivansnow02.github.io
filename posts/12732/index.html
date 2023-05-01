@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          12k 字
+          16k 字
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          69 分钟
+          90 分钟
         
       </span>
     
@@ -1444,6 +1444,352 @@ class="math inline">\(b∈B\)</span>与之对应；</li>
 <li>对任意的<span class="math inline">\(b∈B\)</span>，必有唯一的<span
 class="math inline">\(a∈A\)</span>与之对应；</li>
 </ul></li>
+</ul>
+<h1 id="代数系统">代数系统</h1>
+<h2 id="代数系统的基本概念">代数系统的基本概念</h2>
+<h3 id="二元运算">二元运算</h3>
+<h4 id="定义-10">定义</h4>
+<ul>
+<li>设<span class="math inline">\(A, B, C\)</span>是非空集合，从<span
+class="math inline">\(A×B\)</span>到<span
+class="math inline">\(C\)</span>的一个函数<span class="math inline">\(f
+：A×B→C\)</span>称为一个<span class="math inline">\(A×B\)</span>到<span
+class="math inline">\(C\)</span>的二元代数运算，简称二元运算</li>
+<li>一个二元运算就是一个特殊的函数 ，该函数能够对<span
+class="math inline">\(a\in A\)</span>和<span class="math inline">\(b\in
+B\)</span>进行运算，得到<span
+class="math inline">\(C\)</span>中的一个元素<span
+class="math inline">\(c\)</span> ， 即 <span class="math inline">\(\circ
+(a, b)＝c\)</span>。 中缀方法表示为：<span class="math inline">\(a \circ
+b＝c\)</span></li>
+</ul>
+<h3 id="特点-1">特点</h3>
+<h4 id="封闭性">封闭性</h4>
+<ul>
+<li>如果“<span class="math inline">\(*\)</span>”是<span
+class="math inline">\(A×A\)</span>到<span
+class="math inline">\(A\)</span>的二元运算，则称运算“<span
+class="math inline">\(*\)</span>”对集合<span
+class="math inline">\(A\)</span>是封闭的，或者称“<span
+class="math inline">\(*\)</span>”是<span
+class="math inline">\(A\)</span>上的二元运算</li>
+<li>设“<span class="math inline">\(*\)</span>”是一个<span
+class="math inline">\(A_1×A_2×…×A_n\)</span>到<span
+class="math inline">\(A\)</span>的<span
+class="math inline">\(n\)</span>元代数运算，如果<span
+class="math inline">\(A_1＝A_2＝…＝A_n＝A\)</span>，则称代数运算“<span
+class="math inline">\(*\)</span>”对集合<span
+class="math inline">\(A\)</span>是封闭的，或者称“<span
+class="math inline">\(*\)</span>”是<span
+class="math inline">\(A\)</span>上的<span
+class="math inline">\(n\)</span>元代数运算</li>
+</ul>
+<h3 id="代数系统的定义">代数系统的定义</h3>
+<ul>
+<li>设<span class="math inline">\(A\)</span>是非空集合，<span
+class="math inline">\(*\)</span>是定义在<span
+class="math inline">\(A\)</span>上<span
+class="math inline">\(k\)</span>元封闭运算，称集合<span
+class="math inline">\(A\)</span>和<span
+class="math inline">\(*\)</span>所组成的系统称为代数系统，简称代数，记为<span
+class="math inline">\((A, *)\)</span></li>
+<li>当<span
+class="math inline">\(A\)</span>是有限集合时，该代数系统称为有限代数系统，否则称为无限代数系统</li>
+<li>注意：判断集合<span
+class="math inline">\(A\)</span>和其上的代数运算是否是代数系统，关键是判断两点：
+<ul>
+<li>集合<span class="math inline">\(A\)</span>非空</li>
+<li>这些运算关于<span
+class="math inline">\(A\)</span>是否满足封闭性</li>
+</ul></li>
+</ul>
+<h3 id="同类型代数系统">同类型代数系统</h3>
+<ul>
+<li>设<span class="math inline">\((A, *)\)</span>和<span
+class="math inline">\((B, \circ )\)</span>是两个代数系统，若“<span
+class="math inline">\(\circ\)</span>”和“<span
+class="math inline">\(*\)</span>”都是<span
+class="math inline">\(k\)</span>元运算，<span class="math inline">\(i =
+1, 2, …, m\)</span>，则称这两个代数同类型</li>
+</ul>
+<h2 id="运算规律">运算规律</h2>
+<h3 id="结合律-1">结合律</h3>
+<ul>
+<li>设<span class="math inline">\((A,
+*)\)</span>是二元代数系统，若对任意<span class="math inline">\(a, b,
+c∈A\)</span>，都有 <span class="math inline">\((a*b)*c＝a*(b*c)\)</span>
+则称“<span class="math inline">\(*\)</span>”在<span
+class="math inline">\(A\)</span>上是可结合的，或称满足结合律</li>
+</ul>
+<h3 id="交换律-1">交换律</h3>
+<ul>
+<li>设<span class="math inline">\((A,
+*)\)</span>是二元代数系统，若对任意<span class="math inline">\(a,
+b∈A\)</span>，都有 <span class="math inline">\(a*b＝b*a\)</span>
+则称“<span class="math inline">\(*\)</span>”在<span
+class="math inline">\(A\)</span>上是可交换的，或称“<span
+class="math inline">\(*\)</span>”满足交换律</li>
+</ul>
+<h3 id="消去律">消去律</h3>
+<ul>
+<li>设<span class="math inline">\((A,
+*)\)</span>是二元代数系统，元素<span
+class="math inline">\(a∈A\)</span>，
+<ul>
+<li>对任意<span class="math inline">\(x, y∈A\)</span>，都有如果<span
+class="math inline">\(a*x = a*y\)</span>，那<span
+class="math inline">\(x = y\)</span>，则称<span
+class="math inline">\(a\)</span>在<span
+class="math inline">\(A\)</span>中关于“<span
+class="math inline">\(*\)</span>”是左可消去元</li>
+<li>对任意<span class="math inline">\(x, y∈A\)</span>，都有如果<span
+class="math inline">\(x*a = y*a\)</span>，那么<span
+class="math inline">\(x = y\)</span>，则称<span
+class="math inline">\(a\)</span>在<span
+class="math inline">\(A\)</span>中关于“<span
+class="math inline">\(*\)</span>”是右可消去元</li>
+<li>如果<span class="math inline">\(a\)</span>既是<span
+class="math inline">\(A\)</span>左可消去元又是右可消去元，则称<span
+class="math inline">\(a\)</span>是<span
+class="math inline">\(A\)</span>的可消去元</li>
+<li>若<span
+class="math inline">\(A\)</span>中所有元素都是可消去元，则称“<span
+class="math inline">\(*\)</span>”在<span
+class="math inline">\(A\)</span>上可消去，或称“<span
+class="math inline">\(*\)</span>”满足消去律</li>
+</ul></li>
+</ul>
+<h3 id="幂等律">幂等律</h3>
+<ul>
+<li>设<span class="math inline">\((A,
+*)\)</span>是二元代数系统，若元素<span
+class="math inline">\(a∈A\)</span>，满足<span
+class="math inline">\(a*a=a\)</span>则称<span
+class="math inline">\(a\)</span>是<span
+class="math inline">\(A\)</span>中关于“<span
+class="math inline">\(*\)</span>”的一个幂等元，简称<span
+class="math inline">\(a\)</span>为幂等元。若<span
+class="math inline">\(A\)</span>中的每一个元素都是幂等元，则称“<span
+class="math inline">\(*\)</span>”在<span
+class="math inline">\(A\)</span>中是幂等的，或称“<span
+class="math inline">\(*\)</span>”满足幂等律</li>
+</ul>
+<h3 id="幂">幂</h3>
+<ul>
+<li>设“<span class="math inline">\(*\)</span>”是集合<span
+class="math inline">\(A\)</span>上可结合的二元运算，<span
+class="math inline">\(a∈A\)</span>，则<span
+class="math inline">\(a*a∈A，a*a*a∈A，…，\)</span>由此，可以归纳定义<span
+class="math inline">\(a\)</span>的正整数幂方： <span
+class="math inline">\(a^1 = a，a^2 = a*a，a^3 = a^2*a，… ， a^n =
+a^{n-1}*a，…\)</span></li>
+<li>对任意正整数<span class="math inline">\(n\)</span>，<span
+class="math inline">\(m\)</span>，有以下等式：<span
+class="math inline">\(a^n * a^m = a^{n+m}， (a^n)^m =
+a^{nm}\)</span></li>
+</ul>
+<h3 id="分配律-1">分配律</h3>
+<ul>
+<li>设“<span class="math inline">\(*\)</span>”、“<span
+class="math inline">\(\circ\)</span>”是集合A上的二元运算，<span
+class="math inline">\((A,*, \circ)\)</span>是一个代数系统， 对任意<span
+class="math inline">\(a,b,c\in A\)</span>，
+<ul>
+<li><span class="math inline">\(a\circ (b*c)=(a\circ b)*(a\circ
+c)\)</span>， 则称运算“<span
+class="math inline">\(\circ\)</span>”对“<span
+class="math inline">\(*\)</span>”在<span
+class="math inline">\(A\)</span>上满足左分配律(或第一分配律)</li>
+<li><span class="math inline">\((b*c) \circ a=(b\circ a)*(c\circ
+a)\)</span>， 则称运算“<span
+class="math inline">\(\circ\)</span>”对“<span
+class="math inline">\(*\)</span>”在<span
+class="math inline">\(A\)</span>上满足右分配律(或第二分配律)</li>
+<li>如果“<span class="math inline">\(\circ\)</span>”对“<span
+class="math inline">\(*\)</span>”既满足左分配律又满足右分配律，则称“<span
+class="math inline">\(\circ\)</span>”对“<span
+class="math inline">\(*\)</span>”在<span
+class="math inline">\(A\)</span>上满足分配律</li>
+</ul></li>
+</ul>
+<h3 id="吸收律-1">吸收律</h3>
+<ul>
+<li>设“<span class="math inline">\(*\)</span>”、“<span
+class="math inline">\(\circ\)</span>”是集合<span
+class="math inline">\(A\)</span>上的二元运算，<span
+class="math inline">\((A,*, \circ
+)\)</span>是一个代数系统，如果对任意<span class="math inline">\(x,
+y∈A\)</span>，都有<span class="math inline">\(x *(x \circ y) = x，x
+\circ(x*y) = x\)</span> 则称“<span
+class="math inline">\(*\)</span>”和“<span
+class="math inline">\(\circ\)</span>”满足吸收律</li>
+</ul>
+<h2 id="特殊元">特殊元</h2>
+<h3 id="特殊元的定义">特殊元的定义</h3>
+<ul>
+<li>在代数系统中，有些元素有特殊性质，叫特殊元</li>
+</ul>
+<h3 id="单位元">单位元</h3>
+<ul>
+<li>设<span class="math inline">\((A, *)\)</span>是二元代数系统，
+<ul>
+<li>若存在<span class="math inline">\(e∈A\)</span>，对任意<span
+class="math inline">\(a∈A\)</span>，都有 <span class="math inline">\(a
+*e = e* a = a\)</span>，则称<span
+class="math inline">\(e\)</span>是<span
+class="math inline">\(A\)</span>中关于运算“<span
+class="math inline">\(*\)</span>”的一个单位元</li>
+<li>若存在<span class="math inline">\(e_l∈A\)</span>，使得对任意<span
+class="math inline">\(a∈A\)</span>，都有 <span class="math inline">\(e_l
+*a = a\)</span>，则称<span class="math inline">\(e_l\)</span>是<span
+class="math inline">\(A\)</span>中关于运算“<span
+class="math inline">\(*\)</span>”的一个左单位元</li>
+<li>若存在<span class="math inline">\(e_r∈A\)</span>，使得对任意<span
+class="math inline">\(a∈A\)</span>，都有 <span class="math inline">\(a
+*e_r = a\)</span>，则称<span class="math inline">\(e_r\)</span>是<span
+class="math inline">\(A\)</span>中关于运算“<span
+class="math inline">\(*\)</span>”的一个右单位元</li>
+</ul></li>
+</ul>
+<h3 id="零元">零元</h3>
+<ul>
+<li>设<span class="math inline">\((A, *)\)</span>是一个二元代数系统，
+<ul>
+<li>若存在<span class="math inline">\(θ∈A\)</span>，使得对任意<span
+class="math inline">\(a∈A\)</span>，都有<span class="math inline">\(a *θ
+= θ* a =θ\)</span>，则称<span class="math inline">\(θ\)</span>是<span
+class="math inline">\(A\)</span>中关于运算“<span
+class="math inline">\(*\)</span>”的一个零元</li>
+<li>若存在<span class="math inline">\(θ_l∈A\)</span>，使得对任意<span
+class="math inline">\(a∈A\)</span>，都有<span class="math inline">\(θ_l
+*a = θ_l\)</span>，则称<span class="math inline">\(θ_l\)</span>是<span
+class="math inline">\(A\)</span>中关于运算“<span
+class="math inline">\(*\)</span>”的一个左零元</li>
+<li>若存在<span class="math inline">\(θ_r∈A\)</span>，使得对任意<span
+class="math inline">\(a∈A\)</span>，都有<span class="math inline">\(a
+*θ_r = θ_r\)</span>，则称<span class="math inline">\(θ_r\)</span>是<span
+class="math inline">\(A\)</span>中关于运算“<span
+class="math inline">\(*\)</span>”的一个右零元。</li>
+</ul></li>
+</ul>
+<h3 id="逆元">逆元</h3>
+<ul>
+<li>设<span class="math inline">\((A, *)\)</span>是二元代数系统，<span
+class="math inline">\(e\)</span>是幺元，<span
+class="math inline">\(a∈A\)</span>，若存在一个元素<span
+class="math inline">\(b∈A\)</span>，
+<ul>
+<li>使得：<span class="math inline">\(a *b = b* a =
+e\)</span>，则称<span class="math inline">\(a\)</span>可逆，并称<span
+class="math inline">\(b\)</span>是<span
+class="math inline">\(a\)</span>的一个逆元，记为<span
+class="math inline">\(a^{-1}\)</span></li>
+<li>使得：<span class="math inline">\(b*a = e\)</span>，则称<span
+class="math inline">\(a\)</span>左可逆，并称<span
+class="math inline">\(b\)</span>是<span
+class="math inline">\(a\)</span>的一个左逆元，记为<span
+class="math inline">\(a_l^{-1}\)</span></li>
+<li>使得：<span class="math inline">\(a*b = e\)</span>，则称<span
+class="math inline">\(a\)</span>右可逆，并称<span
+class="math inline">\(b\)</span>是<span
+class="math inline">\(a\)</span>的一个右逆元，记为<span
+class="math inline">\(a_r^{-1}\)</span></li>
+</ul></li>
+</ul>
+<h3 id="定理-4">定理</h3>
+<ul>
+<li>设<span class="math inline">\((A, *)\)</span>是一个代数系统，“<span
+class="math inline">\(*\)</span>” 满足结合律，<span
+class="math inline">\(a∈A\)</span>，<span
+class="math inline">\(a\)</span>可逆，则<span
+class="math inline">\(a\)</span>是可消去元</li>
+<li>设<span class="math inline">\((A, *)\)</span>是二元代数系统，
+<ul>
+<li>如果<span class="math inline">\((A,
+*)\)</span>存在单位元，则单位元唯一</li>
+<li>如果<span class="math inline">\((A,
+*)\)</span>存在单位元，则该单位元一定是左、右单位元</li>
+<li>如果<span class="math inline">\((A,
+*)\)</span>存在左、右单位元，则该左、右单位元相等，且是单位元。</li>
+</ul></li>
+<li>设<span class="math inline">\((A, *)\)</span>是二元代数系统，
+<ul>
+<li>如果<span class="math inline">\((A,
+*)\)</span>存在零元，则零元唯一</li>
+<li>如果<span class="math inline">\((A,
+*)\)</span>存在零元，则该零元一定是左、右零元</li>
+<li>如果<span class="math inline">\((A,
+*)\)</span>存在左、右零元，则该左、右零元相等，且是零元。</li>
+</ul></li>
+<li>设<span class="math inline">\((A, *)\)</span>是二元代数系统，“<span
+class="math inline">\(*\)</span>”满足结合律且设<span
+class="math inline">\(e\)</span>是单位元，则对任意<span
+class="math inline">\(a∈A\)</span>，
+<ul>
+<li>如果<span class="math inline">\(a\)</span>存在逆元，则逆元唯一</li>
+<li>如果<span
+class="math inline">\(a\)</span>存在逆元，则该逆元一定是左、右逆元</li>
+<li>如果<span
+class="math inline">\(a\)</span>存在左、右逆元，则该左、右逆元相等，且是逆元。</li>
+</ul></li>
+<li>设<span class="math inline">\((A, *)\)</span>是二元代数系统，“<span
+class="math inline">\(*\)</span>”满足结合律，<span
+class="math inline">\(a, b∈A\)</span>，
+<ul>
+<li>如果<span class="math inline">\(a, b\)</span>分别有逆元<span
+class="math inline">\(a^{-1}, b^{-1}\)</span>，则<span
+class="math inline">\((a*b)^{-1} = b^{-1}*a^{-1}\)</span></li>
+<li>如果<span
+class="math inline">\(a\)</span>是左（或右）可逆的元素，则<span
+class="math inline">\(a\)</span>是左（或右）可消去的元素</li>
+<li>如果<span class="math inline">\(a\)</span>是可逆的元素，则<span
+class="math inline">\(a\)</span>是可消去的元素</li>
+</ul></li>
+</ul>
+<h3 id="同构">同构</h3>
+<h4 id="同构的定义">同构的定义</h4>
+<ul>
+<li>在现实社会中，存在着很多代数系统，但仔细分析这些众多的代数系统发现，有些代数系统，他们之间表面上似乎不相同，但他们本质上是“相同”的</li>
+</ul>
+<h4 id="同构的条件">同构的条件</h4>
+<ul>
+<li>必须是同型代数系统</li>
+<li>两个集合的元素个数应相等</li>
+<li>运算定义法则相同，即对应元素运算后的结果也对应</li>
+</ul>
+<h3 id="同态">同态</h3>
+<h4 id="同态的定义">同态的定义</h4>
+<ul>
+<li>设<span class="math inline">\((A, *)\)</span>和<span
+class="math inline">\((B, \circ)\)</span>为两个二元代数系统，<span
+class="math inline">\(g\)</span>是<span
+class="math inline">\(A\)</span>到<span
+class="math inline">\(B\)</span>的函数。对任意<span
+class="math inline">\(x, y∈A\)</span>，都有<span
+class="math inline">\(g(x*y) = g(x) \circ g(y)\)</span>，则称<span
+class="math inline">\(g\)</span>是从<span class="math inline">\((A,
+*)\)</span>到<span class="math inline">\((B,
+\circ)\)</span>的<strong>同态映射</strong>，称<span
+class="math inline">\(g(A)\)</span>为<strong>同态像</strong>，其中<span
+class="math inline">\(g(A) = \{g(x) |
+x∈A\}\)</span>。如果存在一个从<span
+class="math inline">\((A,*)\)</span>到<span class="math inline">\((B,
+\circ )\)</span>的同态映射，则称<span class="math inline">\((A,
+*)\)</span>与<span class="math inline">\((B, \circ
+)\)</span>同态，记为<span class="math inline">\((A,*)∽(B, \circ
+)\)</span>。当<span class="math inline">\((A, *)= (B, \circ
+)\)</span>时，称其同态为<strong>自同态</strong></li>
+<li>当同态映射<span
+class="math inline">\(g\)</span>分别是<strong>单射</strong>、<strong>满射</strong>、<strong>双射</strong>时，分别称<span
+class="math inline">\(g\)</span>是<strong>单一同态映射</strong>、<strong>满同态映射</strong>、<strong>同构映射</strong></li>
+<li>如果存在一个从<span class="math inline">\((A, *)\)</span>到<span
+class="math inline">\((B, \circ
+)\)</span>的<strong>同构映射</strong>（单一同态映射、满同态映射），则称代数系统<span
+class="math inline">\((A,*)\)</span>与<span class="math inline">\((B,
+\circ )\)</span><strong>同构</strong>（单一同态、满同态）。 用<span
+class="math inline">\((A, *)≌(B, \circ )\)</span>表示<span
+class="math inline">\((A,*)\)</span>与<span class="math inline">\((B,
+\circ )\)</span>同构</li>
 </ul>
 
                 
