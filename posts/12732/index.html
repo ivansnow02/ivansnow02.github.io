@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          24k 字
+          26k 字
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          132 分钟
+          146 分钟
         
       </span>
     
@@ -2365,6 +2365,264 @@ class="math inline">\(𝐴(𝑐)⇒∃𝑥𝐴(𝑥)\)</span>，c
 <li>证明时可采用如命题演算中的直接证明方法和间接证明方法</li>
 <li>在推导过程中，对消去量词的公式或公式中不含量词的子公式，完全可以引用命题演算中的基本等价公式和基本蕴涵公式</li>
 <li>在推导过程中，对含有量词的公式可以引用谓词中的基本等价公式和基本蕴涵公式</li>
+</ul>
+<h1 id="图的基本概念">图的基本概念</h1>
+<h2 id="图与子图">图与子图</h2>
+<h3 id="图的定义">图的定义</h3>
+<ul>
+<li>图G是由非空集合<span
+class="math inline">\(V=\{v_1,v_2,…,v_n\}\)</span>，以及边的集合<span
+class="math inline">\(E=\{l_1,l_2,…,l_m\}\)</span>所组合，其中每条边可用一个结点对表示，即：<span
+class="math inline">\(l_i=(v_{i1},v_{i2}),i=1,2,…,m\)</span>，这样的图G可用<span
+class="math inline">\(G=(V，E)\)</span>表示</li>
+</ul>
+<h3 id="图的基本概念-1">图的基本概念</h3>
+<h4 id="有向图">有向图</h4>
+<ul>
+<li>图中的所有边均为有向边，有向边<span
+class="math inline">\(l_k=&lt;v_i,v_j&gt;\)</span>, <span
+class="math inline">\(v_i\)</span>为起点，<span
+class="math inline">\(v_j\)</span>为终点，箭头指向终点</li>
+</ul>
+<h4 id="无向图">无向图</h4>
+<ul>
+<li>图中的所有边均为无向边</li>
+</ul>
+<h4 id="邻接与环">邻接与环</h4>
+<ul>
+<li>多条边关联于同一个结点，则这些边称为邻接的</li>
+<li>构成边的一对结点之间称为邻接的</li>
+<li>若一条边由相同的结点构成，则称为环<span
+class="math inline">\((v_i,v_i)\)</span></li>
+</ul>
+<h4 id="零图与平凡图">零图与平凡图</h4>
+<ul>
+<li>仅含一些孤立点的图称为零图</li>
+<li>特别，仅含一个孤立点的零图称为平凡图</li>
+</ul>
+<h4 id="多重图与线图">多重图与线图</h4>
+<ul>
+<li>有相同端点（起终点）的两条无（有）向边叫做<strong>重边</strong></li>
+<li>含重边的图称为多重图</li>
+<li>非多重图称为线图</li>
+<li>不含自环和重边的图称为简单图（无自环的线图）</li>
+</ul>
+<h4 id="完全图">完全图</h4>
+<ul>
+<li>每对结点间都有一条无向边（一对方向相反的有向边）的简单图，称为无（有）向完全图</li>
+<li>设G是含有n个顶点和m条边的无（有）向完全图<span
+class="math inline">\(m=n(n-1)/2,m=n(n-1)\)</span></li>
+</ul>
+<h4 id="赋权图">赋权图</h4>
+<ul>
+<li>赋权图G是一个三重组<span class="math inline">\((V, E,
+g)\)</span>，其中V是结点集合，E是边的集合</li>
+</ul>
+<h4 id="子图与补图">子图与补图</h4>
+<ul>
+<li>若<span class="math inline">\(V’\subseteq V, E’\subseteq E\)</span>,
+则称<span class="math inline">\(G’=(V’,E’)\)</span>是<span
+class="math inline">\(G=(V,E)\)</span>的<strong>子图</strong></li>
+<li><span class="math inline">\(E’\subseteq
+E\)</span>之子图叫做<strong>真子图</strong></li>
+<li><span
+class="math inline">\(V’=V\)</span>之子图叫做<strong>生成子图</strong></li>
+<li>设<span class="math inline">\(V’\subseteq V\)</span>且$V’≠<span
+class="math inline">\(，以\)</span>V’<span
+class="math inline">\(为结点集，以两个端点均在\)</span>V<span
+class="math inline">\(’中的边的全体为边集的G的子图，称为\)</span>V’<span
+class="math inline">\(导出的G的子图，简称\)</span>V’$的<strong>导出子图</strong></li>
+<li>图<span class="math inline">\(G’=(V’, E’)\)</span>是图<span
+class="math inline">\(G=(V, E)\)</span>的子图。若G有子图<span
+class="math inline">\(G’’=(V’’, E’’)\)</span>,其中<span
+class="math inline">\(E’’=E-E’\)</span>，<span
+class="math inline">\(V’’\)</span>是仅含<span
+class="math inline">\(E’’\)</span>中的边关联的结点和不在<span
+class="math inline">\(G’\)</span>中的<span
+class="math inline">\(G\)</span>的孤立点的集合，则称<span
+class="math inline">\(G’’\)</span>是<span
+class="math inline">\(G’\)</span>关于<span
+class="math inline">\(G\)</span>的**补图*8</li>
+<li>若称图<span class="math inline">\(G\)</span>和<span
+class="math inline">\(G’\)</span>互为补图，则两图<span
+class="math inline">\(G=(V, E)、G’=(V, E’)\)</span>满足：
+<ul>
+<li><span class="math inline">\(E∩E’=\varnothing\)</span></li>
+<li><span class="math inline">\((V, E∪E’)\)</span>是完全图</li>
+</ul></li>
+</ul>
+<h4 id="节点的次数">节点的次数</h4>
+<ul>
+<li>结点的(全)度数d(v)：与结点v相关联的边数</li>
+<li>在有向图中，度数又分为：
+<ul>
+<li>引入度数<span
+class="math inline">\(d^-(v)\)</span>：以v为终点的边数</li>
+<li>引出度数<span
+class="math inline">\(d^+(v)\)</span>：以v为起点的边数</li>
+</ul></li>
+<li><span class="math inline">\(d(v) = d^-(v)+ d^+(v)\)</span></li>
+<li>次数为奇（偶）数的结点称为奇（偶）结点</li>
+<li>图中若有奇结点，则必有偶数个奇结点</li>
+<li>图中所有结点次数之和必为偶数，为图中边数的两倍</li>
+</ul>
+<h4 id="握手定理">握手定理</h4>
+<ul>
+<li>(n, m)图中，结点的总次数为：<span
+class="math inline">\(\sum\limits_{i=1}^nd(v_i)=2m\)</span></li>
+</ul>
+<h3 id="图的同构">图的同构</h3>
+<h4 id="定义-17">定义</h4>
+<ul>
+<li>图<span class="math inline">\(G=(V, E)\)</span>与<span
+class="math inline">\(G’=(V’, E’)\)</span>，如果存在双射函数<span
+class="math inline">\(ƒ:V→V’\)</span>, 使得边也一一对应，则称<span
+class="math inline">\(G\)</span>与<span
+class="math inline">\(G’\)</span>同构</li>
+</ul>
+<p>####　同构的必要条件</p>
+<ul>
+<li>结点数目相同</li>
+<li>边数相同</li>
+<li>度数相同的结点数相同</li>
+</ul>
+<h2 id="通路回路与连通性">通路、回路与连通性</h2>
+<h3 id="通路">通路</h3>
+<h4 id="定义-18">定义</h4>
+<ul>
+<li>(有向)图中k条(首尾)相连的边<span
+class="math inline">\((v_{i0},v_{i1}),(v_{i1},v_{i2}),…,(v_{ik-1},v_{ik})\)</span>,记成<span
+class="math inline">\((v_{i0},v_{i1},v_{i2}, …,
+v_{ik})\)</span>，其中：<span
+class="math inline">\(v_{i0}\)</span>：起点，<span
+class="math inline">\(v_{ik}\)</span>：终点，<span
+class="math inline">\(k\)</span>：通路长度</li>
+</ul>
+<h4 id="简单通路">简单通路</h4>
+<ul>
+<li>边不同之通路</li>
+</ul>
+<h4 id="基本通路">基本通路</h4>
+<ul>
+<li>结点不同之通路</li>
+</ul>
+<h4 id="可达">可达</h4>
+<ul>
+<li>从结点u到结点v有通路，称u到v可达</li>
+</ul>
+<h4 id="短程线">短程线</h4>
+<ul>
+<li>两点间最短的通路</li>
+</ul>
+<h4 id="距离duv">距离d(u,v)</h4>
+<ul>
+<li>从u到v的短程线的长度(不可达则为无限)</li>
+</ul>
+<h3 id="回路">回路</h3>
+<h4 id="定义-19">定义</h4>
+<ul>
+<li><span
+class="math inline">\(v_{i0}=v_{ik}\)</span>之通路，即“起点=终点”
+之通路</li>
+</ul>
+<h4 id="简单回路">简单回路</h4>
+<ul>
+<li>边不同之回路</li>
+</ul>
+<h4 id="基本回路">基本回路</h4>
+<ul>
+<li>结点不同之回路</li>
+</ul>
+<h3 id="结论-2">结论</h3>
+<ul>
+<li>任一通路删去所有回路必得基本通路</li>
+<li>任一回路删去其中间回路必得基本回路</li>
+</ul>
+<h3 id="定理-8">定理</h3>
+<ul>
+<li>一个(n,m)有向图中任何基本通路长度都小于n，而任何基本回路长度都不大于n</li>
+</ul>
+<h3 id="连通性">连通性</h3>
+<h4 id="无向连通图">无向连通图</h4>
+<ul>
+<li>任两点间均是可达的无向图</li>
+</ul>
+<h4 id="有向连通图">有向连通图</h4>
+<ul>
+<li>去掉边的方向后是无向连通图之有向图</li>
+</ul>
+<h4 id="强连通图">强连通图</h4>
+<ul>
+<li>任两点间均互相可达之有向图</li>
+</ul>
+<h4 id="单向连通图">单向连通图</h4>
+<ul>
+<li>任两点间至少有一向可达之有向图</li>
+</ul>
+<h4 id="弱连通图">弱连通图</h4>
+<ul>
+<li>有向连通图</li>
+</ul>
+<h2 id="图的矩阵表示法">图的矩阵表示法</h2>
+<h3 id="有向图的邻接矩阵">有向图的邻接矩阵</h3>
+<h4 id="定义-20">定义</h4>
+<ul>
+<li>对图 <span class="math inline">\(G=(\{v_1,v_2, …, v_n\},E)\)</span>,
+其邻接矩阵<span class="math inline">\(A\)</span>如下构成： <span
+class="math inline">\(A=(a_{ij})_{n\times n},a_{ij}=\begin{cases}1 &amp;
+v_i与v_j邻接\\0 &amp; v_i不与v_j邻接\end{cases}\)</span></li>
+</ul>
+<h4 id="矩阵中的信息">矩阵中的信息</h4>
+<ul>
+<li>结点<span class="math inline">\(v_i\)</span>的次数
+<ul>
+<li>引出次数：<span class="math inline">\(d^+(v_i)=\sum\limits_{k=1}^n
+a_{ik}\)</span></li>
+<li>引出次数：<span class="math inline">\(d^-(v_i)=\sum\limits_{k=1}^n
+a_{ki}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(A^l\)</span>
+<ul>
+<li>令 <span class="math inline">\(C=A^l, c_{ij}\)</span> 是<span
+class="math inline">\(v_i\)</span>到<span
+class="math inline">\(v_j\)</span>的长度为<span
+class="math inline">\(l\)</span>的通路数目</li>
+</ul></li>
+</ul>
+<h3 id="可达性矩阵">可达性矩阵</h3>
+<ul>
+<li><span class="math inline">\(R_n=A+A^2+…+A^n\)</span> ——
+反映任两点间的通路数目</li>
+<li>可达性矩阵P —— 将<span
+class="math inline">\(R_n\)</span>中的非零值改为1——
+反映任两点间是否可达</li>
+<li>P也可如下计算：$P=A (+) A^{(2)} (+) … (+) A^{(n)} $</li>
+</ul>
+<h3 id="无向图的矩阵表示">无向图的矩阵表示</h3>
+<h4 id="无向图的邻接矩阵">无向图的邻接矩阵</h4>
+<ul>
+<li>无向图的邻接矩阵与有向图的类似，并且是对称的</li>
+<li>结点的次数只要计算行(或列)之和即可，但对角线上的1要计算2次</li>
+<li>矩阵<span class="math inline">\(R_n\)</span>及P的计算方法也相同</li>
+</ul>
+<h3 id="多重图的邻接矩阵">多重图的邻接矩阵</h3>
+<ul>
+<li>1改为重边的数目</li>
+</ul>
+<h3 id="有权图的邻接矩阵">有权图的邻接矩阵</h3>
+<ul>
+<li>1改为权值</li>
+</ul>
+<h3 id="矩阵与图的连通性">矩阵与图的连通性</h3>
+<ul>
+<li>无向图G是连通的<span
+class="math inline">\(\iff\)</span>G的可达性矩阵P除对角元外均为1</li>
+<li>有向图G是强连通的<span
+class="math inline">\(\iff\)</span>G的可达性矩阵P除对角元外均为1</li>
+<li>有向图G是单向连通的<span class="math inline">\(\iff P(+)P^T\)</span>
+(P的转置)除对角元外均为1</li>
+<li>有向图G是弱连通的<span class="math inline">\(\iff
+A(+)A^T\)</span>图的可达性矩阵P除对角元外均为1 （A是G的邻接矩阵）</li>
 </ul>
 
                 
