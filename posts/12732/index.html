@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          21k 字
+          24k 字
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          115 分钟
+          132 分钟
         
       </span>
     
@@ -2146,6 +2146,225 @@ class="math inline">\(G\implies H\)</span>的“结果”，是非命题公式</
 <li>用计算机来判断<span class="math inline">\(G\implies
 H\)</span>是办不到的。然而计算机却可“计算”公式<span
 class="math inline">\(G→H\)</span>是否为永真公式</li>
+</ul>
+<h1 id="谓词逻辑">谓词逻辑</h1>
+<h2 id="谓词逻辑基本概念">谓词逻辑基本概念</h2>
+<h3 id="谓词">谓词</h3>
+<h4 id="定义-16">定义</h4>
+<ul>
+<li>用以刻划客体的性质或客体之间的关系即是谓词</li>
+</ul>
+<h4 id="简单命题函数">简单命题函数</h4>
+<ul>
+<li>由一个谓词和一些客体变元组成的表达式. <span
+class="math inline">\(A(x_1，x_2,…,x_n)\)</span>称n元命题函数或n元原子谓词公式，n元谓词就是有
+n 个客体变元的命题函数</li>
+</ul>
+<h4 id="复合命题函数">复合命题函数</h4>
+<ul>
+<li>由一个或 n个简单命题函数以及联结词组成的表达式</li>
+</ul>
+<h4 id="结论-1">结论</h4>
+<ul>
+<li>谓词中个体词的顺序是十分重要的，不能随意变更。如命题<span
+class="math inline">\(F(b, c)\)</span>为“真”，但命题<span
+class="math inline">\(F(c, b)\)</span>为“假”</li>
+<li>一元谓词用以描述某一个个体的某种特性，而n元谓词则用以描述n个个体之间的关系</li>
+<li>0元谓词(不含个体词的)实际上就是一般的命题</li>
+<li>具体命题的谓词表示形式和n元命题函数(n元谓词)是不同的，前者是有真值的，而后者不是命题，它的真值是不确定的。如上例中S(a)是有真值的，但S(x)却没有真值</li>
+<li>一个n元谓词不是一个命题，但将n元谓词中的个体变元都用个体域中具体的个体取代后，就成为一个命题。而且，个体变元在不同的个体域中取不同的值对是否成为命题及命题的真值有很大的影响</li>
+</ul>
+<h3 id="客体">客体</h3>
+<ul>
+<li>客体变元在哪些范围内取值（称客体），对是否成为命题及命题的真值都有影响</li>
+<li>在命题函数中，命题变元的论述范围称作<strong>个体域</strong>，个体域可以是有限的，也可以是无限的，把各种个体域综合在一起作为论述范围的域称为<strong>全总客体域</strong></li>
+</ul>
+<h3 id="量词">量词</h3>
+<h4 id="全称量词forall">全称量词<span
+class="math inline">\(\forall\)</span></h4>
+<ul>
+<li><span class="math inline">\(\forall\)</span>称为全称量词，“对所有的”
+,“每一个”, “对任一个”</li>
+</ul>
+<h4 id="存在量词exists">存在量词<span
+class="math inline">\(\exists\)</span></h4>
+<ul>
+<li><span
+class="math inline">\(\exists\)</span>称为存在量词,“存在一个”，“有一个”，“对于一些”</li>
+</ul>
+<h4 id="特性谓词">特性谓词</h4>
+<ul>
+<li>限定客体变元变化范围的谓词</li>
+</ul>
+<h4 id="注意-1">注意</h4>
+<ul>
+<li>由量词确定的表达式，都与个体域有关</li>
+<li>用全总个体域，对每个的客体变元变化范围，用特性谓词加以限制，一般地：
+<ul>
+<li>对全称量词，特性谓词常作条件的前提条件</li>
+<li>对存在量词，特性谓词常作合取项</li>
+</ul></li>
+</ul>
+<h3 id="谓词逻辑符号化的两条规则">谓词逻辑符号化的两条规则</h3>
+<ul>
+<li>统一个体域为全总个体域，而对每一个句子中个体变量的变化范围用一元特性谓词刻划之。这种特性谓词在加入到命题函数中时必定遵循如下原则：
+<ul>
+<li>对于全称量词(<span class="math inline">\(\forall
+x\)</span>)，刻划其对应个体域的特性谓词作为蕴涵式之<strong>前件</strong>加入</li>
+<li>对于存在量词(<span class="math inline">\(\exists
+x\)</span>)，刻划其对应个体域的特性谓词作为合取式之<strong>合取项</strong>加入</li>
+</ul></li>
+</ul>
+<h2 id="谓词公式翻译">谓词公式翻译</h2>
+<h3 id="谓词演算的逻辑公式">谓词演算的逻辑公式</h3>
+<ul>
+<li>原子谓词公式是逻辑公式，如Q，A(x)，A(x,y)，...</li>
+<li>若<span class="math inline">\(A\)</span>是逻辑公式,则<span
+class="math inline">\(\neg A\)</span>也是逻辑公式</li>
+<li>若A,B是逻辑公式，则<span class="math inline">\(A∧B\)</span>，<span
+class="math inline">\(A∨B\)</span>，<span
+class="math inline">\(A→B\)</span>，<span
+class="math inline">\(A\leftrightarrow B\)</span> 也是逻辑公式</li>
+<li>若A是逻辑公式，x是A中出现的任何变元，则<span
+class="math inline">\(\forall xA\)</span>和<span
+class="math inline">\(\exists xA\)</span>也是逻辑公式</li>
+</ul>
+<h2 id="约束变元与自由变元">约束变元与自由变元</h2>
+<h3 id="约束部分">约束部分</h3>
+<ul>
+<li>在谓词公式中,形如<span class="math inline">\(\forall x P(x)\)</span>
+，<span class="math inline">\(\exists x
+P(x)\)</span>的部分,称为谓词公式的<strong>x约束部分</strong>
+<ul>
+<li><span class="math inline">\(\forall
+\exists\)</span>后的x叫量词的<strong>指导变元</strong>或<strong>作用变元</strong></li>
+<li>P(x)叫做相应量词的<strong>作用域</strong>或<strong>辖域</strong></li>
+</ul></li>
+</ul>
+<h3 id="约束出现">约束出现</h3>
+<ul>
+<li>在作用域中x的一切出现，称为 x在公式中的<strong>约束出现</strong>
+<ul>
+<li>所有约束出现的变元叫做<strong>约束变元</strong></li>
+<li>不受约束的变元为<strong>自由变元</strong></li>
+</ul></li>
+</ul>
+<h3 id="n-k元谓词和有关命题">n-k元谓词和有关命题</h3>
+<ul>
+<li><span
+class="math inline">\(P(x_1,x_2,...,x_n)\)</span>是n元谓词，有n个独立的自由变元。若对其中k个变元进行约束，则称为
+<strong>n-k
+元谓词</strong>。若没有自由变量出现，则该式就成为<strong>有关命题</strong></li>
+</ul>
+<p>###　变元换名规则</p>
+<ul>
+<li>换名范围:量词中的指导变元和作用域中出现的该变元.公式中其余部分不变</li>
+<li>要换成作用域中没有出现的变元名称</li>
+</ul>
+<h3 id="变元代入规则">变元代入规则</h3>
+<ul>
+<li>对该自由变元每一处进行代入</li>
+<li>代入的变元与原公式中所有变元名称不能相同</li>
+</ul>
+<h2 id="谓词演算的等价式和蕴含式">谓词演算的等价式和蕴含式</h2>
+<h3 id="基本概念">基本概念</h3>
+<h4 id="等价">等价</h4>
+<ul>
+<li>任意给定两个谓词公式A和B , E 为它们共同的个体域, 若对A和
+B的任一组变元进行赋值, 所得命题真值相同,则称 A 和 B 在 E 上是等价的,
+记为<span class="math inline">\(A\iff B\)</span></li>
+</ul>
+<h4 id="永真的有效的">永真的(有效的)</h4>
+<ul>
+<li>给定任意谓词公式
+A，其个体域为E对于A的所有赋值A都真，则称A在E上是永真的(有效的)</li>
+</ul>
+<h4 id="可满足的">可满足的</h4>
+<ul>
+<li>一谓词公式A ，若至少在一种赋值下为真，则称A在E 上是可满足的</li>
+</ul>
+<h3 id="命题公式的推广">命题公式的推广</h3>
+<ul>
+<li>当用谓词演算中的公式代替命题演算中永真式的变元时，所得公式为<strong>有效公式</strong>
+<ul>
+<li><span class="math inline">\(∀𝑥(𝑃(𝑥)→𝑄(𝑥))\iff
+∀𝑥(¬𝑃(𝑥)∨𝑄(𝑥))\)</span></li>
+</ul></li>
+<li>量词与否定联结词<span
+class="math inline">\(\neg\)</span>间的关系：量词前的否定,是否定被量化了的<strong>整个命题</strong>
+<ul>
+<li><span class="math inline">\(¬∀𝑥𝑃(𝑥)\iff ∃𝑥¬𝑃(𝑥)\)</span></li>
+<li><span class="math inline">\(¬∃𝑥𝑃(𝑥)\iff ∀𝑥¬𝑃(𝑥)\)</span></li>
+</ul></li>
+<li>量词作用域的扩张与收缩
+<ul>
+<li><span class="math inline">\(∀𝑥(𝐴(𝑥)∨𝐵)\iff ∀𝑥𝐴(𝑥)∨𝐵\)</span></li>
+<li><span class="math inline">\(∀𝑥(𝐴(𝑥)∧𝐵)\iff ∀𝑥𝐴(𝑥)∧𝐵\)</span></li>
+<li><span class="math inline">\(∀𝑥(𝐴(𝑥)→𝐵)\iff ∃𝑥𝐴(𝑥)→𝐵\)</span></li>
+<li><span class="math inline">\(∀𝑥(𝐵→𝐴(𝑥))\iff 𝐵→∀𝑥𝐴(𝑥)\)</span></li>
+<li><span class="math inline">\(∃𝑥(𝐴(𝑥)∨𝐵)\iff ∃𝑥𝐴(𝑥)∨𝐵\)</span></li>
+<li><span class="math inline">\(∃𝑥(𝐴(𝑥)∧𝐵)\iff ∃𝑥𝐴(𝑥)∧𝐵\)</span></li>
+<li><span class="math inline">\(∃𝑥𝐴(𝑥)→𝐵\iff ∀𝑥(𝐴(𝑥)→𝐵)\)</span></li>
+<li><span class="math inline">\(∃𝑥(𝐵→𝐴(𝑥))\iff 𝐵→∃𝑥𝐴(𝑥)\)</span></li>
+</ul></li>
+<li>量词分配律
+<ul>
+<li><span class="math inline">\(∀𝑥(𝐴(𝑥)∧𝐵(𝑥))\iff
+∀𝑥𝐴(𝑥)∧∀𝑥𝐵(𝑥)\)</span></li>
+<li><span class="math inline">\(∃𝑥(𝐴(𝑥)∨𝐵(𝑥))\iff
+∃𝑥𝐴(𝑥)∨∃𝑥𝐵(𝑥)\)</span></li>
+</ul></li>
+<li>蕴含式
+<ul>
+<li><span class="math inline">\(∀𝑥𝐴(𝑥)∨∀𝑥𝐵(𝑥)\implies
+∀𝑥(𝐴(𝑥)∨𝐵(𝑥))\)</span></li>
+<li><span class="math inline">\(∃𝑥(𝐴(𝑥)∧𝐵(𝑥))\implies
+∃𝑥𝐴(𝑥)∧∃𝑥𝐵(𝑥)\)</span></li>
+</ul></li>
+<li>含多个变元的等价式和蕴含式
+<ul>
+<li><span class="math inline">\(∀𝑥∀𝑦𝑃(𝑥,𝑦)\iff ∀𝑦∀𝑥𝑃(𝑥,𝑦)\)</span></li>
+<li><span class="math inline">\(∀𝑥∀𝑦𝑃(𝑥,𝑦)\implies
+∃𝑦∀𝑥𝑃(𝑥,𝑦)\)</span></li>
+<li><span class="math inline">\(∀𝑦∀𝑥𝑃(𝑥,𝑦)\implies
+∃𝑥∀𝑦𝑃(𝑥,𝑦)\)</span></li>
+<li><span class="math inline">\(∃𝑦∀𝑥𝑃(𝑥,𝑦)\implies
+∀𝑥∃𝑦𝑃(𝑥,𝑦)\)</span></li>
+<li><span class="math inline">\(∃𝑥∀𝑦𝑃(𝑥,𝑦)\implies
+∀𝑦∃𝑥𝑃(𝑥,𝑦)\)</span></li>
+<li><span class="math inline">\(∀𝑥∃𝑦𝑃(𝑥,𝑦)\implies
+∃𝑦∃𝑥𝑃(𝑥,𝑦)\)</span></li>
+<li><span class="math inline">\(∀𝑦∃𝑥𝑃(𝑥,𝑦)\implies
+∃𝑥∃𝑦𝑃(𝑥,𝑦)\)</span></li>
+<li><span class="math inline">\(∃𝑥∃𝑦𝑃(𝑥,𝑦)\iff ∃𝑦∃𝑥𝑃(𝑥,𝑦)\)</span></li>
+</ul></li>
+</ul>
+<h2 id="谓词逻辑的推理理论">谓词逻辑的推理理论</h2>
+<h3 id="规则">规则</h3>
+<ul>
+<li>设 A(x)是谓词公式
+<ul>
+<li>全称移去规则 US (全称指定)：<span
+class="math inline">\(∀𝑥𝐴(𝑥)⇒𝐴(𝑐)\)</span>，c 是论域中某个任意客体</li>
+<li>全称附加规则 UG (全称推广)：<span
+class="math inline">\(𝐴(𝑐)⇒∀𝑥𝐴(𝑥)\)</span>，每个 c, A(c)为真</li>
+<li>存在移去规则 ES (存在指定)：<span
+class="math inline">\(∃𝑥𝐴(𝑥)⇒𝐴(𝑐)\)</span>，c
+是论域中使A(c)为真的客体</li>
+<li>存在附加规则 EG (存在推广)：<span
+class="math inline">\(𝐴(𝑐)⇒∃𝑥𝐴(𝑥)\)</span>，c
+是论域中使A(c)为真的客体</li>
+</ul></li>
+</ul>
+<h3 id="谓词演算的综合推理方法">谓词演算的综合推理方法</h3>
+<ul>
+<li>推导过程中可以引用命题演算中的P规则 和T规则</li>
+<li>如果结论是以蕴涵形式(或析取形式)给出，我们还可以使用CP规则</li>
+<li>若需消去量词，可以引用US规则和ES规则</li>
+<li>当所要求的结论可能被定量时，此时可引用UG规则和EG规则将其量词加入</li>
+<li>证明时可采用如命题演算中的直接证明方法和间接证明方法</li>
+<li>在推导过程中，对消去量词的公式或公式中不含量词的子公式，完全可以引用命题演算中的基本等价公式和基本蕴涵公式</li>
+<li>在推导过程中，对含有量词的公式可以引用谓词中的基本等价公式和基本蕴涵公式</li>
 </ul>
 
                 
