@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          26k 字
+          30k 字
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          146 分钟
+          169 分钟
         
       </span>
     
@@ -2623,6 +2623,358 @@ class="math inline">\(\iff\)</span>G的可达性矩阵P除对角元外均为1</l
 (P的转置)除对角元外均为1</li>
 <li>有向图G是弱连通的<span class="math inline">\(\iff
 A(+)A^T\)</span>图的可达性矩阵P除对角元外均为1 （A是G的邻接矩阵）</li>
+</ul>
+<h1 id="特殊图">特殊图</h1>
+<h2 id="欧拉图及其应用">欧拉图及其应用</h2>
+<h3 id="欧拉回路">欧拉回路</h3>
+<ul>
+<li>通过图中每条边一次之回路</li>
+<li>欧拉回路是经过图中所有边的回路中长度最短的回路，即为通过图中所有边的简单回路</li>
+</ul>
+<h3 id="欧拉图">欧拉图</h3>
+<ul>
+<li>有欧拉回路之图</li>
+</ul>
+<h3 id="欧拉通路">欧拉通路</h3>
+<ul>
+<li>通过图中每条边一次之通路(非回路)</li>
+<li>欧拉通路是经过图中所有边的通路中长度最短的通路，即为通过图中所有边的简单通路</li>
+</ul>
+<h3 id="定理-9">定理</h3>
+<ul>
+<li>无向连通图G是欧拉图<span
+class="math inline">\(\iff\)</span>G的所有结点的次数都是偶数</li>
+<li>无向连通图中结点u、v之间有欧拉通路<span
+class="math inline">\(\iff\)</span>图中u、v的次数是奇数，其余结点的次数均为偶数</li>
+<li>无向连通图G是欧拉图的充分必要条件是G的每个结点均具有偶次数</li>
+</ul>
+<h3 id="应用">应用</h3>
+<ul>
+<li>一笔画问题</li>
+<li>蚂蚁比赛问题</li>
+<li>邮递员问题</li>
+<li>洒水车</li>
+</ul>
+<h2 id="哈密顿图及其应用">哈密顿图及其应用</h2>
+<h3 id="哈密顿回路">哈密顿回路</h3>
+<ul>
+<li>通过图中每个结点一次之回路</li>
+<li>是经过图中所有结点的回路中长度最短的回路，即为通过图中所有结点的基本回路</li>
+</ul>
+<h3 id="哈密顿图">哈密顿图</h3>
+<ul>
+<li>有哈密顿回路之图</li>
+</ul>
+<h3 id="哈密顿通路">哈密顿通路</h3>
+<ul>
+<li>通过图中每个结点一次之通路(非回路)</li>
+<li>是经过图中所有结点的通路中长度最短的通路，即为通过图中所有结点的基本通路</li>
+</ul>
+<h3 id="定理-10">定理</h3>
+<ul>
+<li>设无向图<span
+class="math inline">\(G=(V,E)\)</span>是哈密顿图，<span
+class="math inline">\(\varnothing \subseteq V_1 \subseteq V\)</span>
+，则<span class="math inline">\(\omega(G-V_1)\leq|V_1|\)</span>
+（<strong>必要</strong>）</li>
+<li>设无向图<span class="math inline">\(G = (V,
+E)\)</span>中存在哈密顿通路，则对<span
+class="math inline">\(V\)</span>的任意非空子集<span
+class="math inline">\(V_1\)</span>，都有<span
+class="math inline">\(ω(G-V_1) ≤ |V_1| + 1\)</span></li>
+<li>设<span class="math inline">\(G = (V,
+E)\)</span>是具有n个结点的简单无向图。如果对任意两个不相邻的结点<span
+class="math inline">\(u, v∈V\)</span>，均有<span
+class="math inline">\(d(u)+d(v)≥n-1\)</span>则G中存在哈密顿通路</li>
+<li>设<span class="math inline">\(G = (V,
+E)\)</span>是具有n个结点的简单无向图：
+<ul>
+<li>如果对任意两个不相邻的结点<span class="math inline">\(u,
+v∈V\)</span>，均有<span
+class="math inline">\(d(u)+d(v)≥n\)</span>则G中存在哈密顿回路</li>
+<li><span class="math inline">\(n≥3\)</span>，如果对任意<span
+class="math inline">\(v∈V\)</span>，均有<span
+class="math inline">\(d(v)≥ n/2\)</span>，则G是哈密顿图</li>
+</ul></li>
+<li>设<span class="math inline">\(G=(V, E)\)</span>是有<span
+class="math inline">\(n(n≥2)\)</span>个结点的一些简单有向图。如果忽略G中边的方向所得的无向图中含生成子图<span
+class="math inline">\(K_n\)</span>，则有向图G中存在哈密顿通路</li>
+<li>设<span class="math inline">\(G=(V,E)\)</span>是有向图，<span
+class="math inline">\(|V|\geq
+2\)</span>，如果任意两个不同结点次数之和<span class="math inline">\(\geq
+|V|-1\)</span>，则G存在哈密顿通路(判断有向图是否是哈密顿图不要求)</li>
+</ul>
+<h3 id="哈密顿图的应用">哈密顿图的应用</h3>
+<ul>
+<li>考试安排问题</li>
+<li>推销员问题</li>
+</ul>
+<h2 id="树">树</h2>
+<h3 id="树-1">树</h3>
+<ul>
+<li>不含回路的简单连通无向图</li>
+</ul>
+<h3 id="叶">叶</h3>
+<ul>
+<li>树中次数为1的结点</li>
+</ul>
+<h3 id="森林">森林</h3>
+<ul>
+<li>每个连通分支是树的无向图</li>
+</ul>
+<h3 id="树枝">树枝</h3>
+<ul>
+<li>无向树（林）中的边</li>
+</ul>
+<h3 id="树的性质">树的性质</h3>
+<ul>
+<li>设无向图<span class="math inline">\(G = (V,E)，|V| = n，|E| =
+m\)</span>，下列各命题是等价的
+<ul>
+<li>G连通而不含回路(即G是树)</li>
+<li>G中无回路，且<span class="math inline">\(m = n-1\)</span></li>
+<li>G是连通的，且<span class="math inline">\(m = n-1\)</span></li>
+<li>G中无回路，但在G中任二结点之间增加一条新边，就得到惟一的一条基本回路</li>
+<li>G是连通的，但删除G中任一条边后，便不连通(<span
+class="math inline">\(n≥2\)</span>)</li>
+<li>G中每一对结点之间有惟一一条基本通路(<span
+class="math inline">\(n≥2\)</span>)</li>
+</ul></li>
+</ul>
+<h3 id="定理-11">定理</h3>
+<ul>
+<li>任意非平凡树<span class="math inline">\(T = (n, m)\)</span>
+都至少有两片叶</li>
+</ul>
+<h3 id="生成树">生成树</h3>
+<h4 id="定义-21">定义</h4>
+<ul>
+<li>给定图<span class="math inline">\(G = (V,
+E)\)</span>，若G的某个生成子图是树，则称之为G的生成树(Spanning
+Tree)，记为TG。生成树TG中的边称为树枝(Branch)</li>
+</ul>
+<h4 id="定理-12">定理</h4>
+<ul>
+<li>一个图<span class="math inline">\(G = (V, E)\)</span>存在生成树<span
+class="math inline">\(T _G = (V,
+E_T)\)</span>的充分必要条件是G是连通的</li>
+</ul>
+<h4 id="破圈法与避圈法">破圈法与避圈法</h4>
+<ul>
+<li><strong>破圈法算法</strong> 求连通图<span class="math inline">\(G =
+(V,
+E)\)</span>的生成树的破圈法：每次删除回路中的一条边，其删除的边的总数为<span
+class="math inline">\(m-n+1\)</span></li>
+<li><strong>避圈法算法</strong> 求连通图<span class="math inline">\(G =
+(V,
+E)\)</span>的生成树的避圈法：每次选取G中一条与已选取的边不构成回路的边，选取的边的总数为<span
+class="math inline">\(n-1\)</span></li>
+</ul>
+<h4 id="最小生成树">最小生成树</h4>
+<ul>
+<li>设<span class="math inline">\(G = (V,
+E)\)</span>是连通的赋权图，T是G的一棵生成树，T的每个树枝所赋权值之和称为T的权(Weight)，记为<span
+class="math inline">\(W(T)\)</span>。G中具有最小权的生成树称为G的最小生成树(Minimal
+Spanning Tree)</li>
+</ul>
+<h4 id="kruskal算法">Kruskal算法</h4>
+<ul>
+<li>(1)在G中选取最小权边<span
+class="math inline">\(e_1\)</span>，置<span class="math inline">\(i =
+1\)</span></li>
+<li>(2)当<span class="math inline">\(i =
+n-1\)</span>时，结束，否则转(3)</li>
+<li>(3)设已选取的边为<span class="math inline">\(e_1, e_2, …,
+e_i\)</span>，在G中选取不同于<span class="math inline">\(e_1, e_2, …,
+e_i\)</span>的边<span class="math inline">\(e_{i+1}\)</span>，使<span
+class="math inline">\(\{e_1, e_2, …, e_i,
+e_{i+1}\}\)</span>中无回路且<span
+class="math inline">\(e_{i+1}\)</span>是满足此条件的最小权边</li>
+<li>(4)置<span class="math inline">\(i = i+1\)</span>，转(2)</li>
+</ul>
+<h4 id="prim算法">Prim算法</h4>
+<ul>
+<li>(1)在G中任选取一个结点<span
+class="math inline">\(v_1\)</span>，置<span class="math inline">\(V_T =
+{v_1}, E_T = \varnothing，k = 1\)</span></li>
+<li>(2)在<span class="math inline">\(V-V_T\)</span>中选取与某个<span
+class="math inline">\(v_i∈V_T\)</span>邻接的结点<span
+class="math inline">\(v_j\)</span>，使得边<span
+class="math inline">\((v_i, v_j)\)</span>的权最小，置<span
+class="math inline">\(V_T = V_T∪{v_j}, E_T = E_T∪{(v_i, v_j)}，k =
+k+1\)</span></li>
+<li>(3)重复(2)，直到<span class="math inline">\(k = |V|\)</span></li>
+</ul>
+<h3 id="有向树">有向树</h3>
+<h4 id="定义-22">定义</h4>
+<ul>
+<li>一个有向图，若略去所有有向边的方向所得到的无向图是一棵树，则这个有向图称为有向树(Directed
+Tree)</li>
+</ul>
+<h4 id="外向树">外向树</h4>
+<ul>
+<li>T仅有一个结点的引入次数为0，该结点为T的<strong>根</strong></li>
+<li>T的其他结点的入度均为1</li>
+<li>T有一些结点的出度为0，该结点为T的<strong>叶</strong></li>
+<li>由外向树的根到结点<span
+class="math inline">\(v_i\)</span>的通路长度称为结点<span
+class="math inline">\(v_i\)</span>的<strong>级</strong></li>
+<li>若从结点<span class="math inline">\(v_i\)</span>到<span
+class="math inline">\(v_j\)</span>可达，则称<span
+class="math inline">\(v_i\)</span>是<span
+class="math inline">\(v_j\)</span>的<strong>祖先</strong>(Ancestor)，<span
+class="math inline">\(v_j\)</span>是<span
+class="math inline">\(v_i\)</span>的<strong>后代</strong>(Descendant)</li>
+<li>若<span class="math inline">\(&lt;v_i,
+v_j&gt;\)</span>是根树中的有向边，则称<span
+class="math inline">\(v_i\)</span>是<span
+class="math inline">\(v_j\)</span>的<strong>父亲</strong>(Father)，<span
+class="math inline">\(v_j\)</span>是<span
+class="math inline">\(v_i\)</span>的<strong>儿子</strong>(Son)</li>
+<li>如果两个结点是同一个结点的儿子，则称这两个结点是<strong>兄弟</strong>(Brother)</li>
+<li>若每个分支点至多有k个儿子，则称T为<strong>k元树</strong>(k-ary
+Tree)</li>
+<li>若每个分支点都恰有k个儿子，则称T为<strong>k元完全树</strong>(k-ary
+Complete Tree)</li>
+<li>若k元树T是有序的，则称T为<strong>k元有序树</strong>(k-ary Ordered
+Tree)</li>
+<li>若k元完全树T是有序的，则称T为<strong>k元有序完全树</strong>(k-ary
+Ordered Complete Tree)</li>
+</ul>
+<h4 id="内向树">内向树</h4>
+<ul>
+<li>T仅有一个结点的引出次数为0，该结点为T的<strong>根</strong></li>
+<li>T的其他结点的引出次数均为1</li>
+<li>T有一些结点的引入次数为0，该结点为T的<strong>叶</strong></li>
+</ul>
+<h4 id="有序树">有序树</h4>
+<ul>
+<li>如果在外向树中规定了每一层上结点的次序，这样的根树称为有序树</li>
+<li>一般地，在有序树中同一层中结点的次序为从左至右。有时也可以用边的次序来代替结点的次序</li>
+</ul>
+<h4 id="二元树的遍历">二元树的遍历</h4>
+<ul>
+<li>二元树的<strong>先根次序遍历算法</strong>：
+<ul>
+<li>访问根</li>
+<li>按先根次序遍历根的左子树</li>
+<li>按先根次序遍历根的右子树</li>
+</ul></li>
+<li>二元树的<strong>中根次序遍历算法</strong>:
+<ul>
+<li>按中根次序遍历根的左子树</li>
+<li>访问根</li>
+<li>按中根次序遍历根的右子树</li>
+</ul></li>
+<li>二元树的<strong>后根次序遍历算法</strong>：
+<ul>
+<li>按后根次序遍历根的左子树</li>
+<li>按后根次序遍历根的右子树</li>
+<li>访问根</li>
+</ul></li>
+</ul>
+<h4 id="根树转化为二元树算法">根树转化为二元树算法</h4>
+<ul>
+<li>从根开始，保留每个父亲同其最左边儿子的连线，撤销与别的儿子的连线</li>
+<li>兄弟间用从左向右的有向边连接</li>
+<li>按如下方法确定二元树中结点的左儿子和右儿子：直接位于给定结点下面的结点，作为左儿子，对于同一水平线上与给定结点右邻的结点，作为右儿子，依此类推</li>
+<li><strong>转化的要点</strong>：弟弟结点变右儿子结点</li>
+</ul>
+<h2 id="二分图">二分图</h2>
+<h3 id="定义-23">定义</h3>
+<ul>
+<li>若无向图<span class="math inline">\(G = (V,
+E)\)</span>的结点集V能够划分为两个子集<span class="math inline">\(V_1,
+V_2\)</span>，满足<span class="math inline">\(V_1∩V_2 =
+\varnothing\)</span>，且<span class="math inline">\(V_1∪V_2 =
+V\)</span>，使得G中任意一条边的两个结点，一个属于<span
+class="math inline">\(V_1\)</span>，另一个属于<span
+class="math inline">\(V_2\)</span>，则称G为二分图(Bigraph)。<span
+class="math inline">\(V_1\)</span>和<span
+class="math inline">\(V_2\)</span>称为<strong>互补结点子集</strong>，二分图可记为<span
+class="math inline">\(G = (V_1, V_2)\)</span></li>
+<li>二分图没有自回路</li>
+<li>平凡图和零图可看成特殊的二分图</li>
+</ul>
+<h3 id="完全二分图">完全二分图</h3>
+<ul>
+<li>在二分图<span class="math inline">\(G = (V_1,
+V_2)\)</span>中，若<span
+class="math inline">\(V_1\)</span>中的每个结点与<span
+class="math inline">\(V_2\)</span>中的每个结点都有且仅有一条边相关联，则称二分图G为完全二分图(Complete
+Bigraph)，记为<span class="math inline">\(K_{m,n}\)</span>，其中，<span
+class="math inline">\(m = |V_1|，n = |V_2|\)</span></li>
+</ul>
+<h3 id="二分图的判定">二分图的判定</h3>
+<ul>
+<li>无向图<span class="math inline">\(G = (V,
+E)\)</span>为二分图的<strong>充分必要条件</strong>是G的所有回路的长度均为偶数</li>
+<li><strong>无向图G
+不是二分图的充分必要条件是G中存在长度为奇数的回路</strong></li>
+</ul>
+<h3 id="匹配">匹配</h3>
+<ul>
+<li>在二分图<span class="math inline">\(G = (V_1, V_2)\)</span>中，<span
+class="math inline">\(V_1 = \{v_1, v_2, …,
+v_q\}\)</span>，若存在E的子集<span class="math inline">\(E’= \{(v_1,
+v_1’)，(v_2, v_2’)，…，(v_q, v_q’)，其中v_1’, v_2’, …, v_q’
+是V_2中的q个不同的结点\}\)</span>，则称G的子图<span
+class="math inline">\(G’ = (V_1, E’, V_2)\)</span>为从<span
+class="math inline">\(V_1\)</span>到<span
+class="math inline">\(V_2\)</span>的一个<strong>完全匹配</strong>(Complete
+Matching)，简称匹配</li>
+</ul>
+<h2 id="平面图">平面图</h2>
+<h3 id="定义-24">定义</h3>
+<ul>
+<li>如果能把一个无向图G的所有结点和边画在平面上，使得任何两边除公共结点外没有其他交叉点，则称G为平面图(Plane
+Graph)，否则称G为非平面图(Nonplanar
+Graph)。<strong>当且仅当一个图的每个连通分支都是平面图时，这个图是平面图</strong></li>
+</ul>
+<h3 id="判断图是否是可平面图的方法">判断图是否是可平面图的方法</h3>
+<h4 id="观察法">观察法</h4>
+<h4 id="欧拉公式">欧拉公式</h4>
+<ul>
+<li>在平面图G的一个平面表示中，
+<ul>
+<li>由边所包围的其内部不包含图的结点和边的区域，称为G的<strong>一个面</strong>(Surface)</li>
+<li>包围该面的诸边所构成的回路称为这个面的<strong>边界</strong>(Bound)</li>
+<li>面r的边界的长度称为该面的<strong>次数</strong>(Degree)，记为<span
+class="math inline">\(D(r)\)</span></li>
+<li>区域面积有限的面称为<strong>有限面</strong>(Finite
+Surface)，区域面积无限的面称为<strong>无限面</strong>(Infinite
+Surface)</li>
+<li>平面图有且仅有一个无限面</li>
+</ul></li>
+<li>平面图中所有面的次数之和等于边数的二倍</li>
+<li>设<span class="math inline">\(G = (V,
+E)\)</span>是连通平面图，若它有<span
+class="math inline">\(n\)</span>个结点、<span
+class="math inline">\(m\)</span>条边和<span
+class="math inline">\(r\)</span>个面，则有<span
+class="math inline">\(n-m+r = 2\)</span></li>
+<li>设设G是一个<span
+class="math inline">\((n,m)\)</span>简单连通平面图，若<span
+class="math inline">\(m＞1\)</span>，则有<span
+class="math inline">\(m≤3n-6\)</span></li>
+<li>一个简单连通图，若不满足<span
+class="math inline">\(m≤3n-6\)</span>，则一定是非平面图</li>
+</ul>
+<h4 id="库拉托夫斯基定理">库拉托夫斯基定理</h4>
+<ul>
+<li>一个图是平面图的<strong>充分必要条件</strong>是它的任何子图都不可能收缩为<span
+class="math inline">\(K_5\)</span>或<span
+class="math inline">\(K_{3,3}\)</span></li>
+<li>一个图是非平面图的充分必要条件是它存在一个能收缩为<span
+class="math inline">\(K_5\)</span>或<span
+class="math inline">\(K_{3,3}\)</span>的子图</li>
+<li>我们将<span class="math inline">\(K_5\)</span>和<span
+class="math inline">\(K_{3,3}\)</span>称为<strong>库拉托夫斯基图</strong>(Kuratowski
+Graph)</li>
+</ul>
+<h3 id="平面图的应用">平面图的应用</h3>
+<ul>
+<li>公共事业问题</li>
 </ul>
 
                 
