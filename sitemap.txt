@@ -14,6 +14,6 @@ https://ivansnow02.github.io/tags/Math/
 https://ivansnow02.github.io/tags/Discrete-Mathematics/
 https://ivansnow02.github.io/categories/coding/
 https://ivansnow02.github.io/categories/test/
-https://ivansnow02.github.io/categories/coding/Redis/
 https://ivansnow02.github.io/categories/English/
+https://ivansnow02.github.io/categories/coding/Redis/
 https://ivansnow02.github.io/categories/Math/
