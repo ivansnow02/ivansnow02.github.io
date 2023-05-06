@@ -58,7 +58,7 @@
 
   <url>
     <loc>https://ivansnow02.github.io/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,49 +66,49 @@
   
   <url>
     <loc>https://ivansnow02.github.io/tags/Redis/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ivansnow02.github.io/tags/coding/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ivansnow02.github.io/tags/test/</loc>
-    <lastmod>2023-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/tags/English/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ivansnow02.github.io/tags/vim/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/tags/English/</loc>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ivansnow02.github.io/tags/Math/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ivansnow02.github.io/tags/Discrete-Mathematics/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -117,35 +117,35 @@
   
   <url>
     <loc>https://ivansnow02.github.io/categories/coding/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ivansnow02.github.io/categories/test/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ivansnow02.github.io/categories/English/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ivansnow02.github.io/categories/coding/Redis/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ivansnow02.github.io/categories/Math/</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
