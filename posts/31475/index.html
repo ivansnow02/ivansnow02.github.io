@@ -18,11 +18,11 @@
   <meta name="author" content="Ivan Snow">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Friendship is an essential aspect of a student’s life that fosters personal growth and emotional well-being by providing support, encouragement, and companionship. However, making friends can be da">
+    <meta name="description" content="Redis的通用命令  通过help [command] 可以查看一个命令的具体用法  通用指令是部分数据类型的，都可以使用的指令，常见的有：  KEYS：查看符合模板的所有key，可以使用通配符（模糊查询效率不高，单线程阻塞请求）  KEYS * 查询所有 KEYS a* 查询以a开头的所有  DEL：删除一个指定的key，可删除多个，返回值是删除个数 EXISTS：判断">
   
   
   
-  <title>the best way for a student to make friends - Snow&#39;s Blog</title>
+  <title>Redis的快速入门 - Snow&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,7 +205,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="the best way for a student to make friends"></span>
+            <span id="subtitle" data-typed-text="Redis的快速入门"></span>
           
         </div>
 
@@ -221,8 +221,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-05-04 11:31" pubdate>
-          2023年5月4日 中午
+        <time datetime="2023-05-08 20:16" pubdate>
+          2023年5月8日 晚上
         </time>
       </span>
     
@@ -233,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          442 字
         
       </span>
     
@@ -244,7 +244,7 @@
         
         
         
-          8 分钟
+          3 分钟
         
       </span>
     
@@ -290,39 +290,37 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">the best way for a student to make friends</h1>
+            <h1 style="display: none">Redis的快速入门</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Friendship is an essential aspect of a student’s life that fosters
-personal growth and emotional well-being by providing support,
-encouragement, and companionship. However, making friends can be
-daunting for some students, especially when seeking meaningful
-connections. Fortunately, there are some effective strategies that you
-can use to make friends.</p>
-<p>The first step is <strong>to be open and approachable</strong>. For
-example, a simple smile can break the ice between strangers. A friendly
-attitude creates a comfortable atmosphere and makes others feel
-welcomed. By being approachable, you signal to others that you are open
-to conversations and building connections.</p>
-<p><strong>Participating actively in extracurricular activities and
-clubs</strong> is another proven way of making friends that enriches
-your academic and social life. By engaging in shared interests, you will
-bond with like-minded people and nurture new friendships.</p>
-<p>It’s important to remember that <em>a friend without faults will
-never be found</em>. <strong>Try to be patient and tolerant of diversity
-among people</strong>. Do not judge people based on appearance,
-background, or opinions. Try to learn from others and respect
-differences.</p>
-<p><em>Be slow in choosing a friend</em>. Building meaningful
-connections requires <strong>patience and persistence</strong>. Do not
-be discouraged if friendships do not form immediately. Continue putting
-yourself in social situations and engaging with others.</p>
-<p><em>The only way to have a friend is to be one</em>. I believe the
-best way for students to make friends is to become their best selves.
-Therefore, by following these strategies, you will not only form lasting
-bonds and relationships, but also form a whole new self.</p>
+                <h2 id="redis的通用命令">Redis的通用命令</h2>
+<blockquote>
+<p>通过<code>help [command]</code> 可以查看一个命令的具体用法</p>
+</blockquote>
+<p>通用指令是部分数据类型的，都可以使用的指令，常见的有：</p>
+<ul>
+<li><code>KEYS</code>：查看符合模板的所有<code>key</code>，可以使用通配符（模糊查询效率不高，单线程阻塞请求）
+<ul>
+<li><code>KEYS *</code> 查询所有</li>
+<li><code>KEYS a*</code> 查询以a开头的所有</li>
+</ul></li>
+<li><code>DEL</code>：删除一个指定的<code>key</code>，可删除多个，返回值是删除个数</li>
+<li><code>EXISTS</code>：判断key是否存在，可判断多个</li>
+<li><code>EXPIRE</code>：给一个key设置有效期，有效期到期时该key会被自动删除（Redis基于内存存储，节省内存，防止内存占满）</li>
+<li><code>TTL</code>( Time To
+Live)：查看一个KEY的剩余有效期，返回<code>-1</code>表示永久有效</li>
+</ul>
+<h2 id="string类型">String类型</h2>
+<p>String类型是Redis中最简单的存储类型。
+其<code>value</code>是字符串，不过根据字符串的格式不同，又可以分为3类：</p>
+<ul>
+<li>string：普通字符串</li>
+<li>int：整数类型，可以做自增、自减操作</li>
+<li>float：浮点类型，可以做自增、自减操作</li>
+</ul>
+<p>底层都是<strong>字节数组</strong>形式存储，只不过是编码方式不同。字符串类型的最大空间不能超过512m.</p>
 
                 
               </div>
@@ -341,8 +339,15 @@ bonds and relationships, but also form a whole new self.</p>
     
       <span class="category-chain">
         
-  <a href="/categories/English/" class="category-chain-item">English</a>
+  <a href="/categories/coding/" class="category-chain-item">coding</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/coding/Redis/" class="category-chain-item">Redis</a>
+  
+  
+
   
 
       </span>
@@ -356,7 +361,9 @@ bonds and relationships, but also form a whole new self.</p>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/English/">#English</a>
+        <a href="/tags/Redis/">#Redis</a>
+      
+        <a href="/tags/coding/">#coding</a>
       
     </div>
   
@@ -368,8 +375,8 @@ bonds and relationships, but also form a whole new self.</p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>the best way for a student to make friends</div>
-      <div>https://ivansnow02.github.io/posts/42679/</div>
+      <div>Redis的快速入门</div>
+      <div>https://ivansnow02.github.io/posts/31475/</div>
     </div>
     <div class="license-meta">
       
@@ -381,7 +388,7 @@ bonds and relationships, but also form a whole new self.</p>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年5月4日</div>
+          <div>2023年5月8日</div>
         </div>
       
       
@@ -413,18 +420,12 @@ bonds and relationships, but also form a whole new self.</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/31475/" title="Redis的快速入门">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Redis的快速入门</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/12732/" title="离散数学复习">
-                        <span class="hidden-mobile">离散数学复习</span>
+                      <a href="/posts/42679/" title="the best way for a student to make friends">
+                        <span class="hidden-mobile">the best way for a student to make friends</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

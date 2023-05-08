@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Redis的快速入门</title>
+    <link href="/posts/31475/"/>
+    <url>/posts/31475/</url>
+    
+    <content type="html"><![CDATA[<h2 id="redis的通用命令">Redis的通用命令</h2><blockquote><p>通过<code>help [command]</code> 可以查看一个命令的具体用法</p></blockquote><p>通用指令是部分数据类型的，都可以使用的指令，常见的有：</p><ul><li><code>KEYS</code>：查看符合模板的所有<code>key</code>，可以使用通配符（模糊查询效率不高，单线程阻塞请求）<ul><li><code>KEYS *</code> 查询所有</li><li><code>KEYS a*</code> 查询以a开头的所有</li></ul></li><li><code>DEL</code>：删除一个指定的<code>key</code>，可删除多个，返回值是删除个数</li><li><code>EXISTS</code>：判断key是否存在，可判断多个</li><li><code>EXPIRE</code>：给一个key设置有效期，有效期到期时该key会被自动删除（Redis基于内存存储，节省内存，防止内存占满）</li><li><code>TTL</code>( Time ToLive)：查看一个KEY的剩余有效期，返回<code>-1</code>表示永久有效</li></ul><h2 id="string类型">String类型</h2><p>String类型是Redis中最简单的存储类型。其<code>value</code>是字符串，不过根据字符串的格式不同，又可以分为3类：</p><ul><li>string：普通字符串</li><li>int：整数类型，可以做自增、自减操作</li><li>float：浮点类型，可以做自增、自减操作</li></ul><p>底层都是<strong>字节数组</strong>形式存储，只不过是编码方式不同。字符串类型的最大空间不能超过512m.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>coding</category>
+      
+      <category>Redis</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Redis</tag>
+      
+      <tag>coding</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>the best way for a student to make friends</title>
     <link href="/posts/42679/"/>
     <url>/posts/42679/</url>
