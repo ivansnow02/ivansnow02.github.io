@@ -352,7 +352,7 @@ Live)：查看一个KEY的剩余有效期，返回<code>-1</code>表示永久有
 </ul>
 <h3 id="key结构">Key结构</h3>
 <p>Redis的<code>key</code>允许有多个单词形成层级结构，多个单词之间用<code>:</code>隔开，格式如下：</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ruby"><span class="hljs-title class_">Key1</span><span class="hljs-symbol">:Key2</span><span class="hljs-symbol">:Key3</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs JSON">Key1<span class="hljs-punctuation">:</span>Key2<span class="hljs-punctuation">:</span>Key3<br></code></pre></td></tr></table></figure>
 <p>这个格式并非固定，也可以根据自己的需求来删除或添加词条。这样以来，我们就可以把不同类型的数据区分开了。从而避免了<code>key</code>的冲突问题。</p>
 <p>如果<code>Value</code>是一个Java对象，例如一个<code>User</code>对象，则可以将对象序列化为<code>JSON</code>字符串后存储</p>
 <table>

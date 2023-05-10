@@ -20,6 +20,24 @@
   </url>
   
   <url>
+    <loc>https://ivansnow02.github.io/posts/60968/</loc>
+    
+    <lastmod>2023-05-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/posts/17687/</loc>
+    
+    <lastmod>2023-05-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ivansnow02.github.io/posts/12732/</loc>
     
     <lastmod>2023-05-06</lastmod>
@@ -41,15 +59,6 @@
     <loc>https://ivansnow02.github.io/posts/14492/</loc>
     
     <lastmod>2023-04-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/posts/60968/</loc>
-    
-    <lastmod>2023-04-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -140,6 +149,13 @@
   
   <url>
     <loc>https://ivansnow02.github.io/tags/trash/</loc>
+    <lastmod>2023-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/tags/Java/</loc>
     <lastmod>2023-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
