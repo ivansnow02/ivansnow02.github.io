@@ -18,11 +18,11 @@
   <meta name="author" content="Ivan Snow">
   <meta name="keywords" content="">
   
-    <meta name="description" content="就是黑马程序员的Redis教程里的黑马点评的项目，前面就不讲了，直接开始正题。 基于Session实现登录流程 分为三个步骤：  发送验证码 短信验证码登录、注册 校验登录状态  发送验证码 逻辑： 用户在提交手机号后，会校验手机号是否合法，如果不合法，则要求用户重新输入手机号 如果手机号合法，后台此时生成对应的验证码，同时将验证码进行保存，然后再通过短信的方式将验证码发送给">
+    <meta name="description" content="As Aristotle said, “Life needs sports.” Sport, in its various forms, is an integral part of human culture that transcends geographical, cultural, and linguistic boundaries. It is not only an avenue">
   
   
   
-  <title>Redis实战——黑马点评 - Snow&#39;s Blog</title>
+  <title>Sports_Life_Lesson - Snow&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,7 +205,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Redis实战——黑马点评"></span>
+            <span id="subtitle" data-typed-text="Sports_Life_Lesson"></span>
           
         </div>
 
@@ -221,8 +221,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-05-12 17:47" pubdate>
-          2023年5月12日 下午
+        <time datetime="2023-05-14 10:16" pubdate>
+          2023年5月14日 上午
         </time>
       </span>
     
@@ -233,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.1k 字
+          1.5k 字
         
       </span>
     
@@ -244,7 +244,7 @@
         
         
         
-          18 分钟
+          9 分钟
         
       </span>
     
@@ -290,50 +290,39 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Redis实战——黑马点评</h1>
+            <h1 style="display: none">Sports_Life_Lesson</h1>
             
             
               <div class="markdown-body">
                 
-                <p>就是黑马程序员的Redis教程里的黑马点评的项目，前面就不讲了，直接开始正题。</p>
-<h1 id="基于session实现登录流程">基于Session实现登录流程</h1>
-<p>分为三个步骤：</p>
-<ul>
-<li>发送验证码</li>
-<li>短信验证码登录、注册</li>
-<li>校验登录状态</li>
-</ul>
-<h2 id="发送验证码">发送验证码</h2>
-<h3 id="逻辑">逻辑：</h3>
-<p>用户在提交手机号后，会校验手机号是否合法，如果不合法，则要求用户重新输入手机号</p>
-<p>如果手机号合法，后台此时生成对应的验证码，同时将验证码进行保存，然后再通过短信的方式将验证码发送给用户</p>
-<img src="/posts/63610/1.png" srcset="/img/loading.gif" lazyload class="" title="发送验证码">
-<h3 id="代码">代码</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Override</span><br><span class="hljs-keyword">public</span> Result <span class="hljs-title function_">sendCode</span><span class="hljs-params">(String phone, HttpSession session)</span> &#123;<br>    <span class="hljs-comment">//校验手机号，不符合就返回错误，符合就生成验证码</span><br>    <span class="hljs-keyword">if</span> (RegexUtils.isPhoneInvalid(phone))&#123;<br>        <span class="hljs-keyword">return</span> Result.fail(<span class="hljs-string">&quot;手机号格式错误！&quot;</span>);<br>    &#125;<br>    <span class="hljs-type">String</span> <span class="hljs-variable">code</span> <span class="hljs-operator">=</span> RandomUtil.randomNumbers(<span class="hljs-number">6</span>);<br>    <span class="hljs-comment">//保存验证码到session</span><br>    session.setAttribute(<span class="hljs-string">&quot;code&quot;</span>,code);<br>    <span class="hljs-comment">//发送验证码</span><br>    log.debug(<span class="hljs-string">&quot;发送短信验证码成功，验证码：&quot;</span> + code);<br>    <span class="hljs-keyword">return</span> Result.ok();<br>&#125;<br></code></pre></td></tr></table></figure>
-<h2 id="短信验证码登录注册">短信验证码登录、注册</h2>
-<h3 id="逻辑-1">逻辑：</h3>
-<p>用户将验证码和手机号进行输入，后台从session中拿到当前验证码，然后和用户输入的验证码进行校验，如果不一致，则无法通过校验，如果一致，则后台根据手机号查询用户，如果用户不存在，则为用户创建账号信息，保存到数据库，无论是否存在，都会将用户信息保存到session中，方便后续获得当前登录信息</p>
-<img src="/posts/63610/2.png" srcset="/img/loading.gif" lazyload class="" title="短信验证码登录、注册">
-<h3 id="代码-1">代码</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Override</span><br><span class="hljs-keyword">public</span> Result <span class="hljs-title function_">login</span><span class="hljs-params">(LoginFormDTO loginForm, HttpSession session)</span> &#123;<br>    <span class="hljs-comment">//校验手机号和验证码</span><br>    <span class="hljs-type">String</span> <span class="hljs-variable">phone</span> <span class="hljs-operator">=</span> loginForm.getPhone();<br>    <span class="hljs-keyword">if</span> (RegexUtils.isPhoneInvalid(phone))&#123;<br>        <span class="hljs-keyword">return</span> Result.fail(<span class="hljs-string">&quot;手机号格式错误！&quot;</span>);<br>    &#125;<br>    <span class="hljs-type">Object</span> <span class="hljs-variable">cacheCode</span> <span class="hljs-operator">=</span> session.getAttribute(<span class="hljs-string">&quot;code&quot;</span>);<br>    <span class="hljs-type">String</span> <span class="hljs-variable">code</span> <span class="hljs-operator">=</span> loginForm.getCode();<br>    <span class="hljs-comment">//不一致，报错</span><br>    <span class="hljs-keyword">if</span>(cacheCode == <span class="hljs-literal">null</span> || !cacheCode.toString().equals(code)) &#123;<br>        <span class="hljs-keyword">return</span> Result.fail(<span class="hljs-string">&quot;验证码错误&quot;</span>);<br>    &#125;<br><br>    <span class="hljs-comment">//一致，根据手机号查用户</span><br>    <span class="hljs-type">User</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> query().eq(<span class="hljs-string">&quot;phone&quot;</span>, phone).one();<br><br>    <span class="hljs-comment">//判断是否存在</span><br>    <span class="hljs-keyword">if</span> (user == <span class="hljs-literal">null</span>) &#123;<br>        <span class="hljs-comment">//不存在，创建用户</span><br>        user = createUserWithPhone(phone);<br>    &#125;<br>    session.setAttribute(<span class="hljs-string">&quot;user&quot;</span>, BeanUtil.copyProperties(user, UserDTO.class));<br>    <span class="hljs-keyword">return</span> Result.ok();<br>&#125;<br></code></pre></td></tr></table></figure>
-<h2 id="校验登录状态">校验登录状态</h2>
-<p>校验登录状态需要配置拦截器来实现登录拦截功能</p>
-<h3 id="原理">原理</h3>
-<p>当用户发起请求时，会访问我们像tomcat注册的端口，任何程序想要运行，都需要有一个线程对当前端口号进行监听，tomcat也不例外，当监听线程知道用户想要和tomcat连接连接时，那会由监听线程创建socket连接，socket都是成对出现的，用户通过socket像互相传递数据，当tomcat端的socket接受到数据后，此时监听线程会从tomcat的线程池中取出一个线程执行用户请求，在我们的服务部署到tomcat后，线程会找到用户想要访问的工程，然后用这个线程转发到工程中的controller，service，dao中，并且访问对应的DB，在用户执行完请求后，再统一返回，再找到tomcat端的socket，再将数据写回到用户端的socket，完成请求和响应。</p>
-<p>每个用户其实对应都是去找tomcat线程池中的一个线程来完成工作的，
-使用完成后再进行回收，既然每个请求都是独立的，所以在每个用户去访问我们的工程时，我们可以使用threadlocal来做到线程隔离，每个线程操作自己的一份数据</p>
-<h3 id="逻辑-2">逻辑</h3>
-<p>用户在请求时候，会从cookie中携带者JsessionId到后台，后台通过JsessionId从session中拿到用户信息，如果没有session信息，则进行拦截，如果有session信息，则将用户信息保存到threadLocal中，并且放行</p>
-<img src="/posts/63610/3.png" srcset="/img/loading.gif" lazyload class="" title="校验登录状态">
-<h3 id="代码-2">代码</h3>
-<ul>
-<li>首先实现HandlerInterceptor接口</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">LoginInterceptor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">HandlerInterceptor</span> &#123;<br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">preHandle</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response, Object handler)</span> <span class="hljs-keyword">throws</span> Exception &#123;<br>        <span class="hljs-comment">//Get session</span><br>        <span class="hljs-type">HttpSession</span> <span class="hljs-variable">session</span> <span class="hljs-operator">=</span> request.getSession();<br>        <span class="hljs-comment">//Get user from session</span><br>        <span class="hljs-type">Object</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> session.getAttribute(<span class="hljs-string">&quot;user&quot;</span>);<br>        <span class="hljs-comment">//if user exists</span><br>        <span class="hljs-keyword">if</span> (user == <span class="hljs-literal">null</span>) &#123;<br>            <span class="hljs-comment">//not exists, reject, return 401</span><br>            response.setStatus(<span class="hljs-number">401</span>);<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        &#125;<br>        <span class="hljs-comment">//save user in ThreadLocal</span><br>        UserHolder.saveUser((UserDTO) user);<br><br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>    &#125;<br><br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">afterCompletion</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)</span> <span class="hljs-keyword">throws</span> Exception &#123;<br>        UserHolder.removeUser();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<ul>
-<li>然后是MvcConfig</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Configuration</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MvcConfig</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">WebMvcConfigurer</span> &#123;<br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">addInterceptors</span><span class="hljs-params">(InterceptorRegistry registry)</span> &#123;<br>        registry.addInterceptor(<span class="hljs-keyword">new</span> <span class="hljs-title class_">LoginInterceptor</span>()).excludePathPatterns(<br>                <span class="hljs-string">&quot;/user/code&quot;</span>,<br>                <span class="hljs-string">&quot;/user/login&quot;</span>,<br>                <span class="hljs-string">&quot;/blog/hot&quot;</span>,<br>                <span class="hljs-string">&quot;/shop/**&quot;</span>,<br>                <span class="hljs-string">&quot;/shop-type/**&quot;</span>,<br>                <span class="hljs-string">&quot;/voucher/**&quot;</span><br>        );<br>    &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure>
+                <p>As Aristotle said, “Life needs sports.” Sport, in its various forms,
+is an integral part of human culture that transcends geographical,
+cultural, and linguistic boundaries. It is not only an avenue to
+maintain a better figure or a source of entertainment, but also a
+powerful means of character development and learning essential life
+lessons. Today, we will discuss some of the most important life lessons
+that sport can offer us beyond the playing field or court.</p>
+<p>First and foremost, sport teaches us the value of hard work and
+perseverance. Higher, Faster, Stronger - the road to the top never comes
+to an end and being an athlete requires years of training, sweating and
+discipline. These qualities of dedication and hard work are essential
+for success in any endeavor, not just sport. When facing challenges,
+athletes learn to push themselves through adversity and focus on their
+goals.</p>
+<p>Another lesson sport can teach us is how to work as a team. Most
+sports require cooperation as a team to achieve a common goal, such as
+scoring points or winning a match. Learning to work together,
+communicate effectively, and trust one another is crucial for success in
+any team-oriented environment.</p>
+<p>Additionally, sport helps individuals develop a strong sense of
+self-confidence and self-awareness. As athletes improve their skills and
+achieve personal milestones, they gain confidence in their abilities,
+which can carry over to other areas of life. At the same time, sport
+requires individuals to recognize their strengths and weaknesses,
+promoting self-awareness and personal growth.</p>
+<p>Sport has the power to change the world. The lessons learned on the
+field can have a lasting impact on an individual’s life and guide them
+to success.</p>
 
                 
               </div>
@@ -352,15 +341,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/coding/" class="category-chain-item">coding</a>
+  <a href="/categories/English/" class="category-chain-item">English</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/coding/Redis/" class="category-chain-item">Redis</a>
-  
-  
-
   
 
       </span>
@@ -374,13 +356,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Redis/">#Redis</a>
-      
-        <a href="/tags/coding/">#coding</a>
-      
-        <a href="/tags/Java/">#Java</a>
-      
-        <a href="/tags/Spring/">#Spring</a>
+        <a href="/tags/English/">#English</a>
       
     </div>
   
@@ -392,8 +368,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Redis实战——黑马点评</div>
-      <div>https://ivansnow02.github.io/posts/63610/</div>
+      <div>Sports_Life_Lesson</div>
+      <div>https://ivansnow02.github.io/posts/54039/</div>
     </div>
     <div class="license-meta">
       
@@ -405,7 +381,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年5月12日</div>
+          <div>2023年5月14日</div>
         </div>
       
       
@@ -437,18 +413,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/54039/" title="Sports_Life_Lesson">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Sports_Life_Lesson</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/17687/" title="SpringDataRedis">
-                        <span class="hidden-mobile">SpringDataRedis</span>
+                      <a href="/posts/63610/" title="Redis实战——黑马点评">
+                        <span class="hidden-mobile">Redis实战——黑马点评</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
