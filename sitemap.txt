@@ -1,3 +1,4 @@
+https://ivansnow02.github.io/posts/55223/
 https://ivansnow02.github.io/posts/63610/
 https://ivansnow02.github.io/posts/54039/
 https://ivansnow02.github.io/posts/17687/
@@ -21,9 +22,11 @@ https://ivansnow02.github.io/tags/learning/
 https://ivansnow02.github.io/tags/trash/
 https://ivansnow02.github.io/tags/Math/
 https://ivansnow02.github.io/tags/Discrete-Mathematics/
+https://ivansnow02.github.io/tags/data-structure/
 https://ivansnow02.github.io/categories/coding/
 https://ivansnow02.github.io/categories/test/
 https://ivansnow02.github.io/categories/coding/Redis/
 https://ivansnow02.github.io/categories/English/
 https://ivansnow02.github.io/categories/trash/
 https://ivansnow02.github.io/categories/Math/
+https://ivansnow02.github.io/categories/coding/data-structure/
