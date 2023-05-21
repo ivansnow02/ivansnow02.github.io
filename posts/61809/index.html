@@ -18,11 +18,11 @@
   <meta name="author" content="Ivan Snow">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这是一系列关于数据结构的笔记博客，为了练习自己的代码能力，咱将尽可能不使用C++来实现这些数据结构  线性表的简单介绍  线性表是具有相同特性的数据元素的一个有限序列。 所有数据元素类型相同。 线性表是有限个数据元素构成的。 线性表中数据元素与位置相关，即每个数据元素有唯一的序号。  咱们的线性表需要如下的方法： 123456789createList(a[])：由整数数组">
+    <meta name="description" content="本文来自Coursera的Algorithms, Part I课程  动态连通性 我们假设“相连”是一种等价关系，这也就意味 着它具有：  自反性：p 和 p 是相连的 对称性：如果 p 和 q 是相连的，那么 q 和 p 也是相连的 传递性：如果 p 和 q 是相连的且 q 和 r 是相连的，那么 p 和 r 也是相连的  连通分量 连通分量是相连元素组成的最大集合">
   
   
   
-  <title>数据结构之线性表 - Snow&#39;s Blog</title>
+  <title>并查集 - Snow&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,7 +205,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="数据结构之线性表"></span>
+            <span id="subtitle" data-typed-text="并查集"></span>
           
         </div>
 
@@ -221,8 +221,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-05-17 15:35" pubdate>
-          2023年5月17日 下午
+        <time datetime="2023-05-21 18:02" pubdate>
+          2023年5月21日 晚上
         </time>
       </span>
     
@@ -233,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.4k 字
+          1.9k 字
         
       </span>
     
@@ -244,7 +244,7 @@
         
         
         
-          14 分钟
+          11 分钟
         
       </span>
     
@@ -290,46 +290,190 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">数据结构之线性表</h1>
+            <h1 style="display: none">并查集</h1>
             
             
               <div class="markdown-body">
                 
                 <blockquote>
-<p>这是一系列关于数据结构的笔记博客，为了练习自己的代码能力，咱将尽可能不使用C++来实现这些数据结构</p>
+<p>本文来自Coursera的<a
+target="_blank" rel="noopener" href="https://www.coursera.org/learn/algorithms-part1/home/welcome">Algorithms,
+Part I</a>课程</p>
 </blockquote>
-<h2 id="线性表的简单介绍">线性表的简单介绍</h2>
+<h2 id="动态连通性">动态连通性</h2>
+<h3
+id="我们假设相连是一种等价关系这也就意味-着它具有">我们假设“相连”是一种等价关系，这也就意味
+着它具有：</h3>
 <ul>
-<li>线性表是具有相同特性的数据元素的一个有限序列。</li>
-<li>所有数据元素类型相同。</li>
-<li>线性表是有限个数据元素构成的。</li>
-<li>线性表中数据元素与位置相关，即每个数据元素有唯一的序号。</li>
+<li>自反性：p 和 p 是相连的</li>
+<li>对称性：如果 p 和 q 是相连的，那么 q 和 p 也是相连的</li>
+<li>传递性：如果 p 和 q 是相连的且 q 和 r 是相连的，那么 p 和 r
+也是相连的</li>
 </ul>
-<p>咱们的线性表需要如下的方法：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs NONE">createList(a[])：由整数数组a中的全部元素建立线性表的相应存储结构。<br>add(e)：将元素e添加到线性表末尾。<br>getLength()：求线性表的长度。<br>getElem(i)：求线性表中序号为i的元素。<br>setElem(i, e)：设置线性表中序号i的元素值为e。<br>getNo(e)：求线性表中第一个值为e的元素的序号。<br>insert(i, e)：在线性表中插入数据元素e作为第i个元素。<br>delete(i)：在线性表中删除第i个数据元素。<br>dispList()：输出线性表的所有元素。<br></code></pre></td></tr></table></figure>
-<h2 id="顺序表">顺序表</h2>
-<p>顺序表是线性表中的顺序存储结构，通常是一段连续的空间。</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">const</span> initCap = <span class="hljs-number">5</span><br><span class="hljs-keyword">type</span> SqList <span class="hljs-keyword">struct</span> &#123;<br>	data []<span class="hljs-type">int</span><br>	capacity <span class="hljs-type">int</span><br>	length <span class="hljs-type">int</span><br>&#125;<br></code></pre></td></tr></table></figure>
-<h3 id="方法">方法</h3>
-<h4 id="构造函数伪">构造函数(伪)</h4>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewSqList</span><span class="hljs-params">()</span></span> SqList &#123;<br>    <span class="hljs-keyword">return</span> SqList&#123;<br>        data:     <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">interface</span>&#123;&#125;, initCap),<span class="hljs-comment">//用切片将就着吧</span><br>        capacity: initCap,<br>        Length:   <span class="hljs-number">0</span>,<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<h4 id="重新调整容量">重新调整容量</h4>
-<p><del>其实是多此一举</del></p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(list *SqList)</span></span> reCap(newCap <span class="hljs-type">int</span>) &#123;<br>    <span class="hljs-keyword">if</span> newCap &lt;= <span class="hljs-number">0</span> &#123;<br>        <span class="hljs-keyword">return</span><br>    &#125;<br>    list.capacity = newCap<br>    <span class="hljs-keyword">var</span> newData = <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">interface</span>&#123;&#125;, newCap)<br>    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; list.Length; i++ &#123;<br>        newData[i] = list.data[i]<br>    &#125;<br>    list.data = newData<br>&#125;<br></code></pre></td></tr></table></figure>
-<h4 id="建表">建表</h4>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(list *SqList)</span></span> CreateList(a []<span class="hljs-keyword">interface</span>&#123;&#125;, n <span class="hljs-type">int</span>) &#123;<br>    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; n; i++ &#123;<br>        <span class="hljs-keyword">if</span> list.Length == list.capacity &#123;<br>            list.reCap(<span class="hljs-number">2</span> * list.Length)<br>        &#125;<br>        list.data[list.Length] = a[i]<br>        list.Length++<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<h4 id="添加元素">添加元素</h4>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(list *SqList)</span></span> Add(e <span class="hljs-keyword">interface</span>&#123;&#125;) &#123;<br>    <span class="hljs-keyword">if</span> list.Length == list.capacity &#123;<br>        list.reCap(<span class="hljs-number">2</span> * list.Length)<br>    &#125;<br>    list.data[list.Length] = e<br>    list.Length++<br>&#125;<br></code></pre></td></tr></table></figure>
-<h4 id="修改元素">修改元素</h4>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(list *SqList)</span></span> SetElem(i <span class="hljs-type">int</span>, e <span class="hljs-keyword">interface</span>&#123;&#125;) <span class="hljs-type">bool</span> &#123;<br>    <span class="hljs-keyword">if</span> i &lt;= <span class="hljs-number">0</span> || i &gt;= list.Length &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span><br>    &#125;<br>    list.data[i] = e<br>    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span><br>&#125;<br></code></pre></td></tr></table></figure>
-<h4 id="搜索">搜索</h4>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(list *SqList)</span></span> GetNo(e <span class="hljs-keyword">interface</span>&#123;&#125;) <span class="hljs-type">int</span> &#123;<br>    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; list.Length; i++ &#123;<br>        <span class="hljs-keyword">if</span> list.data[i] == e &#123;<br>            <span class="hljs-keyword">return</span> i<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span><br>&#125;<br></code></pre></td></tr></table></figure>
-<h4 id="插入">插入</h4>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(list *SqList)</span></span> Insert(i <span class="hljs-type">int</span>, e <span class="hljs-keyword">interface</span>&#123;&#125;) <span class="hljs-type">bool</span> &#123;<br>    <span class="hljs-keyword">if</span> i &lt;= <span class="hljs-number">0</span> || i &gt;= list.Length &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span><br>    &#125;<br>    <span class="hljs-keyword">if</span> list.Length == list.capacity &#123;<br>        list.reCap(<span class="hljs-number">2</span> * list.Length)<br>    &#125;<br>    <span class="hljs-keyword">for</span> j := list.Length; j &gt; i; j-- &#123;<br>        list.data[j] = list.data[j<span class="hljs-number">-1</span>]<br>    &#125;<br>    list.data[i] = e<br>    list.Length++<br>    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span><br>&#125;<br></code></pre></td></tr></table></figure>
-<h4 id="删除">删除</h4>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(list *SqList)</span></span> Delete(i <span class="hljs-type">int</span>) <span class="hljs-type">bool</span> &#123;<br>    <span class="hljs-keyword">if</span> i &lt;= <span class="hljs-number">0</span> || i &gt;= list.Length &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span><br>    &#125;<br>    <span class="hljs-keyword">for</span> j := i; j &lt; list.Length<span class="hljs-number">-1</span>; j++ &#123;<br>        list.data[j] = list.data[j+<span class="hljs-number">1</span>]<br>    &#125;<br>    list.Length--<br>    <span class="hljs-keyword">if</span> list.capacity &gt; initCap &amp;&amp; list.Length &lt;= list.capacity/<span class="hljs-number">4</span> &#123;<br>        list.reCap(list.capacity / <span class="hljs-number">2</span>)<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span><br>&#125;<br></code></pre></td></tr></table></figure>
-<h4 id="打印">打印</h4>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(list *SqList)</span></span> DispList() &#123;<br>    fmt.Print(<span class="hljs-string">&quot;顺序表内容是:[&quot;</span>)<br>    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; list.Length<span class="hljs-number">-1</span>; i++ &#123;<br>        fmt.Print(list.data[i], <span class="hljs-string">&quot;,&quot;</span>)<br>    &#125;<br>    fmt.Print(list.data[list.Length<span class="hljs-number">-1</span>], <span class="hljs-string">&quot;]\n&quot;</span>)<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="连通分量">连通分量</h3>
+<p>连通分量是相连元素组成的最大集合</p>
+<h3 id="查找">查找</h3>
+<p>检查两个元素是否在一个分量中</p>
+<h3 id="归并">归并</h3>
+<p>将两个分量归并到相同的分量中</p>
+<h2 id="并查集算法的api">并查集算法的API</h2>
+<table>
+
+<thead>
+<tr class="header">
+<th style="text-align: left;"><code>public class UF</code></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>UF(int N)</code></td>
+<td>以整数标识（ 0 到 <span class="math inline">\(N-1\)</span> ）初始化
+<span class="math inline">\(N\)</span> 个触点</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>void union(int p, int q)</code></td>
+<td>在 p 和 q 之间添加一条连接</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>int find(int p)</code></td>
+<td>p（0 到 <span class="math inline">\(N-1\)</span>
+）所在的分量的标识符</td>
+</tr>
+<tr class="even">
+<td
+style="text-align: left;"><code>boolean connected(int p, int q)</code></td>
+<td>如果 p 和 q 存在于同一个分量中则返回 <code>true</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>int count()</code></td>
+<td>连通分量的数量</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quick-find-算法">quick-find 算法</h2>
+<h3 id="数据结构">数据结构</h3>
+<ul>
+<li>长度为 N 的整型数组 <code>id[]</code></li>
+<li>当且仅当 p 和 q 有相同 <code>id</code> 时 p 和 q 连通</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-type">int</span>[] id;<br><span class="hljs-keyword">public</span> <span class="hljs-title function_">QuickFindUF</span><span class="hljs-params">(<span class="hljs-type">int</span> N)</span> &#123;<br>    id = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[N];<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; N; i++)<br>        id[i] = i;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="find">find()</h3>
+<p>返回根节点</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">root</span><span class="hljs-params">(<span class="hljs-type">int</span> p)</span> &#123;<br>    <span class="hljs-keyword">return</span> id[p];<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="union">union()</h3>
+<p>把要归并的所有连通分量的 <code>id</code> 改为另一个连通分量的
+<code>id</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">union</span><span class="hljs-params">(<span class="hljs-type">int</span> p, <span class="hljs-type">int</span> q)</span> &#123;<br>    <span class="hljs-type">int</span> <span class="hljs-variable">pid</span> <span class="hljs-operator">=</span> id[p];<br>    <span class="hljs-type">int</span> <span class="hljs-variable">qid</span> <span class="hljs-operator">=</span> id[q];<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; id.length; i++)<br>        <span class="hljs-keyword">if</span> (id[i] == pid) id[i] = qid;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="复杂度分析">复杂度分析</h3>
+<table>
+<thead>
+<tr class="header">
+<th>算法</th>
+<th>构造函数</th>
+<th>union()</th>
+<th>find()</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>quick-find</td>
+<td><span class="math inline">\(N\)</span></td>
+<td><span class="math inline">\(N\)</span></td>
+<td><span class="math inline">\(1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><code>union</code>操作过于复杂，很难运用于大型问题</p>
+<h2 id="quick-union-算法">quick-union 算法</h2>
+<h3 id="数据结构-1">数据结构</h3>
+<p>还是 <code>id[]</code>
+数组，不过这次不用把所有的分量都改了，一种“偷懒”算法，即<strong>尽量避免计算直到不得不进行计算</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-type">int</span>[] id;<br><span class="hljs-keyword">public</span> <span class="hljs-title function_">QuickUnionUF</span><span class="hljs-params">(<span class="hljs-type">int</span> N)</span> &#123;<br>    id = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[N];<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; N; i++) id[i] = i;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="find-1">find()</h3>
+<p>返回根节点</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-type">int</span> <span class="hljs-title function_">find</span><span class="hljs-params">(<span class="hljs-type">int</span> i)</span> &#123;<br>    <span class="hljs-keyword">while</span> (i != id[i]) i = id[i];<br>    <span class="hljs-keyword">return</span> i;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="union-1">union()</h3>
+<p>把要归并的连通分量的根节点的 <code>id</code>
+改为另一个连通分量根节点的 <code>id</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">union</span><span class="hljs-params">(<span class="hljs-type">int</span> p, <span class="hljs-type">int</span> q)</span>&#123;<br>    <span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> find(p);<br>    <span class="hljs-type">int</span> <span class="hljs-variable">j</span> <span class="hljs-operator">=</span> find(q);<br>    id[i] = j;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="复杂度分析-1">复杂度分析</h3>
+<table>
+
+<thead>
+<tr class="header">
+<th>算法</th>
+<th>构造函数</th>
+<th>union()</th>
+<th>find()</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>quick-union</td>
+<td><span class="math inline">\(N\)</span></td>
+<td><span
+class="math inline">\(N\)</span>（包括查找根节点，取决于树的高度）</td>
+<td><span class="math inline">\(N\)</span>（取决于树的高度）</td>
+</tr>
+</tbody>
+</table>
+<p><code>union</code>操作过于复杂，很难运用于大型问题</p>
+<h2 id="改进">改进</h2>
+<h3 id="加权-quick-union-算法">加权 quick-union 算法</h3>
+<p>就是将小树连接到大树来降低高度</p>
+<img src="/posts/61809/image-20230521192309273.png" srcset="/img/loading.gif" lazyload class="" title="加权">
+<p>我们需要一个额外的数组 <code>sz[]</code> 来记录以 <code>i</code>
+为根节点的树的大小，只要在 <code>union</code> 方法中加入三行：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">union</span><span class="hljs-params">(<span class="hljs-type">int</span> p, <span class="hljs-type">int</span> q)</span>&#123;<br>    <span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> find(p);<br>    <span class="hljs-type">int</span> <span class="hljs-variable">j</span> <span class="hljs-operator">=</span> find(q);<br>    id[i] = j;<br>    <span class="hljs-keyword">if</span> (i == j) <span class="hljs-keyword">return</span>;<br>    <span class="hljs-keyword">if</span> (sz[i] &lt; sz[j]) &#123;<br>        id[i] = j; sz[j] += sz[i];<br>    &#125; <br>    <span class="hljs-keyword">else</span> &#123;<br>        id[j] = i; sz[i] += sz[j];<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h4 id="复杂度分析-2">复杂度分析</h4>
+<table>
+<thead>
+<tr class="header">
+<th>算法</th>
+<th>构造函数</th>
+<th>union()</th>
+<th>find()</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>weighted QU</td>
+<td><span class="math inline">\(N\)</span></td>
+<td><span class="math inline">\(\lg N\)</span>（包括查找根节点）</td>
+<td><span class="math inline">\(\lg N\)</span></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>我们能不能再进一步？</p>
+</blockquote>
+<h3 id="使用路径压缩的加权-quick-union-算法">使用路径压缩的加权
+quick-union 算法</h3>
+<blockquote>
+<p>顾名思义，就是路径压缩（</p>
+</blockquote>
+<p>为了简化路径压缩，直接加上一行代码就行了，将路径上每个节点指向它在路径上的祖父节点。这种实现不如完全展平好，但在实际应用中两者差不多一样好：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-type">int</span> <span class="hljs-title function_">find</span><span class="hljs-params">(<span class="hljs-type">int</span> i)</span> &#123;<br>    <span class="hljs-keyword">while</span> (i != id[i]) &#123;<br>        id[i] = id[id[i]];<br>        i = id[i];<br>    &#125;<br>    <span class="hljs-keyword">return</span> i;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h4 id="复杂度分析-3">复杂度分析</h4>
+<table>
+<thead>
+<tr class="header">
+<th>算法</th>
+<th>构造函数</th>
+<th>union()</th>
+<th>find()</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>weighted QU</td>
+<td><span class="math inline">\(N\)</span></td>
+<td>非常接近线性</td>
+<td>1（均摊 成本）</td>
+</tr>
+</tbody>
+</table>
 
                 
               </div>
@@ -353,8 +497,15 @@
   
     <span>></span>
     
-  <a href="/categories/coding/data-structure/" class="category-chain-item">data structure</a>
+  <a href="/categories/coding/coursera/" class="category-chain-item">coursera</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/coding/coursera/Algorithms-Part-I/" class="category-chain-item">Algorithms, Part I</a>
+  
+  
+
   
 
   
@@ -374,6 +525,10 @@
       
         <a href="/tags/data-structure/">#data structure</a>
       
+        <a href="/tags/coursera/">#coursera</a>
+      
+        <a href="/tags/algorithms/">#algorithms</a>
+      
     </div>
   
 </div>
@@ -384,8 +539,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>数据结构之线性表</div>
-      <div>https://ivansnow02.github.io/posts/55223/</div>
+      <div>并查集</div>
+      <div>https://ivansnow02.github.io/posts/61809/</div>
     </div>
     <div class="license-meta">
       
@@ -397,7 +552,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年5月17日</div>
+          <div>2023年5月21日</div>
         </div>
       
       
@@ -429,18 +584,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/61809/" title="并查集">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">并查集</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/54039/" title="Sports_Life_Lesson">
-                        <span class="hidden-mobile">Sports_Life_Lesson</span>
+                      <a href="/posts/55223/" title="数据结构之线性表">
+                        <span class="hidden-mobile">数据结构之线性表</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
