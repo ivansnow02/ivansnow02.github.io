@@ -4,6 +4,41 @@
   
   
   <entry>
+    <title>栈与队列</title>
+    <link href="/posts/16574/"/>
+    <url>/posts/16574/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>栈和队列可以说是最基本的数据结构了，它们都是在两端进行操作，其中栈在栈顶进行操作，被称为先进后出（LIFO），队列在队头和队尾进行操作，被称为先进先出（FIFO）</p></blockquote><img src="/posts/undefined/image-20230530103359493.png" class=""><h2 id="栈">栈</h2><p>直接来看看API吧：</p><h3 id="api">API</h3><table><thead><tr class="header"><th>public class Stack</th><th></th></tr></thead><tbody><tr class="odd"><td>Stack</td><td>构造一个空栈</td></tr><tr class="even"><td>void push(Item item)</td><td>入栈</td></tr><tr class="odd"><td>Item pop()</td><td>出栈</td></tr><tr class="even"><td>boolean isEmpty()</td><td>判空</td></tr><tr class="odd"><td>int size()</td><td>大小</td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>coding</category>
+      
+      <category>coursera</category>
+      
+      <category>Algorithms, Part I</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>coding</tag>
+      
+      <tag>data structure</tag>
+      
+      <tag>coursera</tag>
+      
+      <tag>algorithms</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>并查集</title>
     <link href="/posts/61809/"/>
     <url>/posts/61809/</url>
