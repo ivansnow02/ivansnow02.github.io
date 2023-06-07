@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>物理复习</title>
+    <link href="/posts/51544/"/>
+    <url>/posts/51544/</url>
+    
+    <content type="html"><![CDATA[<h2 id="力学">力学</h2><ul><li>动量定理: <span class="math inline">\(I = \int _{t_1}^{t_2} \vec{F}dt = \vec {p_2}-\vec{p_1}\)</span></li><li>动能定理: <span class="math inline">\(W_{ab}=\int_a^b \vec{F} \cdotd\vec{r}\)</span></li></ul><p>未完待续</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Physics</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>learning</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>数据结构题目02</title>
     <link href="/posts/45666/"/>
     <url>/posts/45666/</url>
@@ -400,6 +425,8 @@
     
     
     <tags>
+      
+      <tag>learning</tag>
       
       <tag>Math</tag>
       
