@@ -1,3 +1,4 @@
+https://ivansnow02.github.io/posts/36820/
 https://ivansnow02.github.io/posts/51544/
 https://ivansnow02.github.io/posts/40417/
 https://ivansnow02.github.io/posts/16273/
@@ -34,6 +35,7 @@ https://ivansnow02.github.io/tags/Discrete-Mathematics/
 https://ivansnow02.github.io/tags/data-structure/
 https://ivansnow02.github.io/tags/coursera/
 https://ivansnow02.github.io/tags/algorithms/
+https://ivansnow02.github.io/tags/tree/
 https://ivansnow02.github.io/categories/coding/
 https://ivansnow02.github.io/categories/test/
 https://ivansnow02.github.io/categories/coding/Redis/

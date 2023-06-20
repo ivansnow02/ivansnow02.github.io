@@ -22,7 +22,7 @@
   
   
   
-  <title>归档 - Snow&#39;s Blog</title>
+  <title>Snow&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -93,7 +93,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 100vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -199,13 +199,17 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="归档"></span>
+            <span id="subtitle" data-typed-text="Welcome to My Blog"></span>
           
         </div>
 
         
       </div>
 
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
       
     </div>
   </div>
@@ -219,66 +223,82 @@
     
       <div class="container nopadding-x-md">
         <div id="board"
-          >
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 21 篇文章</p>
-  <hr>
-  
-  
+
+  <div class="row mx-auto index-card">
     
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/posts/59964/" target="_self">
+          TEST
+        </a>
+      </h1>
+
       
-      <p class="h5">2023</p>
-    
-    <a href="/posts/36820/" class="list-group-item list-group-item-action">
-      <time>06-20</time>
-      <div class="list-group-item-title">机器人王国里的路径长度</div>
-    </a>
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/59964/" target="_self">
+        <div>
+          这是一篇测试文章    测试图片2
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-04-16 20:30" pubdate>
+              2023-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
   
     
-    <a href="/posts/40417/" class="list-group-item list-group-item-action">
-      <time>06-10</time>
-      <div class="list-group-item-title">The Power of Robert Capa&#39;s The Falling Soldier</div>
-    </a>
+      <span class="category-chain">
+        
+  <a href="/categories/test/" class="category-chain-item">test</a>
   
+  
+
+      </span>
     
-    <a href="/posts/16273/" class="list-group-item list-group-item-action">
-      <time>06-08</time>
-      <div class="list-group-item-title">Why Students Should Be Encouraged To Lead A Healthy Lifestyle</div>
-    </a>
   
-    
-    <a href="/posts/51544/" class="list-group-item list-group-item-action">
-      <time>06-07</time>
-      <div class="list-group-item-title">物理复习</div>
-    </a>
-  
-    
-    <a href="/posts/45666/" class="list-group-item list-group-item-action">
-      <time>06-06</time>
-      <div class="list-group-item-title">数据结构题目02</div>
-    </a>
-  
-    
-    <a href="/posts/56431/" class="list-group-item list-group-item-action">
-      <time>06-03</time>
-      <div class="list-group-item-title">思政复习</div>
-    </a>
-  
-    
-    <a href="/posts/49742/" class="list-group-item list-group-item-action">
-      <time>06-02</time>
-      <div class="list-group-item-title">习近平复习</div>
-    </a>
-  
-</div>
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/test/">#test</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
 
 
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/2/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#board">2</a><span class="page-number current">3</span>
+    </span>
+  </nav>
 
 
 
@@ -391,7 +411,37 @@
       }
       var text = subtitle.getAttribute('data-typed-text');
       
-        typing(text);
+        jQuery.ajax({
+          type: 'GET',
+          url: 'https://v1.jinrishici.com/all.json',
+          headers: {},
+          dataType: 'json',
+          success: function(result) {
+            var apiText;
+            if (result) {
+              var keys = 'content'.split(',');
+              if (result instanceof Array) {
+                result = result[0];
+              }
+              for (const k of keys) {
+                var value = result[k];
+                if (typeof value === 'string') {
+                  apiText = value;
+                  break;
+                } else if (value instanceof Object) {
+                  result = value;
+                }
+              }
+            }
+            apiText ? typing(apiText) : typing(text);
+          },
+          error: function(xhr, status, error) {
+            if (error) {
+              console.error('Failed to request https://v1.jinrishici.com/all.json:', error);
+            }
+            typing(text);
+          }
+        })
       
     })(window, document);
   </script>

@@ -18,11 +18,11 @@
   <meta name="author" content="Ivan Snow">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Today, I would like to talk about one of the most famous and controversial war photographs ever taken: &#34;The Falling Soldier&#34; by Robert Capa.   The Falling Soldier - Robert Capa  Robert Capa, b">
+    <meta name="description" content="题目描述 在一个机器人王国里，围绕首都分N层构建卫星城市。以首都为圆心，以路相连分出两个卫星城在第一个层，然后每个卫星城又有路相连分出两个卫星城在下一层，但每条路的长度不同。第N层的卫星城不再分出新的卫星城。现在人类只探知到所有直接相连的城市间的路程，你能计算某个卫星城到达首都的路程吗？ 输入 第一行为N，表示机器人王国里有N层卫星城，N最大为10。从第二行开始，共\(2^{N+1}-2\)">
   
   
   
-  <title>The Power of Robert Capa&#39;s The Falling Soldier - Snow&#39;s Blog</title>
+  <title>机器人王国里的路径长度 - Snow&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,7 +205,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="The Power of Robert Capa&#39;s The Falling Soldier"></span>
+            <span id="subtitle" data-typed-text="机器人王国里的路径长度"></span>
           
         </div>
 
@@ -221,8 +221,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-06-10 20:43" pubdate>
-          2023年6月10日 晚上
+        <time datetime="2023-06-20 21:09" pubdate>
+          2023年6月20日 晚上
         </time>
       </span>
     
@@ -233,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.8k 字
+          1.1k 字
         
       </span>
     
@@ -244,7 +244,7 @@
         
         
         
-          10 分钟
+          6 分钟
         
       </span>
     
@@ -290,51 +290,25 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">The Power of Robert Capa&#39;s The Falling Soldier</h1>
+            <h1 style="display: none">机器人王国里的路径长度</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Today, I would like to talk about one of the most famous and
-controversial war photographs ever taken: "The Falling Soldier" by
-Robert Capa.</p>
-<figure>
-<img src="the_falling_soldier.jpg" srcset="/img/loading.gif" lazyload
-alt="The Falling Soldier - Robert Capa" />
-<figcaption aria-hidden="true">The Falling Soldier - Robert
-Capa</figcaption>
-</figure>
-<p>Robert Capa, born Endre Friedmann in 1913, was a Hungarian-born
-American photojournalist known for his courage and his motto: "If your
-pictures aren't good enough, you're not close enough." He co-founded
-Magnum Photos, the first cooperative agency for freelance photographers.
-During his career, he covered several wars including the Spanish Civil
-War, World War II, and the First Indochina War. Tragically, he died in
-1954 when he stepped on a landmine in Vietnam.</p>
-<p>"The Falling Soldier" is a black and white photograph taken on 1936,
-during the Spanish Civil War. It captures the exact moment a Republican
-soldier is shot in the head and falls backward, seemingly lifeless. The
-photograph became a symbol of the Republican cause and the horrors of
-war.</p>
-<p>"The Falling Soldier" is a powerful image that evokes various themes.
-The theme of death is prominent, as the photograph captures the instant
-of death, a rare and shocking occurrence in photography. It raises
-ethical questions about the role of photography in depicting death. The
-theme of war is also evident, as the image represents the brutality and
-violence of war and how it affects ordinary people caught in its
-crossfire. Finally, the theme of heroism is present, portraying the
-soldier as a hero who sacrificed his life for his cause.</p>
-<p>When I look at this photograph, I feel a mix of emotions. I feel
-sadness and anger, thinking about the unfairness of this soldier's death
-and the many others who perished in war. I also feel amazed and curious,
-appreciating Capa's incredible ability to capture such a momentous event
-with his camera.</p>
-<p>In conclusion, Robert Capa's "The Falling Soldier" is an iconic
-photograph that has left an indelible mark on the history of
-photojournalism. It is a powerful reminder of the horrors of war and the
-price paid by those who fight for their beliefs. The photograph's
-authenticity may remain a point of debate, but its impact on the world
-cannot be denied. Thank you for listening.</p>
+                <h4 id="题目描述">题目描述</h4>
+<p>在一个机器人王国里，围绕首都分N层构建卫星城市。以首都为圆心，以路相连分出两个卫星城在第一个层，然后每个卫星城又有路相连分出两个卫星城在下一层，但每条路的长度不同。第N层的卫星城不再分出新的卫星城。现在人类只探知到所有直接相连的城市间的路程，你能计算某个卫星城到达首都的路程吗？</p>
+<h4 id="输入">输入</h4>
+<p>第一行为N，表示机器人王国里有N层卫星城，N最大为10。从第二行开始，共<span
+class="math inline">\(2^{N+1}-2\)</span>行，每行分别是城市的代号到其分出的卫星城的代号和它们间的路程。
+代号用若干个字母表示，直连路程最大为100。最后一行是某卫星城的代号。</p>
+<h4 id="输出">输出</h4>
+<p>根据最后一行的卫星城代号，求该卫星城到首都的路程。</p>
+<h4 id="样例输入">样例输入</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">2<br>A F 20<br>B D 100<br>G A 5<br>G B 10<br>A C 6<br>B E 30<br>D<br></code></pre></td></tr></table></figure>
+<h4 id="样例输出">样例输出</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">110<br></code></pre></td></tr></table></figure>
+<h4 id="题解">题解</h4>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unordered_map&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span><br><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">City</span> &#123;<br>    string parent;<br>    <span class="hljs-type">int</span> distance;<br>&#125;;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> N;<br>    cin &gt;&gt; N;<br>    <span class="hljs-type">int</span> num_cities = (<span class="hljs-number">1</span> &lt;&lt; (N + <span class="hljs-number">1</span>)) - <span class="hljs-number">2</span>;<br>    unordered_map&lt;string, City&gt; cities;<br><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; num_cities; i++) &#123;<br>        string from, to;<br>        <span class="hljs-type">int</span> distance;<br>        cin &gt;&gt; from &gt;&gt; to &gt;&gt; distance;<br>        cities[to] = &#123;from, distance&#125;;<br>    &#125;<br><br>    string target;<br>    cin &gt;&gt; target;<br><br>    <span class="hljs-type">int</span> total_distance = <span class="hljs-number">0</span>;<br>    <span class="hljs-comment">//反向追踪它的父键值，并累加它们的距离值，直到找不到目标键值为止</span><br>    <span class="hljs-keyword">while</span> (cities.<span class="hljs-built_in">find</span>(target) != cities.<span class="hljs-built_in">end</span>()) &#123;<br>        total_distance += cities[target].distance;<br>        target = cities[target].parent;<br>    &#125;<br><br>    cout &lt;&lt; total_distance &lt;&lt; endl;<br><br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -353,8 +327,15 @@ cannot be denied. Thank you for listening.</p>
     
       <span class="category-chain">
         
-  <a href="/categories/English/" class="category-chain-item">English</a>
+  <a href="/categories/coding/" class="category-chain-item">coding</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/coding/data-structure/" class="category-chain-item">data structure</a>
+  
+  
+
   
 
       </span>
@@ -368,7 +349,11 @@ cannot be denied. Thank you for listening.</p>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/English/">#English</a>
+        <a href="/tags/coding/">#coding</a>
+      
+        <a href="/tags/data-structure/">#data structure</a>
+      
+        <a href="/tags/tree/">#tree</a>
       
     </div>
   
@@ -380,8 +365,8 @@ cannot be denied. Thank you for listening.</p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>The Power of Robert Capa&#39;s The Falling Soldier</div>
-      <div>https://ivansnow02.github.io/posts/40417/</div>
+      <div>机器人王国里的路径长度</div>
+      <div>https://ivansnow02.github.io/posts/36820/</div>
     </div>
     <div class="license-meta">
       
@@ -393,7 +378,7 @@ cannot be denied. Thank you for listening.</p>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年6月10日</div>
+          <div>2023年6月20日</div>
         </div>
       
       
@@ -425,18 +410,12 @@ cannot be denied. Thank you for listening.</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/36820/" title="机器人王国里的路径长度">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">机器人王国里的路径长度</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/16273/" title="Why Students Should Be Encouraged To Lead A Healthy Lifestyle">
-                        <span class="hidden-mobile">Why Students Should Be Encouraged To Lead A Healthy Lifestyle</span>
+                      <a href="/posts/40417/" title="The Power of Robert Capa&#39;s The Falling Soldier">
+                        <span class="hidden-mobile">The Power of Robert Capa&#39;s The Falling Soldier</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

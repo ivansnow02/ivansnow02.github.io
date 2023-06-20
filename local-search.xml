@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>机器人王国里的路径长度</title>
+    <link href="/posts/36820/"/>
+    <url>/posts/36820/</url>
+    
+    <content type="html"><![CDATA[<h4 id="题目描述">题目描述</h4><p>在一个机器人王国里，围绕首都分N层构建卫星城市。以首都为圆心，以路相连分出两个卫星城在第一个层，然后每个卫星城又有路相连分出两个卫星城在下一层，但每条路的长度不同。第N层的卫星城不再分出新的卫星城。现在人类只探知到所有直接相连的城市间的路程，你能计算某个卫星城到达首都的路程吗？</p><h4 id="输入">输入</h4><p>第一行为N，表示机器人王国里有N层卫星城，N最大为10。从第二行开始，共<spanclass="math inline">\(2^{N+1}-2\)</span>行，每行分别是城市的代号到其分出的卫星城的代号和它们间的路程。代号用若干个字母表示，直连路程最大为100。最后一行是某卫星城的代号。</p><h4 id="输出">输出</h4><p>根据最后一行的卫星城代号，求该卫星城到首都的路程。</p><h4 id="样例输入">样例输入</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">2<br>A F 20<br>B D 100<br>G A 5<br>G B 10<br>A C 6<br>B E 30<br>D<br></code></pre></td></tr></table></figure><h4 id="样例输出">样例输出</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">110<br></code></pre></td></tr></table></figure><h4 id="题解">题解</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unordered_map&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span><br><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">City</span> &#123;<br>    string parent;<br>    <span class="hljs-type">int</span> distance;<br>&#125;;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> N;<br>    cin &gt;&gt; N;<br>    <span class="hljs-type">int</span> num_cities = (<span class="hljs-number">1</span> &lt;&lt; (N + <span class="hljs-number">1</span>)) - <span class="hljs-number">2</span>;<br>    unordered_map&lt;string, City&gt; cities;<br><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; num_cities; i++) &#123;<br>        string from, to;<br>        <span class="hljs-type">int</span> distance;<br>        cin &gt;&gt; from &gt;&gt; to &gt;&gt; distance;<br>        cities[to] = &#123;from, distance&#125;;<br>    &#125;<br><br>    string target;<br>    cin &gt;&gt; target;<br><br>    <span class="hljs-type">int</span> total_distance = <span class="hljs-number">0</span>;<br>    <span class="hljs-comment">//反向追踪它的父键值，并累加它们的距离值，直到找不到目标键值为止</span><br>    <span class="hljs-keyword">while</span> (cities.<span class="hljs-built_in">find</span>(target) != cities.<span class="hljs-built_in">end</span>()) &#123;<br>        total_distance += cities[target].distance;<br>        target = cities[target].parent;<br>    &#125;<br><br>    cout &lt;&lt; total_distance &lt;&lt; endl;<br><br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>coding</category>
+      
+      <category>data structure</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>coding</tag>
+      
+      <tag>data structure</tag>
+      
+      <tag>tree</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>The Power of Robert Capa&#39;s The Falling Soldier</title>
     <link href="/posts/40417/"/>
     <url>/posts/40417/</url>
