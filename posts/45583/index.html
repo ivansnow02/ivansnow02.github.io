@@ -322,7 +322,7 @@ trees， 简称SPT）</h3>
 <h4 id="边松弛edge-relaxation">边松弛（edge relaxation）</h4>
 <p>检查一条给定的边，是否可以通过该边，对到其所指顶点的最短路径进行更新。</p>
 <p>不妨设有条边<code>e=(u,v)</code>，它的长度是<code>e.dist</code>，
-<code>d[i]</code>表示源点到顶点i的最短距离，则松弛操 作如下：
+<code>d[i]</code>表示源点到顶点i的最短距离，则松弛操作如下：
 <code>if (d[v] &gt; d[u] + e.dist) d[v] = d[u] + e.dist</code>
 上式的意思就是：如果从源点到u的最短距离加上u到v的长度小于当前源点到v的最短距离，那么更新源点到v的最短距离。
 边松弛体现在Dijkstra算法和Bellman-Ford算法中</p>
