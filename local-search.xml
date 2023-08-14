@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>Django公有配置</title>
+    <link href="/posts/33053/"/>
+    <url>/posts/33053/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>摸了好久（</p></blockquote><h3 id="base_dir">BASE_DIR</h3><ul><li>用于绑定当前项目的绝对路径（动态计算出来的），所有文件夹都可以依赖此路径</li></ul><h3 id="debug">DEBUG</h3><ul><li>用于配置Django项目的启动模式，取值<ul><li><code>True</code>表示开发环境中使用<strong>开发调试</strong>模式（用于开发中）</li><li><code>False</code>表示当前项目运行在<strong>生产环境</strong>中</li></ul></li></ul><h3 id="allowed-hosts">ALLOWED HOSTS</h3><ul><li>设置允许访问到本项目的host头值<ul><li><code>[]</code> 空列表，表示只有请求头中host为<code>127.0.0.1</code>、<code>localhost</code>能访问本项目<code>DEBUG = True</code> 时有效</li><li><code>['*']</code> 表示任何请求头的host都能访问到当前项目</li><li><code>['192.168.32.1'，'127.0.0.1']</code>表示只有当前两个host头的值能访问当前项目</li></ul></li></ul><h3 id="installed_apps">INSTALLED_APPS</h3><ul><li>指定当前项目中安装的应用列表</li></ul><h3 id="middleware">MIDDLEWARE</h3><ul><li>用于注册中间件</li></ul><h3 id="templates">TEMPLATES</h3><ul><li>用于指定模板的配置信息</li></ul><h3 id="databases">DATABASES</h3><ul><li>用于指定数据库的配置信息</li></ul><h3 id="language_code">LANGUAGE_CODE</h3><ul><li>用于指定语言配置<ul><li>英文："en-us"</li><li>中文："zh-Hans"</li></ul></li></ul><h3 id="time_zone">TIME_ZONE</h3><ul><li>用于指定当前服务器端时区<ul><li>世界标准时间：“UTC"</li><li>中国时区：“Asia/Shanghai"</li></ul></li></ul><h3 id="root_urlconf">ROOT_URLCONF</h3><ul><li>用于配置主 url 配置<code>'mysite1.urls'</code></li><li><code>ROOT_URLCONF = 'mysite1.urls'</code></li></ul><p>settings.py 中也可以添加 开发人员 自定义的配置配置建议：名字尽量个性化-以防覆盖掉公有配置例如：<code>ALIPAY_KEY =‘xxxxxxxx'</code>settings.py中的所有配置项，都可以按需的在代码中引入<code>from django.conf import settings</code></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>coding</category>
+      
+      <category>Django</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>coding</tag>
+      
+      <tag>Django</tag>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>数据结构理论复习</title>
     <link href="/posts/37632/"/>
     <url>/posts/37632/</url>
