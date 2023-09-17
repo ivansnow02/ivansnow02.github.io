@@ -18,7 +18,7 @@
   <meta name="author" content="Ivan Snow">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目描述 在一个机器人王国里，围绕首都分N层构建卫星城市。以首都为圆心，以路相连分出两个卫星城在第一个层，然后每个卫星城又有路相连分出两个卫星城在下一层，但每条路的长度不同。第N层的卫星城不再分出新的卫星城。现在人类只探知到所有直接相连的城市间的路程，你能计算某个卫星城到达首都的路程吗？ 输入 第一行为N，表示机器人王国里有N层卫星城，N最大为10。从第二行开始，共\(2^{N+1}-2\)">
+    <meta name="description" content="题目描述 在一个机器人王国里，围绕首都分N层构建卫星城市。以首都为圆心，以路相连分出两个卫星城在第一个层，然后每个卫星城又有路相连分出两个卫星城在下一层，但每条路的长度不同。第N层的卫星城不再分出新的卫星城。现在人类只探知到所有直接相连的城市间的路程，你能计算某个卫星城到达首都的路程吗？ 输入 第一行为N，表示机器人王国里有N层卫星城，N最大为10。从第二行开始，共2N+1−22^{N+1}-22">
   
   
   
@@ -92,7 +92,11 @@
 
 
   
-<meta name="generator" content="Hexo 6.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
 
 
 <body>
@@ -174,6 +178,18 @@
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
               </a>
             </li>
           
@@ -300,9 +316,7 @@
                 <h4 id="题目描述">题目描述</h4>
 <p>在一个机器人王国里，围绕首都分N层构建卫星城市。以首都为圆心，以路相连分出两个卫星城在第一个层，然后每个卫星城又有路相连分出两个卫星城在下一层，但每条路的长度不同。第N层的卫星城不再分出新的卫星城。现在人类只探知到所有直接相连的城市间的路程，你能计算某个卫星城到达首都的路程吗？</p>
 <h4 id="输入">输入</h4>
-<p>第一行为N，表示机器人王国里有N层卫星城，N最大为10。从第二行开始，共<span
-class="math inline">\(2^{N+1}-2\)</span>行，每行分别是城市的代号到其分出的卫星城的代号和它们间的路程。
-代号用若干个字母表示，直连路程最大为100。最后一行是某卫星城的代号。</p>
+<p>第一行为N，表示机器人王国里有N层卫星城，N最大为10。从第二行开始，共<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2^{N+1}-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9247em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>行，每行分别是城市的代号到其分出的卫星城的代号和它们间的路程。 代号用若干个字母表示，直连路程最大为100。最后一行是某卫星城的代号。</p>
 <h4 id="输出">输出</h4>
 <p>根据最后一行的卫星城代号，求该卫星城到首都的路程。</p>
 <h4 id="样例输入">样例输入</h4>

@@ -18,7 +18,7 @@
   <meta name="author" content="Ivan Snow">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Redis的Java客户端 Redis的客户端可以在Redis官网找到，推荐的客户端包括：  Jedis：以Redis命令作为方法名称，学习成本低，简单实用。但是Jedis实例是线程不安全的，多线程环境下需要基于连接池来使用 Lettuce：Lettuce是基于Netty实现的，支持同步、异步和响应式编程方式，并且是线程安全的。支持Redis的哨兵模式、集群模式和管道模式 Redisso">
+    <meta name="description" content="Redis的Java客户端 Redis的客户端可以在Redis官网找到，推荐的客户端包括：  Jedis：以Redis命令作为方法名称，学习成本低，简单实用。但是Jedis实例是线程不安全的，多线程环境下需要基于连接池来使用 Lettuce：Lettuce是基于Netty实现的，支持同步、异步和响应式编程方式，并且是线程安全的。支持Redis的哨兵模式、集群模式和管道模式 Redisson：是在R">
   
   
   
@@ -92,7 +92,11 @@
 
 
   
-<meta name="generator" content="Hexo 6.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
 
 
 <body>
@@ -174,6 +178,18 @@
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
               </a>
             </li>
           
@@ -297,19 +313,18 @@
             
               <div class="markdown-body">
                 
-                <h1 id="redis的java客户端">Redis的Java客户端</h1>
-<p>Redis的客户端可以在<a
-target="_blank" rel="noopener" href="https://redis.io/docs/clients/">Redis官网</a>找到，推荐的客户端包括：</p>
+                <h1>Redis的Java客户端</h1>
+<p>Redis的客户端可以在<a target="_blank" rel="noopener" href="https://redis.io/docs/clients/">Redis官网</a>找到，推荐的客户端包括：</p>
 <ul>
 <li>Jedis：以Redis命令作为方法名称，学习成本低，简单实用。但是Jedis实例是<strong>线程不安全</strong>的，<strong>多线程环境下需要基于连接池来使用</strong></li>
 <li>Lettuce：Lettuce是基于Netty实现的，支持同步、异步和响应式编程方式，并且是线程安全的。支持Redis的哨兵模式、集群模式和管道模式</li>
 <li>Redisson：是在Redis基础上实现了分布式的可伸缩的java数据结构，例如Map、Queue等，而且支持跨进程的同步机制：Lock、Semaphore等待，比较适合用来实现特殊的功能需求</li>
 </ul>
-<h2 id="jedis">Jedis</h2>
+<h2 id="Jedis">Jedis</h2>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/redis/jedis">Jedis官网</a></p>
 </blockquote>
-<h3 id="jedis快速入门">Jedis快速入门</h3>
+<h3 id="Jedis快速入门">Jedis快速入门</h3>
 <h4 id="导入依赖">导入依赖</h4>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!--jedis--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>redis.clients<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>jedis<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>4.3.1<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.junit.jupiter<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>junit-jupiter<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>5.9.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure>
 <h4 id="建立连接">建立连接</h4>
@@ -318,13 +333,12 @@ target="_blank" rel="noopener" href="https://redis.io/docs/clients/">Redis官网
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Test</span><br><span class="hljs-keyword">void</span> <span class="hljs-title function_">testString</span><span class="hljs-params">()</span> &#123;<br>    <span class="hljs-comment">// 存入</span><br>    <span class="hljs-type">String</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> jedis.set(<span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;Snow San&quot;</span>);<br>    System.out.println(<span class="hljs-string">&quot;result = &quot;</span> + result);<br>    <span class="hljs-comment">// 获取</span><br>    <span class="hljs-type">String</span> <span class="hljs-variable">name</span> <span class="hljs-operator">=</span> jedis.get(<span class="hljs-string">&quot;name&quot;</span>);<br>    System.out.println(<span class="hljs-string">&quot;name = &quot;</span> + name);<br>&#125;<br><span class="hljs-meta">@Test</span><br><span class="hljs-keyword">void</span> <span class="hljs-title function_">testHash</span><span class="hljs-params">()</span> &#123;<br>    <span class="hljs-comment">// 插入</span><br>    jedis.hset(<span class="hljs-string">&quot;user:1&quot;</span>, <span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;Snow San&quot;</span>);<br>    jedis.hset(<span class="hljs-string">&quot;user:1&quot;</span>, <span class="hljs-string">&quot;age&quot;</span>, <span class="hljs-string">&quot;18&quot;</span>);<br>    <span class="hljs-comment">// 获取</span><br>    Map&lt;String, String&gt; map = jedis.hgetAll(<span class="hljs-string">&quot;user:1&quot;</span>);<br>    System.out.println(map);<br>&#125;<br></code></pre></td></tr></table></figure>
 <h4 id="释放资源">释放资源</h4>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs JAVA"><span class="hljs-meta">@AfterEach</span><br><span class="hljs-keyword">void</span> <span class="hljs-title function_">destroy</span><span class="hljs-params">()</span> &#123;<br>    <span class="hljs-keyword">if</span> (jedis != <span class="hljs-literal">null</span>) &#123;<br>        jedis.close();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<h3 id="jedis连接池">Jedis连接池</h3>
+<h3 id="Jedis连接池">Jedis连接池</h3>
 <p>Jedis本身是<strong>线程不安全</strong>的，并且频繁的创建和销毁连接会有性能损耗，因此推荐使用Jedis连接池~</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> redis.clients.jedis.*;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">JedisConnectionFactory</span> &#123;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> JedisPool jedisPool;<br><br>    <span class="hljs-keyword">static</span> &#123;<br>        <span class="hljs-comment">// 配置连接池</span><br>        <span class="hljs-type">JedisPoolConfig</span> <span class="hljs-variable">poolConfig</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">JedisPoolConfig</span>();<br>        poolConfig.setMaxTotal(<span class="hljs-number">8</span>);<br>        poolConfig.setMaxIdle(<span class="hljs-number">8</span>);<br>        poolConfig.setMinIdle(<span class="hljs-number">0</span>);<br>        poolConfig.setMaxWaitMillis(<span class="hljs-number">1000</span>);<br>        <span class="hljs-comment">// 创建连接池对象，参数：连接池配置、服务端ip、服务端端口、超时时间、密码</span><br>        jedisPool = <span class="hljs-keyword">new</span> <span class="hljs-title class_">JedisPool</span>(poolConfig, <br>                                  <span class="hljs-string">&quot;127.0.0.1&quot;</span>, <br>                                  <span class="hljs-number">6379</span>, <br>                                  <span class="hljs-number">1000</span>, <br>                                  <span class="hljs-string">&quot;&quot;</span>);<span class="hljs-comment">//密码在此（</span><br>    &#125;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Jedis <span class="hljs-title function_">getJedis</span><span class="hljs-params">()</span>&#123;<br>        <span class="hljs-keyword">return</span> jedisPool.getResource();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<h2 id="springdataredis客户端">SpringDataRedis客户端</h2>
-<p><del>接下来就是本次的主角啦！</del></p>
-<p>SpringData是Spring中数据操作的模块，包含对各种数据库的集成，其中对Redis的集成模块就叫做SpringDataRedis，<a
-target="_blank" rel="noopener" href="https://spring.io/projects/spring-data-redis">SpringDataRedis官网</a></p>
+<h2 id="SpringDataRedis客户端">SpringDataRedis客户端</h2>
+<p><s>接下来就是本次的主角啦！</s></p>
+<p>SpringData是Spring中数据操作的模块，包含对各种数据库的集成，其中对Redis的集成模块就叫做SpringDataRedis，<a target="_blank" rel="noopener" href="https://spring.io/projects/spring-data-redis">SpringDataRedis官网</a></p>
 <p>ta的特点如下：</p>
 <ul>
 <li>提供了对不同Redis客户端的整合（Lettuce和Jedis）</li>
@@ -336,21 +350,21 @@ target="_blank" rel="noopener" href="https://spring.io/projects/spring-data-redi
 <li>支持基于Redis的JDKCollection实现</li>
 </ul>
 <p>SpringDataRedis中提供了RedisTemplate工具类，其中封装了各种对Redis的操作。并且将不同数据类型的操作API封装到了不同的类型中</p>
-<h3 id="springdataredis快速入门">SpringDataRedis快速入门</h3>
+<h3 id="SpringDataRedis快速入门">SpringDataRedis快速入门</h3>
 <h4 id="新建一个boot项目">新建一个boot项目</h4>
-<p><del>别说你连boot项目都不会建</del></p>
+<p><s>别说你连boot项目都不会建</s></p>
 <h4 id="引入依赖">引入依赖</h4>
 <p>要引入<code>spring-boot-starter-data-redis</code>,<code>commons-pool2</code>和<code>jackson-databind</code>，不过貌似MVC已经整合了<code>jackson</code>？</p>
-<p><del>懒的话整个<code>lombok</code></del></p>
+<p><s>懒的话整个<code>lombok</code></s></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!--redis依赖--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-data-redis<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br><span class="hljs-comment">&lt;!--common-pool--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.commons<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>commons-pool2<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br><span class="hljs-comment">&lt;!--Jackson依赖--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.fasterxml.jackson.core<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>jackson-databind<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure>
-<h4 id="配置redis">配置Redis</h4>
-<p>说到boot果然就是yaml呢<del>（笑）</del></p>
+<h4 id="配置Redis">配置Redis</h4>
+<p>说到boot果然就是yaml呢~~（笑）~~</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">spring:</span><br>  <span class="hljs-attr">data:</span><br>    <span class="hljs-attr">redis:</span><br>      <span class="hljs-attr">host:</span> <span class="hljs-number">0.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span><br>      <span class="hljs-attr">port:</span> <span class="hljs-number">6379</span><br>      <span class="hljs-attr">lettuce:</span><br>        <span class="hljs-attr">pool:</span><br>          <span class="hljs-attr">max-active:</span> <span class="hljs-number">8</span><br>          <span class="hljs-attr">max-idle:</span> <span class="hljs-number">8</span><br>          <span class="hljs-attr">min-idle:</span> <span class="hljs-number">0</span><br>          <span class="hljs-attr">max-wait:</span> <span class="hljs-string">1000ms</span><br></code></pre></td></tr></table></figure>
-<h4 id="注入redistemplate">注入RedisTemplate</h4>
+<h4 id="注入RedisTemplate">注入RedisTemplate</h4>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Autowired</span><br><span class="hljs-keyword">private</span> RedisTemplate redisTemplate;<br></code></pre></td></tr></table></figure>
-<h4 id="测试-1">测试！</h4>
+<h4 id="测试！">测试！</h4>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Test</span><br><span class="hljs-keyword">void</span> <span class="hljs-title function_">testString</span><span class="hljs-params">()</span> &#123;<br>    <span class="hljs-comment">// 写入</span><br>    redisTemplate.opsForValue().set(<span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;Snow San&quot;</span>);<br>    <span class="hljs-comment">// 获取</span><br>    <span class="hljs-type">Object</span> <span class="hljs-variable">name</span> <span class="hljs-operator">=</span> stringRedisTemplate.opsForValue().get(<span class="hljs-string">&quot;name&quot;</span>);<br>    System.out.println(<span class="hljs-string">&quot;name = &quot;</span> + name);<br>&#125;<br></code></pre></td></tr></table></figure>
-<h3 id="自定义序列化白雪">自定义序列化<del>（白雪）</del></h3>
+<h3 id="自定义序列化-（白雪）">自定义序列化~~（白雪）~~</h3>
 <p>RedisTemplate可以接收任意<code>Object</code>作为值写入Redis,但在写入前会把<code>Object</code>序列化为字节形式，默认是采用JDK序列化，缺点是：</p>
 <ul>
 <li>可读性差</li>
@@ -359,7 +373,7 @@ target="_blank" rel="noopener" href="https://spring.io/projects/spring-data-redi
 <p>因此可以自定义RedisTemplate的序列化方式，采用JSON序列化来代替默认的JDK序列化方式</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Configuration</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RedisConfig</span> &#123;<br>    <span class="hljs-meta">@Bean</span><br>    <span class="hljs-keyword">public</span> RedisTemplate&lt;String, Object&gt; <span class="hljs-title function_">redisTemplate</span><span class="hljs-params">(RedisConnectionFactory connectionFactory)</span>&#123;<br>        RedisTemplate&lt;String, Object&gt; template = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RedisTemplate</span>&lt;&gt;();<br>        template.setConnectionFactory(connectionFactory);<br>        <span class="hljs-comment">// 创建JSON序列化工具</span><br>        <span class="hljs-type">GenericJackson2JsonRedisSerializer</span> <span class="hljs-variable">jsonRedisSerializer</span> <span class="hljs-operator">=</span> <br>            <span class="hljs-keyword">new</span> <span class="hljs-title class_">GenericJackson2JsonRedisSerializer</span>();<br>        <span class="hljs-comment">// 设置Key的序列化</span><br>        template.setKeySerializer(RedisSerializer.string());<br>        template.setHashKeySerializer(RedisSerializer.string());<br>        <span class="hljs-comment">// 设置Value的序列化</span><br>        template.setValueSerializer(jsonRedisSerializer);<br>        template.setHashValueSerializer(jsonRedisSerializer);<br>        <span class="hljs-comment">// 返回</span><br>        <span class="hljs-keyword">return</span> template;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>JSON序列化在查询时还能自动把JSON反序列化为Java对象，注意<code>@class</code>字段，ta会带来额外的内存开销</p>
-<h3 id="stringredistemplate">StringRedisTemplate</h3>
+<h3 id="StringRedisTemplate">StringRedisTemplate</h3>
 <p>为了节省内存空间，我们可以不使用JSON序列化器来处理value，而是统一使用String序列化器，要求只能存储String类型的key和value。</p>
 <p>不过当需要存储Java对象时，必须手动完成对象的序列化和反序列化</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Autowired</span><br><span class="hljs-keyword">private</span> StringRedisTemplate stringRedisTemplate;<br><br><span class="hljs-meta">@Test</span><br><span class="hljs-keyword">void</span> <span class="hljs-title function_">testString</span><span class="hljs-params">()</span> &#123;<br>    <span class="hljs-comment">// 写入</span><br>    stringRedisTemplate.opsForValue().set(<span class="hljs-string">&quot;verify:phone:11111111&quot;</span>, <span class="hljs-string">&quot;123456&quot;</span>);<br>    <span class="hljs-comment">// 获取</span><br>    <span class="hljs-type">Object</span> <span class="hljs-variable">name</span> <span class="hljs-operator">=</span> stringRedisTemplate.opsForValue().get(<span class="hljs-string">&quot;name&quot;</span>);<br>    System.out.println(<span class="hljs-string">&quot;name = &quot;</span> + name);<br>&#125;<br><br><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">ObjectMapper</span> <span class="hljs-variable">mapper</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ObjectMapper</span>();<br><br><span class="hljs-meta">@Test</span><br><span class="hljs-keyword">void</span> <span class="hljs-title function_">testSaveUser</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> JsonProcessingException &#123;<br>    <span class="hljs-comment">// 创建对象</span><br>    <span class="hljs-type">User</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>(<span class="hljs-string">&quot;Snow&quot;</span>, <span class="hljs-number">18</span>);<br>    <span class="hljs-comment">// 手动序列化</span><br>    <span class="hljs-type">String</span> <span class="hljs-variable">json</span> <span class="hljs-operator">=</span> mapper.writeValueAsString(user);<br>    <span class="hljs-comment">// 写入</span><br>    stringRedisTemplate.opsForValue().set(<span class="hljs-string">&quot;user:1&quot;</span>, json);<br>    <span class="hljs-comment">// 获取</span><br>    <span class="hljs-type">String</span> <span class="hljs-variable">jsonUser</span> <span class="hljs-operator">=</span> stringRedisTemplate.opsForValue().get(<span class="hljs-string">&quot;user:1&quot;</span>);<br>    <span class="hljs-comment">// 手动反序列化</span><br>    <span class="hljs-type">User</span> <span class="hljs-variable">user1</span> <span class="hljs-operator">=</span> mapper.readValue(jsonUser, User.class);<br>    System.out.println(<span class="hljs-string">&quot;user1 = &quot;</span> + user1);<br>&#125;<br></code></pre></td></tr></table></figure>

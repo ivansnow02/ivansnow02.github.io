@@ -18,7 +18,7 @@
   <meta name="author" content="Ivan Snow">
   <meta name="keywords" content="">
   
-    <meta name="description" content="栈和队列可以说是最基本的数据结构了，它们都是在两端进行操作，其中栈在栈顶进行操作，被称为先进后出（LIFO），队列在队头和队尾进行操作，被称为先进先出（FIFO）   栈 直接来看看API吧： API    public class Stack      Stack() 构造一个空栈   void push(Item item) 入栈   Item">
+    <meta name="description" content="栈和队列可以说是最基本的数据结构了，它们都是在两端进行操作，其中栈在栈顶进行操作，被称为先进后出（LIFO），队列在队头和队尾进行操作，被称为先进先出（FIFO）   栈 直接来看看API吧： API    public class Stack      Stack() 构造一个空栈   void push(Item item) 入栈   Item pop() 出栈   boolean isEm">
   
   
   
@@ -92,7 +92,11 @@
 
 
   
-<meta name="generator" content="Hexo 6.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
 
 
 <body>
@@ -174,6 +178,18 @@
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
               </a>
             </li>
           
@@ -303,32 +319,32 @@
 <img src="/posts/16574/image-20230530103359493.png" srcset="/img/loading.gif" lazyload class="">
 <h2 id="栈">栈</h2>
 <p>直接来看看API吧：</p>
-<h3 id="api">API</h3>
+<h3 id="API">API</h3>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>public class Stack</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Stack()</td>
 <td>构造一个空栈</td>
 </tr>
-<tr class="even">
+<tr>
 <td>void push(Item item)</td>
 <td>入栈</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Item pop()</td>
 <td>出栈</td>
 </tr>
-<tr class="even">
+<tr>
 <td>boolean isEmpty()</td>
 <td>判空</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>int size()</td>
 <td>大小</td>
 </tr>
@@ -346,10 +362,9 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FixedCapacityStack</span>&lt;Item&gt; &#123;<br>    <span class="hljs-keyword">private</span> Item[] s;<br>    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> <span class="hljs-variable">N</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">FixedCapacityStack</span><span class="hljs-params">(<span class="hljs-type">int</span> capacity)</span> &#123; <br>        s = (Item[]) <span class="hljs-keyword">new</span> <span class="hljs-title class_">Object</span>[capacity]; <br>    &#125; <br><br>    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">isEmpty</span><span class="hljs-params">()</span> &#123; <br>        <span class="hljs-keyword">return</span> N == <span class="hljs-number">0</span>; <br>    &#125;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">push</span><span class="hljs-params">(Item item)</span> &#123; <br>        s[N++] = item; <br>    &#125;<br><br>    <span class="hljs-keyword">public</span> Item <span class="hljs-title function_">pop</span><span class="hljs-params">()</span> &#123; <br>        <span class="hljs-keyword">return</span> s[--N]; <br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>但是定长的栈需要获取<code>capacity</code>，而这又需要客户端提供，然而大部分时间客户端是不知道所需的容量的。</p>
 <p>于是就有了动态长度的栈：</p>
-<h4 id="resizingarraystack">ResizingArrayStack</h4>
+<h4 id="ResizingArrayStack">ResizingArrayStack</h4>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ResizingArrayStack</span>&lt;Item&gt; &#123;<br>    <span class="hljs-keyword">private</span> Item[] s;<br>    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> <span class="hljs-variable">N</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">ResizingArrayStack</span><span class="hljs-params">()</span> &#123; <br>        s = (Item[]) <span class="hljs-keyword">new</span> <span class="hljs-title class_">Object</span>[<span class="hljs-number">1</span>]; <br>    &#125; <br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">push</span><span class="hljs-params">(Item item)</span> &#123;<br>        <span class="hljs-keyword">if</span> (N == s.length) resize(<span class="hljs-number">2</span> * s.length);<br>        s[N++] = item;<br>    &#125;<br>    <span class="hljs-keyword">public</span> Item <span class="hljs-title function_">pop</span><span class="hljs-params">()</span> &#123; <br>        <span class="hljs-keyword">return</span> s[--N]; <br>        s[N] = <span class="hljs-literal">null</span>;<br>        <span class="hljs-keyword">if</span> (N &gt; <span class="hljs-number">0</span> &amp;&amp; N == s.length/<span class="hljs-number">4</span>) resize(s.length/<span class="hljs-number">2</span>);<br>        <span class="hljs-keyword">return</span> item;<br>    &#125;<br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">resize</span><span class="hljs-params">(<span class="hljs-type">int</span> capacity)</span> &#123;<br>        Item[] copy = (Item[]) <span class="hljs-keyword">new</span> <span class="hljs-title class_">Object</span>[capacity];<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; N; i++)<br>            copy[i] = s[i];<br>        s = copy;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>此时<code>pop</code>和<code>push</code>操作的最坏时间复杂度也是<span
-class="math inline">\(O(N)\)</span>。</p>
+<p>此时<code>pop</code>和<code>push</code>操作的最坏时间复杂度也是<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span>。</p>
 <h4 id="迭代器">迭代器</h4>
 <p>我们可以为栈写一个迭代器：</p>
 <p>需要实现<code>Iterator&lt;&gt;</code>接口的<code>hasNext</code>和<code>next</code>方法，栈类也需要实现<code>Iterable&lt;&gt;</code>接口</p>
@@ -357,32 +372,32 @@ class="math inline">\(O(N)\)</span>。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> Iterator&lt;Item&gt; <span class="hljs-title function_">iterator</span><span class="hljs-params">()</span> &#123;<br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayIterator</span>();<br>&#125;<br><span class="hljs-keyword">private</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ArrayIterator</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Iterator</span>&lt;Item&gt; &#123;<br>    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> N;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">hasNext</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> i &gt; <span class="hljs-number">0</span>;<br>    &#125;<br>    <span class="hljs-keyword">public</span> Item <span class="hljs-title function_">next</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">if</span> (!hasNext()) &#123;<br>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">NoSuchElementException</span>();<br>        &#125;<br>        <span class="hljs-keyword">return</span> s[--N];<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 <h2 id="队列">队列</h2>
 <p>队列是一种基于<strong>先进先出</strong>（FIFO）策略的集合类型</p>
-<h3 id="api-1">API</h3>
+<h3 id="API-2">API</h3>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>public class Queue</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Queue()</td>
 <td>构造一个空队列</td>
 </tr>
-<tr class="even">
+<tr>
 <td>void enqueue(Item item)</td>
 <td>入队</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Item dequeue()</td>
 <td>出队</td>
 </tr>
-<tr class="even">
+<tr>
 <td>boolean isEmpty()</td>
 <td>判空</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>int size()</td>
 <td>大小</td>
 </tr>
