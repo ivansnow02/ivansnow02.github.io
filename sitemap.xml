@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ivansnow02.github.io/posts/51544/</loc>
+    
+    <lastmod>2023-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ivansnow02.github.io/posts/37632/</loc>
     
     <lastmod>2023-09-17</lastmod>
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/posts/51544/</loc>
+    <loc>https://ivansnow02.github.io/posts/25422/</loc>
     
     <lastmod>2023-09-17</lastmod>
     
@@ -50,15 +59,6 @@
     <loc>https://ivansnow02.github.io/posts/36820/</loc>
     
     <lastmod>2023-06-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/posts/25422/</loc>
-    
-    <lastmod>2023-06-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -344,14 +344,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/coursera/</loc>
+    <loc>https://ivansnow02.github.io/tags/vim/</loc>
     <lastmod>2023-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/vim/</loc>
+    <loc>https://ivansnow02.github.io/tags/coursera/</loc>
     <lastmod>2023-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -458,14 +458,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/Physics/</loc>
+    <loc>https://ivansnow02.github.io/categories/coding/coursera/Algorithms-Part-I/</loc>
     <lastmod>2023-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/coding/coursera/Algorithms-Part-I/</loc>
+    <loc>https://ivansnow02.github.io/categories/Physics/</loc>
     <lastmod>2023-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
