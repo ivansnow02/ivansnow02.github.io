@@ -36,8 +36,8 @@ https://ivansnow02.github.io/tags/Django/
 https://ivansnow02.github.io/tags/Python/
 https://ivansnow02.github.io/tags/Redis/
 https://ivansnow02.github.io/tags/Java/
-https://ivansnow02.github.io/tags/English/
 https://ivansnow02.github.io/tags/test/
+https://ivansnow02.github.io/tags/English/
 https://ivansnow02.github.io/tags/coursera/
 https://ivansnow02.github.io/tags/vim/
 https://ivansnow02.github.io/tags/Spring/
@@ -50,8 +50,8 @@ https://ivansnow02.github.io/categories/coding/
 https://ivansnow02.github.io/categories/coding/data-structure/
 https://ivansnow02.github.io/categories/coding/Django/
 https://ivansnow02.github.io/categories/coding/Redis/
-https://ivansnow02.github.io/categories/English/
 https://ivansnow02.github.io/categories/test/
+https://ivansnow02.github.io/categories/English/
 https://ivansnow02.github.io/categories/coding/coursera/
 https://ivansnow02.github.io/categories/trash/
 https://ivansnow02.github.io/categories/coding/coursera/Algorithms-Part-I/
