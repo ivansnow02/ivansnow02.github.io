@@ -348,14 +348,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/test/</loc>
+    <loc>https://ivansnow02.github.io/tags/English/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/English/</loc>
+    <loc>https://ivansnow02.github.io/tags/test/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -370,6 +370,13 @@
   
   <url>
     <loc>https://ivansnow02.github.io/tags/vim/</loc>
+    <lastmod>2023-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/tags/Spring/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -391,13 +398,6 @@
   
   <url>
     <loc>https://ivansnow02.github.io/tags/Linear-Algebra/</loc>
-    <lastmod>2023-09-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/tags/Spring/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -434,14 +434,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/coding/Django/</loc>
+    <loc>https://ivansnow02.github.io/categories/coding/data-structure/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/coding/data-structure/</loc>
+    <loc>https://ivansnow02.github.io/categories/coding/Django/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -455,14 +455,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/test/</loc>
+    <loc>https://ivansnow02.github.io/categories/English/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/English/</loc>
+    <loc>https://ivansnow02.github.io/categories/test/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

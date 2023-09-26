@@ -1,1 +1,1 @@
-hexo.extend.injector.register('head_begin', '<link rel="manifest" href="/manifest.json" />')
+hexo.extend.injector.register('head_begin', '<link rel="manifest" href="/manifest.json" />');
