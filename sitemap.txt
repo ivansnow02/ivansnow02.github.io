@@ -1,3 +1,4 @@
+https://ivansnow02.github.io/manifest.json
 https://ivansnow02.github.io/posts/51544/
 https://ivansnow02.github.io/posts/28245/
 https://ivansnow02.github.io/about/index.html
@@ -41,11 +42,11 @@ https://ivansnow02.github.io/tags/English/
 https://ivansnow02.github.io/tags/test/
 https://ivansnow02.github.io/tags/coursera/
 https://ivansnow02.github.io/tags/vim/
-https://ivansnow02.github.io/tags/learning/
-https://ivansnow02.github.io/tags/trash/
 https://ivansnow02.github.io/tags/Spring/
 https://ivansnow02.github.io/tags/Math/
+https://ivansnow02.github.io/tags/learning/
 https://ivansnow02.github.io/tags/Linear-Algebra/
+https://ivansnow02.github.io/tags/trash/
 https://ivansnow02.github.io/tags/tree/
 https://ivansnow02.github.io/tags/Discrete-Mathematics/
 https://ivansnow02.github.io/categories/coding/
@@ -55,7 +56,7 @@ https://ivansnow02.github.io/categories/coding/Redis/
 https://ivansnow02.github.io/categories/English/
 https://ivansnow02.github.io/categories/test/
 https://ivansnow02.github.io/categories/coding/coursera/
-https://ivansnow02.github.io/categories/trash/
 https://ivansnow02.github.io/categories/Math/
+https://ivansnow02.github.io/categories/trash/
 https://ivansnow02.github.io/categories/coding/coursera/Algorithms-Part-I/
 https://ivansnow02.github.io/categories/Physics/
