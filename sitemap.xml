@@ -381,6 +381,13 @@
   </url>
   
   <url>
+    <loc>https://ivansnow02.github.io/tags/Spring/</loc>
+    <lastmod>2023-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ivansnow02.github.io/tags/Math/</loc>
     <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -389,13 +396,6 @@
   
   <url>
     <loc>https://ivansnow02.github.io/tags/Linear-Algebra/</loc>
-    <lastmod>2023-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/tags/Spring/</loc>
     <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -474,14 +474,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/Math/</loc>
+    <loc>https://ivansnow02.github.io/categories/coding/coursera/Algorithms-Part-I/</loc>
     <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/coding/coursera/Algorithms-Part-I/</loc>
+    <loc>https://ivansnow02.github.io/categories/Math/</loc>
     <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

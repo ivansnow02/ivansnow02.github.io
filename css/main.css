@@ -852,8 +852,8 @@ i.iconfont {
   --post-text-color: #768094;
   --post-heading-color: #1a202c;
   --post-link-color: #0366d6;
-  --link-hover-color: #30a9de;
-  --link-hover-bg-color: #f8f9fa;
+  --link-hover-color: #6a60a9;
+  --link-hover-bg-color: #F7AA97;
   --line-color: #eaecef;
   --navbar-bg-color: #F7AA97;
   --navbar-text-color: #fff;
@@ -861,7 +861,7 @@ i.iconfont {
   --scrollbar-color: #C4AFA6;
   --scrollbar-hover-color: #BA9B9E;
   --button-bg-color: transparent;
-  --button-hover-bg-color: #f2f3f5;
+  --button-hover-bg-color: #F7AA97;
   --highlight-bg-color: #f6f8fa;
   --inlinecode-bg-color: rgba(175,184,193,0.2);
 }
@@ -877,8 +877,8 @@ i.iconfont {
     --post-text-color: #fbfbfb;
     --post-heading-color: #fff;
     --post-link-color: #1589e9;
-    --link-hover-color: #30a9de;
-    --link-hover-bg-color: #364151;
+    --link-hover-color: #F7AA97;
+    --link-hover-bg-color: #6a60a9;
     --line-color: #435266;
     --navbar-bg-color: #6a60a9;
     --navbar-text-color: #fff;
@@ -928,8 +928,8 @@ i.iconfont {
   --post-text-color: #fbfbfb;
   --post-heading-color: #fff;
   --post-link-color: #1589e9;
-  --link-hover-color: #30a9de;
-  --link-hover-bg-color: #364151;
+  --link-hover-color: #F7AA97;
+  --link-hover-bg-color: #6a60a9;
   --line-color: #435266;
   --navbar-bg-color: #6a60a9;
   --navbar-text-color: #fff;

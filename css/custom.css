@@ -117,3 +117,13 @@
 [data-user-color-scheme="dark"] .aplayer .aplayer-list ol li .aplayer-list-author {
     color: #fafafa;
 }
+
+:root {
+    --highlight-bg-color: #fff5ef !important;
+
+}
+
+:root[data-user-color-scheme="dark"] {
+    --highlight-bg-color: #343348 !important;
+
+}
