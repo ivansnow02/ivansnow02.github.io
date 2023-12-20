@@ -1,3 +1,4 @@
+https://ivansnow02.github.io/posts/3506/
 https://ivansnow02.github.io/posts/51544/
 https://ivansnow02.github.io/posts/28245/
 https://ivansnow02.github.io/posts/37632/
@@ -48,6 +49,7 @@ https://ivansnow02.github.io/tags/tree/
 https://ivansnow02.github.io/tags/Math/
 https://ivansnow02.github.io/tags/Linear-Algebra/
 https://ivansnow02.github.io/tags/Discrete-Mathematics/
+https://ivansnow02.github.io/tags/computer-science/
 https://ivansnow02.github.io/categories/coding/
 https://ivansnow02.github.io/categories/coding/Django/
 https://ivansnow02.github.io/categories/coding/data-structure/
@@ -59,3 +61,4 @@ https://ivansnow02.github.io/categories/trash/
 https://ivansnow02.github.io/categories/Math/
 https://ivansnow02.github.io/categories/Physics/
 https://ivansnow02.github.io/categories/coding/coursera/Algorithms-Part-I/
+https://ivansnow02.github.io/categories/computer-science/
