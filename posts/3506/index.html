@@ -26,10 +26,10 @@
 <meta property="og:description" content="计算机系统概论 计算机的性能指标  吞吐量：表征一台计算机在某一时间间隔内能够处理的信息量。 响应时间：表征从输入有效到系统产生响应之间的时间度量，例如微秒、纳秒。 利用率：表示在给定的时间间隔内，系统被实际使用的时间所占的比率，一般用百分比表示。 处理机字长：指处理机运算器中一次能够完成二进制数运算的位数。当前处理机的字长有8位、16位、32位、64位。字长越长，表示计算的精度越高。 总线宽度：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-12-20T08:32:28.000Z">
-<meta property="article:modified_time" content="2023-12-23T11:45:30.830Z">
+<meta property="article:modified_time" content="2023-12-30T09:00:16.000Z">
 <meta property="article:author" content="Ivan Snow">
-<meta property="article:tag" content="learning">
 <meta property="article:tag" content="computer science">
+<meta property="article:tag" content="learning">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@fake_ivansnow">
 <meta name="twitter:site" content="https://twitter.com/fake_ivansnow">
@@ -265,7 +265,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          13k 字
+          16k 字
         
       </span>
     
@@ -276,7 +276,7 @@
         
         
         
-          72 分钟
+          88 分钟
         
       </span>
     
@@ -892,6 +892,176 @@
 <ul>
 <li>写cache命中与未命中时和写回法基本相同，只是在第一次写命中时要同时写入主存。因第一次写cache命中时要启动一个存储写周期。</li>
 </ul>
+<h2 id="指令系统">指令系统</h2>
+<h3 id="指令系统的发展与性能要求">指令系统的发展与性能要求</h3>
+<h4 id="复杂指令集计算机（CISC）">复杂指令集计算机（CISC）</h4>
+<ul>
+<li>CISC是通过减少<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>N</mi></msub></mrow><annotation encoding="application/x-tex">I_N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>值来减少<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>c</mi></msub><mi>p</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">T_cpu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">p</span><span class="mord mathnormal">u</span></span></span></span>的</li>
+<li>CISC的主要特点：
+<ol>
+<li>指令系统复杂，表现在：指令数多，一般大于100条；寻址方式多，一般大于4种；指令格式多，一般大于4种</li>
+<li>绝大多数指令需要多个机器时钟周期方可完成</li>
+<li>各种指令都可访问存储器</li>
+<li>采用微程序控制</li>
+<li>有专用寄存器</li>
+<li>难以用优化编译生成高效的目标代码程序</li>
+</ol>
+</li>
+</ul>
+<h4 id="精简指令集计算机（RISC）">精简指令集计算机（RISC）</h4>
+<ul>
+<li>RISC是通过减少<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mi>P</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">CPI</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">CP</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span>值，简化结构来减少<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>c</mi></msub><mi>p</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">T_cpu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">p</span><span class="mord mathnormal">u</span></span></span></span>的</li>
+<li>RISC的主要特点：
+<ol>
+<li>精简指令系统：指令条数少，一般小于100条，基本寻址方式少，一般2~3种，指令格式少，一般2~3种，指令长度一致(32位)</li>
+<li>以寄存器-寄存器方式工作，除了Load/Store指令访问存储器外，其余指令只访问寄存器</li>
+<li>除了Load/Store指令访问存储器外，所有指令在一个机器时钟周期完成，并采用流水线技术</li>
+<li>使用较多的通用寄存器，一般至少32个，不允许有专用寄存器</li>
+<li>大多采用硬联线控制，少用或不用微程序实现</li>
+</ol>
+</li>
+</ul>
+<h3 id="指令格式">指令格式</h3>
+<h4 id="指令字长度">指令字长度</h4>
+<ul>
+<li>指令的长度是指一条指令所包含二进制代码的位数，取决于操作码长度和操作数地址个数及每个地址的长度。</li>
+<li>机器字长：计算机能直接处理的二进制数据的位数。</li>
+</ul>
+<h4 id="操作码">操作码</h4>
+<ul>
+<li>作用：指定指令是执行什么性质的操作。不同的指令用操作码字段的不同编码表示。</li>
+<li>定长编码：便于译码，扩展性差</li>
+<li>变长编码：能缩短指令平均长度</li>
+</ul>
+<h4 id="地址码">地址码</h4>
+<ul>
+<li>作用：常用于指定参与操作的操作数地址。</li>
+<li>根据指令中操作数地址的个数，将指令划分为：
+<ol>
+<li>零地址指令：指令中只有操作码，没有地址码。</li>
+<li>一地址指令：单操作数指令。该指令常以AC中数作为被操作数，指令中地址码字段所指明的数为操作数，操作结果又放回AC：(AC) OP (A) -&gt; AC</li>
+<li>二地址指令：双操作数指令，两地址指明被操作数和操作数地址，其中A1兼做结果地址：(A1) OP (A2) -&gt; (A1)</li>
+<li>三地址指令：三个地址分别指明被操作数、操作数以及结果存放地址：(A1) OP (A2) -&gt; (A3)</li>
+</ol>
+</li>
+</ul>
+<h3 id="操作数类型">操作数类型</h3>
+<ul>
+<li>地址数据:地址实际上也是一种形式的数据。</li>
+<li>数值数据:计算机中普遍使用的三种类型的数值数据。</li>
+<li>字符数据:文本数据或字符串，目前广泛使用ASCII码。</li>
+<li>逻辑数据:一个单元中由几位二进制bit项组成，每个bit的值可以是1或0。当数据以这种方式看待时，称为逻辑型数据。</li>
+</ul>
+<h3 id="指令和数据的寻址方式">指令和数据的寻址方式</h3>
+<h4 id="指令的寻址方式">指令的寻址方式</h4>
+<h5 id="顺序寻址方式">顺序寻址方式</h5>
+<ul>
+<li>程序指令按顺序存放在内存中，执行时按顺序从内存中取出所要执行的指令。</li>
+<li>程序计数器（指令指针寄存器，指令计数器）PC（Program Counter）存放正在执行的指令地址（要执行的下一指令地址）。</li>
+</ul>
+<h5 id="跳跃寻址方式">跳跃寻址方式</h5>
+<ul>
+<li>程序要执行的下条指令地址不是由PC给出，而是由本指令的地址码给出。</li>
+<li>用途：实现程序转移或构成循环程序。</li>
+</ul>
+<h4 id="操作数寻址方式">操作数寻址方式</h4>
+<h5 id="隐含寻址（Implied-Addressing）">隐含寻址（Implied Addressing）</h5>
+<ul>
+<li>不明显指定操作数的地址，而是在指令中隐含着操作数的地址。比如单地址指令格式的第二操作数由AC隐含指定。</li>
+</ul>
+<h5 id="立即寻址（Immediate-Addressing）">立即寻址（Immediate Addressing）</h5>
+<ul>
+<li>特点：地址字段指出的不是操作数地址，而是操作数本身。</li>
+<li>优点：无需访问内存，指令的执行时间很短。</li>
+<li>缺点：操作数的范围受限。</li>
+<li>适用范围：用于操作数固定的指令中，主要用于给寄存器或存储器赋初值。</li>
+</ul>
+<h5 id="直接寻址（Direct-Addressing）">直接寻址（Direct Addressing）</h5>
+<ul>
+<li>特点：地址字段直接指出操作数在内存中地址。</li>
+<li>优点：简单。</li>
+<li>缺点：寻址空间受限。</li>
+</ul>
+<h5 id="间接寻址（Indirect-Addressing）">间接寻址（Indirect Addressing）</h5>
+<ul>
+<li>特点：地址字段中的D是操作数地址的指针</li>
+<li>优点：寻址空间大。</li>
+<li>缺点：需多次访问主存。</li>
+<li>说明：两次访存影响执行速度，<strong>现已不大使用</strong>。</li>
+</ul>
+<h5 id="寄存器寻址（Register-Addressing）和寄存器间接寻址（Register-Indirect-Addressing）">寄存器寻址（Register Addressing）和寄存器间接寻址（Register Indirect Addressing）</h5>
+<ul>
+<li>寄存器寻址方式:寄存器中存放的是操作数。</li>
+<li>寄存器间接寻址方式:寄存器中存放的不是操作数，而是操作数在内存中的地址。</li>
+<li>区别：
+<ul>
+<li>寄存器中前者存的是操作数，后者是操作数地址。</li>
+<li>前者不需要访问内存，速度相对快；寻址空间小；后者需要访问内存，速度相对慢；寻址空间大。</li>
+</ul>
+</li>
+<li>联系：地址字段中给出的都是寄存器的编号。</li>
+</ul>
+<h5 id="相对寻址方式（Relative-Addressing）">相对寻址方式（Relative Addressing）</h5>
+<ul>
+<li>特点：把PC的内容加上指令格式中形式地址D而形成操作数的有效地址E。</li>
+</ul>
+<h5 id="基址寻址方式（Base-Register-Addressing）">基址寻址方式（Base-Register Addressing）</h5>
+<ul>
+<li>特点：把基址寄存器的内容加上指令格式中D而形成操作数的E。</li>
+<li>用途：可用于扩大寻址能力。</li>
+</ul>
+<h5 id="变址寻址方式（Index-Addressing）">变址寻址方式（Index Addressing）</h5>
+<ul>
+<li>特点：把某个变址寄存器的内容加上指令格式中D而形成操作数的E。</li>
+<li>用途：用于实现程序块的有规律变化。</li>
+</ul>
+<h5 id="块寻址方式（Block-Addressing）">块寻址方式（Block Addressing）</h5>
+<ul>
+<li>用途：用在I/O指令中，以实现外存储器或外围设备同内存之间的数据块传送，还适用于内存的数据块搬家。</li>
+<li>指定数据块长度的三种方法：
+<ol>
+<li>指令中划出字段指出长度；</li>
+<li>指令中指出数据块的首尾地址；</li>
+<li>由块结束字符指出数据块的长度。</li>
+</ol>
+</li>
+</ul>
+<h5 id="段寻址方式（Segment-Addressing）">段寻址方式（Segment Addressing）</h5>
+<ul>
+<li>方法：E由段寄存器的内容加上段内偏移地址而形成。</li>
+<li>应用：微型机采用段寻址方式，20位物理地址为16位段地址左移四位加上16位偏移量。</li>
+<li>分类：
+<ol>
+<li>段内直接寻址；</li>
+<li>段内间接寻址；</li>
+<li>段间直接寻址；</li>
+<li>段间间接寻址；</li>
+</ol>
+</li>
+</ul>
+<h5 id="堆栈寻址方式">堆栈寻址方式</h5>
+<ul>
+<li>堆栈：是一组能存入和取出数据的暂时存储单元。</li>
+<li>区别：对数据的存取方法或寻址方式不同。</li>
+<li>分类：串联堆栈和存储器堆栈。
+<ul>
+<li>串联堆栈（硬堆栈，下压堆栈）：由CPU中的一组专门寄存器组成,容量有限、读出具有破坏性；</li>
+<li>存储器堆栈（软堆栈）：在主存储器中划分出一部分区域来作为堆栈。容量可任意、可同时建立多个堆栈、可用对存储器寻址的任一指令来对堆栈中数据寻址</li>
+</ul>
+</li>
+</ul>
+<h3 id="典型指令">典型指令</h3>
+<h4 id="指令的分类">指令的分类</h4>
+<ul>
+<li>数据传送指令：主要用于主存和寄存器、寄存器和寄存器之间的数据传送。主要有：取数、存数、传送、成组传送、字节交换、清除累加器和堆栈操作指令等。</li>
+<li>算术运算指令：主要用于定点或浮点的算术运算、向量运算。主要有：二进制定点加、减、乘、除指令；浮点加、减、乘、除指令，求反、求补、算术移位指令。</li>
+<li>逻辑运算指令：主要用于无符号数的位操作、代码转换、判断及运算。主要有：逻辑加、乘、异或、移位等。</li>
+<li>程序控制指令：转移指令一般分为：条件转移、无条件转移、转子程序、返回主程序、中断返回指令等。条件转移的条件有进位标志位©、结果为零标志(Z) 、负标志(N) 、溢出标志(V) 和奇偶标志(P) 等。</li>
+<li>输入输出指令：主要用来启动外围设备，检查测试外围设备的工作状态，并实现外围设备和CPU之间、外围设备与外围设备之间的信息传送。</li>
+<li>字符串处理指令：常用在文字编辑中对字符串进行处理。包括：字符串传送、转换、比较、查找、抽取和替换等。</li>
+<li>特权指令：是具有特殊权限的指令，只用于操作系统或其他系统软件，一般不直接提供用户使用。主要用于系统资源的分配和管理：改变系统工作方式，检测用户的访问权限、修改虚拟存储器管理的段表、页表，完成任务的创建和切换。</li>
+<li>其他指令：状态寄存器置位、复位、测试、暂停、空操作，以及其它系统控制用的特殊指令。</li>
+</ul>
 
                 
               </div>
@@ -925,9 +1095,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/learning/">#learning</a>
-      
         <a href="/tags/computer-science/">#computer science</a>
+      
+        <a href="/tags/learning/">#learning</a>
       
     </div>
   
