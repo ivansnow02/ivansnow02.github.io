@@ -376,14 +376,21 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/computer-science/</loc>
+    <loc>https://ivansnow02.github.io/tags/learning/</loc>
     <lastmod>2023-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/learning/</loc>
+    <loc>https://ivansnow02.github.io/tags/trash/</loc>
+    <lastmod>2023-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/tags/computer-science/</loc>
     <lastmod>2023-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -412,13 +419,6 @@
   
   <url>
     <loc>https://ivansnow02.github.io/tags/tree/</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/tags/trash/</loc>
     <lastmod>2023-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -483,6 +483,13 @@
   </url>
   
   <url>
+    <loc>https://ivansnow02.github.io/categories/trash/</loc>
+    <lastmod>2023-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ivansnow02.github.io/categories/computer-science/</loc>
     <lastmod>2023-12-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -491,13 +498,6 @@
   
   <url>
     <loc>https://ivansnow02.github.io/categories/Math/</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/categories/trash/</loc>
     <lastmod>2023-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
