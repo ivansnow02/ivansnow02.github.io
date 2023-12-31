@@ -26,7 +26,7 @@
 <meta property="og:description" content="计算机系统概论 计算机的性能指标  吞吐量：表征一台计算机在某一时间间隔内能够处理的信息量。 响应时间：表征从输入有效到系统产生响应之间的时间度量，例如微秒、纳秒。 利用率：表示在给定的时间间隔内，系统被实际使用的时间所占的比率，一般用百分比表示。 处理机字长：指处理机运算器中一次能够完成二进制数运算的位数。当前处理机的字长有8位、16位、32位、64位。字长越长，表示计算的精度越高。 总线宽度：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-12-20T08:32:28.000Z">
-<meta property="article:modified_time" content="2023-12-30T09:41:01.219Z">
+<meta property="article:modified_time" content="2023-12-31T06:35:14.378Z">
 <meta property="article:author" content="Ivan Snow">
 <meta property="article:tag" content="computer science">
 <meta property="article:tag" content="learning">
@@ -265,7 +265,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          16k 字
+          22k 字
         
       </span>
     
@@ -276,7 +276,7 @@
         
         
         
-          88 分钟
+          121 分钟
         
       </span>
     
@@ -1061,6 +1061,429 @@
 <li>字符串处理指令：常用在文字编辑中对字符串进行处理。包括：字符串传送、转换、比较、查找、抽取和替换等。</li>
 <li>特权指令：是具有特殊权限的指令，只用于操作系统或其他系统软件，一般不直接提供用户使用。主要用于系统资源的分配和管理：改变系统工作方式，检测用户的访问权限、修改虚拟存储器管理的段表、页表，完成任务的创建和切换。</li>
 <li>其他指令：状态寄存器置位、复位、测试、暂停、空操作，以及其它系统控制用的特殊指令。</li>
+</ul>
+<h2 id="中央处理器">中央处理器</h2>
+<h3 id="CPU的功能">CPU的功能</h3>
+<ul>
+<li>指令控制：程序的顺序控制。</li>
+<li>操作控制：管理并产生每条指令的操作信号，并把它们送到相应部件，控制这些部件按要求进行动作。</li>
+<li>时间控制：对各种操作实施时间上的定时。</li>
+<li>数据加工：对数据进行算术和逻辑运算处理。</li>
+</ul>
+<h3 id="CPU的基本组成">CPU的基本组成</h3>
+<h4 id="运算器">运算器</h4>
+<ul>
+<li>由ALU、AC、DR和PSW组成；是数据加工处理部件；在控制器的指挥下运行。</li>
+<li>运算器的主要功能：
+<ul>
+<li>执行算术运算；</li>
+<li>执行逻辑运算，并进行逻辑测试。</li>
+</ul>
+</li>
+<li>定点运算器的结构：
+<ul>
+<li>单总线结构的运算器</li>
+<li>双总线结构的运算器</li>
+<li>三总线结构的运算器</li>
+</ul>
+</li>
+</ul>
+<h4 id="控制器">控制器</h4>
+<ul>
+<li>组成：PC、指令寄存器（IR） 、指令译码器（ID）、时序产生器和操作控制器；</li>
+<li>作用： “决策机构” ，协调和指挥整个系统的操作。</li>
+<li>功能：
+<ul>
+<li>取指令，并指出下一条指令的位置。</li>
+<li>对指令译码或测试，产生相应操作控制信号，以启动规定的动作。</li>
+<li>指挥并控制CPU、内存和I/O设备之间数据流动的方向。</li>
+</ul>
+</li>
+</ul>
+<h5 id="操作控制器（微命令发生器）">操作控制器（微命令发生器）</h5>
+<ul>
+<li>组合逻辑型：常规控制器或硬布线控制器，采用组合逻辑技术实现。
+<ul>
+<li>优点：速度快；</li>
+<li>缺点：设计、调试、维修困难，难实现设计自动化。</li>
+</ul>
+</li>
+<li>存储逻辑型：微程序控制器，采用存储逻辑来实现，即微操作信号代码化，使得每条指令转化为一段微程序并存入一个专门的存储器中。
+<ul>
+<li>优点：设计规整，调试、维修以及更改、扩充指令方便，易于设计自动化。</li>
+<li>缺点：指令执行速度比组合逻辑型慢。</li>
+</ul>
+</li>
+</ul>
+<h5 id="指令计数器PC">指令计数器PC</h5>
+<ul>
+<li>功能：指示指令在M中的位置</li>
+<li>顺序执行：PC+1</li>
+<li>转移执行：PC先加1，再加上转移地址</li>
+</ul>
+<h5 id="指令寄存器IR">指令寄存器IR</h5>
+<ul>
+<li>功能：存放当前指令的操作码和地址码</li>
+</ul>
+<h5 id="状态寄存器PSW">状态寄存器PSW</h5>
+<ul>
+<li>功能：指示程序运行方式，反映程序运行结果。</li>
+</ul>
+<h5 id="时序线路">时序线路</h5>
+<ul>
+<li>功能：控制操作时间和操作时刻。</li>
+</ul>
+<h3 id="指令周期">指令周期</h3>
+<h4 id="指令周期的基本概念">指令周期的基本概念</h4>
+<ul>
+<li>指令周期：取出并执行一条指令的时间。</li>
+<li>CPU周期/机器周期（工作周期）：常用从内存中读取一个指令字的最短时间来规定机器周期。</li>
+<li>T周期/节拍脉冲 处理操作的最基本单位。</li>
+</ul>
+<h4 id="用方框图语言表示指令周期">用方框图语言表示指令周期</h4>
+<ul>
+<li>方框：代表一个CPU周期，方框中的内容表示数据通路的操作或某种控制操作；</li>
+<li>菱形：表示某种判别或测试，在时间上不单占一个CPU周期，而是依附于紧接它的前面一个方框的CPU周期；</li>
+<li>箭头：表示CPU执行顺序；</li>
+<li><code>~</code> ：公操作符号，表示一条指令执行完毕后，CPU所开始执行的一些操作——如中断处理、通道处理等，其中取指令也可认为是公操作。</li>
+</ul>
+<h3 id="时序产生器和控制方式">时序产生器和控制方式</h3>
+<h4 id="时序信号的作用和体制">时序信号的作用和体制</h4>
+<ul>
+<li>作用：控制操作时间和操作时刻。</li>
+<li>基本体制：电位-脉冲制。</li>
+</ul>
+<h4 id="时序信号产生器">时序信号产生器</h4>
+<ul>
+<li>时钟源（主时钟）：通常由石英晶体震荡器和与非门组成的正反馈振荡电路组成。
+<ul>
+<li>作用：提供频率稳定且电平匹配的方波时钟脉冲信号，为整个机器提供基准信号。</li>
+<li>时钟源在机器上电后立即开始产生具有一定占空比的时钟脉冲序列，直到关电源为止，中间不允许有任何间断。</li>
+</ul>
+</li>
+<li>环形脉冲发生器（节拍信号发生器）：产生一组有序的间隔相等或不等的脉冲序列，以便通过译码电路产生最后所需要的节拍脉冲。</li>
+<li>节拍脉冲和读写时序译码逻辑：根据环形脉冲发生器产生的脉冲，通过与门和与非门电路产生节拍。同时和<strong>微程序控制器中产生</strong>的读/写/对内存/对I/O设备等操作信号融合，实现对内存和外设的<strong>读写操作</strong>。（时序信号还<strong>不是微操作信号</strong>，而只是协调各部件工作的同步信号）</li>
+<li>启停控制逻辑：根据计算机的需要，可靠地开放和封锁脉冲，控制时序信号的发生和停止，实现对整个机器的正确启动与停止。<strong>必须保证启动时输出的第一个脉冲和停止时输出的最后一个脉冲都是完整的脉冲</strong>。</li>
+</ul>
+<h4 id="控制方式">控制方式</h4>
+<h5 id="同步控制方式-固定时序控制方式">同步控制方式(固定时序控制方式)</h5>
+<ul>
+<li>已定的指令在执行时所需的机器周期和时钟周期数都是固定不变的。
+<ul>
+<li>采用完全统一的机器周期执行各种不同的指令；一刀切</li>
+<li>采用不定长机器周期；</li>
+<li>中央控制与局部控制相结合。</li>
+</ul>
+</li>
+<li>特点：有明显时序划分，时钟周期固定，各步操作的衔接、各部件之间的数据传送受严格同步定时控制。</li>
+<li>优点：时序关系简单，时序划分规整，控制不复杂；控制逻辑易于集中，容易实现，便于管理。</li>
+<li>缺点：时间安排不合理，会造成简单指令较多的空闲时间，影响指令执行速度，不利于发挥计算机高速运算的潜力。</li>
+<li>应用场合：用于CPU和设备内部、系统总线操作(各挂接部件速度相近，传送时间确定，传送距离较近)。</li>
+</ul>
+<h5 id="异步控制方式（可变时序控制方式）">异步控制方式（可变时序控制方式）</h5>
+<ul>
+<li>各项操作按需安排时间，不受统一时序控制</li>
+<li>特点：无统一时钟周期划分，各操作间的衔接和各部件之间的信息交换采用异步应答方式。</li>
+<li>优点：时间安排紧凑、合理、效率高；</li>
+<li>缺点：控制复杂，不容易实现。</li>
+<li>应用场合：用于异步总线操作(各挂接部件速度差异大，传送时间不确定，传送距离较远)。</li>
+</ul>
+<h5 id="联合控制方式">联合控制方式</h5>
+<ul>
+<li>大部分操作安排在固定的机器周期中，对某些时间难以确定的操作则以执行部件的“回答”信号作为本次操作的结束。</li>
+<li>特点：同步方式引入异步应答。</li>
+<li>优点：不浪费很多时间，控制上又不是很复杂。</li>
+</ul>
+<h3 id="微程序控制器">微程序控制器</h3>
+<h4 id="基本术语">基本术语</h4>
+<ul>
+<li>微操作：一条指令的功能是通过执行一系列操作控制步完成的；这些控制步中的基本操作称为微操作。</li>
+<li>微命令：微命令是微操作的控制信号，而微操作是微命令的操作内容。</li>
+<li>微指令：可以同时执行的一组微命令组成一条微指令，完成一个基本运算或传送功能。也将微指令称作控制字（CW），其中每一位代表一个微命令。</li>
+<li>微程序：完成指定任务的微指令序列称为微程序。一条机器指令其功能可由一段微程序解释完成。</li>
+<li>微地址：微指令在控制存储器中的单元地址</li>
+</ul>
+<h4 id="组成原理">组成原理</h4>
+<h5 id="主要部件">主要部件</h5>
+<h6 id="控制存储器CM">控制存储器CM</h6>
+<ul>
+<li>功能：存放微程序，是微程序控制器的核心部件。</li>
+<li>CM属于CPU，不属于主存储器</li>
+</ul>
+<h6 id="微指令寄存器µIR">微指令寄存器µIR</h6>
+<ul>
+<li>功能：存放当前微指令的内容。</li>
+<li>微命令字段：提供一步操作所需的微命令。</li>
+<li>微地址字段：
+<ul>
+<li>指明后续微地址的形成方式</li>
+<li>提供微地址的给定部分</li>
+</ul>
+</li>
+</ul>
+<h6 id="微地址形成电路">微地址形成电路</h6>
+<ul>
+<li>功能：提供两类微地址</li>
+<li>微程序入口地址：由机器指令操作码形成。</li>
+<li>后续微地址：由微地址字段、现行微地址、运行状态等形成</li>
+</ul>
+<h5 id="工作过程">工作过程</h5>
+<ol>
+<li>取机器指令：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mi>M</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>取指微指令</mtext></mpadded></mover><mtext>µ</mtext><mi>I</mi><mi>R</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>微命令字段</mtext></mpadded></mover><mtext>译码器</mtext><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>微命令</mtext></mpadded></mover><mtext>主存</mtext><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>机器指令</mtext></mpadded></mover><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">CM\xrightarrow{\text{取指微指令}}µIR\xrightarrow{\text{微命令字段}}译码器\xrightarrow{\text{微命令}}主存\xrightarrow{\text{机器指令}}IR</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">CM</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">取指微指令</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord">µ</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">微命令字段</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord cjk_fallback">译码器</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">微命令</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord cjk_fallback">主存</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">机器指令</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span></li>
+<li>转微程序入口：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>R</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>操作码</mtext></mpadded></mover><mtext>微地址形成电路</mtext><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>入口</mtext></mpadded></mover><mtext>µ</mtext><mi>A</mi><mi>R</mi><mo>→</mo><mi>C</mi><mi>M</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>首条微指令</mtext></mpadded></mover><mtext>µ</mtext><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">IR\xrightarrow{\text{操作码}}微地址形成电路\xrightarrow{\text{入口}}µAR\rightarrow CM\xrightarrow{\text{首条微指令}}µIR</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">操作码</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord cjk_fallback">微地址形成电路</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">入口</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">µ</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">CM</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">首条微指令</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">µ</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span></li>
+<li>执行首条微指令：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>µ</mtext><mi>I</mi><mi>R</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>微命令字段</mtext></mpadded></mover><mtext>译码器</mtext><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>微命令</mtext></mpadded></mover><mtext>操作部件</mtext></mrow><annotation encoding="application/x-tex">µIR\xrightarrow{\text{微命令字段}}译码器\xrightarrow{\text{微命令}}操作部件</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord">µ</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">微命令字段</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord cjk_fallback">译码器</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">微命令</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">操作部件</span></span></span></span></li>
+<li>取后续微指令：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>微地址字段</mtext></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>现行微地址</mtext></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>运行状态</mtext></mstyle></mtd></mtr></mtable></mrow><mo>→</mo><mtext>微地址形成电路</mtext><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>后续微地址</mtext></mpadded></mover><mtext>µ</mtext><mi>A</mi><mi>R</mi><mo>→</mo><mi>C</mi><mi>M</mi><mover><mo stretchy="true" minsize="3.0em">→</mo><mpadded width="+0.6em" lspace="0.3em"><mtext>后续微指令</mtext></mpadded></mover><mtext>µ</mtext><mi>I</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">\begin{cases}微地址字段\\现行微地址\\运行状态\end{cases}\rightarrow微地址形成电路\xrightarrow{\text{后续微地址}}µAR\rightarrow CM\xrightarrow{\text{后续微指令}}µIR</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:4.32em;vertical-align:-1.91em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.35em;"><span style="top:-2.2em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-2.192em;"><span class="pstrut" style="height:3.15em;"></span><span style="height:0.316em;width:0.8889em;"><svg xmlns="http://www.w3.org/2000/svg" width='0.8889em' height='0.316em' style='width:0.8889em' viewBox='0 0 888.89 316' preserveAspectRatio='xMinYMin'><path d='M384 0 H504 V316 H384z M384 0 H504 V316 H384z'/></svg></span></span><span style="top:-3.15em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.292em;"><span class="pstrut" style="height:3.15em;"></span><span style="height:0.316em;width:0.8889em;"><svg xmlns="http://www.w3.org/2000/svg" width='0.8889em' height='0.316em' style='width:0.8889em' viewBox='0 0 888.89 316' preserveAspectRatio='xMinYMin'><path d='M384 0 H504 V316 H384z M384 0 H504 V316 H384z'/></svg></span></span><span style="top:-4.6em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.85em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.41em;"><span style="top:-4.41em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord cjk_fallback">微地址字段</span></span></span><span style="top:-2.97em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord cjk_fallback">现行微地址</span></span></span><span style="top:-1.53em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord cjk_fallback">运行状态</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.91em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord cjk_fallback">微地址形成电路</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">后续微地址</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">µ</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1113em;vertical-align:-0.011em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">CM</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel x-arrow"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1003em;"><span style="top:-3.322em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight x-arrow-pad"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">后续微指令</span></span></span></span></span><span class="svg-align" style="top:-2.689em;"><span class="pstrut" style="height:2.7em;"></span><span class="hide-tail" style="height:0.522em;min-width:1.469em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128
+-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20
+ 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7
+ 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
+-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
+-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
+ 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">µ</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span></li>
+<li>执行后续微指令：同3.</li>
+<li>返回（微程序执行完，返回CM（存放取指微指令的固定单元））</li>
+</ol>
+<h5 id="微指令">微指令</h5>
+<ul>
+<li>操作控制部分：又称“微操作码字段”，用来发出管理和指挥全机工作的控制信号，其中每一位都表示一个微命令。</li>
+<li>顺序控制部分：又称“微地址码字段”，用来决定产生下一条微指令的地址</li>
+</ul>
+<h5 id="总结：">总结：</h5>
+<ul>
+<li>微程序控制器的工作过程实质就是：在微程序控制器的控制下，计算机执行机器指令的过程。具体可分为：
+<ol>
+<li>执行取指令的公操作机器开始运行时，自动地将取指微程序的入口微地址送入µAR，并从CM中读出微指令，送往µIR，当取指微程序执行完以后，从主存中取出的机器指令就已经存入IR中了。</li>
+<li>由机器指令的操作码字段OP通过“地址转移逻辑”产生出该机器指令所对应的微程序的入口微地址，并送入µAR。</li>
+<li>从CM中逐条取出相应的微指令并执行。</li>
+<li>执行完对应于一条机器指令的一段微程序之后，又回到取指微程序的入口地址，继续第（1）步，以完成取下一条机器指令的公操作。</li>
+</ol>
+</li>
+</ul>
+<h5 id="微程序时序安排">微程序时序安排</h5>
+<ul>
+<li>为了保证整个机器控制信号的同步，可以将一个微指令周期时间设计得恰好和CPU周期时间相等。</li>
+</ul>
+<h5 id="机器指令与微指令的关系">机器指令与微指令的关系</h5>
+<ul>
+<li>一条机器指令对应一段微程序，此微程序是由若干条微指令序列组成的。</li>
+<li>指令、程序、地址对应于内存储器；微指令、微程序、微地址对应于控制存储器。</li>
+<li>一个CPU周期对应于一条微指令指令周期。方框图就是微程序流程图。</li>
+</ul>
+<h4 id="微程序设计技术">微程序设计技术</h4>
+<h5 id="微指令格式">微指令格式</h5>
+<h6 id="垂直型微指令">垂直型微指令</h6>
+<ul>
+<li>一条微指令定义并执行一种基本操作</li>
+<li>优点：微指令短、简单、规整，便于编写微程序。</li>
+<li>缺点：微程序长，执行速度慢；工作效率低。</li>
+</ul>
+<h6 id="水平型微指令">水平型微指令</h6>
+<ul>
+<li>一条微指令定义并执行几种并行的基本操作</li>
+<li>优点:微程序短，执行速度快。</li>
+<li>缺点：微指令长，编写微程序困难。</li>
+</ul>
+<h6 id="混合型微指令">混合型微指令</h6>
+<ul>
+<li>在垂直型的基础上增加一些不太复杂的并行操作</li>
+<li>微指令不长，便于编写</li>
+<li>微程序不长，执行速度加快</li>
+</ul>
+<h5 id="编码方法">编码方法</h5>
+<h6 id="直接编码">直接编码</h6>
+<ul>
+<li>微命令按位给出</li>
+<li>不需译码，产生微命令的速度快</li>
+<li>信息的表示效率低</li>
+<li>微指令中通常只有个别位采用直接控制法</li>
+</ul>
+<h6 id="分段直接编译法">分段直接编译法</h6>
+<ul>
+<li>微命令由字段编码直接给出</li>
+<li>微命令分组原则：同类操作中互斥的微命令放同一字段</li>
+<li>微操作分类：
+<ul>
+<li>相容性：在同时或同一CPU周期内可以并行执行。</li>
+<li>相斥性：在同时或同一CPU周期内不能并行执行。</li>
+</ul>
+</li>
+<li>编码较简单</li>
+<li>操作唯一</li>
+<li>一条微指令能同时提供若干微命令，便于组织各种操作</li>
+</ul>
+<h5 id="微地址形成方式">微地址形成方式</h5>
+<h6 id="增量方式">增量方式</h6>
+<ul>
+<li>以顺序执行为主，辅以各种常规转移方式
+<ul>
+<li>顺序：现行微地址+1</li>
+<li>跳步：现行微地址+2</li>
+<li>无条件转移：现行微指令给出转移微地址</li>
+<li>条件转移：现行微指令给出转移微地址和转移条件</li>
+</ul>
+</li>
+</ul>
+<h6 id="多路转移方式（断定方式）">多路转移方式（断定方式）</h6>
+<ul>
+<li>由直接给定和测试断定相结合形成微地址</li>
+</ul>
+<h3 id="流水线CPU">流水线CPU</h3>
+<h4 id="并行处理技术">并行处理技术</h4>
+<ul>
+<li>时间并行：时间重叠，让多个处理过程在时间上相互错开，轮流重叠地使用同一套硬件设备的各个部分，以加快硬件周转而赢得速度。</li>
+<li>空间并行：资源重复，以“数量取胜”来提高计算机的处理速度。当前的空间并行主要体现在多CPU和多计算机系统，在单处理机系统中也得到广泛的应用。</li>
+<li>时间+空间并行：时间重叠和资源重复的综合应用。</li>
+</ul>
+<h4 id="流水CPU的结构">流水CPU的结构</h4>
+<h5 id="流水计算机的系统组成">流水计算机的系统组成</h5>
+<ul>
+<li>程序和数据存放在主存中：主存采用多体交叉存储器，CPU与主存之间添加一个高速cache来弥补两者速度差异。</li>
+<li>指令部件本身构成一个流水线：取指令、指令译码、计算操作数地址、取操作数等几个过程段组成；</li>
+<li>指令队列：一个FIFO的寄存器队列，用来存放经过译码的指令和取来的数据，也是一条流水线；</li>
+<li>执行部件：具有多个算术逻辑运算部件，这些部件本身又用流水线方式构成，一般采用的实现方法：
+<ul>
+<li>将执行部件分为定点执行部件和浮点执行部件两个可并行执行部分，分别处理定点运算指令和浮点运算指令；</li>
+<li>在浮点执行部件中，又有浮点加法部件和浮点乘/除部件，它们可同时执行不同的指令；</li>
+<li>浮点运算部件都以流水线方式工作。</li>
+</ul>
+</li>
+</ul>
+<h5 id="流水线分类">流水线分类</h5>
+<ul>
+<li>指令流水线：指令步骤的并行，将指令流的处理过程划分为取指令、指令译码、取操作数、执行、写回等几个并行处理的过程段。</li>
+<li>算术流水线：运算操作步骤的并行，如流水加法器、流水乘法器、流水除法器等。</li>
+<li>处理机流水线：宏流水线，指程序步骤的并行；由一串级联的处理机构成流水线的各个过程段，每台处理机负责某一特定的任务。</li>
+</ul>
+<h4 id="流水线中主要问题">流水线中主要问题</h4>
+<h5 id="资源相关冲突">资源相关冲突</h5>
+<ul>
+<li>多条指令进入流水线后在同一机器时钟周期内争用同一个功能部件所发生的冲突。</li>
+<li>解决方法：
+<ul>
+<li>后继指令停顿一拍后再启动。</li>
+<li>增加相应资源。</li>
+</ul>
+</li>
+</ul>
+<h5 id="数据相关冲突">数据相关冲突</h5>
+<ul>
+<li>有<code>i</code>和<code>j</code>两条指令，<code>i</code>指令在前，<code>j</code>指令在后，则三种不同类型的数据相关的含义为
+<ul>
+<li><code>RAW</code>读写（先写后读）：指令<code>j</code>试图在指令<code>i</code>写入寄存器前就读出该寄存器内容，这样，指令<code>j</code>就会错误地读出该寄存器旧的内容。</li>
+<li><code>WAR</code>写读（先读后写）：指令<code>j</code>试图在指令<code>i</code>读出寄存器之前就写入该寄存器，这样，指令<code>i</code>就错误地读得该寄存器新的内容。</li>
+<li><code>WAW</code>写写（先写后写）：指令<code>j</code>试图在指令<code>i</code>写寄存器之前就写入该寄存器，这样，两次写的先后次序被颠倒，就会错误地使由指令<code>i</code>写入的值成为该寄存器内容。</li>
+</ul>
+</li>
+<li>解决办法主要用软件和硬件技术：
+<ul>
+<li>时间推后法</li>
+<li>旁路技术或相关专用通路技术：定向传递（设置若干运算结果缓冲寄存器，暂时保留运算结果，便于后续指令直接使用，称为“向前”或定向传送技术）</li>
+</ul>
+</li>
+</ul>
+<h5 id="控制相关冲突">控制相关冲突</h5>
+<ul>
+<li>由转移指令引起。当执行转移指令时，依据转移条件的产生结果，可能为顺序取下条指令；也可能转移到目标地址取指令，从而使流水线断流。</li>
+<li>解决方法：
+<ul>
+<li>延迟转移法：由编译程序重排指令序列来实现。基本思想是“先执行再转移”；在不转移时，使延迟的时间得到有效利用。</li>
+<li>转移预测法：用硬件方法实现，依据指令过去的行为来预测将来的行为。通过使用转移取和顺序取两路指令预取队列以及目标指令cache，可将转移预测提前到取指阶段进行，以获得良好的效果。</li>
+</ul>
+</li>
+</ul>
+<h3 id="RISC-CPU">RISC CPU</h3>
+<h4 id="RISC-CPU的特点">RISC CPU的特点</h4>
+<ul>
+<li>RISC的三个要素是：
+<ul>
+<li>一个有限的简单的指令集；</li>
+<li>CPU配备大量的通用寄存器；</li>
+<li>强调对指令流水线的优化。</li>
+</ul>
+</li>
+<li>基于三要素的RISC机器的特征是：
+<ul>
+<li>使用等长指令，目前的典型长度是4个字节。</li>
+<li>寻址方式少且简单，一般为2—3种，最多不超过4种，绝不出现存储器间接寻址方式。</li>
+<li>只有取数指令、存数指令访问存储器。指令中最多出现RS型指令，绝不出现SS型指令。</li>
+<li>指令集中的指令数目一般少于100种，指令格式一般少于4种。</li>
+<li>指令功能简单，控制器多采用硬布线方式，以期更快的执行速度。</li>
+<li>平均而言，所有指令的执行时间为一个处理时钟周期。</li>
+<li>指令格式中用于指派整数寄存器的个数不少于32个，用于指派浮点数寄存器的个数不少于16个。</li>
+<li>强调通用寄存器资源的优化使用。</li>
+<li>支持指令流水并强调指令流水的优化使用。</li>
+<li>RISC技术的复杂性在于它的编译程序，因此软件系统开发时间比CISC机器长。</li>
+</ul>
+</li>
+</ul>
+<h3 id="CPU性能评价">CPU性能评价</h3>
+<ul>
+<li>CPU性能：CPU执行程序所用的时间</li>
+<li>速度评价标准：MIPS和MFLOPS
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>I</mi><mi>P</mi><mi>S</mi><mo>=</mo><mfrac><mrow><mtext>指令条数（</mtext><msub><mi>I</mi><mi>N</mi></msub><mtext>）</mtext></mrow><mrow><mtext>执行时间（</mtext><msub><mi>T</mi><mi>e</mi></msub><mtext>）</mtext><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mtext>时钟频率（</mtext><msub><mi>f</mi><mi>c</mi></msub><mtext>）</mtext></mrow><mrow><mi>C</mi><mi>P</mi><mi>I</mi><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">MIPS=\frac{指令条数（I_N）}{执行时间（T_e）\times10^6}=\frac{时钟频率（f_c）}{CPI\times10^6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.05764em;">PS</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.3337em;vertical-align:-0.4451em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8886em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord cjk_fallback mtight">执行时间（</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1645em;"><span style="top:-2.357em;margin-left:-0.1389em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">e</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mord cjk_fallback mtight">）</span><span class="mbin mtight">×</span><span class="mord mtight">1</span><span class="mord mtight"><span class="mord mtight">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463em;"><span style="top:-2.786em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4103em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord cjk_fallback mtight">指令条数（</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3567em;margin-left:-0.0785em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1433em;"><span></span></span></span></span></span></span><span class="mord cjk_fallback mtight">）</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4451em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.3355em;vertical-align:-0.4033em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9322em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">CP</span><span class="mord mathnormal mtight" style="margin-right:0.07847em;">I</span><span class="mbin mtight">×</span><span class="mord mtight">1</span><span class="mord mtight"><span class="mord mtight">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463em;"><span style="top:-2.786em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4461em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord cjk_fallback mtight">时钟频率（</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1645em;"><span style="top:-2.357em;margin-left:-0.1076em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mord cjk_fallback mtight">）</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4033em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>F</mi><mi>L</mi><mi>O</mi><mi>P</mi><mi>S</mi><mo>=</mo><mfrac><mrow><mtext>浮点运算次数（</mtext><msub><mi>I</mi><mrow><mi>F</mi><mi>N</mi></mrow></msub><mtext>）</mtext></mrow><mrow><mtext>执行时间（</mtext><msub><mi>T</mi><mi>e</mi></msub><mtext>）</mtext><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">MFLOPS=\frac{浮点运算次数（I_{FN}）}{执行时间（T_e）\times10^6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">MF</span><span class="mord mathnormal">L</span><span class="mord mathnormal" style="margin-right:0.05764em;">OPS</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.3337em;vertical-align:-0.4451em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8886em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord cjk_fallback mtight">执行时间（</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1645em;"><span style="top:-2.357em;margin-left:-0.1389em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">e</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mord cjk_fallback mtight">）</span><span class="mbin mtight">×</span><span class="mord mtight">1</span><span class="mord mtight"><span class="mord mtight">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463em;"><span style="top:-2.786em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4103em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord cjk_fallback mtight">浮点运算次数（</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3567em;margin-left:-0.0785em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em;">FN</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1433em;"><span></span></span></span></span></span></span><span class="mord cjk_fallback mtight">）</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4451em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+</ul>
+</li>
 </ul>
 
                 
