@@ -348,13 +348,6 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/test/</loc>
-    <lastmod>2024-01-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ivansnow02.github.io/tags/English/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -362,7 +355,7 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/coursera/</loc>
+    <loc>https://ivansnow02.github.io/tags/test/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -376,14 +369,7 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/learning/</loc>
-    <lastmod>2024-01-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/tags/trash/</loc>
+    <loc>https://ivansnow02.github.io/tags/coursera/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -397,7 +383,21 @@
   </url>
   
   <url>
+    <loc>https://ivansnow02.github.io/tags/learning/</loc>
+    <lastmod>2024-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ivansnow02.github.io/tags/Spring/</loc>
+    <lastmod>2024-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/tags/trash/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -441,14 +441,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/coding/Django/</loc>
+    <loc>https://ivansnow02.github.io/categories/coding/data-structure/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/coding/data-structure/</loc>
+    <loc>https://ivansnow02.github.io/categories/coding/Django/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -462,14 +462,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/test/</loc>
+    <loc>https://ivansnow02.github.io/categories/English/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/English/</loc>
+    <loc>https://ivansnow02.github.io/categories/test/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -483,14 +483,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/trash/</loc>
+    <loc>https://ivansnow02.github.io/categories/computer-science/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/computer-science/</loc>
+    <loc>https://ivansnow02.github.io/categories/trash/</loc>
     <lastmod>2024-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
