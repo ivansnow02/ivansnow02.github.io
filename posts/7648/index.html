@@ -1,0 +1,1054 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head><!-- hexo injector head_begin start --><link rel="manifest" href="/manifest.json" /> <link  rel="stylesheet" href="/css/custom.css" /><!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/logo.png">
+  <link rel="icon" href="/img/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#F7AA97">
+  <meta name="author" content="Ivan Snow">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="概论 操作系统的定义和功能 操作系统的定义  一组计算机程序的集合，主要用以控制和管理 计算机的硬件和软件资源，合理地组织计算机的工作流程，向应用程序和用户提供方便、快捷、友好的使用接口  操作系统的功能  进程管理 存储管理 文件管理 设备管理  操作系统的特征  并发 共享 虚拟 异步  操作系统的发展  手工操作时代 早期单道批处理系统时代 多道批处理系统时代  操作系统的分类 批处理操作系">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ComputerSystem">
+<meta property="og:url" content="https://ivansnow02.github.io/posts/7648/index.html">
+<meta property="og:site_name" content="Snow&#39;s Blog">
+<meta property="og:description" content="概论 操作系统的定义和功能 操作系统的定义  一组计算机程序的集合，主要用以控制和管理 计算机的硬件和软件资源，合理地组织计算机的工作流程，向应用程序和用户提供方便、快捷、友好的使用接口  操作系统的功能  进程管理 存储管理 文件管理 设备管理  操作系统的特征  并发 共享 虚拟 异步  操作系统的发展  手工操作时代 早期单道批处理系统时代 多道批处理系统时代  操作系统的分类 批处理操作系">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ivansnow02.github.io/posts/7648/ComputerSystem/1.png">
+<meta property="og:image" content="https://ivansnow02.github.io/posts/7648/ComputerSystem/2.png">
+<meta property="og:image" content="https://ivansnow02.github.io/posts/7648/ComputerSystem/3.png">
+<meta property="article:published_time" content="2024-03-07T04:51:59.000Z">
+<meta property="article:modified_time" content="2024-03-10T03:01:16.462Z">
+<meta property="article:author" content="Ivan Snow">
+<meta property="article:tag" content="computer science">
+<meta property="article:tag" content="learning">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ivansnow02.github.io/posts/7648/ComputerSystem/1.png">
+<meta name="twitter:creator" content="@fake_ivansnow">
+<meta name="twitter:site" content="https://twitter.com/fake_ivansnow">
+  
+  
+  
+  <title>ComputerSystem - Snow&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"ivansnow02.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"A0r2dhPEh8rVhHDzBE441kIz-9Nh9j0Va","app_key":"cWaJVBEL9pMclbMJYcMMXA4Q","server_url":"https://a0r2dhpe.lc-cn-e1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Snow&#39;s Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/784785.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="ComputerSystem"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Ivan Snow
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-03-07 12:51" pubdate>
+          2024年3月7日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          19 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">ComputerSystem</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="概论">概论</h2>
+<h3 id="操作系统的定义和功能">操作系统的定义和功能</h3>
+<h4 id="操作系统的定义">操作系统的定义</h4>
+<ul>
+<li>一组计算机程序的集合，主要用以控制和管理 计算机的硬件和软件资源，合理地组织计算机的工作流程，向应用程序和用户提供方便、快捷、友好的使用接口</li>
+</ul>
+<h4 id="操作系统的功能">操作系统的功能</h4>
+<ul>
+<li>进程管理</li>
+<li>存储管理</li>
+<li>文件管理</li>
+<li>设备管理</li>
+</ul>
+<h4 id="操作系统的特征">操作系统的特征</h4>
+<ul>
+<li>并发</li>
+<li>共享</li>
+<li>虚拟</li>
+<li>异步</li>
+</ul>
+<h3 id="操作系统的发展">操作系统的发展</h3>
+<ol>
+<li>手工操作时代</li>
+<li>早期单道批处理系统时代</li>
+<li>多道批处理系统时代</li>
+</ol>
+<h3 id="操作系统的分类">操作系统的分类</h3>
+<h4 id="批处理操作系统">批处理操作系统</h4>
+<ul>
+<li>主要特征
+<ul>
+<li>用户脱机工作</li>
+<li>成批处理作业</li>
+<li>单/多道程序运行</li>
+<li>作业周转时间长</li>
+</ul>
+</li>
+</ul>
+<h4 id="分时操作系统">分时操作系统</h4>
+<ul>
+<li>主要特征：
+<ul>
+<li><strong>同时性</strong>。允许各终端用户同时工作，系统分时响应用户请求（使用CPU并不同时）</li>
+<li><strong>交互性</strong>。支持联机的操作方式，用户可以在终端上通过操作系统进行人-机对话，随时控制和调试程序，以交互的方式工作</li>
+<li><strong>独立性</strong>。用户之间彼此独立的工作，好象独占一台计算机系统一样，互不干扰</li>
+<li><strong>及时性</strong>。用户请求能在较短的时间内得到响应</li>
+</ul>
+</li>
+</ul>
+<h4 id="实时操作系统">实时操作系统</h4>
+<ul>
+<li>系统能及时响应外部事件的请求，在规定的时间内完成对该事件的处理，并控制所有实时任务协调一致地运行</li>
+</ul>
+<h4 id="个人计算机操作系统">个人计算机操作系统</h4>
+<ul>
+<li>主要特点：
+<ul>
+<li>图形用户接口</li>
+<li>开放性</li>
+<li>多媒体支持</li>
+<li>应用软件丰富</li>
+<li>操作系统管理性能高</li>
+</ul>
+</li>
+</ul>
+<h4 id="网络操作系统">网络操作系统</h4>
+<ul>
+<li>除具备通常操作系统功能外，还具备联网功能，支持网络体系结构和各种网络通信协议，提供网络互连能力，支持可靠、有效、安全的数据传输</li>
+<li>主要采用客户机/服务器(C/S)工作方式
+<ul>
+<li>客户机一般由微型计算机承担，主动从本地向服务器提出服务请求</li>
+<li>服务器接收客户机请求、处理请求的服务、返回服务结果。一般由高档微机、小、中、大型机承担</li>
+</ul>
+</li>
+<li>对等模式：网络中的每台计算机同时具有客户端和服务器两种功能</li>
+</ul>
+<h4 id="分布式操作系统">分布式操作系统</h4>
+<ul>
+<li>特点：
+<ul>
+<li>计算机网络系统的高级形式，由多台计算机组成，计算机之间没有主次之分</li>
+<li>数据和控制及任务的分布性、整体性、资源共享的透明性、各节点的自制性和协同性</li>
+</ul>
+</li>
+</ul>
+<h4 id="嵌入式操作系统">嵌入式操作系统</h4>
+<ul>
+<li>
+<p>指运行在嵌入式(计算机)环境中，对整个系统各种部件和资源进行统一协调、处理、指挥和控制的系统软件。它具有通常操作系统的基本功能</p>
+</li>
+<li>
+<p>与一般操作系统有很大不同，主要体现在微型化、可定制、实时性、可靠性、易移植、开发工具与使用环境密切相关等特点</p>
+</li>
+</ul>
+<h3 id="操作系统的接口">操作系统的接口</h3>
+<h4 id="程序接口">程序接口</h4>
+<ul>
+<li>系统调用：“系统调用”可以获得操作系统的底层服务，从而进一步使用或访问系统管理的各种软硬件资源。不同的操作系统提供的系统调用的种类、数量和名字不尽相同</li>
+<li>API（application programming interface）
+<ul>
+<li>常用的Windows系统，微软公司只公布了相关的API，它是一种应用程序编程接口，是在操作系统系统调用的基础经过规范整理出来，面向社会公布的唯一的接口方式</li>
+<li>由于不是直接的系统调用，其效率有所损失。微软公司没有发布全部的API，也为开发程序带来了一定的难度</li>
+</ul>
+</li>
+<li>系统调用 &amp; POSIX标准
+<ul>
+<li>系统调用内部的具体实现与硬件相关，直接使用会产生问题：
+<ul>
+<li>接口复杂，使用困难</li>
+<li>应用程序的跨平台可移植性受到很大限制</li>
+</ul>
+</li>
+<li>POSIX标准：专门规定内核的系统调用接口标准，操作系统若遵循此标准，则应用程序在不同操作系统之间就具有可移植性
+<ul>
+<li>Unix/Linux遵循此标准</li>
+<li>Windows NT-based 系统不能直接支持新版POSIX接口</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>系统调用的处理过程
+<ol>
+<li>应用程序使用系统调用时会产生一条指令（陷入指令或访管指令），该指令中存放了对应系统调用的功能号，有时还附带传递给内核的参数：<code>系统调用—功能号—入口地址表—入口地址</code></li>
+<li>处理机在执行到该访管指令时发出相应的中断信号给“陷阱处理机制”</li>
+<li>陷阱处理机制启动相关的内核函数完成该系统调用所要求的功能：保护CPU现场、获取功能号、根据功能号查找对应内核函数入口地址表、转到入口地址执行内核函数、内核函数执行完，中断处理结束</li>
+<li>恢复CPU现场，继续执行中断点的下一条指令</li>
+</ol>
+</li>
+<li>注意：执行系统调用时，应用程序从用户态（目态）转到了核心态（管态），即执行内核函数时必须在核心态下运行，但访管指令本身是在用户态下执行的</li>
+</ul>
+<h4 id="操作接口">操作接口</h4>
+<ul>
+<li>命令界面（CLI，Command Line Interface ）
+<ul>
+<li>简单命令的一般形式：命令 参数1 参数2 … 参数n</li>
+<li>Windows操作系统的基本命令：type、erase、attrib、copy、xcopy、dir、cd、md、rd、tree、ver等</li>
+</ul>
+</li>
+<li>图形界面（ GUI，Graphics User Interface ）</li>
+<li>作业控制命令
+<ul>
+<li>专为批处理作业的用户提供的，所以也称批处理用户接口。操作系统提供一个作业控制语言JCL（Job Control Language），它由一组作业控制语句、作业控制操作命令及相应语法规范组成</li>
+<li>用户利用作业控制语言书写批处理作业控制说明书，操作系统解释作业控制说明书，按其要求一步步地运行用户作业。
+<ul>
+<li>DOS下的批处理命令是一种简单的作业控制语言（.bat）</li>
+<li>UNIX的Shell语言是现代计算机一种功能强大的作业控制语言</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="操作系统的设计实现方法">操作系统的设计实现方法</h3>
+<h4 id="操作系统设计与开发">操作系统设计与开发</h4>
+<ul>
+<li>操作系统设计与开发特点
+<ul>
+<li>与硬件关联</li>
+<li>复杂程度高</li>
+<li>生产周期长</li>
+</ul>
+</li>
+<li>操作系统的设计原则
+<ul>
+<li>可靠性</li>
+<li>方便性</li>
+<li>高效率</li>
+<li>易维护性</li>
+<li>可扩充性</li>
+<li>开放性</li>
+</ul>
+</li>
+</ul>
+<h4 id="操作系统的体系结构">操作系统的体系结构</h4>
+<ul>
+<li>无结构操作系统</li>
+<li>模块化结构</li>
+<li>分层结构</li>
+<li>客户/服务器结构（微内核）</li>
+<li>虚拟机结构</li>
+<li>面向对象结构</li>
+</ul>
+<h2 id="进程管理">进程管理</h2>
+<h3 id="程序的执行方式">程序的执行方式</h3>
+<h4 id="程序的顺序执行">程序的顺序执行</h4>
+<ul>
+<li>一个具有独立功能的程序独占处理器直至最终结束的过程称为程序的顺序执行
+<ul>
+<li>程序设计中的顺序控制结构仅能控制程序内部指令的执行序列</li>
+<li>程序的顺序执行意味着运行时程序间的执行序列也是顺序的——一个程序执行完了，才能执行另一个程序</li>
+</ul>
+</li>
+<li>顺序执行的特性：
+<ul>
+<li>顺序性</li>
+<li>封闭性</li>
+<li>可再现性</li>
+<li>程序的顺序执行方式便于程序的编制与调试，但不利于充分利用计算机系统资源，运行效率低下</li>
+</ul>
+</li>
+</ul>
+<h4 id="程序的并发执行与并行执行">程序的并发执行与并行执行</h4>
+<ul>
+<li>为了提高系统的运行效率，允许“同时”执行多个程序</li>
+<li>并行（parallel）：多个事件在同一时刻发生</li>
+<li>并发（concurrent）：多个事件在同一时期内发生</li>
+<li>显然，<strong>并行是并发的特例</strong>，程序并行执行的硬件前提是系统中有多个CPU</li>
+<li>并发的<strong>本质</strong>是一个CPU在多个程序运行过程中的<strong>时分复用</strong></li>
+<li>并发执行的特性：
+<ul>
+<li>间断性</li>
+<li>开放/交互性</li>
+<li>不可再现性</li>
+<li>进行并发程序设计时应当避免由于程序间开放交互引起的不可再现性而产生运行时错误</li>
+</ul>
+</li>
+</ul>
+<h4 id="进程概念的引入">进程概念的引入</h4>
+<ul>
+<li>程序（program）：静态的代码文件（*.exe）</li>
+<li>进程（process）：程序在某个数据集合上的一次执行，系统资源分配的基本单位</li>
+<li>作业（job）：批处理系统要装入系统运行处理的一系列程序步骤和数据</li>
+</ul>
+<h3 id="进程的特征与控制">进程的特征与控制</h3>
+<h4 id="进程的相关概念">进程的相关概念</h4>
+<ul>
+<li>
+<p>进程有以下特征</p>
+<ul>
+<li>结构性</li>
+<li>动态性</li>
+<li>独立性</li>
+<li>并发性</li>
+</ul>
+</li>
+<li>
+<p>进程分类：系统进程、用户进程</p>
+</li>
+<li>
+<p>进程上下文（process context）</p>
+<ul>
+<li>用户级上下文（user-level context）：进程的代码区、数据区、用户栈区和共享存储区</li>
+<li>系统级上下文（system-level context）：PCB、内存管理信息、进程环境块、系统栈</li>
+<li>寄存器上下文（register context）</li>
+<li>一个进程被系统调度而占有CPU时，会发生CPU在新老进程之间切换，切换的内容是进程上下文，进程运行是在进程的上下文中执行的</li>
+<li>一个典型的上下文切换过程</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs c">context_switch( )&#123;<br>   Push registers onto <span class="hljs-built_in">stack</span><br>   Save ptrs to code and data.<br>   Save <span class="hljs-built_in">stack</span> pointer <span class="hljs-comment">//以上语句保护当前进程上下文</span><br>   Pick next process to execute <span class="hljs-comment">//选中/调度新进程</span><br>  <span class="hljs-comment">//以下语句恢复所选中/调度的进程的上下文</span><br>   Restore <span class="hljs-built_in">stack</span> ptr of that process<br>   Restore ptrs to code and data.<br>   Pop registers<br>   Return<br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="进程状态及转换">进程状态及转换</h4>
+<ul>
+<li>进程的状态
+<ul>
+<li>就绪状态（ready）：进程在内存中已经具备执行的条件，等待分配CPU</li>
+<li>运行状态（running）：进程占用CPU并正在执行</li>
+<li>阻塞状态（blocked）：也称为等待（waiting）状态——运行的进程由于发生某事件而放弃CPU</li>
+<li><img src="ComputerSystem/1.png" srcset="/img/loading.gif" lazyload alt="三状态模型"></li>
+<li><img src="ComputerSystem/2.png" srcset="/img/loading.gif" lazyload alt="五状态模型"></li>
+<li><img src="ComputerSystem/3.png" srcset="/img/loading.gif" lazyload alt="七状态模型"></li>
+</ul>
+</li>
+<li>有挂起功能的进程状态：
+<ul>
+<li>挂起就绪（ready suspended）</li>
+<li>挂起阻塞（blocked suspended）</li>
+<li>进程在运行态也可以被挂起，转换为挂起就绪状态</li>
+<li>阻塞状态的进程被挂起后，若阻塞事件或I/O请求完成，则进程状态转换为挂起就绪状态——仍然是挂起状态</li>
+<li>创建进程时若没有足够的内存空间，则转入挂起就绪状态</li>
+<li>只有处于就绪态的进程才有可能被调度分配CPU运行</li>
+</ul>
+</li>
+</ul>
+<h4 id="进程控制块PCB">进程控制块PCB</h4>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/computer-science/" class="category-chain-item">computer science</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/computer-science/">#computer science</a>
+      
+        <a href="/tags/learning/">#learning</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>ComputerSystem</div>
+      <div>https://ivansnow02.github.io/posts/7648/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Ivan Snow</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年3月7日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/3506/" title="计算机组成原理复习">
+                        <span class="hidden-mobile">计算机组成原理复习</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"A0r2dhPEh8rVhHDzBE441kIz-9Nh9j0Va","appKey":"cWaJVBEL9pMclbMJYcMMXA4Q","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+  <script>
+  Fluid.utils.createScript('https://lib.baomitu.com/mermaid/8.14.0/mermaid.min.js', function() {
+    mermaid.initialize({"theme":"default"});
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('mermaid' in window) {
+        mermaid.init();
+      }
+    });
+  });
+</script>
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://icp.gov.moe/?keyword=20230391" target="_blank">萌ICP备20230391号</a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+<!-- hexo injector body_end start -->
+  <div id="aplayer"></div>
+  <link defer rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+  <script src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
+  <script defer src="/js/aplayer.js"></script>
+  <script src="/js/color-thief.js"></script>
+<!-- hexo injector body_end end --></body>
+</html>
