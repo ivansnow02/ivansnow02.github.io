@@ -1,129 +1,155 @@
-/* Aplayer日间模式调整 */
-/* 背景色 */
-.aplayer {
-    background: #FFEEE4 !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
-    position: relative;
+#footer>span>div>div.flex.flex-col.lg\:flex-row.gap-6.lg\:gap-12.row-span-1.lg\:col-span-3.text-center.lg\:text-left>ul:nth-child(1)>li:nth-child(2) {
+    display: none !important;
 }
 
-.aplayer.aplayer-fixed .aplayer-lrc:after,
-.aplayer.aplayer-fixed .aplayer-lrc:before {
-    display: none;
+#footer>span>div>div.hidden.lg\:flex.lg\:col-span-1.justify-center.lg\:justify-end.row-span-1.relative>img {
+    display: none !important;
 }
 
-.aplayer.aplayer-fixed .aplayer-body {
-    background: #FFEEE4 !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
-    position: fixed;
-}
+#article-list>div:nth-child(2)>div>div.h-98.w-full.rounded-2xl.relative.shadow-xl.mb-8>div>div>div.flex.flex-col.justify-center.items-center>img {
+    border-width: 0px !important;
+    --tw-shadow: 0, 0, 0, 0 !important;
 
-.aplayer-title {
-    color: #768094;
-}
-
-.aplayer-author {
-    color: #768094;
-}
-
-/* 滚动条 */
-.aplayer .aplayer-list ol::-webkit-scrollbar {
-    width: 5px;
-}
-
-.aplayer .aplayer-list ol::-webkit-scrollbar-thumb {
-    border-radius: 3px;
-    background-color: var(--theme-color) !important;
-}
-
-.aplayer .aplayer-list ol::-webkit-scrollbar-thumb:hover {
-    background-color: var(--theme-color) !important;
-}
-
-/* 圆角 */
-.aplayer.aplayer-fixed .aplayer-list {
-    border-radius: 6px 6px 0 0 !important;
-}
-
-.aplayer.aplayer-fixed .aplayer-body {
-    border-radius: 6px 6px 0 0 !important;
-}
-
-.aplayer.aplayer-fixed .aplayer-miniswitcher {
-    border-radius: 0 6px 6px 0 !important;
-}
-
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-    transition: 0.28s !important;
-    border-radius: 6px !important;
-}
-
-/* 选中与播放中歌曲激活颜色 */
-.aplayer .aplayer-list ol li:hover {
-    background: var(--theme-color) !important;
-}
-
-.aplayer .aplayer-list ol li.aplayer-list-light {
-    background: var(--theme-color) !important;
-}
-
-/* 歌词 */
-.aplayer-lrc p {
-    color: #ffffff !important;
-    text-shadow: #000000 1px 0 0, #000000 0 1px 0, #000000 -1px 0 0, #000000 0 -1px 0 !important;
-}
-
-/* Aplayer黑暗模式 */
-[data-user-color-scheme="dark"] .aplayer {
-    background: #9F9EA9 !important;
-    color: #9F9EA9;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
-}
-
-[data-user-color-scheme="dark"] .aplayer.aplayer-fixed .aplayer-body {
-    background: #9F9EA9 !important;
-    color: #9F9EA9;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 
-[data-user-color-scheme="dark"] .aplayer-title {
-    color: #fafafa;
+.profile .circle-avatar,
+.profile .rounded-avatar {
+    border-width: 0px !important;
 }
 
-[data-user-color-scheme="dark"] .aplayer .aplayer-info .aplayer-music .aplayer-author {
-    color: #fafafa;
+.ob-avatar {
+    box-shadow: none;
 }
 
-[data-user-color-scheme="dark"] .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
-    fill: #fafafa;
+#App-Mobile-Profile>div>img {
+    --tw-shadow: 0, 0, 0, 0 !important;
 }
 
-[data-user-color-scheme="dark"] .aplayer .aplayer-list ol li:hover {
-    background: var(--theme-color) !important;
+.theme-light {
+    --background-primary: rgb(255, 244, 253) !important;
+    --background-secondary: rgb(255,226,240) !important;
+    --background--alt: rgb(255, 244, 253) !important;
+    --background-secondary-alt: rgb(255,226,240) !important;
+    --banner-cover: linear-gradient(0deg, rgb(255, 244, 253), transparent) !important;
+    --article-cover: linear-gradient(180deg,
+            rgba(255,226,240, 0) 0,
+            rgba(255,226,240, .013) 8.1%,
+            rgba(255,226,240, .049) 15.5%,
+            rgba(255,226,240, .104) 22.5%,
+            rgba(255,226,240, .175) 29%,
+            rgba(255,226,240, .259) 35.3%,
+            rgba(255,226,240, .352) 41.2%,
+            rgba(255,226,240, .45) 47.1%,
+            rgba(255,226,240, .55) 52.9%,
+            rgba(255,226,240, .648) 58.8%,
+            rgba(255,226,240, .741) 64.7%,
+            rgba(255,226,240, .825) 71%,
+            rgba(255,226,240, .896) 77.5%,
+            rgba(255,226,240, .951) 84.5%,
+            rgba(255,226,240, .987) 91.9%,
+            rgb(255,226,240)) !important;
+    --gradient-cover: linear-gradient(90deg,
+            rgba(255,226,240, 0) 0,
+            rgba(255,226,240, .013) 8.1%,
+            rgba(255,226,240, .049) 15.5%,
+            rgba(255,226,240, .104) 22.5%,
+            rgba(255,226,240, .175) 29%,
+            rgba(255,226,240, .259) 35.3%,
+            rgba(255,226,240, .352) 41.2%,
+            rgba(255,226,240, .45) 47.1%,
+            rgba(255,226,240, .55) 52.9%,
+            rgba(255,226,240, .648) 58.8%,
+            rgba(255,226,240, .741) 64.7%,
+            rgba(255,226,240, .825) 71%,
+            rgba(255,226,240, .896) 77.5%,
+            rgba(255,226,240, .951) 84.5%,
+            rgba(255,226,240, .987) 91.9%,
+            rgb(255,226,240)) !important;
+    --nav-cover: linear-gradient(90deg,
+            rgba(255,226,240, 0) 0,
+            rgba(255,226,240, .013) 8.1%,
+            rgba(255,226,240, .049) 15.5%,
+            rgba(255,226,240, .104) 22.5%,
+            rgba(255,226,240, .175) 29%,
+            rgba(255,226,240, .259) 35.3%,
+            rgba(255,226,240, .352) 41.2%,
+            rgba(255,226,240, .45) 47.1%,
+            rgba(255,226,240, .55) 52.9%,
+            rgba(255,226,240, .648) 58.8%,
+            rgba(255,226,240, .741) 64.7%,
+            rgba(255,226,240, .825) 71%,
+            rgba(255,226,240, .896) 77.5%,
+            rgba(255,226,240, .951) 84.5%,
+            rgba(255,226,240, .987) 91.9%,
+            rgb(255,226,240)) !important;
 }
 
-[data-user-color-scheme="dark"] .aplayer .aplayer-list ol li.aplayer-list-light {
-    background: var(--theme-color) !important;
+.theme-dark {
+    --background-primary: rgb(21, 7, 31) !important;
+    --background-secondary: rgb(33, 28, 46) !important;
+    --background-primary-alt: rgb(21, 7, 31) !important;
+    --background-secondary-alt: rgb(33, 28, 46) !important;
+    --banner-cover: linear-gradient(0deg, rgb(21, 7, 31), transparent) !important;
+    --article-cover: linear-gradient(180deg,
+            rgba(33, 28, 46, 0) 0,
+            rgba(33, 28, 46, .013) 8.1%,
+            rgba(33, 28, 46, .049) 15.5%,
+            rgba(33, 28, 46, .104) 22.5%,
+            rgba(33, 28, 46, .175) 29%,
+            rgba(33, 28, 46, .259) 35.3%,
+            rgba(33, 28, 46, .352) 41.2%,
+            rgba(33, 28, 46, .45) 47.1%,
+            rgba(33, 28, 46, .55) 52.9%,
+            rgba(33, 28, 46, .648) 58.8%,
+            rgba(33, 28, 46, .741) 64.7%,
+            rgba(33, 28, 46, .825) 71%,
+            rgba(33, 28, 46, .896) 77.5%,
+            rgba(33, 28, 46, .951) 84.5%,
+            rgba(33, 28, 46, .987) 91.9%,
+            rgb(33, 28, 46)) !important;
+    --gradient-cover: linear-gradient(90deg,
+            rgba(33, 28, 46, 0) 0,
+            rgba(33, 28, 46, .013) 8.1%,
+            rgba(33, 28, 46, .049) 15.5%,
+            rgba(33, 28, 46, .104) 22.5%,
+            rgba(33, 28, 46, .175) 29%,
+            rgba(33, 28, 46, .259) 35.3%,
+            rgba(33, 28, 46, .352) 41.2%,
+            rgba(33, 28, 46, .45) 47.1%,
+            rgba(33, 28, 46, .55) 52.9%,
+            rgba(33, 28, 46, .648) 58.8%,
+            rgba(33, 28, 46, .741) 64.7%,
+            rgba(33, 28, 46, .825) 71%,
+            rgba(33, 28, 46, .896) 77.5%,
+            rgba(33, 28, 46, .951) 84.5%,
+            rgba(33, 28, 46, .987) 91.9%,
+            rgb(33, 28, 46)) !important;
+    --nav-cover: linear-gradient(90deg,
+            rgba(33, 28, 46, 0) 0,
+            rgba(33, 28, 46, .013) 8.1%,
+            rgba(33, 28, 46, .049) 15.5%,
+            rgba(33, 28, 46, .104) 22.5%,
+            rgba(33, 28, 46, .175) 29%,
+            rgba(33, 28, 46, .259) 35.3%,
+            rgba(33, 28, 46, .352) 41.2%,
+            rgba(33, 28, 46, .45) 47.1%,
+            rgba(33, 28, 46, .55) 52.9%,
+            rgba(33, 28, 46, .648) 58.8%,
+            rgba(33, 28, 46, .741) 64.7%,
+            rgba(33, 28, 46, .825) 71%,
+            rgba(33, 28, 46, .896) 77.5%,
+            rgba(33, 28, 46, .951) 84.5%,
+            rgba(33, 28, 46, .987) 91.9%,
+            rgb(33, 28, 46)) !important;
+    /* linear-gradient(180deg, var(--background-secondary), transparent); */
 }
 
-[data-user-color-scheme="dark"] .aplayer .aplayer-info .aplayer-controller .aplayer-time {
-    color: #fafafa;
-}
-
-[data-user-color-scheme="dark"] .aplayer .aplayer-list ol li .aplayer-list-index {
-    color: #fafafa;
-}
-
-[data-user-color-scheme="dark"] .aplayer .aplayer-list ol li .aplayer-list-author {
-    color: #fafafa;
-}
-
-:root {
-    --highlight-bg-color: #fff5ef !important;
-
-}
-
-:root[data-user-color-scheme="dark"] {
-    --highlight-bg-color: #343348 !important;
+#mm {
+    background-color: white !important;
+    border-radius: 1rem !important;
+    --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 
 }
