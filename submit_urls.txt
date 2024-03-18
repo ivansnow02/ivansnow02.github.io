@@ -1,3 +1,4 @@
+https://ivansnow02.github.io/post/ComputerSystem
 https://ivansnow02.github.io/post/Redis-Learning-03-SpringDataRedis
 https://ivansnow02.github.io/post/Redis-Learning-02-%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8
 https://ivansnow02.github.io/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%A4%8D%E4%B9%A0
@@ -7,4 +8,3 @@ https://ivansnow02.github.io/post/linear-algebra
 https://ivansnow02.github.io/post/DataStructureNote
 https://ivansnow02.github.io/post/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0
 https://ivansnow02.github.io/post/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6
-https://ivansnow02.github.io/post/computer-organization

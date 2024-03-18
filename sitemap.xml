@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ivansnow02.github.io/post/ComputerSystem</loc>
+    
+    <lastmod>2024-03-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ivansnow02.github.io/post/Redis-Learning-03-SpringDataRedis</loc>
     
     <lastmod>2024-03-18</lastmod>
@@ -290,15 +299,6 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/post/ComputerSystem</loc>
-    
-    <lastmod>2024-03-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ivansnow02.github.io/links/</loc>
     
     <lastmod>2024-03-16</lastmod>
@@ -394,13 +394,6 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/vim/</loc>
-    <lastmod>2024-03-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ivansnow02.github.io/tags/coursera/</loc>
     <lastmod>2024-03-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -408,7 +401,7 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/Spring/</loc>
+    <loc>https://ivansnow02.github.io/tags/vim/</loc>
     <lastmod>2024-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -429,7 +422,7 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/tree/</loc>
+    <loc>https://ivansnow02.github.io/tags/Spring/</loc>
     <lastmod>2024-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -443,7 +436,7 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/Physics/</loc>
+    <loc>https://ivansnow02.github.io/tags/tree/</loc>
     <lastmod>2024-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -451,6 +444,13 @@
   
   <url>
     <loc>https://ivansnow02.github.io/tags/Discrete-Mathematics/</loc>
+    <lastmod>2024-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/tags/Physics/</loc>
     <lastmod>2024-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -501,14 +501,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/coding/</loc>
+    <loc>https://ivansnow02.github.io/categories/Algorithms-Part-I/</loc>
     <lastmod>2024-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/Algorithms-Part-I/</loc>
+    <loc>https://ivansnow02.github.io/categories/coding/</loc>
     <lastmod>2024-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
