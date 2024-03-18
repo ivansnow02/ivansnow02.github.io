@@ -153,3 +153,16 @@
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 
 }
+
+
+
+code,
+kbd,
+samp,
+pre {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+}
+
+figure.shiki .codeblock pre * {
+    font-family: "JetBrains Mono", "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace, 微软雅黑, 宋体 !important;
+}
