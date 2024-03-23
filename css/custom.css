@@ -151,7 +151,7 @@
             rgb(245, 222, 214));
     --text-bright: var(--md-sys-color-primary) !important;
     --text-normal: var(--md-sys-color-on-surface) !important;
-    --background-backdrop: rgba(255,219,207,.8) !important;
+    --background-backdrop: rgba(255, 219, 207, .8) !important;
 }
 
 .theme-dark {
@@ -280,7 +280,7 @@
     /* linear-gradient(180deg, var(--background-secondary), transparent); */
     --text-bright: var(--md-sys-color-primary) !important;
     --text-normal: var(--md-sys-color-on-surface) !important;
-    --background-backdrop: rgba(113,54,30,.8) !important;
+    --background-backdrop: rgba(113, 54, 30, .8) !important;
 }
 
 #mm {
@@ -351,6 +351,7 @@ figure.shiki {
 .post-html {
     background-color: var(--md-sys-color-surface-bright) !important;
 }
+
 figure.shiki .gutter pre {
     background-color: var(--md-sys-color-on-secondary-fixed) !important;
     border-radius: 0.3rem;
@@ -358,5 +359,38 @@ figure.shiki .gutter pre {
 
 .tab li span.first-tab {
     color: var(--md-sys-color-on-primary) !important;
-    background: var(--md-sys-color-primary)  !important;
+    background: var(--md-sys-color-primary) !important;
+}
+
+/* source/assets/fonts/juliamo-print.ttf */
+@font-face {
+    font-family: 'Juliamo';
+    src: url('/assets/fonts/juliamo-print.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+#sticky>div>div>header>div.header-logo.flex.items-center.self-stretch.relative.cursor-pointer.hover\:scale-110.transition-transform.transform-gpu.duration-500>div>span.text-invert.flex.text-xl.leading-tight.text-white.font-extrabold {
+    font-family: 'Juliamo', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+}
+
+/* radial-gradient(circle at center, #51312E 0%, #E6B87D 50%, #F0EAD6 100%) */
+#App-Container>div.app-banner.app-banner-screen {
+    background: radial-gradient(circle at 50% 50%,
+            #51312E,
+            rgba(81, 49, 46, 0) 70%),
+        radial-gradient(circle at 0 100%,
+            #E6B87D,
+            rgba(230, 184, 125, 0) 70%),
+        radial-gradient(circle at 100% 100%,
+            #F0EAD6,
+            rgba(240, 234, 214, 0) 70%),
+        radial-gradient(circle at 50% 50%,
+            #BAA892,
+            rgba(186, 168, 146, 0) 70%),
+        radial-gradient(circle at 10% 10%,
+            #8C6954,
+            rgba(140, 105, 84, 0) 70%),
+        linear-gradient(#51312E 0%, #E6B87D 50%, #F0EAD6 100%) !important;
 }
