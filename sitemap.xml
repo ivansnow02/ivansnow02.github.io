@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ivansnow02.github.io/post/sql-lab</loc>
+    
+    <lastmod>2024-05-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ivansnow02.github.io/post/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6</loc>
     
     <lastmod>2024-05-08</lastmod>
