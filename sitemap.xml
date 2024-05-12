@@ -398,14 +398,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/English/</loc>
+    <loc>https://ivansnow02.github.io/tags/test/</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/test/</loc>
+    <loc>https://ivansnow02.github.io/tags/English/</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -419,7 +419,21 @@
   </url>
   
   <url>
+    <loc>https://ivansnow02.github.io/tags/vim/</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ivansnow02.github.io/tags/Spring/</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/tags/trash/</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -434,20 +448,6 @@
   
   <url>
     <loc>https://ivansnow02.github.io/tags/Linear-Algebra/</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/tags/trash/</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/tags/vim/</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -505,14 +505,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/English/</loc>
+    <loc>https://ivansnow02.github.io/categories/test/</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/test/</loc>
+    <loc>https://ivansnow02.github.io/categories/English/</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -526,7 +526,7 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/Math/</loc>
+    <loc>https://ivansnow02.github.io/categories/coding/</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -540,7 +540,7 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/coding/</loc>
+    <loc>https://ivansnow02.github.io/categories/Math/</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
