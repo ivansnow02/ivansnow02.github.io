@@ -400,6 +400,13 @@
   </url>
   
   <url>
+    <loc>https://ivansnow02.github.io/tags/Java/</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ivansnow02.github.io/tags/English/</loc>
     <lastmod>2024-06-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -408,13 +415,6 @@
   
   <url>
     <loc>https://ivansnow02.github.io/tags/test/</loc>
-    <lastmod>2024-06-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/tags/Java/</loc>
     <lastmod>2024-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -442,13 +442,6 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/tree/</loc>
-    <lastmod>2024-06-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ivansnow02.github.io/tags/Math/</loc>
     <lastmod>2024-06-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -457,6 +450,13 @@
   
   <url>
     <loc>https://ivansnow02.github.io/tags/Linear-Algebra/</loc>
+    <lastmod>2024-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/tags/tree/</loc>
     <lastmod>2024-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
