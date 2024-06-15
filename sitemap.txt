@@ -44,9 +44,9 @@ https://ivansnow02.github.io/tags/learning/
 https://ivansnow02.github.io/tags/Django/
 https://ivansnow02.github.io/tags/Python/
 https://ivansnow02.github.io/tags/Redis/
-https://ivansnow02.github.io/tags/Java/
 https://ivansnow02.github.io/tags/English/
 https://ivansnow02.github.io/tags/test/
+https://ivansnow02.github.io/tags/Java/
 https://ivansnow02.github.io/tags/coursera/
 https://ivansnow02.github.io/tags/vim/
 https://ivansnow02.github.io/tags/Spring/
