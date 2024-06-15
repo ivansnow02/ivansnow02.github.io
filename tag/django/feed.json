@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Snow's Blog • All posts by \"django\" tag",
+    "description": "some notes about computer science",
+    "home_page_url": "https://ivansnow02.github.io",
+    "items": [
+        {
+            "id": "https://ivansnow02.github.io/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/",
+            "url": "https://ivansnow02.github.io/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/",
+            "title": "Django公有配置",
+            "date_published": "2023-08-14T08:56:34.000Z",
+            "content_html": "<blockquote>\n<p>摸了好久（</p>\n</blockquote>\n<h3 id=\"base_dir\"><a class=\"anchor\" href=\"#base_dir\">#</a> BASE_DIR</h3>\n<ul>\n<li>用于绑定当前项目的绝对路径（动态计算出来的），所有文件夹都可以依赖此路径</li>\n</ul>\n<h3 id=\"debug\"><a class=\"anchor\" href=\"#debug\">#</a> DEBUG</h3>\n<ul>\n<li>用于配置 Django 项目的启动模式，取值\n<ul>\n<li><code>True</code>  表示开发环境中使用<strong>开发调试</strong>模式（用于开发中）</li>\n<li><code>False</code>  表示当前项目运行在<strong>生产环境</strong>中</li>\n</ul>\n</li>\n</ul>\n<h3 id=\"allowed-hosts\"><a class=\"anchor\" href=\"#allowed-hosts\">#</a> ALLOWED HOSTS</h3>\n<ul>\n<li>设置允许访问到本项目的 host 头值\n<ul>\n<li><code>[]</code>  空列表，表示只有请求头中 host 为  <code>127.0.0.1</code> 、 <code>localhost</code>  能访问本项目\t <code>DEBUG = True</code>  时有效</li>\n<li><code>['*']</code>  表示任何请求头的 host 都能访问到当前项目</li>\n<li><code>['192.168.32.1'，'127.0.0.1']</code>  表示只有当前两个 host 头的值能访问当前项目</li>\n</ul>\n</li>\n</ul>\n<h3 id=\"installed_apps\"><a class=\"anchor\" href=\"#installed_apps\">#</a> INSTALLED_APPS</h3>\n<ul>\n<li>指定当前项目中安装的应用列表</li>\n</ul>\n<h3 id=\"middleware\"><a class=\"anchor\" href=\"#middleware\">#</a> MIDDLEWARE</h3>\n<ul>\n<li>用于注册中间件</li>\n</ul>\n<h3 id=\"templates\"><a class=\"anchor\" href=\"#templates\">#</a> TEMPLATES</h3>\n<ul>\n<li>用于指定模板的配置信息</li>\n</ul>\n<h3 id=\"databases\"><a class=\"anchor\" href=\"#databases\">#</a> DATABASES</h3>\n<ul>\n<li>用于指定数据库的配置信息</li>\n</ul>\n<h3 id=\"language_code\"><a class=\"anchor\" href=\"#language_code\">#</a> LANGUAGE_CODE</h3>\n<ul>\n<li>用于指定语言配置\n<ul>\n<li>英文：&quot;en-us&quot;</li>\n<li>中文：&quot;zh-Hans&quot;</li>\n</ul>\n</li>\n</ul>\n<h3 id=\"time_zone\"><a class=\"anchor\" href=\"#time_zone\">#</a> TIME_ZONE</h3>\n<ul>\n<li>用于指定当前服务器端时区\n<ul>\n<li>世界标准时间：“UTC&quot;</li>\n<li>中国时区：“Asia/Shanghai&quot;</li>\n</ul>\n</li>\n</ul>\n<h3 id=\"root_urlconf\"><a class=\"anchor\" href=\"#root_urlconf\">#</a> ROOT_URLCONF</h3>\n<ul>\n<li>用于配置主 url 配置 <code>'mysite1.urls'</code></li>\n<li><code>ROOT_URLCONF = 'mysite1.urls'</code></li>\n</ul>\n<p><a href=\"http://settings.py\">settings.py</a> 中也可以添加 开发人员 自定义的配置<br />\n配置建议：名字尽量个性化 - 以防覆盖掉公有配置例如： <code>ALIPAY_KEY =‘xxxxxxxx'</code> <br />\nsettings.py 中的所有配置项，都可以按需的在代码中引入 <code>from django.conf import settings</code></p>\n",
+            "tags": [
+                "coding",
+                "Django",
+                "Python"
+            ]
+        }
+    ]
+}
