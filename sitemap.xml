@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ivansnow02.github.io/links/friends.json</loc>
+    
+    <lastmod>2024-06-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ivansnow02.github.io/links/</loc>
+    
+    <lastmod>2024-06-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ivansnow02.github.io/MarxistPhilosophy/</loc>
     
     <lastmod>2024-06-16</lastmod>
@@ -129,15 +147,6 @@
   
   <url>
     <loc>https://ivansnow02.github.io/linear-algebra/</loc>
-    
-    <lastmod>2024-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ivansnow02.github.io/links/</loc>
     
     <lastmod>2024-06-15</lastmod>
     
@@ -308,15 +317,6 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/links/friends.json</loc>
-    
-    <lastmod>2024-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ivansnow02.github.io/TEST/</loc>
     
     <lastmod>2024-03-21</lastmod>
@@ -416,14 +416,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/English/</loc>
+    <loc>https://ivansnow02.github.io/tags/test/</loc>
     <lastmod>2024-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/test/</loc>
+    <loc>https://ivansnow02.github.io/tags/English/</loc>
     <lastmod>2024-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -437,14 +437,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/coursera/</loc>
+    <loc>https://ivansnow02.github.io/tags/vim/</loc>
     <lastmod>2024-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/tags/vim/</loc>
+    <loc>https://ivansnow02.github.io/tags/coursera/</loc>
     <lastmod>2024-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -523,14 +523,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/English/</loc>
+    <loc>https://ivansnow02.github.io/categories/test/</loc>
     <lastmod>2024-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/test/</loc>
+    <loc>https://ivansnow02.github.io/categories/English/</loc>
     <lastmod>2024-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -544,14 +544,14 @@
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/Algorithms-Part-I/</loc>
+    <loc>https://ivansnow02.github.io/categories/coding/</loc>
     <lastmod>2024-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ivansnow02.github.io/categories/coding/</loc>
+    <loc>https://ivansnow02.github.io/categories/Algorithms-Part-I/</loc>
     <lastmod>2024-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

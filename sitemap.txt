@@ -1,3 +1,5 @@
+https://ivansnow02.github.io/links/friends.json
+https://ivansnow02.github.io/links/
 https://ivansnow02.github.io/MarxistPhilosophy/
 https://ivansnow02.github.io/Union-Find/
 https://ivansnow02.github.io/TS/
@@ -13,7 +15,6 @@ https://ivansnow02.github.io/computer-organization/
 https://ivansnow02.github.io/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/
 https://ivansnow02.github.io/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/
 https://ivansnow02.github.io/linear-algebra/
-https://ivansnow02.github.io/links/
 https://ivansnow02.github.io/XJP/
 https://ivansnow02.github.io/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/
 https://ivansnow02.github.io/TheFallingSoldier/
@@ -32,7 +33,6 @@ https://ivansnow02.github.io/%E6%80%9D%E6%94%BF%E5%A4%8D%E4%B9%A0/
 https://ivansnow02.github.io/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%A4%8D%E4%B9%A0/
 https://ivansnow02.github.io/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/
 https://ivansnow02.github.io/BST/
-https://ivansnow02.github.io/links/friends.json
 https://ivansnow02.github.io/TEST/
 https://ivansnow02.github.io/about/
 https://ivansnow02.github.io/healthy-lifestyle/
@@ -46,11 +46,11 @@ https://ivansnow02.github.io/tags/Django/
 https://ivansnow02.github.io/tags/Python/
 https://ivansnow02.github.io/tags/Redis/
 https://ivansnow02.github.io/tags/Java/
-https://ivansnow02.github.io/tags/English/
 https://ivansnow02.github.io/tags/test/
+https://ivansnow02.github.io/tags/English/
 https://ivansnow02.github.io/tags/trash/
-https://ivansnow02.github.io/tags/coursera/
 https://ivansnow02.github.io/tags/vim/
+https://ivansnow02.github.io/tags/coursera/
 https://ivansnow02.github.io/tags/Spring/
 https://ivansnow02.github.io/tags/Math/
 https://ivansnow02.github.io/tags/Linear-Algebra/
@@ -61,10 +61,10 @@ https://ivansnow02.github.io/categories/data-structure/
 https://ivansnow02.github.io/categories/computer-science/
 https://ivansnow02.github.io/categories/Django/
 https://ivansnow02.github.io/categories/Redis/
-https://ivansnow02.github.io/categories/English/
 https://ivansnow02.github.io/categories/test/
+https://ivansnow02.github.io/categories/English/
 https://ivansnow02.github.io/categories/trash/
-https://ivansnow02.github.io/categories/Algorithms-Part-I/
 https://ivansnow02.github.io/categories/coding/
+https://ivansnow02.github.io/categories/Algorithms-Part-I/
 https://ivansnow02.github.io/categories/Math/
 https://ivansnow02.github.io/categories/Physics/
