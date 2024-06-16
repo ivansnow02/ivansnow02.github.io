@@ -1,5 +1,6 @@
-https://ivansnow02.github.io/links/friends.json
 https://ivansnow02.github.io/links/
+https://ivansnow02.github.io/404
+https://ivansnow02.github.io/links/friends.json
 https://ivansnow02.github.io/MarxistPhilosophy/
 https://ivansnow02.github.io/Union-Find/
 https://ivansnow02.github.io/TS/
@@ -46,11 +47,11 @@ https://ivansnow02.github.io/tags/Django/
 https://ivansnow02.github.io/tags/Python/
 https://ivansnow02.github.io/tags/Redis/
 https://ivansnow02.github.io/tags/Java/
-https://ivansnow02.github.io/tags/test/
-https://ivansnow02.github.io/tags/English/
 https://ivansnow02.github.io/tags/trash/
-https://ivansnow02.github.io/tags/vim/
+https://ivansnow02.github.io/tags/English/
+https://ivansnow02.github.io/tags/test/
 https://ivansnow02.github.io/tags/coursera/
+https://ivansnow02.github.io/tags/vim/
 https://ivansnow02.github.io/tags/Spring/
 https://ivansnow02.github.io/tags/Math/
 https://ivansnow02.github.io/tags/Linear-Algebra/
@@ -61,10 +62,10 @@ https://ivansnow02.github.io/categories/data-structure/
 https://ivansnow02.github.io/categories/computer-science/
 https://ivansnow02.github.io/categories/Django/
 https://ivansnow02.github.io/categories/Redis/
-https://ivansnow02.github.io/categories/test/
-https://ivansnow02.github.io/categories/English/
 https://ivansnow02.github.io/categories/trash/
-https://ivansnow02.github.io/categories/coding/
+https://ivansnow02.github.io/categories/English/
+https://ivansnow02.github.io/categories/test/
 https://ivansnow02.github.io/categories/Algorithms-Part-I/
+https://ivansnow02.github.io/categories/coding/
 https://ivansnow02.github.io/categories/Math/
 https://ivansnow02.github.io/categories/Physics/
