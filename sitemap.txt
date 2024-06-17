@@ -1,7 +1,7 @@
+https://ivansnow02.github.io/MarxistPhilosophy/
 https://ivansnow02.github.io/links/
 https://ivansnow02.github.io/404
 https://ivansnow02.github.io/links/friends.json
-https://ivansnow02.github.io/MarxistPhilosophy/
 https://ivansnow02.github.io/Union-Find/
 https://ivansnow02.github.io/TS/
 https://ivansnow02.github.io/SPT/
