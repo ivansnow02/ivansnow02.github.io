@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ivansnow02.github.io</id>
+    <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;tree&#34; tag</title>
-    <link href="https://ivansnow02.github.io" />
+    <link href="https://blog.ivansnow02.xyz" />
     <updated>2023-06-28T08:15:04.000Z</updated>
     <category term="data structure" />
     <category term="coding" />
@@ -25,9 +25,9 @@
     <category term="Physics" />
     <category term="Discrete Mathematics" />
     <entry>
-        <id>https://ivansnow02.github.io/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/</id>
+        <id>https://blog.ivansnow02.xyz/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/</id>
         <title>哈夫曼树叶子结点的路径长度与权值的乘积之和</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/"/>
         <content type="html">&lt;h4 id=&#34;题目描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#题目描述&#34;&gt;#&lt;/a&gt; 题目描述&lt;/h4&gt;
 &lt;p&gt;哈夫曼树，第一行输入一个数 n，表示叶结点的个数。需要用这些叶结点生成哈夫曼树，根据哈夫曼树的概念，这些结点有权值，即 weight，题目需要输出所有叶子结点的路径长度与权值的乘积之和。&lt;/p&gt;
 &lt;h4 id=&#34;输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输入&#34;&gt;#&lt;/a&gt; 输入&lt;/h4&gt;
@@ -45,9 +45,9 @@
         <updated>2023-06-28T08:15:04.000Z</updated>
     </entry>
     <entry>
-        <id>https://ivansnow02.github.io/robot-kingdom/</id>
+        <id>https://blog.ivansnow02.xyz/robot-kingdom/</id>
         <title>机器人王国里的路径长度</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/robot-kingdom/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/robot-kingdom/"/>
         <content type="html">&lt;h4 id=&#34;题目描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#题目描述&#34;&gt;#&lt;/a&gt; 题目描述&lt;/h4&gt;
 &lt;p&gt;在一个机器人王国里，围绕首都分 N 层构建卫星城市。以首都为圆心，以路相连分出两个卫星城在第一个层，然后每个卫星城又有路相连分出两个卫星城在下一层，但每条路的长度不同。第 N 层的卫星城不再分出新的卫星城。现在人类只探知到所有直接相连的城市间的路程，你能计算某个卫星城到达首都的路程吗？&lt;/p&gt;
 &lt;h4 id=&#34;输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输入&#34;&gt;#&lt;/a&gt; 输入&lt;/h4&gt;

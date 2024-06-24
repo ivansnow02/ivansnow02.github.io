@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ivansnow02.github.io</id>
+    <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;math&#34; category</title>
-    <link href="https://ivansnow02.github.io" />
+    <link href="https://blog.ivansnow02.xyz" />
     <updated>2023-09-21T06:59:02.000Z</updated>
     <category term="data structure" />
     <category term="coding" />
@@ -25,9 +25,9 @@
     <category term="Physics" />
     <category term="Discrete Mathematics" />
     <entry>
-        <id>https://ivansnow02.github.io/linear-algebra/</id>
+        <id>https://blog.ivansnow02.xyz/linear-algebra/</id>
         <title>线性代数</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/linear-algebra/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/linear-algebra/"/>
         <content type="html">&lt;hr /&gt;
 &lt;div id=&#34;mm&#34;&gt;&lt;iframe src=&#34;https://ivansnow02.github.io/assets/LinearAlgebra.html&#34; width=&#34;100%&#34; height=&#34;500&#34; name=&#34;topFrame&#34; scrolling=&#34;yes&#34;  noresize=&#34;noresize&#34; frameborder=&#34;0&#34; id=&#34;topFrame&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;hr /&gt;
@@ -818,9 +818,9 @@ c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v3600 v585 h43z&#34;/&gt;&lt;/svg&gt;
         <updated>2023-09-21T06:59:02.000Z</updated>
     </entry>
     <entry>
-        <id>https://ivansnow02.github.io/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</id>
+        <id>https://blog.ivansnow02.xyz/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</id>
         <title>离散数学复习</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
         <content type="html">&lt;hr /&gt;
 &lt;div id=&#34;mm&#34;&gt;&lt;iframe src=&#34;https://ivansnow02.github.io/assets/DiscreteMathMindMap.html&#34; width=&#34;100%&#34; height=&#34;500&#34; name=&#34;topFrame&#34; scrolling=&#34;yes&#34;  noresize=&#34;noresize&#34; frameborder=&#34;0&#34; id=&#34;topFrame&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;hr /&gt;

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ivansnow02.github.io</id>
+    <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;python&#34; tag</title>
-    <link href="https://ivansnow02.github.io" />
+    <link href="https://blog.ivansnow02.xyz" />
     <updated>2023-08-14T08:56:34.000Z</updated>
     <category term="data structure" />
     <category term="coding" />
@@ -25,9 +25,9 @@
     <category term="Physics" />
     <category term="Discrete Mathematics" />
     <entry>
-        <id>https://ivansnow02.github.io/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/</id>
+        <id>https://blog.ivansnow02.xyz/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/</id>
         <title>Django公有配置</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;摸了好久（&lt;/p&gt;
 &lt;/blockquote&gt;

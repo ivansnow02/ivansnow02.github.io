@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ivansnow02.github.io</id>
+    <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;vim&#34; tag</title>
-    <link href="https://ivansnow02.github.io" />
+    <link href="https://blog.ivansnow02.xyz" />
     <updated>2023-04-17T13:44:17.000Z</updated>
     <category term="data structure" />
     <category term="coding" />
@@ -25,9 +25,9 @@
     <category term="Physics" />
     <category term="Discrete Mathematics" />
     <entry>
-        <id>https://ivansnow02.github.io/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/</id>
+        <id>https://blog.ivansnow02.xyz/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/</id>
         <title>VIM的学习</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
         <content type="html">&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/vim%E9%94%AE%E4%BD%8D.gif&#34; alt=&#34;vim键位&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;vim的哲学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vim的哲学&#34;&gt;#&lt;/a&gt; Vim 的哲学&lt;/h2&gt;
 &lt;p&gt;在编程时，您大部分时间都花在阅读 / 编辑上，而不是写作上。因此，Vim 是一个模态编辑器：它有不同的插入文本和操作文本的模式。Vim 是可编程的（使用 Vimscript 以及 Python 等其他语言），并且 Vim 的界面本身就是一种编程语言：击键（具有助记名称）是命令，并且这些命令是可组合的。Vim 避免使用鼠标，因为它太慢了；Vim 甚至避免使用箭头键，因为它需要太多的移动。&lt;/p&gt;

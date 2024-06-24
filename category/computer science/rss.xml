@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Snow&#39;s Blog • Posts by &#34;computer science&#34; category</title>
-        <link>https://ivansnow02.github.io</link>
+        <link>https://blog.ivansnow02.xyz</link>
         <description>some notes about computer science</description>
         <language>zh-CN</language>
         <pubDate>Thu, 09 May 2024 20:11:25 +0800</pubDate>
@@ -28,9 +28,9 @@
         <category>Physics</category>
         <category>Discrete Mathematics</category>
         <item>
-            <guid isPermalink="true">https://ivansnow02.github.io/sql-lab/</guid>
+            <guid isPermalink="true">https://blog.ivansnow02.xyz/sql-lab/</guid>
             <title>SQL代码复习</title>
-            <link>https://ivansnow02.github.io/sql-lab/</link>
+            <link>https://blog.ivansnow02.xyz/sql-lab/</link>
             <category>computer science</category>
             <category>learning</category>
             <pubDate>Thu, 09 May 2024 20:11:25 +0800</pubDate>
@@ -82,9 +82,9 @@
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; 课程&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;课程号&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; 课程&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;课程名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; 课程&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;NATURAL&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;JOIN&lt;/span&gt; 学习&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;GROUP&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; 课程&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;课程号&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; 课程&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;课程名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;HAVING&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;COUNT&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;学习&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;学号&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://ivansnow02.github.io/DataBaseLearning/</guid>
+            <guid isPermalink="true">https://blog.ivansnow02.xyz/DataBaseLearning/</guid>
             <title>数据库系统概论概念整理</title>
-            <link>https://ivansnow02.github.io/DataBaseLearning/</link>
+            <link>https://blog.ivansnow02.xyz/DataBaseLearning/</link>
             <category>computer science</category>
             <category>learning</category>
             <pubDate>Mon, 29 Apr 2024 13:13:02 +0800</pubDate>
@@ -794,9 +794,9 @@ R：&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://ivansnow02.github.io/ComputerSystem/</guid>
+            <guid isPermalink="true">https://blog.ivansnow02.xyz/ComputerSystem/</guid>
             <title>操作系统复习</title>
-            <link>https://ivansnow02.github.io/ComputerSystem/</link>
+            <link>https://blog.ivansnow02.xyz/ComputerSystem/</link>
             <category>computer science</category>
             <category>learning</category>
             <pubDate>Thu, 07 Mar 2024 12:51:59 +0800</pubDate>
@@ -3303,9 +3303,9 @@ R：&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://ivansnow02.github.io/computer-organization/</guid>
+            <guid isPermalink="true">https://blog.ivansnow02.xyz/computer-organization/</guid>
             <title>计算机组成原理复习</title>
-            <link>https://ivansnow02.github.io/computer-organization/</link>
+            <link>https://blog.ivansnow02.xyz/computer-organization/</link>
             <category>computer science</category>
             <category>learning</category>
             <pubDate>Wed, 20 Dec 2023 16:32:28 +0800</pubDate>

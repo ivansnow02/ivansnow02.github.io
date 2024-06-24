@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ivansnow02.github.io</id>
+    <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;computer science&#34; tag</title>
-    <link href="https://ivansnow02.github.io" />
+    <link href="https://blog.ivansnow02.xyz" />
     <updated>2024-05-09T12:11:25.000Z</updated>
     <category term="data structure" />
     <category term="coding" />
@@ -25,9 +25,9 @@
     <category term="Physics" />
     <category term="Discrete Mathematics" />
     <entry>
-        <id>https://ivansnow02.github.io/sql-lab/</id>
+        <id>https://blog.ivansnow02.xyz/sql-lab/</id>
         <title>SQL代码复习</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/sql-lab/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/sql-lab/"/>
         <content type="html">&lt;ul&gt;
 &lt;li&gt;求选修了老师 “王刚” 开课课程且成绩在 90 分以上的学生姓名、课程名称和成绩；（姓名，课程名，成绩）&lt;/li&gt;
 &lt;/ul&gt;
@@ -79,9 +79,9 @@
         <updated>2024-05-09T12:11:25.000Z</updated>
     </entry>
     <entry>
-        <id>https://ivansnow02.github.io/DataBaseLearning/</id>
+        <id>https://blog.ivansnow02.xyz/DataBaseLearning/</id>
         <title>数据库系统概论概念整理</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/DataBaseLearning/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/DataBaseLearning/"/>
         <content type="html">&lt;h2 id=&#34;关系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关系&#34;&gt;#&lt;/a&gt; 关系&lt;/h2&gt;
 &lt;h3 id=&#34;域&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#域&#34;&gt;#&lt;/a&gt; 域&lt;/h3&gt;
 &lt;p&gt;域是属性的取值范围，是属性的取值集合。&lt;/p&gt;
@@ -791,9 +791,9 @@ R：&lt;/p&gt;
         <updated>2024-04-29T05:13:02.000Z</updated>
     </entry>
     <entry>
-        <id>https://ivansnow02.github.io/ComputerSystem/</id>
+        <id>https://blog.ivansnow02.xyz/ComputerSystem/</id>
         <title>操作系统复习</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/ComputerSystem/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/ComputerSystem/"/>
         <content type="html">&lt;h2 id=&#34;概论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概论&#34;&gt;#&lt;/a&gt; 概论&lt;/h2&gt;
 &lt;h3 id=&#34;操作系统的定义和功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统的定义和功能&#34;&gt;#&lt;/a&gt; 操作系统的定义和功能&lt;/h3&gt;
 &lt;h4 id=&#34;操作系统的定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统的定义&#34;&gt;#&lt;/a&gt; 操作系统的定义&lt;/h4&gt;
@@ -3300,9 +3300,9 @@ R：&lt;/p&gt;
         <updated>2024-03-07T04:51:59.000Z</updated>
     </entry>
     <entry>
-        <id>https://ivansnow02.github.io/computer-organization/</id>
+        <id>https://blog.ivansnow02.xyz/computer-organization/</id>
         <title>计算机组成原理复习</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/computer-organization/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/computer-organization/"/>
         <content type="html">&lt;hr /&gt;
 &lt;div id=&#34;mm&#34;&gt;&lt;iframe src=&#34;https://ivansnow02.github.io/assets/ComputerOrganization.html&#34; width=&#34;100%&#34; height=&#34;500&#34; name=&#34;topFrame&#34; scrolling=&#34;yes&#34;  noresize=&#34;noresize&#34; frameborder=&#34;0&#34; id=&#34;topFrame&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;hr /&gt;

@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Snow&#39;s Blog • Posts by &#34;physics&#34; tag</title>
-        <link>https://ivansnow02.github.io</link>
+        <link>https://blog.ivansnow02.xyz</link>
         <description>some notes about computer science</description>
         <language>zh-CN</language>
         <pubDate>Wed, 07 Jun 2023 17:36:59 +0800</pubDate>
@@ -28,9 +28,9 @@
         <category>Physics</category>
         <category>Discrete Mathematics</category>
         <item>
-            <guid isPermalink="true">https://ivansnow02.github.io/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/</guid>
+            <guid isPermalink="true">https://blog.ivansnow02.xyz/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/</guid>
             <title>物理复习</title>
-            <link>https://ivansnow02.github.io/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/</link>
+            <link>https://blog.ivansnow02.xyz/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/</link>
             <category>learning</category>
             <category>Physics</category>
             <pubDate>Wed, 07 Jun 2023 17:36:59 +0800</pubDate>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ivansnow02.github.io</id>
+    <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;test&#34; tag</title>
-    <link href="https://ivansnow02.github.io" />
+    <link href="https://blog.ivansnow02.xyz" />
     <updated>2023-04-16T12:30:05.000Z</updated>
     <category term="data structure" />
     <category term="coding" />
@@ -25,9 +25,9 @@
     <category term="Physics" />
     <category term="Discrete Mathematics" />
     <entry>
-        <id>https://ivansnow02.github.io/TEST/</id>
+        <id>https://blog.ivansnow02.xyz/TEST/</id>
         <title>TEST</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/TEST/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/TEST/"/>
         <content type="html">&lt;p&gt;这是一篇测试文章&lt;/p&gt;
 &lt;img loading=&#34;lazy&#34; data-src=&#34;/TEST/1.jpg&#34; class=&#34;&#34; title=&#34;测试图片1&#34;&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;TEST/1.jpg&#34; alt=&#34;测试图片2&#34; /&gt;&lt;/p&gt;

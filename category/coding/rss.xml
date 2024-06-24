@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Snow&#39;s Blog • Posts by &#34;coding&#34; category</title>
-        <link>https://ivansnow02.github.io</link>
+        <link>https://blog.ivansnow02.xyz</link>
         <description>some notes about computer science</description>
         <language>zh-CN</language>
         <pubDate>Mon, 17 Apr 2023 21:44:17 +0800</pubDate>
@@ -28,9 +28,9 @@
         <category>Physics</category>
         <category>Discrete Mathematics</category>
         <item>
-            <guid isPermalink="true">https://ivansnow02.github.io/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
+            <guid isPermalink="true">https://blog.ivansnow02.xyz/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
             <title>VIM的学习</title>
-            <link>https://ivansnow02.github.io/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
+            <link>https://blog.ivansnow02.xyz/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
             <category>coding</category>
             <category>vim</category>
             <pubDate>Mon, 17 Apr 2023 21:44:17 +0800</pubDate>

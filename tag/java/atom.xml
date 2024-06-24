@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ivansnow02.github.io</id>
+    <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;java&#34; tag</title>
-    <link href="https://ivansnow02.github.io" />
+    <link href="https://blog.ivansnow02.xyz" />
     <updated>2023-05-12T09:47:54.000Z</updated>
     <category term="data structure" />
     <category term="coding" />
@@ -25,9 +25,9 @@
     <category term="Physics" />
     <category term="Discrete Mathematics" />
     <entry>
-        <id>https://ivansnow02.github.io/heimadianping/</id>
+        <id>https://blog.ivansnow02.xyz/heimadianping/</id>
         <title>Redis实战——黑马点评</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/heimadianping/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/heimadianping/"/>
         <content type="html">&lt;p&gt;就是黑马程序员的 Redis 教程里的黑马点评的项目，前面就不讲了，直接开始正题。&lt;/p&gt;
 &lt;h1 id=&#34;基于session实现登录流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基于session实现登录流程&#34;&gt;#&lt;/a&gt; 基于 Session 实现登录流程&lt;/h1&gt;
 &lt;p&gt;分为三个步骤：&lt;/p&gt;
@@ -91,9 +91,9 @@
         <updated>2023-05-12T09:47:54.000Z</updated>
     </entry>
     <entry>
-        <id>https://ivansnow02.github.io/Redis-Learning-03-SpringDataRedis/</id>
+        <id>https://blog.ivansnow02.xyz/Redis-Learning-03-SpringDataRedis/</id>
         <title>SpringDataRedis</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/Redis-Learning-03-SpringDataRedis/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/Redis-Learning-03-SpringDataRedis/"/>
         <content type="html">&lt;h1 id=&#34;redis的java客户端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis的java客户端&#34;&gt;#&lt;/a&gt; Redis 的 Java 客户端&lt;/h1&gt;
 &lt;p&gt;Redis 的客户端可以在&lt;a href=&#34;https://redis.io/docs/clients/&#34;&gt; Redis 官网&lt;/a&gt;找到，推荐的客户端包括：&lt;/p&gt;
 &lt;ul&gt;

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ivansnow02.github.io</id>
+    <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;physics&#34; tag</title>
-    <link href="https://ivansnow02.github.io" />
+    <link href="https://blog.ivansnow02.xyz" />
     <updated>2023-06-07T09:36:59.000Z</updated>
     <category term="data structure" />
     <category term="coding" />
@@ -25,9 +25,9 @@
     <category term="Physics" />
     <category term="Discrete Mathematics" />
     <entry>
-        <id>https://ivansnow02.github.io/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/</id>
+        <id>https://blog.ivansnow02.xyz/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/</id>
         <title>物理复习</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/"/>
         <content type="html">&lt;hr /&gt;
 &lt;div id=&#34;mm&#34;&gt;&lt;iframe src=&#34;https://ivansnow02.github.io/assets/Physics.html&#34; width=&#34;100%&#34; height=&#34;500&#34; name=&#34;topFrame&#34; scrolling=&#34;yes&#34;  noresize=&#34;noresize&#34; frameborder=&#34;0&#34; id=&#34;topFrame&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;hr /&gt;

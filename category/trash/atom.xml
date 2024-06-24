@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ivansnow02.github.io</id>
+    <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;trash&#34; category</title>
-    <link href="https://ivansnow02.github.io" />
+    <link href="https://blog.ivansnow02.xyz" />
     <updated>2024-06-21T11:53:09.000Z</updated>
     <category term="data structure" />
     <category term="coding" />
@@ -25,9 +25,9 @@
     <category term="Physics" />
     <category term="Discrete Mathematics" />
     <entry>
-        <id>https://ivansnow02.github.io/Mao/</id>
+        <id>https://blog.ivansnow02.xyz/Mao/</id>
         <title>毛概题目</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/Mao/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/Mao/"/>
         <content type="html">&lt;h2 id=&#34;导论-练习题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#导论-练习题&#34;&gt;#&lt;/a&gt; 导论 练习题&lt;/h2&gt;
 &lt;h3 id=&#34;一-单选题共3题30分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-单选题共3题30分&#34;&gt;#&lt;/a&gt; 一、单选题（共 3 题，30 分）&lt;/h3&gt;
 &lt;ol&gt;
@@ -968,9 +968,9 @@
         <updated>2024-06-21T11:53:09.000Z</updated>
     </entry>
     <entry>
-        <id>https://ivansnow02.github.io/MarxistPhilosophy/</id>
+        <id>https://blog.ivansnow02.xyz/MarxistPhilosophy/</id>
         <title>马原题目</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/MarxistPhilosophy/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/MarxistPhilosophy/"/>
         <content type="html">&lt;h2 id=&#34;绪论-马克思主义是关于无产阶级和人类解放的科学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绪论-马克思主义是关于无产阶级和人类解放的科学&#34;&gt;#&lt;/a&gt; 绪论  马克思主义是关于无产阶级和人类解放的科学&lt;/h2&gt;
 &lt;h3 id=&#34;一-单项选择题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-单项选择题&#34;&gt;#&lt;/a&gt; 一、单项选择题&lt;/h3&gt;
 &lt;ol&gt;
@@ -4957,9 +4957,9 @@
         <updated>2024-06-16T02:04:24.000Z</updated>
     </entry>
     <entry>
-        <id>https://ivansnow02.github.io/%E6%80%9D%E6%94%BF%E5%A4%8D%E4%B9%A0/</id>
+        <id>https://blog.ivansnow02.xyz/%E6%80%9D%E6%94%BF%E5%A4%8D%E4%B9%A0/</id>
         <title>思政复习</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/%E6%80%9D%E6%94%BF%E5%A4%8D%E4%B9%A0/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/%E6%80%9D%E6%94%BF%E5%A4%8D%E4%B9%A0/"/>
         <content type="html">&lt;ul class=&#34;task-list&#34;&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; 道德的（&lt;em&gt;相对独立性&lt;/em&gt;）既表现为道德的历史继承性，也表现为道德对社会发展具有能动的反作用。&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_1&#34;&gt; （&lt;em&gt;奉献社会&lt;/em&gt;）要求从业人员在工作岗位上兢兢业业地为社会和他人作贡献，是社会主义职业道德中最高层次的要求，体现了社会主义职业道德的最高目标指向。&lt;/label&gt;&lt;/li&gt;
@@ -4978,9 +4978,9 @@
         <updated>2023-06-03T04:17:44.000Z</updated>
     </entry>
     <entry>
-        <id>https://ivansnow02.github.io/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%8D%E4%B9%A0/</id>
+        <id>https://blog.ivansnow02.xyz/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%8D%E4%B9%A0/</id>
         <title>习近平复习</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%8D%E4%B9%A0/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%8D%E4%B9%A0/"/>
         <content type="html">&lt;ul&gt;
 &lt;li&gt;中国特色社会主义的战略布局是（  &lt;strong&gt;四个全面&lt;/strong&gt; ）&lt;/li&gt;
 &lt;li&gt;我国社会主要矛盾的变化
@@ -5107,9 +5107,9 @@
         <updated>2023-06-02T12:09:04.000Z</updated>
     </entry>
     <entry>
-        <id>https://ivansnow02.github.io/XJP/</id>
+        <id>https://blog.ivansnow02.xyz/XJP/</id>
         <title>习近平新时代中国特色社会主义思想概论</title>
-        <link rel="alternate" href="https://ivansnow02.github.io/XJP/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/XJP/"/>
         <content type="html">&lt;div id=&#34;mm&#34;&gt;&lt;iframe src=&#34;https://ivansnow02.github.io/assets/XJP.html&#34; width=&#34;100%&#34; height=&#34;500&#34; name=&#34;topFrame&#34; scrolling=&#34;yes&#34;  noresize=&#34;noresize&#34; frameborder=&#34;0&#34; id=&#34;topFrame&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;hr /&gt;
 &lt;h1 id=&#34;第一讲-马克思主义中国化新飞跃&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一讲-马克思主义中国化新飞跃&#34;&gt;#&lt;/a&gt; 第一讲 马克思主义中国化新飞跃&lt;/h1&gt;
