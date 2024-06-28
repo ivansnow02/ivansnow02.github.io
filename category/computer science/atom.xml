@@ -3,7 +3,7 @@
     <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;computer science&#34; category</title>
     <link href="https://blog.ivansnow02.xyz" />
-    <updated>2024-05-09T12:11:25.000Z</updated>
+    <updated>2024-06-28T08:30:19.000Z</updated>
     <category term="data structure" />
     <category term="coding" />
     <category term="algorithms" />
@@ -24,6 +24,135 @@
     <category term="tree" />
     <category term="Physics" />
     <category term="Discrete Mathematics" />
+    <entry>
+        <id>https://blog.ivansnow02.xyz/computer-network/</id>
+        <title>computer-network</title>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/computer-network/"/>
+        <content type="html">&lt;h2 id=&#34;绪论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绪论&#34;&gt;#&lt;/a&gt; 绪论&lt;/h2&gt;
+&lt;h3 id=&#34;计算机网络定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算机网络定义&#34;&gt;#&lt;/a&gt; 计算机网络定义&lt;/h3&gt;
+&lt;p&gt;计算机网络是互连的、自治的计算机集合。&lt;/p&gt;
+&lt;h3 id=&#34;互联网的组成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#互联网的组成&#34;&gt;#&lt;/a&gt; 互联网的组成&lt;/h3&gt;
+&lt;h4 id=&#34;边缘部分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#边缘部分&#34;&gt;#&lt;/a&gt; 边缘部分&lt;/h4&gt;
+&lt;p&gt;由各主机构成，用户直接进行信息处理和信息共享；低速连入核心网。&lt;/p&gt;
+&lt;h5 id=&#34;客户服务器模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#客户服务器模式&#34;&gt;#&lt;/a&gt; 客户 / 服务器模式&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;客户：被用户调用后运行，在打算通信时主动向远地服务器发起通信，必须知道服务器的地址；不需要很特殊的硬件和很复杂的操作系统&lt;/li&gt;
+&lt;li&gt;服务器：一种专门用来提供某种服务的程序，可以同时处理多个客户的请求；系统启动后即自动调用并一直不断地运行着，被动地等待着来自各地的客户端的请求，不需要知道客户端的地址；一般需要强大的硬件和高级的操作系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;对等连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#对等连接&#34;&gt;#&lt;/a&gt; 对等连接&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;对等连接：两个对等的进程之间的通信，两个进程在通信时既可以是客户也可以是服务器，两个进程之间的关系是对等的，没有主从之分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;核心部分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#核心部分&#34;&gt;#&lt;/a&gt; 核心部分&lt;/h4&gt;
+&lt;p&gt;在网络核心部分其特殊作用的是路由器。路由器是实现分组交换的关键构件。由各路由器连网，负责为边缘部分提供高速远程分组交换。&lt;/p&gt;
+&lt;h5 id=&#34;电路交换的特点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#电路交换的特点&#34;&gt;#&lt;/a&gt; 电路交换的特点&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;电路交换：在通信开始前，通信的两端要先建立一条专用的物理通路，通信结束后再撤销这条通路&lt;/li&gt;
+&lt;li&gt;面向连接的&lt;/li&gt;
+&lt;li&gt;电路交换的三个阶段：建立连接、通信、释放连接&lt;/li&gt;
+&lt;li&gt;优点：端对端通信质量因约定了通信资源获得可靠保障，对连续传送大量数据效率高&lt;/li&gt;
+&lt;li&gt;缺点：电路交换传输计算机数据效率低。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;报文交换的特点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#报文交换的特点&#34;&gt;#&lt;/a&gt; 报文交换的特点&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;报文交换：通信的两端不需要先建立专用的物理通路，而是直接向网络发送报文，报文中包含目的地址，网络根据目的地址选择合适的路径传送报文、&lt;/li&gt;
+&lt;li&gt;优点：无须预约传输带宽，动态逐段利用传输带宽对突发式数据通信效率高，通信迅速。&lt;/li&gt;
+&lt;li&gt;缺点：时延较长&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;分组交换的特点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分组交换的特点&#34;&gt;#&lt;/a&gt; 分组交换的特点&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;分组交换：报文交换的基础上，将报文划分为固定长度的数据块，称为分组，每个分组都携带有目的地址，网络根据目的地址选择合适的路径传送分组&lt;/li&gt;
+&lt;li&gt;（1）报文分组，加首部（2）经路由器储存转发（3）在目的地合并&lt;/li&gt;
+&lt;li&gt;优点：
+&lt;ul&gt;
+&lt;li&gt;高效：动态分配传输带宽，对通信链路是逐段占用&lt;/li&gt;
+&lt;li&gt;灵活：以分组为传送单位和查找路由&lt;/li&gt;
+&lt;li&gt;迅速：不必先建立连接就能向其他主机发送分组&lt;/li&gt;
+&lt;li&gt;可靠：保证可靠性的网络协议；分布式的路由选择协议使网络具有很好的生存性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;问题：
+&lt;ul&gt;
+&lt;li&gt;分组在各节点存储转发，需要缓存和排队，增加了时延&lt;/li&gt;
+&lt;li&gt;分组必须携带的首部也造成了一定开销&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;计算机网络的分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算机网络的分类&#34;&gt;#&lt;/a&gt; 计算机网络的分类&lt;/h3&gt;
+&lt;h4 id=&#34;按网络的作用范围分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#按网络的作用范围分类&#34;&gt;#&lt;/a&gt; 按网络的作用范围分类&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;广域网（WAN）：覆盖范围广，跨越城市、国家、甚至全球&lt;/li&gt;
+&lt;li&gt;城域网（MAN）：覆盖范围小，跨越一个城市&lt;/li&gt;
+&lt;li&gt;局域网（LAN）：覆盖范围更小，跨越一个建筑物或者一个校园&lt;/li&gt;
+&lt;li&gt;个人区域网（PAN）：覆盖范围更小，跨越个人工作空间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;按网络的使用者分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#按网络的使用者分类&#34;&gt;#&lt;/a&gt; 按网络的使用者分类&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;公用网：为大众提供服务，如电话网、互联网&lt;/li&gt;
+&lt;li&gt;专用网：为某个组织或个人提供服务，如企业网、家庭网&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;计算机网络的性能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算机网络的性能&#34;&gt;#&lt;/a&gt; 计算机网络的性能&lt;/h3&gt;
+&lt;h4 id=&#34;速率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#速率&#34;&gt;#&lt;/a&gt; 速率&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;速率：数据传输速率，指单位时间内传输的数据量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;带宽&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#带宽&#34;&gt;#&lt;/a&gt; 带宽&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;带宽：信道的传输能力，指单位时间内通过信道的最高数据率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;吞吐量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#吞吐量&#34;&gt;#&lt;/a&gt; 吞吐量&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;吞吐量：单位时间内通过网络的实际数据量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;时延&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#时延&#34;&gt;#&lt;/a&gt; 时延&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;时延：数据从网络的一端传输到另一端所需的时间&lt;/li&gt;
+&lt;li&gt;发送时延：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mtext&gt;发送时延&lt;/mtext&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mtext&gt;数据长度&lt;/mtext&gt;&lt;mtext&gt;发送速率&lt;/mtext&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;发送时延=\frac{数据长度}{发送速率}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;发送时延&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.2173em;vertical-align:-0.345em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8723em;&#34;&gt;&lt;span style=&#34;top:-2.655em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord cjk_fallback mtight&#34;&gt;发送速率&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.394em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord cjk_fallback mtight&#34;&gt;数据长度&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.345em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;传播时延：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mtext&gt;传播时延&lt;/mtext&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mtext&gt;传播距离&lt;/mtext&gt;&lt;mtext&gt;传播速率&lt;/mtext&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;传播时延=\frac{传播距离}{传播速率}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;传播时延&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.2173em;vertical-align:-0.345em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8723em;&#34;&gt;&lt;span style=&#34;top:-2.655em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord cjk_fallback mtight&#34;&gt;传播速率&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.394em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord cjk_fallback mtight&#34;&gt;传播距离&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.345em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;处理时延：数据包在路由器中排队、检错、转发所需的时间&lt;/li&gt;
+&lt;li&gt;排队时延：数据包在路由器的输出队列中等待传输所需的时间&lt;/li&gt;
+&lt;li&gt;总时延：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mtext&gt;总时延&lt;/mtext&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mtext&gt;发送时延&lt;/mtext&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mtext&gt;传播时延&lt;/mtext&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mtext&gt;处理时延&lt;/mtext&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mtext&gt;排队时延&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;总时延=发送时延+传播时延+处理时延+排队时延&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;总时延&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.7667em;vertical-align:-0.0833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;发送时延&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.7667em;vertical-align:-0.0833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;传播时延&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.7667em;vertical-align:-0.0833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;处理时延&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;排队时延&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;时延带宽积&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#时延带宽积&#34;&gt;#&lt;/a&gt; 时延带宽积&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;时延带宽积：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mtext&gt;时延带宽积&lt;/mtext&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mtext&gt;传播时延&lt;/mtext&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;mtext&gt;带宽&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;时延带宽积=传播时延*带宽&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;时延带宽积&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;传播时延&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;∗&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;带宽&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;时延带宽积反映了网络中的数据量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;往返时间rtt&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#往返时间rtt&#34;&gt;#&lt;/a&gt; 往返时间 RTT&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;往返时间 RTT：数据从发送端发送到接收端，再返回发送端所需的时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;利用率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#利用率&#34;&gt;#&lt;/a&gt; 利用率&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;利用率：信道的利用率，指信道被占用的时间比例&lt;/li&gt;
+&lt;li&gt;网络利用率：全网络信道利用率的加权平均值&lt;/li&gt;
+&lt;li&gt;时延&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;D_0&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8333em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;D&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.3011em;&#34;&gt;&lt;span style=&#34;top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 与网络利用率&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;U&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10903em;&#34;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 的关系：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;msub&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/msub&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;D=\frac{D_0}{1-U}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;D&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.2918em;vertical-align:-0.4033em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8884em;&#34;&gt;&lt;span style=&#34;top:-2.655em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mbin mtight&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.10903em;&#34;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.4101em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.02778em;&#34;&gt;D&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.3173em;&#34;&gt;&lt;span style=&#34;top:-2.357em;margin-left:-0.0278em;margin-right:0.0714em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.5em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size3 size1 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.143em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.4033em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;U&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6833em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10903em;&#34;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 是网络利用率，数值在 0-1 之间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;计算机网络的非性能指标&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算机网络的非性能指标&#34;&gt;#&lt;/a&gt; 计算机网络的非性能指标&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;费用&lt;/li&gt;
+&lt;li&gt;质量&lt;/li&gt;
+&lt;li&gt;标准化&lt;/li&gt;
+&lt;li&gt;可靠性&lt;/li&gt;
+&lt;li&gt;可扩展性和可升级性&lt;/li&gt;
+&lt;li&gt;易于管理和维护&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;计算机网络的体系结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算机网络的体系结构&#34;&gt;#&lt;/a&gt; 计算机网络的体系结构&lt;/h3&gt;
+&lt;h4 id=&#34;osi参考模型和tcpip参考模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#osi参考模型和tcpip参考模型&#34;&gt;#&lt;/a&gt; OSI 参考模型和 TCP/IP 参考模型&lt;/h4&gt;
+&lt;p&gt;|—--|---|---|&lt;br /&gt;
+|OSI|TCP/IP | 信息格式 |&lt;br /&gt;
+| 应用层 | 应用层 | 报文流 |&lt;br /&gt;
+| 表示层 |^&lt;sup&gt;|&lt;/sup&gt;^|&lt;br /&gt;
+| 会话层 |^&lt;sup&gt;|&lt;/sup&gt;^|&lt;br /&gt;
+| 传输层 | 传输层（TCP、UDP）| 分组 |&lt;br /&gt;
+| 网络层 | 网络互联层（IP）|IP 数据报 |&lt;br /&gt;
+| 数据链路层 | 网络接口层 | 帧比特流 |&lt;br /&gt;
+| 物理层 |^&lt;sup&gt;|&lt;/sup&gt;^|&lt;/p&gt;
+</content>
+        <category term="computer science" />
+        <category term="learning" />
+        <updated>2024-06-28T08:30:19.000Z</updated>
+    </entry>
     <entry>
         <id>https://blog.ivansnow02.xyz/sql-lab/</id>
         <title>SQL代码复习</title>

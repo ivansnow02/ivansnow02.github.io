@@ -1,3 +1,4 @@
+https://blog.ivansnow02.xyz/computer-network/
 https://blog.ivansnow02.xyz/Mao/
 https://blog.ivansnow02.xyz/MarxistPhilosophy/
 https://blog.ivansnow02.xyz/Union-Find/
@@ -17,4 +18,3 @@ https://blog.ivansnow02.xyz/linear-algebra/
 https://blog.ivansnow02.xyz/XJP/
 https://blog.ivansnow02.xyz/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/
 https://blog.ivansnow02.xyz/TheFallingSoldier/
-https://blog.ivansnow02.xyz/stack_and_queue/
