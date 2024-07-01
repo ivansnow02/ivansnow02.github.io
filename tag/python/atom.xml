@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.ivansnow02.xyz</id>
+    <title>Snow&#39;s Blog • Posts by &#34;python&#34; tag</title>
+    <link href="https://blog.ivansnow02.xyz" />
+    <updated>2023-08-14T08:56:34.000Z</updated>
+    <category term="data structure" />
+    <category term="coding" />
+    <category term="algorithms" />
+    <category term="computer science" />
+    <category term="learning" />
+    <category term="Django" />
+    <category term="Python" />
+    <category term="trash" />
+    <category term="Redis" />
+    <category term="Java" />
+    <category term="English" />
+    <category term="test" />
+    <category term="coursera" />
+    <category term="vim" />
+    <category term="Spring" />
+    <category term="Math" />
+    <category term="Linear Algebra" />
+    <category term="tree" />
+    <category term="Physics" />
+    <category term="Discrete Mathematics" />
+    <entry>
+        <id>https://blog.ivansnow02.xyz/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/</id>
+        <title>Django公有配置</title>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;摸了好久（&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;base_dir&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#base_dir&#34;&gt;#&lt;/a&gt; BASE_DIR&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用于绑定当前项目的绝对路径（动态计算出来的），所有文件夹都可以依赖此路径&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;debug&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#debug&#34;&gt;#&lt;/a&gt; DEBUG&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用于配置 Django 项目的启动模式，取值
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;True&lt;/code&gt;  表示开发环境中使用&lt;strong&gt;开发调试&lt;/strong&gt;模式（用于开发中）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;False&lt;/code&gt;  表示当前项目运行在&lt;strong&gt;生产环境&lt;/strong&gt;中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;allowed-hosts&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#allowed-hosts&#34;&gt;#&lt;/a&gt; ALLOWED HOSTS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;设置允许访问到本项目的 host 头值
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[]&lt;/code&gt;  空列表，表示只有请求头中 host 为  &lt;code&gt;127.0.0.1&lt;/code&gt; 、 &lt;code&gt;localhost&lt;/code&gt;  能访问本项目	 &lt;code&gt;DEBUG = True&lt;/code&gt;  时有效&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[&#39;*&#39;]&lt;/code&gt;  表示任何请求头的 host 都能访问到当前项目&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[&#39;192.168.32.1&#39;，&#39;127.0.0.1&#39;]&lt;/code&gt;  表示只有当前两个 host 头的值能访问当前项目&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;installed_apps&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#installed_apps&#34;&gt;#&lt;/a&gt; INSTALLED_APPS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;指定当前项目中安装的应用列表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;middleware&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#middleware&#34;&gt;#&lt;/a&gt; MIDDLEWARE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用于注册中间件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;templates&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#templates&#34;&gt;#&lt;/a&gt; TEMPLATES&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用于指定模板的配置信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;databases&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#databases&#34;&gt;#&lt;/a&gt; DATABASES&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用于指定数据库的配置信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;language_code&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#language_code&#34;&gt;#&lt;/a&gt; LANGUAGE_CODE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用于指定语言配置
+&lt;ul&gt;
+&lt;li&gt;英文：&amp;quot;en-us&amp;quot;&lt;/li&gt;
+&lt;li&gt;中文：&amp;quot;zh-Hans&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;time_zone&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#time_zone&#34;&gt;#&lt;/a&gt; TIME_ZONE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用于指定当前服务器端时区
+&lt;ul&gt;
+&lt;li&gt;世界标准时间：“UTC&amp;quot;&lt;/li&gt;
+&lt;li&gt;中国时区：“Asia/Shanghai&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;root_urlconf&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#root_urlconf&#34;&gt;#&lt;/a&gt; ROOT_URLCONF&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用于配置主 url 配置 &lt;code&gt;&#39;mysite1.urls&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ROOT_URLCONF = &#39;mysite1.urls&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;http://settings.py&#34;&gt;settings.py&lt;/a&gt; 中也可以添加 开发人员 自定义的配置&lt;br /&gt;
+配置建议：名字尽量个性化 - 以防覆盖掉公有配置例如： &lt;code&gt;ALIPAY_KEY =‘xxxxxxxx&#39;&lt;/code&gt; &lt;br /&gt;
+settings.py 中的所有配置项，都可以按需的在代码中引入 &lt;code&gt;from django.conf import settings&lt;/code&gt;&lt;/p&gt;
+</content>
+        <category term="coding" />
+        <category term="Django" />
+        <category term="Python" />
+        <updated>2023-08-14T08:56:34.000Z</updated>
+    </entry>
+</feed>

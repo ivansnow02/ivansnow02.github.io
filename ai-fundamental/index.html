@@ -1,0 +1,485 @@
+<!DOCTYPE html><html lang="zh-CN"><head><link rel="manifest" href="/manifest.json"> <link rel="stylesheet" href="/css/custom.css"> <link href="https://fastly.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" rel="stylesheet"> <link href="/css/custom.css" rel="stylesheet"> <link rel="preconnect" href="https://fonts.loli.net"> <link rel="preconnect" href="https://gstatic.loli.net" crossorigin=""> <link href="https://fonts.loli.net/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><link rel="icon" type="image/ico" sizes="32x32" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"><meta name="msvalidate.01" content="5C885BB4F08198773FCB9D68FB7EFF0C"><meta name="google-site-verification" content="SU_V4YfQlQkkbm4IQUajehIwRUPbvIwErs1WJRMD0NQ"><link rel="alternate" href="/rss.xml" title="Snow's Blog" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Snow's Blog" type="application/atom+xml"><link rel="alternate" type="application/json" title="Snow's Blog" href="https://blog.ivansnow02.xyz/feed.json"><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"><link rel="preconnect" href="https://at.alicdn.com"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://unpkg.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CJuliamo:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CJetBrains%20Mono:400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext" media="none" onload="this.media='all'"><link rel="stylesheet" href="/css/app.css?v=0.4.5"><link rel="modulepreload" href="/js/chunk-BXLYQ5WU.js"><link rel="modulepreload" href="/js/chunk-MMNV6LQ6.js"><link rel="modulepreload" href="/js/chunk-O3P2JLOA.js"><link rel="modulepreload" href="/js/chunk-Q4ZTFT4T.js"><link rel="modulepreload" href="/js/chunk-TW2T2Y2E.js"><link rel="modulepreload" href="/js/comments-4C6U322V.js"><link rel="modulepreload" href="/js/index.esm-IMSISCQT.js"><link rel="modulepreload" href="/js/post-XCN3V2M2.js"><link rel="modulepreload" href="/js/quicklink-H4EVZM3I.js"><link rel="modulepreload" href="/js/search-45KDAC4T.js"><link rel="modulepreload" href="/js/siteInit.js"><link rel="stylesheet" href="https://npm.webcache.cn/@waline/client@3.0.0-alpha.11/dist/waline.css" media="none" onload="this.media='all'"><link rel="preload" href="https://s2.loli.net/2024/06/16/vN51cCT6pUtjnK7.png" as="image" fetchpriority="high"><meta name="keywords" content="computer science,"><meta name="description" content="some notes about computer science"><link rel="canonical" href="https://blog.ivansnow02.xyz/ai-fundamental/"><title>人工智能基础</title><meta name="generator" content="Hexo 7.2.0"></head><body itemscope="" itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope="" itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">人工智能基础</h1><div class="meta"><span class="item" title="创建时间：2024-06-29 09:12:16"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2024-06-29T09:12:16+08:00">2024-06-29</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>11k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>10 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Code Blog</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="https://s2.loli.net/2024/06/16/vN51cCT6pUtjnK7.png" loading="eager" decoding="async" fetchpriority="high" alt="Snow's Blog"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemlistelement="" itemscope="" itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span><i class="ic i-angle-right"></i><span class="current" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/computer-science/" itemprop="item" rel="index" title="分类于computer science"><span itemprop="name">computer science<meta itemprop="position" content="0"></span></a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://blog.ivansnow02.xyz/ai-fundamental/"><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/img/avatar.png"><meta itemprop="name" content="Ivan Snow"><meta itemprop="description" content="Just a Note., some notes about computer science"></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Snow's Blog"></span><div class="body md" itemprop="articleBody"><h2 id="知识表示"><a class="anchor" href="#知识表示">#</a> 知识表示</h2>
+<h3 id="概述"><a class="anchor" href="#概述">#</a> 概述</h3>
+<h4 id="知识的概念"><a class="anchor" href="#知识的概念">#</a> 知识的概念</h4>
+<ul>
+<li>知识：经过加工的信息，是对信息的提炼和概括，它是高度概括的信息。</li>
+<li>信息：是数据所表达的客观事实，数据是信息的载体，信息是用来消除不确定性从而使数据得以解读。</li>
+<li>数据：数据是可以被记录和识别的一组有意义的符号，以适合于人工或自然方式进行通信、解释或处理。</li>
+</ul>
+<h4 id="知识的特征"><a class="anchor" href="#知识的特征">#</a> 知识的特征</h4>
+<ul>
+<li>相对正确性：任何知识都是在一定条件和环境下产生的，在特定的条件和环境下才是正确的。（经典物理）</li>
+<li>存在不确定性的知识：随机性引起的、模糊性引起的、经验引起的、不完全性引起的。</li>
+<li>可表示性与可利用性：知识可以用适当的形式表示出来，如语言、文字、图形、神经网络等。</li>
+</ul>
+<h4 id="知识的分类"><a class="anchor" href="#知识的分类">#</a> 知识的分类</h4>
+<ul>
+<li>以知识的<strong>作用范围</strong>来划分：知识可以分为常识性知识和领域性知识。
+<ul>
+<li><strong>常识性知识</strong>是通用性知识，是人们普遍了解的知识，具有较广泛的应用范围。</li>
+<li><strong>领域性知识</strong>是面向某个具体领域的知识，是专业性知识，只有相应专业领域的人员才能掌握并用来求解领域内的有关问题。</li>
+</ul>
+</li>
+<li>按知识的<strong>确定性</strong>划分：知识可分为<strong>确定知识</strong>和<strong>不确定知识</strong>。</li>
+<li>按照人类的<strong>思维及认识方法</strong>来分：可分为逻辑性知识和形象性知识
+<ul>
+<li><strong>逻辑性知识</strong>是反映人类逻辑思维过程的知识，这种知识一般都具有因果关系及难以精确描述的特点。</li>
+<li><strong>形象思维知识</strong>是人类思维的另一种方式，是通过形象思维所获得的知识。</li>
+</ul>
+</li>
+<li>按知识的<strong>作用及表示</strong>来划分：可分为事实性知识、规则性知识、控制性知识和元知识
+<ul>
+<li><strong>事实性知识</strong>是指有关领域内的概念、事实、事物的属性、状态及其关系的描述，包括事物的分类、属性、事物间关系、科学事实、客观事实等。</li>
+<li><strong>规则性知识</strong>是指有关问题中与事物的行动、动作相联系的因果关系知识，这种知识是动态的、变化的。</li>
+<li><strong>控制性知识</strong>是用控制策略表示问题的知识，包含有关部门各种处理过程、策略和结构的知识，常用来协调整个问题求解的过程。</li>
+<li><strong>元知识</strong>是指有关知识的知识，是知识库中的高层知识，包括怎样使用规则、解释规则、校验规则、解释程序结构等知识。</li>
+</ul>
+</li>
+</ul>
+<div class="note warning">
+<p>元知识与控制知识是有重叠的，对一个大的程序来说， 以元知识或者元规则形式体现控制知识更为方便，因为元知识存在于知识库中，而控制知识常与程序结合在一起出现，从而不容易修改。</p>
+</div>
+<h4 id="知识的表示"><a class="anchor" href="#知识的表示">#</a> 知识的表示</h4>
+<p>就是研究用机器表示知识的一般方法，可以看作是将知识符号化（即编码成某种数据结构）并输入到计算机的过程和方法；</p>
+<div class="note warning">
+<p>知识表示 := 恰当的符号（结构）+ 配套的处理机制</p>
+<ul>
+<li>恰当的符号（结构）用于存储要解决的问题、可能的中间解答和最终解答以及解决问题涉及的知识；</li>
+<li>配套的处理机制（动态或者静态）仅有符号（结构）不能体现出系统具有知识； 只有对其作适当的处理才构成意义。</li>
+</ul>
+</div>
+<h5 id="知识表示的分类"><a class="anchor" href="#知识表示的分类">#</a> 知识表示的分类</h5>
+<ul>
+<li>陈述性知识表示
+<ul>
+<li>含义：以数据的形式表示知识。这类表示法将知识表示与知识的运用（推理）分开处理，在表示知识时，并不涉及如何运用知识的问题， 是一种静态的描述方法。</li>
+<li>优缺点：优点是<strong>灵活简洁</strong>。其缺点是<strong>推理过程不透明，不易理解</strong>。</li>
+</ul>
+</li>
+<li>过程性知识表示<br>
+含义：知识表示的形式是一个 “过程” 。它将知识的表示与运用（推理）相结合，知识就寓于程序之中，是一种动态的描述方法。<br>
+优缺点：优点是<strong>推理过程直接、清晰</strong>。其缺点是<strong>不够严格，知识间有交互重叠，灵活性差，知识的增、删极不方便</strong>。</li>
+</ul>
+<h3 id="谓词逻辑表示法"><a class="anchor" href="#谓词逻辑表示法">#</a> 谓词逻辑表示法</h3>
+<p>命题逻辑和谓词逻辑是最先应用于人工智能的两种逻辑，谓词逻辑是在命题逻辑基础上发展起来的，命题逻辑可以看作是谓词逻辑的一种特殊形式。</p>
+<h4 id="命题"><a class="anchor" href="#命题">#</a> 命题</h4>
+<p>命题是具有真假意义的陈述句，通常用大写的英文字母表示</p>
+<ul>
+<li>原子命题：不能分解成更简单的命题。</li>
+<li>复合命题：由连接词、标点符号和原子命题等复合构成的命题</li>
+<li>命题逻辑：研究命题和命题之间关系的符号逻辑系统。</li>
+<li>命题常量（命题常元）：一个命题标识符表示确定的命题。</li>
+<li>命题变元（命题变量） ：命题标识符只表示任意命题的位置标志。</li>
+</ul>
+<h5 id="命题的语法"><a class="anchor" href="#命题的语法">#</a> 命题的语法</h5>
+<ul>
+<li>命题常元：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mi>r</mi><mi>u</mi><mi>e</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">True(T)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">u</span><span class="mord mathnormal">e</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mclose">)</span></span></span></span> 和<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>a</mi><mi>l</mi><mi>s</mi><mi>e</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">False(F)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">se</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mclose">)</span></span></span></span>；</li>
+<li>命题符号：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> 等；</li>
+<li>联结词： <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi></mrow><annotation encoding="application/x-tex">\neg</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">¬</span></span></span></span>（非）、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∧</mo></mrow><annotation encoding="application/x-tex">\wedge</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5556em;"></span><span class="mord">∧</span></span></span></span>（合取）、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∨</mo></mrow><annotation encoding="application/x-tex">\vee</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5556em;"></span><span class="mord">∨</span></span></span></span>（析取）、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span>（蕴含）、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>↔</mo></mrow><annotation encoding="application/x-tex">\leftrightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">↔</span></span></span></span>（等价）；</li>
+<li>括号：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">( )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mclose">)</span></span></span></span>。</li>
+</ul>
+<h5 id="命题的特点"><a class="anchor" href="#命题的特点">#</a> 命题的特点</h5>
+<ul>
+<li>命题逻辑把原子命题作为最基本的单元，不再往下分析。比如说命题&nbsp;P“π 是无理数” 和命题&nbsp;Q&nbsp;“无理数是实数” 这两个命题，在命题逻辑的范畴内是找不到什么联系的。</li>
+<li>命题这种表示法有较大的局限性，它无法把它所描述的客观事物的结构及逻辑特征反映出来，也不能把不同事物的共同特征描述出来</li>
+</ul>
+<h4 id="谓词"><a class="anchor" href="#谓词">#</a> 谓词</h4>
+<p>谓词逻辑是命题逻辑的扩充与发展，它将一个原子命题分解成谓词与个体两部分。谓词描述<strong>个体的属性</strong>，以及<strong>个体之间的关系</strong>。谓词对应于语言中的谓语，或谓语 + 宾语，<strong>个体常项</strong>常用单词或&nbsp;a,b,c&nbsp;等小写字母表记，<strong>个体变项</strong>常用 x,y,z 等小写字母表记。<br>
+<strong>个体变元</strong>的取值范围称为<strong>个体域</strong>。个体域可以是有限的，也可以是无限的。个体词描述逻辑中的重要名词，作为对象（对象是个体词描述的东西）。<br>
+谓词逻辑：根据对象和对象上的谓词（即对象的属性和对象之间的关系），通过使用连接词和量词来表示世界的符号逻辑系统。</p>
+<h4 id="谓词公式"><a class="anchor" href="#谓词公式">#</a> 谓词公式</h4>
+<h5 id="谓词公式的几个重要概念"><a class="anchor" href="#谓词公式的几个重要概念">#</a> 谓词公式的几个重要概念</h5>
+<ul>
+<li><strong>函数符号与谓词符号</strong>：若函数符号<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> 中包含的个体数目为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>, 则称<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> 为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 元函数符号。若谓词符号<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> 中包含的个体数目为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>，则称<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> 为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 元谓词符号。</li>
+<li><strong>谓词的阶</strong>：如果谓词 P 中的所有个体都是个体常量、变元、或函数，则该谓词为一阶谓词。如果谓词 P 中某个个体本身又是一个一阶谓词，则称 P 为二阶谓词。</li>
+<li><strong>谓词的项</strong>
+<ol>
+<li>单独一个个体是项 (包括常量和变量)。</li>
+<li>若<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> 是<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 元函数符号，而<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>t</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>t</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">t_1,t_2,…,t_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8095em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 是项，则<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>t</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(t_1, t_2,…,t_n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 是项。</li>
+<li>任何项仅由规则（1）（2）所生成。</li>
+</ol>
+</li>
+</ul>
+<h5 id="谓词公式的语法"><a class="anchor" href="#谓词公式的语法">#</a> 谓词公式的语法</h5>
+<ul>
+<li>谓词公式来表示知识：标点符号、括号、逻辑联结词、常量符号集、变量符号集、n 元函数符号集、n 元谓词符号集、量词</li>
+<li>谓词演算：合法表达式 (原子公式、合式公式)，表达式的演算化简方法，标准式（合取的前束范式或析取的前束范式）</li>
+</ul>
+<h5 id="谓词公式的语法元素"><a class="anchor" href="#谓词公式的语法元素">#</a> 谓词公式的语法元素</h5>
+<ul>
+<li>常量符号。</li>
+<li>变量符号。</li>
+<li>函数符号。</li>
+<li>谓词符号。</li>
+<li>联结词。</li>
+<li>在个体变量及其作用域下：引入量词： <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi></mrow><annotation encoding="application/x-tex">\forall</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∀</span></span></span></span>（全称量词）、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∃</mi></mrow><annotation encoding="application/x-tex">\exists</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∃</span></span></span></span>（存在量词）。后面跟着变量，称为量词的<strong>指导变元</strong>。</li>
+<li>公式（原子公式与合式公式）若<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> 为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 元谓词符号，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>t</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>t</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">t_1,t_2,…,t_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8095em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 都是项，则称<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>t</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(t_1, t_2, …, t_n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 为原子公式，简称原子。</li>
+<li>一阶谓词逻辑的（合式）公式（可简称公式）可递归定义如下
+<ol>
+<li>原子公式是公式 (也称为原子公式)。</li>
+<li>若 P、Q 是公式，则 (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>﹁</mtext><mi>P</mi></mrow><annotation encoding="application/x-tex">﹁P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">﹁</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span>)、(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∧</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P∧Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span>)、(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∨</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P∨Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span>)、(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P→Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span>)、(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>↔</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P↔Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">↔</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span>) 也是公式。</li>
+<li>若 P 是公式，x 是任一个体变元，则 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∀</mi><mi>x</mi><mo stretchy="false">)</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">(∀x)P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">∀</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∃</mi><mi>x</mi><mo stretchy="false">)</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">(∃x)P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">∃</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> 也是公式。</li>
+<li>任何公式都由有限次应用（1）（2）（3）来产生。</li>
+</ol>
+</li>
+</ul>
+<h5 id="谓词公式的解释"><a class="anchor" href="#谓词公式的解释">#</a> 谓词公式的解释</h5>
+<p>一阶谓词逻辑公式的解释：设 D 为谓词公式 P 的非空个体域，若对 P 中的个体、函数、谓词按如下规定赋值：<br>
+（1）为每个个体指派 D 中的一个元素。<br>
+（2）为每个 n 元函数指派一个从 D<sup>n</sup> 到 D 的映射。<br>
+（3）为每个 n 元谓词指派一个从 D<sup>n</sup> 到 {T,F} 的映射。<br>
+则称这些指派为公式 P 在 D 上的一个解释</p>
+<div class="note warning">
+<p>注意：</p>
+<ol>
+<li>在谓词逻辑中，由于公式中可能含有个体常量、个体变元以及函数，因此不能像命题公式那样直接通过真值指派给出解释，必须首先考虑个体常量、和函数在个体域中的取值，然后才能针对常量和函数的具体取值为谓词分别指派真值。</li>
+<li>在给出一阶逻辑公式的一个解释时，需要规定两件事情：公式中个体的定义域、以及公式中出现的常量、函数符号、谓词符号的定义。</li>
+</ol>
+</div>
+<h5 id="谓词逻辑知识表示"><a class="anchor" href="#谓词逻辑知识表示">#</a> 谓词逻辑知识表示</h5>
+<ul>
+<li>谓词逻辑表示的适应范围：适合于表示事物的状态、属性、概念等事实性知识，也可以用来表示事物间具有确定因果关系的规则性知识。</li>
+<li>对事实性知识：可以使用谓词公式中的析取符号与合取符号连接起来的谓词公式来表示</li>
+<li>对规则性知识：通常使用由蕴涵符号连接起来的谓词公式来表示</li>
+<li><strong>谓词公式表示知识的步骤</strong>
+<ol>
+<li>定义谓词及个体，确定每个谓词及个体的确切含义</li>
+<li>根据所要表达的事物或概念，为每个谓词中的变元赋以特定的值</li>
+<li>根据所要表达的知识的语义，用适当的连接符将各个谓词连接起来形成谓词公式</li>
+</ol>
+</li>
+</ul>
+<h5 id="谓词逻辑表示的特点"><a class="anchor" href="#谓词逻辑表示的特点">#</a> 谓词逻辑表示的特点</h5>
+<ul>
+<li>优点：严密性、自然性、通用性、知识易于表达、易于实现</li>
+<li>缺点：效率低、灵活性差、组合爆炸</li>
+</ul>
+<h3 id="产生式表示法"><a class="anchor" href="#产生式表示法">#</a> 产生式表示法</h3>
+<h4 id="产生式表示法的基本方法"><a class="anchor" href="#产生式表示法的基本方法">#</a> 产生式表示法的基本方法</h4>
+<h5 id="产生式规则"><a class="anchor" href="#产生式规则">#</a> 产生式规则</h5>
+<p>通常用于表示事物间的因果关系</p>
+<ul>
+<li>基本形式
+<ul>
+<li>if P then Q 或 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P \rightarrow Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span></li>
+<li>P 表示规则的<strong>条件</strong></li>
+<li>Q 表示规则激活时应该执行的<strong>动作</strong></li>
+</ul>
+</li>
+</ul>
+<h5 id="规则分类"><a class="anchor" href="#规则分类">#</a> 规则分类</h5>
+<ul>
+<li>前提 - 结论型</li>
+<li>条件 - 动作型</li>
+</ul>
+<h5 id="规则的表示"><a class="anchor" href="#规则的表示">#</a> 规则的表示</h5>
+<p>产生式系统中每条规则是一个 “前提→结论” 或 “条件→结论” 的产生式，简单形式为：</p>
+<ul>
+<li>IF〈前提〉THEN〈结论〉</li>
+<li>IF〈条件〉THEN〈动作〉</li>
+</ul>
+<h5 id="规则知识的表示"><a class="anchor" href="#规则知识的表示">#</a> 规则知识的表示</h5>
+<ul>
+<li>确定性规则知识可用简单形式表示</li>
+<li>不确定性规则知识：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mi>Q</mi><mo stretchy="false">(</mo><mtext>可信度</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P \rightarrow Q (可信度)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mopen">(</span><span class="mord cjk_fallback">可信度</span><span class="mclose">)</span></span></span></span> 或 IF P THEN Q (可信度)</li>
+</ul>
+<h5 id="事实知识的表示"><a class="anchor" href="#事实知识的表示">#</a> 事实知识的表示</h5>
+<ul>
+<li>确定性事实知识一般使用三元组表示：(对象，属性，值) 或 (关系，对象 1，对象 2)</li>
+<li>不确定性事实知识使用四元组表示：(对象，属性，值，不确定度量值) 或 (关系，对象 1，对象 2，不确定度量值)</li>
+</ul>
+<h4 id="产生式系统的基本结构"><a class="anchor" href="#产生式系统的基本结构">#</a> 产生式系统的基本结构</h4>
+<p><img loading="lazy" data-src="ai-fundamental/%E6%88%AA%E5%B1%8F2024-07-01%20%E4%B8%8A%E5%8D%8810.21.29.webp" alt="产生式系统的基本结构"></p>
+<h5 id="规则库"><a class="anchor" href="#规则库">#</a> 规则库</h5>
+<p>用于描述相应领域内知识的产生式集合，是某领域知识 (规则) 的存储器，其中的规则是以产生式形式表示的。规则库中包含着将问题从初始状态转换成目标状态 (或解状态) 的那些变换规则。</p>
+<p><strong>规则库是专家系统的核心</strong>，也是一般产生式系统赖以进行问题求解的基础。其中知识的完整性和一致性、知识表达的准确性和灵活性以及知识组织的合理性，都将对产生式系统的性能和运行效率产生直接的影响。</p>
+<h5 id="综合数据库"><a class="anchor" href="#综合数据库">#</a> 综合数据库</h5>
+<p>用于存放<strong>输入的事实、从外部数据库输入的事实以及中间结果（事实）和最后结果的工作区</strong>。</p>
+<p>当规则库中的某条产生式的前提可与综合数据库中的某些已知事实匹配时，该产生式就被激活，并把用它推出的结论放入综合数据库中，作为后面推理的已知事实。综合数据库的<strong>内容是在不断变化的，是动态的</strong></p>
+<h5 id="推理机"><a class="anchor" href="#推理机">#</a> 推理机</h5>
+<p>用来控制和协调规则库与综合数据库的运行，包含了<strong>控制策略</strong>和<strong>推理方式</strong>。</p>
+<h5 id="控制策略"><a class="anchor" href="#控制策略">#</a> 控制策略</h5>
+<p>作用就是确定选用什么规则或如何应用规则。通常从选择规则到执行操作分 3 步完成：匹配、冲突解决和操作。</p>
+<h6 id="匹配"><a class="anchor" href="#匹配">#</a> 匹配</h6>
+<p>将当前综合数据库中的事实与规则中的条件进行比较，如果相匹配，则这一规则称为<strong>匹配规则</strong>。</p>
+<p>通过冲突解决策略选中的在操作部分执行的规则称为<strong>启用规则</strong></p>
+<h6 id="冲突解决"><a class="anchor" href="#冲突解决">#</a> 冲突解决</h6>
+<ul>
+<li>专一性排序</li>
+<li>规则排序</li>
+<li>规模排序</li>
+<li>就近排序</li>
+</ul>
+<h6 id="操作"><a class="anchor" href="#操作">#</a> 操作</h6>
+<p>执行规则的操作部分。经过操作以后，当前的<strong>综合数据库将被修改</strong>，其他的规则有可能将成为启用规则。</p>
+<h5 id="产生式系统的推理方式"><a class="anchor" href="#产生式系统的推理方式">#</a> 产生式系统的推理方式</h5>
+<h6 id="正向推理"><a class="anchor" href="#正向推理">#</a> 正向推理</h6>
+<p>正向推理是从已知事实出发，通过规则库求得结论。正向推理方式也被称为<strong>数据驱动方式或自底向上的方式</strong>。</p>
+<p>推理过程：</p>
+<ol>
+<li>规则库中的规则与综合数据库中的事实进行匹配，得到匹配的规则集合；</li>
+<li>使用冲突解决算法，从匹配规则集合中选择一条规则作为启用规则；</li>
+<li>执行启用规则的操作部分，将该启用规则的操作结果送入综合数据库或对综合数据库进行必要的修改。</li>
+</ol>
+<p>重复这个过程直至达到目标。</p>
+<h6 id="反向推理"><a class="anchor" href="#反向推理">#</a> 反向推理</h6>
+<p>反向推理是从目标（作为假设）出发，反向使用规则，求得已知事实。这种推理方式也被称为<strong>目标驱动方式或自顶向下的方式</strong>。</p>
+<p>其推理过程是：</p>
+<ol>
+<li>规则库中的规则后件与目标事实进行匹配，得到匹配的规则集合；</li>
+<li>使用冲突解决算法，从匹配规则集合中选择一条规则作为启用规则；</li>
+<li>将启用规则的前件作为子目标。</li>
+</ol>
+<p>重复这个过程直至各子目标均为已知事实，则反向推理的过程就算成功结束。</p>
+<h6 id="双向推理"><a class="anchor" href="#双向推理">#</a> 双向推理</h6>
+<p>双向推理是一种<strong>既自顶向下又自底向上</strong>的推理。推理从两个方向同时进行，直至某个中间界面上两方向结果相符便成功结束。</p>
+<p>双向推理较正向或反向推理所形成的推理网络来得小，从而<strong>推理效率更高</strong>。</p>
+<h4 id="产生式系统的分类"><a class="anchor" href="#产生式系统的分类">#</a> 产生式系统的分类</h4>
+<ul>
+<li>按产生式所表示的知识是否具有确定性
+<ul>
+<li>确定性产生式系统</li>
+<li>不确定性产生式系统</li>
+</ul>
+</li>
+<li>按推理机的推理方式
+<ul>
+<li>正向推理</li>
+<li>反向推理</li>
+<li>双向推理</li>
+</ul>
+</li>
+<li>按规则库及综合数据库的性质与结构特征
+<ul>
+<li>可交换的产生式系统：规则的使用次序对问题的最终求解是无关紧要的</li>
+<li>可分解的产生式系统：把一个规模较大且较复杂的问题分解为若干个规模较小且较简单的子问题，然后对每个子问题分别进行求解</li>
+<li>可恢复的产生式系统：在问题求解过程中既可以对综合数据库添加新内容、又可删除或修改老内容的产生式系统</li>
+</ul>
+</li>
+</ul>
+<h4 id="产生式系统的特点"><a class="anchor" href="#产生式系统的特点">#</a> 产生式系统的特点</h4>
+<h5 id="产生式表示法的优点"><a class="anchor" href="#产生式表示法的优点">#</a> 产生式表示法的优点</h5>
+<ul>
+<li>清晰性</li>
+<li>模块性</li>
+<li>自然性</li>
+</ul>
+<h5 id="产生式表示法的缺点"><a class="anchor" href="#产生式表示法的缺点">#</a> 产生式表示法的缺点</h5>
+<ul>
+<li>难以扩展</li>
+<li>规则选择效率低</li>
+</ul>
+<h3 id="框架表示"><a class="anchor" href="#框架表示">#</a> 框架表示</h3>
+<p>框架理论的<strong>基本观点</strong>是 “人脑已存储有大量的典型情景，当人面临新的情景时，就从记忆中选择（粗匹配）一个称作框架的基本知识结构，这个框架是以前记忆的一个知识空框，而其具体内容依新的情景而改变，对这空框的细节加工修改和补充，形成对新情景的认识又记忆于人脑中，以丰富人的知识。</p>
+<ul>
+<li>强调事物内部的结构化描述；</li>
+<li>较好地反映人观察事物的思维方式；</li>
+<li>应用于机器人识别领域。</li>
+</ul>
+<h4 id="框架结构"><a class="anchor" href="#框架结构">#</a> 框架结构</h4>
+<p>框架由描述事物的各个方面的<strong>槽</strong>组成，每个槽可有若干个<strong>侧面</strong>。</p>
+<ul>
+<li>一个槽用于描述所讨论对象的<strong>某一方面的属性</strong>，</li>
+<li>一个侧面用于描述<strong>相应属性的一个方面</strong>。</li>
+<li>槽和侧面所具有的值分别称为槽值和侧面值。槽值可以是<strong>逻辑的、数字的，可以是程序、条件、默认值或是一个子框架</strong>。</li>
+</ul>
+<p>一个框架通常由<strong>框架名</strong>、<strong>槽名</strong>、<strong>侧面</strong>和<strong>值</strong>这四部分组成</p>
+<div class="note warning">
+<p>框架的一般表示结构</p>
+<ul>
+<li>框架由描述事物各个方面属性的槽（slot）组成 <code>&lt;框架&gt; := (Frame &lt;框架名&gt; {&lt;槽&gt;}+)</code></li>
+<li>槽有多侧面（aspect） <code>&lt;槽&gt; := (&lt;槽名&gt; {&lt;侧面&gt;} +)</code> ， <code>&lt;侧面&gt; := &lt;侧面名&gt;：&lt;侧面值&gt;</code></li>
+</ul>
+<p>框架更强调表示事物的内部结构；</p>
+</div>
+<figure class="highlight text"><figcaption data-lang="text"></figcaption><table><tbody><tr><td data-num="1"></td><td><pre>&lt;框架名&gt;</pre></td></tr><tr><td data-num="2"></td><td><pre>  槽名1：侧面名11 值11</pre></td></tr><tr><td data-num="3"></td><td><pre>        侧面名12 值12</pre></td></tr><tr><td data-num="4"></td><td><pre>  槽名2：侧面名21 值21</pre></td></tr><tr><td data-num="5"></td><td><pre>        侧面名22 值22</pre></td></tr><tr><td data-num="6"></td><td><pre>  约束： 约束条件1</pre></td></tr><tr><td data-num="7"></td><td><pre>        约束条件2</pre></td></tr></tbody></table></figure><h5 id="系统预定义槽名"><a class="anchor" href="#系统预定义槽名">#</a> 系统预定义槽名</h5>
+<ul>
+<li><strong>ISA</strong>：表示框架的类别</li>
+<li><strong>AKO</strong>：表示框架的上位类</li>
+<li><strong>Instance</strong>：表示框架的实例，指出下层框架</li>
+<li><strong>Part-of</strong>：表示框架的部分</li>
+</ul>
+<h5 id="框架网络"><a class="anchor" href="#框架网络">#</a> 框架网络</h5>
+<p>多个互联的框架连接起来组成的框架系统称为框架网络。</p>
+<p>它包含两方面的含义：</p>
+<ul>
+<li>网络中的节点是框架，利用节点之间的关系可由某些框架推论出另一些框架；</li>
+<li>网络中的节点既可代表框架，也可代表框架中的槽，每条弧的一头联着某个框架的一个槽，另一头联着另一个框架。</li>
+</ul>
+<h4 id="框架表示法的推理方法"><a class="anchor" href="#框架表示法的推理方法">#</a> 框架表示法的推理方法</h4>
+<h5 id="匹配-2"><a class="anchor" href="#匹配-2">#</a> 匹配</h5>
+<p>由框架所构成的知识库，当利用它进行推理时，其过程往往是根据已知的信息，通过与知识库中预先存储的框架进行匹配，找出一个或几个与该信息所提供的情况最适合的预选框架，形成初步假设。然后在在该假设框架引导下，收集进一步的信息。按某种评价原则，对预选的框架进行评价，以决定最后接受或放弃预选的框架。</p>
+<h5 id="默认推理填槽过程中"><a class="anchor" href="#默认推理填槽过程中">#</a> 默认推理（填槽过程中）</h5>
+<p>在框架网络中，各框架之间通过<strong> ISA 链</strong>（槽）构成<strong>半序的继承关系</strong>。在填槽过程中，如果没有特别的说明，子框架的槽值将继承父框架相应的槽值，称为默认推理。</p>
+<h4 id="框架表示法的特点"><a class="anchor" href="#框架表示法的特点">#</a> 框架表示法的特点</h4>
+<h5 id="继承性"><a class="anchor" href="#继承性">#</a> 继承性</h5>
+<p>是框架的一个很重要的性质，下层框架可以从上层框架继承某些属性或值，也可以进行补充和修改。这样一些相同的信息可以不必重复存储，减少冗余信息节省了存储空间</p>
+<h5 id="结构化"><a class="anchor" href="#结构化">#</a> 结构化</h5>
+<p>框架表示法是一种结构化的知识表示方法。不但把知识的内部结构表示出来还可以把知识之间的联系也表示出来，是一种表达能很强的知识表示方法。</p>
+<h5 id="自然性"><a class="anchor" href="#自然性">#</a> 自然性</h5>
+<p>在人类思维和理解活动中分析和解释遇到的情况时，就从记忆中选择一个类似事物的框架，通过对其细节进行修改或补充，形成对新事物的认识，这与人们的认识活动是一致的。</p>
+<h5 id="推理灵活多变"><a class="anchor" href="#推理灵活多变">#</a> 推理灵活多变</h5>
+<p>框架表示法没有固定的推理机制，它可以根据待求解问题的特点采取灵活地采取多种推理方法。</p>
+<h5 id="缺点"><a class="anchor" href="#缺点">#</a> 缺点</h5>
+<p>框架表示法的主要不足之处在于它<strong>不善于表达过程性知识</strong>。因此它经常与产生式表示法结合起来使用，以取得互补效果。</p>
+<h3 id="语义网络"><a class="anchor" href="#语义网络">#</a> 语义网络</h3>
+<h4 id="语义网络的概念"><a class="anchor" href="#语义网络的概念">#</a> 语义网络的概念</h4>
+<p>语义网络是一种通过<strong>概念及其语义联系（或语义关系）来表示知识</strong>的<strong>有向图</strong>，其节点和弧带有标注。</p>
+<ul>
+<li>其中有向图的各<strong>节点</strong>用来表示各种事物、概念、情况、属性、状态、事件和动作等对象，</li>
+<li>节点上的<strong>标注</strong>用来区分各节点所表示的不同对象，每个各节点可以带有多个<strong>属性</strong>，以表征其所代表的对象的特性</li>
+<li>节点还可以是一个<strong>语义子网络</strong>；</li>
+<li>弧是有方向的、有标注的，<strong>方向表示节点间的主次关系</strong>且方向不能随意调换。标注用来表示各种<strong>语义联系</strong></li>
+</ul>
+<h4 id="语义网络的基本结构"><a class="anchor" href="#语义网络的基本结构">#</a> 语义网络的基本结构</h4>
+<p>语义网络一般由一些最基本的语义单元组成。这些最基本的语义单元被称为<strong>语义基元</strong>（基本语义联系），可用三元组表示：(节点 1，弧，节点 2)。</p>
+<div class="note warning">
+<p><img loading="lazy" data-src="ai-fundamental/%E6%88%AA%E5%B1%8F2024-07-01%20%E4%B8%8A%E5%8D%8811.22.13.webp" alt="语义基元结构"><br>
+ A 和 B 分别代表节点，而 R 则表示 A 和 B 之间的某种语义联系 (语义关系)。<br>
+<img loading="lazy" data-src="ai-fundamental/%E6%88%AA%E5%B1%8F2024-07-01%20%E4%B8%8A%E5%8D%8811.21.45.webp" alt="语义网络结构"><br>
+把多个语义基元用相应的语义联系关联在一起的时候，就形成了一个语义网络。</p>
+</div>
+<h4 id="语义网络的基本语义联系"><a class="anchor" href="#语义网络的基本语义联系">#</a> 语义网络的基本语义联系</h4>
+<h5 id="类属关系"><a class="anchor" href="#类属关系">#</a> 类属关系</h5>
+<ul>
+<li>AKO (A-Kind-of): 表示一个事物是另一个事物的一种类型。</li>
+<li>AMO (A-Member-of): 表示一个事物是另一个事物的成员。</li>
+<li>ISA (Is-a): 表示一个事物是另一个事物的实例。</li>
+</ul>
+<h5 id="包含关系"><a class="anchor" href="#包含关系">#</a> 包含关系</h5>
+<ul>
+<li>Part-of: 表示一个事物是另一个事物的一部分。</li>
+<li>Member-of: 表示一个事物是另一个事物的成员。</li>
+</ul>
+<h5 id="属性关系"><a class="anchor" href="#属性关系">#</a> 属性关系</h5>
+<ul>
+<li>Have: 表示一个事物具有某种属性。</li>
+<li>Can: 表示一个事物具有某种能力。</li>
+</ul>
+<h5 id="时序关系"><a class="anchor" href="#时序关系">#</a> 时序关系</h5>
+<ul>
+<li>Before: 表示一个事物发生在另一个事物之前。</li>
+<li>After: 表示一个事物发生在另一个事物之后。</li>
+</ul>
+<h5 id="位置关系"><a class="anchor" href="#位置关系">#</a> 位置关系</h5>
+<ul>
+<li>Located-on: 表示一个事物位于另一个事物之上。</li>
+<li>Located-at: 表示一个事物位于另一个事物的某个位置。</li>
+<li>Located-under: 表示一个事物位于另一个事物之下。</li>
+<li>Located-inside: 表示一个事物位于另一个事物之内。</li>
+<li>Located-outside: 表示一个事物位于另一个事物之外。</li>
+</ul>
+<h5 id="相邻关系"><a class="anchor" href="#相邻关系">#</a> 相邻关系</h5>
+<ul>
+<li>Similar-to: 表示一个事物与另一个事物相似。</li>
+<li>Near-to: 表示一个事物与另一个事物接近。</li>
+</ul>
+<h5 id="因果关系"><a class="anchor" href="#因果关系">#</a> 因果关系</h5>
+<ul>
+<li>If-then: 表示如果一个事物发生，则另一个事物也会发生。</li>
+</ul>
+<h5 id="组成关系"><a class="anchor" href="#组成关系">#</a> 组成关系</h5>
+<ul>
+<li>Composed-of: 表示一个事物由另一个事物组成。</li>
+</ul>
+<h4 id="语义网络表示知识的方法"><a class="anchor" href="#语义网络表示知识的方法">#</a> 语义网络表示知识的方法</h4>
+<h5 id="事实性知识的表示"><a class="anchor" href="#事实性知识的表示">#</a> 事实性知识的表示</h5>
+<p>通常把有关一个事物或一组相关事物的知识用一个语义网络来表示</p>
+<h5 id="情况-动作和事件的表示"><a class="anchor" href="#情况-动作和事件的表示">#</a> 情况、动作和事件的表示</h5>
+<p>增加了情况节点、动作节点和事件节点，允许用一个节点来表示情况、动作和事件。</p>
+<h6 id="情况的表示"><a class="anchor" href="#情况的表示">#</a> 情况的表示</h6>
+<p>在用语义网络表达那些由<strong>不及物动词</strong>表示的语句或<strong>没有间接宾语的及物动词</strong>表示的语句时（<strong>祈使句、动作只关联单一个体</strong>），如果该语句的动作表示了一些其它情况，如动作作用的时间等，则需要增加一个<strong>情况节点</strong>用于指出各种不同的情况。</p>
+<h6 id="动作的表示"><a class="anchor" href="#动作的表示">#</a> 动作的表示</h6>
+<p>有些表示知识的语句<strong>既有发出动作的主体，又有接受动作的客体</strong>。在用语义网络表示这样的知识时，可以增加一个<strong>动作节点</strong>用于指出动作的主体和客体。</p>
+<h6 id="事件的表示"><a class="anchor" href="#事件的表示">#</a> 事件的表示</h6>
+<p>如果要表示的知识可以看成是发生的一个事件，那么可以增加一个<strong>事件节点</strong>来描述这条知识</p>
+<h5 id="连词和量词的表示逻辑关系的表示"><a class="anchor" href="#连词和量词的表示逻辑关系的表示">#</a> 连词和量词的表示（逻辑关系的表示）</h5>
+<h6 id="合取与析取的表示"><a class="anchor" href="#合取与析取的表示">#</a> 合取与析取的表示</h6>
+<p>当用语义网络来表示知识时，为了能表示知识中体现出来的 “合取与析取” 的语义联系，可通过增加<strong>合取节点与析取节点</strong>来表示。只是在使用时要注意其语义，不应出现不合理的组合情况。</p>
+<h6 id="存在量词与全称量词的表示"><a class="anchor" href="#存在量词与全称量词的表示">#</a> 存在量词与全称量词的表示</h6>
+<ul>
+<li>对存在量词可以直接用 “AKO”、“ISA” 等语义关系来表示。</li>
+<li>对全称量词可以采用语义网络分区技术来表示，也称为分块语义网络，该技术的基本思想是：把一个复杂的命题划分成若干个子命题，每一个子命题用一个简单的语义网络来表示，称为一个子空间，多个子空间构成一个大空间。每个子空间看作是大空间中的一个节点，称为超节点。空间可以逐层嵌套，子空间之间用弧相互连接。</li>
+</ul>
+<h6 id="否定的表示"><a class="anchor" href="#否定的表示">#</a> 否定的表示</h6>
+<ul>
+<li>基本语义关系的否定的表示，可通过在有向弧上直接标注该基本语义关系的否定的方法来解决</li>
+<li>一般语义关系的否定的表示，通常需要引进 “非” 节点来表示。</li>
+</ul>
+<h4 id="语义网络表示知识的步骤"><a class="anchor" href="#语义网络表示知识的步骤">#</a> 语义网络表示知识的步骤</h4>
+<ol>
+<li>确定问题中所有对象和各个对象的属性。</li>
+<li>确定所讨论对象间的关系。</li>
+<li>根据语义网络中所涉及的关系，对语义网络中的节点及弧进行整理，包括增加节点、弧和归并节点等。</li>
+<li>将各对象作为语义网络的一个节点，而各对象间的关系作为网络中各节点的弧，连接形成语义网络。</li>
+</ol>
+<div class="note warning">
+<p>① 在语义网络中，如果节点中的联系是 ISA、AKO、AMO 等类属关系，则下层节点对上层节点具有属性继承性。整理同一层节点的共同属性，并抽出这些属性，加入上层节点中，以免造成信息冗余。<br>
+② 如果要表示的知识中含有一些状况，则增加情况节点，并从该节点引出多条弧将该情况的原因节点和结果节点连接起来。<br>
+③ 如果要表示的知识中含有动作关系，则增加动作节点，并从该节点引出多条弧将动作的主体节点和客体节点连接起来。<br>
+④ 如果要表示的知识中含有 “与” 和 “或” 关系时，可在语义网络中增加 “与” 节点和 “或” 节点，并用弧将这些 “与”、“或” 与其它节点连接起来表示知识中的语义关系。<br>
+⑤ 如果要表示的知识是含有全称量词和存在量词的复杂问题，则采用前面介绍的亨德里克 (G .G .Hendrix) 提出的语义网络分区技术来表示。<br>
+⑥ 如果要表示的知识是规则性的知识，则应仔细分析问题中的条件与结论，并将它们作为语义网络中的两个节点，然后用 IF-THEN 弧将它们连接起来。</p>
+</div>
+<h4 id="语义网络的推理过程"><a class="anchor" href="#语义网络的推理过程">#</a> 语义网络的推理过程</h4>
+<h5 id="继承推理"><a class="anchor" href="#继承推理">#</a> 继承推理</h5>
+<p>继承是指把对事物的描述从抽象结点传递到具体结点。通过继承可以得到所需结点的一些属性值，它通常是沿<strong>着 ISA、AKO、AMO 等继承弧</strong>进行的。继承的一般过程为：</p>
+<ol>
+<li><strong>建立结点表</strong>，存放待求结点和所有以 ISA、AKO、AMO 等继承弧与此结点相连的那些结点。</li>
+<li>检查表中的<strong>第一个是否有继承弧</strong>。如果有，就从该弧所指的所有结点放入结点表的<strong>末尾</strong>，记录这些结点的所有属性，并从结点表中删除第一个结点。如果没有，仅从结点表中删除第一个结点。</li>
+<li>重复检查表中的第一个是否有继承弧，直到结点表为空。记录下来的属性就是待求结点的所有属性。</li>
+</ol>
+<h5 id="匹配推理"><a class="anchor" href="#匹配推理">#</a> 匹配推理</h5>
+<p>语义网络问题的求解一般是通过匹配来实现的。所谓匹配就是在知识库的语义网络中寻找与待求问题相符的语义网络模式。其主要过程为：</p>
+<ol>
+<li>根据问题的要求构造网络片断，该网络片断中有些结点或弧为空，标记待求解的问题（询问处）。</li>
+<li>根据该语义网络片断在知识库中寻找相应的信息。</li>
+<li>当待求解的语义网络片断和知识库中的语义网络片断相匹配时，则与询问处（也就是待求解的地方）相匹配的事实就是问题的解。</li>
+</ol>
+<div class="note warning">
+<p>在语义网络知识表达方法中，没有形式语义，也就是说，和谓词逻辑不同，对所给定的表达，其表示什么语义没有统一的规则和定义。在已经设计出来的以语义网络为基础的系统中，它们各自采用不同的推理过程。但推理的核心思想无非是继承和匹配。</p>
+</div>
+<h4 id="语义网络的特点"><a class="anchor" href="#语义网络的特点">#</a> 语义网络的特点</h4>
+<ul>
+<li><strong>结构性</strong>：语义网络把事物的属性以及事物间的各种语义联系显式地表现出来，是一种结构化的知识表示法。在这种方法中，下层结点可以继承、新增和修改上层结点的属性，从而实现信息共享。</li>
+<li><strong>联想性</strong>：着重强调事物间的语义联系，体现了人类思维的联想过程。</li>
+<li><strong>自索引性</strong>：语义网络表示把各结点之间的联系以明确、简洁的方式表示出来，通过与某一结点连接的弧很容易找出相关信息，而不必查找整个知识库。可以有效地避免搜索时的组合爆炸问题。</li>
+<li><strong>自然性</strong>：是一种直观的知识表示方法，符合人们表达事物间关系的习惯，而且把自然语言转换成语义网络也较为容易。</li>
+<li><strong>非严格性</strong>：语义网络没有公认的形势表示体系，它没有给其节点和弧赋予确切的含义。在推理过程中有时不能区分物体的 “类” 和 “实例” 的特点。因此，通过语义网络实现的推理不能保证其推理结果的正确性。</li>
+<li>另外，语义网络表示法的<strong>推理规则不十分明了</strong>。其<strong>表达范围也受到一定限制</strong>，一旦当语义网络中结点个数比较多时，<strong>网络结构复杂</strong>，推理就难以进行。</li>
+</ul>
+<div class="tags"><a href="/tags/computer-science/" rel="tag"><i class="ic i-tag"></i>computer science</a><a href="/tags/learning/" rel="tag"><i class="ic i-tag"></i>learning</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于</span><time title="修改时间：2024-07-01 11:50:02" itemprop="dateModified" datetime="2024-07-01T11:50:02+08:00">2024-07-01</time></span></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>Ivan Snow<i class="ic i-at"><em>@</em></i>Snow's Blog</li><li class="link"><strong>本文链接：</strong><a href="https://blog.ivansnow02.xyz/ai-fundamental/" title="人工智能基础">https://blog.ivansnow02.xyz/ai-fundamental/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/computer-network/" rel="prev" itemprop="url" data-background-image="/computer-network/images.jpg" title="计算机网络"><span class="type">上一篇</span><span class="category"><i class="ic i-flag"></i>computer science</span><h3>计算机网络</h3></a></div><div class="item right"></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.</span> <span class="toc-text"> 知识表示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text"> 概述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 知识的概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 知识的特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 知识的分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.1.4.</span> <span class="toc-text"> 知识的表示</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E8%A1%A8%E7%A4%BA%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.4.1.</span> <span class="toc-text"> 知识表示的分类</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E9%80%BB%E8%BE%91%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text"> 谓词逻辑表示法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%91%BD%E9%A2%98"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 命题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%91%BD%E9%A2%98%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-number">1.2.1.1.</span> <span class="toc-text"> 命题的语法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%91%BD%E9%A2%98%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">1.2.1.2.</span> <span class="toc-text"> 命题的特点</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 谓词</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E5%85%AC%E5%BC%8F"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 谓词公式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E5%85%AC%E5%BC%8F%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5"><span class="toc-number">1.2.3.1.</span> <span class="toc-text"> 谓词公式的几个重要概念</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-number">1.2.3.2.</span> <span class="toc-text"> 谓词公式的语法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E5%85%AC%E5%BC%8F%E7%9A%84%E8%AF%AD%E6%B3%95%E5%85%83%E7%B4%A0"><span class="toc-number">1.2.3.3.</span> <span class="toc-text"> 谓词公式的语法元素</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E5%85%AC%E5%BC%8F%E7%9A%84%E8%A7%A3%E9%87%8A"><span class="toc-number">1.2.3.4.</span> <span class="toc-text"> 谓词公式的解释</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E9%80%BB%E8%BE%91%E7%9F%A5%E8%AF%86%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.2.3.5.</span> <span class="toc-text"> 谓词逻辑知识表示</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E9%80%BB%E8%BE%91%E8%A1%A8%E7%A4%BA%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">1.2.3.6.</span> <span class="toc-text"> 谓词逻辑表示的特点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A7%E7%94%9F%E5%BC%8F%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text"> 产生式表示法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%A7%E7%94%9F%E5%BC%8F%E8%A1%A8%E7%A4%BA%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 产生式表示法的基本方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%A7%E7%94%9F%E5%BC%8F%E8%A7%84%E5%88%99"><span class="toc-number">1.3.1.1.</span> <span class="toc-text"> 产生式规则</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%84%E5%88%99%E5%88%86%E7%B1%BB"><span class="toc-number">1.3.1.2.</span> <span class="toc-text"> 规则分类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%84%E5%88%99%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.3.1.3.</span> <span class="toc-text"> 规则的表示</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%84%E5%88%99%E7%9F%A5%E8%AF%86%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.3.1.4.</span> <span class="toc-text"> 规则知识的表示</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8B%E5%AE%9E%E7%9F%A5%E8%AF%86%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.3.1.5.</span> <span class="toc-text"> 事实知识的表示</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%A7%E7%94%9F%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 产生式系统的基本结构</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%84%E5%88%99%E5%BA%93"><span class="toc-number">1.3.2.1.</span> <span class="toc-text"> 规则库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%BC%E5%90%88%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.3.2.2.</span> <span class="toc-text"> 综合数据库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8E%A8%E7%90%86%E6%9C%BA"><span class="toc-number">1.3.2.3.</span> <span class="toc-text"> 推理机</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E7%AD%96%E7%95%A5"><span class="toc-number">1.3.2.4.</span> <span class="toc-text"> 控制策略</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D"><span class="toc-number">1.3.2.4.1.</span> <span class="toc-text"> 匹配</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3"><span class="toc-number">1.3.2.4.2.</span> <span class="toc-text"> 冲突解决</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C"><span class="toc-number">1.3.2.4.3.</span> <span class="toc-text"> 操作</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%A7%E7%94%9F%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8E%A8%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">1.3.2.5.</span> <span class="toc-text"> 产生式系统的推理方式</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%AD%A3%E5%90%91%E6%8E%A8%E7%90%86"><span class="toc-number">1.3.2.5.1.</span> <span class="toc-text"> 正向推理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%8F%8D%E5%90%91%E6%8E%A8%E7%90%86"><span class="toc-number">1.3.2.5.2.</span> <span class="toc-text"> 反向推理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E6%8E%A8%E7%90%86"><span class="toc-number">1.3.2.5.3.</span> <span class="toc-text"> 双向推理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%A7%E7%94%9F%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 产生式系统的分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%A7%E7%94%9F%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 产生式系统的特点</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%A7%E7%94%9F%E5%BC%8F%E8%A1%A8%E7%A4%BA%E6%B3%95%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">1.3.4.1.</span> <span class="toc-text"> 产生式表示法的优点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%A7%E7%94%9F%E5%BC%8F%E8%A1%A8%E7%A4%BA%E6%B3%95%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-number">1.3.4.2.</span> <span class="toc-text"> 产生式表示法的缺点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.4.</span> <span class="toc-text"> 框架表示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E7%BB%93%E6%9E%84"><span class="toc-number">1.4.1.</span> <span class="toc-text"> 框架结构</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E9%A2%84%E5%AE%9A%E4%B9%89%E6%A7%BD%E5%90%8D"><span class="toc-number">1.4.1.1.</span> <span class="toc-text"> 系统预定义槽名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E7%BD%91%E7%BB%9C"><span class="toc-number">1.4.1.2.</span> <span class="toc-text"> 框架网络</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E8%A1%A8%E7%A4%BA%E6%B3%95%E7%9A%84%E6%8E%A8%E7%90%86%E6%96%B9%E6%B3%95"><span class="toc-number">1.4.2.</span> <span class="toc-text"> 框架表示法的推理方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D-2"><span class="toc-number">1.4.2.1.</span> <span class="toc-text"> 匹配</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%BB%98%E8%AE%A4%E6%8E%A8%E7%90%86%E5%A1%AB%E6%A7%BD%E8%BF%87%E7%A8%8B%E4%B8%AD"><span class="toc-number">1.4.2.2.</span> <span class="toc-text"> 默认推理（填槽过程中）</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E8%A1%A8%E7%A4%BA%E6%B3%95%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">1.4.3.</span> <span class="toc-text"> 框架表示法的特点</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E6%80%A7"><span class="toc-number">1.4.3.1.</span> <span class="toc-text"> 继承性</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96"><span class="toc-number">1.4.3.2.</span> <span class="toc-text"> 结构化</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%87%AA%E7%84%B6%E6%80%A7"><span class="toc-number">1.4.3.3.</span> <span class="toc-text"> 自然性</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8E%A8%E7%90%86%E7%81%B5%E6%B4%BB%E5%A4%9A%E5%8F%98"><span class="toc-number">1.4.3.4.</span> <span class="toc-text"> 推理灵活多变</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9"><span class="toc-number">1.4.3.5.</span> <span class="toc-text"> 缺点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E7%BD%91%E7%BB%9C"><span class="toc-number">1.5.</span> <span class="toc-text"> 语义网络</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E7%BD%91%E7%BB%9C%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.5.1.</span> <span class="toc-text"> 语义网络的概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">1.5.2.</span> <span class="toc-text"> 语义网络的基本结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E4%B9%89%E8%81%94%E7%B3%BB"><span class="toc-number">1.5.3.</span> <span class="toc-text"> 语义网络的基本语义联系</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%B1%BB%E5%B1%9E%E5%85%B3%E7%B3%BB"><span class="toc-number">1.5.3.1.</span> <span class="toc-text"> 类属关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%85%E5%90%AB%E5%85%B3%E7%B3%BB"><span class="toc-number">1.5.3.2.</span> <span class="toc-text"> 包含关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%E5%85%B3%E7%B3%BB"><span class="toc-number">1.5.3.3.</span> <span class="toc-text"> 属性关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%97%B6%E5%BA%8F%E5%85%B3%E7%B3%BB"><span class="toc-number">1.5.3.4.</span> <span class="toc-text"> 时序关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%8D%E7%BD%AE%E5%85%B3%E7%B3%BB"><span class="toc-number">1.5.3.5.</span> <span class="toc-text"> 位置关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%9B%B8%E9%82%BB%E5%85%B3%E7%B3%BB"><span class="toc-number">1.5.3.6.</span> <span class="toc-text"> 相邻关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9B%A0%E6%9E%9C%E5%85%B3%E7%B3%BB"><span class="toc-number">1.5.3.7.</span> <span class="toc-text"> 因果关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%84%E6%88%90%E5%85%B3%E7%B3%BB"><span class="toc-number">1.5.3.8.</span> <span class="toc-text"> 组成关系</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E7%BD%91%E7%BB%9C%E8%A1%A8%E7%A4%BA%E7%9F%A5%E8%AF%86%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">1.5.4.</span> <span class="toc-text"> 语义网络表示知识的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8B%E5%AE%9E%E6%80%A7%E7%9F%A5%E8%AF%86%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.5.4.1.</span> <span class="toc-text"> 事实性知识的表示</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%83%85%E5%86%B5-%E5%8A%A8%E4%BD%9C%E5%92%8C%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.5.4.2.</span> <span class="toc-text"> 情况、动作和事件的表示</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%83%85%E5%86%B5%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.5.4.2.1.</span> <span class="toc-text"> 情况的表示</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%8A%A8%E4%BD%9C%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.5.4.2.2.</span> <span class="toc-text"> 动作的表示</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.5.4.2.3.</span> <span class="toc-text"> 事件的表示</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%9E%E8%AF%8D%E5%92%8C%E9%87%8F%E8%AF%8D%E7%9A%84%E8%A1%A8%E7%A4%BA%E9%80%BB%E8%BE%91%E5%85%B3%E7%B3%BB%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.5.4.3.</span> <span class="toc-text"> 连词和量词的表示（逻辑关系的表示）</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%90%88%E5%8F%96%E4%B8%8E%E6%9E%90%E5%8F%96%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.5.4.3.1.</span> <span class="toc-text"> 合取与析取的表示</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AD%98%E5%9C%A8%E9%87%8F%E8%AF%8D%E4%B8%8E%E5%85%A8%E7%A7%B0%E9%87%8F%E8%AF%8D%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.5.4.3.2.</span> <span class="toc-text"> 存在量词与全称量词的表示</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%90%A6%E5%AE%9A%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.5.4.3.3.</span> <span class="toc-text"> 否定的表示</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E7%BD%91%E7%BB%9C%E8%A1%A8%E7%A4%BA%E7%9F%A5%E8%AF%86%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.5.5.</span> <span class="toc-text"> 语义网络表示知识的步骤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E7%BD%91%E7%BB%9C%E7%9A%84%E6%8E%A8%E7%90%86%E8%BF%87%E7%A8%8B"><span class="toc-number">1.5.6.</span> <span class="toc-text"> 语义网络的推理过程</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E6%8E%A8%E7%90%86"><span class="toc-number">1.5.6.1.</span> <span class="toc-text"> 继承推理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D%E6%8E%A8%E7%90%86"><span class="toc-number">1.5.6.2.</span> <span class="toc-text"> 匹配推理</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E7%BD%91%E7%BB%9C%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">1.5.7.</span> <span class="toc-text"> 语义网络的特点</span></a></li></ol></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li><a href="/computer-organization/" rel="bookmark" title="计算机组成原理复习">计算机组成原理复习</a></li><li><a href="/ComputerSystem/" rel="bookmark" title="操作系统复习">操作系统复习</a></li><li><a href="/DataBaseLearning/" rel="bookmark" title="数据库系统概论概念整理">数据库系统概论概念整理</a></li><li><a href="/sql-lab/" rel="bookmark" title="SQL代码复习">SQL代码复习</a></li><li><a href="/computer-network/" rel="bookmark" title="计算机网络">计算机网络</a></li><li class="active"><a href="/ai-fundamental/" rel="bookmark" title="人工智能基础">人工智能基础</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="Ivan Snow" src="/img/avatar.webp"><p class="name" itemprop="name">Ivan Snow</p><div class="description" itemprop="description">some notes about computer science</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">38</span><span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">11</span><span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">20</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/ivansnow02" class="item github" title="https://github.com/ivansnow02"><i class="ic i-github"></i></a><a href="mailto:eone2017@protonmail.com" class="item email" title="mailto:eone2017@protonmail.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-user"></i>关于</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于本站</a></li></ul></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/links/" rel="section"><i class="ic i-heart"></i>友链</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/computer-network/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/computer-science/" title="分类于computer science">computer science</a></div><span><a href="/computer-network/">计算机网络</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Algorithms-Part-I/" title="分类于Algorithms, Part I">Algorithms, Part I</a></div><span><a href="/stack_and_queue/">栈与队列</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/trash/" title="分类于trash">trash</a></div><span><a href="/%E6%80%9D%E6%94%BF%E5%A4%8D%E4%B9%A0/">思政复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Redis/" title="分类于Redis">Redis</a></div><span><a href="/Redis-Learning-03-SpringDataRedis/">SpringDataRedis</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/MST/">最小生成树 Minimum Spanning Tree</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Math/" title="分类于Math">Math</a></div><span><a href="/linear-algebra/">线性代数</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/DataStructureTest01/">数据结构题目01</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Physics/" title="分类于Physics">Physics</a></div><span><a href="/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/">物理复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/computer-science/" title="分类于computer science">computer science</a></div><span><a href="/sql-lab/">SQL代码复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/">哈夫曼树叶子结点的路径长度与权值的乘积之和</a></span></li></ul></div></div><div class="status"><div class="copyright">© 2023 -<span itemprop="copyrightYear">2024</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">Ivan Snow @ Code Blog</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">476k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">7:13</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> &amp; Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config="" type="text/javascript">var LOCAL = {
+    ispost: true,
+        path: `ai-fundamental/`,
+        favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    copy_tex: true,
+    katex: true,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/pace/1.2.4/pace.min.js" async=""></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&amp;features=default,fetch" defer=""></script><script src="/js/siteInit.js?v=0.4.5" type="module" fetchpriority="high" defer=""></script><script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.2/libs/oversea/index.js"></script></body></html>

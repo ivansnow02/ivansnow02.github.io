@@ -1,0 +1,95 @@
+
+
+#mm {
+    background-color: rgb(241, 238, 238) !important;
+    border-radius: 1rem !important;
+    --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+
+}
+
+
+
+/* source/assets/fonts/juliamo-print.ttf */
+@font-face {
+    font-family: 'Juliamo';
+    src: url('/assets/fonts/juliamo-print.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.overview .author .image {
+
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+:root {
+
+
+
+    --color-pink-light: #ffe6fa;
+    --color-cyan-light: #e3fdf5;
+    --color-orange-light: #ffedde;
+
+    --color-orange-a3: alpha(#ff7e29, 0.3);
+
+
+    --body-bg-shadow: var(--grey-2);
+    --box-bg-shadow: var(--grey-9-a1);
+    --text-color: var(--grey-7);
+    --header-text-color: var(--grey-0);
+    --primary-color: var(--color-orange) !important;
+
+    --nav-bg: linear-gradient(-225deg, var(--color-cyan-light) 0, var(--color-orange-light) 100%) !important;
+
+}
+
+.pagination .prev:hover,
+.pagination .next:hover,
+.pagination .page-number:hover,
+.pagination .page-number.current,
+#nav .menu .submenu .item:hover,
+#nav .menu .submenu .item.active,
+.overview .menu .item.active,
+#sidebar .tab .item:hover,
+#sidebar .tab .item.active,
+#search-pagination .current .page-number {
+    color: var(--grey-0);
+    background-image: linear-gradient(to right, var(--color-red) 0, var(--color-orange) 100%) !important;
+    box-shadow: 0 0 .75rem var(--color-orange-a3) !important;
+}
+.segments>.item:nth-child(2n) .btn {
+    background-image: linear-gradient(to right, var(--color-orange) 0, var(--color-red) 100%) !important;
+}
+.index.wrap .btn {
+    background-image: linear-gradient(to right, var(--color-red) 0, var(--color-orange) 100%) !important;
+}
+/* code,
+kbd,
+samp,
+pre {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+}
+
+figure.shiki .codeblock pre * {
+    font-family: "JetBrains Mono", "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace, 微软雅黑, 宋体 !important;
+} */
+/* 
+figure.shiki {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+    background-color: var(--md-sys-color-on-tertiary-fixed) !important;
+} */
+
+/* .post-html img {
+    border-radius: 0.5rem !important;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+    background-color: var(--md-sys-color-on-tertiary-fixed) !important;
+} */

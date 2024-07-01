@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Snow&#39;s Blog • Posts by &#34;test&#34; tag</title>
+        <link>https://blog.ivansnow02.xyz</link>
+        <description>some notes about computer science</description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 16 Apr 2023 20:30:05 +0800</pubDate>
+        <lastBuildDate>Sun, 16 Apr 2023 20:30:05 +0800</lastBuildDate>
+        <category>data structure</category>
+        <category>coding</category>
+        <category>algorithms</category>
+        <category>computer science</category>
+        <category>learning</category>
+        <category>Django</category>
+        <category>Python</category>
+        <category>trash</category>
+        <category>Redis</category>
+        <category>Java</category>
+        <category>English</category>
+        <category>test</category>
+        <category>coursera</category>
+        <category>vim</category>
+        <category>Spring</category>
+        <category>Math</category>
+        <category>Linear Algebra</category>
+        <category>tree</category>
+        <category>Physics</category>
+        <category>Discrete Mathematics</category>
+        <item>
+            <guid isPermalink="true">https://blog.ivansnow02.xyz/TEST/</guid>
+            <title>TEST</title>
+            <link>https://blog.ivansnow02.xyz/TEST/</link>
+            <category>test</category>
+            <pubDate>Sun, 16 Apr 2023 20:30:05 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;这是一篇测试文章&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;/TEST/1.jpg&#34; class=&#34;&#34; title=&#34;测试图片1&#34;&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;TEST/1.jpg&#34; alt=&#34;测试图片2&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

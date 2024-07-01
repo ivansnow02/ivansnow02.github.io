@@ -1,0 +1,4015 @@
+<!DOCTYPE html><html lang="zh-CN"><head><link rel="manifest" href="/manifest.json"> <link rel="stylesheet" href="/css/custom.css"> <link href="https://fastly.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" rel="stylesheet"> <link href="/css/custom.css" rel="stylesheet"> <link rel="preconnect" href="https://fonts.loli.net"> <link rel="preconnect" href="https://gstatic.loli.net" crossorigin=""> <link href="https://fonts.loli.net/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><link rel="icon" type="image/ico" sizes="32x32" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"><meta name="msvalidate.01" content="5C885BB4F08198773FCB9D68FB7EFF0C"><meta name="google-site-verification" content="SU_V4YfQlQkkbm4IQUajehIwRUPbvIwErs1WJRMD0NQ"><link rel="alternate" href="/rss.xml" title="Snow's Blog" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Snow's Blog" type="application/atom+xml"><link rel="alternate" type="application/json" title="Snow's Blog" href="https://blog.ivansnow02.xyz/feed.json"><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"><link rel="preconnect" href="https://at.alicdn.com"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://unpkg.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CJuliamo:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CJetBrains%20Mono:400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext" media="none" onload="this.media='all'"><link rel="stylesheet" href="/css/app.css?v=0.4.5"><link rel="modulepreload" href="/js/chunk-BXLYQ5WU.js"><link rel="modulepreload" href="/js/chunk-MMNV6LQ6.js"><link rel="modulepreload" href="/js/chunk-O3P2JLOA.js"><link rel="modulepreload" href="/js/chunk-Q4ZTFT4T.js"><link rel="modulepreload" href="/js/chunk-TW2T2Y2E.js"><link rel="modulepreload" href="/js/comments-4C6U322V.js"><link rel="modulepreload" href="/js/index.esm-IMSISCQT.js"><link rel="modulepreload" href="/js/post-XCN3V2M2.js"><link rel="modulepreload" href="/js/quicklink-H4EVZM3I.js"><link rel="modulepreload" href="/js/search-45KDAC4T.js"><link rel="modulepreload" href="/js/siteInit.js"><link rel="stylesheet" href="https://npm.webcache.cn/@waline/client@3.0.0-alpha.11/dist/waline.css" media="none" onload="this.media='all'"><link rel="preload" href="https://s2.loli.net/2024/06/16/vN51cCT6pUtjnK7.png" as="image" fetchpriority="high"><meta name="keywords" content="learning,"><meta name="description" content="some notes about computer science"><link rel="canonical" href="https://blog.ivansnow02.xyz/MarxistPhilosophy/"><title>马原题目</title><meta name="generator" content="Hexo 7.2.0"></head><body itemscope="" itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope="" itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">马原题目</h1><div class="meta"><span class="item" title="创建时间：2024-06-16 10:04:24"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2024-06-16T10:04:24+08:00">2024-06-16</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>66k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>1:01</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Code Blog</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="https://s2.loli.net/2024/06/16/vN51cCT6pUtjnK7.png" loading="eager" decoding="async" fetchpriority="high" alt="Snow's Blog"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemlistelement="" itemscope="" itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span><i class="ic i-angle-right"></i><span class="current" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/trash/" itemprop="item" rel="index" title="分类于trash"><span itemprop="name">trash<meta itemprop="position" content="0"></span></a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://blog.ivansnow02.xyz/MarxistPhilosophy/"><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/img/avatar.png"><meta itemprop="name" content="Ivan Snow"><meta itemprop="description" content="Just a Note., some notes about computer science"></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Snow's Blog"></span><div class="body md" itemprop="articleBody"><h2 id="绪论-马克思主义是关于无产阶级和人类解放的科学"><a class="anchor" href="#绪论-马克思主义是关于无产阶级和人类解放的科学">#</a> 绪论  马克思主义是关于无产阶级和人类解放的科学</h2>
+<h3 id="一-单项选择题"><a class="anchor" href="#一-单项选择题">#</a> 一、单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>马克思主义理论从狭义上说是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>无产阶级争取自身解放和整个人类解放的学说体系</li>
+<li>关于无产阶级斗争的性质、目的和解放条件的学说</li>
+<li class="correct">马克思和恩格斯创立的基本理论、基本观点和基本方法构成的科学体系</li>
+<li>关于资本主义转化为社会主义以及社会主义和共产主义发展的普遍规律的学说</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义理论从广义上说是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">不仅指马克思恩格斯创立的基本理论、基本观点和学说的体系，也包括继承者对它的发展。</li>
+<li>无产阶级争取自身解放和整个人类解放的学说体系</li>
+<li>关于无产阶级斗争的性质、目的和解放条件的学说</li>
+<li>马克思和恩格斯创立的基本理论、基本观点和基本方法构成的科学体系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>作为中国共产党和社会主义事业指导思想的马克思主义是指  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">不仅指马克思恩格斯创立的基本理论、基本观点和学说的体系，也包括继承者对它的发展。</li>
+<li>无产阶级争取自身解放和整个人类解放的学说体系</li>
+<li>关于无产阶级斗争的性质、目的和解放条件的学说</li>
+<li>列宁创立的基本理论、基本观点和基本方法构成的科学体系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在 19 世纪三大工人运动中，集中反映工人政治要求的是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>法国里昂工人起义</li>
+<li class="correct">英国宪章运动</li>
+<li>芝加哥工人起义</li>
+<li>德国西里西亚纺织工人起义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义产生的经济根源是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>工业革命</li>
+<li>资本主义经济危机</li>
+<li class="correct">资本主义社会生产力和生产关系的矛盾运动</li>
+<li>阶级斗争</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义产生的阶级基础和实践基础是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>资本主义的剥削和压迫</li>
+<li class="correct">无产阶级作为一支独立的政治力量登上了历史舞台</li>
+<li>工人罢工和起义</li>
+<li>工人运动得到了 “农民的合唱”</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思和恩格斯进一步发展和完善了英国古典经济学理论是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>辩证法</li>
+<li>历史观</li>
+<li class="correct">劳动价值论</li>
+<li>剩余价值论</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思把黑格尔的辩证法称为  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">合理内核</li>
+<li>基本内核</li>
+<li>精髓</li>
+<li>核心</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在第一次世界大战中成为东西方矛盾焦点和帝国主义政治体系最薄弱环节的国家是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>德国</li>
+<li>奥地利</li>
+<li>中国</li>
+<li class="correct">俄国</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“哲学把无产阶级当作自己的物质武器，同样，无产阶级把哲学当作自己的精神武器”，这个论断的含义是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">马克思主义是无产阶级的世界观和方法论</li>
+<li>哲学的存在方式是物质</li>
+<li>无产阶级的存在方式是精神</li>
+<li>无产阶级掌握哲学就由自为阶级转变为自在阶级</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义生命力的根源在于  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">以实践为基础的科学性与革命性的统一</li>
+<li>与时俱进</li>
+<li>科学性与阶级性的统一</li>
+<li>科学性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>无产阶级的科学世界观和方法论是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>辩证唯物主义</li>
+<li>历史唯物主义</li>
+<li class="correct">辩证唯物主义和历史唯物主义</li>
+<li>唯物主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义最重要的理论品质是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>吐故纳新</li>
+<li>科学严谨</li>
+<li>博大精深</li>
+<li class="correct">与时俱进</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义最崇高的社会理想是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">实现共产主义</li>
+<li>消灭阶级、消灭国家</li>
+<li>实现个人的绝对自由</li>
+<li>实现人权</li>
+</ul>
+</li>
+<li class="quiz">
+<p>学习马克思主义基本原理的根本方法是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>认真学习马克思主义的著作</li>
+<li>一切从实际出发</li>
+<li class="correct">理论联系实际</li>
+<li>实事求是</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多项选择题"><a class="anchor" href="#二-多项选择题">#</a> 二、多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>作为一个完整的科学体系，马克思主义理论体系的三个主要组成部分是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>辩证唯物主义</li>
+<li>历史唯物主义</li>
+<li class="correct">科学社会主义</li>
+<li class="correct">马克思主义政治经济学</li>
+<li class="correct">马克思主义哲学</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>作为马克思主义产生阶级基础的 19 世纪三大工人起义是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>巴黎公社</li>
+<li class="correct">1831 年和 1834 年法国里昂工人两次起义</li>
+<li class="correct">1838 年在英国爆发的延续十余年的宪章运动</li>
+<li class="correct">1844 年德国西里西亚工人起义</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思主义产生的直接理论渊源是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">德国古典哲学</li>
+<li class="correct">英国古典政治经济学</li>
+<li class="correct">法国英国的空想社会主义</li>
+<li>法国启蒙思想</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>德国古典哲学的代表性人物是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>康德</li>
+<li class="correct">黑格尔</li>
+<li class="correct">费尔巴哈</li>
+<li>笛卡尔</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资产阶级古典政治经济学的代表人物  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">亚当・斯密</li>
+<li class="correct">大卫・李嘉图</li>
+<li>马尔萨斯</li>
+<li>西斯蒙</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>空想社会主义的最杰出的代表是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">昂利・圣西门</li>
+<li class="correct">沙尔・傅立叶</li>
+<li class="correct">罗伯特・欧文</li>
+<li>托马斯・莫尔</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思恩格斯最重要的理论贡献是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>辩证法</li>
+<li>劳动价值论</li>
+<li class="correct">唯物史观</li>
+<li class="correct">剩余价值学说</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思主义的根本特性是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">阶级性</li>
+<li class="correct">实践性</li>
+<li>客观性</li>
+<li>人民性</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思主义中国化的三大理论成果是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>李大钊的理论</li>
+<li class="correct">毛泽东思想</li>
+<li class="correct">邓小平理论</li>
+<li class="correct">“三个代表” 重要思想</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>学习马克思主义理论，必须要分清  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">哪些是必须长期坚持的马克思主义基本原理</li>
+<li class="correct">哪些是需要结合新的实际加以丰富发展的理论判断</li>
+<li class="correct">哪些是必须破除的对马克思主义错误的、教条式的理解</li>
+<li class="correct">哪些是必须澄清的附加在马克思主义名下的错误观点</li>
+</ul>
+</li>
+</ol>
+<h2 id="第一章-世界的物质性及其发展规律"><a class="anchor" href="#第一章-世界的物质性及其发展规律">#</a> 第一章 世界的物质性及其发展规律</h2>
+<h3 id="一-单项选择题-2"><a class="anchor" href="#一-单项选择题-2">#</a> 一、单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>恩格斯认为，全部哲学、特别是近代哲学的重大的基本问题是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>哲学与人类生存活动之间的内在联系问题</li>
+<li>人与周围世界的基本联系问题</li>
+<li class="correct">思维和存在的关系问题</li>
+<li>关于人的本质问题</li>
+</ul>
+</li>
+<li class="quiz">
+<p>对哲学基本问题第一方面的不同回答是划分  <span class="gap"></span> 的标准。</p>
+<ul class="options">
+<li class="correct">唯物主义和唯心主义</li>
+<li>辩证法和形而上学</li>
+<li>可知论与不可知论</li>
+<li>一元论和二元论</li>
+</ul>
+</li>
+<li class="quiz">
+<p>对哲学基本问题第二个方面的不同回答是划分  <span class="gap"></span> 的标准。</p>
+<ul class="options">
+<li>唯物主义和唯心主义</li>
+<li>反映论和先验论</li>
+<li class="correct">可知论和不可知论</li>
+<li>唯物史观和唯心史观</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义认为，世界的真正统一性在于它的  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>实践性</li>
+<li>运动性</li>
+<li class="correct">物质性</li>
+<li>客观性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“坐地日行八万里，巡天遥看一千河”，这一著名诗句包含的哲理是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>物质运动的客观性和时空的主观性的统一</li>
+<li>物质运动无限性和有限性的统一</li>
+<li>时空的无限性和有限性的统一</li>
+<li class="correct">运动的绝对性和静止的相对性的统一</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“旧唯物主义是半截子的唯物主义”，这是指  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>旧唯物主义是形而上学的唯物主义</li>
+<li class="correct">旧唯物主义在社会历史观上是唯心主义</li>
+<li>旧唯物主义是机械唯物主义</li>
+<li>旧唯物主义是割裂了运动与静止的辩证法</li>
+</ul>
+</li>
+<li class="quiz">
+<p>既是自然界与人类社会分化统一的历史前提，又是自然界与人类社会统一起来的现实基础，这指的是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>运动</li>
+<li class="correct">实践</li>
+<li>精神生产</li>
+<li>物质生产</li>
+</ul>
+</li>
+<li class="quiz">
+<p>辩证唯物主义认为事物发展的规律是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>思维对事物本质的概括和反映</li>
+<li>用来整理感性材料的思维形式</li>
+<li class="correct">事物内在的本质和稳定的联系</li>
+<li>事物联系和发展的基本环节</li>
+</ul>
+</li>
+<li class="quiz">
+<p>柏拉图的 “理念论” 是  <span class="gap"></span> 的理论。</p>
+<ul class="options">
+<li>唯物主义</li>
+<li>二元论</li>
+<li class="correct">唯心主义</li>
+<li>怀疑论</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“沉舟侧畔千帆过，病树前头万木春。”“芳林新叶催陈叶，流水前波让后波。” 这两句诗包含的哲学道理是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>矛盾是事物发展的动力</li>
+<li>事物是本质和现象的统一</li>
+<li>事物的发展是量变和质变的统一</li>
+<li class="correct">新事物代替旧事物是事物发展的总趋势</li>
+</ul>
+</li>
+<li class="quiz">
+<p>中国古代哲学家公孙龙 “白马非马” 之说的错误在于割裂了  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>内因和外因的关系</li>
+<li>矛盾统一性和斗争性的关系</li>
+<li>矛盾主要方面和次要方面的关系</li>
+<li class="correct">矛盾的普遍性和特殊性的关系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>辩证法的否定即 “扬弃”，它的含义是指  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>抛弃</li>
+<li>事物中好的方面和坏的方面的组合</li>
+<li>纯粹的否定</li>
+<li class="correct">既克服又保留</li>
+</ul>
+</li>
+<li class="quiz">
+<p>唯物辩证法的否定之否定规律揭示了事物发展的  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">方向和道路</li>
+<li>形式和状态</li>
+<li>结构和功能</li>
+<li>源泉和动力</li>
+</ul>
+</li>
+<li class="quiz">
+<p>主观辩证法与客观辩证法的关系是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">反映与被反映的关系</li>
+<li>唯心主义与唯物主义的关系</li>
+<li>抽象与具体的关系</li>
+<li>唯心辩证法与唯物辩证法的关系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>对于同一事物，不同的人有不同的反映，这说明  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>意识是主体的自由创造</li>
+<li>意识不受客体影响</li>
+<li class="correct">意识受主体状况的影响</li>
+<li>意识的内容是主观的</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人工智能的出现对马克思主义哲学意识论的意义是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>否定了物质对意识的决定作用</li>
+<li>改变了人类意识活动的规律性</li>
+<li>肯定了人工智能可以代替意识的能动活动</li>
+<li class="correct">证明了意识可以在高度发展的物质中产生</li>
+</ul>
+</li>
+<li class="quiz">
+<p>学习马克思主义的根本方法是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>认真阅读马克思主义经典著作</li>
+<li>在实践中自己探索</li>
+<li>循序渐进</li>
+<li class="correct">理论联系实际</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“从个别到一般，从一般到个别” 的思维方法是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">归纳与演绎</li>
+<li>分析与综合</li>
+<li>抽象到具体</li>
+<li>实践到认识</li>
+</ul>
+</li>
+<li class="quiz">
+<p>辩证思维方法从抽象上升到具体的过程是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>从实践到认识的过程</li>
+<li>从认识到实践的过程</li>
+<li>思维生成现实具体的过程</li>
+<li class="correct">在思维中形成 “多种规定的统一” 的过程</li>
+</ul>
+</li>
+<li class="quiz">
+<p>唯物辩证法和形而上学斗争的焦点在于是否承认  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>事物是客观存在的</li>
+<li>事物是普遍联系的</li>
+<li>事物是变化发展的</li>
+<li class="correct">矛盾是事物发展的动力</li>
+</ul>
+</li>
+<li class="quiz">
+<p>区分新旧事物的标志在于看它们  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>是不是在新的历史条件下出现的</li>
+<li class="correct">是不是符合事物发展规律、具有强大的生命力</li>
+<li>是不是有新形式和新特点</li>
+<li>是不是得到大多数人的承认</li>
+</ul>
+</li>
+<li class="quiz">
+<p>有的哲学家认为，因果联系是由于人们多次看到两组现象前后相随而形成的心理习惯。这种观点属于  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>唯物主义决定论</li>
+<li class="correct">唯心主义非决定论</li>
+<li>形而上学的机械决定论</li>
+<li>相对主义诡辩论</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在内容和形式的矛盾运动中，  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>内容是相对稳定的，形式是活跃易变的</li>
+<li class="correct">内容是活跃易变的，形式是相对稳定的</li>
+<li>内容和形式都是处在不停的显著运动状况</li>
+<li>内容的变化总是落后于形式的变化</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在现实中还没有充分的根据，也不具备一定的条件，在目前不能实现的，属于  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>不可能性</li>
+<li>微小的可能性</li>
+<li>现实的可能性</li>
+<li class="correct">抽象的可能性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>度是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>事物的质量和数量的界限</li>
+<li class="correct">事物保持其质的稳定性的数量界限</li>
+<li>事物保持其量的稳定性的范围</li>
+<li>事物发生变化的关节点</li>
+</ul>
+</li>
+<li class="quiz">
+<p>《坛经》“时有风吹幡动，---- 僧曰风动，--- 僧曰幡动，议论不已。惠能进曰：不是风动，不是幡动，仁者心动”。惠能关于运动的观点是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>运动是物质之根本属性</li>
+<li>运动与物质不可分</li>
+<li>精神运动是物质运动的一种形式</li>
+<li class="correct">精神是运动的主体</li>
+</ul>
+</li>
+<li class="quiz">
+<p>从解决哲学基本问题的角度看，物质的惟一特性是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>运动性</li>
+<li class="correct">客观实在性</li>
+<li>不可分性</li>
+<li>时空性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>实践是指  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>个人的生活活动</li>
+<li>一切有利于自己的活动</li>
+<li>人有目的的、达到真理性的认识活动</li>
+<li class="correct">人们能动地改造和探索现实世界的社会性的客观物质活动</li>
+</ul>
+</li>
+<li class="quiz">
+<p>唯物主义哲学发展的三个基本历史形态是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>形而上学唯物主义、庸俗唯物主义、辩证唯物主义</li>
+<li class="correct">古代朴素唯物主义、形而上学唯物主义、辩证唯物主义</li>
+<li>奴隶社会时期的唯物主义、封建社会时期的唯物主义、资本主义时期的唯物主义</li>
+<li>机械唯物主义、形而上学唯物主义、辩证唯物主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>学习马克思主义哲学的根本目的是为了  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>掌握这一正确的哲学理论</li>
+<li>锻炼逻辑思维能力</li>
+<li>宣传马克思主义哲学</li>
+<li class="correct">树立科学的世界观和人生观</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多项选择题-2"><a class="anchor" href="#二-多项选择题-2">#</a> 二、多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>“物质两种存在形式离开了物质，当然都是无，都是只在我们头脑中存在的观念抽象”，这段话说明  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">时间和空间是客观的</li>
+<li class="correct">时间和空间是物质的存在形式</li>
+<li>时间和空间是绝对的，又是相对的</li>
+<li>时间和空间是有限的</li>
+<li>时间和空间是无限的</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>我国古代哲学家王夫之认为：“动静者，乃阴阳之动静也。”“皆本物之固然。”“静者静动，非不动也。”“静即含动，动不含静。”“动、静，皆动也。” 这在哲学上表达了  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">运动是物质的固有属性</li>
+<li class="correct">静止是运动的特殊状态</li>
+<li class="correct">静止是相对的，运动是绝对的</li>
+<li>运动是静止的总和</li>
+<li>静止是绝对的，运动是相对的</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思说：“社会生活在本质上是实践的。” 这一命题的主要含义是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>实践是社会历史的客体</li>
+<li>实践是社会历史的主体</li>
+<li class="correct">实践是社会关系形成的基础</li>
+<li class="correct">实践形成了社会生活的基本领域</li>
+<li>实践构成了社会发</li>
+<li class="correct">展的动力</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>恩格斯说：“当我们深思熟虑地考察自然界或人类历史或我们自己的精神活动的时候，首先呈现在我们眼前的，是一幅由种种联系和相互作用无穷无尽地交织起来的画面。” 这段话所包含的辩证法观点有  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">联系是客观世界的本性</li>
+<li class="correct">一切事物都处于相互联系之中</li>
+<li class="correct">世界是一个相互联系的统一整体</li>
+<li class="correct">联系既是普遍的又是复杂多样的</li>
+<li>联系的本质存在于人们的思维之中</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下列选项中，体现发展的实质的有  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>因祸得福，祸福相依</li>
+<li class="correct">无产阶级专政代替资产阶级专政</li>
+<li class="correct">培育出新优质品种</li>
+<li class="correct">原始社会的公有制经过私有制到社会主义的公有制</li>
+<li>某种时尚开始流行</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>矛盾同一性在事物发展中的作用表现为  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">矛盾双方在相互依存中得到发展</li>
+<li class="correct">矛盾双方相互吸取有利于自身发展的因素</li>
+<li>调和矛盾双方的对立</li>
+<li class="correct">规定事物发展的基本趋势</li>
+<li>使统一体分解</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下列命题中属于揭示事物本质的有  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>水往低处流</li>
+<li>日出于东落于西</li>
+<li class="correct">人的本质是社会关系的总和</li>
+<li class="correct">意识是人脑对客观世界的反映</li>
+<li class="correct">新生事物是不可战胜的</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下列现象属于量变引起质变的有  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产力的增长引起生产关系的变革</li>
+<li>物体由于量的不同而区分不同的体积</li>
+<li class="correct">在一定温度下鸡蛋孵出小鸡</li>
+<li class="correct">由变异的积累引起旧物种到新物种的变化</li>
+<li class="correct">同样的元素由于结构不同而形成不同的事物</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>辩证的否定是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">事物的自我否定</li>
+<li class="correct">事物发展的环节</li>
+<li class="correct">事物联系的环节</li>
+<li class="correct">扬弃</li>
+<li class="correct">既克服又保留</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>社会规律是人们自己的 “社会行动的规律”，这是因为  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">人是社会历史的主体</li>
+<li class="correct">人们自己创造自己的历史</li>
+<li>历史发展方向是由人的思想和行动决定的</li>
+<li class="correct">社会规律存在和实现于实践活动之中</li>
+<li>社会规律没有客观性</li>
+</ul>
+</li>
+</ol>
+<h2 id="第二章认识世界和改造世界"><a class="anchor" href="#第二章认识世界和改造世界">#</a> 第二章认识世界和改造世界</h2>
+<h3 id="一-单项选择题-3"><a class="anchor" href="#一-单项选择题-3">#</a> 一、单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>“从物到感觉和思想” 与 “从思想和感觉到物”，这是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>辩证唯物论与旧唯物论两条认识路线的对立</li>
+<li>辩证法和形而上学的对立</li>
+<li class="correct">唯物论与唯心论两条认识路线的对立</li>
+<li>可知论与不可知论的对立</li>
+</ul>
+</li>
+<li class="quiz">
+<p>实践的主体是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>绝对精神</li>
+<li class="correct">具有思维能力、从事社会实践和认识活动的人</li>
+<li>人</li>
+<li>人的意识</li>
+</ul>
+</li>
+<li class="quiz">
+<p>实践的客体是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>绝对精神的对象化</li>
+<li>客观物质世界</li>
+<li>人的意识的创造物</li>
+<li class="correct">进人主体的认识和实践范围的客观事物</li>
+</ul>
+</li>
+<li class="quiz">
+<p>实践的中介是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">各种形式的工具、手段及其运用的程序和方法</li>
+<li>对一事物存在和发展有联系的各种要素的总和</li>
+<li>构成事物一切要素的总和</li>
+<li>受命于主观，见之于客观的活动</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义认为，主客体之间的价值关系是指  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>主体对客体的物质欲望和要求</li>
+<li>主体对客体的能动反映</li>
+<li>主体对客体的改造和变革的结果</li>
+<li class="correct">客体对于主体的有用性和效益性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“社会上一旦有技术上的需要，则这种需要会比十所大学更能把科学推向前进。” 这说明  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>实践是认识的来源</li>
+<li>技术推动了科学的发展</li>
+<li class="correct">实践是认识发展的动力</li>
+<li>科学进步是实践的目的</li>
+</ul>
+</li>
+<li class="quiz">
+<p>恩格斯说：“人的智力是按照人如何学会改造自然界而发展的。” 这说明  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>自然界是认识发展的动力</li>
+<li class="correct">实践是认识发展的动力</li>
+<li>人的认识具有主观能动性</li>
+<li>人具有认识自然的能力</li>
+</ul>
+</li>
+<li class="quiz">
+<p>科学家尼葛庞蒂说：“预测未来的最好办法就是把它创造出来。” 从认识和实践的关系看，这句话对我们的启示是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>认识总是滞后于实践</li>
+<li>实践和认识互为先导</li>
+<li class="correct">实践高于（理论的）认识，因为它不仅具有普遍性的品格，而且具有直接现实性的品格</li>
+<li>实践与认识是合一的</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“纸上得来终觉浅．绝知此事要躬行”，陆游这一名句强调的是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>实践是认识的来源</li>
+<li>实践是推动认识发展的动力</li>
+<li class="correct">实践是认识的目的</li>
+<li>间接经验毫无用处</li>
+</ul>
+</li>
+<li class="quiz">
+<p>感性认识和理性认识的区别是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>感性认识是可靠的，理性认识是不可靠的</li>
+<li>感性认识来源于实践，理性认识来源于书本</li>
+<li class="correct">感性认识是对现象的认识，理性认识是对本质的认识</li>
+<li>感性认识来源于直接经验，理性认识来源于间接经验</li>
+</ul>
+</li>
+<li class="quiz">
+<p>我们通过眼、耳、鼻、舌、身各种感官感觉到一个梨子的各种属性，在意识中把它们联系起来形成了关于这个梨子的感性形象，这种反映形式是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>感觉</li>
+<li class="correct">知觉</li>
+<li>表象</li>
+<li>分析</li>
+</ul>
+</li>
+<li class="quiz">
+<p>对于哲学史上长期争论不休的唯理论和经验论两大派别的正确评价是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>唯理论是正确的，经验论是错误的</li>
+<li>经验论是正确的，唯理论是错误地</li>
+<li class="correct">唯理论和经验论各有片面的真理性</li>
+<li>唯理论和经验论都是完全错误的</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“真理和谬误的对立，只是在非常有限的范围内才有意义” 是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>形而上学的观点</li>
+<li class="correct">唯物辩证法的观点</li>
+<li>诡辩论的观点</li>
+<li>相对主义的观点</li>
+</ul>
+</li>
+<li class="quiz">
+<p>真理与谬误之间的相互关系是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>在任何情况下都是绝对对立的</li>
+<li>没有相互转化的可能性</li>
+<li class="correct">在一定条件下可以互相转化</li>
+<li>两者之间没有原则区别</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“真理是人造的供人使用的工具” 的看法是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">主观唯心主义</li>
+<li>客观唯心主义</li>
+<li>辩证唯物主义</li>
+<li>机械唯物主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“真理是思想形式，是人类经验的组织形式” 这是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">主观唯心主义真理论</li>
+<li>辩证唯物主义真理论</li>
+<li>客观真理论</li>
+<li>形而上学真理论</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“此亦一是非，彼亦一是非” 的命题，其含义是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>强调真理的客观性</li>
+<li>否认真理的客观性</li>
+<li>强调真理具有客观标准</li>
+<li class="correct">否认真理具有客观标准</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“对客观事物的反映即是真理”，这是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">混淆了真理性认识与一般认识的错误观点</li>
+<li>辩证唯物主义的真理观</li>
+<li>一切唯物主义的真理观</li>
+<li>混淆了真理的客观性与规律客观性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“听其言必责其用，观其行必求其功。” 这种观点是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>强调认识对实践的作用</li>
+<li class="correct">强调实践对认识的检验作用</li>
+<li>认为认识可以脱离实践</li>
+<li>认为实践可以脱离认识</li>
+</ul>
+</li>
+<li class="quiz">
+<p>承认我们知识的相对性就  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>必然归结为诡辩论</li>
+<li>必然归结为怀疑主义</li>
+<li>必然归结为不可知论</li>
+<li class="correct">可以防止认识的僵化</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“人的思维是否具有真理性，这并不是一个理论的问题，而是一个实践的问题。人应该在实践中证明自己思维的真理性，即自己思维的现实性和力量，亦即自己思维的此岸性。” 这一论断说明了  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>实践是认识的来源和动力</li>
+<li class="correct">实践是检验认识是否具有真理性的唯一标准</li>
+<li>实践检验真理不需要理论指导</li>
+<li>认识活动与实践活动具有同样的作用和力量</li>
+</ul>
+</li>
+<li class="quiz">
+<p>列宁提出的：“从物到感觉和思想” 与 “从思想和感觉到物” 是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">唯物主义认识论与唯心主义认识论的对立</li>
+<li>经验论与唯理论的对立</li>
+<li>反映论与先验论的对立</li>
+<li>可知论与不可知论的对立</li>
+</ul>
+</li>
+<li class="quiz">
+<p>没有抽象的真理，真理总是具体的。这一命题强调  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>真理是感性的直观，不是理性的抽象</li>
+<li>真理的内容是客观的，形式是主观的</li>
+<li class="correct">同一对象真理性的认识只有一个</li>
+<li>真理是与人的具体利益相联系的</li>
+</ul>
+</li>
+<li class="quiz">
+<p>列宁说：“没有革命的理论，就不会有革命的行动”，这一命题的含义是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>革命理论比革命行动更重要</li>
+<li>革命运动是革命理论的派生物</li>
+<li class="correct">革命理论对革命实践具有指导作用</li>
+<li>革命理论最终决定革命运动的成败</li>
+</ul>
+</li>
+<li class="quiz">
+<p>法国科学家路易・巴斯德说：“在观察事物之际，机遇偏爱有准备的头脑。” 这句话强调了  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>人们只有发挥主观能动性才能认识事物</li>
+<li>人们获得感性经验至关重要</li>
+<li>人们不仅要善于观察事物，而且要善于思考问题</li>
+<li class="correct">人们在认识事物是要有理性的指导</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思指出：“搬运夫和哲学家之间的原始差别要比家犬和猎犬之间的差别小得多，它们之间的鸿沟是分工掘成的。” 这表明  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>人的聪明才智无先天区别</li>
+<li>人的聪明才智的大小主要取决于主观努力的程度</li>
+<li class="correct">人的聪明才智主要来源于后天实践</li>
+<li>人的聪明才智由人的社会政治地位决定</li>
+</ul>
+</li>
+<li class="quiz">
+<p>真理和谬误的界限在于  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>是否符合人的利益和愿望</li>
+<li>是否符合马克思主义</li>
+<li class="correct">是否反映了客观事物的本质和规律</li>
+<li>是否为大多数人所接受</li>
+</ul>
+</li>
+<li class="quiz">
+<p>真理的绝对性是指它的  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>具体性</li>
+<li class="correct">客观性</li>
+<li>终极性</li>
+<li>全面性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>真理观上的相对主义，错误在于  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">夸大真理的相对性，否认真理的绝对性</li>
+<li>夸大真理的绝对性，否认真理的相对性</li>
+<li>只讲真理的客观性，否认真理的相对性</li>
+<li>认为关于同一对象真理性的认识只有一个</li>
+</ul>
+</li>
+<li class="quiz">
+<p>实践基础上的理论创新，是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>决定了社会发展趋势</li>
+<li>决定着社会变革力度</li>
+<li class="correct">社会发展和变革的先导</li>
+<li>一个国家兴旺发达的最终源泉</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多项选择题-3"><a class="anchor" href="#二-多项选择题-3">#</a> 二、多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>实践的中介系统包括  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">人的肢体延长、体能放大的工具系统</li>
+<li class="correct">人的感官和大脑延伸、智力放大的工具系统</li>
+<li>进人主体认识和实践范围的各种物质系统</li>
+<li>在思维中把对象的某种属性、因素抽取出来的逻辑方法</li>
+<li>在思维中把对象的某种属性、因素抽取出来的操作系统</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>主体与客体相互作用的过程包括以下环节  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">确定实践目的和实践方案</li>
+<li class="correct">通过一定的实践手段把实践方案变成实际的实践活动</li>
+<li class="correct">通过反馈和调节，使实践目的、手段和结果按一定方向运行</li>
+<li>通过改造主观世界而支配客观世界的运行</li>
+<li>通过改造客观世界而支配主观世界的运行</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思主义认识论与唯心主义认识论的区别在于是否承认  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>世界的可知性</li>
+<li class="correct">客观事物是认识的对象</li>
+<li>认识发展的辩证过程</li>
+<li class="correct">社会实践是认识的基础</li>
+<li>认识是否经历一个过程</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>实践在认识中的决定作用表现在  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">实践提出了认识的课题</li>
+<li class="correct">实践创造出必要的物质条件和手段，使认识成为可能</li>
+<li class="correct">实践是认识的唯一来源</li>
+<li class="correct">实践是检验认识真理性的唯一标准</li>
+<li class="correct">实践使认识得以产生和发展</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>辩证唯物主义认为，认识是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">主体对各种认识要素的建构</li>
+<li class="correct">主体对客体的能动的反映</li>
+<li class="correct">主体对客体信息的选择</li>
+<li class="correct">主体对客体信息的加工</li>
+<li>主体与客体的统一</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>能动的反映论与机械反映论的主要区别在于  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>是否承认客观事物和人的思想是认识的对象</li>
+<li>是否承认检验认识真理性的标准是实践</li>
+<li class="correct">是否承认实践在认识中的决定作用</li>
+<li class="correct">是否承认认识是一个充满矛盾的辩证过程</li>
+<li>是否承认世界是可知的</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>“批判的武器当然不能代替武器的批判，物质的力量只能用物质的力量来摧毁，理论一经群众掌握，也会变成物质力量。” 这一论断的哲学思想是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">理论对实践具有指导作用</li>
+<li class="correct">理论不能代替实践</li>
+<li>理论本身就是物质的力量</li>
+<li class="correct">理论的作用可以通过实践表现出来</li>
+<li>理论优于实践</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>“单凭观察所得的经验，是决不能充分证明必然性的。这是如此正确，以至于不能从太阳总是在早晨升起来判断它明天会再升起。” 恩格斯这段话的含义是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">感性认识有待于上升为理性认识</li>
+<li class="correct">感性认识具有局限性</li>
+<li>事物的必然性与感性、经验性毫无关系</li>
+<li class="correct">归纳方法不是万能的</li>
+<li>感性认识是不可靠的</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>真理原则和价值原则的区别是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>真理原则侧重于主观性，价值原则侧重于主体性</li>
+<li class="correct">真理原则侧重于客体性，价值原则侧重于主体性</li>
+<li class="correct">真理原则说明认定活动的客观制约性，价值原则表明人的活动的目的性</li>
+<li class="correct">真理原则体现了人的活动中的统一性，价值原则体现了社会活动中的多样性</li>
+<li>真理原则侧重于现实性，价值原则侧重于理论性</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>对待马克思主义，必须  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">解放思想、实事求是、与时俱进、求真务实</li>
+<li class="correct">坚持实践创新和理论创新</li>
+<li class="correct">把马克思主义作为进一步研究的出发点和供这种研究的方法，而不是教义</li>
+<li>把马克思主义作为永恒真理，只能坚持不能发展</li>
+<li class="correct">既要坚持马克思主义，又要发展马克思主义</li>
+</ul>
+</li>
+</ol>
+<h2 id="第三章人类社会及其发展规律"><a class="anchor" href="#第三章人类社会及其发展规律">#</a> 第三章人类社会及其发展规律</h2>
+<h3 id="一-单项选择题-4"><a class="anchor" href="#一-单项选择题-4">#</a> 一、单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>在人类社会发展中起决定作用的因素是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产方式</li>
+<li>地理条件</li>
+<li>社会意识</li>
+<li>人口因素</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会意识相对独立性的最突出表现是它  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>同社会存在发展的不同步性</li>
+<li>具有历史的继承性</li>
+<li class="correct">对社会存在具有能动的反作用</li>
+<li>同社会经济的发展具有不平衡性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在生产关系中起决定作用的是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产资料所有制</li>
+<li>产品的分配和交换</li>
+<li>在生产中人与人的关系</li>
+<li>管理者和生产者的不同地位</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“手推磨产生的是封建主的社会，蒸汽磨产生的是工业资本家的社会”, 这句话揭示了  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>生产工具是衡量生产力水平的重要尺度</li>
+<li>科学技术是第一生产力</li>
+<li>社会形态的更替有其一定的顺序性</li>
+<li class="correct">物质生产的发展藉要建立相应的生产关系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>十一届三中全会以来，我党制定的一系列正确的路线、方针、政策促进了我国经济的迅猛发展，这说明  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>经济基础发展的道路是由上层建筑决定的</li>
+<li>上层建筑的发展决定经济基础的发展方向</li>
+<li class="correct">上层建筑对经济基础具有积极的能动作用</li>
+<li>社会主义社会的发展不受经济基础决定上层建筑规律的制约</li>
+</ul>
+</li>
+<li class="quiz">
+<p>一定社会形态的经济基础是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>生产力</li>
+<li>该社会的各种生产关系</li>
+<li>政治制度和法律制度</li>
+<li class="correct">与一定生产力发展阶段相适应的生产关系的总和</li>
+</ul>
+</li>
+<li class="quiz">
+<p>上层建筑是指  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>社会的经济制度</li>
+<li>科学技术</li>
+<li>社会生产关系</li>
+<li class="correct">建立在一定社会经济基础之上的意识形态及相应的制度和设施 </li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会形态是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>生产力和生产关系的统一</li>
+<li class="correct">同生产力发展一定阶段相适应的经济基础和上层建筑的统一体</li>
+<li>社会存在和社会意识的统一</li>
+<li>物质世界和精神世界的统一</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人类社会发展的一般规律是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>生产方式内部的矛盾规律</li>
+<li class="correct">生产力和生产关系、经济基础和上层建筑之间的矛盾运动规律</li>
+<li>社会存在和社会意识的矛盾规律</li>
+<li>物质生产和精神生产的矛盾规律</li>
+</ul>
+</li>
+<li class="quiz">
+<p>阶级斗争对阶级社会发展的推动作用突出表现在  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>生产力的发展</li>
+<li>生产关系的变革</li>
+<li class="correct">社会形态的更替</li>
+<li>科技的进步</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会革命根源于  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>人口太多</li>
+<li>少数英雄人物组织暴动</li>
+<li>先进思想和革命理论的传播</li>
+<li class="correct">社会基本矛盾的尖锐化</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会主义改革的根本目的在于  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>改变社会主义制度</li>
+<li>完善社会主义制度</li>
+<li class="correct">解放和发展生产力</li>
+<li>实现社会公平</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“蒸汽、电力和自动纺织机甚至是比巴尔贝斯、拉斯拜尔和布朗基诸位公民更危险万分的革命家。” 这一论断的含义是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>科技革命是对统治阶级的极大威胁</li>
+<li>科技革命对变革社会制度具有直接的决定作用</li>
+<li>滥用科技革命的成果会对人类造成 “危险”</li>
+<li class="correct">科技革命导致社会政治革命</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人民群众既是历史的 “剧中人”，又是历史的 “剧作者”，这是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>唯心主义的观点</li>
+<li>折中主义的观点</li>
+<li class="correct">历史唯物主义的观点</li>
+<li>历史循环论的观点</li>
+</ul>
+</li>
+<li class="quiz">
+<p>理解人类社会发展的钥匙是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>阶级斗争史</li>
+<li>思想发展史</li>
+<li class="correct">劳动发展史</li>
+<li>文化发展史</li>
+</ul>
+</li>
+<li class="quiz">
+<p>阶级实质上是一个  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>思想范畴</li>
+<li class="correct">经济范畴</li>
+<li>政治范畴</li>
+<li>文化范畴</li>
+</ul>
+</li>
+<li class="quiz">
+<p>英雄史观的理论出发点是主张  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>人是社会历史的主体</li>
+<li>人的意识对社会存在具有能动的作用</li>
+<li class="correct">社会意识决定社会存在</li>
+<li>社会运动受偶然性支配</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人民群众是历史的创造者，其根本原因在于人民群众  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>占人口大多数</li>
+<li class="correct">是社会生产力的体现者</li>
+<li>具有先进思想</li>
+<li>掌握历史发展规律</li>
+</ul>
+</li>
+<li class="quiz">
+<p>制约人民群众创造历史的决定性条件是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">经济条件</li>
+<li>法律制度</li>
+<li>传统观念</li>
+<li>文化水平</li>
+</ul>
+</li>
+<li class="quiz">
+<p>历史上杰出人物的产生  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>纯粹偶然的</li>
+<li>纯粹必然的</li>
+<li class="correct">偶然与必然的统一</li>
+<li>有的是偶然有的是必然</li>
+</ul>
+</li>
+<li class="quiz">
+<p>正确评价历史人物的方法是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>古为今用方针</li>
+<li class="correct">历史分析方法</li>
+<li>彻底批判的革命精神</li>
+<li>全盘否定的分析方法</li>
+</ul>
+</li>
+<li class="quiz">
+<p>历史发展是 “合力” 作用的结果，这就是说  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>历史发展无规律可循</li>
+<li>历史发展是无法认识的</li>
+<li class="correct">历史发展的因素是复杂的</li>
+<li>社会中的每个人不都是 “合力” 的一部分</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人类全部社会关系中最基础的关系是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产关系</li>
+<li>血缘关系</li>
+<li>政治关系</li>
+<li>思想关系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人口因素在社会发展中的作用是可以  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>决定社会制度的性质</li>
+<li>决定社会制度的更替</li>
+<li class="correct">制约和影响社会发展</li>
+<li>决定国家的贫富强弱</li>
+</ul>
+</li>
+<li class="quiz">
+<p>地理环境对社会发展的作用主要通过  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>对人的心理素质的影响才能实现</li>
+<li>对人的生理结构的影响才能实现</li>
+<li>对民族气质的影响才能实现</li>
+<li class="correct">对生产过程的影响才能实现</li>
+</ul>
+</li>
+<li class="quiz">
+<p>劳动过程是劳动一般性质和劳动的社会形式的统一。劳动的一般性质是指  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>个人与社会之间的相互作用过程</li>
+<li>劳动者相互之间的信息交流过程</li>
+<li class="correct">人与自然之间的物质变换过程</li>
+<li>社会与自然之间的物质变换过程</li>
+</ul>
+</li>
+<li class="quiz">
+<p>联结人与自然的中介是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>地理环境</li>
+<li class="correct">生产劳动</li>
+<li>社会关系</li>
+<li>社会意识</li>
+</ul>
+</li>
+<li class="quiz">
+<p>物质资料的生产方式包括  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>劳动者和劳动工具两个方面</li>
+<li>劳动资料和劳动对象两个方面</li>
+<li>生产关系和生产资料两个方面</li>
+<li class="correct">生产力和生产关系两个方面</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人类区别于动物的根本标志是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">制造使用工具</li>
+<li>具有宗教信仰</li>
+<li>具有语言文字</li>
+<li>具有思想意识</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会各种矛盾中最基本的是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产力与生产关系的矛盾</li>
+<li>物质生产和精神生产的关系</li>
+<li>经济基础和上层建筑的关系</li>
+<li>阶级与阶级之间的关系</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多项选择题-4"><a class="anchor" href="#二-多项选择题-4">#</a> 二、多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>社会存在包括  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">社会生活的各种物质条件</li>
+<li class="correct">社会生活的物质生产活动</li>
+<li class="correct">经济关系</li>
+<li>全部社会关系</li>
+<li>社会生活的精神生产活动</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>社会意识的相对独立性表现为  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">它的发展变化与社会存在的发展变化不完全同步</li>
+<li class="correct">它与社会经济水平之间发展上的不平衡性</li>
+<li class="correct">它的发展往往具有历史继承性</li>
+<li class="correct">各种社会意识形式之间的相互作用和影响</li>
+<li>社会意识可以脱离社会存在而发展</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>18 世纪，经济上落后的国家法国在哲学上和政治思想领域方面取得的成就，超过了当时经济上先进的英国，这表明  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>社会意识的发展不依赖社会经济</li>
+<li>社会意识并不决定社会存在</li>
+<li class="correct">社会意识具有相对独立性</li>
+<li class="correct">社会意识的发展和经济的发展并不是完全对应的</li>
+<li>社会意识对经济具有反作用</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思说：“无论哪一种社会形态，在它所能容纳的全部生产力发挥出来以前，是决不会灭亡的；而新的更高的生产关系，在它存在的物质条件在旧社会的胞胎里成熟以前，是决不会出现的。” 这段话说明  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产力的发展是促使社会形态更替的最终原因</li>
+<li class="correct">一种新的生产关系的产生需要客观的物质条件的成熟</li>
+<li class="correct">无论哪一种社会形态，当它还能够促进生产力发展时，是不会灭亡的</li>
+<li class="correct">社会形态总是具体的、历史的</li>
+<li>在一定程度上生产关系决定生产力</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>物质生活资料的生产方式是人类社会存在和发展的基础。这是因为  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产方式是生活资料的谋得方式</li>
+<li>生产方式是全部社会关系的总和</li>
+<li class="correct">生产方式决定整个社会的面貌</li>
+<li class="correct">生产方式决定社会制度的性质</li>
+<li class="correct">生产方式决定社会制度的更替</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>人口因素不是社会发展的决定力量。这是因为  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">人口因素不能决定社会制度的性质</li>
+<li class="correct">人口生产受生产力发展水平的制约</li>
+<li class="correct">人口生产不能决定社会制度的更替</li>
+<li>人口生产不能加速或延缓社会的发展</li>
+<li class="correct">人口生产的社会形式受生产方式制约</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>上层建筑对经济基础的能动作用在于  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">它为自己的经济基础服务</li>
+<li class="correct">它要促进自己经济基础的形成、巩固和发展</li>
+<li>它要排除自己经济基础的对立物</li>
+<li>它决定自己所服务的经济基础的性质</li>
+<li>它决定自己所服务的经济基础的水平</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思主义的社会形态理论指出  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">社会形态是具体的、历史的</li>
+<li class="correct">社会形态是有机的统一整体</li>
+<li>社会形态是永恒的不变的</li>
+<li>社会形态是超社会的、超历史的</li>
+<li>社会形态是由偶然因素所决定的</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思对阶级斗争学说的新贡献是  <span class="gap"></span> 。</p>
+<ul class="options">
+<li>发现阶级和阶级斗争的存在</li>
+<li>指出阶级斗争的长期性</li>
+<li class="correct">论证了阶级的存在与生产发展的一定历史阶段相联系</li>
+<li class="correct">说明阶级斗争必然导致无产阶级专政</li>
+<li>指出阶级斗争只有暴力革命一种形式</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>“时势造英雄” 和 “英雄造时势”  <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">是两种根本对立的观点</li>
+<li>这两种观点是互相补充的</li>
+<li class="correct">前者是历史唯物主义，后者是历史唯心主义</li>
+<li class="correct">前者是科学历史观，后者是唯心史观</li>
+<li>前者是唯心史观，后者是唯物史观</li>
+</ul>
+</li>
+</ol>
+<h2 id="第四章-资本主义的形成及其本质"><a class="anchor" href="#第四章-资本主义的形成及其本质">#</a> 第四章 资本主义的形成及其本质</h2>
+<h3 id="一-单项选择题-5"><a class="anchor" href="#一-单项选择题-5">#</a> 一、单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>商品的本质因素是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>使用价值</li>
+<li class="correct">价值</li>
+<li>交换价值</li>
+<li>价格</li>
+</ul>
+</li>
+<li class="quiz">
+<p>生产商品的劳动分具体劳动和抽象劳动，其中具体劳动的作用是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>创造新价值</li>
+<li>创造剩余价值</li>
+<li>创造必要价值</li>
+<li class="correct">创造使用价值</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会必要劳动时间是在现有的社会正常生产条件下，在社会平均劳动熟练程度和劳动强度下制造某种使用价值所需要的劳动时间，它是以 <span class="gap"></span>为尺度的。</p>
+<ul class="options">
+<li>具体劳动</li>
+<li class="correct">简单劳动</li>
+<li>复杂劳动</li>
+<li>个别劳动</li>
+</ul>
+</li>
+<li class="quiz">
+<p>商品经济是通过商品货币关系实行等价交换的经济形式，它的基本规律是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">价值规律</li>
+<li>剩余价值规律</li>
+<li>竞争规律</li>
+<li>货币流通规律</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思说：“一切商品对它们的所有者是非使用价值，对它们的非所有者是使用价值。” 这句话表明 <span class="gap"></span>。</p>
+<ul class="options">
+<li>有使用价值的不一定有价值</li>
+<li class="correct">商品的使用价值是对它的购买消费者而言的</li>
+<li>商品所有者同时获得使用价值和价值</li>
+<li>商品是使用价值和价值的对立统一</li>
+</ul>
+</li>
+<li class="quiz">
+<p>如果部门劳动生产率下降，同一劳动在单位时间内创造的 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">使用价值量减少，单位产品的价值量增加</li>
+<li>使用价值量减少，单位产品的价值量减少</li>
+<li>价值量增加，单位产品的价值量增加</li>
+<li>价值量减少，单位产品的价值量减少</li>
+</ul>
+</li>
+<li class="quiz">
+<p>对 “劳动是财富之父，土地是财富之母” 这句话的正确解释是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>劳动和土地都是价值的源泉</li>
+<li>劳动创造使用价值，土地形成价值</li>
+<li>劳动是创造价值的外部条件，土地是价值的真正源泉</li>
+<li class="correct">劳动必须和自然物相结合才能创造出物质财富</li>
+</ul>
+</li>
+<li class="quiz">
+<p>商品内在的使用价值与价值的矛盾，其完备的外在表现是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>商品与商品之间的对立</li>
+<li>私人劳动与社会劳动之间的对立</li>
+<li class="correct">商品与货币之间的对立</li>
+<li>资本与雇佣劳动之间的对立</li>
+</ul>
+</li>
+<li class="quiz">
+<p>价值规律是商品经济的基本规律，它的作用是通过 <span class="gap"></span>实现的。</p>
+<ul class="options">
+<li>生产者之间的竞争</li>
+<li>消费者之间的竞争</li>
+<li>生产者和消费者之间的竞争</li>
+<li class="correct">价格机制、供求机制和竞争机制</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在商品经济中，形成价值的抽象劳动的支出必须借助于 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">具体劳动</li>
+<li>剩余劳动</li>
+<li>商品的生产形式</li>
+<li>资本主义生产方式</li>
+</ul>
+</li>
+<li class="quiz">
+<p>商品生产者要获得更多收益必须使生产商品的 <span class="gap"></span>。</p>
+<ul class="options">
+<li>个别劳动时间等于倍加的社会必要劳动时间</li>
+<li>个别劳动时间等于社会必要劳动时间</li>
+<li>个别劳动时间大于社会必要劳动时间</li>
+<li class="correct">个别劳动时间小于社会必要劳动时间</li>
+</ul>
+</li>
+<li class="quiz">
+<p>正确认识价值创造和财富生产的关系，关键是运用 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">劳动二重性学说</li>
+<li>资本有机构成学说</li>
+<li>剩余价值学说</li>
+<li>平均利润学说</li>
+</ul>
+</li>
+<li class="quiz">
+<p>货币之所以能执行价值尺度的职能，是因为 <span class="gap"></span>。</p>
+<ul class="options">
+<li>它能衡量其他商品价值的大小</li>
+<li class="correct">它是社会劳动的产物，本身具有价值</li>
+<li>它具有计量单位</li>
+<li>它可以是观念上的货币</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本集中的方式是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>资本积聚和资本积累</li>
+<li>竞争和剩余价值的资本化</li>
+<li class="correct">竞争和信用</li>
+<li>简单再生产和扩大再生产</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义地租是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>平均利润转化来的</li>
+<li class="correct">超额利润转化来的</li>
+<li>垄断利润转化来的</li>
+<li>企业利润转化来的</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本是一种运动，资本循环是从 <span class="gap"></span>研究资本的运动。</p>
+<ul class="options">
+<li class="correct">资本运动的形式和条件方面</li>
+<li>资本运动的速度方面</li>
+<li>资本运动的实现条件方面</li>
+<li>资本运动的矛盾性方面</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本循环的三种职能形式是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>产业资本、商业资本、借贷资本</li>
+<li>固定资本、流动资本、生产资本</li>
+<li class="correct">货币资本、生产资本、商品资本</li>
+<li>不变资本、可变资本、流通资本</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义经济危机的实质是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>生产过剩的危机</li>
+<li>生产不足的危机</li>
+<li class="correct">生产相对过剩的危机</li>
+<li>生产绝对过剩的危机</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义经济危机呈现出周期性的原因在于 <span class="gap"></span>。</p>
+<ul class="options">
+<li>资本主义基本矛盾</li>
+<li class="correct">资本主义基本矛盾运动的特点</li>
+<li>资本主义的基本矛盾周期性</li>
+<li>资本主义再生产的周期性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>下列实物形态的资本中，同时属于生产资本、不变资本和固定资本的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>原料和燃料</li>
+<li>辅助材料</li>
+<li class="correct">机器设备</li>
+<li>商业设施</li>
+</ul>
+</li>
+<li class="quiz">
+<p>产业资本划分为货币资本、生产资本、商品资本的依据是资本各个部分 <span class="gap"></span>。</p>
+<ul class="options">
+<li>在价值增殖过程中的作用不同</li>
+<li>价值周转方式不同</li>
+<li>存在的物质形态不同</li>
+<li class="correct">在循环中的职能不同</li>
+</ul>
+</li>
+<li class="quiz">
+<p>加快资本周转，可以增加年剩余价值量和提高年剩余价值率，根本是因为 <span class="gap"></span>。</p>
+<ul class="options">
+<li>预付的资本总量增加了</li>
+<li class="correct">实际发挥作用的可变资本增加了</li>
+<li>流通对生产的反作用</li>
+<li>剩余价值率提高了</li>
+</ul>
+</li>
+<li class="quiz">
+<p>最鲜明体现资本主义国家实质的国家职能是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">政治职能</li>
+<li>经济职能</li>
+<li>社会职能</li>
+<li>对外交往职能</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义法制的核心是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>民法</li>
+<li class="correct">宪法</li>
+<li>刑法</li>
+<li>行政法</li>
+</ul>
+</li>
+<li class="quiz">
+<p>美国采取权力制衡的组织形式，其中立法权属于 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">国会</li>
+<li>总统</li>
+<li>最高法院</li>
+<li>最高检察院</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义国家的选举的实质是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>资产阶级和无产阶级分权</li>
+<li>每个公民都能通过竞选参与政治活动，表达自己的愿望和要求</li>
+<li class="correct">协调统治阶级内部利益关系和矛盾的重要措施</li>
+<li>人民当家作主</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义政党制度的实质是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>允许工人阶级及其政党参与国家政治生活</li>
+<li>允许马克思主义政党独立执政</li>
+<li>不受资本主义国家政权的资本主义性质制约</li>
+<li class="correct">资产阶级选择自己的国家管理者，实现其内部利益平衡的政治机制</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资产阶级意识形态的核心是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>文学、艺术和宗教</li>
+<li>道德、伦理</li>
+<li class="correct">政治思想和法律思想</li>
+<li>哲学、历史</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多项选择题-5"><a class="anchor" href="#二-多项选择题-5">#</a> 二、多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>关于所有制和所有权的关系，下列说法正确的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">所有制是所有权的基础</li>
+<li>所有权是所有制的基础</li>
+<li class="correct">所有制决定着所有权，所有权是所有制的法律形态，它是反映着经济关系的意志关系</li>
+<li class="correct">同一种所有制可以有不同的所有权</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>价值是商品的本质属性，它是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">凝结在商品中的抽象劳动</li>
+<li class="correct">商品的社会属性</li>
+<li class="correct">交换价值的基础</li>
+<li class="correct">反映商品生产者之间的社会关系</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>生产商品的劳动二重性是指 <span class="gap"></span>。</p>
+<ul class="options">
+<li>个别劳动</li>
+<li>社会劳动</li>
+<li class="correct">具体劳动</li>
+<li class="correct">抽象劳动</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>货币的本质通过它的职能体现出来，货币有多种职能，其中最基本的职能是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">价值尺度</li>
+<li class="correct">流通手段</li>
+<li>支付手段</li>
+<li>贮藏手段和世界货币</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>以下对马克思的劳动价值论的说法正确的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">是对古典政治经济学劳动价值论的批判、继承和发展</li>
+<li class="correct">是剩余价值理论的基础</li>
+<li>是研究价值分配的理论</li>
+<li class="correct">为揭示资本主义生产方式的本质奠定了理论基础</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>简单商品经济中所包括的各种矛盾主要是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">使用价值和价值的矛盾</li>
+<li>价值和交换价值的矛盾</li>
+<li class="correct">具体劳动和抽象劳动的矛盾</li>
+<li class="correct">私人劳动和社会劳动的矛盾</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>使用价值、交换价值、价值三者之间的关系是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">使用价值是交换价值和价值的物质承担者</li>
+<li class="correct">交换价值和价值寓于使用价值之中</li>
+<li class="correct">价值是交换价值的基础和内容</li>
+<li class="correct">交换价值是价值的表现形式</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>一切商品都包含着使用价值和价值二因素，商品是使用价值和价值的统一。这表明 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">缺少使用价值和价值任何一方面，都不能成为商品</li>
+<li class="correct">没有使用价值就没有价值</li>
+<li class="correct">有使用价值，但不是劳动产品，也不是商品</li>
+<li class="correct">有使用价值，也是劳动产品，但只是供生产者自己消费，也不是商品</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>影响市场上商品价格变化的规律有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">商品价值的变化</li>
+<li class="correct">货币价值的变化</li>
+<li class="correct">供求关系的变化</li>
+<li class="correct">平均利润率的变化</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>价值规律的内容和要求是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">商品的价值量由生产商品的社会必要劳动时间决定</li>
+<li class="correct">商品交换以商品的价值量为基础</li>
+<li class="correct">商品交换必须实行等价交换</li>
+<li>价格围绕价值上下波动</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>具体劳动和抽象劳动的区别是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">具体劳动是劳动的具体形式，抽象劳动是一般人类劳动</li>
+<li>具体劳动是体力劳动，抽象劳动是脑力劳动</li>
+<li class="correct">具体劳动反映人与自然的关系，抽象劳动反映社会生产关系</li>
+<li class="correct">具体劳动不是使用价值的唯一源泉，抽象劳动是价值的唯一源泉</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>在下列几种价值形式中，没有本质区别的两种形式是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>简单的或偶然的价值形式</li>
+<li>扩大的价值形式</li>
+<li class="correct">一般价值形式</li>
+<li class="correct">货币形式</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>价格受市场供求的影响，围绕价值上下波动，不是对价值规律作用的否定，而是价值规律作用的表现形式，这是因为 <span class="gap"></span>。</p>
+<ul class="options">
+<li>商品交换都是按照价格与价值相一致的原则进行的</li>
+<li class="correct">从商品交换的总体看，价格总额与价值总额是相等的</li>
+<li class="correct">从商品交换的较长时间看，价格与价值是趋于一致的</li>
+<li class="correct">各种商品价格的波动，是以各自的价值为基础的</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>在商品经济运行中，价值、价格、供求三者之间的关系是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">价格受供求关系影响，围绕价值上下波动</li>
+<li>价格受价值影响，随供求关系变化而变动</li>
+<li class="correct">价格由价值决定，反映价值并反映供求关系</li>
+<li>价格由价值决定，反映价值但不反映供求关系</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>在新的历史条件下，与马克思所处的时代相比，深化对创造价值的劳动的认识主要有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">劳动的科技含量和知识含量增加了</li>
+<li class="correct">科技人员和管理人员的劳动在劳动总量中的比重增加了</li>
+<li>农业劳动已成为物质生产劳动的基本形式</li>
+<li class="correct">在总的劳动消耗量中物化劳动的比重增加而活劳动的比重相对减少了</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>价值规律发挥作用的表现形式有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">价格围绕价值上下波动</li>
+<li>价格围绕交换价值上下波动</li>
+<li>价格围绕成本价格上下波动</li>
+<li class="correct">市场价格围绕生产价格上下波动</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>单位商品的价值量和生产这种商品的 <span class="gap"></span>成反比。</p>
+<ul class="options">
+<li>劳动生产率成正比</li>
+<li class="correct">社会必要劳动时间成正比</li>
+<li class="correct">劳动生产率成反比</li>
+<li>社会必要劳动时间成反比</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义生产过程的结果是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">生产出新的使用价值</li>
+<li class="correct">转移了生产资料的价值</li>
+<li class="correct">再生产劳动力的价值</li>
+<li class="correct">创造出剩余价值</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>劳动力商品的价值包括 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">维持劳动者生存所需要的生活资料价值</li>
+<li>劳动者维持生产所必需的生产资料价值</li>
+<li class="correct">养育子女所需要的生活资料价值</li>
+<li class="correct">劳动者的教育和培训费用</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本区分为不变资本和可变资本的意义在于 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">进一步揭示了剩余价值的真正源泉</li>
+<li class="correct">为计算剩余价值率提供了科学依据</li>
+<li>为计算资本周转速度提供了依据</li>
+<li class="correct">为平均利润、生产价格理论奠定了基础</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>借贷资本的特点是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">一种资本商品</li>
+<li class="correct">一种商品资本</li>
+<li class="correct">一种所有权资本</li>
+<li class="correct">具有特殊的运动形式 G-G′</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>在数量上相当于平均利润的剥削收人有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">产业利润</li>
+<li class="correct">商业利润</li>
+<li>借贷利息</li>
+<li class="correct">银行利润</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>在资本主义现实中，剩余价值是采取各种转化形式出现的，它们有 <span class="gap"></span>。</p>
+<ul class="options">
+<li>成本</li>
+<li>工资</li>
+<li class="correct">利润</li>
+<li class="correct">利息</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>在其他条件不变的情况下，资本有机构成的提高会导致 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">相对过剩人口的形成</li>
+<li>利润率的提高</li>
+<li class="correct">可变资本在总资本中比例的降低</li>
+<li>资本周转速度的减缓</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>绝对剩余价值生产和相对剩余价值生产的共同点是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">都体现着资本家对工人的剥削关系</li>
+<li class="correct">都延长了剩余劳动时间</li>
+<li class="correct">都增加了剩余价值量</li>
+<li class="correct">都提高了剩余价值率</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>剩余价值规律可以 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">揭示资本主义生产的目的和达到目的的手段</li>
+<li class="correct">反映资本主义生产的实质</li>
+<li class="correct">在资本主义社会起主导作用</li>
+<li class="correct">决定资本主义生产的主要方面和主要过程</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>纺织厂的资本家购买的用于生产的棉花属于 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">不变资本</li>
+<li>固定资本</li>
+<li>可变资本</li>
+<li class="correct">流动资本</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义劳动过程同其他劳动过程相比较体现出来的特点是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>创造新的使用价值</li>
+<li>创造新的价值</li>
+<li class="correct">工人在资本家监督下劳动，他们的劳动属于资本家</li>
+<li class="correct">劳动产品归资本家所有</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>反映资本家对工人的剥削程度的公式是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">剩余价值／可变资本</li>
+<li>剩余价值／全部预付资本</li>
+<li class="correct">剩余劳动时间／必要劳动时间</li>
+<li>年剩余价值量／预付可变资本</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思关于资本有机构成学说论证了 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">相对过剩人口的形成</li>
+<li class="correct">技术进步条件下生产资料生产的优先增长</li>
+<li>平均利润率的形成</li>
+<li class="correct">利润率的下降趋势</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本积累规模的大小取决于 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">对工人的剥削程度</li>
+<li class="correct">预付资本量的大小</li>
+<li class="correct">所用资本和所费资本之间的差额</li>
+<li class="correct">劳动生产率的高低</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>第二次世界大战后，发达资本主义国家工人工作日有所缩短，这表明 <span class="gap"></span>。</p>
+<ul class="options">
+<li>对工人剥削程度有所减轻</li>
+<li class="correct">劳动生产率明显提高</li>
+<li class="correct">必要劳动时间大为缩短</li>
+<li class="correct">相对剩余价值成为主要剥削形式</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>绝对剩余价值生产、相对剩余价值生产和超额剩余价值生产的关系是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">绝对剩余价值生产是相对剩余价值生产的出发点</li>
+<li>相对剩余价值生产是绝对剩余价值生产的出发点</li>
+<li>超额剩余价值生产是绝对剩余价值生产的出发点</li>
+<li class="correct">超额剩余价值生产是变相的相对剩余价值生产</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本积累和扩大再生产的客观必然性是由 <span class="gap"></span>决定的。</p>
+<ul class="options">
+<li>社会再生产的规律</li>
+<li>社会再生产的形式</li>
+<li class="correct">剩余价值规律</li>
+<li class="correct">竞争规律</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下列现象掩盖资本主义剥削实质的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>资本总是表现为一定的物</li>
+<li>不变资本只是剩余价值生产的条件</li>
+<li class="correct">资本主义工资是工人全部劳动的报酬</li>
+<li class="correct">资本主义利润是全部预付资本的产物</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本积累、积聚和集中的相互关系是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">资本集中是资本积累的直接结果</li>
+<li>资本积聚是资本积累的实现条件</li>
+<li class="correct">资本积聚有利于资本集中</li>
+<li class="correct">资本迅速集中会加快资本积累</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本积累中资本有机构成的提高使资本对劳动力的需求日益相对减少，表现为 <span class="gap"></span>。</p>
+<ul class="options">
+<li>原有资本有机构成不变，追加资本有机构成提高，资本对劳动力需求的绝对量增加，相对量减少</li>
+<li class="correct">原有资本有机构成提高，出现机器排挤工人</li>
+<li class="correct">原有资本和追加资本有机构成都提高，资本对劳动力需求的绝对量增加，相对量减少</li>
+<li>原有资本和追加资本有机构成都提高，资本对劳动力需求的绝对量和相对量都增加</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义工资之所以表现为劳动的价值或价格是因为 <span class="gap"></span>。</p>
+<ul class="options">
+<li>工资被看做是全部劳动的报酬</li>
+<li class="correct">工人一般在提供了劳动之后，资本家才付工资</li>
+<li class="correct">工资依劳动时间长短而不同</li>
+<li class="correct">工资依劳动效率高低而不同</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>土地、资本等生产要素参与价值分配表明 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">其实质是生产要素所有权在经济上的实现</li>
+<li class="correct">各种非劳动生产要素参与了社会财富的创造并且是价值创造的物质条件</li>
+<li>各种非劳动生产要素是价值的源泉</li>
+<li>各种非劳动生产要素和劳动力要素（工人的劳动）共同创造价值</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>剩余价值与利润这两个范畴之间的关系是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">利润是剩余价值的转化形式</li>
+<li>剩余价值是利润的转化形式</li>
+<li class="correct">剩余价值是利润的本质</li>
+<li class="correct">利润掩盖了剩余价值的真正源泉</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义积累过程总是伴随着资本有机构成提高，资本有机构成提高的直接后果是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>个别资本增大</li>
+<li class="correct">对劳动力需求减少</li>
+<li class="correct">生产资料优先增长</li>
+<li class="correct">平均利润率下降</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义基本矛盾主要表现在 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">各个企业内部生产的有组织性和整个社会生产无政府状态之间的矛盾</li>
+<li class="correct">社会生产无限扩大的趋势与有支付能力的需求相对狭小的矛盾</li>
+<li class="correct">无产阶级与资产阶级之间的矛盾</li>
+<li>生产社会化和生产资料资本主义私人占有形式之间的矛盾</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义政治制度 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">建立在资本主义社会的经济基础之上</li>
+<li class="correct">反映了资本主义社会的经济关系</li>
+<li class="correct">反映了政治上占统治地位的资产阶级的要求</li>
+<li class="correct">作为上层建筑，为巩固和发展资本主义社会的经济基础提供政治保障</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义国家的职能的两个基本方面是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>立法司法职能</li>
+<li class="correct">对内职能</li>
+<li class="correct">对外职能</li>
+<li>行政职能</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义的国家机器包括 <span class="gap"></span>。</p>
+<ul class="options">
+<li>资产阶级政党</li>
+<li class="correct">军队、警察</li>
+<li class="correct">监狱、法庭</li>
+<li class="correct">政府机构</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义国家的对内职能主要有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">对被统治阶级进行压迫和控制的政治职能</li>
+<li class="correct">对邮政、铁路、水路、文教、卫生保健、社会福利等事业进行管理的公共管理职能</li>
+<li>进行国际交往的职能</li>
+<li>维护国家安全和利益的职能</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>与奴隶制、封建制国家相比，资本主义国家 <span class="gap"></span>。</p>
+<ul class="options">
+<li>政治上对多数人实行民主，对少数人实行专政</li>
+<li>代表绝大多数人的根本利益</li>
+<li class="correct">政治上要求形式上的自由民主、正义平等</li>
+<li class="correct">经济上要求自由竞争、等价交换</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义政治制度包括 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">资本主义的民主与法制</li>
+<li class="correct">政治组织形式</li>
+<li class="correct">选举制度</li>
+<li class="correct">政党制度</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资产阶级在反对封建专制主义的斗争中提出了 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">主权在民</li>
+<li class="correct">天赋人权与社会契约论</li>
+<li class="correct">分权制衡</li>
+<li class="correct">自由、平等、博爱</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义法制的基本原则有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">私有财产不可侵犯</li>
+<li class="correct">主权在民</li>
+<li>人们当家作主</li>
+<li class="correct">分权制衡</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义政权的分权制衡是指 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">立法权</li>
+<li>管理权</li>
+<li class="correct">行政权</li>
+<li class="correct">司法权</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资产阶级政党在国家政治生活中发挥着很大作用，包括 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">代表资产阶级执掌政权，对政府施加影响、控制议会</li>
+<li class="correct">制定和推行符合资产阶级利益的方针、政策</li>
+<li class="correct">操纵选举</li>
+<li class="correct">控制群众团体和舆论宣传</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义政治制度的历史和阶级局限性是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">资本主义的民主是金钱操纵下的民主</li>
+<li class="correct">法律名义上的平等掩盖了事实上的不平等</li>
+<li class="correct">资本主义国家的多党制是资产阶级选择自己的国家管理者、实现其内部利益平衡的政治机制</li>
+<li>制定和推行符合资产阶级利益的方针、政策</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资产阶级意识形态在资产阶级取得政权以前的积极作用有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">批判封建主义和宗教神学</li>
+<li class="correct">启发民众进行资产阶级革命</li>
+<li class="correct">保证资产阶级的胜利</li>
+<li class="correct">为资产阶级建立国家提供理论依据</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资产阶级意识形态的本质是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>在一定程度上代表了人民的意志和愿望</li>
+<li>集中地体现了资本主义国家文化的精华</li>
+<li class="correct">是为资本主义社会形态的经济基础服务的</li>
+<li class="correct">是资产阶级阶级意识的集中体现</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>我们可以借鉴的资本主义意识形态的理论有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">关于人类政治生活客观规律的探索</li>
+<li class="correct">关于经济运行一般规律的揭示</li>
+<li class="correct">关于思维规律的研究</li>
+<li class="correct">关于司法实践历史经验的描述</li>
+</ul>
+</li>
+</ol>
+<h2 id="第五章-资本主义发展的历史进程"><a class="anchor" href="#第五章-资本主义发展的历史进程">#</a> 第五章 资本主义发展的历史进程</h2>
+<h3 id="一-单项选择题-6"><a class="anchor" href="#一-单项选择题-6">#</a> 一、单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>第二次世界大战后，发达资本主义国家的发展进入国家垄断资本主义的新阶段，这意味着 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">发达资本主义国家的政府担当调控国家宏观经济的重要职能</li>
+<li>国家垄断资本掌控经济生活</li>
+<li>所有重要的经济部门实行国有化</li>
+<li>国家垄断重于私人垄断</li>
+</ul>
+</li>
+<li class="quiz">
+<p>国家垄断资本主义的产生和发展，从根本上说是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>国内市场竞争的结果</li>
+<li>国际竞争激烈化的结果</li>
+<li>垄断统治加强的结果</li>
+<li class="correct">生产社会化和资本主义私人占有制之间矛盾发展的结果</li>
+</ul>
+</li>
+<li class="quiz">
+<p>当代资本主义国际垄断组织的主要形式是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>国际卡特尔</li>
+<li>混合联合企业</li>
+<li class="correct">跨国公司</li>
+<li>国际康采恩</li>
+</ul>
+</li>
+<li class="quiz">
+<p>第二次世界大战后，发达资本主义国家私人垄断统治的发展表现在 <span class="gap"></span>。</p>
+<ul class="options">
+<li>托拉斯和康采恩的出现</li>
+<li>金融寡头的统治</li>
+<li>国际垄断同盟的兴起</li>
+<li class="correct">形成跨行业跨部门的混合联合企业</li>
+</ul>
+</li>
+<li class="quiz">
+<p>金融资本是由 <span class="gap"></span>融合或混合生长而成的。</p>
+<ul class="options">
+<li>产业资本和商业资本</li>
+<li>银行资本和工业资本</li>
+<li class="correct">垄断的银行资本和垄断的工业资本</li>
+<li>垄断银行资本和银行资本</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在垄断资本主义阶段占统治地位的资本是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>工业资本</li>
+<li>农业资本</li>
+<li>银行资本</li>
+<li class="correct">金融资本</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在垄断资本主义的各个基本经济特征中最根本的特征是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>国家垄断同盟的形成</li>
+<li>资本输出具有重要的意义</li>
+<li class="correct">垄断在经济生活中占统治地位</li>
+<li>瓜分世界领土，形成殖民体系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义由自由竞争阶段进入垄断阶段，最根本的标志在于 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">垄断代替自由竞争在经济生活中占统治地位</li>
+<li>资本输出代替商品输出在经济生活中占统治地位</li>
+<li>银行资本代替工业资本在经济生活中占统治地位</li>
+<li>国家垄断代替私人垄断在经济生活中占统治地位</li>
+</ul>
+</li>
+<li class="quiz">
+<p>国家垄断资本主义发展的基础是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>国有垄断资本</li>
+<li>资产阶级国家</li>
+<li class="correct">私人垄断资本</li>
+<li>资本输出</li>
+</ul>
+</li>
+<li class="quiz">
+<p>国家垄断资本主义的发展 <span class="gap"></span>。</p>
+<ul class="options">
+<li>改变了经济的资本主义性质</li>
+<li class="correct">符合垄断资本家的整体利益</li>
+<li>代表了个别资本家的利益</li>
+<li>消灭了私人垄断资本主义的基础</li>
+</ul>
+</li>
+<li class="quiz">
+<p>金融寡头实现经济上统治的 “参与制” 是指金融寡头 <span class="gap"></span>。</p>
+<ul class="options">
+<li>直接参与工业企业的生产经营和管理</li>
+<li>直接参与银行的经营和管理</li>
+<li class="correct">通过购买一定数量的股票层层控制许多大企业和大银行的经济统治方式</li>
+<li>通过购买所属公司全部股票直接掌握许多大企业和大银行的经济统治方式</li>
+</ul>
+</li>
+<li class="quiz">
+<p>国家垄断资本主义是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>消除生产无政府状态的垄断资本主义</li>
+<li>资产阶级国家同垄断资本相互分离的垄断资本主义</li>
+<li class="correct">资产阶级国家同垄断资本融合在一起的垄断资本主义</li>
+<li>带有社会主义因素的垄断资本主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>第二次世界大战后，国家垄断资本主义发展的特点是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>发展缓慢不稳定</li>
+<li class="correct">发展迅速且持续稳定</li>
+<li>发展迅速但不稳定</li>
+<li>时而削弱，时而发展</li>
+</ul>
+</li>
+<li class="quiz">
+<p>国家垄断资本主义的宏观管理和调节体现的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>全体劳动人民的经济利益</li>
+<li>个别金融寡头的经济利益</li>
+<li class="correct">垄断资产阶级的整体利益</li>
+<li>国有企业的经济利益</li>
+</ul>
+</li>
+<li class="quiz">
+<p>国家垄断资本主义的形式中，最主要、最重要的形式是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>国家市场垄断经济</li>
+<li class="correct">国家调节经济</li>
+<li>公私合营经济</li>
+<li>国家自然垄断经济</li>
+</ul>
+</li>
+<li class="quiz">
+<p>垄断资本主义国家的 “经济计划化” <span class="gap"></span>。</p>
+<ul class="options">
+<li>可以从根本上解决资本主义基本矛盾</li>
+<li class="correct">使生产的无政府状态得到一定的缓解</li>
+<li>导致资本主义向社会主义和平过渡</li>
+<li>可以消除资本主义经济危机</li>
+</ul>
+</li>
+<li class="quiz">
+<p>国家垄断资本主义的局限性在于 <span class="gap"></span>。</p>
+<ul class="options">
+<li>使垄断资本主义存在着时而迅速发展时而停滞的趋势</li>
+<li>使垄断资本主义经济长期处于停滞状态</li>
+<li>使垄断资本主义经济长期处于滞胀状态</li>
+<li class="correct">它只能暂时使某些矛盾缓和，但却使这些矛盾进一步加深和复杂化</li>
+</ul>
+</li>
+<li class="quiz">
+<p>垄断资本主义国家的金融寡头在经济上的统治主要借助于 <span class="gap"></span>。</p>
+<ul class="options">
+<li>“代理制”</li>
+<li>“个人联合”</li>
+<li>“企业联合”</li>
+<li class="correct">“参与制”</li>
+</ul>
+</li>
+<li class="quiz">
+<p>各国垄断组织从经济上瓜分世界产生了 <span class="gap"></span>。</p>
+<ul class="options">
+<li>国家垄断资本主义</li>
+<li class="correct">国际垄断同盟</li>
+<li>金融资本和金融寡头</li>
+<li>殖民地和宗主国</li>
+</ul>
+</li>
+<li class="quiz">
+<p>经济全球化发展趋势的现实基础是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>新科技革命</li>
+<li>生产国际化</li>
+<li class="correct">国际贸易的高度发展</li>
+<li>国际金融的迅速发展</li>
+</ul>
+</li>
+<li class="quiz">
+<p>经济全球化的实质决定了它的发展必然是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>有利于所有国家</li>
+<li class="correct">有利于发达资本主义国家</li>
+<li>有利于发展中国家</li>
+<li>有利于社会主义国家</li>
+</ul>
+</li>
+<li class="quiz">
+<p>下列不属于经济全球化发展趋势的选项是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>市场经济成为全球经济体制</li>
+<li>区域经济集团日益发展</li>
+<li>跨国公司的主导作用增强</li>
+<li class="correct">国际经济新秩序的建立</li>
+</ul>
+</li>
+<li class="quiz">
+<p>经济全球化带给发达国家的好处很多，但不包括 <span class="gap"></span>。</p>
+<ul class="options">
+<li>从世界各地获取大量的利润</li>
+<li>降低其生产成本</li>
+<li class="correct">扩大了贸易逆差</li>
+<li>加强对国际金融市场的控制</li>
+</ul>
+</li>
+<li class="quiz">
+<p>经济全球化带给发展中国家的消极影响有许多，但不包括 <span class="gap"></span>。</p>
+<ul class="options">
+<li>经济发展受到一定程度的损失</li>
+<li>在国际贸易关系中剩余价值大量流失</li>
+<li>金融风险加大</li>
+<li class="correct">经济发展机会大大减少</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义发展的历史趋势是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>计划经济取代市场经济</li>
+<li>市场经济取代计划经济</li>
+<li>计划经济取代商品经济</li>
+<li class="correct">社会主义公有制取代资本主义私有制</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义的历史地位是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>寄生的资本主义</li>
+<li>腐朽的资本主义</li>
+<li>不断发展的资本主义</li>
+<li class="correct">过渡的资本主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>国家垄断资本主义为向社会主义过渡准备了物质条件是指 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">全面的社会化</li>
+<li>全面的商品化</li>
+<li>全面的市场化</li>
+<li>市场的计划化</li>
+</ul>
+</li>
+<li class="quiz">
+<p>正确认识资本主义的历史过渡性要 <span class="gap"></span>。</p>
+<ul class="options">
+<li>否定资本主义生产关系的一切改良</li>
+<li>对资本主义采取全面肯定的态度</li>
+<li class="correct">借鉴资本主义社会中反映人类文明进步的改良</li>
+<li>借鉴并发展资本主义的经济制度</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本社会化的最高形式是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>垄断资本主义</li>
+<li class="correct">国家垄断资本主义</li>
+<li>生产社会化</li>
+<li>经营管理社会化</li>
+</ul>
+</li>
+<li class="quiz">
+<p>国家垄断资本主义对经济的干预 <span class="gap"></span>。</p>
+<ul class="options">
+<li>从根本上解决了垄断资本主义国家的阶级矛盾</li>
+<li>改变了资本主义私有制的性质</li>
+<li>使资产阶级和工人阶级形成了利益一致</li>
+<li class="correct">没有改变劳动者受剥削的地位</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多项选择题-6"><a class="anchor" href="#二-多项选择题-6">#</a> 二、多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>私人垄断资本主义向国家垄断资本主义过渡 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">是资本主义生产社会化的客观要求</li>
+<li class="correct">是资本主义基本矛盾发展的必然结果</li>
+<li class="correct">在一定程度上促进了资本主义生产的发展</li>
+<li>能够从根本上解决资本主义的基本矛盾</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断资本要求国家干预经济生活的原因是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">社会化大生产要求国民经济协调发展，需要国家参与经济调节</li>
+<li class="correct">国内垄断资本需要国家支持以加强竞争的能力</li>
+<li class="correct">社会化大生产需要巨额投资，要求国家直接经营或资助</li>
+<li class="correct">生产过剩问题日趋严重，需要借助国家力量以扩大国内外市场</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>国家垄断资本主义产生的具体原因是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">市场问题日益严重，要求利用国家力量来扩大</li>
+<li class="correct">社会化大生产所需巨额投资需要国家资助</li>
+<li class="correct">社会化大生产要求经济协调发展，需要国家直接干预</li>
+<li class="correct">对于不能直接获利的基础理论研究只能由国家来承担</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>国家垄断资本主义的基本形式有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">国营企业</li>
+<li class="correct">国私合营企业</li>
+<li>国家与私人垄断资本在国际范围内的结合</li>
+<li class="correct">国家调节经济</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>国家垄断资本主义对资本主义经济发展的作用是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">在一定程度上促进了社会生产力的发展</li>
+<li>解决了垄断资本主义内在矛盾的深化与尖锐</li>
+<li>从根本上解决了失业问题</li>
+<li class="correct">消除了经济危机频繁的出现</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断与竞争并存的原因是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">垄断不能消除商品经济的竞争基础</li>
+<li class="correct">科技进步和创新不断激发新的竞争</li>
+<li class="correct">中小企业仍然大量存在</li>
+<li class="correct">垄断组织不能囊括一切商品生产</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断统治下竞争的特点是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">竞争的目的是为了获得高额垄断利润</li>
+<li class="correct">竞争的手段有政治上的力量</li>
+<li class="correct">竞争更为激烈、破坏性更大</li>
+<li class="correct">竞争的范围除经济领域外还包括政治、军事、文化领域</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断价格是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">垄断资本家取得垄断利润的主要手段</li>
+<li class="correct">垄断资本家凭借垄断地位规定的商品价格</li>
+<li>成本价格加平均利润</li>
+<li class="correct">成本价格加垄断利润</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断利润是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">凭借垄断地位获得的利润</li>
+<li class="correct">超过平均利润的高额利润</li>
+<li>通过资本自由转移而形成的一种利润</li>
+<li class="correct">垄断资本所有权在经济上的实现形式</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>第二次世界大战后，垄断资本主义的特征获得了新内容和表现形式，主要有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">混合联合公司成为垄断组织的主要形式</li>
+<li class="correct">跨国公司成为生产和资本国际化的主要组织形式</li>
+<li>私有垄断资本普遍采用股份公司的企业组织形式</li>
+<li class="correct">由国家出面组建的国际垄断组织的出现</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断形成的原因是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">生产高度集中的必然产物</li>
+<li class="correct">资本高度集中必然引起垄断</li>
+<li class="correct">少数大企业为避免两败俱伤</li>
+<li class="correct">规模经济效益促使少数大资本走向垄断</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断竞争的特点是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">垄断竞争与非垄断竞争并存</li>
+<li class="correct">价格竞争与非价格竞争并存</li>
+<li class="correct">国内竞争与国际竞争并存</li>
+<li class="correct">垄断企业与非垄断企业的控制与反控制的竞争</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断价格 <span class="gap"></span>。</p>
+<ul class="options">
+<li>完全是人为定价</li>
+<li class="correct">受替代品竞争的制约</li>
+<li class="correct">受市场需求量的制约</li>
+<li>违背了价值规律</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断高价和垄断低价并不否定价值规律，因为 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">垄断价格的形成只是使价值规律改变了表现形式</li>
+<li class="correct">从整个社会看，商品的价格总额和价值总额是一致的</li>
+<li class="correct">垄断高价是把其他商品生产者的一部分利润转移到垄断高价的商品上</li>
+<li class="correct">垄断高价和垄断低价不能完全离开商品的价值</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义在全世界范围被社会主义代替是一个很长的历史过程，在这个过程中两种社会制度的国家 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">可能相互交往</li>
+<li class="correct">可以和平共处，但也存在斗争</li>
+<li>不存在和平共处的可能性</li>
+<li class="correct">可以平等互利地发生经济联系</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断利润的主要来源是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">垄断企业内部工人创造的剩余价值</li>
+<li class="correct">非垄断企业工人创造的一部分剩余价值</li>
+<li class="correct">小生产者创造的一部分价值</li>
+<li class="correct">落后国家劳动人民创造的一部分价值、国内劳动人民必要劳动创造的一部分价值</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断资本主义的发展为向社会主义过渡准备了物质条件，主要表现在 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">生产全面社会化</li>
+<li class="correct">生产管理日益社会化</li>
+<li>工会组织日益社会化</li>
+<li class="correct">资本日益社会化</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>经济全球化已成为当今世界经济发展的重要趋势，其明显表现有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">国际直接投资迅速增长，投资格局多元化</li>
+<li class="correct">跨国公司越来越成为世界经济的主导力量</li>
+<li class="correct">国际贸易成为各国经济不可缺少的组成部分</li>
+<li class="correct">国际金融交易总额大大超过国际贸易总量</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本输出的必要性在于 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">为大量过剩资本寻找高额利润的投资场所</li>
+<li class="correct">为商品输出开路</li>
+<li class="correct">为控制国外原料产地和其他重要资源</li>
+<li class="correct">有利于争夺霸权地位</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>第二次世界大战后，垄断发展的新现象有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">垄断资本跨部门发展</li>
+<li class="correct">大型企业间的联合与兼并加剧</li>
+<li class="correct">私人垄断加速向国家垄断转变</li>
+<li class="correct">跨国公司成为垄断组织的主要形式</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>第二次世界大战后，发达资本主义国家资本输出 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">以跨国公司为主体</li>
+<li>以国家资本输出为主</li>
+<li class="correct">生产资本输出为主要形式</li>
+<li class="correct">发达国家互相输出为主要流向</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>战后发达资本主义国家实行的重大体制改革和政策调整包括 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">建立社会保障制度</li>
+<li class="correct">实行部分国有化</li>
+<li class="correct">实行职工持股</li>
+<li class="correct">推行企业民主，实现劳资合作</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>以下说法中正确地说明了社会福利制度的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">社会福利制度是一种国民收入再分配</li>
+<li class="correct">社会福利制度的推行是资本主义生产关系自我调整的表现</li>
+<li>社会福利制度是以一种渐进的方式实行社会主义</li>
+<li class="correct">社会福利计划力图纠正市场初次分配中的不公平，具有一定的社会进步</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>发达资本主义国家主导之下的国际经济协调机制包括 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">国际货币基金组织</li>
+<li class="correct">世界银行</li>
+<li>七十七国集团</li>
+<li class="correct">世界贸易组织</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>第二次世界大战后，西方国家跨国公司迅速发展是由于 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">生产力发展的需要</li>
+<li class="correct">国内外市场竞争的需要</li>
+<li class="correct">资本输出的需要</li>
+<li class="correct">争夺国际垄断地位的需要</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>经济殖民地对垄断资本主义国家的重要作用是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">可靠而有利的商品销售市场和投资场所</li>
+<li class="correct">重要的廉价原料产地</li>
+<li>高新技术产品的重要供应地</li>
+<li>高新技术人才的培养地</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义无法根除的主要矛盾是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>垄断资本与中小资本的矛盾</li>
+<li class="correct">社会化生产与资本主义私人占有的矛盾</li>
+<li class="correct">无产阶级与资产阶级的矛盾</li>
+<li class="correct">生产和消费的矛盾</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义制度的历史进步性主要表现在 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">促使科学技术转变为生产力</li>
+<li class="correct">追求剩余价值的动力和竞争的压力推动了生产力发展</li>
+<li class="correct">资本主义政治制度促进和完善了资本主义生产方式</li>
+<li class="correct">资本主义意识形态促进和完善了资本主义生产方式</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>资本主义为社会主义所代替的历史必然性表现在 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">资本主义的内在矛盾决定了资本主义必然被社会主义所代替</li>
+<li class="correct">资本积累推动资本主义最终否定资本主义自身</li>
+<li class="correct">国家垄断资本主义为向社会主义过渡准备了条件</li>
+<li class="correct">资本主义生产关系的调整促进了生产力的发展</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>社会主义代替资本主义是一个 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">长期的历史过程</li>
+<li>隐蔽的历史过程</li>
+<li class="correct">曲折的历史过程</li>
+<li class="correct">复杂的历史过程</li>
+</ul>
+</li>
+</ol>
+<h2 id="第六章-社会主义社会及其发展"><a class="anchor" href="#第六章-社会主义社会及其发展">#</a> 第六章 社会主义社会及其发展</h2>
+<h3 id="一-单项选择题-7"><a class="anchor" href="#一-单项选择题-7">#</a> 一、单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>科学社会主义的直接理论来源是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>16、17 世纪的早期空想社会主义</li>
+<li class="correct">19 世纪初期以圣西门、傅立叶、欧文为代表的空想社会主义</li>
+<li>18 世纪的空想平均共产主义</li>
+<li>文艺复兴运动</li>
+</ul>
+</li>
+<li class="quiz">
+<p>科学社会主义创立的理论基础是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>英国古典政治经济学</li>
+<li>德国古典哲学</li>
+<li class="correct">唯物史观和剩余价值学说</li>
+<li>空想社会主义学说</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会主义由空想到科学的标志是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">《共产党宣言》的发表</li>
+<li>“共产主义者同盟” 的建立</li>
+<li>空想社会主义理想的破灭</li>
+<li>无产阶级革命的胜利</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会主义政治制度的基本特征是坚持 <span class="gap"></span>。</p>
+<ul class="options">
+<li>马克思主义的指导</li>
+<li>共产党的领导</li>
+<li class="correct">无产阶级专政</li>
+<li>社会主义方向</li>
+</ul>
+</li>
+<li class="quiz">
+<p>建设社会主义的根本目的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">消灭剥削、消除两极分化，最终达到共同富裕</li>
+<li>实行无产阶级专政</li>
+<li>巩固共产党的领导</li>
+<li>镇压资产阶级的反抗</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“民主社会主义” 实质上是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>发达国家的社会主义</li>
+<li class="correct">改良的资本主义</li>
+<li>科学社会主义中的一种</li>
+<li>社会主义的最佳模式</li>
+</ul>
+</li>
+<li class="quiz">
+<p>无产阶级政党的组织原则是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">民主集中制</li>
+<li>理论联系实际</li>
+<li>实事求是</li>
+<li>集体领导</li>
+</ul>
+</li>
+<li class="quiz">
+<p>无产阶级夺取国家政权的最终目的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>改变无产阶级受剥削、受压迫的地位</li>
+<li>实现共产主义</li>
+<li class="correct">解放和促进社会生产力的发展</li>
+<li>彻底打碎资产阶级国家的机器</li>
+</ul>
+</li>
+<li class="quiz">
+<p>列宁提出社会主义可能在一国或数国首先取得胜利观点的依据是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>无产阶级是最先进、最革命的阶级的原理</li>
+<li class="correct">帝国主义时代资本主义政治经济发展不平衡的规律</li>
+<li>资本主义国家无产阶级与资产阶级斗争的规律</li>
+<li>资本主义必然灭亡、社会主义必然胜利的规律</li>
+</ul>
+</li>
+<li class="quiz">
+<p>下列观点中，错误的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>国际共产主义运动当今正处在低潮时期</li>
+<li>社会主义必然取代资本主义</li>
+<li>社会主义取代资本主义是一个长期的曲折的过程</li>
+<li class="correct">社会主义在若干国家的严重挫折改变了资本主义必然灭亡的命运</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义必然被社会主义所代替的主要依据是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>现代无产阶级日益壮大和觉醒</li>
+<li>个别企业有组织的生产与整个社会生产无政府状态之间的矛盾</li>
+<li>无产阶级与资产阶级斗争的尖锐化</li>
+<li class="correct">生产的社会化与资本主义私人占有制之间的矛盾</li>
+</ul>
+</li>
+<li class="quiz">
+<p>无产阶级革命之所以能取得胜利，其根本保证是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">无产阶级政党的正确领导</li>
+<li>取得国家政权</li>
+<li>人民群众的革命积极性的极大提高</li>
+<li>建立革命统一战线</li>
+</ul>
+</li>
+<li class="quiz">
+<p>无产阶级革命的根本问题是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>统一战线中的领导权问题</li>
+<li class="correct">国家政权问题</li>
+<li>武装斗争问题</li>
+<li>农民问题</li>
+</ul>
+</li>
+<li class="quiz">
+<p>无产阶级反对资产阶级的斗争中，最具决定意义的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>理论斗争</li>
+<li>议会斗争</li>
+<li>经济斗争</li>
+<li class="correct">政治斗争</li>
+</ul>
+</li>
+<li class="quiz">
+<p>实现社会主义的必要政治前提是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">建立无产阶级专政</li>
+<li>建立广泛的革命统一战线</li>
+<li>无产阶级的革命斗争</li>
+<li>无产阶级政党的领导</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思说：“暴力是每一个孕育着新社会的旧社会的助产婆”，这说明了 <span class="gap"></span>。</p>
+<ul class="options">
+<li>暴力革命是无产阶级革命的唯一形式</li>
+<li class="correct">暴力革命是无产阶级革命的主要的基本形式</li>
+<li>暴力革命与和平发展互相排斥</li>
+<li>暴力革命与和平发展可以相互取代</li>
+</ul>
+</li>
+<li class="quiz">
+<p>列宁对社会主义革命学说的重大贡献是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>提出了新经济政策</li>
+<li>提出了战时共产主义政策</li>
+<li class="correct">提出了社会主义革命将首先在一国或数国取得胜利的理论</li>
+<li>提出了利用国家资本主义过渡社会主义的理论</li>
+</ul>
+</li>
+<li class="quiz">
+<p>科学社会主义的核心内容是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">无产阶级专政和社会主义民主</li>
+<li>国家政权</li>
+<li>生产资料公有制</li>
+<li>唯物史观</li>
+</ul>
+</li>
+<li class="quiz">
+<p>无产阶级专政的实质，就是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">无产阶级作为统治阶级掌握国家政权</li>
+<li>要消灭剥削、消灭阶级，进入无阶级社会</li>
+<li>镇压敌对阶级的反抗和破坏活动</li>
+<li>领导和组织社会主义建设</li>
+</ul>
+</li>
+<li class="quiz">
+<p>经济文化相对落后的国家可以先于发达资本主义国家进入社会主义，其根本原因是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">革命的客观形势和条件所决定的</li>
+<li>经济文化相对落后的国家具有较高的精神文明</li>
+<li>它是以高度社会化的资本主义大生产作为社会主义革命的物质前提的</li>
+<li>社会主义生产关系可以在旧社会的内部孕育生长起来</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多项选择题-7"><a class="anchor" href="#二-多项选择题-7">#</a> 二、多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>空想社会主义者 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">对资本主义的弊病进行了深刻的揭露和猛烈的抨击</li>
+<li>揭示了资本主义灭亡的客观必然性</li>
+<li class="correct">对未来社会作出了天才的设想</li>
+<li>发现了变革社会的革命力量</li>
+<li class="correct">要求埋葬资本主义</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>社会主义社会的基本特征有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">消灭了剥削制度并建立起以公有制为主体的生产资料所有制体系</li>
+<li class="correct">实行按劳分配的原则</li>
+<li class="correct">大力发展社会主义市场经济</li>
+<li class="correct">在政治上实行无产阶级专政</li>
+<li>实行改革开放的政策</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>从资本主义社会向社会主义社会过渡必须具备的条件是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">有无产阶级政党的领导</li>
+<li class="correct">夺取了资产阶级的国家政权</li>
+<li class="correct">实行生产资料公有制</li>
+<li class="correct">建立无产阶级政权的政府</li>
+<li>生产力高度发达</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>人民民主专政实际上就是无产阶级专政，原因是它们的 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">领导力量是相同的</li>
+<li class="correct">阶级基础是相同的</li>
+<li class="correct">内容是相同的</li>
+<li class="correct">形式是相同的</li>
+<li class="correct">指导思想是相同的</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>无产阶级革命是不同于以往一切革命的最新类型的革命，因为 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">无产阶级革命是彻底消灭一切私有制的革命</li>
+<li class="correct">无产阶级革命是彻底消灭一切阶级和阶级统治的革命</li>
+<li class="correct">无产阶级革命是一个阶级推翻另一个阶级的革命</li>
+<li>无产阶级革命是不断前进的历史过程</li>
+<li>无产阶级革命是为所有人谋福利的运动</li>
+</ul>
+</li>
+</ol>
+<h2 id="第七章-共产主义是人类最崇高的社会理想"><a class="anchor" href="#第七章-共产主义是人类最崇高的社会理想">#</a> 第七章 共产主义是人类最崇高的社会理想</h2>
+<h3 id="一-单项选择题-8"><a class="anchor" href="#一-单项选择题-8">#</a> 一、单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>在下列观点中，正确的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>只有空想社会主义思想家预见了未来社会</li>
+<li class="correct">许多思想家都预见了未来社会</li>
+<li>只有唯心主义思想家预见了未来社会</li>
+<li>只有马克思列宁主义经典作家预见了未来社会</li>
+</ul>
+</li>
+<li class="quiz">
+<p>采用 “通过批判旧世界来发现新世界” 方法的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>空想社会主义者</li>
+<li class="correct">马克思主义</li>
+<li>唯物主义</li>
+<li>唯心主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“代替那存在着阶级和阶级对立的资产阶级旧社会的，将是这样一个联合体，在那里，每个人的自由发展是一切人的自由发展的条件”。这一段话出现在 <span class="gap"></span>中。</p>
+<ul class="options">
+<li>《资本论》</li>
+<li>《共产主义原理》</li>
+<li>《哥达纲领批判》</li>
+<li class="correct">《共产党宣言》</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“人的依赖性关系” 指 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">资本主义社会之前的人与人之间的关系</li>
+<li>资本主义社会之中的人与人之间的关系</li>
+<li>社会主义社会之前的人与人之间的关系</li>
+<li>共产主义社会之中的人与人之间的关系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“物的依赖性关系” 是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>资本主义社会以前的人与人之间的关系</li>
+<li class="correct">资本主义社会之中的人与人之间的关系</li>
+<li>社会主义社会之中的人与人之间的关系</li>
+<li>共产主义社会之中的人与人之间的关系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>实现了人的 “自由个性” 的发展，是 <span class="gap"></span>社会之中的人的生存状态。</p>
+<ul class="options">
+<li>资本主义社会以前</li>
+<li>资本主义社会之中</li>
+<li>社会主义社会之中</li>
+<li class="correct">共产主义社会之中</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“两个必然” 和 “两个决不会” 是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>相互矛盾的</li>
+<li>完全不同的两回事</li>
+<li class="correct">有着内在联系的</li>
+<li>内容和形式的关系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“必然王国” 和 “自由王国” 是 <span class="gap"></span>概念。</p>
+<ul class="options">
+<li>空间性</li>
+<li>物质性</li>
+<li class="correct">历史性</li>
+<li>时间性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在马克思主义看来，消灭 “三大差别” 的关键在于 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">消灭利益差别</li>
+<li>消灭城市和乡村的差别</li>
+<li>消灭脑力劳动和体力劳动的差别</li>
+<li>消灭工业与农业差别</li>
+</ul>
+</li>
+<li class="quiz">
+<p>实行 “各尽所能，按需分配” 分配方式是 <span class="gap"></span>社会。</p>
+<ul class="options">
+<li>原始社会</li>
+<li>阶级社会</li>
+<li>社会主义社会</li>
+<li class="correct">共产主义社会</li>
+</ul>
+</li>
+<li class="quiz">
+<p>共产主义社会的物质基础是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>比资本主义社会高的社会生产力</li>
+<li>与发达资本主义国家相同的社会生产力</li>
+<li class="correct">远远高于以往一切社会的高度发达的社会生产力</li>
+<li>高新技术发达的生产力</li>
+</ul>
+</li>
+<li class="quiz">
+<p>共产主义社会制度具有巨大优越性的根本保证是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>社会制度的和谐完善</li>
+<li class="correct">创造出前所未有的高水平的劳动生产率</li>
+<li>人的精神境界极大提高</li>
+<li>科学技术的不断进步</li>
+</ul>
+</li>
+<li class="quiz">
+<p>阶级消灭和国家消亡的实现是在 <span class="gap"></span>。</p>
+<ul class="options">
+<li>社会主义革命中</li>
+<li>社会主义初级阶段</li>
+<li>社会主义高级阶段</li>
+<li class="correct">共产主义社会</li>
+</ul>
+</li>
+<li class="quiz">
+<p>共产主义社会的本质因素是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>实现社会单一的公有制</li>
+<li>按需分配</li>
+<li class="correct">人的自由而全面发展</li>
+<li>劳动生产率的极大提高</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人的发展和社会发展之间的关系是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>前者体现了个人价值，后者体现了社会价值</li>
+<li>前者是个人的理想，后者是社会的目标</li>
+<li>前者和后者是彼此独立的历史发展过程</li>
+<li class="correct">前者和后者互为前提和基础</li>
+</ul>
+</li>
+<li class="quiz">
+<p>江泽民说：“忘记远大理想而只顾眼前，就会失去前进方向；离开现实工作而空谈远大理想，就会脱离实际。”“远大理想” 是指 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">共产主义远大理想</li>
+<li>建设中国特色社会主义共同理想</li>
+<li>个人对将来职业的向往与追求</li>
+<li>个人对美好生活的向往与追求</li>
+</ul>
+</li>
+<li class="quiz">
+<p>属于自由王国社会状态的是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">资本主义社会</li>
+<li>封建社会</li>
+<li>原始社会</li>
+<li>共产主义社会</li>
+</ul>
+</li>
+<li class="quiz">
+<p>自由王国是指人们 <span class="gap"></span>。</p>
+<ul class="options">
+<li>处于绝对自由的原始社会状态</li>
+<li>不再受自然规律和社会规律支配的状态</li>
+<li>允许自由竞争的资本主义状态</li>
+<li class="correct">摆脱了自然和社会关系的奴役，成为自己社会关系主人的状态</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会主义和共产主义都存在的经济关系是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">实行生产资料的社会公有制</li>
+<li>实行按劳分配原则</li>
+<li>实行按需分配原则</li>
+<li>实行商品经济、市场经济体制</li>
+</ul>
+</li>
+<li class="quiz">
+<p>共产主义社会的必经阶段和必由之路是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>社会主义革命和无产阶级专政</li>
+<li>向社会主义过渡时期</li>
+<li>社会主义初级阶段</li>
+<li class="correct">社会主义社会</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多项选择题-8"><a class="anchor" href="#二-多项选择题-8">#</a> 二、多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>其他思想家与马克思主义经典作家预见未来社会的方法区别在于 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">前者从抽象的理性原则出发，后者从客观规律出发</li>
+<li class="correct">前者侧重于描述未来社会的细节，后者侧重于揭示未来社会的一般特征</li>
+<li class="correct">前者凭空猜测无法知道的事情，后者是在批判旧世界中发现新世界</li>
+<li>前者是乐观主义的态度，后者是悲观主义的态度</li>
+<li>前者着眼于资产阶级的利益，后者着眼于无产阶级的利益</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思恩格斯认为，在共产主义社会中，将要消失的 “三大差别” 是 <span class="gap"></span>。</p>
+<ul class="options">
+<li>资产阶级和无产阶级的差别</li>
+<li class="correct">城市与乡村的差别</li>
+<li class="correct">工业与农业的差别</li>
+<li class="correct">脑力劳动与体力劳动的差别</li>
+<li>统治者与被统治者的差别</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>共产主义是能够实现的社会理想，其理论根据是 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">以资本主义社会基本矛盾的发展为依据的</li>
+<li class="correct">要靠社会主义的不断完善和发展来实现的</li>
+<li class="correct">以人类社会发展规律为依据的</li>
+<li class="correct">可以用社会主义运动的实践来证明的</li>
+<li>无产阶级反抗剥削的正义要求</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>人类解放含义的包括 <span class="gap"></span>。</p>
+<ul class="options">
+<li>人们获得绝对自由</li>
+<li>人类完全摆脱自然力和社会关系</li>
+<li class="correct">人从自然必然性奴役下解放出来</li>
+<li class="correct">人从社会必然性奴役下解放出来</li>
+<li>人们的任何设想都能实现</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>关于共产主义理想，正确的观点有 <span class="gap"></span>。</p>
+<ul class="options">
+<li class="correct">共产主义是能够实现的理论</li>
+<li>共产主义的实现是极其渺茫的</li>
+<li>在社会主义历史阶段不应树立共产主义理想</li>
+<li class="correct">共产主义理想的实现是一个漫长的历史过程</li>
+<li class="correct">社会主义是实现共产主义理想的必经阶段</li>
+</ul>
+</li>
+</ol>
+<h2 id="马克思主义基本原理概论试题库a一"><a class="anchor" href="#马克思主义基本原理概论试题库a一">#</a> 《马克思主义基本原理概论》试题库 (A) 一</h2>
+<h3 id="一-单项选择题-9"><a class="anchor" href="#一-单项选择题-9">#</a> 一、单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>马克思主义最鲜明的政治立场是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>辩证唯物主义</li>
+<li>历史唯物主义</li>
+<li class="correct">最广大人民的根本利益</li>
+<li>共产主义社会</li>
+</ul>
+</li>
+<li class="quiz">
+<p>认识世界和改造世界的根本方法是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">唯物辩证法</li>
+<li>矛盾分析法</li>
+<li>阶级分析法</li>
+<li>科学分析法</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会发展的根本动力是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">社会基本矛盾</li>
+<li>生产力的发展</li>
+<li>经济基础</li>
+<li>生产关系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>事物发展的根本规律是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>自然规律</li>
+<li>社会规律</li>
+<li>普遍规律</li>
+<li class="correct">对立统一规律</li>
+</ul>
+</li>
+<li class="quiz">
+<p>下列说法是错误的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">使用价值是商品的社会属性，价值是商品的自然属性</li>
+<li>私人劳动和社会劳动的矛盾，是商品经济的其他一切矛盾的基础</li>
+<li>商品经济是以交换为目的的经济形式，交换体现了商品经济的本质</li>
+<li>商品的交换是以货币为媒介的</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义发展的初期，在所有制形式中占主导地位的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>私人股份资本所有制</li>
+<li class="correct">个体资本所有制</li>
+<li>法人资本所有制</li>
+<li>国家资本所有制</li>
+</ul>
+</li>
+<li class="quiz">
+<p>剩余价值是由 <span class="gap"></span> 创造的。</p>
+<ul class="options">
+<li>全部资本</li>
+<li>不变资本</li>
+<li class="correct">可变资本</li>
+<li>部分资本</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本主义生产方式的绝对规律是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>物质资料</li>
+<li>私有制</li>
+<li class="correct">生产剩余价值</li>
+<li>劳动力买卖</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会历史存在和发展的前提是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">现实的人及其活动</li>
+<li>生产力的发展</li>
+<li>经济基础</li>
+<li>阶级基础</li>
+</ul>
+</li>
+<li class="quiz">
+<p>下列说法是错误的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>马克思主义政党是为人民群众谋利益的党</li>
+<li class="correct">马克思主义政党是以无产阶级为基础的</li>
+<li>马克思主义政党是按照民主集中原则组织起来的团结统一的党</li>
+<li>马克思主义政党是社会主义革命的领导核心</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人类社会进步的新型国家政权是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>资产阶级专政</li>
+<li>工人阶级专政</li>
+<li>农民阶级专政</li>
+<li class="correct">无产阶级专政</li>
+</ul>
+</li>
+<li class="quiz">
+<p>无产阶级解放斗争的最终目标是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>实现民主专政</li>
+<li>实现工人阶级专政</li>
+<li>实现社会主义</li>
+<li class="correct">实现共产主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>迄今是人类历史上最广泛、最彻底、最深刻的革命是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>资产阶级革命</li>
+<li class="correct">无产阶级革命</li>
+<li>农民阶级革命</li>
+<li>工人阶级革命</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人类能动地改造客观世界的物质活动是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">实践</li>
+<li>斗争</li>
+<li>生产</li>
+<li>认识</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在整个上层建筑中，居主导地位的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">政治上层建筑</li>
+<li>经济上层建筑</li>
+<li>文化上层建筑</li>
+<li>精神上层建筑</li>
+</ul>
+</li>
+<li class="quiz">
+<p>阶级对立社会发展的直接动力是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>生产力</li>
+<li>生产关系</li>
+<li class="correct">阶级斗争</li>
+<li>经济发展</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在必要劳动时间不变的条件下，由于延长工作日的长度而生产的剩余价值是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>相对剩余价值</li>
+<li class="correct">绝对剩余价值</li>
+<li>超额剩余价值</li>
+<li>劳动剩余价值</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人类社会最高类型的民主是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>资本主义民主</li>
+<li>共产主义民主</li>
+<li>人民民主</li>
+<li class="correct">社会主义民主</li>
+</ul>
+</li>
+<li class="quiz">
+<p>生产资料、劳动力和商品的生产日益集中于少数大企业的过程，其结果是大企业所占的比重不断增加的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>资本集中</li>
+<li class="correct">生产集中</li>
+<li>企业集中</li>
+<li>经济集中</li>
+</ul>
+</li>
+<li class="quiz">
+<p>思维与存在的关系问题是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>唯心主义哲学的基本问题</li>
+<li class="correct">唯物主义哲学的基本问题</li>
+<li>全部哲学的基本问题</li>
+<li>一部分哲学的基本问题</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多项选择题-9"><a class="anchor" href="#二-多项选择题-9">#</a> 二、多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>人类从自然界分化出来并产生人类意识以来，世界上的万事万物归结起来无非是哪两类现象 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">物质现象</li>
+<li>自然现象</li>
+<li>生活现象</li>
+<li class="correct">精神现象</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>事物是普遍联系起来的，联系的特点是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">客观性</li>
+<li class="correct">普遍性</li>
+<li class="correct">多样性</li>
+<li>同一性</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下列说法是正确的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>认识是实践的基础</li>
+<li class="correct">实践是检验真理的唯一标准</li>
+<li class="correct">人们的历史选择性，归根结底是人民群众的选择性</li>
+<li class="correct">生产力是社会进步的根本内容，是衡量社会进步的根本尺度</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>劳动力的价值包括 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">维持劳动者本人生存所必需的生活资料的价值</li>
+<li class="correct">为维持劳动者家属的生存所必需的生活资料的价值</li>
+<li class="correct">劳动者接受教育和训练所支出的费用</li>
+<li>劳动者及其家属精神享受所支出的费用</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>苏联模式的弊端主要是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">集中过多</li>
+<li class="correct">管得过死</li>
+<li class="correct">否定市场的作用</li>
+<li class="correct">严重束缚企业和劳动者的积极性</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>经济全球化的表现 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产的全球化</li>
+<li class="correct">贸易的全球化</li>
+<li class="correct">金融的全球化</li>
+<li class="correct">企业经营的全球化</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>无产阶级专政的最终目标是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">消灭剥削、消灭阶级</li>
+<li class="correct">进到无产阶级社会</li>
+<li>达到共同富裕</li>
+<li>生产力高度发达</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>在国家垄断资本主义中，国家所有并直接经营的企业包括 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">满足国家机构自身需要的国有企业</li>
+<li class="correct">提供公共产品的国有企业</li>
+<li class="correct">高科技、高风险新兴工业部门中的国有企业</li>
+<li class="correct">一般工业部门中的国有企业</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断条件下竞争的特点是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>垄断是有限制的</li>
+<li class="correct">垄断没有消除产生竞争的经济条件</li>
+<li class="correct">垄断必须通过竞争来维持</li>
+<li class="correct">社会生产是复杂多样的，任何垄断组织都不可能把包罗万象的社会生产都包下来</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>对有关无产阶级的说法正确的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">在阶级上，它是对少数剥削者和反人民的敌对势力实行专政，对无产阶级和广大劳动人民实行民主</li>
+<li class="correct">它是以工农联盟为阶级基础的国家政权</li>
+<li class="correct">无产阶级专政的国家形式具有多样性</li>
+<li class="correct">它是工人阶级通过共产党领导的国家政权</li>
+</ul>
+</li>
+</ol>
+<h2 id="马克思主义基本原理概论试题库a二"><a class="anchor" href="#马克思主义基本原理概论试题库a二">#</a> 《马克思主义基本原理概论》试题库 (A) 二</h2>
+<h3 id="一-单项选择题-10"><a class="anchor" href="#一-单项选择题-10">#</a> 一、单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>所谓意识是 “客观存在的主观映象 " 是指 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>意识是客观精神和主观感觉的产物</li>
+<li>意识是沟通主、客观的桥梁</li>
+<li>意识的形式是客观的、而内容是主观的</li>
+<li class="correct">意识的形式是主观的、而内容是客观的</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会历史观的基本问题是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>生产力和生产关系的问题</li>
+<li>社会规律和主观意识的关系问题</li>
+<li class="correct">社会存在和社会意识的关系问题</li>
+<li>自然和社会的关系问题</li>
+</ul>
+</li>
+<li class="quiz">
+<p>任何科学理论都不能穷尽真理，而只能在实践中开辟认识真理的道路，这说明： <span class="gap"></span> 。</p>
+<ul class="options">
+<li>真理具有客观性</li>
+<li>真理具有绝对性</li>
+<li class="correct">真理具有相对性</li>
+<li>真理具有全面性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>中国古代庄子说：“方生方死，方死方生，方可方不可，方不可方可。” 这是一种 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">抹煞事物质的稳定性的相对主义观点</li>
+<li>折衷主义观点</li>
+<li>形而上学观点</li>
+<li>绝对主义的观点</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义哲学的对象是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>人类社会历史</li>
+<li class="correct">整个物质世界</li>
+<li>物质自然界和人类社会</li>
+<li>自然、社会、思维发展的最一般规律</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人类全部社会关系中最基础的关系是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产关系</li>
+<li>血缘关系</li>
+<li>宗教关系</li>
+<li>政治关系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>形成商品价值量的劳动是以 <span class="gap"></span> 为尺度。</p>
+<ul class="options">
+<li>简单劳动</li>
+<li>复杂劳动</li>
+<li>私人劳动</li>
+<li class="correct">社会劳动</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资本流通的目的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>获取使用价值</li>
+<li>发展社会经济</li>
+<li>获取消费资料</li>
+<li class="correct">实现价值增值</li>
+</ul>
+</li>
+<li class="quiz">
+<p>任何社会进行物质生产所必备的物质条件是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>劳动</li>
+<li>劳动对象</li>
+<li>劳动资料</li>
+<li class="correct">生产资料</li>
+</ul>
+</li>
+<li class="quiz">
+<p>下列选项中正确说明运动和物质关系的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>物质是运动的原因</li>
+<li>物质是运动的本质</li>
+<li>运动是物质的内在根据</li>
+<li class="correct">运动是物质的根本属性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>下列活动中，属于最基本实践活动的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">农民播种小麦</li>
+<li>法官审理案</li>
+<li>运动员参加比赛</li>
+<li>演员进行表演</li>
+</ul>
+</li>
+<li class="quiz">
+<p>既承认社会形态发展的客观规律性又承认人的活动的作用的观点，属于 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">历史唯物主义观点</li>
+<li>相对主义观点</li>
+<li>诡辩论观点</li>
+<li>折衷主义观点</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人的社会价值主要是指 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>人的社会地位和威信</li>
+<li>人的社会职务和权力</li>
+<li>人的文化水平和能力</li>
+<li class="correct">人对社会所作的贡献</li>
+</ul>
+</li>
+<li class="quiz">
+<p>一切真知都发源于 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">直接经验</li>
+<li>间接经验</li>
+<li>客观事物</li>
+<li>人的意识</li>
+</ul>
+</li>
+<li class="quiz">
+<p>区分各种经济时代的客观物质标志是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>科学技术的进步</li>
+<li>社会财富的多寡</li>
+<li>生产方式的性质</li>
+<li class="correct">生产工具的进步</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在资本主义制度下，资本家与劳动者之间的关系是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>平等互利的关系</li>
+<li class="correct">资本雇佣劳动的关系</li>
+<li>劳动雇佣资本的关系</li>
+<li>互利互惠的关系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“机不可失，时不再来” 指的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>时间的顺序性</li>
+<li class="correct">时间的不可逆性</li>
+<li>时间的相对性</li>
+<li>时间的间断性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>我国古代有人提出 “白马非马”、“杀盗非杀人”，这些说法的错误在于割裂了 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>矛盾的同一性和斗争性的联系</li>
+<li class="correct">矛盾的特殊性和普遍性的联系</li>
+<li>矛盾的主要方面和次要方面的联系</li>
+<li>主要矛盾和次要矛盾的联系</li>
+</ul>
+</li>
+<li class="quiz">
+<p>物质资料的生产方式包括 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>劳动者和劳动工具两个方面</li>
+<li>劳动资料和劳动对象两个方面</li>
+<li class="correct">生产力和生产关系两个方面</li>
+<li>劳动者和生产资料两个方面</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人的社会价值主要是指 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>人的社会地位和威信</li>
+<li>人的社会职务和权力</li>
+<li>人的文化水平和能力</li>
+<li class="correct">人对社会所作的贡献</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多项选择题-10"><a class="anchor" href="#二-多项选择题-10">#</a> 二、多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>列宁物质定义的理论意义是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">坚持了物质的客观实在性原则，坚持了唯物注意一元论，同唯心主义一元论和二元论划清了界限</li>
+<li class="correct">坚持了能动反映论和可知论，有力地批判了不可知论</li>
+<li class="correct">体现了唯物论和辩证法的统一</li>
+<li class="correct">体现了唯物主义自然观与唯物主义历史观的统一，为彻底唯物主义奠定了理论基础</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>实践具有基本特征是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">物质性</li>
+<li class="correct">自觉性</li>
+<li class="correct">社会历史性</li>
+<li>客观性</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>联系的特性是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">客观性</li>
+<li class="correct">普遍性</li>
+<li class="correct">多样性</li>
+<li>物质性</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下列说法正确的有 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">社会存在和社会意识是辩证统一的</li>
+<li class="correct">社会存在决定社会意识</li>
+<li class="correct">社会意识是社会存在的反映</li>
+<li class="correct">社会意识反作用于社会存在</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>生产力的要素包括 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>劳动力</li>
+<li class="correct">脑动资料</li>
+<li class="correct">劳动对象</li>
+<li class="correct">劳动者</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下列是经济全球化的表现有 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产的全球化</li>
+<li class="correct">贸易的全球化</li>
+<li class="correct">金融的全球化</li>
+<li class="correct">企业经营的全球化</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下面的说法正确的有 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">马克思主义政党是科学社会主义与工人运动相结合的产物</li>
+<li class="correct">马克思主义政党是工人阶级的先锋队</li>
+<li>马克思主义政党是为阶级谋取利益的党</li>
+<li class="correct">马克思主义政党是按照民主集中制原则组织起来的团结统一的党</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下列是社会主义发展道路多样性的原因有 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">各国的生产力发展状况和社会发展阶段不同</li>
+<li class="correct">历史文化传统的差异</li>
+<li class="correct">时代和实践的不断发展</li>
+<li class="correct">政党自身发展的不同</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下列属于垄断资本向世界范围扩展的基本形式的有 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">借贷资本输出</li>
+<li class="correct">生产资本输出</li>
+<li class="correct">商品资本的输出</li>
+<li>外贸资本的输出</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>社会的物质性主要表现在 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">人类社会依赖于自然，是整个物质世界的组成部分</li>
+<li class="correct">人们谋取物质生活资料的实践活动虽然有意识作指导，但仍然是以物质力量改造物质力量的活动，仍然是物质性活动</li>
+<li class="correct">物质资料的生产方式是人类社会存在和发展的基础，集中体现着人类社会的物质性</li>
+<li>人类活动都依赖于自然</li>
+</ul>
+</li>
+</ol>
+<h2 id="马克思主义基本原理概论试题库a三"><a class="anchor" href="#马克思主义基本原理概论试题库a三">#</a> 《马克思主义基本原理概论》试题库 (A) 三</h2>
+<h3 id="一单项选择题"><a class="anchor" href="#一单项选择题">#</a> 一．单项选择题</h3>
+<ol>
+<li class="quiz">
+<p>思维与存在的关系问题是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>唯心主义哲学的基本问题</li>
+<li>唯物主义哲学的基本问题</li>
+<li class="correct">全部哲学的基本问题</li>
+<li>一部分哲学的基本问题</li>
+</ul>
+</li>
+<li class="quiz">
+<p>列宁的物质定义揭示物质的唯一特性是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">运动</li>
+<li>物质可以认识</li>
+<li>物质能为感官感知</li>
+<li>客观实在性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>就意识的能动性而言，“人的意识不仅反映客观世界，而且创造客观世界 "，这种观点 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>夸大了意识的作用</li>
+<li>是唯意志主义的一种表现</li>
+<li class="correct">是对意识能动作用的一种正确的揭示</li>
+<li>是唯心主义哲学的一种表现</li>
+</ul>
+</li>
+<li class="quiz">
+<p>发展的实质是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>前进性和曲折性的统一</li>
+<li>量变和质变的相互转化</li>
+<li>运动和静止的相对统一</li>
+<li class="correct">新事物的产生和旧事物的灭亡</li>
+</ul>
+</li>
+<li class="quiz">
+<p>人们先设计图纸，然后根据图纸施工建成大楼，这说明 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>意识决定物质</li>
+<li>意识创造物质</li>
+<li class="correct">意识对物质有能动作用</li>
+<li>意识依赖于物质</li>
+</ul>
+</li>
+<li class="quiz">
+<p>狭义的马克思主义是指 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>马克思创立的学说</li>
+<li>马克思恩格斯时代的学说</li>
+<li class="correct">马克思恩格斯创立的无产阶级思想的科学体系</li>
+<li>正在实践中发展着的马克思主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>广义的马克思主义是指 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>马克思恩格斯时代的学说</li>
+<li>马克思恩格斯时代创立的学说</li>
+<li>马克思恩格斯创立的无产阶级思想的科学体系</li>
+<li class="correct">由马克思恩格斯创立并由其继承者发展着的马克思主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义产生的经济、社会历史条件是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>科学技术的发展</li>
+<li class="correct">资本主义经济的发展</li>
+<li>无产阶级反对资产阶级斗争日益激化</li>
+<li>工人阶级登上历史舞台</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义产生的阶级基础是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>科学技术的发展</li>
+<li>资本主义经济的发展</li>
+<li class="correct">无产阶级反对资产阶级斗争日益激化</li>
+<li>机器大工业生产的发展</li>
+</ul>
+</li>
+<li class="quiz">
+<p>德国古典哲学最有代表性的人物是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">黑格尔和费尔巴哈</li>
+<li>康德和黑格尔</li>
+<li>康德和费尔巴哈</li>
+<li>谢林和费希特</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义的创立在思想和文化方面主要批判地继承、吸收了那些学说的理合思想 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>英国古典哲学、英国古典政治经济学和法国、德国的空想社会主义</li>
+<li>德国古典哲学、法国古典政治经济学和法国、英国的空想社会主义</li>
+<li class="correct">德国古典哲学、英国古典政治经济学和法国、英国的空想社会主义</li>
+<li>法国古典哲学、德国古典政治经济学和法国、英国的空想社会主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思恩格斯批判地继承了前人的思想文化优秀成果，创立了历史唯物主义和剩余价值学说，从而实现了人类思想史上的 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>伟大发展</li>
+<li class="correct">伟大革命</li>
+<li>伟大发现</li>
+<li>伟大发明</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义最鲜明的政治立场是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>致力于实现以共产党人为主体的最广大人民群众的根本利益</li>
+<li>致力于实现以共产党人为主体的最广大劳动群众的根本利益</li>
+<li class="correct">致力于实现以劳动人民为主体的最广大人民群众的根本利益</li>
+<li>致力于实现以劳动人民为主体的所有现实的人们的根本利益</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义最根本的世界观和方法论是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>实事求是，理论联系实际</li>
+<li class="correct">辩证唯物主义和历史唯物主义</li>
+<li>从实际出发，实事求是</li>
+<li>唯物主义和辩证法</li>
+</ul>
+</li>
+<li class="quiz">
+<p>坚持一切从实际出发，理论联系实际，实事求是，在实践中检验和发展真理。这是马克思主义 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">最重要的理论品质</li>
+<li>最崇高的社会理想</li>
+<li>最鲜明的政治立场</li>
+<li>最根本的世界观和方法论</li>
+</ul>
+</li>
+<li class="quiz">
+<p>实现物质财富极大丰富、人民精神境界极大提高、每个人自由而全面发展的共产主义社会，这是马克思主义 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>最伟大最崇高的理想</li>
+<li>最伟大最崇高的实践</li>
+<li>最崇高的社会实践</li>
+<li class="correct">最崇高的社会理想</li>
+</ul>
+</li>
+<li class="quiz">
+<p>学习马克思主义基本原理的根本方法是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">理论联系实际</li>
+<li>理论联系工作</li>
+<li>理论联系学习</li>
+<li>理论联系思想</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“拔苗助长” 的事例是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>重视可能性的表现</li>
+<li class="correct">忽视可能性的表现</li>
+<li>违反事物发展规律的表现</li>
+<li>发挥主观能动性的表现</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“一把钥匙开一把锁”，这句话在哲学上讲 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>矛盾的普遍性</li>
+<li>矛盾的斗争性</li>
+<li class="correct">矛盾的特殊性</li>
+<li>矛盾的同一性</li>
+</ul>
+</li>
+<li class="quiz">
+<p>资产阶级古典政治经济学的代表人物是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>威廉・配第和亚当・斯密</li>
+<li class="correct">亚当・斯密和大卫・李嘉图</li>
+<li>大卫・李嘉图和西斯蒙第</li>
+<li>亚当・斯密和凯恩斯</li>
+</ul>
+</li>
+</ol>
+<h3 id="二多项选择题"><a class="anchor" href="#二多项选择题">#</a> 二．多项选择题</h3>
+<ol>
+<li class="quiz multi">
+<p>马克思主义最重要的理论品质 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">坚持一切从实际出发</li>
+<li class="correct">理论联系实际</li>
+<li class="correct">实事求是</li>
+<li class="correct">在实践中检验真理</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>经济全球化的表现 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生产的全球化</li>
+<li class="correct">贸易的全球化</li>
+<li class="correct">金融的全球化</li>
+<li class="correct">企业经营的全球化</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思主义最根本的世界观和方法论 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">辩证唯物主义</li>
+<li class="correct">历史唯物主义</li>
+<li>自由主义</li>
+<li>社会主义学</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>事物的普遍联系。联系具有一系列特点 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">联系具有客观性</li>
+<li class="correct">联系具有普遍性</li>
+<li class="correct">联系具有多样性</li>
+<li>联系具有偶然性</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>经济全球化的动因 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">科学技术的进步和生产力的发展</li>
+<li class="correct">跨国公司的发展</li>
+<li class="correct">各国经济体制的变革</li>
+<li>各国政治的发展</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>社会主义基本特征 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">解放和发展生产力，创造高度发达的生产力和比资本主义更高的劳动生产率</li>
+<li class="correct">对个人消费品实行 “各尽其能、按劳分配” 制度</li>
+<li class="correct">以人为本、构建和谐社会</li>
+<li class="correct">以马克思主义为指导，大力发展社会主义文化，建设社会主义精神文明</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>马克思主义政党的产生条件 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">工人运动的发展</li>
+<li class="correct">科学社会主义理论的传播</li>
+<li>资本主义经济的发展</li>
+<li>民主政治的繁荣</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>垄断条件下竞争的特点 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">垄断没有消除产生竞争的经济条件</li>
+<li class="correct">垄断必须通过竞争来维持</li>
+<li class="correct">垄断组织不可能把包罗万象的社会生产都包下来</li>
+<li>垄断组织之间的激烈竞争</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>社会主义在自我发展和完善中走向辉煌，那社会主义要如何改革 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">要坚持改革的正确方向</li>
+<li class="correct">要选择正确的改革方式和步骤</li>
+<li class="correct">要妥善处理改革、发展和稳定的关系</li>
+<li>要解放生产力、发展生产力</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>为什么说马克思主义政党是新型的革命政党 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">马克思主义政党是科学社会主义与工人运动相结合的产物</li>
+<li class="correct">马克思主义政党是工人阶级的先锋队</li>
+<li class="correct">马克思主义政党是为实现共产主义而奋斗的党</li>
+<li class="correct">马克思主义政党是为人民群众谋利益的党</li>
+</ul>
+</li>
+</ol>
+<div class="tags"><a href="/tags/learning/" rel="tag"><i class="ic i-tag"></i>learning</a><a href="/tags/trash/" rel="tag"><i class="ic i-tag"></i>trash</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于</span><time title="修改时间：2024-06-30 13:27:10" itemprop="dateModified" datetime="2024-06-30T13:27:10+08:00">2024-06-30</time></span></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>Ivan Snow<i class="ic i-at"><em>@</em></i>Snow's Blog</li><li class="link"><strong>本文链接：</strong><a href="https://blog.ivansnow02.xyz/MarxistPhilosophy/" title="马原题目">https://blog.ivansnow02.xyz/MarxistPhilosophy/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/sql-lab/" rel="prev" itemprop="url" data-background-image="/sql-lab/mysql.png" title="SQL代码复习"><span class="type">上一篇</span><span class="category"><i class="ic i-flag"></i>computer science</span><h3>SQL代码复习</h3></a></div><div class="item right"><a href="/Mao/" rel="next" itemprop="url" data-background-image="/Mao/18152E099E6EA8DAB64C52F23BB3ABD2.webp" title="毛概题目"><span class="type">下一篇</span><span class="category"><i class="ic i-flag"></i>trash</span><h3>毛概题目</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%AA%E8%AE%BA-%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E6%98%AF%E5%85%B3%E4%BA%8E%E6%97%A0%E4%BA%A7%E9%98%B6%E7%BA%A7%E5%92%8C%E4%BA%BA%E7%B1%BB%E8%A7%A3%E6%94%BE%E7%9A%84%E7%A7%91%E5%AD%A6"><span class="toc-number">1.</span> <span class="toc-text"> 绪论  马克思主义是关于无产阶级和人类解放的科学</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text"> 一、单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">1.2.</span> <span class="toc-text"> 二、多项选择题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E4%B8%96%E7%95%8C%E7%9A%84%E7%89%A9%E8%B4%A8%E6%80%A7%E5%8F%8A%E5%85%B6%E5%8F%91%E5%B1%95%E8%A7%84%E5%BE%8B"><span class="toc-number">2.</span> <span class="toc-text"> 第一章 世界的物质性及其发展规律</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-2"><span class="toc-number">2.1.</span> <span class="toc-text"> 一、单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-2"><span class="toc-number">2.2.</span> <span class="toc-text"> 二、多项选择题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%E8%AE%A4%E8%AF%86%E4%B8%96%E7%95%8C%E5%92%8C%E6%94%B9%E9%80%A0%E4%B8%96%E7%95%8C"><span class="toc-number">3.</span> <span class="toc-text"> 第二章认识世界和改造世界</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-3"><span class="toc-number">3.1.</span> <span class="toc-text"> 一、单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-3"><span class="toc-number">3.2.</span> <span class="toc-text"> 二、多项选择题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%E4%BA%BA%E7%B1%BB%E7%A4%BE%E4%BC%9A%E5%8F%8A%E5%85%B6%E5%8F%91%E5%B1%95%E8%A7%84%E5%BE%8B"><span class="toc-number">4.</span> <span class="toc-text"> 第三章人类社会及其发展规律</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-4"><span class="toc-number">4.1.</span> <span class="toc-text"> 一、单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-4"><span class="toc-number">4.2.</span> <span class="toc-text"> 二、多项选择题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E7%9A%84%E5%BD%A2%E6%88%90%E5%8F%8A%E5%85%B6%E6%9C%AC%E8%B4%A8"><span class="toc-number">5.</span> <span class="toc-text"> 第四章 资本主义的形成及其本质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-5"><span class="toc-number">5.1.</span> <span class="toc-text"> 一、单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-5"><span class="toc-number">5.2.</span> <span class="toc-text"> 二、多项选择题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E5%8F%91%E5%B1%95%E7%9A%84%E5%8E%86%E5%8F%B2%E8%BF%9B%E7%A8%8B"><span class="toc-number">6.</span> <span class="toc-text"> 第五章 资本主义发展的历史进程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-6"><span class="toc-number">6.1.</span> <span class="toc-text"> 一、单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-6"><span class="toc-number">6.2.</span> <span class="toc-text"> 二、多项选择题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E7%A4%BE%E4%BC%9A%E5%8F%8A%E5%85%B6%E5%8F%91%E5%B1%95"><span class="toc-number">7.</span> <span class="toc-text"> 第六章 社会主义社会及其发展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-7"><span class="toc-number">7.1.</span> <span class="toc-text"> 一、单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-7"><span class="toc-number">7.2.</span> <span class="toc-text"> 二、多项选择题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E6%98%AF%E4%BA%BA%E7%B1%BB%E6%9C%80%E5%B4%87%E9%AB%98%E7%9A%84%E7%A4%BE%E4%BC%9A%E7%90%86%E6%83%B3"><span class="toc-number">8.</span> <span class="toc-text"> 第七章 共产主义是人类最崇高的社会理想</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-8"><span class="toc-number">8.1.</span> <span class="toc-text"> 一、单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-8"><span class="toc-number">8.2.</span> <span class="toc-text"> 二、多项选择题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA%E8%AF%95%E9%A2%98%E5%BA%93a%E4%B8%80"><span class="toc-number">9.</span> <span class="toc-text"> 《马克思主义基本原理概论》试题库 (A) 一</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-9"><span class="toc-number">9.1.</span> <span class="toc-text"> 一、单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-9"><span class="toc-number">9.2.</span> <span class="toc-text"> 二、多项选择题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA%E8%AF%95%E9%A2%98%E5%BA%93a%E4%BA%8C"><span class="toc-number">10.</span> <span class="toc-text"> 《马克思主义基本原理概论》试题库 (A) 二</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-10"><span class="toc-number">10.1.</span> <span class="toc-text"> 一、单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98-10"><span class="toc-number">10.2.</span> <span class="toc-text"> 二、多项选择题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA%E8%AF%95%E9%A2%98%E5%BA%93a%E4%B8%89"><span class="toc-number">11.</span> <span class="toc-text"> 《马克思主义基本原理概论》试题库 (A) 三</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E5%8D%95%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">11.1.</span> <span class="toc-text"> 一．单项选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">11.2.</span> <span class="toc-text"> 二．多项选择题</span></a></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li><a href="/XJP/" rel="bookmark" title="习近平新时代中国特色社会主义思想概论">习近平新时代中国特色社会主义思想概论</a></li><li><a href="/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%8D%E4%B9%A0/" rel="bookmark" title="习近平复习">习近平复习</a></li><li><a href="/%E6%80%9D%E6%94%BF%E5%A4%8D%E4%B9%A0/" rel="bookmark" title="思政复习">思政复习</a></li><li class="active"><a href="/MarxistPhilosophy/" rel="bookmark" title="马原题目">马原题目</a></li><li><a href="/Mao/" rel="bookmark" title="毛概题目">毛概题目</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="Ivan Snow" src="/img/avatar.webp"><p class="name" itemprop="name">Ivan Snow</p><div class="description" itemprop="description">some notes about computer science</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">38</span><span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">11</span><span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">20</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/ivansnow02" class="item github" title="https://github.com/ivansnow02"><i class="ic i-github"></i></a><a href="mailto:eone2017@protonmail.com" class="item email" title="mailto:eone2017@protonmail.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-user"></i>关于</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于本站</a></li></ul></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/links/" rel="section"><i class="ic i-heart"></i>友链</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/Mao/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/sql-lab/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/Redis/" title="分类于Redis">Redis</a></div><span><a href="/Redis-Learning-01-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">Redis的数据类型</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/computer-science/" title="分类于computer science">computer science</a></div><span><a href="/ai-fundamental/">人工智能基础</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/computer-science/" title="分类于computer science">computer science</a></div><span><a href="/sql-lab/">SQL代码复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/">哈夫曼树叶子结点的路径长度与权值的乘积之和</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/DataStructureNote/">数据结构理论复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/trash/" title="分类于trash">trash</a></div><span><a href="/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%8D%E4%B9%A0/">习近平复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/computer-science/" title="分类于computer science">computer science</a></div><span><a href="/computer-organization/">计算机组成原理复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Algorithms-Part-I/" title="分类于Algorithms, Part I">Algorithms, Part I</a></div><span><a href="/Union-Find/">并查集</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Physics/" title="分类于Physics">Physics</a></div><span><a href="/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/">物理复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/DataStructureTest01/">数据结构题目01</a></span></li></ul></div></div><div class="status"><div class="copyright">© 2023 -<span itemprop="copyrightYear">2024</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">Ivan Snow @ Code Blog</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">476k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">7:13</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> &amp; Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config="" type="text/javascript">var LOCAL = {
+    ispost: true,
+        path: `MarxistPhilosophy/`,
+        favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/pace/1.2.4/pace.min.js" async=""></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&amp;features=default,fetch" defer=""></script><script src="/js/siteInit.js?v=0.4.5" type="module" fetchpriority="high" defer=""></script><script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.2/libs/oversea/index.js"></script></body></html>
