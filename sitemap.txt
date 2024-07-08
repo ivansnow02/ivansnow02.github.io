@@ -1,5 +1,5 @@
-https://blog.ivansnow02.xyz/ai-fundamental/
 https://blog.ivansnow02.xyz/computer-network/
+https://blog.ivansnow02.xyz/ai-fundamental/
 https://blog.ivansnow02.xyz/XJP/
 https://blog.ivansnow02.xyz/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/
 https://blog.ivansnow02.xyz/Union-Find/
@@ -70,6 +70,5 @@ https://blog.ivansnow02.xyz/categories/test/
 https://blog.ivansnow02.xyz/categories/English/
 https://blog.ivansnow02.xyz/categories/Algorithms-Part-I/
 https://blog.ivansnow02.xyz/categories/coding/
-https://blog.ivansnow02.xyz/categories/computer-science/
 https://blog.ivansnow02.xyz/categories/Math/
 https://blog.ivansnow02.xyz/categories/Physics/
