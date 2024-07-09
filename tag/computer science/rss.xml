@@ -1740,7 +1740,7 @@ bit/s（bps）是&lt;strong&gt;信息传输速率&lt;/strong&gt;的单位&lt;br 
 &lt;p&gt;在接收端对收到的每一帧经过 CRC 检验后，有以下两种情况:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;若得出的余数 R=O, 则判定这个帧没有差错，就接受 (accept)。&lt;/li&gt;
-&lt;li&gt;若余数 R # O, 则判定这个帧有差错 (但无法确定究竟是哪一位或哪几位出现了差&lt;br /&gt;
+&lt;li&gt;若余数 R!=O, 则判定这个帧有差错 (但无法确定究竟是哪一位或哪几位出现了差&lt;br /&gt;
 错)，就丢弃。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;一种较方便的方法是用多项式来表示循环冗余检验过程。在上面的例子中，用多项式 P (X) = X&lt;sup&gt;3&lt;/sup&gt; + X&lt;sup&gt;2&lt;/sup&gt; + 1 表示上面的除数 P = 1101 (最高位对应于 X&lt;sup&gt;3&lt;/sup&gt;，最低位对应于 X&lt;sup&gt;0&lt;/sup&gt;)。多项式 P (X) 称为生成多项式。&lt;/p&gt;
