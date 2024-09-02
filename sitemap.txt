@@ -1,3 +1,5 @@
+https://blog.ivansnow02.xyz/AlgorithmIntroduction/
+https://blog.ivansnow02.xyz/SPT/
 https://blog.ivansnow02.xyz/Games101-assignment-05/
 https://blog.ivansnow02.xyz/Games101-assignment-04/
 https://blog.ivansnow02.xyz/Games101-assignment-03/
@@ -14,7 +16,6 @@ https://blog.ivansnow02.xyz/TheFallingSoldier/
 https://blog.ivansnow02.xyz/stack_and_queue/
 https://blog.ivansnow02.xyz/sql-lab/
 https://blog.ivansnow02.xyz/Sports-Life-Lesson/
-https://blog.ivansnow02.xyz/SPT/
 https://blog.ivansnow02.xyz/robot-kingdom/
 https://blog.ivansnow02.xyz/Redis-Learning-03-SpringDataRedis/
 https://blog.ivansnow02.xyz/Redis-Learning-02-%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/
@@ -79,3 +80,4 @@ https://blog.ivansnow02.xyz/categories/coding/
 https://blog.ivansnow02.xyz/categories/Math/
 https://blog.ivansnow02.xyz/categories/Physics/
 https://blog.ivansnow02.xyz/categories/Games101/
+https://blog.ivansnow02.xyz/categories/algorithms/
