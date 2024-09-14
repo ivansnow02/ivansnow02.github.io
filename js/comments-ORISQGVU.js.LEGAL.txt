@@ -2,7 +2,7 @@ Bundled license information:
 
 @vue/shared/dist/shared.esm-bundler.js:
   /**
-  * @vue/shared v3.4.37
+  * @vue/shared v3.5.4
   * (c) 2018-present Yuxi (Evan) You and Vue contributors
   * @license MIT
   **/
@@ -10,17 +10,20 @@ Bundled license information:
 
 @vue/reactivity/dist/reactivity.esm-bundler.js:
   /**
-  * @vue/reactivity v3.4.37
+  * @vue/reactivity v3.5.4
   * (c) 2018-present Yuxi (Evan) You and Vue contributors
   * @license MIT
   **/
 
 @vue/runtime-core/dist/runtime-core.esm-bundler.js:
   /**
-  * @vue/runtime-core v3.4.37
+  * @vue/runtime-core v3.5.4
   * (c) 2018-present Yuxi (Evan) You and Vue contributors
   * @license MIT
   **/
+
+@vue/runtime-core/dist/runtime-core.esm-bundler.js:
+  /*! #__NO_SIDE_EFFECTS__ */
 
 @vue/runtime-core/dist/runtime-core.esm-bundler.js:
   /*! #__NO_SIDE_EFFECTS__ */
@@ -30,7 +33,7 @@ Bundled license information:
 
 @vue/runtime-dom/dist/runtime-dom.esm-bundler.js:
   /**
-  * @vue/runtime-dom v3.4.37
+  * @vue/runtime-dom v3.5.4
   * (c) 2018-present Yuxi (Evan) You and Vue contributors
   * @license MIT
   **/
@@ -43,7 +46,7 @@ Bundled license information:
 
 vue/dist/vue.runtime.esm-bundler.js:
   /**
-  * vue v3.4.37
+  * vue v3.5.4
   * (c) 2018-present Yuxi (Evan) You and Vue contributors
   * @license MIT
   **/
