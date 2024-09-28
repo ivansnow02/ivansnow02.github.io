@@ -4,11 +4,12 @@
     <title>Snow&#39;s Blog • Posts by &#34;coding&#34; category</title>
     <link href="https://blog.ivansnow02.xyz" />
     <updated>2023-04-17T13:44:17.000Z</updated>
-    <category term="computer science" />
-    <category term="learning" />
-    <category term="data structure" />
     <category term="coding" />
     <category term="algorithms" />
+    <category term="data structure" />
+    <category term="computer science" />
+    <category term="learning" />
+    <category term="computer graphics" />
     <category term="Django" />
     <category term="Python" />
     <category term="trash" />
@@ -18,13 +19,12 @@
     <category term="test" />
     <category term="coursera" />
     <category term="vim" />
+    <category term="Spring" />
     <category term="Math" />
     <category term="Linear Algebra" />
-    <category term="Spring" />
     <category term="tree" />
     <category term="Physics" />
     <category term="Discrete Mathematics" />
-    <category term="computer graphics" />
     <entry>
         <id>https://blog.ivansnow02.xyz/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/</id>
         <title>VIM的学习</title>

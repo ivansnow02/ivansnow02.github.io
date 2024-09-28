@@ -4,11 +4,12 @@
     <title>Snow&#39;s Blog • Posts by &#34;coursera&#34; tag</title>
     <link href="https://blog.ivansnow02.xyz" />
     <updated>2023-05-30T02:25:48.000Z</updated>
-    <category term="computer science" />
-    <category term="learning" />
-    <category term="data structure" />
     <category term="coding" />
     <category term="algorithms" />
+    <category term="data structure" />
+    <category term="computer science" />
+    <category term="learning" />
+    <category term="computer graphics" />
     <category term="Django" />
     <category term="Python" />
     <category term="trash" />
@@ -18,13 +19,12 @@
     <category term="test" />
     <category term="coursera" />
     <category term="vim" />
+    <category term="Spring" />
     <category term="Math" />
     <category term="Linear Algebra" />
-    <category term="Spring" />
     <category term="tree" />
     <category term="Physics" />
     <category term="Discrete Mathematics" />
-    <category term="computer graphics" />
     <entry>
         <id>https://blog.ivansnow02.xyz/stack_and_queue/</id>
         <title>栈与队列</title>
@@ -124,9 +124,9 @@
 &lt;li&gt;元素出队： &lt;code&gt;front = (front + 1) % MaxSize&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;push&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;Item&lt;/span&gt; item&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;rear &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;MaxSize&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; front&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   rear &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;rear &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;MaxSize&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   s&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;rear&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; item&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Item&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;pop&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;front &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; rear&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;throw&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;NoSuchElementException&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   front &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;front &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;MaxSize&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; s&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;front&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="data structure" />
         <category term="coding" />
         <category term="algorithms" />
+        <category term="data structure" />
         <category term="coursera" />
         <updated>2023-05-30T02:25:48.000Z</updated>
     </entry>
@@ -290,9 +290,9 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 </content>
-        <category term="data structure" />
         <category term="coding" />
         <category term="algorithms" />
+        <category term="data structure" />
         <category term="coursera" />
         <updated>2023-05-21T10:02:45.000Z</updated>
     </entry>

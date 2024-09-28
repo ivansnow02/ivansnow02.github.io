@@ -7,11 +7,12 @@
         <language>zh-CN</language>
         <pubDate>Sun, 11 Aug 2024 16:03:01 +0800</pubDate>
         <lastBuildDate>Sun, 11 Aug 2024 16:03:01 +0800</lastBuildDate>
-        <category>computer science</category>
-        <category>learning</category>
-        <category>data structure</category>
         <category>coding</category>
         <category>algorithms</category>
+        <category>data structure</category>
+        <category>computer science</category>
+        <category>learning</category>
+        <category>computer graphics</category>
         <category>Django</category>
         <category>Python</category>
         <category>trash</category>
@@ -21,13 +22,12 @@
         <category>test</category>
         <category>coursera</category>
         <category>vim</category>
+        <category>Spring</category>
         <category>Math</category>
         <category>Linear Algebra</category>
-        <category>Spring</category>
         <category>tree</category>
         <category>Physics</category>
         <category>Discrete Mathematics</category>
-        <category>computer graphics</category>
         <item>
             <guid isPermalink="true">https://blog.ivansnow02.xyz/Games101-assignment-05/</guid>
             <title>Games101 作业 05</title>

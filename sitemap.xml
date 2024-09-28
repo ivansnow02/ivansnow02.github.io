@@ -380,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ivansnow02.xyz/links/friends.json</loc>
+    <loc>https://blog.ivansnow02.xyz/links/</loc>
     
     <lastmod>2024-06-30</lastmod>
     
@@ -389,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ivansnow02.xyz/links/</loc>
+    <loc>https://blog.ivansnow02.xyz/links/friends.json</loc>
     
     <lastmod>2024-06-30</lastmod>
     
@@ -443,6 +443,27 @@
 
   
   <url>
+    <loc>https://blog.ivansnow02.xyz/tags/coding/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ivansnow02.xyz/tags/algorithms/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ivansnow02.xyz/tags/data-structure/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.ivansnow02.xyz/tags/computer-science/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -457,21 +478,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ivansnow02.xyz/tags/data-structure/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ivansnow02.xyz/tags/coding/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ivansnow02.xyz/tags/algorithms/</loc>
+    <loc>https://blog.ivansnow02.xyz/tags/computer-graphics/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -541,6 +548,13 @@
   </url>
   
   <url>
+    <loc>https://blog.ivansnow02.xyz/tags/Spring/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.ivansnow02.xyz/tags/Math/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -549,13 +563,6 @@
   
   <url>
     <loc>https://blog.ivansnow02.xyz/tags/Linear-Algebra/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ivansnow02.xyz/tags/Spring/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -582,14 +589,21 @@
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://blog.ivansnow02.xyz/tags/computer-graphics/</loc>
+    <loc>https://blog.ivansnow02.xyz/categories/algorithms/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
-
+  <url>
+    <loc>https://blog.ivansnow02.xyz/categories/data-structure/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://blog.ivansnow02.xyz/categories/computer-science/</loc>
@@ -599,7 +613,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ivansnow02.xyz/categories/data-structure/</loc>
+    <loc>https://blog.ivansnow02.xyz/categories/Games101/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -663,20 +677,6 @@
   
   <url>
     <loc>https://blog.ivansnow02.xyz/categories/Physics/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ivansnow02.xyz/categories/Games101/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ivansnow02.xyz/categories/algorithms/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
