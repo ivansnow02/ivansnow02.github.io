@@ -28,6 +28,7 @@
         <category>tree</category>
         <category>Physics</category>
         <category>Discrete Mathematics</category>
+        <category>Compilers</category>
         <item>
             <guid isPermalink="true">https://blog.ivansnow02.xyz/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/</guid>
             <title>哈夫曼树叶子结点的路径长度与权值的乘积之和</title>
