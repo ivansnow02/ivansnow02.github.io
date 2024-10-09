@@ -3,7 +3,7 @@
     <id>https://blog.ivansnow02.xyz</id>
     <title>Snow&#39;s Blog • Posts by &#34;computer science&#34; category</title>
     <link href="https://blog.ivansnow02.xyz" />
-    <updated>2024-06-29T01:12:16.000Z</updated>
+    <updated>2024-10-08T23:48:47.000Z</updated>
     <category term="coding" />
     <category term="algorithms" />
     <category term="data structure" />
@@ -26,6 +26,72 @@
     <category term="Physics" />
     <category term="Discrete Mathematics" />
     <category term="Compilers" />
+    <entry>
+        <id>https://blog.ivansnow02.xyz/Compilers/</id>
+        <title>编译技术笔记</title>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/Compilers/"/>
+        <content type="html">&lt;h2 id=&#34;引论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引论&#34;&gt;#&lt;/a&gt; 引论&lt;/h2&gt;
+&lt;h3 id=&#34;什么是编译程序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是编译程序&#34;&gt;#&lt;/a&gt; 什么是编译程序&lt;/h3&gt;
+&lt;h4 id=&#34;编译程序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译程序&#34;&gt;#&lt;/a&gt; 编译程序&lt;/h4&gt;
+&lt;p&gt;编译程序是翻译程序的一种，它将高级语言程序翻译成等价的目标程序。编译程序的输入是高级语言程序，输出是目标程序。编译程序的主要任务是将源程序翻译成目标程序，使得目标程序能够在计算机上正确运行。&lt;/p&gt;
+&lt;h4 id=&#34;解释程序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解释程序&#34;&gt;#&lt;/a&gt; 解释程序&lt;/h4&gt;
+&lt;p&gt;以源程序为输入，直接执行源程序，不生成目标程序。解释程序的主要任务是解释源程序，使得源程序能够在计算机上正确运行。&lt;/p&gt;
+&lt;h4 id=&#34;编译程序与解释程序的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译程序与解释程序的区别&#34;&gt;#&lt;/a&gt; 编译程序与解释程序的区别&lt;/h4&gt;
+&lt;p&gt;根本区别：是否生成目标程序。&lt;/p&gt;
+&lt;h4 id=&#34;编译系统的组成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译系统的组成&#34;&gt;#&lt;/a&gt; 编译系统的组成&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;编译程序&lt;/li&gt;
+&lt;li&gt;运行系统
+&lt;ul&gt;
+&lt;li&gt;支持环境&lt;/li&gt;
+&lt;li&gt;运行库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;编译过程与编译程序的组织结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译过程与编译程序的组织结构&#34;&gt;#&lt;/a&gt; 编译过程与编译程序的组织结构&lt;/h3&gt;
+&lt;h4 id=&#34;编译过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译过程&#34;&gt;#&lt;/a&gt; 编译过程&lt;/h4&gt;
+&lt;p&gt;｜自然语言的翻译｜编译｜&lt;br /&gt;
+｜---｜---｜&lt;br /&gt;
+｜识别出句子中的单词｜词法分析｜&lt;br /&gt;
+｜确定单词之间的语法关系｜语法分析｜&lt;br /&gt;
+｜根据句子含义初步翻译｜语义分析｜&lt;br /&gt;
+｜对译文进行修饰 | 中间代码生成｜&lt;br /&gt;
+｜将译文翻译成目标语言｜目标代码生成｜&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/Compilers/5a555ecad6d683cdc29056f04947d36c3af7940222ef45510286ed591a1bc3f4.png&#34; alt=&#34;图 0&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;词法分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#词法分析&#34;&gt;#&lt;/a&gt; 词法分析&lt;/h4&gt;
+&lt;p&gt;输入源程序；扫描、分解字符串，识别出单词；输出单词流。&lt;/p&gt;
+&lt;p&gt;词法分析由词法分析器完成，词法分析器又叫扫描器。&lt;/p&gt;
+&lt;p&gt;词法分析器从左到右扫描源程序，并将其转换成单词（Token）串；并检查词法错误，进行标识符的登记 —— 符号表管理。&lt;/p&gt;
+&lt;p&gt;输入：字符串&lt;br /&gt;
+输出：（种别码，属性值）&lt;/p&gt;
+&lt;h4 id=&#34;语法分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#语法分析&#34;&gt;#&lt;/a&gt; 语法分析&lt;/h4&gt;
+&lt;p&gt;语法分析由语法分析器完成，语法分析器又叫解析器。&lt;/p&gt;
+&lt;p&gt;功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实现组词成句&lt;/li&gt;
+&lt;li&gt;构造分析树&lt;/li&gt;
+&lt;li&gt;检查语法错误&lt;/li&gt;
+&lt;li&gt;指导翻译&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;输入：Token 序列&lt;br /&gt;
+输出：语法成分&lt;/p&gt;
+&lt;h4 id=&#34;语义分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#语义分析&#34;&gt;#&lt;/a&gt; 语义分析&lt;/h4&gt;
+&lt;p&gt;语义分析一般和语法分析一起进行，称为语法制导翻译。&lt;/p&gt;
+&lt;p&gt;功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;获取标识符的属性&lt;/li&gt;
+&lt;li&gt;语义检查&lt;/li&gt;
+&lt;li&gt;子程序静态绑定&lt;/li&gt;
+&lt;li&gt;变量的静态绑定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;中间代码生成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中间代码生成&#34;&gt;#&lt;/a&gt; 中间代码生成&lt;/h4&gt;
+&lt;p&gt;生成四元式、三地址码、P - 代码等。&lt;/p&gt;
+</content>
+        <category term="computer science" />
+        <category term="learning" />
+        <category term="Compilers" />
+        <updated>2024-10-08T23:48:47.000Z</updated>
+    </entry>
     <entry>
         <id>https://blog.ivansnow02.xyz/ai-fundamental/</id>
         <title>人工智能基础</title>
