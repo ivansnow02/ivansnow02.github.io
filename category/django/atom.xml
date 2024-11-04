@@ -4,28 +4,28 @@
     <title>Snow&#39;s Blog • Posts by &#34;django&#34; category</title>
     <link href="https://blog.ivansnow02.xyz" />
     <updated>2023-08-14T08:56:34.000Z</updated>
+    <category term="Compilers" />
+    <category term="computer science" />
+    <category term="learning" />
     <category term="coding" />
     <category term="algorithms" />
     <category term="data structure" />
-    <category term="computer science" />
-    <category term="learning" />
     <category term="computer graphics" />
     <category term="Django" />
     <category term="Python" />
-    <category term="trash" />
     <category term="Redis" />
+    <category term="trash" />
     <category term="Java" />
     <category term="English" />
     <category term="test" />
-    <category term="coursera" />
     <category term="vim" />
+    <category term="coursera" />
     <category term="Spring" />
     <category term="Math" />
     <category term="Linear Algebra" />
     <category term="tree" />
     <category term="Physics" />
     <category term="Discrete Mathematics" />
-    <category term="Compilers" />
     <entry>
         <id>https://blog.ivansnow02.xyz/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/</id>
         <title>Django公有配置</title>

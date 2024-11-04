@@ -7,35 +7,35 @@
         <language>zh-CN</language>
         <pubDate>Wed, 09 Oct 2024 07:48:47 +0800</pubDate>
         <lastBuildDate>Wed, 09 Oct 2024 07:48:47 +0800</lastBuildDate>
+        <category>Compilers</category>
+        <category>computer science</category>
+        <category>learning</category>
         <category>coding</category>
         <category>algorithms</category>
         <category>data structure</category>
-        <category>computer science</category>
-        <category>learning</category>
         <category>computer graphics</category>
         <category>Django</category>
         <category>Python</category>
-        <category>trash</category>
         <category>Redis</category>
+        <category>trash</category>
         <category>Java</category>
         <category>English</category>
         <category>test</category>
-        <category>coursera</category>
         <category>vim</category>
+        <category>coursera</category>
         <category>Spring</category>
         <category>Math</category>
         <category>Linear Algebra</category>
         <category>tree</category>
         <category>Physics</category>
         <category>Discrete Mathematics</category>
-        <category>Compilers</category>
         <item>
             <guid isPermalink="true">https://blog.ivansnow02.xyz/Compilers/</guid>
             <title>编译技术笔记</title>
             <link>https://blog.ivansnow02.xyz/Compilers/</link>
+            <category>Compilers</category>
             <category>computer science</category>
             <category>learning</category>
-            <category>Compilers</category>
             <pubDate>Wed, 09 Oct 2024 07:48:47 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;引论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引论&#34;&gt;#&lt;/a&gt; 引论&lt;/h2&gt;
 &lt;h3 id=&#34;什么是编译程序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是编译程序&#34;&gt;#&lt;/a&gt; 什么是编译程序&lt;/h3&gt;

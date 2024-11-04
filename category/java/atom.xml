@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.ivansnow02.xyz</id>
+    <title>Snow&#39;s Blog • Posts by &#34;java&#34; category</title>
+    <link href="https://blog.ivansnow02.xyz" />
+    <updated>2024-11-03T02:59:18.000Z</updated>
+    <category term="Compilers" />
+    <category term="computer science" />
+    <category term="learning" />
+    <category term="coding" />
+    <category term="algorithms" />
+    <category term="data structure" />
+    <category term="computer graphics" />
+    <category term="Django" />
+    <category term="Python" />
+    <category term="Redis" />
+    <category term="trash" />
+    <category term="Java" />
+    <category term="English" />
+    <category term="test" />
+    <category term="vim" />
+    <category term="coursera" />
+    <category term="Spring" />
+    <category term="Math" />
+    <category term="Linear Algebra" />
+    <category term="tree" />
+    <category term="Physics" />
+    <category term="Discrete Mathematics" />
+    <entry>
+        <id>https://blog.ivansnow02.xyz/java-learning/</id>
+        <title>Java学习</title>
+        <link rel="alternate" href="https://blog.ivansnow02.xyz/java-learning/"/>
+        <content type="html">&lt;h2 id=&#34;java概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java概述&#34;&gt;#&lt;/a&gt; Java 概述&lt;/h2&gt;
+&lt;h3 id=&#34;java语言的主要特点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java语言的主要特点&#34;&gt;#&lt;/a&gt; Java 语言的主要特点&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;简单性&lt;/li&gt;
+&lt;li&gt;面向对象&lt;/li&gt;
+&lt;li&gt;跨平台&lt;/li&gt;
+&lt;li&gt;安全性&lt;/li&gt;
+&lt;li&gt;多线程&lt;/li&gt;
+&lt;li&gt;动态性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;初始java程序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#初始java程序&#34;&gt;#&lt;/a&gt; 初始 Java 程序&lt;/h3&gt;
+&lt;p&gt;Java 源文件以 “java” 结尾，此文件中&lt;strong&gt;最多只能有一个类被声明为 public&lt;/strong&gt;，保存时源文件名需与 public 类名相同，如果文件中不存在 public 类，源文件名无要求。&lt;/p&gt;
+&lt;p&gt;一个源文件包含几个类就可以编译出几个.class 文件。&lt;/p&gt;
+&lt;h2 id=&#34;基本程序设计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本程序设计&#34;&gt;#&lt;/a&gt; 基本程序设计&lt;/h2&gt;
+&lt;h3 id=&#34;常量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常量&#34;&gt;#&lt;/a&gt; 常量&lt;/h3&gt;
+&lt;p&gt;符号常量： &lt;code&gt;final&lt;/code&gt;  修饰的变量，一旦赋值后不可更改。&lt;/p&gt;
+&lt;h3 id=&#34;类型转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类型转换&#34;&gt;#&lt;/a&gt; 类型转换&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/java-learning/85bfcba51b1dccf3fe9bbad3b7a8e45a96c54baaf89d3ca283296a9c6fb98b96.png&#34; alt=&#34;picture 0&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;位运算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#位运算&#34;&gt;#&lt;/a&gt; 位运算&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;运算符&lt;/th&gt;
+&lt;th&gt;用法&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;~&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~a&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;按位取反&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;a &amp;amp; b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;按位与&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;|&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;a \| b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;按位或&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;^&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;a ^ b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;按位异或&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;&amp;lt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;a &amp;lt;&amp;lt; b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;左移&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;gt;&amp;gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;a &amp;gt;&amp;gt; b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;右移&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;a &amp;gt;&amp;gt;&amp;gt; b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无符号右移&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;流程控制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#流程控制&#34;&gt;#&lt;/a&gt; 流程控制&lt;/h2&gt;
+&lt;h3 id=&#34;标准输入与scanner类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标准输入与scanner类&#34;&gt;#&lt;/a&gt; 标准输入与 Scanner 类&lt;/h3&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt; in &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Scanner&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;in&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;\\ &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;in&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;返回值&lt;/th&gt;
+&lt;th&gt;方法&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;hasNext()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;判断是否还有输入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;next()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;读取一个字符串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;T&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;nextT()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;读取一个 T 类型的值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;nextLine()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;读取一行字符串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;hasNextT()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;判断下一个输入是否为 T 类型&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;hasNextT(int radix)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;判断下一个输入是否为 T 类型，radix 为进制&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;标准输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标准输出&#34;&gt;#&lt;/a&gt; 标准输出&lt;/h3&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Hello, World!&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;code&gt;printf&lt;/code&gt;  方法&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;标志&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;左对齐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;+&lt;/td&gt;
+&lt;td&gt;显示正负号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;数字前补 0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#&lt;/td&gt;
+&lt;td&gt;显示八进制或十六进制前缀&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;空格&lt;/td&gt;
+&lt;td&gt;正数前加空格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;,&lt;/td&gt;
+&lt;td&gt;数字以逗号分隔&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;(&lt;/td&gt;
+&lt;td&gt;负数用括号括起来&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;格式&lt;/td&gt;
+&lt;td&gt;说明&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;---&lt;/td&gt;
+&lt;td&gt;---&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%d&lt;/td&gt;
+&lt;td&gt;整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%f&lt;/td&gt;
+&lt;td&gt;浮点数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%e&lt;/td&gt;
+&lt;td&gt;科学计数法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%g&lt;/td&gt;
+&lt;td&gt;通用浮点数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%h&lt;/td&gt;
+&lt;td&gt;散列码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%s&lt;/td&gt;
+&lt;td&gt;字符串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%c&lt;/td&gt;
+&lt;td&gt;字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%b&lt;/td&gt;
+&lt;td&gt;布尔值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%t&lt;/td&gt;
+&lt;td&gt;日期时间&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%n&lt;/td&gt;
+&lt;td&gt;换行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%x&lt;/td&gt;
+&lt;td&gt;十六进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%o&lt;/td&gt;
+&lt;td&gt;八进制整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%a&lt;/td&gt;
+&lt;td&gt;十六进制浮点数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;面向对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#面向对象&#34;&gt;#&lt;/a&gt; 面向对象&lt;/h2&gt;
+&lt;h3 id=&#34;面向对象编程的特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#面向对象编程的特性&#34;&gt;#&lt;/a&gt; 面向对象编程的特性&lt;/h3&gt;
+&lt;h4 id=&#34;封装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#封装&#34;&gt;#&lt;/a&gt; 封装&lt;/h4&gt;
+&lt;p&gt;将对象的属性和行封装起来构成新的类型，并隐藏内部实现细节，只向用户提供对象的外部可调用操作&lt;/p&gt;
+&lt;p&gt;封装最大的好处是降低了软件系统的耦合程度。实现了代码的可重用性和可维护性。&lt;/p&gt;
+&lt;h4 id=&#34;继承&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#继承&#34;&gt;#&lt;/a&gt; 继承&lt;/h4&gt;
+&lt;p&gt;继承性是类与类之间的一种关系，通过继承，可以在无需重新编写原有类的情况下，实现代码的扩展和重用。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;具有父类的全部属性和行为&lt;/li&gt;
+&lt;li&gt;能对继承的属性和行为进行修改和扩充。&lt;/li&gt;
+&lt;li&gt;极大提升了可重用性和可维护性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;多态&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多态&#34;&gt;#&lt;/a&gt; 多态&lt;/h4&gt;
+&lt;p&gt;多态性是指在父类中定义的属性和行为被子类继承之后，可以具有不同的数据类型或表现形式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;单个类：多态性在单个类中表现为方法重载：一个类可以有多个名字相同、形参列表不同的方法，在使用时由传递给它们的实参来决定使用哪个方法。&lt;/li&gt;
+&lt;li&gt;在多个类中主要表现为继承结构中的方法覆盖：父类和子类中具有相同的方法头，不同的代码实现，运行时再决定调用哪个方法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;对象与构造方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#对象与构造方法&#34;&gt;#&lt;/a&gt; 对象与构造方法&lt;/h3&gt;
+&lt;p&gt;要比较两个对象的内容是否相等，即对象实体值，必须在类里实现专门的方法，所有类的父类 &lt;code&gt;Object&lt;/code&gt;  中有一个方法 &lt;code&gt;equals()&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;因对象数组中每个元素都是对象，所以每个元素都需单独实例化（还需用 &lt;code&gt;new&lt;/code&gt;  实例化每个元素）&lt;/p&gt;
+&lt;h3 id=&#34;方法重载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#方法重载&#34;&gt;#&lt;/a&gt; 方法重载&lt;/h3&gt;
+&lt;p&gt;定义方法时使用相同的方法名，不同的形参列表，叫方法重载（overloading）方法重载是实现 “多态” 的一种方法。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;形参列表不同是指参数个数不同，或者对应位置上参数类型不同。&lt;/li&gt;
+&lt;li&gt;重载方法返回类型、修饰符可以相同，也可不同，它不决定是否是重载方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;this关键字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this关键字&#34;&gt;#&lt;/a&gt; this 关键字&lt;/h3&gt;
+&lt;h3 id=&#34;参数传递&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参数传递&#34;&gt;#&lt;/a&gt; 参数传递&lt;/h3&gt;
+&lt;h3 id=&#34;static修饰符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#static修饰符&#34;&gt;#&lt;/a&gt; static 修饰符&lt;/h3&gt;
+&lt;h3 id=&#34;访问控制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#访问控制&#34;&gt;#&lt;/a&gt; 访问控制&lt;/h3&gt;
+&lt;h3 id=&#34;继承-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#继承-2&#34;&gt;#&lt;/a&gt; 继承&lt;/h3&gt;
+&lt;h3 id=&#34;final修饰符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#final修饰符&#34;&gt;#&lt;/a&gt; final 修饰符&lt;/h3&gt;
+&lt;h2 id=&#34;类的进阶设计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类的进阶设计&#34;&gt;#&lt;/a&gt; 类的进阶设计&lt;/h2&gt;
+&lt;h3 id=&#34;对象类型转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#对象类型转换&#34;&gt;#&lt;/a&gt; 对象类型转换&lt;/h3&gt;
+&lt;h3 id=&#34;方法重写&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#方法重写&#34;&gt;#&lt;/a&gt; 方法重写&lt;/h3&gt;
+&lt;h3 id=&#34;动态绑定&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态绑定&#34;&gt;#&lt;/a&gt; 动态绑定&lt;/h3&gt;
+&lt;h3 id=&#34;抽象方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#抽象方法&#34;&gt;#&lt;/a&gt; 抽象方法&lt;/h3&gt;
+&lt;h3 id=&#34;抽象类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#抽象类&#34;&gt;#&lt;/a&gt; 抽象类&lt;/h3&gt;
+&lt;h3 id=&#34;接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#接口&#34;&gt;#&lt;/a&gt; 接口&lt;/h3&gt;
+&lt;h3 id=&#34;内部类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内部类&#34;&gt;#&lt;/a&gt; 内部类&lt;/h3&gt;
+&lt;h4 id=&#34;实例内部类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实例内部类&#34;&gt;#&lt;/a&gt; 实例内部类&lt;/h4&gt;
+&lt;h4 id=&#34;静态内部类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#静态内部类&#34;&gt;#&lt;/a&gt; 静态内部类&lt;/h4&gt;
+&lt;h4 id=&#34;局部内部类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#局部内部类&#34;&gt;#&lt;/a&gt; 局部内部类&lt;/h4&gt;
+&lt;h4 id=&#34;匿名内部类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#匿名内部类&#34;&gt;#&lt;/a&gt; 匿名内部类&lt;/h4&gt;
+&lt;h2 id=&#34;异常处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#异常处理&#34;&gt;#&lt;/a&gt; 异常处理&lt;/h2&gt;
+&lt;h3 id=&#34;异常类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#异常类&#34;&gt;#&lt;/a&gt; 异常类&lt;/h3&gt;
+&lt;h3 id=&#34;异常处理机制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#异常处理机制&#34;&gt;#&lt;/a&gt; 异常处理机制&lt;/h3&gt;
+&lt;h3 id=&#34;捕获处理异常&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#捕获处理异常&#34;&gt;#&lt;/a&gt; 捕获处理异常&lt;/h3&gt;
+&lt;h3 id=&#34;带资源的try语句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#带资源的try语句&#34;&gt;#&lt;/a&gt; 带资源的 try 语句&lt;/h3&gt;
+&lt;h3 id=&#34;throw抛出异常和throws声明异常&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#throw抛出异常和throws声明异常&#34;&gt;#&lt;/a&gt; throw 抛出异常和 throws 声明异常&lt;/h3&gt;
+&lt;h2 id=&#34;常用类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用类&#34;&gt;#&lt;/a&gt; 常用类&lt;/h2&gt;
+&lt;h3 id=&#34;object类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#object类&#34;&gt;#&lt;/a&gt; Object 类&lt;/h3&gt;
+&lt;h3 id=&#34;string类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#string类&#34;&gt;#&lt;/a&gt; String 类&lt;/h3&gt;
+&lt;h3 id=&#34;泛型集合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#泛型集合&#34;&gt;#&lt;/a&gt; 泛型集合&lt;/h3&gt;
+&lt;h3 id=&#34;arrays类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#arrays类&#34;&gt;#&lt;/a&gt; Arrays 类&lt;/h3&gt;
+&lt;h3 id=&#34;collections类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#collections类&#34;&gt;#&lt;/a&gt; Collections 类&lt;/h3&gt;
+&lt;h2 id=&#34;io流&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#io流&#34;&gt;#&lt;/a&gt; IO 流&lt;/h2&gt;
+&lt;h3 id=&#34;file类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#file类&#34;&gt;#&lt;/a&gt; File 类&lt;/h3&gt;
+&lt;h3 id=&#34;文件流&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件流&#34;&gt;#&lt;/a&gt; 文件流&lt;/h3&gt;
+&lt;h3 id=&#34;缓冲流&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缓冲流&#34;&gt;#&lt;/a&gt; 缓冲流&lt;/h3&gt;
+&lt;h3 id=&#34;字节字符转换流&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字节字符转换流&#34;&gt;#&lt;/a&gt; 字节字符转换流&lt;/h3&gt;
+&lt;h2 id=&#34;线程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线程&#34;&gt;#&lt;/a&gt; 线程&lt;/h2&gt;
+&lt;h3 id=&#34;线程概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线程概念&#34;&gt;#&lt;/a&gt; 线程概念&lt;/h3&gt;
+&lt;h3 id=&#34;线程的创建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线程的创建&#34;&gt;#&lt;/a&gt; 线程的创建&lt;/h3&gt;
+&lt;h4 id=&#34;继承thread类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#继承thread类&#34;&gt;#&lt;/a&gt; 继承 Thread 类&lt;/h4&gt;
+&lt;h4 id=&#34;实现runnable接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实现runnable接口&#34;&gt;#&lt;/a&gt; 实现 Runnable 接口&lt;/h4&gt;
+&lt;h4 id=&#34;实现callable接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实现callable接口&#34;&gt;#&lt;/a&gt; 实现 Callable 接口&lt;/h4&gt;
+&lt;h2 id=&#34;图形用户界面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图形用户界面&#34;&gt;#&lt;/a&gt; 图形用户界面&lt;/h2&gt;
+&lt;h3 id=&#34;jframe类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#jframe类&#34;&gt;#&lt;/a&gt; JFrame 类&lt;/h3&gt;
+&lt;h3 id=&#34;布局管理器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#布局管理器&#34;&gt;#&lt;/a&gt; 布局管理器&lt;/h3&gt;
+&lt;h3 id=&#34;事件处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事件处理&#34;&gt;#&lt;/a&gt; 事件处理&lt;/h3&gt;
+&lt;h4 id=&#34;事件处理机制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事件处理机制&#34;&gt;#&lt;/a&gt; 事件处理机制&lt;/h4&gt;
+&lt;h4 id=&#34;事件和事件分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事件和事件分类&#34;&gt;#&lt;/a&gt; 事件和事件分类&lt;/h4&gt;
+&lt;h4 id=&#34;事件监听器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事件监听器&#34;&gt;#&lt;/a&gt; 事件监听器&lt;/h4&gt;
+&lt;h4 id=&#34;回调与事件监听器的实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回调与事件监听器的实现&#34;&gt;#&lt;/a&gt; 回调与事件监听器的实现&lt;/h4&gt;
+&lt;h2 id=&#34;网络编程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#网络编程&#34;&gt;#&lt;/a&gt; 网络编程&lt;/h2&gt;
+&lt;h3 id=&#34;tcpip通信&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcpip通信&#34;&gt;#&lt;/a&gt; TCP/IP 通信&lt;/h3&gt;
+</content>
+        <category term="coding" />
+        <category term="Java" />
+        <updated>2024-11-03T02:59:18.000Z</updated>
+    </entry>
+</feed>

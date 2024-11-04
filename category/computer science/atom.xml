@@ -4,28 +4,28 @@
     <title>Snow&#39;s Blog • Posts by &#34;computer science&#34; category</title>
     <link href="https://blog.ivansnow02.xyz" />
     <updated>2024-10-08T23:48:47.000Z</updated>
+    <category term="Compilers" />
+    <category term="computer science" />
+    <category term="learning" />
     <category term="coding" />
     <category term="algorithms" />
     <category term="data structure" />
-    <category term="computer science" />
-    <category term="learning" />
     <category term="computer graphics" />
     <category term="Django" />
     <category term="Python" />
-    <category term="trash" />
     <category term="Redis" />
+    <category term="trash" />
     <category term="Java" />
     <category term="English" />
     <category term="test" />
-    <category term="coursera" />
     <category term="vim" />
+    <category term="coursera" />
     <category term="Spring" />
     <category term="Math" />
     <category term="Linear Algebra" />
     <category term="tree" />
     <category term="Physics" />
     <category term="Discrete Mathematics" />
-    <category term="Compilers" />
     <entry>
         <id>https://blog.ivansnow02.xyz/Compilers/</id>
         <title>编译技术笔记</title>
@@ -809,9 +809,9 @@ d_n &amp;amp;\to r_n
 &lt;h3 id=&#34;推导&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推导&#34;&gt;#&lt;/a&gt; 推导&lt;/h3&gt;
 &lt;p&gt;推导：就是用产生式的右部的串来代替左部的非终结符，事实上推导给出了自顶向下构成分析树过程的精确描述。&lt;/p&gt;
 </content>
+        <category term="Compilers" />
         <category term="computer science" />
         <category term="learning" />
-        <category term="Compilers" />
         <updated>2024-10-08T23:48:47.000Z</updated>
     </entry>
     <entry>
