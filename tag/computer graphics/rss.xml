@@ -5,8 +5,8 @@
         <link>https://blog.ivansnow02.xyz</link>
         <description>some notes about computer science</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 11 Aug 2024 16:03:01 +0800</pubDate>
-        <lastBuildDate>Sun, 11 Aug 2024 16:03:01 +0800</lastBuildDate>
+        <pubDate>Tue, 12 Nov 2024 08:00:46 +0800</pubDate>
+        <lastBuildDate>Tue, 12 Nov 2024 08:00:46 +0800</lastBuildDate>
         <category>Compilers</category>
         <category>computer science</category>
         <category>learning</category>
@@ -29,6 +29,16 @@
         <category>tree</category>
         <category>Physics</category>
         <category>Discrete Mathematics</category>
+        <item>
+            <guid isPermalink="true">https://blog.ivansnow02.xyz/computer-graphics/</guid>
+            <title>计算机图形学</title>
+            <link>https://blog.ivansnow02.xyz/computer-graphics/</link>
+            <category>computer science</category>
+            <category>learning</category>
+            <category>computer graphics</category>
+            <pubDate>Tue, 12 Nov 2024 08:00:46 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://blog.ivansnow02.xyz/Games101-assignment-05/</guid>
             <title>Games101 作业 05</title>

@@ -70,7 +70,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;|&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;a \| b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;a | b&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;按位或&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
