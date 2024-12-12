@@ -1,3 +1,4 @@
+https://blog.ivansnow02.xyz/about/
 https://blog.ivansnow02.xyz/computer-graphics/
 https://blog.ivansnow02.xyz/Compilers/
 https://blog.ivansnow02.xyz/AlgorithmIntroduction/
@@ -46,7 +47,6 @@ https://blog.ivansnow02.xyz/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/
 https://blog.ivansnow02.xyz/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/
 https://blog.ivansnow02.xyz/links/friends.json
 https://blog.ivansnow02.xyz/links/
-https://blog.ivansnow02.xyz/about/
 https://blog.ivansnow02.xyz/healthy-lifestyle/
 https://blog.ivansnow02.xyz/TEST/
 https://blog.ivansnow02.xyz/404
