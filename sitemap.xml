@@ -549,13 +549,6 @@
   </url>
   
   <url>
-    <loc>https://blog.ivansnow02.xyz/tags/trash/</loc>
-    <lastmod>2024-12-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.ivansnow02.xyz/tags/Java/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -577,7 +570,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ivansnow02.xyz/tags/vim/</loc>
+    <loc>https://blog.ivansnow02.xyz/tags/trash/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -585,6 +578,13 @@
   
   <url>
     <loc>https://blog.ivansnow02.xyz/tags/coursera/</loc>
+    <lastmod>2024-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ivansnow02.xyz/tags/vim/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -677,13 +677,6 @@
   </url>
   
   <url>
-    <loc>https://blog.ivansnow02.xyz/categories/trash/</loc>
-    <lastmod>2024-12-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.ivansnow02.xyz/categories/English/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -698,7 +691,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ivansnow02.xyz/categories/coding/</loc>
+    <loc>https://blog.ivansnow02.xyz/categories/trash/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -712,7 +705,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ivansnow02.xyz/categories/Java/</loc>
+    <loc>https://blog.ivansnow02.xyz/categories/coding/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -720,6 +713,13 @@
   
   <url>
     <loc>https://blog.ivansnow02.xyz/categories/Math/</loc>
+    <lastmod>2024-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ivansnow02.xyz/categories/Java/</loc>
     <lastmod>2024-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
