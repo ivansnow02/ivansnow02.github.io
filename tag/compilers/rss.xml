@@ -1525,8 +1525,8 @@ LR 分析法是一种基本分析思想，LR 文法是一种泛泛的文法，�
 &lt;h4 id=&#34;语义规则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#语义规则&#34;&gt;#&lt;/a&gt; 语义规则&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;对出现在&lt;strong&gt;产生式右边的继承属性&lt;/strong&gt;和出现在&lt;strong&gt;产生式左边的综合属性&lt;/strong&gt;都必须提供一个计算规则。属性计算规则中只能使用相应产生式中的文法符号的属性。&lt;/li&gt;
-&lt;li&gt;出现在&lt;strong&gt;产生式左边的继承属性&lt;/strong&gt;和出现在&lt;strong&gt;产生式右边的综合属性&lt;/strong&gt;不由所给的产生式的属性计算规则进行计算，由其它产生式的属性规则计算或者由属性计算器的参数提供。&lt;br /&gt;
-- 语义规则所描述的工作可以包括属性计算、静态语义检查、符号表操作、代码（中间）生成等等。有些语义规则可能产生副作用（如产生代码），通常把这样的语义规则写成函数调用。&lt;/li&gt;
+&lt;li&gt;出现在&lt;strong&gt;产生式左边的继承属性&lt;/strong&gt;和出现在&lt;strong&gt;产生式右边的综合属性&lt;/strong&gt;不由所给的产生式的属性计算规则进行计算，由其它产生式的属性规则计算或者由属性计算器的参数提供。&lt;/li&gt;
+&lt;li&gt;语义规则所描述的工作可以包括属性计算、静态语义检查、符号表操作、代码（中间）生成等等。有些语义规则可能产生副作用（如产生代码），通常把这样的语义规则写成函数调用。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;sdd的属性计算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sdd的属性计算&#34;&gt;#&lt;/a&gt; SDD 的属性计算&lt;/h4&gt;
 &lt;h5 id=&#34;依赖图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖图&#34;&gt;#&lt;/a&gt; 依赖图&lt;/h5&gt;
@@ -1854,8 +1854,7 @@ LR 分析法是一种基本分析思想，LR 文法是一种泛泛的文法，�
 &lt;li&gt;&lt;code&gt;S.next&lt;/code&gt;  记录  &lt;code&gt;S&lt;/code&gt;  紧跟在后面的三地址码指令的标号&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;a &amp;lt; b&lt;/code&gt;  如何翻译？&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption data-lang=&#34;plaintext&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;if a &amp;lt; b goto E.true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;goto E.false&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;以下是用 ^^ 替代空单元格的 Markdown 表格版本：&lt;/p&gt;
-&lt;table&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption data-lang=&#34;plaintext&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;if a &amp;lt; b goto E.true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;goto E.false&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;产生式&lt;/th&gt;
