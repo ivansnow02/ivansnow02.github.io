@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link href="https://fastly.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" rel="stylesheet">
+  <link href="/css/custom.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.loli.net">
+  <link rel="preconnect" href="https://gstatic.loli.net" crossorigin>
+  <link href="https://fonts.loli.net/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><link rel="icon" type="image/ico" sizes="32x32" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"><meta name="msvalidate.01" content="5C885BB4F08198773FCB9D68FB7EFF0C"><meta name="google-site-verification" content="SU_V4YfQlQkkbm4IQUajehIwRUPbvIwErs1WJRMD0NQ"><link rel="alternate" href="/rss.xml" title="IOyuk1Nya's Blog" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="IOyuk1Nya's Blog" type="application/atom+xml"><link rel="alternate" type="application/json" title="IOyuk1Nya's Blog" href="https://blog.ivansnow02.xyz/feed.json"><link rel="preconnect" href="https://s4.zstatic.net"><link rel="preconnect" href="https://at.alicdn.com"><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://unpkg.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CJuliamo:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CJetBrains%20Mono:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.16"><link rel="modulepreload" href="/js/chunk-57DE2IAZ.js"><link rel="modulepreload" href="/js/chunk-DJJAGZMD.js"><link rel="modulepreload" href="/js/chunk-ETAFWEX7.js"><link rel="modulepreload" href="/js/chunk-IGSP3LIR.js"><link rel="modulepreload" href="/js/chunk-L5RMYTO7.js"><link rel="modulepreload" href="/js/copy-tex-HIMD7BTN.js"><link rel="modulepreload" href="/js/index.esm-F7RLRGUO.js"><link rel="modulepreload" href="/js/post-JTHXNV66.js"><link rel="modulepreload" href="/js/quicklink-WT5QHLT6.js"><link rel="modulepreload" href="/js/search-36OZSDBA.js"><link rel="modulepreload" href="/js/siteInit.js"><link rel="modulepreload" href="/js/tcomments-EYXRXCA5.js"><link rel="preload" href="https://blog.ivansnow02.xyz/blog-img/1733402737729.png" as="image" fetchpriority="high"><meta name="keywords" content="computer science,software engineering"><meta name="description" content="some notes about computer science"><link rel="canonical" href="https://blog.ivansnow02.xyz/software-engineering/"><title>软件工程复习</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">软件工程复习</h1><div class="meta"><span class="item" title="创建时间：2024-12-30 14:00:47"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2024-12-30T14:00:47+08:00">2024-12-30</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>1.1k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>1 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Code Blog</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="https://blog.ivansnow02.xyz/blog-img/1733402737729.png" loading="eager" decoding="async" fetchpriority="high" alt="IOyuk1Nya's Blog"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemlistelement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span><i class="ic i-angle-right"></i><span class="current" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/computer-science/" itemprop="item" rel="index" title="分类于computer science"><span itemprop="name">computer science<meta itemprop="position" content="0"></span></a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://blog.ivansnow02.xyz/software-engineering/"><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/img/ne.gif"><meta itemprop="name" content="IOyuk1Nya"><meta itemprop="description" content="Just a Note., some notes about computer science"></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="IOyuk1Nya's Blog"></span><div class="body md" itemprop="articleBody"><h2 id="判定表"><a class="anchor" href="#判定表">#</a> 判定表</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">条件</td>
+<td>条件 1</td>
+<td rowspan="4">条件取值的组合</td>
+</tr>
+<tr>
+<td>条件 2</td>
+</tr>
+<tr>
+<td>...</td>
+</tr>
+
+<tr>
+<td rowspan="4">动作</td>
+<td>动作 1</td>
+<td rowspan="4">动作</td>
+</tr>
+<tr>
+<td>动作 2</td>
+</tr>
+<tr>
+<td>...</td>
+</tr>
+
+</tbody>
+</table>
+<h2 id="判定树"><a class="anchor" href="#判定树">#</a> 判定树</h2>
+<p><img loading="lazy" data-src="https://blog.ivansnow02.xyz/blog-img/images/software-engineering/6fffe564348fe5c6f28366aa66b24d86aa40e50a3387b91e3e4114f3cfa27743.png" alt="picture 0"></p>
+<h2 id="sa画dfd"><a class="anchor" href="#sa画dfd">#</a> SA 画 DFD</h2>
+<p><img loading="lazy" data-src="https://blog.ivansnow02.xyz/blog-img/images/software-engineering/8fbfc7fc45dd467a154a128ee55ca8c49e7daa3aac3fbf7960a6602a83496303.png" alt="picture 1"></p>
+<h3 id="dfd步骤"><a class="anchor" href="#dfd步骤">#</a> DFD 步骤</h3>
+<ol>
+<li>从顶层 DFD 开始，把整个系统视为加工处理。</li>
+<li>自上而下，逐步对系统分解：
+<ul>
+<li>每分解一次，增加系统的加工元素，进一步具体化每个加工的功能。</li>
+</ul>
+</li>
+<li>重复第 2 步，直到所有的加工元素都是足够简单，功能足够单一，视不必再分解为止。
+<ul>
+<li>不再分解的加工 ——“基本加工”</li>
+</ul>
+</li>
+</ol>
+<h3 id="dfd原则"><a class="anchor" href="#dfd原则">#</a> DFD 原则</h3>
+<ol>
+<li>父 / 子图平衡（I/O）
+<ul>
+<li>如果一张数据流图中的某个加工分解成另一张数据流图时，则上层图为父图，直接下层图为子图。把一个处理分解为一系列处理时，分解前和分解后的输入 / 输出数据流必须相同。</li>
+</ul>
+</li>
+<li>区分流程先后和层次。</li>
+<li>每个子图应该对应唯一的父加工。</li>
+<li>区分全局文件和外部项。</li>
+<li>画数据流而不是控制流。
+<ul>
+<li>数据流反映系统 “做什么”，不反映 “如何做”，因此箭头上的数据流名称只能是名词或名词短语。</li>
+</ul>
+</li>
+<li>一般不画物质流。
+<ul>
+<li>数据流反映能用计算机处理的数据，并不是实物。</li>
+</ul>
+</li>
+<li>每个加工至少有一个输入数据流和一个输出数据流，反映出此加工数据的来源与加工的结果。</li>
+<li>加工框编号。
+<ul>
+<li>子图及其所有的加工都应编号，便于引用和追踪。</li>
+</ul>
+</li>
+<li>掌握分解的速度。
+<ul>
+<li>一般一次引入 2~7 个加工处理。</li>
+</ul>
+</li>
+<li>外部实体之间不能有数据流。</li>
+</ol>
+<div class="tags"><a href="/tags/computer-science/" rel="tag"><i class="ic i-tag"></i>computer science</a><a href="/tags/learning/" rel="tag"><i class="ic i-tag"></i>learning</a><a href="/tags/software-engineering/" rel="tag"><i class="ic i-tag"></i>software engineering</a></div></div><footer><div class="meta"><span class="icon"><i class="ic i-eye"></i></span><span>此文章已被阅读次数:</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/software-engineering/">正在加载...</span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于</span><time title="修改时间：2024-12-30 15:03:19" itemprop="dateModified" datetime="2024-12-30T15:03:19+08:00">2024-12-30</time></span></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>IOyuk1Nya<i class="ic i-at"><em>@</em></i>IOyuk1Nya's Blog</li><li class="link"><strong>本文链接：</strong><a href="https://blog.ivansnow02.xyz/software-engineering/" title="软件工程复习">https://blog.ivansnow02.xyz/software-engineering/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/computer-graphics/" rel="prev" itemprop="url" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;06&#x2F;16&#x2F;frYjsXpz1AteZvb.jpg" title="计算机图形学"><span class="type">上一篇</span><span class="category"><i class="ic i-flag"></i>computer science</span><h3>计算机图形学</h3></a></div><div class="item right"></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E5%AE%9A%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text"> 判定表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E5%AE%9A%E6%A0%91"><span class="toc-number">2.</span> <span class="toc-text"> 判定树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sa%E7%94%BBdfd"><span class="toc-number">3.</span> <span class="toc-text"> SA 画 DFD</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#dfd%E6%AD%A5%E9%AA%A4"><span class="toc-number">3.1.</span> <span class="toc-text"> DFD 步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dfd%E5%8E%9F%E5%88%99"><span class="toc-number">3.2.</span> <span class="toc-text"> DFD 原则</span></a></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li><a href="/computer-organization/" rel="bookmark" title="计算机组成原理复习">计算机组成原理复习</a></li><li><a href="/ComputerSystem/" rel="bookmark" title="操作系统复习">操作系统复习</a></li><li><a href="/DataBaseLearning/" rel="bookmark" title="数据库系统概论概念整理">数据库系统概论概念整理</a></li><li><a href="/sql-lab/" rel="bookmark" title="SQL代码复习">SQL代码复习</a></li><li><a href="/computer-network/" rel="bookmark" title="计算机网络">计算机网络</a></li><li><a href="/ai-fundamental/" rel="bookmark" title="人工智能基础">人工智能基础</a></li><li><a href="/Compilers/" rel="bookmark" title="编译技术笔记">编译技术笔记</a></li><li><a href="/computer-graphics/" rel="bookmark" title="计算机图形学">计算机图形学</a></li><li class="active"><a href="/software-engineering/" rel="bookmark" title="软件工程复习">软件工程复习</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="IOyuk1Nya" src="/img/ne.gif"><p class="name" itemprop="name">IOyuk1Nya</p><div class="description" itemprop="description">some notes about computer science</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">49</span><span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">15</span><span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">23</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/ivansnow02" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;ivansnow02"><i class="ic i-github"></i></a><a href="mailto:eone2017@protonmail.com" class="item email" title="mailto:eone2017@protonmail.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-user"></i>关于</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于本站</a></li></ul></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/links/" rel="section"><i class="ic i-heart"></i>友链</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/computer-graphics/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/DataStructureTest01/">数据结构题目01</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Games101/" title="分类于Games101">Games101</a></div><span><a href="/Games101-assignment-05/">Games101 作业 05</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/List/">数据结构之线性表</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%A4%8D%E4%B9%A0/">数据结构函数复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Java/" title="分类于Java">Java</a></div><span><a href="/java-learning/">Java学习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Physics/" title="分类于Physics">Physics</a></div><span><a href="/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/">物理复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/NJU-Compilers/" title="分类于NJU Compilers">NJU Compilers</a></div><span><a href="/nju-compiler-lab-01-lexer/">NJU编译原理Lab01-Lexer</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Games101/" title="分类于Games101">Games101</a></div><span><a href="/Games101-assignment-04/">Games101 作业 04</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/BST/">二叉搜索树 Binary Search Tree</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/computer-science/" title="分类于computer science">computer science</a></div><span><a href="/DataBaseLearning/">数据库系统概论概念整理</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2023 -<span itemprop="copyrightYear">2024</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">IOyuk1Nya @ Code Blog</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">730k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">11:03</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div><script src="https://unpkg.com/busuanzi@2.3.0/bsz.pure.mini.js"></script><div id="busuanzi-wrap"><span class="ic i-eye"></span><span id="busuanzi_container_site_pv">本站访问量 <span id="busuanzi_value_site_pv"></span> 次</span> | <span class="ic i-user"></span><span id="busuanzi_container_site_uv">本站访客量 <span id="busuanzi_value_site_uv"></span> 次</span></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+        path: `software-engineering/`,
+        favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script src="undefined/undefined" crossorigin="anonymous" fetchpriority="high"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&amp;features=default,fetch" defer="defer"></script><script src="/js/siteInit.js?v=0.4.16" type="module" fetchpriority="high" defer="defer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script>
+    Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/';
+  </script>
+</body></html>

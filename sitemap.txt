@@ -1,3 +1,4 @@
+https://blog.ivansnow02.xyz/software-engineering/
 https://blog.ivansnow02.xyz/computer-graphics/
 https://blog.ivansnow02.xyz/Compilers/
 https://blog.ivansnow02.xyz/about/
@@ -73,6 +74,7 @@ https://blog.ivansnow02.xyz/tags/Linear-Algebra/
 https://blog.ivansnow02.xyz/tags/tree/
 https://blog.ivansnow02.xyz/tags/Physics/
 https://blog.ivansnow02.xyz/tags/Discrete-Mathematics/
+https://blog.ivansnow02.xyz/tags/software-engineering/
 https://blog.ivansnow02.xyz/categories/computer-science/
 https://blog.ivansnow02.xyz/categories/algorithms/
 https://blog.ivansnow02.xyz/categories/data-structure/

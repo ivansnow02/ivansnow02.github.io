@@ -26,6 +26,7 @@
     <category term="tree" />
     <category term="Physics" />
     <category term="Discrete Mathematics" />
+    <category term="software engineering" />
     <entry>
         <id>https://blog.ivansnow02.xyz/computer-graphics/</id>
         <title>计算机图形学</title>
@@ -1225,6 +1226,9 @@ c-16-25.333-24-45-24-59z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/spa
 &lt;h5 id=&#34;whitted-光照模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#whitted-光照模型&#34;&gt;#&lt;/a&gt; Whitted 光照模型&lt;/h5&gt;
 &lt;p&gt;// todo&lt;/p&gt;
 &lt;h3 id=&#34;光线追踪&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#光线追踪&#34;&gt;#&lt;/a&gt; 光线追踪&lt;/h3&gt;
+&lt;p&gt;// todo&lt;/p&gt;
+&lt;h3 id=&#34;表面图案与纹理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表面图案与纹理&#34;&gt;#&lt;/a&gt; 表面图案与纹理&lt;/h3&gt;
+&lt;h4 id=&#34;表面图案的描绘&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表面图案的描绘&#34;&gt;#&lt;/a&gt; 表面图案的描绘&lt;/h4&gt;
 &lt;p&gt;// todo&lt;/p&gt;
 </content>
         <category term="computer science" />

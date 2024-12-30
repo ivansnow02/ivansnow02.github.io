@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "IOyuk1Nya's Blog • All posts by \"software engineering\" tag",
+    "description": "some notes about computer science",
+    "home_page_url": "https://blog.ivansnow02.xyz",
+    "items": [
+        {
+            "id": "https://blog.ivansnow02.xyz/software-engineering/",
+            "url": "https://blog.ivansnow02.xyz/software-engineering/",
+            "title": "软件工程复习",
+            "date_published": "2024-12-30T06:00:47.000Z",
+            "content_html": "<h2 id=\"判定表\"><a class=\"anchor\" href=\"#判定表\">#</a> 判定表</h2>\n<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td rowspan=\"4\">条件</td>\n<td>条件 1</td>\n<td rowspan=\"4\">条件取值的组合</td>\n</tr>\n<tr>\n<td>条件 2</td>\n</tr>\n<tr>\n<td>...</td>\n</tr>\n</tr>\n<tr>\n<td rowspan=\"4\">动作</td>\n<td>动作 1</td>\n<td rowspan=\"4\">动作</td>\n</tr>\n<tr>\n<td>动作 2</td>\n</tr>\n<tr>\n<td>...</td>\n</tr>\n</tr>\n</tbody>\n</table>\n<h2 id=\"判定树\"><a class=\"anchor\" href=\"#判定树\">#</a> 判定树</h2>\n<p><img loading=\"lazy\" data-src=\"https://blog.ivansnow02.xyz/blog-img/images/software-engineering/6fffe564348fe5c6f28366aa66b24d86aa40e50a3387b91e3e4114f3cfa27743.png\" alt=\"picture 0\" /></p>\n<h2 id=\"sa画dfd\"><a class=\"anchor\" href=\"#sa画dfd\">#</a> SA 画 DFD</h2>\n<p><img loading=\"lazy\" data-src=\"https://blog.ivansnow02.xyz/blog-img/images/software-engineering/8fbfc7fc45dd467a154a128ee55ca8c49e7daa3aac3fbf7960a6602a83496303.png\" alt=\"picture 1\" /></p>\n<h3 id=\"dfd步骤\"><a class=\"anchor\" href=\"#dfd步骤\">#</a> DFD 步骤</h3>\n<ol>\n<li>从顶层 DFD 开始，把整个系统视为加工处理。</li>\n<li>自上而下，逐步对系统分解：\n<ul>\n<li>每分解一次，增加系统的加工元素，进一步具体化每个加工的功能。</li>\n</ul>\n</li>\n<li>重复第 2 步，直到所有的加工元素都是足够简单，功能足够单一，视不必再分解为止。\n<ul>\n<li>不再分解的加工 ——“基本加工”</li>\n</ul>\n</li>\n</ol>\n<h3 id=\"dfd原则\"><a class=\"anchor\" href=\"#dfd原则\">#</a> DFD 原则</h3>\n<ol>\n<li>父 / 子图平衡（I/O）\n<ul>\n<li>如果一张数据流图中的某个加工分解成另一张数据流图时，则上层图为父图，直接下层图为子图。把一个处理分解为一系列处理时，分解前和分解后的输入 / 输出数据流必须相同。</li>\n</ul>\n</li>\n<li>区分流程先后和层次。</li>\n<li>每个子图应该对应唯一的父加工。</li>\n<li>区分全局文件和外部项。</li>\n<li>画数据流而不是控制流。\n<ul>\n<li>数据流反映系统 “做什么”，不反映 “如何做”，因此箭头上的数据流名称只能是名词或名词短语。</li>\n</ul>\n</li>\n<li>一般不画物质流。\n<ul>\n<li>数据流反映能用计算机处理的数据，并不是实物。</li>\n</ul>\n</li>\n<li>每个加工至少有一个输入数据流和一个输出数据流，反映出此加工数据的来源与加工的结果。</li>\n<li>加工框编号。\n<ul>\n<li>子图及其所有的加工都应编号，便于引用和追踪。</li>\n</ul>\n</li>\n<li>掌握分解的速度。\n<ul>\n<li>一般一次引入 2~7 个加工处理。</li>\n</ul>\n</li>\n<li>外部实体之间不能有数据流。</li>\n</ol>\n",
+            "tags": [
+                "computer science",
+                "learning",
+                "software engineering"
+            ]
+        }
+    ]
+}
