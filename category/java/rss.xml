@@ -7,29 +7,29 @@
         <language>zh-CN</language>
         <pubDate>Sun, 03 Nov 2024 10:59:18 +0800</pubDate>
         <lastBuildDate>Sun, 03 Nov 2024 10:59:18 +0800</lastBuildDate>
-        <category>Compilers</category>
-        <category>computer science</category>
-        <category>learning</category>
         <category>coding</category>
         <category>algorithms</category>
         <category>data structure</category>
+        <category>computer science</category>
+        <category>learning</category>
+        <category>Compilers</category>
         <category>computer graphics</category>
         <category>Django</category>
         <category>Python</category>
+        <category>trash</category>
         <category>Redis</category>
         <category>Java</category>
         <category>English</category>
         <category>test</category>
-        <category>trash</category>
         <category>coursera</category>
         <category>vim</category>
         <category>Spring</category>
         <category>Math</category>
         <category>Linear Algebra</category>
         <category>tree</category>
+        <category>software engineering</category>
         <category>Physics</category>
         <category>Discrete Mathematics</category>
-        <category>software engineering</category>
         <item>
             <guid isPermalink="true">https://blog.ivansnow02.xyz/java-learning/</guid>
             <title>Java学习</title>
@@ -1327,11 +1327,7 @@ Java 中有两种方法抛出异常。&lt;/p&gt;
 &lt;tr&gt;
 &lt;td&gt;windowDeiconified(WindowEvent)&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;windowIconified(WindowEvent)&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;windowOpened(WindowEvent)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td rowspan=&#34;3&#34;&gt;DocumentEvent&lt;/td&gt;

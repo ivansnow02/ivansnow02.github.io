@@ -4,29 +4,29 @@
     <title>IOyuk1Nya&#39;s Blog • Posts by &#34;java&#34; category</title>
     <link href="https://blog.ivansnow02.xyz" />
     <updated>2024-11-03T02:59:18.000Z</updated>
-    <category term="Compilers" />
-    <category term="computer science" />
-    <category term="learning" />
     <category term="coding" />
     <category term="algorithms" />
     <category term="data structure" />
+    <category term="computer science" />
+    <category term="learning" />
+    <category term="Compilers" />
     <category term="computer graphics" />
     <category term="Django" />
     <category term="Python" />
+    <category term="trash" />
     <category term="Redis" />
     <category term="Java" />
     <category term="English" />
     <category term="test" />
-    <category term="trash" />
     <category term="coursera" />
     <category term="vim" />
     <category term="Spring" />
     <category term="Math" />
     <category term="Linear Algebra" />
     <category term="tree" />
+    <category term="software engineering" />
     <category term="Physics" />
     <category term="Discrete Mathematics" />
-    <category term="software engineering" />
     <entry>
         <id>https://blog.ivansnow02.xyz/java-learning/</id>
         <title>Java学习</title>
@@ -1321,11 +1321,7 @@ Java 中有两种方法抛出异常。&lt;/p&gt;
 &lt;tr&gt;
 &lt;td&gt;windowDeiconified(WindowEvent)&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;windowIconified(WindowEvent)&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;windowOpened(WindowEvent)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td rowspan=&#34;3&#34;&gt;DocumentEvent&lt;/td&gt;
