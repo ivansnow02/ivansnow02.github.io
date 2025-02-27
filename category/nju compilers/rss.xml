@@ -10,23 +10,23 @@
         <category>coding</category>
         <category>algorithms</category>
         <category>data structure</category>
+        <category>Compilers</category>
         <category>computer science</category>
         <category>learning</category>
-        <category>Compilers</category>
         <category>Django</category>
         <category>Python</category>
         <category>computer graphics</category>
-        <category>Redis</category>
-        <category>Java</category>
-        <category>English</category>
         <category>trash</category>
+        <category>Redis</category>
+        <category>English</category>
         <category>test</category>
-        <category>coursera</category>
+        <category>Java</category>
         <category>vim</category>
+        <category>coursera</category>
         <category>Spring</category>
+        <category>tree</category>
         <category>Math</category>
         <category>Linear Algebra</category>
-        <category>tree</category>
         <category>software engineering</category>
         <category>Physics</category>
         <category>Discrete Mathematics</category>
@@ -34,9 +34,9 @@
             <guid isPermalink="true">https://blog.ivansnow02.xyz/nju-compiler-lab-01-lexer/</guid>
             <title>NJU编译原理Lab01-Lexer</title>
             <link>https://blog.ivansnow02.xyz/nju-compiler-lab-01-lexer/</link>
+            <category>Compilers</category>
             <category>computer science</category>
             <category>learning</category>
-            <category>Compilers</category>
             <pubDate>Thu, 03 Oct 2024 14:44:42 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;本实验为&lt;a href=&#34;http://docs.compilers.cpl.icu/#/2024/lab1-lexer/lab1-lexer&#34;&gt; NJU 编译原理实验 1&lt;/a&gt;&lt;/p&gt;
