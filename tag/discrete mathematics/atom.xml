@@ -6,7 +6,6 @@
     <updated>2023-04-24T12:11:05.000Z</updated>
     <category term="coding" />
     <category term="algorithms" />
-    <category term="data structure" />
     <category term="Compilers" />
     <category term="computer science" />
     <category term="learning" />
@@ -15,18 +14,19 @@
     <category term="computer graphics" />
     <category term="trash" />
     <category term="Redis" />
+    <category term="Java" />
     <category term="English" />
     <category term="test" />
-    <category term="Java" />
     <category term="vim" />
-    <category term="coursera" />
     <category term="Spring" />
-    <category term="tree" />
     <category term="Math" />
     <category term="Linear Algebra" />
     <category term="software engineering" />
+    <category term="data structure" />
     <category term="Physics" />
     <category term="Discrete Mathematics" />
+    <category term="coursera" />
+    <category term="tree" />
     <entry>
         <id>https://blog.ivansnow02.xyz/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</id>
         <title>离散数学复习</title>

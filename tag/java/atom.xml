@@ -6,7 +6,6 @@
     <updated>2024-11-03T02:59:18.000Z</updated>
     <category term="coding" />
     <category term="algorithms" />
-    <category term="data structure" />
     <category term="Compilers" />
     <category term="computer science" />
     <category term="learning" />
@@ -15,18 +14,19 @@
     <category term="computer graphics" />
     <category term="trash" />
     <category term="Redis" />
+    <category term="Java" />
     <category term="English" />
     <category term="test" />
-    <category term="Java" />
     <category term="vim" />
-    <category term="coursera" />
     <category term="Spring" />
-    <category term="tree" />
     <category term="Math" />
     <category term="Linear Algebra" />
     <category term="software engineering" />
+    <category term="data structure" />
     <category term="Physics" />
     <category term="Discrete Mathematics" />
+    <category term="coursera" />
+    <category term="tree" />
     <entry>
         <id>https://blog.ivansnow02.xyz/java-learning/</id>
         <title>Java学习</title>
