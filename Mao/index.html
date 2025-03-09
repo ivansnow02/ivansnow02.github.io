@@ -1,0 +1,1319 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link href="https://fastly.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" rel="stylesheet">
+  <link href="/css/custom.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.loli.net">
+  <link rel="preconnect" href="https://gstatic.loli.net" crossorigin>
+  <link href="https://fonts.loli.net/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><link rel="icon" type="image/ico" sizes="32x32" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"><meta name="msvalidate.01" content="5C885BB4F08198773FCB9D68FB7EFF0C"><meta name="google-site-verification" content="SU_V4YfQlQkkbm4IQUajehIwRUPbvIwErs1WJRMD0NQ"><link rel="alternate" href="/rss.xml" title="IOyuk1Nya's Blog" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="IOyuk1Nya's Blog" type="application/atom+xml"><link rel="alternate" type="application/json" title="IOyuk1Nya's Blog" href="https://blog.ivansnow02.xyz/feed.json"><link rel="preconnect" href="https://s4.zstatic.net"><link rel="preconnect" href="https://at.alicdn.com"><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://unpkg.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CJuliamo:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CJetBrains%20Mono:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.22"><link rel="modulepreload" href="/js/chunk-4EDROOES.js"><link rel="modulepreload" href="/js/chunk-DPGMC3IN.js"><link rel="modulepreload" href="/js/chunk-LXJ7YNX5.js"><link rel="modulepreload" href="/js/chunk-QD6RGNI2.js"><link rel="modulepreload" href="/js/chunk-VEFPEXQA.js"><link rel="modulepreload" href="/js/copy-tex-F5ZAW2ZS.js"><link rel="modulepreload" href="/js/index.esm-DZOD4WZZ.js"><link rel="modulepreload" href="/js/post-BDJ5HNHS.js"><link rel="modulepreload" href="/js/quicklink-2QXC4D4Z.js"><link rel="modulepreload" href="/js/search-PUS3KNOG.js"><link rel="modulepreload" href="/js/siteInit.js"><link rel="modulepreload" href="/js/tcomments-XZ2QITX7.js"><link rel="preload" href="https://blog.ivansnow02.xyz/blog-img/59bcba93d944d6057250d5ea80b18ec2390418501%202.png" as="image" fetchpriority="high"><meta name="keywords" content="learning,"><meta name="description" content="some notes about computer science"><link rel="canonical" href="https://blog.ivansnow02.xyz/Mao/"><title>毛概题目</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">毛概题目</h1><div class="meta"><span class="item" title="创建时间：2024-06-21 19:53:09"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2024-06-21T19:53:09+08:00">2024-06-21</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>22k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>20 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Code Blog</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="https://blog.ivansnow02.xyz/blog-img/59bcba93d944d6057250d5ea80b18ec2390418501%202.png" loading="eager" decoding="async" fetchpriority="high" alt="IOyuk1Nya's Blog"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemlistelement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span><i class="ic i-angle-right"></i><span class="current" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/trash/" itemprop="item" rel="index" title="分类于trash"><span itemprop="name">trash<meta itemprop="position" content="0"></span></a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://blog.ivansnow02.xyz/Mao/"><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/img/ne.gif"><meta itemprop="name" content="IOyuk1Nya"><meta itemprop="description" content="Just a Note., some notes about computer science"></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="IOyuk1Nya's Blog"></span><div class="body md" itemprop="articleBody"><h2 id="导论-练习题"><a class="anchor" href="#导论-练习题">#</a> 导论 练习题</h2>
+<h3 id="一-单选题共3题30分"><a class="anchor" href="#一-单选题共3题30分">#</a> 一、单选题（共 3 题，30 分）</h3>
+<ol>
+<li class="quiz">
+<p>“马克思主义的中国化” 这一命题的正式提出是在 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>党的一大</li>
+<li>遵义会议</li>
+<li class="correct">党的六届六中全会</li>
+<li>党的七大</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义中国化时代化的第一次历史性飞跃取得的理论成果是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">毛泽东思想</li>
+<li>邓小平理论</li>
+<li>“三个代表” 重要思想</li>
+<li>科学发展观</li>
+<li>习近平新时代中国特色社会主义思想</li>
+</ul>
+</li>
+<li class="quiz">
+<p>被称作是中国特色社会主义理论体系的开篇之作的理论成果是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>毛泽东思想</li>
+<li class="correct">邓小平理论</li>
+<li>“三个代表” 重要思想</li>
+<li>科学发展观</li>
+<li>习近平新时代中国特色社会主义思想</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多选题共1题10分"><a class="anchor" href="#二-多选题共1题10分">#</a> 二、多选题（共 1 题，10 分）</h3>
+<ol>
+<li class="quiz multi">&quot;中国特色社会主义理论体系&quot; 包括以下哪些理论成果 <span class="gap"></span> 。
+<ul class="options">
+<li>毛泽东思想</li>
+<li class="correct">邓小平理论</li>
+<li class="correct">“三个代表” 重要思想</li>
+<li class="correct">科学发展观</li>
+<li class="correct">习近平新时代中国特色社会主义思想</li>
+</ul>
+</li>
+</ol>
+<h3 id="三-判断题共4题40分"><a class="anchor" href="#三-判断题共4题40分">#</a> 三、判断题（共 4 题，40 分）</h3>
+<ol>
+<li class="quiz true">
+<p>马克思主义只有实现中国化时代化，才能不断发展自身，始终保持蓬勃生机和旺盛活力。</p>
+</li>
+<li class="quiz true">
+<p>没有抽象的马克思主义，只有具体的马克思主义。</p>
+</li>
+<li class="quiz false">
+<p>习近平新时代中国特色社会主义思想是马克思主义中国化的新飞跃，不属于中国特色社会主义理论体系。</p>
+</li>
+<li class="quiz true">
+<p>中国共产党的历史是一部不断推进马克思主义中国化时代化的历史。</p>
+</li>
+</ol>
+<h3 id="四-简答题共2题20分"><a class="anchor" href="#四-简答题共2题20分">#</a> 四、简答题（共 2 题，20 分）</h3>
+<ol>
+<li class="quiz fill">
+<p>马克思主义中国化时代化的内涵指的是什么？</p>
+<blockquote>
+<p class="gap">答案：马克思主义中国化时代化，就是立足中国国情和时代特点，坚持把马克思主义基本原理同中国具体实际相结合、同中华优秀传统文化相结合，深入研究和解决中国革命、建设、改革不同历史时期的实际问题，真正搞懂面临的时代课题，不断吸收新的时代内容，科学回答时代提出的重大理论和实践课题，创造新的理论成果。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>马克思主义中国化时代化进程中产生了哪些理论成果，它们之间是什么关系？</p>
+<blockquote>
+<p class="gap">答案：在马克思主义中国化时代化的历史进程中，产生了毛泽东思想、邓小平理论、“三个代表” 重要思想、科学发展观、习近平新时代中国特色社会主义思想。<br>
+马克思主义中国化时代化的理论成果是一脉相承又与时俱进的关系。毛泽东思想和中国特色社会主义理论体系，都是马克思列宁主义在中国的运用和发展，都以独创性的理论成果丰富和发展了马克思主义的理论宝库。中国共产党把这些成果作为自己的指导思想和行动指南。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="第一章练习题"><a class="anchor" href="#第一章练习题">#</a> 第一章练习题</h2>
+<h3 id="一-单选题共4题40分"><a class="anchor" href="#一-单选题共4题40分">#</a> 一、单选题（共 4 题，40 分）</h3>
+<ol>
+<li class="quiz">
+<p><span class="gap"></span> 将毛泽东思想写入党章。</p>
+<ul class="options">
+<li>党的一大</li>
+<li>遵义会议</li>
+<li>党的六届六中全会</li>
+<li class="correct">党的七大</li>
+</ul>
+</li>
+<li class="quiz">
+<p>马克思主义中国化时代化的第一个重大理论成果是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">毛泽东思想</li>
+<li>邓小平理论</li>
+<li>“三个代表” 重要思想</li>
+<li>科学发展观</li>
+<li>习近平新时代中国特色社会主义思想</li>
+</ul>
+</li>
+<li class="quiz">
+<p>毛泽东思想的基本点和精髓是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">实事求是</li>
+<li>理论联系实际</li>
+<li>一切从实际出发</li>
+<li>坚持在实践中检验真理和发展</li>
+<li>调查研究</li>
+</ul>
+</li>
+<li class="quiz">
+<p>毛泽东思想形成和发展的时代背景是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>中国沦为半殖民地半封建社会</li>
+<li class="correct">帝国主义战争和无产阶级革命</li>
+<li>第一次世界大战的爆发</li>
+<li>中国工人阶级的成长壮大</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多选题共1题10分-2"><a class="anchor" href="#二-多选题共1题10分-2">#</a> 二、多选题（共 1 题，10 分）</h3>
+<ol>
+<li class="quiz multi">毛泽东思想萌芽期的代表性著作有哪些 <span class="gap"></span> 。
+<ul class="options">
+<li class="correct">《中国社会各阶级的分析》</li>
+<li class="correct">《湖南农民运动考察报告》</li>
+<li>《中国的红色政权为什么能够存在？》</li>
+<li>《论联合政府》</li>
+<li>《反对本本主义》</li>
+</ul>
+</li>
+</ol>
+<h3 id="三-判断题共3题30分"><a class="anchor" href="#三-判断题共3题30分">#</a> 三、判断题（共 3 题，30 分）</h3>
+<ol>
+<li class="quiz true">
+<p>就毛泽东的一生来看，他的功绩远远大于他的过失。他的功绩是第一位的，错误是第二位的。</p>
+</li>
+<li class="quiz true">
+<p>不论过去、现在和将来，群众路线都是我们党的生命线和根本工作路线，是我们党永葆青春活力和战斗力的重要传家宝。 </p>
+</li>
+<li class="quiz true">
+<p>政策和策略是党的生命。 </p>
+</li>
+</ol>
+<h3 id="四-简答题共2题20分-2"><a class="anchor" href="#四-简答题共2题20分-2">#</a> 四、简答题（共 2 题，20 分）</h3>
+<ol>
+<li class="quiz fill">
+<p>毛泽东思想活的灵魂指的什么？</p>
+<blockquote>
+<p class="gap">答案：1981 年党的十一届六中全会通过的《中国共产党中央委员会关于建国以来党的若干历史问题的决议》指出 “毛泽东思想的活的灵魂，是贯穿于上述各个组成部分的立场、观点和方法，它们有三个基本方面，即实事求是，群众路线，独立自主。”</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>如何科学认识毛泽东思想的历史地位？</p>
+<blockquote>
+<p class="gap">答案：马克思主义中国化时代化的第一个重大理论成果；中国革命和建设的科学指南；中国共产党和中国人民宝贵的精神财富</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="第二章练习题"><a class="anchor" href="#第二章练习题">#</a> 第二章练习题</h2>
+<h3 id="一-单选题共9题598分"><a class="anchor" href="#一-单选题共9题598分">#</a> 一、单选题（共 9 题，59.8 分）</h3>
+<ol>
+<li class="quiz">
+<p><span class="gap"></span> 使中国的资产阶级民主主义革命，从原来属于旧的世界资产阶级民主革命的一部分，转变为属于世界无产阶级社会主义革命的一部分。</p>
+<ul class="options">
+<li>辛亥革命</li>
+<li class="correct">十月革命</li>
+<li>五四运动</li>
+<li>暴力革命</li>
+</ul>
+</li>
+<li class="quiz">
+<p>中国革命要分两步走，第一步是完成新民主主义革命任务，第二步是完成 <span class="gap"></span> 任务，这是性质不同但又相互联系的两个革命过程。</p>
+<ul class="options">
+<li>新式的资产阶级民主革命</li>
+<li>新资本主义革命</li>
+<li>资本主义革命</li>
+<li class="correct">社会主义革命</li>
+</ul>
+</li>
+<li class="quiz">
+<p>新民主主义革命的领导者是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">无产阶级</li>
+<li>农民阶级</li>
+<li>小资产阶级</li>
+<li>民族资产阶级</li>
+</ul>
+</li>
+<li class="quiz">
+<p>革命的首要问题是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>建立统一战线</li>
+<li>建立根据地</li>
+<li>加强党的建设</li>
+<li class="correct">分清敌友</li>
+</ul>
+</li>
+<li class="quiz">
+<p>新民主主义革命实质上就是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>中国共产党领导下的工人革命</li>
+<li class="correct">中国共产党领导下的农民革命</li>
+<li>中国共产党领导下的资产阶级革命</li>
+<li>中国共产党领导下的各阶级联合的革命</li>
+</ul>
+</li>
+<li class="quiz">
+<p>区别新旧两种不同范畴的民主主义革命的根本标志是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>中国共产党是否诞生</li>
+<li class="correct">革命的领导权是掌握在无产阶级手中还是掌握在资产阶级手中</li>
+<li>无产阶级是否登上历史舞台</li>
+<li>革命的领导权是掌握在资产阶级手中还是掌握在封建地主阶级手中</li>
+</ul>
+</li>
+<li class="quiz">
+<p>中国革命必须走农村包围城市、武装夺取政权的道路，是由 <span class="gap"></span> 决定的。</p>
+<ul class="options">
+<li>中国共产党的主张</li>
+<li>毛泽东的主张</li>
+<li>共产国际的要求</li>
+<li class="correct">中国所处的时代特点和具体国情</li>
+</ul>
+</li>
+<li class="quiz">
+<p>建设新型人民军队的根本原则是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">坚持党对军队的绝对领导</li>
+<li>全心全意为人民服务</li>
+<li>制定铁的纪律</li>
+<li>人民军队的三大任务</li>
+</ul>
+</li>
+<li class="quiz">
+<p>中国共产党区别于其他任何政党的显著标志是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">理论联系实际、密切联系群众、批评与自我批评相结合的三大优良作风</li>
+<li>提出了共产主义目标</li>
+<li>代表工人阶级</li>
+<li>建立了工农联盟</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多选题共4题268分"><a class="anchor" href="#二-多选题共4题268分">#</a> 二、多选题（共 4 题，26.8 分）</h3>
+<ol>
+<li class="quiz multi">
+<p>近代中国民主革命的根本任务是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">推翻帝国主义、封建主义和官僚资本主义的统治</li>
+<li class="correct">从根本上推翻反动腐朽的政治上层建筑</li>
+<li class="correct">变革阻碍生产力发展的生产关系</li>
+<li>反对资本主义剥削</li>
+<li class="correct">为建设富强民主的国家、确立人民当家作主的政治制度、改善人民生活扫清障碍，创造必要的前提</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>新民主主义革命的动力包括 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">无产阶级</li>
+<li class="correct">农民阶级</li>
+<li class="correct">城市小资产阶级</li>
+<li class="correct">民族资产阶级</li>
+<li>开明乡绅</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>关于中国无产阶级，下列说法正确的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>是中国人数最多的阶级</li>
+<li class="correct">是新的社会生产力的代表</li>
+<li class="correct">是近代中国最进步阶级</li>
+<li class="correct">是中国革命的领导力量</li>
+<li class="correct">是伴随着外国资本主义在中国直接经营企业而产生的</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>下列属于新民主主义经济纲领的内容有 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>没收社会一切财富归新民主主义国家所有</li>
+<li class="correct">没收封建地主阶级的土地归农民所有</li>
+<li class="correct">没收官僚资产阶级的垄断资本归新民主主义国家所有</li>
+<li>保护知识分子</li>
+<li class="correct">保护民族工商业</li>
+</ul>
+</li>
+</ol>
+<h3 id="三-简答题共2题134分"><a class="anchor" href="#三-简答题共2题134分">#</a> 三、简答题（共 2 题，13.4 分）</h3>
+<ol>
+<li class="quiz fill">
+<p>如何理解新民主主义革命的三大法宝及其相互关系？</p>
+<blockquote>
+<p class="gap">答案：毛泽东在《〈共产党人〉发刊词》一文中，总结了中国革命两次胜利和两次失败的经验教训，揭示了中国革命发展的客观规律，把统一战线、武装斗争、党的建设比作党在中国革命中战胜敌人的三个主要的法宝。<br>
+毛泽东系统地论述了统一战线、武装斗争和党的建设三者之间的关系。他指出，统一战线和武装斗争是中国革命的两个基本特点，是战胜敌人的两个基本武器。统一战线是实行武装斗争的统一战线，武装斗争是统一战线的中心支柱，党的组织则是掌握统一战线和武装斗争这两个武器以实行对敌冲锋陷阵的英勇战士。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>新民主主义革命的总路线是什么？</p>
+<blockquote>
+<p class="gap">答案：1948 年，毛泽东在《在晋绥干部会议上的讲话》中完整地表述了总路线的内容，即无产阶级领导的，人民大众的，反对帝国主义、封建主义和官僚资本主义的革命。新民主主义革命总路线反映了中国革命的基本规律，指明了中国革命的对象、动力、领导力量，是新民主主义革命的指导路线。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="第三章练习题"><a class="anchor" href="#第三章练习题">#</a> 第三章练习题</h2>
+<h3 id="一-单选题共5题500分"><a class="anchor" href="#一-单选题共5题500分">#</a> 一、单选题（共 5 题，50.0 分）</h3>
+<ol>
+<li class="quiz">
+<p>在对农业的社会主义改造中，初级农业生产合作社具有 <span class="gap"></span> 性质。</p>
+<ul class="options">
+<li>农民个人所有制</li>
+<li>社会主义萌芽</li>
+<li class="correct">半社会主义</li>
+<li>社会主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>对手工业的社会主义改造，党和政府采取了 <span class="gap"></span> 的方针。</p>
+<ul class="options">
+<li>自愿互利</li>
+<li class="correct">积极领导、稳步前进</li>
+<li>典型示范</li>
+<li>国家帮助</li>
+</ul>
+</li>
+<li class="quiz">
+<p>中国共产党根据马克思、恩格斯和列宁关于采用和平方式变革所有制的设想，结合中国的具体情况，提出了对资本主义工商业实行 <span class="gap"></span> 方针。</p>
+<ul class="options">
+<li>革命</li>
+<li>没收</li>
+<li class="correct">和平赎买</li>
+<li>保护</li>
+</ul>
+</li>
+<li class="quiz">
+<p>中国共产党对资本主义工商业进行社会主义改造的过程中，在利益分配上采取的政策是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>统筹兼顾</li>
+<li>劳资两利</li>
+<li>公私兼顾</li>
+<li class="correct">四马分肥</li>
+</ul>
+</li>
+<li class="quiz">
+<p><span class="gap"></span> 年 9 月，第一届全国人民代表大会召开和《中华人民共和国宪法》制定及颁布施行。</p>
+<ul class="options">
+<li>1949</li>
+<li>1953</li>
+<li class="correct">1954</li>
+<li>1956</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多选题共3题300分"><a class="anchor" href="#二-多选题共3题300分">#</a> 二、多选题（共 3 题，30.0 分）</h3>
+<ol>
+<li class="quiz multi">
+<p>在新民主主义社会中，存在的经济成分有 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">国营经济</li>
+<li class="correct">合作社经济</li>
+<li class="correct">个体经济</li>
+<li class="correct">私人资本主义经济</li>
+<li class="correct">国家资本主义经济</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>农业社会主义改造大体上经历了 <span class="gap"></span> 等几个发展阶段。</p>
+<ul class="options">
+<li>个体经济</li>
+<li class="correct">互助组</li>
+<li class="correct">初级社</li>
+<li>中级社</li>
+<li class="correct">高级社</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>对资本主义工商业实行和平赎买 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">有利于发挥私营工商业在国计民生方面的积极作用，促进国民经济发展</li>
+<li class="correct">有利于争取和平团结民族资产阶级</li>
+<li class="correct">有利于团结各民主党派和各界爱国民主人士，巩固和发展统一战线</li>
+<li class="correct">有利于发挥民族资产阶级中大多数人的知识、才能、技术专长和管理经验</li>
+<li class="correct">有利于争取和团结那些原来同资产阶级相联系的知识分子为社会主义建设服务。</li>
+</ul>
+</li>
+</ol>
+<h3 id="三-简答题共2题200分"><a class="anchor" href="#三-简答题共2题200分">#</a> 三、简答题（共 2 题，20.0 分）</h3>
+<ol>
+<li class="quiz fill">
+<p>党在过渡时期的总路线是什么？</p>
+<blockquote>
+<p class="gap">答案：1953 年，党中央正式提出了过渡时期的总路线，“从中华人民共和国成立，到社会主义改造基本完成，这是一个过渡时期。党在这个过渡时期的总路线和总任务，是要在一个相当长的时期内，逐步实现国家的社会主义工业化，并逐步实现国家对农业、对手工业和对资本主义工商业的社会主义改造。”</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>如何认识我国社会主义改造的历史经验？</p>
+<blockquote>
+<p class="gap">答案：在进行社会主义改造、向社会主义过渡的进程中，中国共产党积累了丰富的历史经验。<br>
+第一，坚持社会主义工业化建设与社会主义改造同时并举。<br>
+第二，采取积极引导、逐步过渡的方式。<br>
+第三，用和平方法进行改造。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="第四章练习题"><a class="anchor" href="#第四章练习题">#</a> 第四章练习题</h2>
+<h3 id="一-单选题共5题500分-2"><a class="anchor" href="#一-单选题共5题500分-2">#</a> 一、单选题（共 5 题，50.0 分）</h3>
+<ol>
+<li class="quiz">
+<p><span class="gap"></span> 标志着党探索中国社会主义建设道路的良好开端。</p>
+<ul class="options">
+<li>《论人民民主专政》</li>
+<li class="correct">《论十大关系》</li>
+<li>《关于正确处理人民内部矛盾的问题》</li>
+<li>《在中国共产党第七届中央委员会第二次全体会议上的报告》</li>
+</ul>
+</li>
+<li class="quiz">
+<p><span class="gap"></span> 提出了知识分子是工人阶级一部分的观点。</p>
+<ul class="options">
+<li>毛泽东</li>
+<li class="correct">周恩来</li>
+<li>刘少奇</li>
+<li>邓小平</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会主义国家政治生活的主题是正确处理 <span class="gap"></span> 的问题。</p>
+<ul class="options">
+<li>敌我矛盾</li>
+<li class="correct">人民内部矛盾</li>
+<li>阶级矛盾</li>
+<li>中国与国际敌对势力之间的矛盾</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“两参一改三结合” 是 <span class="gap"></span> 总结的。</p>
+<ul class="options">
+<li class="correct">毛泽东</li>
+<li>朱德</li>
+<li>周恩来</li>
+<li>邓小平</li>
+</ul>
+</li>
+<li class="quiz">
+<p>对于政治思想领域的人民内部矛盾，实行 <span class="gap"></span> 的方针。</p>
+<ul class="options">
+<li class="correct">“团结一批评一团结”</li>
+<li>“团结一批判一团结”</li>
+<li>“批评一团结一批评”</li>
+<li>“批判一团结一批评”</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多选题共3题300分-2"><a class="anchor" href="#二-多选题共3题300分-2">#</a> 二、多选题（共 3 题，30.0 分）</h3>
+<ol>
+<li class="quiz multi">
+<p>处理敌我矛盾需要 <span class="gap"></span> ，处理人民内部矛盾需要 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">分清敌我</li>
+<li class="correct">分清是非</li>
+<li>分清你我</li>
+<li>分清对错</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>在探索中国社会主义建设道路过程中，毛泽东提出社会主义可以区分为哪几个阶段 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">不发达的社会主义</li>
+<li class="correct">比较发达的社会主义</li>
+<li>发达的社会主义</li>
+<li>社会主义初级阶段</li>
+<li>社会主义高级阶段</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>针对人民内部矛盾，采取所谓民主方法解决，具体是指 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">讨论的方法</li>
+<li class="correct">批评的方法</li>
+<li class="correct">说服教育的方法</li>
+<li>阶级分析的方法</li>
+</ul>
+</li>
+</ol>
+<h3 id="三-简答题共2题200分-2"><a class="anchor" href="#三-简答题共2题200分-2">#</a> 三、简答题（共 2 题，20.0 分）</h3>
+<ol>
+<li class="quiz fill">
+<p>社会主义社会的基本矛盾是什么，有何特点？ </p>
+<blockquote>
+<p class="gap">答案：在社会主义社会中，基本的矛盾仍然是生产关系和生产力之间的矛盾，上层建筑和经济基础之间的矛盾。<br>
+社会主义社会的基本矛盾是在生产关系和生产力基本适应、上层建筑和经济基础基本适应条件下的矛盾，是在人民根本利益一致基础上的矛盾。因此，它不是对抗性的矛盾，而是非对抗性的矛盾。社会主义基本矛盾具有 “又相适应又相矛盾” 的特点。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>如何认识党对社会主义建设道路初步探索的重大意义？ </p>
+<blockquote>
+<p class="gap">答案：在社会主义建设时期，党领导人民探索社会主义建设道路，历经艰辛和曲折，在理论和实践上取得了一系列重要成果。这些成果对于巩固我国社会主义制度，开创和发展中国特色社会主义，促进世界社会主义的发展，具有重要意义。<br>
+第一，巩固和发展了我国的社会主义制度。<br>
+第二，为开创中国特色社会主义提供了宝贵经验、理论准备、物质基础。<br>
+第三，丰富了科学社会主义的理论和实践。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="第五章练习题"><a class="anchor" href="#第五章练习题">#</a> 第五章练习题</h2>
+<h3 id="一-单选题共8题-800分"><a class="anchor" href="#一-单选题共8题-800分">#</a> 一、单选题（共 8 题，80.0 分）</h3>
+<ol>
+<li class="quiz">
+<p><span class="gap"></span> 年 12 月召开的党的十一届三中全会，重新确立了解放思想、实事求是的思想路线。</p>
+<ul class="options">
+<li>1976</li>
+<li>1977</li>
+<li class="correct">1978</li>
+<li>1979</li>
+</ul>
+</li>
+<li class="quiz">
+<p>中国特色社会主义理论体系创立的时代背景是什么 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>战争与革命</li>
+<li class="correct">和平与发展</li>
+<li>美国与苏联两极争霸</li>
+<li>冷战</li>
+</ul>
+</li>
+<li class="quiz">
+<p><span class="gap"></span> 是我国改革开放和社会主义现代化建设的总设计师。</p>
+<ul class="options">
+<li>毛泽东</li>
+<li class="correct">邓小平</li>
+<li>习近平</li>
+<li>江泽民</li>
+</ul>
+</li>
+<li class="quiz">
+<p><span class="gap"></span> 第一次对中国特色社会主义理论进行了系统的概括。</p>
+<ul class="options">
+<li>十一届三中全会</li>
+<li>十二大</li>
+<li class="correct">十三大</li>
+<li>十四大</li>
+</ul>
+</li>
+<li class="quiz">
+<p>邓小平理论轮廓的形成是在 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>十一届三中全会</li>
+<li>十二大</li>
+<li class="correct">十三大</li>
+<li>十四大</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“邓小平理论” 这一概念的正式提出是在 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>十二大</li>
+<li>十三大</li>
+<li>十四大</li>
+<li class="correct">十五大</li>
+</ul>
+</li>
+<li class="quiz">
+<p>科学发展观创造性地回答了 <span class="gap"></span> 重大问题。</p>
+<ul class="options">
+<li>什么是社会主义、怎样建设社会主义</li>
+<li>建设什么样的党、怎样建设党</li>
+<li>建设什么样的中国式现代化，怎样实现中国式现代化</li>
+<li class="correct">新形势下实现什么样的发展、怎样发展</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“三个代表” 重要思想主要回答了 <span class="gap"></span> 重大问题。</p>
+<ul class="options">
+<li>什么是社会主义、怎样建设社会主义</li>
+<li class="correct">建设什么样的党、怎样建设党</li>
+<li>建设什么样的中国式现代化，怎样实现中国式现代化</li>
+<li>新形势下实现什么样的发展、怎样发展</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多选题共1题-100分"><a class="anchor" href="#二-多选题共1题-100分">#</a> 二、多选题（共 1 题，10.0 分）</h3>
+<ol>
+<li class="quiz multi">习近平新时代中国特色社会主义思想深刻回答了以下哪些重大时代课题 <span class="gap"></span> 。
+<ul class="options">
+<li class="correct">新时代坚持和发展什么样的中国特色社会主义、怎样坚持和发展中国特色社会主义</li>
+<li class="correct">建设什么样的社会主义现代化强国、怎样建设社会主义现代化强国</li>
+<li>建设什么样的中国式现代化，怎样实现中国式现代化</li>
+<li class="correct">建设什么样的长期执政的马克思主义政党、怎样建设长期执政的马克思主义政党</li>
+</ul>
+</li>
+</ol>
+<h3 id="三-简答题共1题-100分"><a class="anchor" href="#三-简答题共1题-100分">#</a> 三、简答题（共 1 题，10.0 分）</h3>
+<ol>
+<li class="quiz fill">
+<p>如何认识中国共产党百年奋斗的历史经验？</p>
+<blockquote>
+<p class="gap">答案：2021 年，党的十九届六中全会通过的《中共中央关于党的百年奋斗重大成就和历史经验的决议》(以下简称《决议》), 对党的百年奋斗历史经验进行了总结，概括提炼了 “十个坚持”。这就是：坚持党的领导，坚持人民至上，坚持理论创新，坚持独立自主，坚持中国道路，坚持胸怀天下，坚持开拓创新，坚持敢于斗争，坚持统一战线，坚持自我革命。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>党的十三大制定的党在社会主义初级阶段的基本路线是什么？</p>
+<blockquote>
+<p class="gap">党的十三大报告提出了党在社会主义初级阶段的基本路线：领导和团结全国各族人民，以经济建设为中心，坚持四项基本原则，坚持改革开放，自力更生，艰苦创业，为把我国建设成为富强、民主、文明的社会主义现代化国家而奋斗。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="第六章练习题"><a class="anchor" href="#第六章练习题">#</a> 第六章练习题</h2>
+<h3 id="一-单选题共7题464分"><a class="anchor" href="#一-单选题共7题464分">#</a> 一、单选题（共 7 题，46.4 分）</h3>
+<ol>
+<li class="quiz">
+<p>改革开放以来，我们党全部理论和实践一以贯之的主题是什么？</p>
+<ul class="options">
+<li>解放思想、实事求是</li>
+<li>解放生产力、发展社会生产力</li>
+<li>一切从最大实际，社会主义初级阶段出发</li>
+<li class="correct">中国特色社会主义</li>
+</ul>
+</li>
+<li class="quiz">
+<p>社会主义的本质是什么？</p>
+<ul class="options">
+<li>社会主义公有制和按劳分配</li>
+<li>人民当家作主，成为社会的主人</li>
+<li>高度的社会主义精神文明和人的全面解放</li>
+<li class="correct">解放生产力，发展生产力，消灭剥削，消除两极分化，最终达到共同富裕</li>
+</ul>
+</li>
+<li class="quiz">
+<p>党的哪次会议系统地论述了社会主义初级阶段理论？</p>
+<ul class="options">
+<li>十一届三中全会</li>
+<li>十二大</li>
+<li class="correct">十三大</li>
+<li>十四大</li>
+</ul>
+</li>
+<li class="quiz">
+<p>中国特色社会主义理论体系的开篇之作是什么？</p>
+<ul class="options">
+<li>毛泽东思想</li>
+<li class="correct">邓小平理论</li>
+<li>习近平新时代中国特色社会主义思想</li>
+<li>三个代表</li>
+</ul>
+</li>
+<li class="quiz">
+<p>邓小平理论的精髓是什么？</p>
+<ul class="options">
+<li class="correct">解放思想、实事求是</li>
+<li>实践是检验真理的唯一标准</li>
+<li>密切联系群众</li>
+<li>大胆试、大胆闯</li>
+</ul>
+</li>
+<li class="quiz">
+<p>建设中国特色社会主义的总依据是什么？</p>
+<ul class="options">
+<li>解放思想，实事求是</li>
+<li class="correct">社会主义初级阶段理论</li>
+<li>社会主义市场经济理论</li>
+<li>社会主义四项基本原则</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“一国两制” 伟大构想的提出首先是为了解决什么问题？</p>
+<ul class="options">
+<li>祖国统一</li>
+<li class="correct">台湾</li>
+<li>香港</li>
+<li>澳门</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多选题共6题402分"><a class="anchor" href="#二-多选题共6题402分">#</a> 二、多选题（共 6 题，40.2 分）</h3>
+<ol>
+<li class="quiz multi">
+<p>下列关于社会主义初级阶段的论断正确的有哪些？</p>
+<ul class="options">
+<li class="correct">我国已经进入社会主义社会，必须坚持而不能离开社会主义。</li>
+<li class="correct">我国的社会主义社会还处在不发达的阶段，必须正视而不能超越初级阶段。</li>
+<li class="correct">社会主义初级阶段理论基于对中国国情的准确把握，揭示了当代中国的历史方位，是建设中国特色社会主义的总依据，是对马克思主义关于社会主义发展阶段理论的重大发展和重大突破。</li>
+<li>社会主义初级阶段是所有国家建设社会主义都需要经历的一个阶段。</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>判断改革和各方面工作的是非得失的标准是什么？</p>
+<ul class="options">
+<li class="correct">是否有利于发展社会主义社会的生产力</li>
+<li class="correct">是否有利于增强社会主义国家的综合国力</li>
+<li class="correct">是否有利于提高人民的生活水平为标准</li>
+<li>是否有利于发展中国特色社会主义</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>四项基本原则是什么？</p>
+<ul class="options">
+<li class="correct">坚持社会主义道路</li>
+<li class="correct">坚持人民民主专政</li>
+<li class="correct">坚持马克思列宁主义、毛泽东思想</li>
+<li class="correct">坚持中国共产党领导</li>
+<li>坚持中国特色社会主义制度</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>邓小平提出，要按照______的方针培养和选拔德才兼备的领导干部。</p>
+<ul class="options">
+<li class="correct">革命化</li>
+<li class="correct">年轻化</li>
+<li class="correct">知识化</li>
+<li class="correct">专业化</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>邓小平理论包括哪些 “两手抓” 思想？</p>
+<ul class="options">
+<li class="correct">“一手抓建设，一手抓法制”</li>
+<li class="correct">“一手抓改革开放，一手抓惩治腐败”</li>
+<li class="correct">“一手抓物质文明，一手抓精神文明”</li>
+<li>“一手抓经济建设，一手抓政治体制改革”</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>邓小平关于社会主义初级阶段的论断，使我们对实现社会主义有了哪些更加清醒的认识？</p>
+<ul class="options">
+<li class="correct">长期性</li>
+<li class="correct">复杂性</li>
+<li class="correct">艰巨性</li>
+<li>可能性</li>
+</ul>
+</li>
+</ol>
+<h3 id="三-简答题共2题134分-2"><a class="anchor" href="#三-简答题共2题134分-2">#</a> 三、简答题（共 2 题，13.4 分）</h3>
+<ol>
+<li class="quiz fill">
+<p>党的十三大制定的党在社会主义初级阶段的基本路线是什么？</p>
+<blockquote>
+<p class="gap">答案：党的十三大报告提出了党在社会主义初级阶段的基本路线：领导和团结全国各族人民，以经济建设为中心，坚持四项基本原则，坚持改革开放，自力更生，艰苦创业，为把我国建设成为富强、民主、文明的社会主义现代化国家而奋斗。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>请论述社会主义市场经济理论的内涵？</p>
+<blockquote>
+<p class="gap">答案：社会主义市场经济理论的要点有:<br>
+ 一是计划经济和市场经济不是划分社会制度的标志，计划经济不等于社会主义，市场经济也不等于资本主义；<br>
+ 二是计划和市场都是经济手段，对经济活动的调节各有优势和长处，社会主义实行市场经济要把两者结合起来；<br>
+ 三是市场经济作为资源配置的一种方式本身不具有制度属性，可以和不同的社会制度结合，从而表现出不同的性质。坚持社会主义制度与市场经济的结合，是社会主义市场经济的特色所在、优势所在。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="第七章练习题"><a class="anchor" href="#第七章练习题">#</a> 第七章练习题</h2>
+<h3 id="一-单选题共5-题500分"><a class="anchor" href="#一-单选题共5-题500分">#</a> 一、单选题（共 5 题，50.0 分）</h3>
+<ol>
+<li class="quiz">
+<p>“三个代表” 重要思想坚持把 <span class="gap"></span> 的根本利益作为出发点和归宿。</p>
+<ul class="options">
+<li>群众</li>
+<li class="correct">人民</li>
+<li>百姓</li>
+<li>国家</li>
+</ul>
+</li>
+<li class="quiz">
+<p>党执政兴国的第一要务是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>社会主义建设</li>
+<li>人民群众</li>
+<li class="correct">发展</li>
+<li>中华民族伟大复兴</li>
+</ul>
+</li>
+<li class="quiz">
+<p>在以下哪次重要会议上，把建立社会主义市场经济体制确立为我国经济体制改革的目标？<span class="gap"></span></p>
+<ul class="options">
+<li>党的十三大</li>
+<li class="correct">党的十四大</li>
+<li>党的十五大</li>
+<li>党的十六大</li>
+</ul>
+</li>
+<li class="quiz">
+<p>“三个代表” 重要思想强调以人民群众的利益、要求和实践为最高价值标准和评价标准，体现了我们党的 <span class="gap"></span> 和我们国家的性质。</p>
+<ul class="options">
+<li>性质</li>
+<li>价值</li>
+<li class="correct">宗旨</li>
+<li>特征</li>
+</ul>
+</li>
+<li class="quiz">
+<p>2000 年 6 月 9 日，江泽民在全国党校工作会议上第一次指出，“三个代表” 重要思想所要回答和解决的正是 <span class="gap"></span> 的重大问题。</p>
+<ul class="options">
+<li>“什么是社会主义，怎样建设社会主义”</li>
+<li>“实现什么样的发展、怎样发展”</li>
+<li class="correct">“建设什么样的党，怎样建设党”</li>
+<li>“新时代坚持和发展什么样的中国特色社会主义、怎样坚持和发展中国特色社会主义”</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多选题共3-题300分"><a class="anchor" href="#二-多选题共3-题300分">#</a> 二、多选题（共 3 题，30.0 分）</h3>
+<ol>
+<li class="quiz multi">
+<p>对于广大发展中国家而言，最基本、最重要的人权是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">生存权</li>
+<li>生命权</li>
+<li class="correct">发展权</li>
+<li>政治权利</li>
+<li>主权</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>中国共产党必须 <span class="gap"></span> , 这是 “三个代表” 重要思想的集中概括。</p>
+<ul class="options">
+<li class="correct">代表中国先进生产力的发展要求</li>
+<li>代表中国先进生产关系的发展方向</li>
+<li class="correct">代表中国先进文化的前进方向</li>
+<li class="correct">代表中国最广大人民的根本利益</li>
+<li>代表各个阶层的利益</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>1998 年前后，中国共产党在全党开展以为 “三讲” 为主要内容的党性党风教育，“三讲” 指的是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">讲学习</li>
+<li class="correct">讲政治</li>
+<li class="correct">讲正气</li>
+<li>讲道理</li>
+<li>讲文明</li>
+</ul>
+</li>
+</ol>
+<h3 id="三-简答题共2-题200分"><a class="anchor" href="#三-简答题共2-题200分">#</a> 三、简答题（共 2 题，20.0 分）</h3>
+<ol>
+<li class="quiz fill">
+<p>如何准确把握 “三个代表” 重要思想的核心观点？</p>
+<blockquote>
+<p class="gap">答案：中国共产党必须始终代表中国先进生产力的发展要求，代表中国先进文化的前进方向，代表中国最广大人民的根本利益。这是我们党的立党之本、执政之基、力量之源。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>如何正确认识 “三个代表” 重要思想之间的相互关系？</p>
+<blockquote>
+<p class="gap">答案：“三个代表” 是一个相互联系、相互促进的辩证统一的整体:<br>
+(1) 发展先进生产力，是发展先进文化、实现最广大人民根本利益的基础条件；<br>
+(2) 人民群众是先进生产力和先进文化的创造主体，是实现自身利益的根本力量；<br>
+(3) 不断发展先进生产力和先进文化，归根到底都是为了满足人民群众日益增长的物质文化生活需要，不断实现最广大人民的根本利益。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="第八章练习题"><a class="anchor" href="#第八章练习题">#</a> 第八章练习题</h2>
+<h3 id="一-单选题共6-题600分"><a class="anchor" href="#一-单选题共6-题600分">#</a> 一、单选题（共 6 题，60.0 分）</h3>
+<ol>
+<li class="quiz">
+<p>科学发展观的核心立场是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>发展</li>
+<li class="correct">以人为本</li>
+<li>全面协调可持续</li>
+<li>统筹兼顾</li>
+</ul>
+</li>
+<li class="quiz">
+<p>以人为本就是以 <span class="gap"></span> 的根本利益为本。</p>
+<ul class="options">
+<li>工人</li>
+<li>农民</li>
+<li class="correct">最广大人民</li>
+<li>知识分子</li>
+</ul>
+</li>
+<li class="quiz">
+<p><span class="gap"></span> 是科学发展观的基本要求。</p>
+<ul class="options">
+<li>经济社会发展</li>
+<li>以人为本</li>
+<li>统筹兼顾</li>
+<li class="correct">全面协调可持续</li>
+</ul>
+</li>
+<li class="quiz">
+<p><span class="gap"></span> 是科学发展观的根本方法。</p>
+<ul class="options">
+<li>全面协调</li>
+<li class="correct">统筹兼顾</li>
+<li>以人为本</li>
+<li>发展</li>
+</ul>
+</li>
+<li class="quiz">
+<p>依法治国的前提是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li class="correct">有法可依</li>
+<li>依法执政</li>
+<li>依法行政</li>
+<li>公正司法</li>
+</ul>
+</li>
+<li class="quiz">
+<p>生产力中最活跃、最革命的因素是 <span class="gap"></span> 。</p>
+<ul class="options">
+<li>科学技术</li>
+<li class="correct">人民群众</li>
+<li>先进制度</li>
+<li>中国共产党</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-多选题共2-题200分"><a class="anchor" href="#二-多选题共2-题200分">#</a> 二、多选题（共 2 题，20.0 分）</h3>
+<ol>
+<li class="quiz multi">
+<p>坚持全面发展，就是要按照中国特色社会主义事业总体布局，正确认识和把握 <span class="gap"></span> 是相互联系、相互促进的有机统一体。</p>
+<ul class="options">
+<li class="correct">经济建设</li>
+<li class="correct">政治建设</li>
+<li class="correct">文化建设</li>
+<li class="correct">社会建设</li>
+<li class="correct">生态文明建设</li>
+</ul>
+</li>
+<li class="quiz multi">
+<p>坚持以人为本，就要坚持发展依靠人民，自觉坚持党的群众路线，牢固树立 <span class="gap"></span> 的观点。</p>
+<ul class="options">
+<li class="correct">人民群众是历史创造者</li>
+<li class="correct">虚心向人民群众学习</li>
+<li class="correct">竭诚为最广大人民谋利益</li>
+<li class="correct">干部的权力是人民赋予的</li>
+<li class="correct">对党负责和对人民负责相一致</li>
+</ul>
+</li>
+</ol>
+<h3 id="三-简答题共2-题200分-2"><a class="anchor" href="#三-简答题共2-题200分-2">#</a> 三、简答题（共 2 题，20.0 分）</h3>
+<ol>
+<li class="quiz fill">
+<p>如何理解科学发展观的科学内涵？</p>
+<blockquote>
+<p class="gap">答案：推动经济社会发展是科学发展观的第一要义；以人为本是科学发展观的核心立场；全面协调可持续是科学发展观的基本要求；统筹兼顾是科学发展观的根本方法。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>构建社会主义和谐社会的总要求是什么？</p>
+<blockquote>
+<p class="gap">答案：民主法治、公平正义、诚信友爱、充满活力、安定有序、人与自然和谐相处，是构建社会主义和谐社会的总要求。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="应知应会"><a class="anchor" href="#应知应会">#</a> 应知应会</h2>
+<ol>
+<li class="quiz fill">
+<p>马克思主义中国化时代化的内涵是什么？</p>
+<blockquote>
+<p class="gap">答案：马克思主义中国化，就是坚持把马克思主义基本原理同中国具体实际相结合、同中华优秀传统文化相结合，运用马克思主义的立场、观点、方法研究和改革解决中国革命、建设、改革中的实际问题；<br>
+就是总结和提炼中国革命、建设、改革的实践经验，从而认识和掌握客观规律，为马克思主义理论宝库添新的内容；<br>
+就是运用中国人民喜闻乐见的民族语言来阐述马克思主义理论，使之成为具有中国特色、中国风格、中国气派的马克思主义。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>马克思主义中国化时代化的理论成果及其关系是什么？</p>
+<blockquote>
+<p class="gap">答案：马克思主义中国化的飞跃是一脉相承又与时俱进的。新民主主义革命时期、社会主义革命和建设时期创立并不断发展的毛泽东思想是马克思列宁主义在中国特色的创造性运用和发展，是被实践证明了的关于中国特色革命和建设的正确理论原则和经验总结，是马克思主义中国化的第一次历史性飞跃；<br>
+改革开放和现代化建设新时期，在改革开放实践中创立了邓小平理论、形成了 “三个代表” 重要思想和科学发展观，形成了中国特色社会主义理论体系，实现了马克思主义中国化新的飞跃；<br>
+党的十八大以来，当提出了一系列原创性的治国理政新理念新思想新战略，创立了习近平新时代中国特色社会主义思想实现了马克思主义中国化新的飞跃。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>毛泽东思想活的灵魂是什么？</p>
+<blockquote>
+<p class="gap">答案：毛泽东思想活的灵魂，是贯穿于毛泽东思想各个理论组成部分的立场、观点和方法，它有三个基本方面，即实事求是、群众路线、独立自主。毛泽东思想的精髓是实事求是。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>毛泽东思想的历史地位是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+马克思主义中国化时代化的第一个重大理论成果<br>
+中国革命和建设的科学指南<br>
+中国共产党和中国人民宝贵的精神财富</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>近代中国社会的主要矛盾及根本任务是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+主：帝国主义和中华民族的矛盾（最主要）、封建主义和人民大众的矛盾（土改完成后：我国社会主要矛盾是工人阶级和资产阶级的矛盾。现在：我国社会主义社会基本矛盾：生产力生产关系经济基础那个。主要矛盾人民美好那个）<br>
+根本任务：推翻帝国主义、封建主义、官僚资本主义的统治</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>中国无产阶级自身的特点和优点是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+自诞生之日起，就身受外国资本主义、本国封建势力和资产阶级的压迫，三重压迫的严重性和残酷性在世界各民族少见。因此... 比任何别的阶级都坚决彻底。<br>
+集中分布在少数大城市和大企业，有利于组织和团结，有利于革命思想的传播、强大革命力量的形成。<br>
+成员大部分出身农民，便于与农民结成亲密的联盟，共同团结奋斗。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>新民主主义革命相比旧民主主义革命的新的内容和特点是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+新民主主义革命处在世界无产阶级社会主义革命的时代，是世界无产阶级社会主义革命的一部分。<br>
+革命的领导力量是中国无产阶级及其先锋队中国共产党。<br>
+革命指导思想是马克思列宁主义。<br>
+革命前途是社会主义而不是资本主义。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>新民主主义革命的总路线</p>
+<blockquote>
+<p class="gap">答案：是无产阶级领导的，人民大众的，反对帝国主义、封建主义和官僚资本主义的革命。（1948 年，毛泽东在《在晋绥干部会议上的讲话》中完整地表述。新民主主义革命总路线反映了中国革命的基本规律，指明了中国革命的对象、动力、领导力量，是新民主主义革命的指导路线。）</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>新民主主义的基本纲领是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+政治纲领：推翻帝国主义、封建主义的统治，建立一个无产阶级领导的，工农联盟为基础的各革命阶级联合专政的新民主主义的共和国。<br>
+经济纲领：没收封建地主阶级的土地归农民所有，没收官僚资产阶级的垄断资本归新民主主义的国家所有，保护民族工商业。<br>
+文化纲领：新民主主义文化，是无产阶级领导的人民大众的反帝反封建的文化，即民族的科学的大众的文化。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>新民主主义革命道路理论是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+农村包围城市，武装夺取政权。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>新民主主义革命 “三大法宝” 及其相互关系是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+统一战线<br>
+武装斗争<br>
+党的建设<br>
+关系：统一战线和武装斗争是中国革命的两个基本特点，是战胜敌人的两个基本武器。统一战线是实行武装斗争的统一战线，武装斗争是统一战线的中心支柱，党的组织则是掌握统一战线和武装斗争这两个武器以实行对敌冲锋陷阵的英勇战士</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>党在过渡时期的总路线是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+一化三改：社会主义工业化；对个体农业、手工业和资本主义工商业的社会主义改造（1953 年，党中央正式提出了过渡时期的总路线。“从中华人民共和国成立，到社会主义改造基本完成，这是一个过渡时期。党在这个过渡时期的总路线和总任务，是要在一个相当长的时期内，逐步实现国家的社会主义工业化，并逐步实现国家对农业、对手工业和对资本主义工商业的社会主义改造。”）</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>适合中国特点的社会主义改造道路是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+农业：<br>
+积极引导农民组织起来，走互助合作的道路。<br>
+遵循自愿互利、典型示范和国家帮助的原则，以互助合作的优越性吸引农民走互助合作道路。<br>
+正确分析农村阶级和阶层状况，指定正确阶级政策。<br>
+坚持积极领导、稳步前进的方针，采取循序渐进的步骤。<br>
+手工业：<br>
+办手工业供销小组（加工订货）<br>
+办手工业供销合作社（供应原料、加工订货、推销产品）<br>
+建立手工业生产合作社（计件工资、计件工资加奖励、分成工资）<br>
+资本主义工商业：<br>
+用和平赎买的方式改造资本主义工商业<br>
+采取从低级到高级的国家资本主义的过渡形式（委托加工、计划订货、统购包销、委托经销代销）<br>
+把资本主义工商业者改造为自食其力的社会主义劳动者</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>社会主义改造的历史经验是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+坚持社会主义工业化建设与社会主义改造同时并举。<br>
+采取积极引导、逐步过渡的方式。<br>
+用和平方法进行改造。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>社会主义社会的基本矛盾是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+生产关系与生产力，上层建筑与经济基础之间的矛盾<br>
+（社会主义社会的基本矛盾是在生产关系和生产力基本适应、上层建筑和经济基础基本适应条件下的矛盾，是在人民根本利益一致基础上的矛盾。因此，它不是对抗性的矛盾，而是非对抗性的矛盾。社会主义基本矛盾具有 “又相适应又相矛盾” 的特点。）</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>正确处理不同类型人民内部矛盾的方法是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+对于政治思想领域的人民内部矛盾，实行 “团结 — 批评 — 团结” 的方针。<br>
+对于物质利益、分配方面的人民内部矛盾，实行统筹兼顾、适当安排的方针。<br>
+对于人民群众和政府机关的矛盾，要坚持民主集中制原则。<br>
+对于科学文化领域里的矛盾，实行 “百花齐放、百家争鸣” 的方针。<br>
+对于共产党和民主党派之间的矛盾，实行 “长期共存，互相监督” 的方针。<br>
+对于民族之间的矛盾，实行民族平等，团结互助的方针。<br>
+正确处理人民内部矛盾的问题是社会主义国家政治生活的主题。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>社会主义建设道路初步探索的重要意义是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+巩固和发展我国社会主义制度。<br>
+为开创中国特色社会主义制度提供了宝贵经验、理论准备、物质基础。<br>
+丰富了科学社会主义的理论和实践。<br>
+（在社会主义建设时期，党领导人民探索社会主义建设道路，历经艰辛和曲折，在理论和实践上取得了一系列重要成果。这些成果对于巩固我国社会主义制度，开创和发展中国特色社会主义，促进世界社会主义的发展，具有重要意义。）</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>中国共产党百年奋斗的历史经验是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+坚持党的领导<br>
+坚持人民至上<br>
+坚持理论创新<br>
+坚持独立自主<br>
+坚持中国道路<br>
+坚持胸怀天下<br>
+坚持开拓创新<br>
+坚持敢于斗争<br>
+坚持统一战线<br>
+坚持自我革命<br>
+（2021 年，党的十九届六中全会通过的《中共中央关于党的百年奋斗重大成就和历史经验的决议》(以下简称《决议》), 对党的百年奋斗历史经验进行了总结，概括提炼了 “十个坚持”。）</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>邓小平理论回答的首要的基本理论问题及其精髓是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+什么是社会主义，怎么建设社会主义<br>
+解放思想，实事求是</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>社会主义的本质是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+解放生产力，发展生产力，消灭剥削，消除两极分化，最终达到共同富裕</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>社会主义初级阶段理论的内涵是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+我国已经是社会主义社会。我们必须坚持而不能离开社会主义。<br>
+我国的社会主义还处在初级阶段。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>党的十三大制定的党在社会主义初级阶段的基本路线是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+领导和团结全国各族人民，以经济建设为中心，坚持四项基本原则，坚持改革开放，自力更生，艰苦创业，为把我国建设成为富强、民主、文明的社会主义现代化国家而奋斗。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>社会主义市场经济理论的内涵是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+计划经济和市场经济不是划分社会制度的标志，计划经济不等于社会主义，市场经济也不等于资本主义。<br>
+计划和市场都是经济手段，对经济活动的调节各有优势和长处，社会主义实行市场经济要把两者结合起来。<br>
+市场经济作为资源配置的一种方式本身不具有制度属性，可以和不同的社会制度结合，从而表现出不同的性质。坚持社会主义制度与市场经济的结合，是社会主义市场经济的特色所在、优势所在。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>“一国两制” 理论的主要内容是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+坚持一个中国的原则，核心和基础<br>
+两制并存<br>
+高度自治<br>
+尽最大努力争取和平统一，但不承诺放弃使用武力<br>
+解决台湾问题，实现祖国的完全统一，寄希望于台湾人民</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>“三个代表” 重要思想的核心要义及其相互关系是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+核心要义（观点）：中国共产党必须始终代表中国先进生产力的发展要求，代表中国先进文化的前进方向，代表中国最广大人民的根本利益。这是我们党的立党之本、执政之基、力量之源。<br>
+相互关系：“三个代表” 是一个相互联系、相互促进的辩证统一的整体:<br>
+ 发展先进生产力，是发展先进文化、实现最广大人民根本利益的基础条件；<br>
+ 人民群众是先进生产力和先进文化的创造主体，是实现自身利益的根本力量；<br>
+ 不断发展先进生产力和先进文化，归根到底都是为了满足人民群众日益增长的物质文化生活需要，不断实现最广大人民的根本利益。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>科学发展观的科学内涵是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+推动经济社会发展是科学发展观的第一要义。<br>
+以人为本是科学发展观的核心立场。<br>
+全面协调可持续是科学发展观的基本要求。<br>
+统筹兼顾是科学发展观的根本方法。</p>
+</blockquote>
+</li>
+<li class="quiz fill">
+<p>社会主义和谐社会的总要求是什么？</p>
+<blockquote>
+<p class="gap">答案：<br>
+民主法治、公平正义、诚信友爱、充满活力、安定有序、人与自然和谐相处。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="重要会议内容总结1978-1997"><a class="anchor" href="#重要会议内容总结1978-1997">#</a> 重要会议内容总结（1978-1997）</h2>
+<table>
+<thead>
+<tr>
+<th>重要会议</th>
+<th>考点内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>党的十一届三中全会</td>
+<td>(1) 彻底否定 “两个凡是” 的错误方针，果断结束 “以阶级斗争为纲” 的口号。<br>(2) 高度评价关于真理标准问题的讨论，重新确立了党的思想路线、政治路线、组织路线。<br>(3) 实现党和国家工作重心战略转移，开启了改革开放和社会主义现代化建设新时期，实现了新中国成立以来党的历史上具有深远意义的伟大转折。<br>(4) 开始了拨乱反正。<br>(5) 形成了以邓小平为核心的中央领导集体。</td>
+</tr>
+<tr>
+<td>党的十一届六中全会</td>
+<td>(1) 科学评价了毛泽东和毛泽东思想。<br>(2) 提出了毛泽东思想的活的灵魂是 “实事求是，群众路线，独立自主”。<br>(3) 第一次使用 “社会主义初级阶段” 的提法。<br>(4) 完成了拨乱反正</td>
+</tr>
+<tr>
+<td>党的十二大</td>
+<td>“中国特色社会主义” 成为我们党的全部理论和实践创新的主题</td>
+</tr>
+<tr>
+<td>党的十三大</td>
+<td>(1) 第一次对 “社会主义初级阶段” 理论作了系统阐述。<br>(2) 提出了社会主义初级阶段 “一个中心，两个基本点” 的基本路线。<br>(3) 第一次对中国特色社会主义理论的主要内容作了系统概括。<br>(4) 邓小平理论轮廓形成。</td>
+</tr>
+<tr>
+<td>党的十四大</td>
+<td>(1) 明确了建立社会主义市场经济体制的改革目标。<br>(2) 高度评价了邓小平对中国特色社会主义理论的突出贡献。</td>
+</tr>
+<tr>
+<td>党的十五大</td>
+<td>(1) 把邓小平理论写入党章。<br>(2) 指出 “公有制为主体、多种所有制经济共同发展” 是我国社会主义初级阶段的一项基本经济制度。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="毛泽东思想形成和发展的过程"><a class="anchor" href="#毛泽东思想形成和发展的过程">#</a> 毛泽东思想形成和发展的过程</h2>
+<table>
+<thead>
+<tr>
+<th>时期</th>
+<th>形成过程</th>
+<th>相关文献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大革命时期</td>
+<td>提出思想</td>
+<td>《中国社会各阶级的分析》《湖南农民运动考察报告》</td>
+</tr>
+<tr>
+<td>土地革命战争时期</td>
+<td>初步形成</td>
+<td>《中国的红色政权为什么能够存在？》《井冈山的斗争》《星星之火，可以燎原》《反对本本主义》</td>
+</tr>
+<tr>
+<td>遵义会议至抗日战争时期</td>
+<td>趋于成熟</td>
+<td>《实践论》《矛盾论》《论持久战》《共产党员》发刊词《中国革命和中国共产党》《新民主主义论》《论联合政府》</td>
+</tr>
+<tr>
+<td>党的七大</td>
+<td>正式确立</td>
+<td>中共七大通过的《中国共产党章程》将毛泽东思想作为中国共产党一切工作的指针。这标志着毛泽东思想确立为党必须长期坚持的指导思想</td>
+</tr>
+<tr>
+<td>解放战争时期和中华人民共和国成立后</td>
+<td>继续发展</td>
+<td>《在晋绥干部会议上的讲话》《论人民民主专政》《论十大关系》《关于正确处理人民内部矛盾的问题》</td>
+</tr>
+</tbody>
+</table>
+<div class="tags"><a href="/tags/learning/" rel="tag"><i class="ic i-tag"></i>learning</a><a href="/tags/trash/" rel="tag"><i class="ic i-tag"></i>trash</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/Mao/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2025-02-27 22:12:31" itemprop="dateModified" datetime="2025-02-27T22:12:31+08:00">2025-02-27</time></span></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>IOyuk1Nya<i class="ic i-at"><em>@</em></i>IOyuk1Nya's Blog</li><li class="link"><strong>本文链接：</strong><a href="https://blog.ivansnow02.xyz/Mao/" title="毛概题目">https://blog.ivansnow02.xyz/Mao/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/MarxistPhilosophy/" rel="prev" itemprop="url" data-background-image="&#x2F;MarxistPhilosophy&#x2F;cover.jpg" title="马原题目"><span class="type">上一篇</span><span class="category"><i class="ic i-flag"></i>trash</span><h3>马原题目</h3></a></div><div class="item right"><a href="/computer-network/" rel="next" itemprop="url" data-background-image="&#x2F;computer-network&#x2F;images.jpg" title="计算机网络"><span class="type">下一篇</span><span class="category"><i class="ic i-flag"></i>computer science</span><h3>计算机网络</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E8%AE%BA-%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text"> 导论 练习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%80%89%E9%A2%98%E5%85%B13%E9%A2%9830%E5%88%86"><span class="toc-number">1.1.</span> <span class="toc-text"> 一、单选题（共 3 题，30 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%80%89%E9%A2%98%E5%85%B11%E9%A2%9810%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text"> 二、多选题（共 1 题，10 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E5%88%A4%E6%96%AD%E9%A2%98%E5%85%B14%E9%A2%9840%E5%88%86"><span class="toc-number">1.3.</span> <span class="toc-text"> 三、判断题（共 4 题，40 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B-%E7%AE%80%E7%AD%94%E9%A2%98%E5%85%B12%E9%A2%9820%E5%88%86"><span class="toc-number">1.4.</span> <span class="toc-text"> 四、简答题（共 2 题，20 分）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text"> 第一章练习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%80%89%E9%A2%98%E5%85%B14%E9%A2%9840%E5%88%86"><span class="toc-number">2.1.</span> <span class="toc-text"> 一、单选题（共 4 题，40 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%80%89%E9%A2%98%E5%85%B11%E9%A2%9810%E5%88%86-2"><span class="toc-number">2.2.</span> <span class="toc-text"> 二、多选题（共 1 题，10 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E5%88%A4%E6%96%AD%E9%A2%98%E5%85%B13%E9%A2%9830%E5%88%86"><span class="toc-number">2.3.</span> <span class="toc-text"> 三、判断题（共 3 题，30 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B-%E7%AE%80%E7%AD%94%E9%A2%98%E5%85%B12%E9%A2%9820%E5%88%86-2"><span class="toc-number">2.4.</span> <span class="toc-text"> 四、简答题（共 2 题，20 分）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text"> 第二章练习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%80%89%E9%A2%98%E5%85%B19%E9%A2%98598%E5%88%86"><span class="toc-number">3.1.</span> <span class="toc-text"> 一、单选题（共 9 题，59.8 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%80%89%E9%A2%98%E5%85%B14%E9%A2%98268%E5%88%86"><span class="toc-number">3.2.</span> <span class="toc-text"> 二、多选题（共 4 题，26.8 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E7%AE%80%E7%AD%94%E9%A2%98%E5%85%B12%E9%A2%98134%E5%88%86"><span class="toc-number">3.3.</span> <span class="toc-text"> 三、简答题（共 2 题，13.4 分）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text"> 第三章练习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%80%89%E9%A2%98%E5%85%B15%E9%A2%98500%E5%88%86"><span class="toc-number">4.1.</span> <span class="toc-text"> 一、单选题（共 5 题，50.0 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%80%89%E9%A2%98%E5%85%B13%E9%A2%98300%E5%88%86"><span class="toc-number">4.2.</span> <span class="toc-text"> 二、多选题（共 3 题，30.0 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E7%AE%80%E7%AD%94%E9%A2%98%E5%85%B12%E9%A2%98200%E5%88%86"><span class="toc-number">4.3.</span> <span class="toc-text"> 三、简答题（共 2 题，20.0 分）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">5.</span> <span class="toc-text"> 第四章练习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%80%89%E9%A2%98%E5%85%B15%E9%A2%98500%E5%88%86-2"><span class="toc-number">5.1.</span> <span class="toc-text"> 一、单选题（共 5 题，50.0 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%80%89%E9%A2%98%E5%85%B13%E9%A2%98300%E5%88%86-2"><span class="toc-number">5.2.</span> <span class="toc-text"> 二、多选题（共 3 题，30.0 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E7%AE%80%E7%AD%94%E9%A2%98%E5%85%B12%E9%A2%98200%E5%88%86-2"><span class="toc-number">5.3.</span> <span class="toc-text"> 三、简答题（共 2 题，20.0 分）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">6.</span> <span class="toc-text"> 第五章练习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%80%89%E9%A2%98%E5%85%B18%E9%A2%98-800%E5%88%86"><span class="toc-number">6.1.</span> <span class="toc-text"> 一、单选题（共 8 题，80.0 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%80%89%E9%A2%98%E5%85%B11%E9%A2%98-100%E5%88%86"><span class="toc-number">6.2.</span> <span class="toc-text"> 二、多选题（共 1 题，10.0 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E7%AE%80%E7%AD%94%E9%A2%98%E5%85%B11%E9%A2%98-100%E5%88%86"><span class="toc-number">6.3.</span> <span class="toc-text"> 三、简答题（共 1 题，10.0 分）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">7.</span> <span class="toc-text"> 第六章练习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%80%89%E9%A2%98%E5%85%B17%E9%A2%98464%E5%88%86"><span class="toc-number">7.1.</span> <span class="toc-text"> 一、单选题（共 7 题，46.4 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%80%89%E9%A2%98%E5%85%B16%E9%A2%98402%E5%88%86"><span class="toc-number">7.2.</span> <span class="toc-text"> 二、多选题（共 6 题，40.2 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E7%AE%80%E7%AD%94%E9%A2%98%E5%85%B12%E9%A2%98134%E5%88%86-2"><span class="toc-number">7.3.</span> <span class="toc-text"> 三、简答题（共 2 题，13.4 分）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">8.</span> <span class="toc-text"> 第七章练习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%80%89%E9%A2%98%E5%85%B15-%E9%A2%98500%E5%88%86"><span class="toc-number">8.1.</span> <span class="toc-text"> 一、单选题（共 5 题，50.0 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%80%89%E9%A2%98%E5%85%B13-%E9%A2%98300%E5%88%86"><span class="toc-number">8.2.</span> <span class="toc-text"> 二、多选题（共 3 题，30.0 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E7%AE%80%E7%AD%94%E9%A2%98%E5%85%B12-%E9%A2%98200%E5%88%86"><span class="toc-number">8.3.</span> <span class="toc-text"> 三、简答题（共 2 题，20.0 分）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">9.</span> <span class="toc-text"> 第八章练习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8D%95%E9%80%89%E9%A2%98%E5%85%B16-%E9%A2%98600%E5%88%86"><span class="toc-number">9.1.</span> <span class="toc-text"> 一、单选题（共 6 题，60.0 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%A4%9A%E9%80%89%E9%A2%98%E5%85%B12-%E9%A2%98200%E5%88%86"><span class="toc-number">9.2.</span> <span class="toc-text"> 二、多选题（共 2 题，20.0 分）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E7%AE%80%E7%AD%94%E9%A2%98%E5%85%B12-%E9%A2%98200%E5%88%86-2"><span class="toc-number">9.3.</span> <span class="toc-text"> 三、简答题（共 2 题，20.0 分）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%9F%A5%E5%BA%94%E4%BC%9A"><span class="toc-number">10.</span> <span class="toc-text"> 应知应会</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E4%BC%9A%E8%AE%AE%E5%86%85%E5%AE%B9%E6%80%BB%E7%BB%931978-1997"><span class="toc-number">11.</span> <span class="toc-text"> 重要会议内容总结（1978-1997）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3%E5%BD%A2%E6%88%90%E5%92%8C%E5%8F%91%E5%B1%95%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-number">12.</span> <span class="toc-text"> 毛泽东思想形成和发展的过程</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li><a href="/XJP/" rel="bookmark" title="习近平新时代中国特色社会主义思想概论">习近平新时代中国特色社会主义思想概论</a></li><li><a href="/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%8D%E4%B9%A0/" rel="bookmark" title="习近平复习">习近平复习</a></li><li><a href="/%E6%80%9D%E6%94%BF%E5%A4%8D%E4%B9%A0/" rel="bookmark" title="思政复习">思政复习</a></li><li><a href="/MarxistPhilosophy/" rel="bookmark" title="马原题目">马原题目</a></li><li class="active"><a href="/Mao/" rel="bookmark" title="毛概题目">毛概题目</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="IOyuk1Nya" src="/img/ne.gif"><p class="name" itemprop="name">IOyuk1Nya</p><div class="description" itemprop="description">some notes about computer science</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">49</span><span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">17</span><span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">23</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/ivansnow02" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;ivansnow02"><i class="ic i-github"></i></a><a href="mailto:eone2017@protonmail.com" rel="external nofollow noreferrer" class="item email" title="mailto:eone2017@protonmail.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-user"></i>关于</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于本站</a></li></ul></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/links/" rel="section"><i class="ic i-heart"></i>友链</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/computer-network/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/MarxistPhilosophy/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/trash/" title="分类于trash">trash</a></div><span><a href="/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%8D%E4%B9%A0/">习近平复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/English/" title="分类于English">English</a></div><span><a href="/healthy-lifestyle/">Why Students Should Be Encouraged To Lead A Healthy Lifestyle</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Games101/" title="分类于Games101">Games101</a></div><span><a href="/Games101-assignment-05/">Games101 作业 05</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Redis/" title="分类于Redis">Redis</a></div><span><a href="/Redis-Learning-03-SpringDataRedis/">SpringDataRedis</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/computer-science/" title="分类于computer science">computer science</a></div><span><a href="/ComputerSystem/">操作系统复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Redis/" title="分类于Redis">Redis</a></div><span><a href="/Redis-Learning-02-%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/">Redis的快速入门</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Physics/" title="分类于Physics">Physics</a></div><span><a href="/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/">物理复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Redis/" title="分类于Redis">Redis</a></div><span><a href="/Redis-Learning-01-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">Redis的数据类型</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Games101/" title="分类于Games101">Games101</a></div><span><a href="/Games101-assignment-03/">Games101 作业 03</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/cs/" title="分类于计算机科学">计算机科学</a><i class="ic i-angle-right"></i><a href="/categories/cs/408/" title="分类于408">408</a><i class="ic i-angle-right"></i><a href="/categories/cs/408/ds/" title="分类于数据结构">数据结构</a></div><span><a href="/cs/408/ds/DataStructureNote/">数据结构理论复习</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2023 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">IOyuk1Nya @ Code Blog</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">771k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">11:41</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div><script src="https://unpkg.com/busuanzi@2.3.0/bsz.pure.mini.js"></script><div id="busuanzi-wrap"><span class="ic i-eye"></span><span id="busuanzi_container_site_pv">本站访问量 <span id="busuanzi_value_site_pv"></span> 次</span> | <span class="ic i-user"></span><span id="busuanzi_container_site_uv">本站访客量 <span id="busuanzi_value_site_uv"></span> 次</span></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `Mao/`,
+    favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    nocopy: "false",
+    copyright: `复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script src="undefined/undefined" crossorigin="anonymous" fetchpriority="high"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu&#x2F;&#x2F;q5B&#x2F;lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" crossorigin="anonymous" fetchpriority="high"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" integrity="sha384-TOxsBplaL96&#x2F;QDWPIUg+ye3v89qSE3s22XNtJMmCeZEep3cVDmXy1zEfZvVv+y2m" crossorigin="anonymous" fetchpriority="high"></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&amp;features=default,fetch" defer="defer"></script><script src="/js/siteInit.js?v=0.4.22" type="module" fetchpriority="high" defer="defer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script>
+    Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/';
+  </script>
+</body></html>
