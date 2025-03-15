@@ -1,6 +1,6 @@
 Bundled license information:
 
-@unlazy/core/dist/shared/core.BYtg0vag.mjs:
+@unlazy/core/dist/shared/core.URvayf9Q.mjs:
   /**
    * Encodes an RGBA image to a PNG data URI. RGB should not be premultiplied by A.
    *
