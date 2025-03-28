@@ -1,0 +1,10 @@
+# robots.txt generated at http://www.w3cschool.cn/
+User-agent: Googlebot
+Disallow:
+User-agent: MSNBot
+Disallow:
+User-agent: baiduspider
+Disallow:
+User-agent: *
+Disallow:
+Sitemap: https://blog.ivansnow02.xyz/post-sitemap.xml
