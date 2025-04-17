@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>https://blog.ivansnow02.xyz/cloud-computing/</loc>
+        <lastmod>2025-04-17T01:56:49.219Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://blog.ivansnow02.xyz/cs/408/ds/DataStructureNote/</loc>
         <lastmod>2025-03-16T13:28:19.928Z</lastmod>
         <changefreq>weekly</changefreq>

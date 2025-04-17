@@ -1,3 +1,4 @@
+https://blog.ivansnow02.xyz/cloud-computing/
 https://blog.ivansnow02.xyz/cs/408/ds/DataStructureNote/
 https://blog.ivansnow02.xyz/cs/408/ds/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/
 https://blog.ivansnow02.xyz/cs/408/ds/Union-Find/
@@ -7,4 +8,3 @@ https://blog.ivansnow02.xyz/cs/408/ds/SPT/
 https://blog.ivansnow02.xyz/cs/408/ds/robot-kingdom/
 https://blog.ivansnow02.xyz/cs/408/ds/MST/
 https://blog.ivansnow02.xyz/cs/408/ds/List/
-https://blog.ivansnow02.xyz/cs/408/ds/DataStructureTest02/
