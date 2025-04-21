@@ -18,8 +18,8 @@
         <category>trash</category>
         <category>Redis</category>
         <category>Java</category>
-        <category>English</category>
         <category>test</category>
+        <category>English</category>
         <category>vim</category>
         <category>cloud computing</category>
         <category>Spring</category>
@@ -363,7 +363,7 @@
 &lt;/ul&gt;
 &lt;h4 id=&#34;一致性散列算法-consistent-hashing&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一致性散列算法-consistent-hashing&#34;&gt;#&lt;/a&gt; 一致性散列算法 (Consistent Hashing)&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;定义&lt;/strong&gt;：将整个哈希值空间 (e.g., 0 ~ 2^128-1) 组织成虚拟圆环。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定义&lt;/strong&gt;：将整个哈希值空间 (&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;.&lt;/mi&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;.&lt;/mi&gt;&lt;mo separator=&#34;true&#34;&gt;,&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;msup&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mn&gt;128&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;e.g., 0 ~ 2^{128}-1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.0085em;vertical-align:-0.1944em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.03588em;&#34;&gt;g&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mpunct&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.1667em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;mspace nobreak&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;128&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;) 组织成虚拟圆环。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;映射&lt;/strong&gt;：将服务器和对象 Key 都通过哈希函数映射到环上。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;归属&lt;/strong&gt;：对象存储在沿环顺时针遇到的第一个服务器上。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;应用&lt;/strong&gt;：高流量动态网站的分布式缓存 (Redis, MemCache) 实现请求动态均衡。&lt;/li&gt;
@@ -374,8 +374,8 @@
 &lt;li&gt;&lt;strong&gt;虚拟节点&lt;/strong&gt;：为解决物理节点哈希分布不均问题，将每个物理服务器映射为多个虚拟节点分散在环上，使数据分布更均匀。权重高的服务器可分配更多虚拟节点。&lt;br /&gt;
 &lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/80742fb29ae26c125bdce4328491077f6a95838dc11adbd7d055a5219b88e114.png&#34; alt=&#34;picture 5&#34; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;23-分布式系统概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#23-分布式系统概述&#34;&gt;#&lt;/a&gt; 2.3 分布式系统概述&lt;/h3&gt;
-&lt;h4 id=&#34;231-基础知识-大数据驱动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#231-基础知识-大数据驱动&#34;&gt;#&lt;/a&gt; 2.3.1 基础知识 (大数据驱动)&lt;/h4&gt;
+&lt;h3 id=&#34;分布式系统概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分布式系统概述&#34;&gt;#&lt;/a&gt; 分布式系统概述&lt;/h3&gt;
+&lt;h4 id=&#34;基础知识-大数据驱动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基础知识-大数据驱动&#34;&gt;#&lt;/a&gt; 基础知识 (大数据驱动)&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;驱动力&lt;/strong&gt;：大数据技术需求推动分布式系统发展。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;演变&lt;/strong&gt;：源于互联网公司大规模分布式存储系统需求。&lt;/li&gt;
@@ -392,7 +392,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;232233-实例apache-hadoop&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#232233-实例apache-hadoop&#34;&gt;#&lt;/a&gt; 2.3.2/2.3.3 实例：Apache Hadoop&lt;/h4&gt;
+&lt;h4 id=&#34;实例apache-hadoop&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实例apache-hadoop&#34;&gt;#&lt;/a&gt; 实例：Apache Hadoop&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;定义&lt;/strong&gt;: Apache 基金会开发的分布式存储与计算框架。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;创始人&lt;/strong&gt;: Doug Cutting (就职 Yahoo 期间开发，现 Cloudera)。&lt;/li&gt;
@@ -412,8 +412,8 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;云计算服务模型&lt;/strong&gt;: Hadoop 通常属于 &lt;strong&gt;PaaS&lt;/strong&gt; (平台即服务) 层，运行在 IaaS (如 AWS EC2/S3, 阿里云 ECS) 之上。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;24-分布式系统的进阶&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#24-分布式系统的进阶&#34;&gt;#&lt;/a&gt; 2.4 分布式系统的进阶&lt;/h3&gt;
-&lt;h4 id=&#34;241-分布式存储系统-5个子方向&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#241-分布式存储系统-5个子方向&#34;&gt;#&lt;/a&gt; 2.4.1 分布式存储系统 (5 个子方向)&lt;/h4&gt;
+&lt;h3 id=&#34;分布式系统的进阶&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分布式系统的进阶&#34;&gt;#&lt;/a&gt; 分布式系统的进阶&lt;/h3&gt;
+&lt;h4 id=&#34;分布式存储系统-5个子方向&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分布式存储系统-5个子方向&#34;&gt;#&lt;/a&gt; 分布式存储系统 (5 个子方向)&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;结构化存储&lt;/strong&gt;：关系型数据库 (MySQL)。强一致性 (银行系统)，支持随机访问 (SQL, 索引)。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;非结构化存储&lt;/strong&gt;：分布式文件系统 (GFS, HDFS)。存储海量数据 (网页)，配合批量处理。高扩展、高吞吐。不支持随机访问，不适用低延时、实时应用。&lt;/li&gt;
@@ -421,7 +421,7 @@
 &lt;li&gt;&lt;strong&gt;In-memory 存储&lt;/strong&gt;: Memcached, Redis。数据存内存，读写高性能。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;NewSQL&lt;/strong&gt;: Google Spanner。兼备 RDBMS (SQL, ACID) 和 NoSQL (扩展能力)。(目前工业界支持较少)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;242-分布式计算系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#242-分布式计算系统&#34;&gt;#&lt;/a&gt; 2.4.2 分布式计算系统&lt;/h4&gt;
+&lt;h4 id=&#34;分布式计算系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分布式计算系统&#34;&gt;#&lt;/a&gt; 分布式计算系统&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;分布式计算 vs 并行计算&lt;/strong&gt;:&lt;/p&gt;
@@ -513,7 +513,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;243-分布式资源管理系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#243-分布式资源管理系统&#34;&gt;#&lt;/a&gt; 2.4.3 分布式资源管理系统&lt;/h4&gt;
+&lt;h4 id=&#34;分布式资源管理系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分布式资源管理系统&#34;&gt;#&lt;/a&gt; 分布式资源管理系统&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;需求背景&lt;/strong&gt;:
 &lt;ul&gt;
