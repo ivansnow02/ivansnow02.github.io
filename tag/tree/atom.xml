@@ -13,11 +13,11 @@
     <category term="Python" />
     <category term="computer graphics" />
     <category term="Redis" />
-    <category term="Java" />
     <category term="English" />
     <category term="test" />
     <category term="trash" />
     <category term="vim" />
+    <category term="Java" />
     <category term="cloud computing" />
     <category term="Spring" />
     <category term="Math" />
@@ -25,9 +25,9 @@
     <category term="software engineering" />
     <category term="data structure" />
     <category term="Physics" />
-    <category term="Discrete Mathematics" />
     <category term="coursera" />
     <category term="tree" />
+    <category term="Discrete Mathematics" />
     <entry>
         <id>https://blog.ivansnow02.xyz/cs/408/ds/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/</id>
         <title>哈夫曼树叶子结点的路径长度与权值的乘积之和</title>

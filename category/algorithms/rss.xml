@@ -16,11 +16,11 @@
         <category>Python</category>
         <category>computer graphics</category>
         <category>Redis</category>
-        <category>Java</category>
         <category>English</category>
         <category>test</category>
         <category>trash</category>
         <category>vim</category>
+        <category>Java</category>
         <category>cloud computing</category>
         <category>Spring</category>
         <category>Math</category>
@@ -28,9 +28,9 @@
         <category>software engineering</category>
         <category>data structure</category>
         <category>Physics</category>
-        <category>Discrete Mathematics</category>
         <category>coursera</category>
         <category>tree</category>
+        <category>Discrete Mathematics</category>
         <item>
             <guid isPermalink="true">https://blog.ivansnow02.xyz/AlgorithmIntroduction/</guid>
             <title>算法导论笔记</title>

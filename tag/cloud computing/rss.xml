@@ -16,11 +16,11 @@
         <category>Python</category>
         <category>computer graphics</category>
         <category>Redis</category>
-        <category>Java</category>
         <category>English</category>
         <category>test</category>
         <category>trash</category>
         <category>vim</category>
+        <category>Java</category>
         <category>cloud computing</category>
         <category>Spring</category>
         <category>Math</category>
@@ -28,9 +28,9 @@
         <category>software engineering</category>
         <category>data structure</category>
         <category>Physics</category>
-        <category>Discrete Mathematics</category>
         <category>coursera</category>
         <category>tree</category>
+        <category>Discrete Mathematics</category>
         <item>
             <guid isPermalink="true">https://blog.ivansnow02.xyz/cloud-computing/</guid>
             <title>cloud_computing</title>
@@ -929,7 +929,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;423-半虚拟化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#423-半虚拟化&#34;&gt;#&lt;/a&gt; 4.2.3 半虚拟化&lt;/h4&gt;
+&lt;h4 id=&#34;半虚拟化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#半虚拟化&#34;&gt;#&lt;/a&gt; 半虚拟化&lt;/h4&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/4eba6fa66c628d6a21347707088ace4542ece493d99457aef5fc76486923b448.png&#34; alt=&#34;picture 15&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;核心思想&lt;/strong&gt;：修改 &lt;strong&gt;Guest OS 内核&lt;/strong&gt;，将敏感 / 特权指令替换为对 VMM 的直接调用 (&lt;strong&gt;Hypercall&lt;/strong&gt;)。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hypercall&lt;/strong&gt;: 类似于系统调用，由 Guest OS 主动发起，请求 Hypervisor 服务。&lt;/li&gt;
@@ -947,7 +948,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;424-硬件辅助虚拟化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#424-硬件辅助虚拟化&#34;&gt;#&lt;/a&gt; 4.2.4 硬件辅助虚拟化&lt;/h4&gt;
+&lt;h4 id=&#34;硬件辅助虚拟化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#硬件辅助虚拟化&#34;&gt;#&lt;/a&gt; 硬件辅助虚拟化&lt;/h4&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/f924bb691dbc50bd69ecc6b53a3d35532a17d8a2650c38f09ccd90e6c18a443e.png&#34; alt=&#34;picture 16&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;背景&lt;/strong&gt;：解决软件虚拟化性能开销。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;技术&lt;/strong&gt;: Intel VT-x (VMX), AMD AMD-V。&lt;/li&gt;
@@ -1020,7 +1022,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;43-商用虚拟机技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#43-商用虚拟机技术&#34;&gt;#&lt;/a&gt; 4.3 商用虚拟机技术&lt;/h3&gt;
+&lt;h3 id=&#34;商用虚拟机技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#商用虚拟机技术&#34;&gt;#&lt;/a&gt; 商用虚拟机技术&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1057,15 +1059,15 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;44-新型硬件虚拟化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#44-新型硬件虚拟化&#34;&gt;#&lt;/a&gt; 4.4 新型硬件虚拟化&lt;/h3&gt;
-&lt;h4 id=&#34;441-背景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#441-背景&#34;&gt;#&lt;/a&gt; 4.4.1 背景&lt;/h4&gt;
+&lt;h3 id=&#34;新型硬件虚拟化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#新型硬件虚拟化&#34;&gt;#&lt;/a&gt; 新型硬件虚拟化&lt;/h3&gt;
+&lt;h4 id=&#34;背景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景&#34;&gt;#&lt;/a&gt; 背景&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;GPU, FPGA 等新型硬件普及。&lt;/li&gt;
 &lt;li&gt;现有虚拟化技术主要面向通用硬件 (x86) 和软件栈 (Linux/Win)，无法高效承载新型硬件。&lt;/li&gt;
 &lt;li&gt;工业界 / 学术界探索新型硬件虚拟化方案，如 GPU/RDMA 直通独占式虚拟化。&lt;/li&gt;
 &lt;li&gt;RDMA/FPGA 等虚拟化尚处早期。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;442-硬件虚拟化的代表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#442-硬件虚拟化的代表&#34;&gt;#&lt;/a&gt; 4.4.2 硬件虚拟化的代表&lt;/h4&gt;
+&lt;h4 id=&#34;硬件虚拟化的代表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#硬件虚拟化的代表&#34;&gt;#&lt;/a&gt; 硬件虚拟化的代表&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;GPU 虚拟化&lt;/strong&gt;:
 &lt;ul&gt;
@@ -1101,7 +1103,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;443-硬件虚拟化的未来&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#443-硬件虚拟化的未来&#34;&gt;#&lt;/a&gt; 4.4.3 硬件虚拟化的未来&lt;/h4&gt;
+&lt;h4 id=&#34;硬件虚拟化的未来&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#硬件虚拟化的未来&#34;&gt;#&lt;/a&gt; 硬件虚拟化的未来&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;极端虚拟化&lt;/strong&gt;:
 &lt;ul&gt;
@@ -1123,8 +1125,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;45-实践-xen-虚拟化技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#45-实践-xen-虚拟化技术&#34;&gt;#&lt;/a&gt; 4.5 实践: Xen 虚拟化技术&lt;/h3&gt;
-&lt;h4 id=&#34;451-xen-的历史&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#451-xen-的历史&#34;&gt;#&lt;/a&gt; 4.5.1 Xen 的历史&lt;/h4&gt;
+&lt;h3 id=&#34;实践-xen-虚拟化技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实践-xen-虚拟化技术&#34;&gt;#&lt;/a&gt; 实践: Xen 虚拟化技术&lt;/h3&gt;
+&lt;h4 id=&#34;xen-的历史&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#xen-的历史&#34;&gt;#&lt;/a&gt; Xen 的历史&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;2003&lt;/strong&gt;: Ian Pratt (剑桥) 发表论文，提出基于&lt;strong&gt;半虚拟化&lt;/strong&gt;的 Xen 项目。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;2005&lt;/strong&gt;: Xen 3.0 支持 Intel VT/IA64，可运行&lt;strong&gt;完全未修改&lt;/strong&gt;的操作系统。&lt;/li&gt;
@@ -1137,7 +1139,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;452-xen-实际操作-概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#452-xen-实际操作-概述&#34;&gt;#&lt;/a&gt; 4.5.2 Xen 实际操作 (概述)&lt;/h4&gt;
+&lt;h4 id=&#34;xen-实际操作-概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#xen-实际操作-概述&#34;&gt;#&lt;/a&gt; Xen 实际操作 (概述)&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;检查 CPU 是否支持 Xen 虚拟化。&lt;/li&gt;
 &lt;li&gt;安装 Xen 相关软件包。&lt;/li&gt;
@@ -1149,8 +1151,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;46-实践-kvm-虚拟化技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#46-实践-kvm-虚拟化技术&#34;&gt;#&lt;/a&gt; 4.6 实践: KVM 虚拟化技术&lt;/h3&gt;
-&lt;h4 id=&#34;461-kvm-简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#461-kvm-简介&#34;&gt;#&lt;/a&gt; 4.6.1 KVM 简介&lt;/h4&gt;
+&lt;h3 id=&#34;实践-kvm-虚拟化技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实践-kvm-虚拟化技术&#34;&gt;#&lt;/a&gt; 实践: KVM 虚拟化技术&lt;/h3&gt;
+&lt;h4 id=&#34;kvm-简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#kvm-简介&#34;&gt;#&lt;/a&gt; KVM 简介&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;全称&lt;/strong&gt;: Kernel Virtual Machine，Linux 内核提供的开源 Hypervisor，主流技术。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;要求&lt;/strong&gt;：主机 x86 架构 + &lt;strong&gt;硬件虚拟化支持&lt;/strong&gt; (Intel VT / AMD-V)。&lt;/li&gt;
@@ -1159,7 +1161,7 @@
 &lt;li&gt;&lt;strong&gt;技术&lt;/strong&gt;：以&lt;strong&gt;硬件辅助虚拟化&lt;/strong&gt;为主。硬件不支持时，退回 QEMU 软件模拟 (&lt;strong&gt;动态二进制翻译&lt;/strong&gt;实现 CPU 虚拟化)。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：能在不改变 Linux/Windows 镜像下运行多 VM，可配置个性化硬件环境。支持多种操作系统。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;462-kvm-的基本安装操作-概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#462-kvm-的基本安装操作-概述&#34;&gt;#&lt;/a&gt; 4.6.2 KVM 的基本安装操作 (概述)&lt;/h4&gt;
+&lt;h4 id=&#34;kvm-的基本安装操作-概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#kvm-的基本安装操作-概述&#34;&gt;#&lt;/a&gt; KVM 的基本安装操作 (概述)&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;安装 KVM 及其依赖包 (qemu-kvm, libvirt, virt-manager 等)。&lt;/li&gt;
 &lt;li&gt;启动  &lt;code&gt;libvirtd&lt;/code&gt;  服务，启动 Virtual Machine Manager ( &lt;code&gt;virt-manager&lt;/code&gt; ) 图形界面。&lt;/li&gt;
@@ -1173,6 +1175,340 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h3 id=&#34;docker简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker简介&#34;&gt;#&lt;/a&gt; Docker 简介&lt;/h3&gt;
+&lt;h4 id=&#34;docker-为什么会出现-面临的问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-为什么会出现-面临的问题&#34;&gt;#&lt;/a&gt; Docker 为什么会出现？ (面临的问题)&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;环境一致性问题&lt;/strong&gt;：开发环境 (笔记本)、测试环境、生产环境配置各异，导致 “在我机器上能跑” 但在其他环境跑不起来。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署复杂性问题&lt;/strong&gt;：配置应用运行环境需安装多种软件和依赖包 (Java/Tomcat/MySQL/JDBC 等)，过程繁琐、易出错且跨平台 (Win/Linux) 需重配，应用移植麻烦。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;交付标准化问题&lt;/strong&gt;：传统交付物是程序 / 字节码，需附加部署文件和详细环境说明，运维部署易出错。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;docker-是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-是什么&#34;&gt;#&lt;/a&gt; Docker 是什么？&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;基于 &lt;strong&gt;Linux 容器技术&lt;/strong&gt;发展来的&lt;strong&gt;轻量级容器虚拟化技术&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心思想&lt;/strong&gt;：解决代码在本机能运行，但在其他机器部署运行失败的问题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;实现方式&lt;/strong&gt;：通过&lt;strong&gt;镜像 (Image)&lt;/strong&gt; 将程序运行所需的环境、系统、配置、数据等自下而上打包，实现应用跨平台无缝运行，打破 “程序即应用” 观念。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;目标&lt;/strong&gt;：提供系统平滑移植的&lt;strong&gt;标准化解决方案&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;docker-理念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-理念&#34;&gt;#&lt;/a&gt; Docker 理念&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;核心目标&lt;/strong&gt;: &lt;strong&gt;Build, Ship and Run Any App, Anywhere&lt;/strong&gt; (构建、发布、运行任意应用在任意地方)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;实现&lt;/strong&gt;：通过应用组件的封装、分发、部署、运行等生命周期管理，使应用及其运行环境做到 “&lt;strong&gt;一次镜像，处处运行&lt;/strong&gt;”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;效果&lt;/strong&gt;：实现跨平台、跨服务器部署，只需一次配置环境，一键部署，简化操作。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;docker-定义总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-定义总结&#34;&gt;#&lt;/a&gt; Docker 定义总结&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;互联网行业热门技术，尤其在&lt;strong&gt;开发&lt;/strong&gt;和&lt;strong&gt;运维&lt;/strong&gt;方向，解决规模化、灵活化部署问题。&lt;/li&gt;
+&lt;li&gt;用于解决&lt;strong&gt;运行环境&lt;/strong&gt;和&lt;strong&gt;配置问题&lt;/strong&gt;，方便做&lt;strong&gt;持续集成&lt;/strong&gt;，有助于整体发布的&lt;strong&gt;容器虚拟化技术&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;容器与虚拟机比较&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#容器与虚拟机比较&#34;&gt;#&lt;/a&gt; 容器与虚拟机比较&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;传统虚拟机技术&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;带环境安装的解决方案 (如 Win10 里跑 CentOS)。&lt;/li&gt;
+&lt;li&gt;对应用程序透明，模拟完整系统。&lt;/li&gt;
+&lt;li&gt;缺点: &lt;strong&gt;资源占用多&lt;/strong&gt; (需完整 OS)、&lt;strong&gt;冗余步骤多&lt;/strong&gt; (启动 OS)、&lt;strong&gt;启动慢&lt;/strong&gt; (分钟级)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器虚拟化技术 (Docker/LXC)&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;在&lt;strong&gt;操作系统层面&lt;/strong&gt;实现虚拟化，&lt;strong&gt;直接复用宿主机操作系统内核&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;隔离进程&lt;/strong&gt;而非模拟完整 OS，将软件运行所需资源打包到隔离容器中。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;: &lt;strong&gt;启动速度快&lt;/strong&gt; (秒级)，&lt;strong&gt;占用体积小&lt;/strong&gt; (MB 级 vs GB 级)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;对比总结&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;虚拟机：虚拟硬件 -&amp;gt; 运行完整 Guest OS -&amp;gt; 运行应用。&lt;strong&gt;重&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;容器：直接运行于宿主内核 -&amp;gt; 隔离应用进程。&lt;strong&gt;轻&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;隔离性：虚拟机 &amp;gt; 容器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;docker-能干嘛&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-能干嘛&#34;&gt;#&lt;/a&gt; Docker 能干嘛？&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;技术职位变化&lt;/strong&gt;: Coder -&amp;gt; Programmer -&amp;gt; Software Engineer -&amp;gt; &lt;strong&gt;DevOps Engineer&lt;/strong&gt; (体现了开发运维一体化趋势)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一次构建、随处运行&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;更快速的应用交付和部署&lt;/strong&gt;：打包应用及依赖成镜像，简化部署流程，节省配置测试时间。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;更便捷的升级和扩缩容&lt;/strong&gt;：微服务架构下，容器如 “积木”，升级 / 扩容只需操作对应容器镜像 (分钟级甚至秒级)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;更简单的系统运维&lt;/strong&gt;：应用容器化后，开发 / 测试 / 生产环境高度一致，减少环境问题，易于定位修复 BUG。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;更高效的计算资源利用&lt;/strong&gt;：内核级虚拟化，无 Hypervisor 额外开销，单机可运行更多容器，提升物理资源利用率。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;应用场景&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;借鉴标准集装箱思想，Docker 用于&lt;strong&gt;运输软件&lt;/strong&gt; (封装应用和依赖)。&lt;/li&gt;
+&lt;li&gt;适用于各种应用场景 (静态网站、用户数据库、Web 前端、消息队列、数据库等)。&lt;/li&gt;
+&lt;li&gt;开发 -&amp;gt; 测试 -&amp;gt; 生产环境迁移，保证环境一致性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;使用企业&lt;/strong&gt;：微博、美团、蘑菇街等众多互联网公司广泛应用 Docker 进行私有云实践和业务部署。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;docker的安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker的安装&#34;&gt;#&lt;/a&gt; Docker 的安装&lt;/h3&gt;
+&lt;h4 id=&#34;下载与准备&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载与准备&#34;&gt;#&lt;/a&gt; 下载与准备&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;: &lt;a href=&#34;https://www.docker.com&#34;&gt;https://www.docker.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;仓库&lt;/strong&gt;: &lt;a href=&#34;https://hub.docker.com&#34;&gt;https://hub.docker.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;前提说明&lt;/strong&gt;: Docker 依赖 Linux 内核。在 Windows/Mac 上部署 Docker，实质是先安装一个 Linux 虚拟机，然后在虚拟机内运行 Docker。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;系统要求&lt;/strong&gt;: CentOS 7 (64-bit)，Linux 内核版本 &amp;gt;= 3.8。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;查看内核&lt;/strong&gt;:  &lt;code&gt;uname -r&lt;/code&gt; ,  &lt;code&gt;cat /etc/redhat-release&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;docker-三要素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-三要素&#34;&gt;#&lt;/a&gt; Docker 三要素&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;镜像 (Image)&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;用于创建 Docker 容器。一个镜像可创建多个容器。&lt;/li&gt;
+&lt;li&gt;本质是一个文件系统 (e.g.,  &lt;code&gt;centos:7&lt;/code&gt;  包含最小化 CentOS 7 系统)。&lt;/li&gt;
+&lt;li&gt;类似 Java 的 &lt;strong&gt;类&lt;/strong&gt; (静态定义)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器 (Container)&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;用 Docker 镜像创建的&lt;strong&gt;运行实例&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;类似虚拟化运行环境，应用程序 / 服务运行其中。&lt;/li&gt;
+&lt;li&gt;类似 Java 的 &lt;strong&gt;对象实例&lt;/strong&gt; (运行时实体)。&lt;/li&gt;
+&lt;li&gt;提供标准隔离环境 (启动 / 停止 / 删除)。&lt;/li&gt;
+&lt;li&gt;看作&lt;strong&gt;简易版 Linux 环境&lt;/strong&gt; + 运行的应用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;仓库 (Repository)&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;集中存放&lt;strong&gt;镜像文件&lt;/strong&gt;的场所。&lt;/li&gt;
+&lt;li&gt;类似 Maven 仓库 (存 jar) 或 Github 仓库 (存 git 项目)。&lt;/li&gt;
+&lt;li&gt;分&lt;strong&gt;公开仓库 (Public)&lt;/strong&gt; 和&lt;strong&gt;私有仓库 (Private)&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;最大公开仓库: &lt;strong&gt;Docker Hub&lt;/strong&gt; (官方)。国内有阿里云、网易云等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;docker-平台架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-平台架构&#34;&gt;#&lt;/a&gt; Docker 平台架构&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client-Server 结构&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Docker Client&lt;/strong&gt;: 用户与 Docker 交互的命令行工具或 UI。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker Daemon (守护进程)&lt;/strong&gt;: 运行在主机上，接收并处理 Client 命令，管理容器。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通信&lt;/strong&gt;: Client 通过 Socket 与 Daemon 通信。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器&lt;/strong&gt;: Daemon 管理的运行时环境 (集装箱)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;docker-平台架构及通信原理简述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-平台架构及通信原理简述&#34;&gt;#&lt;/a&gt; Docker 平台架构及通信原理简述&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;用户使用 &lt;strong&gt;Docker Client&lt;/strong&gt; 与 &lt;strong&gt;Docker Daemon&lt;/strong&gt; 建立通信并发送请求。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker Daemon&lt;/strong&gt; 作为 Server 接收请求。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker Engine&lt;/strong&gt; 执行内部工作，每个工作是一个 &lt;strong&gt;Job&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;需要镜像时，从 &lt;strong&gt;Docker Registry&lt;/strong&gt; 下载，通过 &lt;strong&gt;Graph driver&lt;/strong&gt; 以 Graph 形式存储。&lt;/li&gt;
+&lt;li&gt;需创建网络时，通过 &lt;strong&gt;Network driver&lt;/strong&gt; 创建配置容器网络。&lt;/li&gt;
+&lt;li&gt;需限制资源或执行指令时，通过 &lt;strong&gt;Exec driver&lt;/strong&gt; 完成。&lt;/li&gt;
+&lt;li&gt;底层通过 &lt;strong&gt;Libcontainer&lt;/strong&gt; (独立容器管理包) 实现对容器的具体操作 (Network/Exec driver 都调用它)。&lt;strong&gt;Namespace&lt;/strong&gt; 实现资源隔离，&lt;strong&gt;Cgroups&lt;/strong&gt; 实现资源控制。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;docker-安装步骤-centos-7-示例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-安装步骤-centos-7-示例&#34;&gt;#&lt;/a&gt; Docker 安装步骤 (CentOS 7 示例)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;(命令流程图展示，包括卸载旧版、安装依赖、设置 yum 源、安装 docker-ce、启动 docker、设置开机自启等步骤，并区分官方源和阿里源)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;测试-hello-world&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试-hello-world&#34;&gt;#&lt;/a&gt; 测试 hello-world&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker run hello-world&lt;/code&gt; : 运行测试镜像。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;流程&lt;/strong&gt;：本地无镜像 -&amp;gt; 从 Docker Hub 拉取 -&amp;gt; 运行容器 -&amp;gt; 输出信息 -&amp;gt; 容器退出。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;底层原理-docker-为何比-vm-快&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#底层原理-docker-为何比-vm-快&#34;&gt;#&lt;/a&gt; 底层原理: Docker 为何比 VM 快？&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;更少的抽象层&lt;/strong&gt;: Docker 无需 Hypervisor 实现硬件虚拟化，直接使用宿主机硬件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;共享宿主机内核&lt;/strong&gt;: Docker 容器共享宿主机 OS 内核，无需加载额外 OS 内核。避免了 VM 启动引导、加载 OS 内核等耗时过程。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;: VM 创建是分钟级，Docker 容器创建是秒级。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;473-docker常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#473-docker常用命令&#34;&gt;#&lt;/a&gt; 4.7.3 Docker 常用命令&lt;/h3&gt;
+&lt;h4 id=&#34;帮助启动类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#帮助启动类&#34;&gt;#&lt;/a&gt; 帮助启动类&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;systemctl start/stop/restart/status/enable docker&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker info&lt;/code&gt; : 查看 Docker 系统信息。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker version&lt;/code&gt; : 查看 Docker 版本信息。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker --help&lt;/code&gt; : 查看 Docker 帮助。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker COMMAND --help&lt;/code&gt; : 查看具体命令帮助。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;镜像命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#镜像命令&#34;&gt;#&lt;/a&gt; 镜像命令&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker images&lt;/code&gt;  /  &lt;code&gt;-a&lt;/code&gt;  /  &lt;code&gt;-q&lt;/code&gt;  /  &lt;code&gt;--digests&lt;/code&gt;  /  &lt;code&gt;--no-trunc&lt;/code&gt; : 列出本地镜像 (所有 / 仅 ID / 摘要 / 完整信息)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker search &amp;lt;image_name&amp;gt;&lt;/code&gt; : 在 Docker Hub 搜索镜像。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker pull &amp;lt;image_name&amp;gt;[:TAG]&lt;/code&gt; : 下载镜像 (默认 latest)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker rmi &amp;lt;image_name_or_id&amp;gt;&lt;/code&gt;  /  &lt;code&gt;-f&lt;/code&gt; : 删除未使用镜像 (强制删除)。可删除多个。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker system df&lt;/code&gt; : 查看 Docker 资源占用 (镜像 / 容器 / 数据卷)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;虚悬镜像 (Dangling Image)&lt;/strong&gt;: 仓库名和 TAG 均为  &lt;code&gt;&amp;lt;none&amp;gt;&lt;/code&gt;  的镜像。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;容器命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#容器命令&#34;&gt;#&lt;/a&gt; 容器命令&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker run [options] IMAGE [command] [arg...]&lt;/code&gt; : 新建并启动容器。
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-i&lt;/code&gt; : 交互模式。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-t&lt;/code&gt; : 分配伪终端。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-d&lt;/code&gt; : 后台运行 (守护式容器)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker ps&lt;/code&gt;  /  &lt;code&gt;-a&lt;/code&gt;  /  &lt;code&gt;-q&lt;/code&gt; : 列出正在运行的容器 (所有 / 仅 ID)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;exit&lt;/code&gt; : 退出&lt;strong&gt;并停止&lt;/strong&gt;容器 (交互式)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+P+Q&lt;/code&gt; : 退出容器但&lt;strong&gt;不停止&lt;/strong&gt; (交互式)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker start/restart/stop/kill &amp;lt;container_name_or_id&amp;gt;&lt;/code&gt; : 启动 / 重启 / 停止 / 强制停止容器。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker rm &amp;lt;container_name_or_id&amp;gt;&lt;/code&gt;  /  &lt;code&gt;-f&lt;/code&gt; : 删除已停止的容器 (强制删除运行中容器)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker logs [options] &amp;lt;container_name_or_id&amp;gt;&lt;/code&gt; : 查看容器日志 ( &lt;code&gt;-t&lt;/code&gt;  时间戳， &lt;code&gt;-f&lt;/code&gt;  跟随， &lt;code&gt;--tail N&lt;/code&gt;  最后 N 条)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker top &amp;lt;container_name_or_id&amp;gt;&lt;/code&gt; : 查看容器内运行的进程。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker inspect &amp;lt;container_name_or_id&amp;gt;&lt;/code&gt; : 查看容器内部细节 (JSON 格式)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker exec -it &amp;lt;container_id&amp;gt; /bin/bash&lt;/code&gt; : 进入正在运行的容器并执行命令 (exit 不停止容器)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker attach &amp;lt;container_id&amp;gt;&lt;/code&gt; : 重新附加到容器终端 (exit 会停止容器)。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker cp &amp;lt;container_id:src_path&amp;gt; &amp;lt;host_dest_path&amp;gt;&lt;/code&gt; : 从容器内拷贝文件到宿主机。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;docker镜像&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker镜像&#34;&gt;#&lt;/a&gt; Docker 镜像&lt;/h3&gt;
+&lt;h4 id=&#34;镜像是什什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#镜像是什什么&#34;&gt;#&lt;/a&gt; 镜像是什什么？&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;轻量级、可执行的独立软件包。&lt;/li&gt;
+&lt;li&gt;包含运行应用所需的一切：代码、运行时、库、环境变量、配置文件。&lt;/li&gt;
+&lt;li&gt;用于生成 Docker 容器实例。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;分层的镜像&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分层的镜像&#34;&gt;#&lt;/a&gt; 分层的镜像&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker pull&lt;/code&gt;  过程显示镜像是一层一层下载的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;联合文件系统-unionfs&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#联合文件系统-unionfs&#34;&gt;#&lt;/a&gt; 联合文件系统 (UnionFS)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker 镜像由&lt;strong&gt;一层层文件系统&lt;/strong&gt;组成，这种层级文件系统即 UnionFS。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特性&lt;/strong&gt;：分层、轻量级、高性能。支持将文件系统修改作为一次提交层层叠加。可将不同目录挂载到同一虚拟文件系统下，对外透明。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;基础&lt;/strong&gt;: UnionFS 是 Docker 镜像的基础。镜像通过&lt;strong&gt;分层继承&lt;/strong&gt;，基于基础镜像 (无父镜像) 制作应用镜像。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;docker-镜像加载原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-镜像加载原理&#34;&gt;#&lt;/a&gt; Docker 镜像加载原理&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;bootfs (boot file system)&lt;/strong&gt;: 包含 bootloader 和 kernel。Linux 启动时加载，完成后内核接管内存，bootfs 被卸载。&lt;strong&gt;各发行版一致，可共享&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;rootfs (root file system)&lt;/strong&gt;: 位于 bootfs 之上，包含  &lt;code&gt;/dev&lt;/code&gt; ,  &lt;code&gt;/proc&lt;/code&gt; ,  &lt;code&gt;/bin&lt;/code&gt; ,  &lt;code&gt;/etc&lt;/code&gt;  等标准目录和文件。代表不同操作系统发行版 (Ubuntu, CentOS)。&lt;strong&gt;不同发行版有差别&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;精简 OS 的 rootfs 可以很小，只需基本命令 / 工具 / 库。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;docker-镜像采用分层结构的好处&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-镜像采用分层结构的好处&#34;&gt;#&lt;/a&gt; Docker 镜像采用分层结构的好处&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;镜像特点&lt;/strong&gt;: Docker 镜像是&lt;strong&gt;只读&lt;/strong&gt;的。容器启动时，在镜像顶部加载一个&lt;strong&gt;可写层 (容器层)&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;分层优点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;共享资源&lt;/strong&gt;：多个镜像若基于相同 Base 镜像构建，Host 只需存一份 Base 镜像。内存中也只需加载一份 Base 镜像，供所有容器共享。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方便复制迁移与复用&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;docker-镜像-commit-操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-镜像-commit-操作&#34;&gt;#&lt;/a&gt; Docker 镜像 - commit 操作&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker commit -m &amp;quot;message&amp;quot; -a &amp;quot;author&amp;quot; &amp;lt;container_id&amp;gt; &amp;lt;target_image_name&amp;gt;[:TAG]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将&lt;strong&gt;容器的当前状态&lt;/strong&gt; (包括其可写层的修改) 提交，生成一个新的镜像。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#总结&#34;&gt;#&lt;/a&gt; 总结&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker 镜像分层，支持通过扩展现有镜像创建新镜像 (类似 Java 继承)。&lt;/li&gt;
+&lt;li&gt;新镜像是从 Base 镜像一层层叠加生成。每次安装软件，都在现有镜像基础上增加一层。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;容器数据卷-volume&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#容器数据卷-volume&#34;&gt;#&lt;/a&gt; 容器数据卷 (Volume)&lt;/h3&gt;
+&lt;h4 id=&#34;是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#是什么&#34;&gt;#&lt;/a&gt; 是什么？&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;用于&lt;strong&gt;持久化&lt;/strong&gt;容器数据，解决容器删除后数据丢失问题。&lt;/li&gt;
+&lt;li&gt;是宿主机上的一个&lt;strong&gt;目录或文件&lt;/strong&gt;，通过 Docker 挂载到容器中。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;独立于联合文件系统 (UFS)&lt;/strong&gt;，生命周期独立于容器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;容器内添加数据卷&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#容器内添加数据卷&#34;&gt;#&lt;/a&gt; 容器内添加数据卷&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker run -it -v /host_absolute_path:/container_path[:ro] &amp;lt;image_name&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将宿主机目录与容器内目录绑定。两者内容&lt;strong&gt;实时同步&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:ro&lt;/code&gt;  表示只读挂载 (容器内不可写)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;容器数据卷的特点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#容器数据卷的特点&#34;&gt;#&lt;/a&gt; 容器数据卷的特点&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;可在容器间&lt;strong&gt;共享或重用&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;容器与宿主机间&lt;strong&gt;数据共享&lt;/strong&gt;，修改&lt;strong&gt;即时生效&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;数据卷的更改&lt;strong&gt;不包含&lt;/strong&gt;在镜像更新中 (commit 不会打包数据卷内容)。&lt;/li&gt;
+&lt;li&gt;数据卷生命周期持续到&lt;strong&gt;没有容器使用它为止&lt;/strong&gt; (容器删除，数据卷&lt;strong&gt;不会&lt;/strong&gt;被删除)。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;数据卷的继承和共享&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据卷的继承和共享&#34;&gt;#&lt;/a&gt; 数据卷的继承和共享&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker run -it --volumes-from &amp;lt;source_container_name&amp;gt; --name &amp;lt;new_container_name&amp;gt; &amp;lt;image_name&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;新容器 ( &lt;code&gt;u2&lt;/code&gt; ) 可以继承另一个容器 ( &lt;code&gt;u1&lt;/code&gt; ) 挂载的数据卷。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;dockerfile-解析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dockerfile-解析&#34;&gt;#&lt;/a&gt; Dockerfile 解析&lt;/h3&gt;
+&lt;h4 id=&#34;是什么-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#是什么-2&#34;&gt;#&lt;/a&gt; 是什么？&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;用来&lt;strong&gt;构建 Docker 镜像&lt;/strong&gt;的文本文件。&lt;/li&gt;
+&lt;li&gt;包含一系列&lt;strong&gt;命令和参数&lt;/strong&gt;构成的脚本。&lt;/li&gt;
+&lt;li&gt;内容定义了镜像构建过程：执行代码、设置环境变量、安装依赖包、指定运行时环境、操作系统发行版等。&lt;/li&gt;
+&lt;li&gt;Docker 通过读取 Dockerfile 指令自动构建镜像。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;dockerfile-镜像-容器的关系-类比&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dockerfile-镜像-容器的关系-类比&#34;&gt;#&lt;/a&gt; Dockerfile, 镜像，容器的关系 (类比)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Dockerfile&lt;/strong&gt;: 软件原材料 (中药处方)。 &lt;strong&gt;面向开发&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker 镜像&lt;/strong&gt;：软件交付品 (抓好的中药)。 成为&lt;strong&gt;交付标准&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker 容器&lt;/strong&gt;：软件镜像的运行态 (熬出的中药汤)。 涉及&lt;strong&gt;部署与运维&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;dockerfile-构建过程解析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dockerfile-构建过程解析&#34;&gt;#&lt;/a&gt; Dockerfile 构建过程解析&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;基础知识&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;每条保留字指令&lt;strong&gt;必须为大写字母&lt;/strong&gt;且后跟至少一个参数。&lt;/li&gt;
+&lt;li&gt;指令按&lt;strong&gt;从上到下顺序执行&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;#&lt;/code&gt;  表示注释。&lt;/li&gt;
+&lt;li&gt;每条指令都会创建一个新的&lt;strong&gt;镜像层&lt;/strong&gt;并对镜像进行提交。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;大致流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;Docker 从基础镜像运行一个容器。&lt;/li&gt;
+&lt;li&gt;执行一条指令，对容器作出修改。&lt;/li&gt;
+&lt;li&gt;执行类似  &lt;code&gt;docker commit&lt;/code&gt;  的操作，提交一个新的镜像层。&lt;/li&gt;
+&lt;li&gt;Docker 再基于刚提交的镜像运行一个新容器。&lt;/li&gt;
+&lt;li&gt;重复 2-4 步，直到所有指令执行完毕。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;dockerfile-常用保留字指令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dockerfile-常用保留字指令&#34;&gt;#&lt;/a&gt; Dockerfile 常用保留字指令&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;FROM&lt;/strong&gt;: 指定基础镜像。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MAINTAINER&lt;/strong&gt;: 镜像维护者姓名和邮箱 (已废弃，推荐用 LABEL)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WORKDIR&lt;/strong&gt;: 指定容器工作目录 (后续 RUN/CMD/ENTRYPOINT/COPY/ADD 指令在此目录下执行)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ENV&lt;/strong&gt;: 设置环境变量。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VOLUME&lt;/strong&gt;: 定义匿名数据卷，用于数据保存和持久化。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EXPOSE&lt;/strong&gt;: 声明容器运行时对外暴露的端口 (仅声明，实际端口映射在  &lt;code&gt;docker run -p&lt;/code&gt;  指定)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ADD&lt;/strong&gt;: 复制文件 / 目录到镜像。支持 URL，且&lt;strong&gt;自动解压&lt;/strong&gt; tar 压缩包。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COPY&lt;/strong&gt;: 类似 ADD，复制文件 / 目录到镜像。&lt;strong&gt;不支持 URL 和自动解压&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RUN&lt;/strong&gt;: 在&lt;strong&gt;镜像构建时&lt;/strong&gt;执行命令 (e.g., 安装软件)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CMD&lt;/strong&gt;: 指定&lt;strong&gt;容器启动时&lt;/strong&gt;默认执行的命令。Dockerfile 可有多个 CMD，只有最后一个生效。会被  &lt;code&gt;docker run&lt;/code&gt;  后面的命令覆盖。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ENTRYPOINT&lt;/strong&gt;: 指定&lt;strong&gt;容器启动时&lt;/strong&gt;执行的命令。&lt;strong&gt;不会&lt;/strong&gt;被  &lt;code&gt;docker run&lt;/code&gt;  后面的命令覆盖，参数会传递给 ENTRYPOINT 指定的程序。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;run-cmd-entrypoint-对比&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-cmd-entrypoint-对比&#34;&gt;#&lt;/a&gt; RUN, CMD, ENTRYPOINT 对比&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;RUN&lt;/strong&gt;: 构建时执行。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CMD&lt;/strong&gt;: 容器启动时执行 (默认命令，可被覆盖)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ENTRYPOINT&lt;/strong&gt;: 容器启动时执行 (入口点，不可被覆盖，参数追加)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Note&lt;/strong&gt;: RUN 在构建时运行并提交到镜像；CMD 在构建时不执行，在容器启动时执行，指定默认命令。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;案例-自定义镜像-centosjava810&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#案例-自定义镜像-centosjava810&#34;&gt;#&lt;/a&gt; 案例：自定义镜像 centosjava8:1.0&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;需求&lt;/strong&gt;：基于 CentOS 7，安装 vim, ifconfig, JDK 8。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;步骤&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;准备基础环境 (CentOS 7 镜像，JDK tar 包)。&lt;/li&gt;
+&lt;li&gt;编写 Dockerfile (使用 FROM, MAINTAINER, ENV, WORKDIR, RUN, ADD, CMD 指令)。&lt;/li&gt;
+&lt;li&gt;构建镜像:  &lt;code&gt;docker build -t &amp;lt;image_name&amp;gt;:&amp;lt;tag&amp;gt; .&lt;/code&gt;  (注意最后的点表示 Dockerfile 路径)。&lt;/li&gt;
+&lt;li&gt;运行容器:  &lt;code&gt;docker run -it &amp;lt;image_name&amp;gt;:&amp;lt;tag&amp;gt;&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;验证 (检查 java -version, ifconfig)。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;虚悬镜像-dangling-image&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚悬镜像-dangling-image&#34;&gt;#&lt;/a&gt; 虚悬镜像 (Dangling Image)&lt;/h3&gt;
+&lt;h4 id=&#34;是什么-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#是什么-3&#34;&gt;#&lt;/a&gt; 是什么？&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;镜像列表中，仓库名 (REPOSITORY) 和标签 (TAG) 都显示为  &lt;code&gt;&amp;lt;none&amp;gt;&lt;/code&gt;  的镜像。&lt;/li&gt;
+&lt;li&gt;通常是由于构建了新镜像，覆盖了旧镜像的 TAG 导致旧镜像失去引用名。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;查看&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看&#34;&gt;#&lt;/a&gt; 查看&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker image ls -f dangling=true&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;删除&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除&#34;&gt;#&lt;/a&gt; 删除&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker image prune&lt;/code&gt; : 删除所有虚悬镜像。&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
     </channel>
