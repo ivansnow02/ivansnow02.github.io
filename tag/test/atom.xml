@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.ivansnow02.xyz</id>
+    <id>https://blog.ivansnow02.icu</id>
     <title>IOyuk1Nya&#39;s Blog • Posts by &#34;test&#34; tag</title>
-    <link href="https://blog.ivansnow02.xyz" />
+    <link href="https://blog.ivansnow02.icu" />
     <updated>2023-04-16T12:30:05.000Z</updated>
     <category term="coding" />
     <category term="algorithms" />
@@ -29,9 +29,9 @@
     <category term="coursera" />
     <category term="tree" />
     <entry>
-        <id>https://blog.ivansnow02.xyz/TEST/</id>
+        <id>https://blog.ivansnow02.icu/TEST/</id>
         <title>TEST</title>
-        <link rel="alternate" href="https://blog.ivansnow02.xyz/TEST/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.icu/TEST/"/>
         <content type="html">&lt;p&gt;这是一篇测试文章&lt;/p&gt;
 &lt;img loading=&#34;lazy&#34; data-src=&#34;/TEST/1.jpg&#34; class=&#34;&#34; title=&#34;测试图片1&#34;&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;TEST/1.jpg&#34; alt=&#34;测试图片2&#34; /&gt;&lt;/p&gt;

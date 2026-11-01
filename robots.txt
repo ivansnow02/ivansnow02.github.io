@@ -7,4 +7,4 @@ User-agent: baiduspider
 Disallow:
 User-agent: *
 Disallow:
-Sitemap: https://blog.ivansnow02.xyz/post-sitemap.xml
+Sitemap: https://blog.ivansnow02.icu/post-sitemap.xml

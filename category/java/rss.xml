@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>IOyuk1Nya&#39;s Blog • Posts by &#34;java&#34; category</title>
-        <link>https://blog.ivansnow02.xyz</link>
+        <link>https://blog.ivansnow02.icu</link>
         <description>some notes about computer science</description>
         <language>zh-CN</language>
         <pubDate>Sun, 03 Nov 2024 10:59:18 +0800</pubDate>
@@ -32,9 +32,9 @@
         <category>coursera</category>
         <category>tree</category>
         <item>
-            <guid isPermalink="true">https://blog.ivansnow02.xyz/java-learning/</guid>
+            <guid isPermalink="true">https://blog.ivansnow02.icu/java-learning/</guid>
             <title>Java学习</title>
-            <link>https://blog.ivansnow02.xyz/java-learning/</link>
+            <link>https://blog.ivansnow02.icu/java-learning/</link>
             <category>coding</category>
             <category>Java</category>
             <pubDate>Sun, 03 Nov 2024 10:59:18 +0800</pubDate>
@@ -55,7 +55,7 @@
 &lt;h3 id=&#34;常量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常量&#34;&gt;#&lt;/a&gt; 常量&lt;/h3&gt;
 &lt;p&gt;符号常量： &lt;code&gt;final&lt;/code&gt;  修饰的变量，一旦赋值后不可更改。&lt;/p&gt;
 &lt;h3 id=&#34;类型转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类型转换&#34;&gt;#&lt;/a&gt; 类型转换&lt;/h3&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/java-learning/85bfcba51b1dccf3fe9bbad3b7a8e45a96c54baaf89d3ca283296a9c6fb98b96.png&#34; alt=&#34;picture 0&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/java-learning/85bfcba51b1dccf3fe9bbad3b7a8e45a96c54baaf89d3ca283296a9c6fb98b96.png&#34; alt=&#34;picture 0&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;位运算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#位运算&#34;&gt;#&lt;/a&gt; 位运算&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1180,7 +1180,7 @@ Java 中有两种方法抛出异常。&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;事件处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事件处理&#34;&gt;#&lt;/a&gt; 事件处理&lt;/h3&gt;
 &lt;h4 id=&#34;事件处理机制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事件处理机制&#34;&gt;#&lt;/a&gt; 事件处理机制&lt;/h4&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/java-learning/682f1687e969c08d804f8b65288b4d48f2f5263df4c9b82726d68296630f5f2f.png&#34; alt=&#34;picture 2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/java-learning/682f1687e969c08d804f8b65288b4d48f2f5263df4c9b82726d68296630f5f2f.png&#34; alt=&#34;picture 2&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;应用委托模型编写事件处理程序一般包含以下几个步骤：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;确定事件源应关注的事件。&lt;/li&gt;

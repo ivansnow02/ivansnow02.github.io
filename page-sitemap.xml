@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://blog.ivansnow02.xyz/</loc>
+        <loc>https://blog.ivansnow02.icu/</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
@@ -10,7 +10,7 @@
     
     
     <url>
-        <loc>https://blog.ivansnow02.xyz/about/</loc>
+        <loc>https://blog.ivansnow02.icu/about/</loc>
         <lastmod>2024-12-12T02:25:14.222Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -19,7 +19,7 @@
     
     
     <url>
-        <loc>https://blog.ivansnow02.xyz/links/</loc>
+        <loc>https://blog.ivansnow02.icu/links/</loc>
         <lastmod>2024-06-30T05:27:10.803Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -28,7 +28,7 @@
     
     
     <url>
-        <loc>https://blog.ivansnow02.xyz/404.html</loc>
+        <loc>https://blog.ivansnow02.icu/404.html</loc>
         <lastmod>2024-06-30T05:27:10.680Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.ivansnow02.xyz</id>
+    <id>https://blog.ivansnow02.icu</id>
     <title>IOyuk1Nya&#39;s Blog • Posts by &#34;cloud computing&#34; tag</title>
-    <link href="https://blog.ivansnow02.xyz" />
+    <link href="https://blog.ivansnow02.icu" />
     <updated>2025-04-17T00:16:40.000Z</updated>
     <category term="coding" />
     <category term="algorithms" />
@@ -29,9 +29,9 @@
     <category term="coursera" />
     <category term="tree" />
     <entry>
-        <id>https://blog.ivansnow02.xyz/cloud-computing/</id>
+        <id>https://blog.ivansnow02.icu/cloud-computing/</id>
         <title>cloud_computing</title>
-        <link rel="alternate" href="https://blog.ivansnow02.xyz/cloud-computing/"/>
+        <link rel="alternate" href="https://blog.ivansnow02.icu/cloud-computing/"/>
         <content type="html">&lt;h2 id=&#34;大数据与云计算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大数据与云计算&#34;&gt;#&lt;/a&gt; 大数据与云计算&lt;/h2&gt;
 &lt;h3 id=&#34;大数据时代&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大数据时代&#34;&gt;#&lt;/a&gt; 大数据时代&lt;/h3&gt;
 &lt;h4 id=&#34;大数据定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大数据定义&#34;&gt;#&lt;/a&gt; 大数据定义&lt;/h4&gt;
@@ -103,7 +103,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;云计算实现机制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#云计算实现机制&#34;&gt;#&lt;/a&gt; 云计算实现机制&lt;/h3&gt;
 &lt;h4 id=&#34;分层架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分层架构&#34;&gt;#&lt;/a&gt; 分层架构&lt;/h4&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/2db4b87c98ac660c18ff0692c97fa3d9a38c07d91a211efd95943e9761f63d90.png&#34; alt=&#34;picture 0&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/2db4b87c98ac660c18ff0692c97fa3d9a38c07d91a211efd95943e9761f63d90.png&#34; alt=&#34;picture 0&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;物理资源层&lt;/strong&gt;：计算机、存储、网络、数据库、软件。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;资源池层&lt;/strong&gt;：对物理资源进行分组 (计算池、存储池、网络池、数据池、软件池)。&lt;/li&gt;
@@ -320,9 +320,9 @@
 &lt;h4 id=&#34;cap理论阐述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cap理论阐述&#34;&gt;#&lt;/a&gt; CAP 理论阐述&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;正常流程&lt;/strong&gt;: N1, N2 数据一致 (V0)，均可用。网络正常，分区容错性满足。&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/ba463d4a4ff080a698df315fb702b123581ee2092460774bda2d0e38707f857b.png&#34; alt=&#34;picture 1&#34; /&gt;&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/ba463d4a4ff080a698df315fb702b123581ee2092460774bda2d0e38707f857b.png&#34; alt=&#34;picture 1&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;网络分区时&lt;/strong&gt;: N1 与 N2 网络断开。用户向 N2 请求读数据。&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/d1bfad52c77f0fdf4296748c1eace3c380925327d9d5fa39c7148afaa7056aef.png&#34; alt=&#34;picture 2&#34; /&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/d1bfad52c77f0fdf4296748c1eace3c380925327d9d5fa39c7148afaa7056aef.png&#34; alt=&#34;picture 2&#34; /&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;选择一 (牺牲一致性 C, 保留可用性 A)&lt;/strong&gt;: N2 无法同步 N1 的新数据 V1，响应旧数据 V0 给用户。(AP)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;选择二 (牺牲可用性 A, 保留一致性 C)&lt;/strong&gt;: N2 阻塞等待，直到网络恢复、数据同步 M 完成，再响应最新数据 V1。(CP)&lt;/li&gt;
@@ -361,11 +361,11 @@
 &lt;li&gt;&lt;strong&gt;归属&lt;/strong&gt;：对象存储在沿环顺时针遇到的第一个服务器上。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;应用&lt;/strong&gt;：高流量动态网站的分布式缓存 (Redis, MemCache) 实现请求动态均衡。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容错性&lt;/strong&gt;：节点宕机 (Node C)，只影响其负责的数据 (对象 C)，这些数据重定位到下一个节点 (Node D)。对象 A, B, D 不受影响。&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/428f0ecf55bd42a436e91cc034293b84cfd67d15efac7a4fd4abd858c7b661df.png&#34; alt=&#34;picture 3&#34; /&gt;&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/428f0ecf55bd42a436e91cc034293b84cfd67d15efac7a4fd4abd858c7b661df.png&#34; alt=&#34;picture 3&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;扩展性&lt;/strong&gt;：增加节点 (Node X)，只影响新节点与其前一个节点之间的数据 (对象 C 需重定位到 Node X)。对象 A, B, D 不受影响。&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/acc3b19003815406bc1bbbc8c30e4e6584b9cdb23a07e9c478cdb0addffa9d35.png&#34; alt=&#34;picture 4&#34; /&gt;&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/acc3b19003815406bc1bbbc8c30e4e6584b9cdb23a07e9c478cdb0addffa9d35.png&#34; alt=&#34;picture 4&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;虚拟节点&lt;/strong&gt;：为解决物理节点哈希分布不均问题，将每个物理服务器映射为多个虚拟节点分散在环上，使数据分布更均匀。权重高的服务器可分配更多虚拟节点。&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/80742fb29ae26c125bdce4328491077f6a95838dc11adbd7d055a5219b88e114.png&#34; alt=&#34;picture 5&#34; /&gt;&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/80742fb29ae26c125bdce4328491077f6a95838dc11adbd7d055a5219b88e114.png&#34; alt=&#34;picture 5&#34; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;分布式系统概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分布式系统概述&#34;&gt;#&lt;/a&gt; 分布式系统概述&lt;/h3&gt;
 &lt;h4 id=&#34;基础知识-大数据驱动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基础知识-大数据驱动&#34;&gt;#&lt;/a&gt; 基础知识 (大数据驱动)&lt;/h4&gt;
@@ -646,19 +646,19 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;时开时停&lt;/strong&gt;：使用一段时间后停止，按用量计费，停止时释放资源。&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/44de281b321a1697a53e5577db31418deb2ebde5610637b44dbf6fe27cb8d4cb.png&#34; alt=&#34;picture 6&#34; /&gt;&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/44de281b321a1697a53e5577db31418deb2ebde5610637b44dbf6fe27cb8d4cb.png&#34; alt=&#34;picture 6&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;用量迅速增长&lt;/strong&gt;: IT 资源使用量随时间推移持续增长。&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/62b318e28767d15643014374e548551f4c9a77c8df009a3cafa6044024f1f9a4.png&#34; alt=&#34;picture 7&#34; /&gt;&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/62b318e28767d15643014374e548551f4c9a77c8df009a3cafa6044024f1f9a4.png&#34; alt=&#34;picture 7&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;瞬时暴涨&lt;/strong&gt;：特定时间点用量出现暴涨和暴跌。&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/0f11ec53e41381d290463835e0f15120fe66fb315902664ebe9a8fcd44fd7f08.png&#34; alt=&#34;picture 8&#34; /&gt;&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/0f11ec53e41381d290463835e0f15120fe66fb315902664ebe9a8fcd44fd7f08.png&#34; alt=&#34;picture 8&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;周期性增减&lt;/strong&gt;: IT 资产用量呈现周期性增长和消减。&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/0ef43a8d9467db51f32345f5b8c8d4a98c4dbf67cf1d796f831b030f088b0cae.png&#34; alt=&#34;picture 9&#34; /&gt;&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/0ef43a8d9467db51f32345f5b8c8d4a98c4dbf67cf1d796f831b030f088b0cae.png&#34; alt=&#34;picture 9&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;云计算的架构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#云计算的架构&#34;&gt;#&lt;/a&gt; 云计算的架构&lt;/h3&gt;
@@ -869,25 +869,25 @@
 &lt;li&gt;&lt;strong&gt;客户操作系统 (Guest OS)&lt;/strong&gt;: 运行在虚拟机中的操作系统。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;虚拟机监控器 (Virtual Machine Monitor, VMM / Hypervisor)&lt;/strong&gt;: 实现虚拟化的核心层。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主机操作系统 (Host OS)&lt;/strong&gt;: 运行 VMM 的操作系统 (仅限 Type II)。&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/f99549e9b0fc5567fb073c11b99468f1b75148b176c09df0bb4f4513623f77f4.png&#34; alt=&#34;picture 10&#34; /&gt;&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/f99549e9b0fc5567fb073c11b99468f1b75148b176c09df0bb4f4513623f77f4.png&#34; alt=&#34;picture 10&#34; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;hypervisor-类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hypervisor-类型&#34;&gt;#&lt;/a&gt; Hypervisor 类型&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Type I (裸金属架构)&lt;/strong&gt;: VMM/Hypervisor 直接运行在硬件之上。(例: Xen, ACRN)&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/52c9c93cf3f9c0be20e7668f15051e41094087a8d44385ac14e28b3839b7c060.png&#34; alt=&#34;picture 11&#34; /&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/52c9c93cf3f9c0be20e7668f15051e41094087a8d44385ac14e28b3839b7c060.png&#34; alt=&#34;picture 11&#34; /&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;：效率高，扩展性、健壮性、性能更好。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Type II (寄居架构 / 托管架构)&lt;/strong&gt;: VMM/Hypervisor 运行在 Host OS 之上，VM 作为 Host OS 的一个进程。(例: KVM, VMware Fusion, VirtualBox, Parallels Desktop)&lt;br /&gt;
-&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/c77396a3eed646d7bde7758786b0e05881af0c00c3a20aefe7310f4880d78029.png&#34; alt=&#34;picture 12&#34; /&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/c77396a3eed646d7bde7758786b0e05881af0c00c3a20aefe7310f4880d78029.png&#34; alt=&#34;picture 12&#34; /&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;：使用方便，与宿主 OS 兼容。桌面用户常用。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;x86架构对虚拟化的限制-ring特权级&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#x86架构对虚拟化的限制-ring特权级&#34;&gt;#&lt;/a&gt; x86 架构对虚拟化的限制 (Ring 特权级)&lt;/h4&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/6cb2051e27ed8f0359af546524df9d8a398999139a5d8f707eac3bbd4f25f4fa.png&#34; alt=&#34;picture 13&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/6cb2051e27ed8f0359af546524df9d8a398999139a5d8f707eac3bbd4f25f4fa.png&#34; alt=&#34;picture 13&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;x86 Ring&lt;/strong&gt;: Ring 0 (最高权限，OS 内核), Ring 3 (最低权限，用户应用)。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;特权指令&lt;/strong&gt;：只能在 Ring 0 执行，直接访问硬件 / 内存。&lt;/li&gt;
@@ -904,7 +904,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;核心技术 (VMware, 1998)&lt;/strong&gt;: &lt;strong&gt;二进制翻译 (Binary Translation, BT)&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/2b4e4788d9663b518c5874f9ca109730069ebf6fbac74aafde8e323f90908093.png&#34; alt=&#34;picture 14&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/2b4e4788d9663b518c5874f9ca109730069ebf6fbac74aafde8e323f90908093.png&#34; alt=&#34;picture 14&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原理&lt;/strong&gt;:
 &lt;ul&gt;
@@ -923,7 +923,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;半虚拟化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#半虚拟化&#34;&gt;#&lt;/a&gt; 半虚拟化&lt;/h4&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/4eba6fa66c628d6a21347707088ace4542ece493d99457aef5fc76486923b448.png&#34; alt=&#34;picture 15&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/4eba6fa66c628d6a21347707088ace4542ece493d99457aef5fc76486923b448.png&#34; alt=&#34;picture 15&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;核心思想&lt;/strong&gt;：修改 &lt;strong&gt;Guest OS 内核&lt;/strong&gt;，将敏感 / 特权指令替换为对 VMM 的直接调用 (&lt;strong&gt;Hypercall&lt;/strong&gt;)。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hypercall&lt;/strong&gt;: 类似于系统调用，由 Guest OS 主动发起，请求 Hypervisor 服务。&lt;/li&gt;
@@ -942,7 +942,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;硬件辅助虚拟化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#硬件辅助虚拟化&#34;&gt;#&lt;/a&gt; 硬件辅助虚拟化&lt;/h4&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/f924bb691dbc50bd69ecc6b53a3d35532a17d8a2650c38f09ccd90e6c18a443e.png&#34; alt=&#34;picture 16&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/f924bb691dbc50bd69ecc6b53a3d35532a17d8a2650c38f09ccd90e6c18a443e.png&#34; alt=&#34;picture 16&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;背景&lt;/strong&gt;：解决软件虚拟化性能开销。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;技术&lt;/strong&gt;: Intel VT-x (VMX), AMD AMD-V。&lt;/li&gt;
@@ -1311,7 +1311,7 @@
 &lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;: VM 创建是分钟级，Docker 容器创建是秒级。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;docker常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker常用命令&#34;&gt;#&lt;/a&gt; Docker 常用命令&lt;/h3&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.xyz/blog-img/images/cloud-computing/e350a74de6ee313b99b9080dc22f3bcce52541aa77e8f8c85a38830431330831.png&#34; alt=&#34;picture 17&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/cloud-computing/e350a74de6ee313b99b9080dc22f3bcce52541aa77e8f8c85a38830431330831.png&#34; alt=&#34;picture 17&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;帮助启动类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#帮助启动类&#34;&gt;#&lt;/a&gt; 帮助启动类&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;systemctl start/stop/restart/status/enable docker&lt;/code&gt;&lt;/li&gt;
