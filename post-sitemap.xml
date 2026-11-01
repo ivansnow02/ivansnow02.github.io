@@ -2,14 +2,14 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://blog.ivansnow02.icu/</loc>
+        <loc>https://ivansnow02.github.io/</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cloud-computing/</loc>
+        <loc>https://ivansnow02.github.io/cloud-computing/</loc>
         <lastmod>2025-05-19T00:32:05.813Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -17,7 +17,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/DataStructureNote/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/DataStructureNote/</loc>
         <lastmod>2025-03-16T13:28:19.928Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -25,7 +25,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/</loc>
         <lastmod>2025-03-01T12:18:39.053Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -33,7 +33,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/Union-Find/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/Union-Find/</loc>
         <lastmod>2025-03-01T12:18:35.387Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -41,7 +41,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/TS/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/TS/</loc>
         <lastmod>2025-03-01T12:18:32.116Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -49,7 +49,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/stack_and_queue/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/stack_and_queue/</loc>
         <lastmod>2025-03-01T12:18:29.070Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -57,7 +57,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/SPT/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/SPT/</loc>
         <lastmod>2025-03-01T12:18:16.559Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -65,7 +65,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/robot-kingdom/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/robot-kingdom/</loc>
         <lastmod>2025-03-01T12:18:13.890Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -73,7 +73,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/MST/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/MST/</loc>
         <lastmod>2025-03-01T12:18:11.057Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -81,7 +81,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/List/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/List/</loc>
         <lastmod>2025-03-01T12:18:07.650Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -89,7 +89,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/DataStructureTest02/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/DataStructureTest02/</loc>
         <lastmod>2025-03-01T12:18:04.683Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -97,7 +97,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/DataStructureTest01/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/DataStructureTest01/</loc>
         <lastmod>2025-03-01T12:18:01.323Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -105,7 +105,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/cs/408/ds/BST/</loc>
+        <loc>https://ivansnow02.github.io/cs/408/ds/BST/</loc>
         <lastmod>2025-03-01T12:17:52.523Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -113,7 +113,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/XJP/</loc>
+        <loc>https://ivansnow02.github.io/XJP/</loc>
         <lastmod>2025-02-27T14:12:31.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -121,7 +121,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/</loc>
+        <loc>https://ivansnow02.github.io/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/</loc>
         <lastmod>2025-02-27T14:12:31.379Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -129,7 +129,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/TheFallingSoldier/</loc>
+        <loc>https://ivansnow02.github.io/TheFallingSoldier/</loc>
         <lastmod>2025-02-27T14:12:31.371Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -137,7 +137,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/TEST/</loc>
+        <loc>https://ivansnow02.github.io/TEST/</loc>
         <lastmod>2025-02-27T14:12:31.368Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -145,7 +145,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/sql-lab/</loc>
+        <loc>https://ivansnow02.github.io/sql-lab/</loc>
         <lastmod>2025-02-27T14:12:31.362Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -153,7 +153,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Sports-Life-Lesson/</loc>
+        <loc>https://ivansnow02.github.io/Sports-Life-Lesson/</loc>
         <lastmod>2025-02-27T14:12:31.357Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -161,7 +161,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/software-engineering/</loc>
+        <loc>https://ivansnow02.github.io/software-engineering/</loc>
         <lastmod>2025-02-27T14:12:31.354Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -169,7 +169,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Redis-Learning-03-SpringDataRedis/</loc>
+        <loc>https://ivansnow02.github.io/Redis-Learning-03-SpringDataRedis/</loc>
         <lastmod>2025-02-27T14:12:31.348Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -177,7 +177,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Redis-Learning-02-%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</loc>
+        <loc>https://ivansnow02.github.io/Redis-Learning-02-%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</loc>
         <lastmod>2025-02-27T14:12:31.345Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -185,7 +185,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Redis-Learning-01-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
+        <loc>https://ivansnow02.github.io/Redis-Learning-01-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
         <lastmod>2025-02-27T14:12:31.342Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -193,7 +193,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/nju-compiler-lab-01-lexer/</loc>
+        <loc>https://ivansnow02.github.io/nju-compiler-lab-01-lexer/</loc>
         <lastmod>2025-02-27T14:12:31.339Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -201,7 +201,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/MarxistPhilosophy/</loc>
+        <loc>https://ivansnow02.github.io/MarxistPhilosophy/</loc>
         <lastmod>2025-02-27T14:12:31.333Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -209,7 +209,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Mao/</loc>
+        <loc>https://ivansnow02.github.io/Mao/</loc>
         <lastmod>2025-02-27T14:12:31.327Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -217,7 +217,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/making-friends/</loc>
+        <loc>https://ivansnow02.github.io/making-friends/</loc>
         <lastmod>2025-02-27T14:12:31.323Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -225,7 +225,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/linear-algebra/</loc>
+        <loc>https://ivansnow02.github.io/linear-algebra/</loc>
         <lastmod>2025-02-27T14:12:31.318Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -233,7 +233,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/java-learning/</loc>
+        <loc>https://ivansnow02.github.io/java-learning/</loc>
         <lastmod>2025-02-27T14:12:31.313Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -241,7 +241,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/heimadianping/</loc>
+        <loc>https://ivansnow02.github.io/heimadianping/</loc>
         <lastmod>2025-02-27T14:12:31.309Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -249,7 +249,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/healthy-lifestyle/</loc>
+        <loc>https://ivansnow02.github.io/healthy-lifestyle/</loc>
         <lastmod>2025-02-27T14:12:31.306Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -257,7 +257,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Games101-assignment-05/</loc>
+        <loc>https://ivansnow02.github.io/Games101-assignment-05/</loc>
         <lastmod>2025-02-27T14:12:31.303Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -265,7 +265,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Games101-assignment-04/</loc>
+        <loc>https://ivansnow02.github.io/Games101-assignment-04/</loc>
         <lastmod>2025-02-27T14:12:31.300Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -273,7 +273,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Games101-assignment-03/</loc>
+        <loc>https://ivansnow02.github.io/Games101-assignment-03/</loc>
         <lastmod>2025-02-27T14:12:31.297Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -281,7 +281,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Games101-assignment-02/</loc>
+        <loc>https://ivansnow02.github.io/Games101-assignment-02/</loc>
         <lastmod>2025-02-27T14:12:31.293Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -289,7 +289,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Games101-assignment-01/</loc>
+        <loc>https://ivansnow02.github.io/Games101-assignment-01/</loc>
         <lastmod>2025-02-27T14:12:31.290Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -297,7 +297,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/</loc>
+        <loc>https://ivansnow02.github.io/Django%E5%85%AC%E6%9C%89%E9%85%8D%E7%BD%AE/</loc>
         <lastmod>2025-02-27T14:12:31.287Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -305,7 +305,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/DataBaseLearning/</loc>
+        <loc>https://ivansnow02.github.io/DataBaseLearning/</loc>
         <lastmod>2025-02-27T14:12:31.274Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -313,7 +313,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/ComputerSystem/</loc>
+        <loc>https://ivansnow02.github.io/ComputerSystem/</loc>
         <lastmod>2025-02-27T14:12:31.270Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -321,7 +321,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/computer-organization/</loc>
+        <loc>https://ivansnow02.github.io/computer-organization/</loc>
         <lastmod>2025-02-27T14:12:31.261Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -329,7 +329,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/computer-network/</loc>
+        <loc>https://ivansnow02.github.io/computer-network/</loc>
         <lastmod>2025-02-27T14:12:31.255Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -337,7 +337,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/computer-graphics/</loc>
+        <loc>https://ivansnow02.github.io/computer-graphics/</loc>
         <lastmod>2025-02-27T14:12:31.248Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -345,7 +345,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/Compilers/</loc>
+        <loc>https://ivansnow02.github.io/Compilers/</loc>
         <lastmod>2025-02-27T14:12:31.242Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -353,7 +353,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/AlgorithmIntroduction/</loc>
+        <loc>https://ivansnow02.github.io/AlgorithmIntroduction/</loc>
         <lastmod>2025-02-27T14:12:31.233Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -361,7 +361,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/ai-fundamental/</loc>
+        <loc>https://ivansnow02.github.io/ai-fundamental/</loc>
         <lastmod>2025-02-27T14:12:31.226Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -369,7 +369,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</loc>
+        <loc>https://ivansnow02.github.io/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</loc>
         <lastmod>2025-02-27T14:12:31.218Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -377,7 +377,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/</loc>
+        <loc>https://ivansnow02.github.io/%E7%89%A9%E7%90%86%E5%A4%8D%E4%B9%A0/</loc>
         <lastmod>2025-02-27T14:12:31.212Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -385,7 +385,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%A4%8D%E4%B9%A0/</loc>
+        <loc>https://ivansnow02.github.io/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%A4%8D%E4%B9%A0/</loc>
         <lastmod>2025-02-27T14:12:31.209Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -393,7 +393,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/%E6%80%9D%E6%94%BF%E5%A4%8D%E4%B9%A0/</loc>
+        <loc>https://ivansnow02.github.io/%E6%80%9D%E6%94%BF%E5%A4%8D%E4%B9%A0/</loc>
         <lastmod>2025-02-27T14:12:31.205Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -401,7 +401,7 @@
     </url>
 
     <url>
-        <loc>https://blog.ivansnow02.icu/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%8D%E4%B9%A0/</loc>
+        <loc>https://ivansnow02.github.io/%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%8D%E4%B9%A0/</loc>
         <lastmod>2025-02-27T14:12:31.201Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

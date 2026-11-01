@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["_astro/image-zoom-element.CQxr2lOz.js","_astro/i18n.CpCqBC-8.js","_astro/scrollLock.CphHndS9.js","_astro/web-components-base.CmBtcaLx.js"])))=>i.map(i=>d[i]);
+import{b as e}from"./solid.DhfFeTIY.js";import{t}from"./preload-helper.L5lOfJxi.js";function n(){return e(async()=>{let{registerImageZoom:e}=await t(async()=>{let{registerImageZoom:e}=await import(`./image-zoom-element.CQxr2lOz.js`);return{registerImageZoom:e}},__vite__mapDeps([0,1,2,3]));e()}),null}export{n as default};

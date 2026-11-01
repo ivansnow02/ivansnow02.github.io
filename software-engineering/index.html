@@ -1,13 +1,208 @@
-<!DOCTYPE html><html lang="zh-CN"><head>
-  <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/custom.css">
-  <link href="https://fastly.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" rel="stylesheet">
-  <link href="/css/custom.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.loli.net">
-  <link rel="preconnect" href="https://gstatic.loli.net" crossorigin>
-  <link href="https://fonts.loli.net/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><link rel="icon" type="image/ico" sizes="32x32" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"><meta name="msvalidate.01" content="5C885BB4F08198773FCB9D68FB7EFF0C"><meta name="google-site-verification" content="SU_V4YfQlQkkbm4IQUajehIwRUPbvIwErs1WJRMD0NQ"><link rel="alternate" href="/rss.xml" title="IOyuk1Nya's Blog" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="IOyuk1Nya's Blog" type="application/atom+xml"><link rel="alternate" type="application/json" title="IOyuk1Nya's Blog" href="https://blog.ivansnow02.icu/feed.json"><link rel="preconnect" href="https://s4.zstatic.net"><link rel="preconnect" href="https://at.alicdn.com"><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://unpkg.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CJuliamo:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CJetBrains%20Mono:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.25"><link rel="modulepreload" href="/js/chunk-6NK3SN44.js"><link rel="modulepreload" href="/js/chunk-AZO4VBGZ.js"><link rel="modulepreload" href="/js/chunk-BPYIVRTA.js"><link rel="modulepreload" href="/js/chunk-LPZ6IRR4.js"><link rel="modulepreload" href="/js/chunk-WOOM3R6Q.js"><link rel="modulepreload" href="/js/copy-tex-2I2YH6US.js"><link rel="modulepreload" href="/js/index.esm-3KWC6NJD.js"><link rel="modulepreload" href="/js/post-JUZJSDUJ.js"><link rel="modulepreload" href="/js/quicklink-FZ4URYZU.js"><link rel="modulepreload" href="/js/search-4QXF47JZ.js"><link rel="modulepreload" href="/js/siteInit.js"><link rel="modulepreload" href="/js/tcomments-CXMVEAGL.js"><link rel="preload" href="https://blog.ivansnow02.icu/blog-img/59bcba93d944d6057250d5ea80b18ec2390418501%202.png" as="image" fetchpriority="high"><meta name="keywords" content="computer science,software engineering"><meta name="description" content="some notes about computer science"><link rel="canonical" href="https://blog.ivansnow02.icu/software-engineering/"><title>软件工程复习</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">软件工程复习</h1><div class="meta"><span class="item" title="创建时间：2024-12-30 14:00:47"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2024-12-30T14:00:47+08:00">2024-12-30</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>13k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>12 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Code Blog</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="https://blog.ivansnow02.icu/blog-img/59bcba93d944d6057250d5ea80b18ec2390418501%202.png" loading="eager" decoding="async" fetchpriority="high" alt="IOyuk1Nya's Blog"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemlistelement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span><i class="ic i-angle-right"></i><span class="current" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/computer-science/" itemprop="item" rel="index" title="分类于computer science"><span itemprop="name">computer science<meta itemprop="position" content="0"></span></a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://blog.ivansnow02.icu/software-engineering/"><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/img/avatar.png"><meta itemprop="name" content="IOyuk1Nya"><meta itemprop="description" content="Just a Note., some notes about computer science"></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="IOyuk1Nya's Blog"></span><div class="body md" itemprop="articleBody"><h2 id="判定表"><a class="anchor" href="#判定表">#</a> 判定表</h2>
+<!DOCTYPE html><html lang="zh-CN" data-astro-cid-ju4pidww><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/x-icon" href="/img/favicon.ico"><meta name="generator" content="Astro v7.2.4"><link rel="canonical" href="https://ivansnow02.github.io/software-engineering/"><script type="module" src="/_astro/Layout.astro_astro_type_script_index_0_lang.CUjVkFvw.js"></script><meta name="description" content="# 判定表 条件 条件 1 条件取值的组合 条件 2 ... 条件 n 动作 动作 1 动作 动作 2 ... 动作 n # 判定树 # SA 画 DFD # DFD 步骤 从顶层 DFD 开始，把整个系统视为加工处理。 自上而下，逐步对系统分解： 每分解一次，增加系统的加工元素，进一步具体化每个加工的功能。 重复第 2 步，直"><meta http-equiv="X-Content-Type-Options" content="nosniff"><title>软件工程复习</title><link rel="stylesheet" href="/_astro/Layout.B2iwpS1E.css"><link rel="stylesheet" href="/_astro/Layout.va-xKOpx.css"><link rel="stylesheet" href="/_astro/WalineComments.BUdQSYIR.css"><link rel="stylesheet" href="/_astro/spoiler.WN5MUzQh.css"><style>.encrypted-post {
+  --encrypted-primary: var(--primary-color);
+  --encrypted-bg: var(--grey-1);
+  --encrypted-card-bg: var(--grey-0);
+  --encrypted-text: var(--text-color);
+  --encrypted-border: var(--grey-4);
+  --encrypted-error: var(--color-red);
+  --encrypted-success: var(--color-green);
+}
+
+.encrypted-lock-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.encrypted-lock-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.encrypted-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--encrypted-text);
+}
+
+.encrypted-description {
+  font-size: 0.95rem;
+  color: var(--encrypted-text);
+  opacity: 0.7;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.encrypted-password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 320px;
+}
+
+.encrypted-password-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--encrypted-border);
+  border-radius: 8px;
+  background: var(--encrypted-card-bg);
+  color: var(--encrypted-text);
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.encrypted-password-input:focus {
+  border-color: var(--encrypted-primary);
+  box-shadow: 0 0 0 3px var(--color-red-a1);
+}
+
+.encrypted-password-input::placeholder {
+  color: var(--encrypted-text);
+  opacity: 0.5;
+}
+
+.encrypted-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--header-text-color);
+  background: var(--encrypted-primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.encrypted-submit-btn:hover {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+
+.encrypted-submit-btn:active {
+  transform: translateY(0);
+}
+
+.encrypted-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.encrypted-submit-btn .loading-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid transparent;
+  border-top-color: var(--header-text-color);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.encrypted-error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: var(--encrypted-error);
+  background: var(--color-red-a1);
+  border: 1px solid var(--color-red-a3);
+  border-radius: 6px;
+  animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.encrypted-error .icon {
+  flex-shrink: 0;
+}
+
+/* 解密后的内容样式 */
+.encrypted-content {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 解密中状态 */
+.encrypted-decrypting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.encrypted-decrypting .loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--encrypted-border);
+  border-top-color: var(--encrypted-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.encrypted-decrypting-text {
+  font-size: 0.95rem;
+  color: var(--encrypted-text);
+  opacity: 0.8;
+}
+</style><link rel="stylesheet" href="/_astro/pagefind-component-ui.DrNSOIHT.css"><script type="module" src="/_astro/page.Bp0bxxHI.js"></script></head><body data-layout-mode="two-column" data-astro-cid-ju4pidww><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><script>window._$HY||(e=>{let t=e=>e&&e.hasAttribute&&(e.hasAttribute("data-hk")?e:t(e.host&&e.host.nodeType?e.host:e.parentNode));["click", "input"].forEach((o=>document.addEventListener(o,(o=>{if(!e.events)return;let s=t(o.composedPath&&o.composedPath()[0]||o.target);s&&!e.completed.has(s)&&e.events.push([s,o])}))))})(_$HY={events:[],completed:new WeakSet,r:{},fe(){}});</script><!--xs--><astro-island uid="Z1b220V" data-solid-render-id="s0" component-url="/_astro/NavBar.CKaBZPJY.js" component-export="default" renderer-url="/_astro/client.EvYvVR1M.js" props="{&quot;name&quot;:[0,&quot;IOyuk1Nya&#39;s Blog&quot;],&quot;navLinks&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/&quot;],&quot;text&quot;:[0,&quot;首页&quot;],&quot;icon&quot;:[0,&quot;i-ri-home-line&quot;]}],[0,{&quot;href&quot;:[0,&quot;/about/&quot;],&quot;text&quot;:[0,&quot;关于&quot;],&quot;icon&quot;:[0,&quot;i-ri-user-3-line&quot;]}],[0,{&quot;href&quot;:[0,&quot;/archives/&quot;],&quot;text&quot;:[0,&quot;归档&quot;],&quot;icon&quot;:[0,&quot;i-ri-archive-line&quot;]}],[0,{&quot;href&quot;:[0,&quot;/categories/&quot;],&quot;text&quot;:[0,&quot;分类&quot;],&quot;icon&quot;:[0,&quot;i-ri-book-shelf-line&quot;]}],[0,{&quot;href&quot;:[0,&quot;/tags/&quot;],&quot;text&quot;:[0,&quot;标签&quot;],&quot;icon&quot;:[0,&quot;i-ri-price-tag-3-line&quot;]}],[0,{&quot;href&quot;:[0,&quot;/links/&quot;],&quot;text&quot;:[0,&quot;友链&quot;],&quot;icon&quot;:[0,&quot;i-ri-link&quot;]}]]],&quot;clickToggleCallback&quot;:[0,null],&quot;data-astro-cid-ju4pidww&quot;:[0,true]}" ssr client="load" opts="{&quot;name&quot;:&quot;NavBar&quot;,&quot;value&quot;:true}" await-children><nav data-hk="s00000" id="nav" aria-label="主导航" class="h-12.5 fixed top-0 w-full z-9 backdrop-blur-8 backdrop-saturate-180 nav-top" style=""><div class="mb-0 ml-auto mr-auto mt-0 flex flex-nowrap h-full w-[calc(100%-0.625rem)] w-85%"><!--$--><button data-hk="s000010" class="left-nav-btn border-none bg-transparent flex flex-col cursor-pointer items-center justify-center lg:hidden" aria-label="Toggle sidebar" type="button"><div class="line-height-0 p-5 w-5.5 box-unset"><div class="line-menu "></div><div class="line-menu mt-0.75 "></div><div class="line-menu mt-0.75 "></div></div></button><!--/--><!--$--><ul data-hk="s000020" class="m-0 pb-2.5 pt-2.5 p-is-0 flex w-full"><!--$--><li data-hk="s00002100" class="relative list-none pl-2.5 pr-2.5 text-align-center tracking-0.25 menu-title"><a data-hk="s00002101" href="/" aria-label="IOyuk1Nya's Blog 首页"><!--$--><!--/--><!--$-->IOyuk1Nya's Blog<!--/--></a></li><!--/--><!--$--><li data-hk="s000022000" class="relative list-none pl-2.5 pr-2.5 text-align-center tracking-0.25 desktop-only inline-block before:rounded-0.5 before:bg-current before:content-empty before:absolute before:bottom-0 before:left-50% before:transform-translate-x--50% before:transition-all before:transition-duration-400 before:transition-ease-in-out before:h-0.75 before:w-0 hover:before:w-60%"><a data-hk="s000022001" href="/"><!--$--><div data-hk="s000022002" class="i-ri-home-line icon-nav text-xl vertical-text-bottom inline-block"></div><!--/--><!--$-->首页<!--/--></a></li><li data-hk="s000022100" class="relative list-none pl-2.5 pr-2.5 text-align-center tracking-0.25 desktop-only inline-block before:rounded-0.5 before:bg-current before:content-empty before:absolute before:bottom-0 before:left-50% before:transform-translate-x--50% before:transition-all before:transition-duration-400 before:transition-ease-in-out before:h-0.75 before:w-0 hover:before:w-60%"><a data-hk="s000022101" href="/about/"><!--$--><div data-hk="s000022102" class="i-ri-user-3-line icon-nav text-xl vertical-text-bottom inline-block"></div><!--/--><!--$-->关于<!--/--></a></li><li data-hk="s000022200" class="relative list-none pl-2.5 pr-2.5 text-align-center tracking-0.25 desktop-only inline-block before:rounded-0.5 before:bg-current before:content-empty before:absolute before:bottom-0 before:left-50% before:transform-translate-x--50% before:transition-all before:transition-duration-400 before:transition-ease-in-out before:h-0.75 before:w-0 hover:before:w-60%"><a data-hk="s000022201" href="/archives/"><!--$--><div data-hk="s000022202" class="i-ri-archive-line icon-nav text-xl vertical-text-bottom inline-block"></div><!--/--><!--$-->归档<!--/--></a></li><li data-hk="s000022300" class="relative list-none pl-2.5 pr-2.5 text-align-center tracking-0.25 desktop-only inline-block before:rounded-0.5 before:bg-current before:content-empty before:absolute before:bottom-0 before:left-50% before:transform-translate-x--50% before:transition-all before:transition-duration-400 before:transition-ease-in-out before:h-0.75 before:w-0 hover:before:w-60%"><a data-hk="s000022301" href="/categories/"><!--$--><div data-hk="s000022302" class="i-ri-book-shelf-line icon-nav text-xl vertical-text-bottom inline-block"></div><!--/--><!--$-->分类<!--/--></a></li><li data-hk="s000022400" class="relative list-none pl-2.5 pr-2.5 text-align-center tracking-0.25 desktop-only inline-block before:rounded-0.5 before:bg-current before:content-empty before:absolute before:bottom-0 before:left-50% before:transform-translate-x--50% before:transition-all before:transition-duration-400 before:transition-ease-in-out before:h-0.75 before:w-0 hover:before:w-60%"><a data-hk="s000022401" href="/tags/"><!--$--><div data-hk="s000022402" class="i-ri-price-tag-3-line icon-nav text-xl vertical-text-bottom inline-block"></div><!--/--><!--$-->标签<!--/--></a></li><li data-hk="s000022500" class="relative list-none pl-2.5 pr-2.5 text-align-center tracking-0.25 desktop-only inline-block before:rounded-0.5 before:bg-current before:content-empty before:absolute before:bottom-0 before:left-50% before:transform-translate-x--50% before:transition-all before:transition-duration-400 before:transition-ease-in-out before:h-0.75 before:w-0 hover:before:w-60%"><a data-hk="s000022501" href="/links/"><!--$--><div data-hk="s000022502" class="i-ri-link icon-nav text-xl vertical-text-bottom inline-block"></div><!--/--><!--$-->友链<!--/--></a></li><!--/--></ul><!--/--><!--$--><ul data-hk="s000030" class="inline-flex cursor-pointer items-center justify-center"><li data-hk="s000031"><a href="/random/" class="nav-action text-5" aria-label="随机文章" title="随机文章"><div class="i-ri-dice-line"></div></a></li><li data-hk="s000032"><button type="button" class="nav-action text-5 border-none bg-transparent" aria-label="Toggle theme"><div class="i-ri-sun-line"></div></button></li><li data-hk="s000033"><button type="button" id="search" class="nav-action text-5 border-none bg-transparent" aria-label="Search"><div class="i-ri-search-line"></div></button></li></ul><!--/--></div></nav><!--astro:end--></astro-island><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><astro-island uid="heW7P" data-solid-render-id="s1" component-url="/_astro/SearchPage.CzfUfKic.js" component-export="default" renderer-url="/_astro/client.EvYvVR1M.js" props="{&quot;selector&quot;:[0,&quot;#search&quot;],&quot;data-astro-cid-ju4pidww&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SearchPage&quot;,&quot;value&quot;:true}" await-children><div data-hk="s10000" class="search-shell " hidden aria-hidden="true" data-pf-theme="light"><button type="button" class="search-overlay" aria-label="Close search overlay"></button><div class="pagefind-panel" role="dialog" aria-modal="true" aria-label="Search"><div class="search-panel__ornament" aria-hidden="true"><span class="search-panel__icon i-ri-search-line"></span><span class="search-panel__glow"></span></div><button type="button" class="search-panel__close" aria-label="Close search" aria-controls="pagefind-results-region"><span class="i-ri-close-line"></span></button><div class="search-panel__body"><div data-hk="s10001" class="pagefind-component-shell" data-testid="pagefind-component-shell"><pagefind-config instance="global-search" bundle-path="/pagefind/"></pagefind-config><div class="pagefind-component-header"><pagefind-input instance="global-search" debounce="200"></pagefind-input></div><div class="pagefind-component-results" id="pagefind-results-region" data-testid="pagefind-results-region"><pagefind-summary instance="global-search"></pagefind-summary><pagefind-results instance="global-search"></pagefind-results></div><div class="pagefind-component-footer"><pagefind-keyboard-hints instance="global-search"></pagefind-keyboard-hints></div></div></div></div></div><!--astro:end--></astro-island><div id="loading" data-astro-cid-haxtmvdq><div class="cat" data-astro-cid-haxtmvdq><div class="body" data-astro-cid-haxtmvdq></div><div class="head" data-astro-cid-haxtmvdq><div class="face" data-astro-cid-haxtmvdq></div></div><div class="foot" data-astro-cid-haxtmvdq><div class="tummy-end" data-astro-cid-haxtmvdq></div><div class="bottom" data-astro-cid-haxtmvdq></div><div class="legs left" data-astro-cid-haxtmvdq></div><div class="legs right" data-astro-cid-haxtmvdq></div></div><div class="paw" data-astro-cid-haxtmvdq><div class="hands left" data-astro-cid-haxtmvdq></div><div class="hands right" data-astro-cid-haxtmvdq></div></div></div></div><script type="module">window.addEventListener(`DOMContentLoaded`,()=>{requestAnimationFrame(()=>{requestAnimationFrame(()=>{let e=document.querySelector(`#loading`);e&&setTimeout(()=>{e.classList.add(`hidden`)},500)})})});</script><div id="container" data-astro-cid-ju4pidww><div class="spacer" data-astro-cid-5h3odnpn></div><div id="imgs" class="imgs-container" data-astro-cid-5h3odnpn><img src="https://ivansnow02.github.io/blog-img/59bcba93d944d6057250d5ea80b18ec2390418501%202.png" alt="IOyuk1Nya's Blog" class="single-image" loading="eager" decoding="sync" fetchpriority="high" data-astro-cid-3toxu74n><div class="imgs-overlay" data-astro-cid-5h3odnpn></div></div><script type="module">var e=document.querySelector(`#imgs`);if(e){let t=t=>{let n=e.getBoundingClientRect(),r=t.clientX>=n.left&&t.clientX<=n.right&&t.clientY>=n.top&&t.clientY<=n.bottom;e.classList.toggle(`is-hovered`,r)},n=()=>{e.classList.remove(`is-hovered`)};window.addEventListener(`mousemove`,t,{passive:!0}),window.addEventListener(`blur`,n),document.addEventListener(`visibilitychange`,()=>{document.hidden&&n()})}</script><div id="brand" class="w-full px-20 pt-12 text-center min-h-40 flex flex-col items-center justify-center" data-astro-cid-6bctqxxv><div class="pjax flex flex-col w-full items-center justify-center" data-astro-cid-6bctqxxv><h1 class="letter-space-2  color-grey-0 text-5xl leading-tight tracking-wider font-600" data-astro-cid-6bctqxxv>软件工程复习</h1><div class="meta text-base mt-2.5 opacity-80 flex flex-wrap gap-3 items-center justify-center" data-astro-cid-6bctqxxv><span class="item flex gap-1 items-center" title="发布于 2024-12-30" data-astro-cid-6bctqxxv><i class="i-ri-calendar-line" data-astro-cid-6bctqxxv></i><span class="text" data-astro-cid-6bctqxxv>发布于</span><time datetime="2024-12-30T14:00:47.000Z" data-astro-cid-6bctqxxv>2024-12-30</time></span><span class="item flex gap-1 items-center" title="字数统计" data-astro-cid-6bctqxxv><i class="i-ri-quill-pen-line" data-astro-cid-6bctqxxv></i><span class="text" data-astro-cid-6bctqxxv>字数统计</span><span data-astro-cid-6bctqxxv>12.5k字</span></span><span class="item flex gap-1 items-center" title="阅读时长" data-astro-cid-6bctqxxv><i class="i-ri-time-line" data-astro-cid-6bctqxxv></i><span class="text" data-astro-cid-6bctqxxv>阅读时长</span><span data-astro-cid-6bctqxxv>42 分钟</span></span></div></div></div><!-- 滚动监听脚本 --><script type="module">var e=!1,t=document.querySelector(`#brand`);function n(){let n=window.scrollY>0;n!==e&&(e=n,t&&t.classList.toggle(`affix`,e))}n(),window.addEventListener(`scroll`,n,{passive:!0});</script><div id="waves" data-astro-cid-bswlkd2e><svg class="waves mb-[-0.6875rem] max-h-[9.375rem] min-h-[3.125rem] w-full relative md:h-10vh" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" data-astro-cid-bswlkd2e><defs data-astro-cid-bswlkd2e><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" data-astro-cid-bswlkd2e></path></defs><g class="parallax" data-astro-cid-bswlkd2e><use xlink:href="#gentle-wave" x="48" y="0" data-astro-cid-bswlkd2e></use><use xlink:href="#gentle-wave" x="48" y="3" data-astro-cid-bswlkd2e></use><use xlink:href="#gentle-wave" x="48" y="5" data-astro-cid-bswlkd2e></use><use xlink:href="#gentle-wave" x="48" y="7" data-astro-cid-bswlkd2e></use></g></svg></div><script type="module">var e=document.querySelector(`#waves`);if(e){let t=e.querySelector(`.parallax`);t&&new IntersectionObserver(e=>{e.forEach(e=>{t.classList.toggle(`paused`,!e.isIntersecting)})},{threshold:.1}).observe(e)}</script><main data-astro-cid-ju4pidww><div class="inner layout-frame layout-two-column"><aside class="layout-sidebar-column" aria-label="primary sidebar"><astro-island uid="2vW58n" data-solid-render-id="s6" component-url="/_astro/Sidebar.D4f9CEV9.js" component-export="default" renderer-url="/_astro/client.EvYvVR1M.js" props="{&quot;config&quot;:[0,{&quot;author&quot;:[0,&quot;IOyuk1Nya&quot;],&quot;description&quot;:[0,&quot;some notes about computer science&quot;],&quot;social&quot;:[0,{&quot;github&quot;:[0,{&quot;url&quot;:[0,&quot;https://github.com/ivansnow02&quot;],&quot;icon&quot;:[0,&quot;i-ri-github-fill&quot;]}]}]}],&quot;navLinks&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/&quot;],&quot;text&quot;:[0,&quot;首页&quot;],&quot;icon&quot;:[0,&quot;i-ri-home-line&quot;]}],[0,{&quot;href&quot;:[0,&quot;/about/&quot;],&quot;text&quot;:[0,&quot;关于&quot;],&quot;icon&quot;:[0,&quot;i-ri-user-3-line&quot;]}],[0,{&quot;href&quot;:[0,&quot;/archives/&quot;],&quot;text&quot;:[0,&quot;归档&quot;],&quot;icon&quot;:[0,&quot;i-ri-archive-line&quot;]}],[0,{&quot;href&quot;:[0,&quot;/categories/&quot;],&quot;text&quot;:[0,&quot;分类&quot;],&quot;icon&quot;:[0,&quot;i-ri-book-shelf-line&quot;]}],[0,{&quot;href&quot;:[0,&quot;/tags/&quot;],&quot;text&quot;:[0,&quot;标签&quot;],&quot;icon&quot;:[0,&quot;i-ri-price-tag-3-line&quot;]}],[0,{&quot;href&quot;:[0,&quot;/links/&quot;],&quot;text&quot;:[0,&quot;友链&quot;],&quot;icon&quot;:[0,&quot;i-ri-link&quot;]}]]],&quot;toc&quot;:[1,[[0,{&quot;id&quot;:[0,&quot;判定表&quot;],&quot;text&quot;:[0,&quot;判定表&quot;],&quot;level&quot;:[0,2]}],[0,{&quot;id&quot;:[0,&quot;判定树&quot;],&quot;text&quot;:[0,&quot;判定树&quot;],&quot;level&quot;:[0,2]}],[0,{&quot;id&quot;:[0,&quot;sa画dfd&quot;],&quot;text&quot;:[0,&quot;SA画DFD&quot;],&quot;level&quot;:[0,2]}],[0,{&quot;id&quot;:[0,&quot;dfd步骤&quot;],&quot;text&quot;:[0,&quot;DFD步骤&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;dfd原则&quot;],&quot;text&quot;:[0,&quot;DFD原则&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;uml&quot;],&quot;text&quot;:[0,&quot;UML&quot;],&quot;level&quot;:[0,2]}],[0,{&quot;id&quot;:[0,&quot;uml用例图&quot;],&quot;text&quot;:[0,&quot;UML用例图&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;用例图元素&quot;],&quot;text&quot;:[0,&quot;用例图元素&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;用例图角色&quot;],&quot;text&quot;:[0,&quot;用例图角色&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;用例图步骤&quot;],&quot;text&quot;:[0,&quot;用例图步骤&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;用例图关联&quot;],&quot;text&quot;:[0,&quot;用例图关联&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;include&quot;],&quot;text&quot;:[0,&quot;Include&quot;],&quot;level&quot;:[0,5]}],[0,{&quot;id&quot;:[0,&quot;extend&quot;],&quot;text&quot;:[0,&quot;Extend&quot;],&quot;level&quot;:[0,5]}],[0,{&quot;id&quot;:[0,&quot;泛化关系&quot;],&quot;text&quot;:[0,&quot;泛化关系&quot;],&quot;level&quot;:[0,5]}],[0,{&quot;id&quot;:[0,&quot;用例图规则&quot;],&quot;text&quot;:[0,&quot;用例图规则&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;发现对象&quot;],&quot;text&quot;:[0,&quot;发现对象&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;实体类&quot;],&quot;text&quot;:[0,&quot;实体类&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;边界类&quot;],&quot;text&quot;:[0,&quot;边界类&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;控制类&quot;],&quot;text&quot;:[0,&quot;控制类&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;类图&quot;],&quot;text&quot;:[0,&quot;类图&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;对象之间关系&quot;],&quot;text&quot;:[0,&quot;对象之间关系&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;关联&quot;],&quot;text&quot;:[0,&quot;关联&quot;],&quot;level&quot;:[0,5]}],[0,{&quot;id&quot;:[0,&quot;聚合&quot;],&quot;text&quot;:[0,&quot;聚合&quot;],&quot;level&quot;:[0,5]}],[0,{&quot;id&quot;:[0,&quot;组合关系&quot;],&quot;text&quot;:[0,&quot;组合关系&quot;],&quot;level&quot;:[0,5]}],[0,{&quot;id&quot;:[0,&quot;依赖关系&quot;],&quot;text&quot;:[0,&quot;依赖关系&quot;],&quot;level&quot;:[0,5]}],[0,{&quot;id&quot;:[0,&quot;泛化关系-1&quot;],&quot;text&quot;:[0,&quot;泛化关系&quot;],&quot;level&quot;:[0,5]}],[0,{&quot;id&quot;:[0,&quot;实现关系&quot;],&quot;text&quot;:[0,&quot;实现关系&quot;],&quot;level&quot;:[0,5]}],[0,{&quot;id&quot;:[0,&quot;构件图&quot;],&quot;text&quot;:[0,&quot;构件图&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;部署图&quot;],&quot;text&quot;:[0,&quot;部署图&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;顺序图&quot;],&quot;text&quot;:[0,&quot;顺序图&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;顺序图的组成&quot;],&quot;text&quot;:[0,&quot;顺序图的组成&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;顺序图的消息&quot;],&quot;text&quot;:[0,&quot;顺序图的消息&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;协作图&quot;],&quot;text&quot;:[0,&quot;协作图&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;状态图&quot;],&quot;text&quot;:[0,&quot;状态图&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;状态图符号&quot;],&quot;text&quot;:[0,&quot;状态图符号&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;活动图&quot;],&quot;text&quot;:[0,&quot;活动图&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;结构图sc&quot;],&quot;text&quot;:[0,&quot;结构图SC&quot;],&quot;level&quot;:[0,2]}],[0,{&quot;id&quot;:[0,&quot;结构化设计sd&quot;],&quot;text&quot;:[0,&quot;结构化设计SD&quot;],&quot;level&quot;:[0,2]}],[0,{&quot;id&quot;:[0,&quot;变换映射&quot;],&quot;text&quot;:[0,&quot;变换映射&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;事务映射&quot;],&quot;text&quot;:[0,&quot;事务映射&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;n-s图&quot;],&quot;text&quot;:[0,&quot;N-S图&quot;],&quot;level&quot;:[0,2]}],[0,{&quot;id&quot;:[0,&quot;问题分析图pad&quot;],&quot;text&quot;:[0,&quot;问题分析图(PAD)&quot;],&quot;level&quot;:[0,2]}],[0,{&quot;id&quot;:[0,&quot;白盒测试&quot;],&quot;text&quot;:[0,&quot;白盒测试&quot;],&quot;level&quot;:[0,2]}],[0,{&quot;id&quot;:[0,&quot;逻辑覆盖法&quot;],&quot;text&quot;:[0,&quot;逻辑覆盖法&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;语句覆盖&quot;],&quot;text&quot;:[0,&quot;语句覆盖&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;判定覆盖&quot;],&quot;text&quot;:[0,&quot;判定覆盖&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;条件覆盖&quot;],&quot;text&quot;:[0,&quot;条件覆盖&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;判定条件覆盖&quot;],&quot;text&quot;:[0,&quot;判定/条件覆盖&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;条件组合覆盖&quot;],&quot;text&quot;:[0,&quot;条件组合覆盖&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;路径覆盖法&quot;],&quot;text&quot;:[0,&quot;路径覆盖法&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;点覆盖&quot;],&quot;text&quot;:[0,&quot;点覆盖&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;边覆盖&quot;],&quot;text&quot;:[0,&quot;边覆盖&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;路径覆盖&quot;],&quot;text&quot;:[0,&quot;路径覆盖&quot;],&quot;level&quot;:[0,4]}],[0,{&quot;id&quot;:[0,&quot;黑盒测试&quot;],&quot;text&quot;:[0,&quot;黑盒测试&quot;],&quot;level&quot;:[0,2]}],[0,{&quot;id&quot;:[0,&quot;等价分类法&quot;],&quot;text&quot;:[0,&quot;等价分类法&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;边界值分析法&quot;],&quot;text&quot;:[0,&quot;边界值分析法&quot;],&quot;level&quot;:[0,3]}],[0,{&quot;id&quot;:[0,&quot;错误推测法&quot;],&quot;text&quot;:[0,&quot;错误推测法&quot;],&quot;level&quot;:[0,3]}]]],&quot;relatedPosts&quot;:[1,[[0,{&quot;slug&quot;:[0,&quot;cloud-computing&quot;],&quot;title&quot;:[0,&quot;cloud_computing&quot;],&quot;date&quot;:[3,&quot;2025-04-17T08:16:40.000Z&quot;],&quot;category&quot;:[0,&quot;computer science&quot;]}],[0,{&quot;slug&quot;:[0,&quot;computer-graphics&quot;],&quot;title&quot;:[0,&quot;计算机图形学&quot;],&quot;date&quot;:[3,&quot;2024-11-12T08:00:46.000Z&quot;],&quot;category&quot;:[0,&quot;computer science&quot;]}],[0,{&quot;slug&quot;:[0,&quot;Compilers&quot;],&quot;title&quot;:[0,&quot;编译技术笔记&quot;],&quot;date&quot;:[3,&quot;2024-10-09T07:48:47.000Z&quot;],&quot;category&quot;:[0,&quot;computer science&quot;]}],[0,{&quot;slug&quot;:[0,&quot;ai-fundamental&quot;],&quot;title&quot;:[0,&quot;人工智能基础&quot;],&quot;date&quot;:[3,&quot;2024-06-29T09:12:16.000Z&quot;],&quot;category&quot;:[0,&quot;computer science&quot;]}],[0,{&quot;slug&quot;:[0,&quot;computer-network&quot;],&quot;title&quot;:[0,&quot;计算机网络&quot;],&quot;date&quot;:[3,&quot;2024-06-28T16:30:19.000Z&quot;],&quot;category&quot;:[0,&quot;computer science&quot;]}],[0,{&quot;slug&quot;:[0,&quot;sql-lab&quot;],&quot;title&quot;:[0,&quot;SQL代码复习&quot;],&quot;date&quot;:[3,&quot;2024-05-09T20:11:25.000Z&quot;],&quot;category&quot;:[0,&quot;computer science&quot;]}],[0,{&quot;slug&quot;:[0,&quot;DataBaseLearning&quot;],&quot;title&quot;:[0,&quot;数据库系统概论概念整理&quot;],&quot;date&quot;:[3,&quot;2024-04-29T13:13:02.000Z&quot;],&quot;category&quot;:[0,&quot;computer science&quot;]}],[0,{&quot;slug&quot;:[0,&quot;ComputerSystem&quot;],&quot;title&quot;:[0,&quot;操作系统复习&quot;],&quot;date&quot;:[3,&quot;2024-03-07T12:51:59.000Z&quot;],&quot;category&quot;:[0,&quot;computer science&quot;]}],[0,{&quot;slug&quot;:[0,&quot;computer-organization&quot;],&quot;title&quot;:[0,&quot;计算机组成原理复习&quot;],&quot;date&quot;:[3,&quot;2023-12-20T16:32:28.000Z&quot;],&quot;category&quot;:[0,&quot;computer science&quot;]}]]],&quot;currentSlug&quot;:[0,&quot;software-engineering&quot;],&quot;navigation&quot;:[0,{&quot;prevUrl&quot;:[0,&quot;/cloud-computing/&quot;],&quot;prevTitle&quot;:[0,&quot;cloud_computing&quot;],&quot;nextUrl&quot;:[0,&quot;/computer-graphics/&quot;],&quot;nextTitle&quot;:[0,&quot;计算机图形学&quot;]}],&quot;siteState&quot;:[0,{&quot;categories&quot;:[0,17],&quot;posts&quot;:[0,50],&quot;tags&quot;:[0,24]}]}" ssr client="load" opts="{&quot;name&quot;:&quot;Sidebar&quot;,&quot;value&quot;:true}" await-children><aside data-hk="s60000" id="sidebar" class=""><div class="inner"><!--$--><ul data-hk="s600010" class="tab absolute inline-flex pt-[30px] pb-2.5 px-0 m-0 min-h-[30px] list-none"><li data-hk="s6000110"><button aria-label="目录" class="item contents  " type="button"><!--$--><div data-hk="s6000111" aria-hidden="true" class="i-ri-list-ordered"></div><!--/--><!--$--><!--/--></button></li><li data-hk="s6000112"><button aria-label="相关" class="item related  mx-2.5" type="button"><!--$--><div data-hk="s6000113" aria-hidden="true" class="i-ri-git-branch-line"></div><!--/--><!--$--><!--/--></button></li><li data-hk="s6000114"><button aria-label="站点" class="item overview active " type="button"><!--$--><div data-hk="s6000115" aria-hidden="true" class="i-ri-home-2-line"></div><!--/--><!--$--><span data-hk="s6000116" class="ml-[5px] break-keep">站点</span><!--/--></button></li></ul><!--/--><div class="panels"><div class="inner"><div data-hk="s6000200" class="panel contents  " data-title="目录"><div data-hk="s60002010" class="contents"><ol data-hk="s60002011" class="toc"><li data-hk="s600020120" class="toc-item active" style="padding-left: 0.75rem"><a href="#判定表" class="toc-link">判定表</a><!--$--><!--/--></li><li data-hk="s600020121" class="toc-item" style="padding-left: 0.75rem"><a href="#判定树" class="toc-link">判定树</a><!--$--><!--/--></li><li data-hk="s600020122" class="toc-item" style="padding-left: 0.75rem"><a href="#sa画dfd" class="toc-link">SA画DFD</a><!--$--><!--/--></li><li data-hk="s600020123" class="toc-item" style="padding-left: 1.5rem"><a href="#dfd步骤" class="toc-link">DFD步骤</a><!--$--><!--/--></li><li data-hk="s600020124" class="toc-item" style="padding-left: 1.5rem"><a href="#dfd原则" class="toc-link">DFD原则</a><!--$--><!--/--></li><li data-hk="s600020125" class="toc-item" style="padding-left: 0.75rem"><a href="#uml" class="toc-link">UML</a><!--$--><!--/--></li><li data-hk="s600020126" class="toc-item" style="padding-left: 1.5rem"><a href="#uml用例图" class="toc-link">UML用例图</a><!--$--><!--/--></li><li data-hk="s600020127" class="toc-item" style="padding-left: 2.25rem"><a href="#用例图元素" class="toc-link">用例图元素</a><!--$--><!--/--></li><li data-hk="s600020128" class="toc-item" style="padding-left: 2.25rem"><a href="#用例图角色" class="toc-link">用例图角色</a><!--$--><!--/--></li><li data-hk="s600020129" class="toc-item" style="padding-left: 2.25rem"><a href="#用例图步骤" class="toc-link">用例图步骤</a><!--$--><!--/--></li><li data-hk="s60002012a10" class="toc-item" style="padding-left: 2.25rem"><a href="#用例图关联" class="toc-link">用例图关联</a><!--$--><!--/--></li><li data-hk="s60002012a11" class="toc-item" style="padding-left: 3rem"><a href="#include" class="toc-link">Include</a><!--$--><!--/--></li><li data-hk="s60002012a12" class="toc-item" style="padding-left: 3rem"><a href="#extend" class="toc-link">Extend</a><!--$--><!--/--></li><li data-hk="s60002012a13" class="toc-item" style="padding-left: 3rem"><a href="#泛化关系" class="toc-link">泛化关系</a><!--$--><!--/--></li><li data-hk="s60002012a14" class="toc-item" style="padding-left: 2.25rem"><a href="#用例图规则" class="toc-link">用例图规则</a><!--$--><!--/--></li><li data-hk="s60002012a15" class="toc-item" style="padding-left: 1.5rem"><a href="#发现对象" class="toc-link">发现对象</a><!--$--><!--/--></li><li data-hk="s60002012a16" class="toc-item" style="padding-left: 2.25rem"><a href="#实体类" class="toc-link">实体类</a><!--$--><!--/--></li><li data-hk="s60002012a17" class="toc-item" style="padding-left: 2.25rem"><a href="#边界类" class="toc-link">边界类</a><!--$--><!--/--></li><li data-hk="s60002012a18" class="toc-item" style="padding-left: 2.25rem"><a href="#控制类" class="toc-link">控制类</a><!--$--><!--/--></li><li data-hk="s60002012a19" class="toc-item" style="padding-left: 1.5rem"><a href="#类图" class="toc-link">类图</a><!--$--><!--/--></li><li data-hk="s60002012a20" class="toc-item" style="padding-left: 2.25rem"><a href="#对象之间关系" class="toc-link">对象之间关系</a><!--$--><!--/--></li><li data-hk="s60002012a21" class="toc-item" style="padding-left: 3rem"><a href="#关联" class="toc-link">关联</a><!--$--><!--/--></li><li data-hk="s60002012a22" class="toc-item" style="padding-left: 3rem"><a href="#聚合" class="toc-link">聚合</a><!--$--><!--/--></li><li data-hk="s60002012a23" class="toc-item" style="padding-left: 3rem"><a href="#组合关系" class="toc-link">组合关系</a><!--$--><!--/--></li><li data-hk="s60002012a24" class="toc-item" style="padding-left: 3rem"><a href="#依赖关系" class="toc-link">依赖关系</a><!--$--><!--/--></li><li data-hk="s60002012a25" class="toc-item" style="padding-left: 3rem"><a href="#泛化关系-1" class="toc-link">泛化关系</a><!--$--><!--/--></li><li data-hk="s60002012a26" class="toc-item" style="padding-left: 3rem"><a href="#实现关系" class="toc-link">实现关系</a><!--$--><!--/--></li><li data-hk="s60002012a27" class="toc-item" style="padding-left: 1.5rem"><a href="#构件图" class="toc-link">构件图</a><!--$--><!--/--></li><li data-hk="s60002012a28" class="toc-item" style="padding-left: 1.5rem"><a href="#部署图" class="toc-link">部署图</a><!--$--><!--/--></li><li data-hk="s60002012a29" class="toc-item" style="padding-left: 1.5rem"><a href="#顺序图" class="toc-link">顺序图</a><!--$--><!--/--></li><li data-hk="s60002012a30" class="toc-item" style="padding-left: 2.25rem"><a href="#顺序图的组成" class="toc-link">顺序图的组成</a><!--$--><!--/--></li><li data-hk="s60002012a31" class="toc-item" style="padding-left: 2.25rem"><a href="#顺序图的消息" class="toc-link">顺序图的消息</a><!--$--><!--/--></li><li data-hk="s60002012a32" class="toc-item" style="padding-left: 1.5rem"><a href="#协作图" class="toc-link">协作图</a><!--$--><!--/--></li><li data-hk="s60002012a33" class="toc-item" style="padding-left: 1.5rem"><a href="#状态图" class="toc-link">状态图</a><!--$--><!--/--></li><li data-hk="s60002012a34" class="toc-item" style="padding-left: 2.25rem"><a href="#状态图符号" class="toc-link">状态图符号</a><!--$--><!--/--></li><li data-hk="s60002012a35" class="toc-item" style="padding-left: 1.5rem"><a href="#活动图" class="toc-link">活动图</a><!--$--><!--/--></li><li data-hk="s60002012a36" class="toc-item" style="padding-left: 0.75rem"><a href="#结构图sc" class="toc-link">结构图SC</a><!--$--><!--/--></li><li data-hk="s60002012a37" class="toc-item" style="padding-left: 0.75rem"><a href="#结构化设计sd" class="toc-link">结构化设计SD</a><!--$--><!--/--></li><li data-hk="s60002012a38" class="toc-item" style="padding-left: 1.5rem"><a href="#变换映射" class="toc-link">变换映射</a><!--$--><!--/--></li><li data-hk="s60002012a39" class="toc-item" style="padding-left: 1.5rem"><a href="#事务映射" class="toc-link">事务映射</a><!--$--><!--/--></li><li data-hk="s60002012a40" class="toc-item" style="padding-left: 0.75rem"><a href="#n-s图" class="toc-link">N-S图</a><!--$--><!--/--></li><li data-hk="s60002012a41" class="toc-item" style="padding-left: 0.75rem"><a href="#问题分析图pad" class="toc-link">问题分析图(PAD)</a><!--$--><!--/--></li><li data-hk="s60002012a42" class="toc-item" style="padding-left: 0.75rem"><a href="#白盒测试" class="toc-link">白盒测试</a><!--$--><!--/--></li><li data-hk="s60002012a43" class="toc-item" style="padding-left: 1.5rem"><a href="#逻辑覆盖法" class="toc-link">逻辑覆盖法</a><!--$--><!--/--></li><li data-hk="s60002012a44" class="toc-item" style="padding-left: 2.25rem"><a href="#语句覆盖" class="toc-link">语句覆盖</a><!--$--><!--/--></li><li data-hk="s60002012a45" class="toc-item" style="padding-left: 2.25rem"><a href="#判定覆盖" class="toc-link">判定覆盖</a><!--$--><!--/--></li><li data-hk="s60002012a46" class="toc-item" style="padding-left: 2.25rem"><a href="#条件覆盖" class="toc-link">条件覆盖</a><!--$--><!--/--></li><li data-hk="s60002012a47" class="toc-item" style="padding-left: 2.25rem"><a href="#判定条件覆盖" class="toc-link">判定/条件覆盖</a><!--$--><!--/--></li><li data-hk="s60002012a48" class="toc-item" style="padding-left: 2.25rem"><a href="#条件组合覆盖" class="toc-link">条件组合覆盖</a><!--$--><!--/--></li><li data-hk="s60002012a49" class="toc-item" style="padding-left: 1.5rem"><a href="#路径覆盖法" class="toc-link">路径覆盖法</a><!--$--><!--/--></li><li data-hk="s60002012a50" class="toc-item" style="padding-left: 2.25rem"><a href="#点覆盖" class="toc-link">点覆盖</a><!--$--><!--/--></li><li data-hk="s60002012a51" class="toc-item" style="padding-left: 2.25rem"><a href="#边覆盖" class="toc-link">边覆盖</a><!--$--><!--/--></li><li data-hk="s60002012a52" class="toc-item" style="padding-left: 2.25rem"><a href="#路径覆盖" class="toc-link">路径覆盖</a><!--$--><!--/--></li><li data-hk="s60002012a53" class="toc-item" style="padding-left: 0.75rem"><a href="#黑盒测试" class="toc-link">黑盒测试</a><!--$--><!--/--></li><li data-hk="s60002012a54" class="toc-item" style="padding-left: 1.5rem"><a href="#等价分类法" class="toc-link">等价分类法</a><!--$--><!--/--></li><li data-hk="s60002012a55" class="toc-item" style="padding-left: 1.5rem"><a href="#边界值分析法" class="toc-link">边界值分析法</a><!--$--><!--/--></li><li data-hk="s60002012a56" class="toc-item" style="padding-left: 1.5rem"><a href="#错误推测法" class="toc-link">错误推测法</a><!--$--><!--/--></li></ol></div></div><div data-hk="s6000210" class="panel related  " data-title="相关"><div data-hk="s60002110" class="related text-[0.8125rem]"><ul data-hk="s60002111" class="p-0 pr-[2px] pb-[5px] pl-5 text-left list-none m-0"><li data-hk="s600021120" class="relative leading-[1.8] pb-2.5 "><a href="/cloud-computing/" title="cloud_computing" class="text-ellipsis whitespace-nowrap overflow-hidden w-full inline-block text-inherit no-underline transition-colors duration-200">cloud_computing</a></li><li data-hk="s600021121" class="relative leading-[1.8] pb-2.5 "><a href="/computer-graphics/" title="计算机图形学" class="text-ellipsis whitespace-nowrap overflow-hidden w-full inline-block text-inherit no-underline transition-colors duration-200">计算机图形学</a></li><li data-hk="s600021122" class="relative leading-[1.8] pb-2.5 "><a href="/Compilers/" title="编译技术笔记" class="text-ellipsis whitespace-nowrap overflow-hidden w-full inline-block text-inherit no-underline transition-colors duration-200">编译技术笔记</a></li><li data-hk="s600021123" class="relative leading-[1.8] pb-2.5 "><a href="/ai-fundamental/" title="人工智能基础" class="text-ellipsis whitespace-nowrap overflow-hidden w-full inline-block text-inherit no-underline transition-colors duration-200">人工智能基础</a></li><li data-hk="s600021124" class="relative leading-[1.8] pb-2.5 "><a href="/computer-network/" title="计算机网络" class="text-ellipsis whitespace-nowrap overflow-hidden w-full inline-block text-inherit no-underline transition-colors duration-200">计算机网络</a></li><li data-hk="s600021125" class="relative leading-[1.8] pb-2.5 "><a href="/sql-lab/" title="SQL代码复习" class="text-ellipsis whitespace-nowrap overflow-hidden w-full inline-block text-inherit no-underline transition-colors duration-200">SQL代码复习</a></li><li data-hk="s600021126" class="relative leading-[1.8] pb-2.5 "><a href="/DataBaseLearning/" title="数据库系统概论概念整理" class="text-ellipsis whitespace-nowrap overflow-hidden w-full inline-block text-inherit no-underline transition-colors duration-200">数据库系统概论概念整理</a></li><li data-hk="s600021127" class="relative leading-[1.8] pb-2.5 "><a href="/ComputerSystem/" title="操作系统复习" class="text-ellipsis whitespace-nowrap overflow-hidden w-full inline-block text-inherit no-underline transition-colors duration-200">操作系统复习</a></li><li data-hk="s600021128" class="relative leading-[1.8] pb-2.5 "><a href="/computer-organization/" title="计算机组成原理复习" class="text-ellipsis whitespace-nowrap overflow-hidden w-full inline-block text-inherit no-underline transition-colors duration-200">计算机组成原理复习</a></li></ul></div></div><div data-hk="s6000220" class="panel overview active active" data-title="站点"><div data-hk="s60002210" class="w-full"><!--$--><div data-hk="s600022110" class="author" itemscope itemtype="http://schema.org/Person"><!--$--><div data-hk="s600022111" class="image border border-body-bg-shadow block mx-auto max-w-40 p-0.5 shadow-[0_0_1rem_0.625rem_var(--body-bg-shadow)] rounded-full transition-transform duration-300 overflow-hidden" itemprop="image"><astro-slot><img src="/_astro/blog-avatar.BfB9J38g_Z2jM8r5.avif" srcset="/_astro/blog-avatar.BfB9J38g_Z2jM8r5.avif 160w, /_astro/blog-avatar.BfB9J38g_2k8SBa.avif 288w" alt="IOyuk1Nya" loading="eager" decoding="sync" fetchpriority="high" sizes="(min-width: 160px) 160px, 100vw" data-astro-image="constrained" data-astro-image-fit="cover" data-astro-image-pos="center" width="160" height="160" class="avatar-image"></astro-slot></div><!--/--><!--$--><p data-hk="s600022112" class="text-grey-7 font-normal m-0 mt-[5px] text-center" itemprop="name">IOyuk1Nya</p><!--/--><!--$--><div data-hk="s600022113" class="text-grey-5 text-sm mt-[5px] text-center" itemprop="description">some notes about computer science</div><!--/--></div><!--/--><!--$--><nav data-hk="s600022120" aria-label="站点统计导航" class="state flex justify-center leading-[1.4] mt-2.5 overflow-hidden text-center whitespace-nowrap"><!--$--><div data-hk="s600022121" class="item px-[15px]"><a href="/archives/" class="no-underline [border-bottom:none] text-inherit"><span class="block text-lg font-semibold text-center">50</span><span class="text-[0.8125rem] text-inherit">文章</span></a></div><!--/--><!--$--><div data-hk="s600022122" class="item px-[15px]"><a href="/categories/" class="no-underline [border-bottom:none] text-inherit"><span class="block text-lg font-semibold text-center">17</span><span class="text-[0.8125rem] text-inherit">分类</span></a></div><!--/--><!--$--><div data-hk="s600022123" class="item px-[15px]"><a href="/tags/" class="no-underline [border-bottom:none] text-inherit"><span class="block text-lg font-semibold text-center">24</span><span class="text-[0.8125rem] text-inherit">标签</span></a></div><!--/--></nav><!--/--><!--$--><div data-hk="s600022130" class="social"><a data-hk="s6000221310" href="https://github.com/ivansnow02" title="https://github.com/ivansnow02" class="item github" target="_blank" rel="noopener noreferrer" style=""><div class="i-ri-github-fill w-full h-full scale-80"></div></a></div><!--/--><!--$--><nav data-hk="s600022140" class="menu p-5 m-0 bg-transparent" aria-label="侧栏菜单导航"><ul class="menu-list list-none m-0 p-0"><li data-hk="s600022141" class="item"><a href="/" rel="section"><!--$--><div data-hk="s600022142" class="ic i-ri-home-line ic inline-flex justify-center items-center text-xl flex-wrap align-text-bottom mr-2.5"></div><!--/--><!--$-->首页<!--/--></a></li><li data-hk="s600022143" class="item"><a href="/about/" rel="section"><!--$--><div data-hk="s600022144" class="ic i-ri-user-3-line ic inline-flex justify-center items-center text-xl flex-wrap align-text-bottom mr-2.5"></div><!--/--><!--$-->关于<!--/--></a></li><li data-hk="s600022145" class="item"><a href="/archives/" rel="section"><!--$--><div data-hk="s600022146" class="ic i-ri-archive-line ic inline-flex justify-center items-center text-xl flex-wrap align-text-bottom mr-2.5"></div><!--/--><!--$-->归档<!--/--></a></li><li data-hk="s600022147" class="item"><a href="/categories/" rel="section"><!--$--><div data-hk="s600022148" class="ic i-ri-book-shelf-line ic inline-flex justify-center items-center text-xl flex-wrap align-text-bottom mr-2.5"></div><!--/--><!--$-->分类<!--/--></a></li><li data-hk="s600022149" class="item"><a href="/tags/" rel="section"><!--$--><div data-hk="s60002214a10" class="ic i-ri-price-tag-3-line ic inline-flex justify-center items-center text-xl flex-wrap align-text-bottom mr-2.5"></div><!--/--><!--$-->标签<!--/--></a></li><li data-hk="s60002214a11" class="item"><a href="/links/" rel="section"><!--$--><div data-hk="s60002214a12" class="ic i-ri-link ic inline-flex justify-center items-center text-xl flex-wrap align-text-bottom mr-2.5"></div><!--/--><!--$-->友链<!--/--></a></li></ul></nav><!--/--></div></div></div></div><!--$--><ul data-hk="s600030" id="quick" class=""><li class="prev pjax"><a data-hk="s600031" href="/cloud-computing/" rel="prev" title="cloud_computing"><i class="ic i-ri-arrow-left-s-line"></i></a></li><li class="up"><button type="button" aria-label="回到顶部"><i class="ic i-ri-arrow-up-line"></i></button></li><li class="down"><button type="button" aria-label="去到底部"><i class="ic i-ri-arrow-down-line"></i></button></li><li class="next pjax"><a data-hk="s600032" href="/computer-graphics/" rel="next" title="计算机图形学"><i class="ic i-ri-arrow-right-s-line"></i></a></li><li class="percent" style="width: 0%"></li></ul><!--/--></div></aside><div data-hk="s60004" class="dimmer "></div><!--astro:end--></astro-island></aside><div id="main" class="pjax layout-main-column"><div class="article wrap"><div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-ri-home-fill"></i><span><a href="/">首页</a></span><i class="ic i-ri-arrow-right-s-line"></i><span class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/computer science/" itemprop="item" rel="index" title="在 computer science"><span itemprop="name">computer science</span><meta itemprop="position" content="1"></a></span></div><article itemscope itemtype="http://schema.org/Article" class="post block" data-pagefind-body="true" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://ivansnow02.github.io/software-engineering/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/_astro/blog-avatar.BfB9J38g.png"><meta itemprop="name" content="IOyuk1Nya"><meta itemprop="description" content="IOyuk1Nya's Blog"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="IOyuk1Nya's Blog"></span><header><h1 class="title" itemprop="name headline">软件工程复习</h1><div class="meta"><span class="item" title="创建于: 2024/12/30 22:00:47"><span class="icon"><i class="ic i-ri-calendar-line"></i></span><span class="text">发布于 </span><time itemprop="dateCreated datePublished" datetime="2024-12-30T14:00:47.000Z">2024/12/30</time></span><span class="item" title="字数统计"><span class="icon"><i class="ic i-ri-edit-2-line"></i></span><span class="text">字数统计 </span><span>12,476</span><span class="text"> 字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-ri-time-line"></i></span><span class="text">阅读时长 </span><span>63 分钟</span></span></div></header><div class="hyacine-slot hyacine-slot-post-header" data-hyacine-slot="post-header"><aside class="hyacine-article-age-warning" style="margin: 1rem 0; padding: 0.75rem 1rem; border-radius: 6px; border-left: 4px solid #f59e0b; background: rgba(245, 158, 11, 0.1); color: inherit; font-size: 0.95rem; line-height: 1.5;"><span>⚠️ 这篇文章发布较早，内容可能已过时，请结合当前情况判断。（发布于 670 天前）</span></aside></div><div class="hyacine-slot hyacine-slot-post-summary" data-hyacine-slot="post-summary"></div><div class="body md" itemprop="articleBody"><div class="post-content"><h2 id="判定表">判定表</h2>
 <table>
 <tbody>
 <tr>
@@ -40,30 +235,30 @@
 </tr>
 </tbody>
 </table>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/9e320b3103f9cdf12fa33f99c4da01a1aebc8976179c2815a65bf6426d5783f8.png" alt="picture 10"></p>
-<h2 id="判定树"><a class="anchor" href="#判定树">#</a> 判定树</h2>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/6fffe564348fe5c6f28366aa66b24d86aa40e50a3387b91e3e4114f3cfa27743.png" alt="picture 0"></p>
-<h2 id="sa画dfd"><a class="anchor" href="#sa画dfd">#</a> SA 画 DFD</h2>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/8fbfc7fc45dd467a154a128ee55ca8c49e7daa3aac3fbf7960a6602a83496303.png" alt="picture 1"></p>
-<h3 id="dfd步骤"><a class="anchor" href="#dfd步骤">#</a> DFD 步骤</h3>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/9e320b3103f9cdf12fa33f99c4da01a1aebc8976179c2815a65bf6426d5783f8.png" alt="picture 10"></image-zoom></p>
+<h2 id="判定树">判定树</h2>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/6fffe564348fe5c6f28366aa66b24d86aa40e50a3387b91e3e4114f3cfa27743.png" alt="picture 0"></image-zoom></p>
+<h2 id="sa画dfd">SA画DFD</h2>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/8fbfc7fc45dd467a154a128ee55ca8c49e7daa3aac3fbf7960a6602a83496303.png" alt="picture 1"></image-zoom></p>
+<h3 id="dfd步骤">DFD步骤</h3>
 <ol>
-<li>从顶层 DFD 开始，把整个系统视为加工处理。</li>
+<li>从顶层DFD开始，把整个系统视为加工处理。</li>
 <li>自上而下，逐步对系统分解：
 <ul>
 <li>每分解一次，增加系统的加工元素，进一步具体化每个加工的功能。</li>
 </ul>
 </li>
-<li>重复第 2 步，直到所有的加工元素都是足够简单，功能足够单一，视不必再分解为止。
+<li>重复第2步，直到所有的加工元素都是足够简单，功能足够单一，视不必再分解为止。
 <ul>
-<li>不再分解的加工 ——“基本加工”</li>
+<li>不再分解的加工——“基本加工”</li>
 </ul>
 </li>
 </ol>
-<h3 id="dfd原则"><a class="anchor" href="#dfd原则">#</a> DFD 原则</h3>
+<h3 id="dfd原则">DFD原则</h3>
 <ol>
-<li>父 / 子图平衡（I/O）
+<li>父/子图平衡（I/O）
 <ul>
-<li>如果一张数据流图中的某个加工分解成另一张数据流图时，则上层图为父图，直接下层图为子图。把一个处理分解为一系列处理时，分解前和分解后的输入 / 输出数据流必须相同。</li>
+<li>如果一张数据流图中的某个加工分解成另一张数据流图时，则上层图为父图，直接下层图为子图。把一个处理分解为一系列处理时，分解前和分解后的输入/输出数据流必须相同。</li>
 </ul>
 </li>
 <li>区分流程先后和层次。</li>
@@ -71,7 +266,7 @@
 <li>区分全局文件和外部项。</li>
 <li>画数据流而不是控制流。
 <ul>
-<li>数据流反映系统 “做什么”，不反映 “如何做”，因此箭头上的数据流名称只能是名词或名词短语。</li>
+<li>数据流反映系统“做什么”，不反映“如何做”，因此箭头上的数据流名称只能是名词或名词短语。</li>
 </ul>
 </li>
 <li>一般不画物质流。
@@ -87,30 +282,38 @@
 </li>
 <li>掌握分解的速度。
 <ul>
-<li>一般一次引入 2~7 个加工处理。</li>
+<li>一般一次引入2~7个加工处理。</li>
 </ul>
 </li>
 <li>外部实体之间不能有数据流。</li>
 </ol>
-<h2 id="uml"><a class="anchor" href="#uml">#</a> UML</h2>
-<h3 id="uml用例图"><a class="anchor" href="#uml用例图">#</a> UML 用例图</h3>
-<h4 id="用例图元素"><a class="anchor" href="#用例图元素">#</a> 用例图元素</h4>
+<h2 id="uml">UML</h2>
+<h3 id="uml用例图">UML用例图</h3>
+<h4 id="用例图元素">用例图元素</h4>
 <ul>
-<li>Actor：参与者<br>
-<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/bbe9f9796883e8cdd12135e74791a496db152b44ab7504569f7b2ac6c7000a0c.png" alt="picture 4"></li>
-<li>Use Case：用例<br>
-<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/1c1351feb634b00db86c9d9864520582b5553fecc9da17eb51293be1c07a9463.png" alt="picture 5"></li>
-<li>Communication Association：通信关联<br>
-<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/aabf5cc7be128bcfd7c47d4e4ad3abf31aa7d5e2f6b8fdeaecaa597c4f71db62.png" alt="picture 6"></li>
+<li>
+<p>Actor：参与者<br>
+<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/bbe9f9796883e8cdd12135e74791a496db152b44ab7504569f7b2ac6c7000a0c.png" alt="picture 4"></image-zoom></p>
+</li>
+<li>
+<p>Use Case：用例<br>
+<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/1c1351feb634b00db86c9d9864520582b5553fecc9da17eb51293be1c07a9463.png" alt="picture 5"></image-zoom></p>
+</li>
+<li>
+<p>Communication Association：通信关联<br>
+<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/aabf5cc7be128bcfd7c47d4e4ad3abf31aa7d5e2f6b8fdeaecaa597c4f71db62.png" alt="picture 6"></image-zoom></p>
+</li>
+<li>
+<p>Use Case说明系统需要提供什么而不是怎么提供</p>
+</li>
+<li>
+<p>用户并不关心你如何给他们提供所需要的功能</p>
+</li>
+<li>
+<p>Use Case一般是用“动宾”短语命名</p>
+</li>
 </ul>
-<div class="note info no-icon">
-<ul>
-<li>Use Case 说明系统需要提供什么而不是怎么提供</li>
-<li>用户并不关心你如何给他们提供所需要的功能</li>
-<li>Use Case 一般是用 “动宾” 短语命名</li>
-</ul>
-</div>
-<h4 id="用例图角色"><a class="anchor" href="#用例图角色">#</a> 用例图角色</h4>
+<h4 id="用例图角色">用例图角色</h4>
 <p>与系统发生交互作用的、系统之外的任何东西都是角色：</p>
 <ul>
 <li>可以是人</li>
@@ -119,58 +322,56 @@
 <li>角色存在于系统外部</li>
 <li>角色不是活动的准确描述</li>
 <li>使用者是行使某个角色职责的系统的使用人员</li>
-<li>每个 Actor 都通过不同的方式使用系统，除非他们是相同的 Actor</li>
-<li>Actor 使用系统的每一种方式就是一个 Use Case</li>
+<li>每个Actor都通过不同的方式使用系统，除非他们是相同的Actor</li>
+<li>Actor使用系统的每一种方式就是一个Use Case</li>
 </ul>
-<h4 id="用例图步骤"><a class="anchor" href="#用例图步骤">#</a> 用例图步骤</h4>
+<h4 id="用例图步骤">用例图步骤</h4>
 <ol>
-<li>找出拟建系统以外的 Actor
+<li>找出拟建系统以外的Actor
 <ul>
 <li>与系统交互的人员</li>
 <li>与系统相连并交换信息的设备和其他系统</li>
 </ul>
 </li>
-<li>使用 Use Case 来描述 Actor 怎样使用系统以及系统向 Actor 提供什么功能
+<li>使用Use Case来描述Actor怎样使用系统以及系统向Actor提供什么功能
 <ul>
-<li>Use Case 表示从外部用户角度观察的系统功能</li>
+<li>Use Case表示从外部用户角度观察的系统功能</li>
 </ul>
 </li>
-<li>绘制 Use Case 图，并编写详细的 Use Case 描述
+<li>绘制Use Case图，并编写详细的Use Case描述
 <ul>
-<li>Use Case 图只能宏观地描述系统的功能</li>
+<li>Use Case图只能宏观地描述系统的功能</li>
 <li>每个功能的含义和具体实现步骤则以文本方式描述</li>
 </ul>
 </li>
 </ol>
-<h4 id="用例图关联"><a class="anchor" href="#用例图关联">#</a> 用例图关联</h4>
-<h5 id="include"><a class="anchor" href="#include">#</a> Include</h5>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/7d07cd65f7fdc444d9718363ee93216f262a80d36c6f5937260da8c9df59a9d6.png" alt="picture 7"></p>
+<h4 id="用例图关联">用例图关联</h4>
+<h5 id="include">Include</h5>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/7d07cd65f7fdc444d9718363ee93216f262a80d36c6f5937260da8c9df59a9d6.png" alt="picture 7"></image-zoom></p>
 <ul>
-<li>Use Case 中的包含关系。</li>
-<li>通常发生在多个 Use Case 中，有可以提取出来的公共部分。</li>
+<li>Use Case中的包含关系。</li>
+<li>通常发生在多个Use Case中，有可以提取出来的公共部分。</li>
 </ul>
-<div class="note info no-icon">
-<p>如果用例 A 确实要调用到用例 B，那么，可以进一步分析：</p>
-<p>用例 A 是调用了用例 B 的所有流程呢，还是其中部分流程？</p>
+<p>如果用例A确实要调用到用例B，那么，可以进一步分析：</p>
+<p>用例A是调用了用例B的所有流程呢，还是其中部分流程？</p>
 <ol>
-<li>如果是调用部分流程，此时可以把用例 B 中的那部分流程提取出来，形成用例 C，然后用例 A 和用例 B 都 include 用例 C。</li>
-<li>如果是调用所有流程，那么，用例 A 直接 include 用例 B 即可。</li>
+<li>如果是调用部分流程，此时可以把用例B中的那部分流程提取出来，形成用例C，然后用例A和用例B都 include 用例C。</li>
+<li>如果是调用所有流程，那么，用例A直接 include 用例B即可。</li>
 </ol>
-</div>
-<h5 id="extend"><a class="anchor" href="#extend">#</a> Extend</h5>
+<h5 id="extend">Extend</h5>
 <ul>
 <li>UseCaseA 不知道 UseCaseB 和 UseCaseC 的存在</li>
 <li>UseCaseB 和 UseCaseC 却是知道 UseCaseA 并且知道如何在 UseCaseA 中作扩展的</li>
 </ul>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/c0ba883ab92da8f358ae138aecd0e9905684f57932395f6dd15ff0418b84aacd.png" alt="picture 8"></p>
-<h5 id="泛化关系"><a class="anchor" href="#泛化关系">#</a> 泛化关系</h5>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/bdb3e3b1b28dd1d7e3700884f822f94f4a8a86a02fb984d149c3ecf064e7cc7c.png" alt="picture 9"></p>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/c0ba883ab92da8f358ae138aecd0e9905684f57932395f6dd15ff0418b84aacd.png" alt="picture 8"></image-zoom></p>
+<h5 id="泛化关系">泛化关系</h5>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/bdb3e3b1b28dd1d7e3700884f822f94f4a8a86a02fb984d149c3ecf064e7cc7c.png" alt="picture 9"></image-zoom></p>
 <ul>
 <li>当多个用例共同拥有一种类似的结构和行为的时候，将它们的共性抽象成为父用例，其他的用例作为泛化关系中的子用例。</li>
 <li>子用例继承了父用例所有的结构、行为和关系。</li>
 <li>在实际应用中很少使用泛化关系。</li>
 </ul>
-<h4 id="用例图规则"><a class="anchor" href="#用例图规则">#</a> 用例图规则</h4>
+<h4 id="用例图规则">用例图规则</h4>
 <ul>
 <li>主动角色画在图的左边</li>
 <li>被动角色画在图的右边</li>
@@ -181,82 +382,80 @@
 <li>为 Use Case 建立目录（编号和名称）便于管理</li>
 <li>保持图面整洁</li>
 </ul>
-<h3 id="发现对象"><a class="anchor" href="#发现对象">#</a> 发现对象</h3>
-<h4 id="实体类"><a class="anchor" href="#实体类">#</a> 实体类</h4>
+<h3 id="发现对象">发现对象</h3>
+<h4 id="实体类">实体类</h4>
 <p>代表拟建系统要记录和维护的信息，同时描述其相关行为。需要长期保存。</p>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/171dc57fa2a9972d3344c8fe88034cdfc74b74a4b748d6f9a253ccaf8bd203d7.png" alt="picture 11"></p>
-<h4 id="边界类"><a class="anchor" href="#边界类">#</a> 边界类</h4>
-<p>拟建系统和外部元素之间交互的边界，一个 Actor 和 Use Case 之间的通信关联对应一个边界类</p>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/171dc57fa2a9972d3344c8fe88034cdfc74b74a4b748d6f9a253ccaf8bd203d7.png" alt="picture 11"></image-zoom></p>
+<h4 id="边界类">边界类</h4>
+<p>拟建系统和外部元素之间交互的边界，一个Actor和Use Case之间的通信关联对应一个边界类</p>
 <ul>
 <li>用户界面；</li>
 <li>与外部系统的接口；</li>
 <li>与其他设备的接口；</li>
 </ul>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/68da89ce0ada1494e3a11762a9a98d26528a1b1014463cc359f71bd91fec84b5.png" alt="picture 12"></p>
-<h4 id="控制类"><a class="anchor" href="#控制类">#</a> 控制类</h4>
-<p>将 Use Case 所有的执行逻辑进行封装，相当于协调人。</p>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/68da89ce0ada1494e3a11762a9a98d26528a1b1014463cc359f71bd91fec84b5.png" alt="picture 12"></image-zoom></p>
+<h4 id="控制类">控制类</h4>
+<p>将Use Case所有的执行逻辑进行封装，相当于协调人。</p>
 <ul>
 <li>自己不处理具体的任务。</li>
 <li>知道哪些类有能力完成具体的任务</li>
 </ul>
 <p>作用：<br>
-将拟建系统的其他部分（实体类和边界类）与 Use Case 的具体执行逻辑形成松散耦合。</p>
-<p>获取方法：一个 Use Case 对应一个控制类。</p>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/d8ab6a793e4d2254ab3bb1c31aeda949f890ead532d81dafcda0d5b3eec74bd6.png" alt="picture 13"></p>
-<h3 id="类图"><a class="anchor" href="#类图">#</a> 类图</h3>
+将拟建系统的其他部分（实体类和边界类）与Use Case的具体执行逻辑形成松散耦合。</p>
+<p>获取方法：一个Use Case对应一个控制类。</p>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/d8ab6a793e4d2254ab3bb1c31aeda949f890ead532d81dafcda0d5b3eec74bd6.png" alt="picture 13"></image-zoom></p>
+<h3 id="类图">类图</h3>
 <ul>
 <li>
-<p>接口：一组操作的集合，只有操作的声明而没有实现<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/735367b1fb71a53ef869c6093f9da0fa80d1070b09382870e2cd5d3f2655c84d.png" alt="picture 27"></p>
+<p>接口：一组操作的集合，只有操作的声明而没有实现<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/735367b1fb71a53ef869c6093f9da0fa80d1070b09382870e2cd5d3f2655c84d.png" alt="picture 27"></image-zoom></p>
 </li>
 <li>
-<p>抽象类：不能被实例化的类，一般至少包含一个抽象操作<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/dc72db42aa9d0741bac57f1e6dc61cd32185a63bee71e0b8d7e3d31728038d97.png" alt="picture 28"></p>
+<p>抽象类：不能被实例化的类，一般至少包含一个抽象操作<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/dc72db42aa9d0741bac57f1e6dc61cd32185a63bee71e0b8d7e3d31728038d97.png" alt="picture 28"></image-zoom></p>
 </li>
 <li>
-<p>模版类：一种参数化的类，在编译时把模版参数绑定到不同的数据类型，从而产生不同的类<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/91d9cb3dffe6f8d47acd5c8f699b65e39c014cd72cbefad3dabe0439fd4bc0f1.png" alt="picture 29"></p>
+<p>模版类：一种参数化的类，在编译时把模版参数绑定到不同的数据类型，从而产生不同的类<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/91d9cb3dffe6f8d47acd5c8f699b65e39c014cd72cbefad3dabe0439fd4bc0f1.png" alt="picture 29"></image-zoom></p>
 </li>
 </ul>
-<h4 id="对象之间关系"><a class="anchor" href="#对象之间关系">#</a> 对象之间关系</h4>
-<h5 id="关联"><a class="anchor" href="#关联">#</a> 关联</h5>
+<h4 id="对象之间关系">对象之间关系</h4>
+<h5 id="关联">关联</h5>
 <p>一个类的对象（实例）作为另一个类的对象的变量成员时，两个类之间有关联关系<br>
-<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/0fde56f0d6076804bd3ea349bbce2008fec6cb7d668bd65255cd270a683f4d87.png" alt="picture 30"></p>
-<h5 id="聚合"><a class="anchor" href="#聚合">#</a> 聚合</h5>
-<p>表示两个类的对象间有 “整体” 与 “部分” 的关系。<br>
-<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/dfe5fddeb8834aa2e9e1bdb47b71a4ebce09686a03e7cede308f6a379ff6184c.png" alt="picture 31"></p>
-<h5 id="组合关系"><a class="anchor" href="#组合关系">#</a> 组合关系</h5>
-<p>“整体” 与 “部分” 间有 “皮之不存，毛将焉附” 的语义。​</p>
-<p>“部分” 不能被 “整体” 共享。​</p>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/2d206bd9f39b27448de3ac47ffa19b4c8626db9ac5754a78414af4d5a584f5c3.png" alt="picture 32"></p>
-<h5 id="依赖关系"><a class="anchor" href="#依赖关系">#</a> 依赖关系</h5>
-<p>表示 “使用” 的语义，是一种比较弱的关系。<br>
+<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/0fde56f0d6076804bd3ea349bbce2008fec6cb7d668bd65255cd270a683f4d87.png" alt="picture 30"></image-zoom></p>
+<h5 id="聚合">聚合</h5>
+<p>表示两个类的对象间有“整体”与“部分”的关系。<br>
+<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/dfe5fddeb8834aa2e9e1bdb47b71a4ebce09686a03e7cede308f6a379ff6184c.png" alt="picture 31"></image-zoom></p>
+<h5 id="组合关系">组合关系</h5>
+<p>“整体”与“部分”间有“皮之不存，毛将焉附”的语义。​</p>
+<p>“部分”不能被“整体”共享。​</p>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/2d206bd9f39b27448de3ac47ffa19b4c8626db9ac5754a78414af4d5a584f5c3.png" alt="picture 32"></image-zoom></p>
+<h5 id="依赖关系">依赖关系</h5>
+<p>表示“使用”的语义，是一种比较弱的关系。<br>
 对象作为参数、全局变量或者局部变量被另外一个对象使用<br>
 友元依赖：授权一个对象访问对象的私有或者保护成员</p>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/c13671b7566f0431c76d1c532fdde33ae8a480682bb3e6147de5ea649d8a6e49.png" alt="picture 33"></p>
-<h5 id="泛化关系-2"><a class="anchor" href="#泛化关系-2">#</a> 泛化关系</h5>
-<p>类 A（特殊）到类 B（一般）的泛化关系表示 “类 A 是类 B 的一种”。</p>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/c13671b7566f0431c76d1c532fdde33ae8a480682bb3e6147de5ea649d8a6e49.png" alt="picture 33"></image-zoom></p>
+<h5 id="泛化关系-1">泛化关系</h5>
+<p>类A（特殊）到类B（一般）的泛化关系表示“类A是类B的一种”。</p>
 <ul>
-<li>类 A—— 子类</li>
-<li>类 B—— 父类</li>
+<li>类A——子类</li>
+<li>类B——父类</li>
 </ul>
 <p>泛化关系有助于代码共享和复用。</p>
 <ul>
 <li>共同的属性放在上层，而将特有的属性放在下层；</li>
 <li>共同的服务放在上层，而将特有的服务放在下层</li>
 </ul>
-<div class="note info no-icon">
 <p><strong>泛化关系 vs. 继承</strong></p>
 <ul>
 <li>泛化关系是一种关系的名称。</li>
 <li>继承是一种实现泛化关系的机制。</li>
 </ul>
-</div>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/230d7b698976ad822a5e1b63f1d6027b224555a9c8db21da17e76f374e390f9a.png" alt="picture 34"></p>
-<h5 id="实现关系"><a class="anchor" href="#实现关系">#</a> 实现关系</h5>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/230d7b698976ad822a5e1b63f1d6027b224555a9c8db21da17e76f374e390f9a.png" alt="picture 34"></image-zoom></p>
+<h5 id="实现关系">实现关系</h5>
 <p>描述类实现接口</p>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/b9c07ecfe3aa35496111d3ee43fbe5b621c4d6535a55394186c60f1d2fab8637.png" alt="picture 35"></p>
-<h3 id="构件图"><a class="anchor" href="#构件图">#</a> 构件图</h3>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/b9c07ecfe3aa35496111d3ee43fbe5b621c4d6535a55394186c60f1d2fab8637.png" alt="picture 35"></image-zoom></p>
+<h3 id="构件图">构件图</h3>
 <p>构件图描述代码部件的物理结构及各部件之间的依赖关系。</p>
 <ul>
-<li>是比 “类” 更大的实体，例如一个 COM 组件、ActiveX 文件、一个 JavaBeans、进程内组件（.DLL）、进程外组件（.EXE）、C++ 中的头文件（.h）、实现文件（.cpp）等等。</li>
+<li>是比“类”更大的实体，例如一个 COM 组件、ActiveX 文件、一个 JavaBeans、进程内组件（.DLL）、进程外组件（.EXE）、C++ 中的头文件（.h）、实现文件（.cpp）等等。</li>
 <li>它包含逻辑类或实现类的有关信息。</li>
 <li>构件图有助于分析和理解部件之间的相互影响程度。</li>
 </ul>
@@ -272,17 +471,17 @@
 <tr>
 <td>构件</td>
 <td>指系统中可替换的物理部分</td>
-<td><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/ae6642aef337c95abfe14f6c07e3fba7690629ca699282cdd9125bacb372efc5.png" alt="picture 36"></td>
+<td><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/ae6642aef337c95abfe14f6c07e3fba7690629ca699282cdd9125bacb372efc5.png" alt="picture 36"></image-zoom></td>
 </tr>
 <tr>
 <td>接口</td>
 <td>外部可访问到的服务</td>
-<td><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/7437ca1e414511e03b2f3c59aec70b9dfcb99f76657e91af300ad1b9ac589a56.png" alt="picture 37"></td>
+<td><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/7437ca1e414511e03b2f3c59aec70b9dfcb99f76657e91af300ad1b9ac589a56.png" alt="picture 37"></image-zoom></td>
 </tr>
 <tr>
 <td>构件实例</td>
 <td>节点实例上的构件的一个实例，冒号后是该构件实例的名字</td>
-<td><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/f2d114162822d5c12b1e0e56b442b9d7a58e1eb673b10eb4081a97e776b117a1.png" alt="picture 38"></td>
+<td><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/f2d114162822d5c12b1e0e56b442b9d7a58e1eb673b10eb4081a97e776b117a1.png" alt="picture 38"></image-zoom></td>
 </tr>
 </tbody>
 </table>
@@ -290,96 +489,94 @@
 <ul>
 <li>依赖关系：构件依赖外部提供的服务 (由构件到接口), 用虚线表示</li>
 <li>实现关系：构件实现接口 (由构件到接口), 用实线表示<br>
-<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/23edab3ee2312c412f07581ab1d35caacd4ff5e776fa461a39ef0f6ccf15e969.png" alt="picture 39"></li>
+<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/23edab3ee2312c412f07581ab1d35caacd4ff5e776fa461a39ef0f6ccf15e969.png" alt="picture 39"></image-zoom></li>
 </ul>
-<h3 id="部署图"><a class="anchor" href="#部署图">#</a> 部署图</h3>
+<h3 id="部署图">部署图</h3>
 <ul>
 <li>节点是在运行时存在的物理元素，它表示一个计算机资源，通常至少有一些记忆能力和处理能力。</li>
 <li>一组构件可以驻留在一个节点内，也可以从一个节点迁移到另一个节点。</li>
 <li>在图形上，把节点画成一个立方体，通常在立方体中只写它的名称。</li>
 </ul>
-<h3 id="顺序图"><a class="anchor" href="#顺序图">#</a> 顺序图</h3>
-<h4 id="顺序图的组成"><a class="anchor" href="#顺序图的组成">#</a> 顺序图的组成</h4>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/a802a4d7adb62d8d77e67f15eb72354bd18656de4a9c5723035567f3ba79b179.png" alt="picture 40"></p>
-<h4 id="顺序图的消息"><a class="anchor" href="#顺序图的消息">#</a> 顺序图的消息</h4>
-<p>消息包含 3 个部分：</p>
+<h3 id="顺序图">顺序图</h3>
+<h4 id="顺序图的组成">顺序图的组成</h4>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/a802a4d7adb62d8d77e67f15eb72354bd18656de4a9c5723035567f3ba79b179.png" alt="picture 40"></image-zoom></p>
+<h4 id="顺序图的消息">顺序图的消息</h4>
+<p>消息包含3个部分：</p>
 <ol>
 <li>序号</li>
 <li>名称</li>
 <li>参数</li>
 </ol>
-<p>消息的 4 种类型：</p>
+<p>消息的4种类型：</p>
 <ul>
 <li><strong>同步消息</strong>：消息的发送者把控制传递给消息的接收者，然后停止活动，等待消息的接收者放弃或者返回控制。</li>
 <li><strong>异步消息</strong>：消息发送者通过消息把信号传递给消息的接收者，然后继续自己的活动，不等待接收者返回消息或者控制。异步消息的接收者和发送者是并发工作的。</li>
 <li><strong>返回消息</strong>：返回消息表示从过程调用返回。</li>
 <li><strong>自关联消息</strong>：表示方法的自身调用以及一个对象内的一个方法调用另一个方法。</li>
 </ul>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/13ca3b0fe257b2ef402d98172319250cb5ec6fff09ff6175dbe96f3c5813e145.png" alt="picture 41"></p>
-<h3 id="协作图"><a class="anchor" href="#协作图">#</a> 协作图</h3>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/13ca3b0fe257b2ef402d98172319250cb5ec6fff09ff6175dbe96f3c5813e145.png" alt="picture 41"></image-zoom></p>
+<h3 id="协作图">协作图</h3>
 <p>与相关的顺序图有明确的对应关系。<br>
-<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/3cd7696c775b6597aeb83f24329221611dc9399dd4a397dfe18a00f74e0d5632.png" alt="picture 42"></p>
-<h3 id="状态图"><a class="anchor" href="#状态图">#</a> 状态图</h3>
+<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/3cd7696c775b6597aeb83f24329221611dc9399dd4a397dfe18a00f74e0d5632.png" alt="picture 42"></image-zoom></p>
+<h3 id="状态图">状态图</h3>
 <ul>
 <li>状态图用来建模系统中的某个类对象、子系统或整个系统在其生命周期内出现的状态、状态的迁移和迁移条件。</li>
 <li>一个对象在某个时刻所处的状态是由该对象的属性值所决定的。</li>
 <li>对象由一种状态迁移到另一种状态，通常是由于受到了外部的刺激或自身性质的改变所引起的。导致对象状态变迁的原因即迁移条件。</li>
 </ul>
-<h4 id="状态图符号"><a class="anchor" href="#状态图符号">#</a> 状态图符号</h4>
+<h4 id="状态图符号">状态图符号</h4>
 <ul>
 <li>
 <p>用导角矩形表示对象所处的状态</p>
 </li>
 <li>
-<p>开始状态：必须有 <img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/a4c2952f7c481a161e9cf3af36de5e0a68a28c814da6a26d12c4c08874e65549.png" alt="picture 43"></p>
+<p>开始状态：必须有 <image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/a4c2952f7c481a161e9cf3af36de5e0a68a28c814da6a26d12c4c08874e65549.png" alt="picture 43"></image-zoom></p>
 </li>
 <li>
-<p>终止状态：可选的，也可以没有<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/51305bceda4a74e8049ca817878a84f1b24d08dc46e037d2f1f5348f86875ce3.png" alt="picture 44"></p>
+<p>终止状态：可选的，也可以没有<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/51305bceda4a74e8049ca817878a84f1b24d08dc46e037d2f1f5348f86875ce3.png" alt="picture 44"></image-zoom></p>
 </li>
 <li>
 <p>带箭头的直线表示状态迁移的方向，其状态迁移的条件写在直线的上方或下方</p>
 </li>
 </ul>
-<h3 id="活动图"><a class="anchor" href="#活动图">#</a> 活动图</h3>
-<p>活动图用于描述 Use Case 的事件流结构；属于一个特定的 Use Case。<br>
+<h3 id="活动图">活动图</h3>
+<p>活动图用于描述Use Case的事件流结构；属于一个特定的Use Case。<br>
 活动之间带箭头的直线表示从一个活动到另一个活动的转移，可在直线上标注活动转移的条件</p>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/8bc78f32bf1809672825f04e04fd46e2b1d75197296be07482985b5ad2bd7c74.png" alt="picture 45"></p>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/8bc78f32bf1809672825f04e04fd46e2b1d75197296be07482985b5ad2bd7c74.png" alt="picture 45"></image-zoom></p>
 <ul>
 <li>用圆角矩形表示活动</li>
-<li>用黑色实心圆和 “牛眼” 分别表示活动的开始和终止</li>
+<li>用黑色实心圆和“牛眼”分别表示活动的开始和终止</li>
 <li>活动之间带箭头的直线表示从一个活动到另一个活动的转移，可在直线上标注活动转移的条件</li>
-<li>泳道不仅表示出活动的变化，而且也描述了完成各个活动的类。<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/af97136ba5e5c7bab77edd82cdcdcf73dfcbf6bcfd2a4ed53a7e0fb617114682.png" alt="picture 46"></li>
+<li>泳道不仅表示出活动的变化，而且也描述了完成各个活动的类。<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/af97136ba5e5c7bab77edd82cdcdcf73dfcbf6bcfd2a4ed53a7e0fb617114682.png" alt="picture 46"></image-zoom></li>
 </ul>
-<h2 id="结构图sc"><a class="anchor" href="#结构图sc">#</a> 结构图 SC</h2>
+<h2 id="结构图sc">结构图SC</h2>
 <ol>
 <li>
-<p><strong>传入模块</strong>：从下层模块取得数据，经过某些处理，再将其结果传递给上级模块。<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/c3be0785ed5a9512d25a18c4d4062c616730e6d53da503aa73319312427cced4.png" alt="picture 14"></p>
+<p><strong>传入模块</strong>：从下层模块取得数据，经过某些处理，再将其结果传递给上级模块。<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/c3be0785ed5a9512d25a18c4d4062c616730e6d53da503aa73319312427cced4.png" alt="picture 14"></image-zoom></p>
 </li>
 <li>
-<p><strong>传出模块</strong>：从上级模块获得数据，进行某些处理，再将其结果传送给下级模块。<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/fd411f4ae911dfc4d23ffde21419a67e7941cdc356fec35f2e18523bb42e9111.png" alt="picture 15"></p>
+<p><strong>传出模块</strong>：从上级模块获得数据，进行某些处理，再将其结果传送给下级模块。<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/fd411f4ae911dfc4d23ffde21419a67e7941cdc356fec35f2e18523bb42e9111.png" alt="picture 15"></image-zoom></p>
 </li>
 <li>
-<p><strong>变换模块</strong>：从上级模块获得数据，进行特定处理，转换成其它形式，再将其结果传送给上级模块。<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/4aa283df2a6ca71e341495857a08ca2dcc598b68028ef083dd94d9aec1650a25.png" alt="picture 16"></p>
+<p><strong>变换模块</strong>：从上级模块获得数据，进行特定处理，转换成其它形式，再将其结果传送给上级模块。<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/4aa283df2a6ca71e341495857a08ca2dcc598b68028ef083dd94d9aec1650a25.png" alt="picture 16"></image-zoom></p>
 </li>
 <li>
-<p><strong>源模块</strong>：不调用其它模块的传入模块。<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/5d8076cf0140281443a0a5765f44dcaeecc12582f8637cfa037e42ebbedadf4f.png" alt="picture 17"></p>
+<p><strong>源模块</strong>：不调用其它模块的传入模块。<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/5d8076cf0140281443a0a5765f44dcaeecc12582f8637cfa037e42ebbedadf4f.png" alt="picture 17"></image-zoom></p>
 </li>
 <li>
-<p><strong>漏模块</strong>：不调用其它模块的传出模块。<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/48bdfeb9d77d83a7f25c98c9adcfd7e46a4d0682da097c4274607b42f3423bac.png" alt="picture 18"></p>
+<p><strong>漏模块</strong>：不调用其它模块的传出模块。<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/48bdfeb9d77d83a7f25c98c9adcfd7e46a4d0682da097c4274607b42f3423bac.png" alt="picture 18"></image-zoom></p>
 </li>
 <li>
-<p><strong>协调模块</strong>：对下属模块进行控制和管理的模块。<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/2e7398415bffda5f72a89ac4a79b0af3ec8d405e71ebfa1c75ef2858f974c7ac.png" alt="picture 19"></p>
+<p><strong>协调模块</strong>：对下属模块进行控制和管理的模块。<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/2e7398415bffda5f72a89ac4a79b0af3ec8d405e71ebfa1c75ef2858f974c7ac.png" alt="picture 19"></image-zoom></p>
 </li>
 </ol>
-<div class="note info no-icon">
 <p>附加符号：</p>
 <ul>
-<li>选择调用：<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/eb0968d0faa3929bca9827f4398599c0ca2339ec0021e143d99cc5ec73695e5e.png" alt="picture 20"></li>
-<li>循环调用：<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/76b2c699b05ea4b2a460def483a6da34afd23b7c9481baafbce46f49c6e7aa4a.png" alt="picture 21"></li>
+<li>选择调用：<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/eb0968d0faa3929bca9827f4398599c0ca2339ec0021e143d99cc5ec73695e5e.png" alt="picture 20"></image-zoom></li>
+<li>循环调用：<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/76b2c699b05ea4b2a460def483a6da34afd23b7c9481baafbce46f49c6e7aa4a.png" alt="picture 21"></image-zoom></li>
 </ul>
-</div>
-<h2 id="结构化设计sd"><a class="anchor" href="#结构化设计sd">#</a> 结构化设计 SD</h2>
-<h3 id="变换映射"><a class="anchor" href="#变换映射">#</a> 变换映射</h3>
+<h2 id="结构化设计sd">结构化设计SD</h2>
+<h3 id="变换映射">变换映射</h3>
 <ol>
 <li>
 <p>识别输入边界、输出边界和变换中心三部分。</p>
@@ -392,17 +589,17 @@
 <p>进行第一级分解（映射顶层和第一层）</p>
 <p>设计主控模块和第一层软件结构：</p>
 <ol>
-<li><strong>输入模块 ca</strong>
+<li><strong>输入模块ca</strong>
 <ul>
 <li>功能：为主控模块提供数据。</li>
 </ul>
 </li>
-<li><strong>输出模块 ce</strong>
+<li><strong>输出模块ce</strong>
 <ul>
 <li>功能：为主控模块提供数据的输出。</li>
 </ul>
 </li>
-<li><strong>变换模块 ct</strong>
+<li><strong>变换模块ct</strong>
 <ul>
 <li>功能：将逻辑输入转换为逻辑输出。</li>
 </ul>
@@ -410,9 +607,9 @@
 </ol>
 </li>
 <li>
-<p>完成 “第二级和下层的映射”</p>
+<p>完成“第二级和下层的映射”</p>
 <ul>
-<li>任务：将 DFD 中的每一个处理映射到程序结构中的模块。</li>
+<li>任务：将DFD中的每一个处理映射到程序结构中的模块。</li>
 <li>方法：从变换中心的边界开始，沿输入路径和输出路径向外，将处理依次映射到从属层的软件结构。</li>
 </ul>
 </li>
@@ -420,8 +617,8 @@
 <p>优化软件设计</p>
 </li>
 </ol>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/55dc0c7a5ad9a0c9ee8c886eedd727b2bc922d33e6a1929f145a78862547160a.png" alt="picture 22"></p>
-<h3 id="事务映射"><a class="anchor" href="#事务映射">#</a> 事务映射</h3>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/55dc0c7a5ad9a0c9ee8c886eedd727b2bc922d33e6a1929f145a78862547160a.png" alt="picture 22"></image-zoom></p>
+<h3 id="事务映射">事务映射</h3>
 <ol>
 <li>
 <p>识别事务输入、通路和事务中心三部分。</p>
@@ -454,41 +651,39 @@
 <p>优化软件设计</p>
 </li>
 </ol>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/6d691974ddfd455ea32a2f98d271cc6713928fb90cb59cd09bfd8423aa8613ab.png" alt="picture 23"></p>
-<h2 id="n-s图"><a class="anchor" href="#n-s图">#</a> N-S 图</h2>
-<p>N-S 图也叫做盒图。五种基本控制结构由五种图形构件表示。</p>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/095b03b05b5d0c61ff7d9545b26c385ea8eb24e0a1cd5bbfb1b92896f91524aa.png" alt="picture 24"></p>
-<h2 id="问题分析图pad"><a class="anchor" href="#问题分析图pad">#</a> 问题分析图 (PAD)</h2>
-<p><img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/d61e5100ef9fdd1bef6645eb384b271857bce00ef093391ba2b71f9cb152c839.png" alt="picture 25"></p>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/6d691974ddfd455ea32a2f98d271cc6713928fb90cb59cd09bfd8423aa8613ab.png" alt="picture 23"></image-zoom></p>
+<h2 id="n-s图">N-S图</h2>
+<p>N-S图也叫做盒图。五种基本控制结构由五种图形构件表示。</p>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/095b03b05b5d0c61ff7d9545b26c385ea8eb24e0a1cd5bbfb1b92896f91524aa.png" alt="picture 24"></image-zoom></p>
+<h2 id="问题分析图pad">问题分析图(PAD)</h2>
+<p><image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/d61e5100ef9fdd1bef6645eb384b271857bce00ef093391ba2b71f9cb152c839.png" alt="picture 25"></image-zoom></p>
 <p>扩充控制结构：<br>
-<img loading="lazy" data-src="https://blog.ivansnow02.icu/blog-img/images/software-engineering/9f71471c036e3a8b6a354f2286e9c6323cb3e094bfc9bf608b55119f91bf3783.png" alt="picture 26"></p>
-<h2 id="白盒测试"><a class="anchor" href="#白盒测试">#</a> 白盒测试</h2>
-<h3 id="逻辑覆盖法"><a class="anchor" href="#逻辑覆盖法">#</a> 逻辑覆盖法</h3>
-<h4 id="语句覆盖"><a class="anchor" href="#语句覆盖">#</a> 语句覆盖</h4>
+<image-zoom><img src="https://ivansnow02.github.io/blog-img/images/software-engineering/9f71471c036e3a8b6a354f2286e9c6323cb3e094bfc9bf608b55119f91bf3783.png" alt="picture 26"></image-zoom></p>
+<h2 id="白盒测试">白盒测试</h2>
+<h3 id="逻辑覆盖法">逻辑覆盖法</h3>
+<h4 id="语句覆盖">语句覆盖</h4>
 <p>将程序中每个语句至少执行一次</p>
-<h4 id="判定覆盖"><a class="anchor" href="#判定覆盖">#</a> 判定覆盖</h4>
+<h4 id="判定覆盖">判定覆盖</h4>
 <p>每个判定的每个分支路径至少要执行一次。</p>
-<h4 id="条件覆盖"><a class="anchor" href="#条件覆盖">#</a> 条件覆盖</h4>
+<h4 id="条件覆盖">条件覆盖</h4>
 <p>每个条件的真假两种情况至少执行一次。</p>
-<div class="note info no-icon">
 <p>条件覆盖不一定符合判定覆盖。</p>
-</div>
-<h4 id="判定条件覆盖"><a class="anchor" href="#判定条件覆盖">#</a> 判定 / 条件覆盖</h4>
+<h4 id="判定条件覆盖">判定/条件覆盖</h4>
 <p>每个条件的真假两种情况至少执行一次。<br>
 每个判定的每个分支路径至少要执行一次。</p>
-<h4 id="条件组合覆盖"><a class="anchor" href="#条件组合覆盖">#</a> 条件组合覆盖</h4>
+<h4 id="条件组合覆盖">条件组合覆盖</h4>
 <p>每个判定的所有条件的各种可能组合至少执行一次。</p>
-<h3 id="路径覆盖法"><a class="anchor" href="#路径覆盖法">#</a> 路径覆盖法</h3>
-<h4 id="点覆盖"><a class="anchor" href="#点覆盖">#</a> 点覆盖</h4>
+<h3 id="路径覆盖法">路径覆盖法</h3>
+<h4 id="点覆盖">点覆盖</h4>
 <p>＝语句覆盖<br>
 每个结点至少执行一次。</p>
-<h4 id="边覆盖"><a class="anchor" href="#边覆盖">#</a> 边覆盖</h4>
+<h4 id="边覆盖">边覆盖</h4>
 <p>＝判定覆盖<br>
 每条边至少执行一次。</p>
-<h4 id="路径覆盖"><a class="anchor" href="#路径覆盖">#</a> 路径覆盖</h4>
+<h4 id="路径覆盖">路径覆盖</h4>
 <p>每个可能的路径至少执行一次。</p>
-<h2 id="黑盒测试"><a class="anchor" href="#黑盒测试">#</a> 黑盒测试</h2>
-<h3 id="等价分类法"><a class="anchor" href="#等价分类法">#</a> 等价分类法</h3>
+<h2 id="黑盒测试">黑盒测试</h2>
+<h3 id="等价分类法">等价分类法</h3>
 <p>将所有可能的输入数据划分成若干个等价类，然后从每一类中选取少数有代表性的数据作为测试用例。</p>
 <ul>
 <li>
@@ -517,70 +712,39 @@
 <p>等价类划分的方法：</p>
 <ol>
 <li>规定了输入条件取值范围、取值的个数，则可以确立一个有效等价类和两个无效等价类。</li>
-<li>输入条件规定了输入条件输入值的集合，可确立一个有效等价类和一个无效等价类。<br>
-- 有效等价类 —— 集合内<br>
- - 无效等价类 —— 集合外</li>
+<li>输入条件规定了输入条件输入值的集合，可确立一个有效等价类和一个无效等价类。- 有效等价类——集合内 - 无效等价类——集合外</li>
 <li>如果输入条件是一个布尔量，则可以确定一个有效等价类和一个无效等价类。</li>
-<li>如果规定了输入数据的一组值，而且程序要对每个输入值分别进行处理：<br>
-- 每一个输入值 —— 一个有效等价类<br>
- - 所有不允许的输入值的集合 —— 一个无效等价类</li>
+<li>如果规定了输入数据的一组值，而且程序要对每个输入值分别进行处理：- 每一个输入值——一个有效等价类 - 所有不允许的输入值的集合——一个无效等价类</li>
 <li>如果规定了输入数据必须遵守的规则，则可以确立一个有效等价类（符合规则）和若干个无效等价类（从不同角度违反规则）。</li>
 </ol>
 </li>
 </ul>
-<h3 id="边界值分析法"><a class="anchor" href="#边界值分析法">#</a> 边界值分析法</h3>
+<h3 id="边界值分析法">边界值分析法</h3>
 <p>对等价分类法的补充：</p>
 <ul>
 <li>针对各种边界情况设计测试用例。</li>
-<li>大量的错误是发生在输入 / 输出范围的边界上，而不是在输入范围的内部。</li>
+<li>大量的错误是发生在输入/输出范围的边界上，而不是在输入范围的内部。</li>
 </ul>
 <p>步骤：</p>
 <ol>
 <li>首先应确定边界情况。</li>
 <li>选取正好等于、刚刚大于、刚刚小于边界的值作为测试数据。</li>
 </ol>
-<h3 id="错误推测法"><a class="anchor" href="#错误推测法">#</a> 错误推测法</h3>
-<p>人们也可以靠经验和直觉推测程序中可能存在的各种错误，从而有针对性地编写检查这些错误的测试用例 —— 错误推测法。</p>
-<div class="tags"><a href="/tags/computer-science/" rel="tag"><i class="ic i-tag"></i>computer science</a><a href="/tags/learning/" rel="tag"><i class="ic i-tag"></i>learning</a><a href="/tags/software-engineering/" rel="tag"><i class="ic i-tag"></i>software engineering</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/software-engineering/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2025-02-27 22:12:31" itemprop="dateModified" datetime="2025-02-27T22:12:31+08:00">2025-02-27</time></span></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>IOyuk1Nya<i class="ic i-at"><em>@</em></i>IOyuk1Nya's Blog</li><li class="link"><strong>本文链接：</strong><a href="https://blog.ivansnow02.icu/software-engineering/" title="软件工程复习">https://blog.ivansnow02.icu/software-engineering/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/computer-graphics/" rel="prev" itemprop="url" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;06&#x2F;16&#x2F;zUW8h3fcjYDsOgM.jpg" title="计算机图形学"><span class="type">上一篇</span><span class="category"><i class="ic i-flag"></i>computer science</span><h3>计算机图形学</h3></a></div><div class="item right"><a href="/cloud-computing/" rel="next" itemprop="url" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;06&#x2F;16&#x2F;zUW8h3fcjYDsOgM.jpg" title="cloud_computing"><span class="type">下一篇</span><span class="category"><i class="ic i-flag"></i>computer science</span><h3>cloud_computing</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E5%AE%9A%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text"> 判定表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E5%AE%9A%E6%A0%91"><span class="toc-number">2.</span> <span class="toc-text"> 判定树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sa%E7%94%BBdfd"><span class="toc-number">3.</span> <span class="toc-text"> SA 画 DFD</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#dfd%E6%AD%A5%E9%AA%A4"><span class="toc-number">3.1.</span> <span class="toc-text"> DFD 步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dfd%E5%8E%9F%E5%88%99"><span class="toc-number">3.2.</span> <span class="toc-text"> DFD 原则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#uml"><span class="toc-number">4.</span> <span class="toc-text"> UML</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#uml%E7%94%A8%E4%BE%8B%E5%9B%BE"><span class="toc-number">4.1.</span> <span class="toc-text"> UML 用例图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E4%BE%8B%E5%9B%BE%E5%85%83%E7%B4%A0"><span class="toc-number">4.1.1.</span> <span class="toc-text"> 用例图元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E4%BE%8B%E5%9B%BE%E8%A7%92%E8%89%B2"><span class="toc-number">4.1.2.</span> <span class="toc-text"> 用例图角色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E4%BE%8B%E5%9B%BE%E6%AD%A5%E9%AA%A4"><span class="toc-number">4.1.3.</span> <span class="toc-text"> 用例图步骤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E4%BE%8B%E5%9B%BE%E5%85%B3%E8%81%94"><span class="toc-number">4.1.4.</span> <span class="toc-text"> 用例图关联</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#include"><span class="toc-number">4.1.4.1.</span> <span class="toc-text"> Include</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#extend"><span class="toc-number">4.1.4.2.</span> <span class="toc-text"> Extend</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%9B%E5%8C%96%E5%85%B3%E7%B3%BB"><span class="toc-number">4.1.4.3.</span> <span class="toc-text"> 泛化关系</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E4%BE%8B%E5%9B%BE%E8%A7%84%E5%88%99"><span class="toc-number">4.1.5.</span> <span class="toc-text"> 用例图规则</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E7%8E%B0%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.2.</span> <span class="toc-text"> 发现对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E4%BD%93%E7%B1%BB"><span class="toc-number">4.2.1.</span> <span class="toc-text"> 实体类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%B9%E7%95%8C%E7%B1%BB"><span class="toc-number">4.2.2.</span> <span class="toc-text"> 边界类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E7%B1%BB"><span class="toc-number">4.2.3.</span> <span class="toc-text"> 控制类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E5%9B%BE"><span class="toc-number">4.3.</span> <span class="toc-text"> 类图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E4%B9%8B%E9%97%B4%E5%85%B3%E7%B3%BB"><span class="toc-number">4.3.1.</span> <span class="toc-text"> 对象之间关系</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E8%81%94"><span class="toc-number">4.3.1.1.</span> <span class="toc-text"> 关联</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%81%9A%E5%90%88"><span class="toc-number">4.3.1.2.</span> <span class="toc-text"> 聚合</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%84%E5%90%88%E5%85%B3%E7%B3%BB"><span class="toc-number">4.3.1.3.</span> <span class="toc-text"> 组合关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB"><span class="toc-number">4.3.1.4.</span> <span class="toc-text"> 依赖关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%9B%E5%8C%96%E5%85%B3%E7%B3%BB-2"><span class="toc-number">4.3.1.5.</span> <span class="toc-text"> 泛化关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E5%85%B3%E7%B3%BB"><span class="toc-number">4.3.1.6.</span> <span class="toc-text"> 实现关系</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E4%BB%B6%E5%9B%BE"><span class="toc-number">4.4.</span> <span class="toc-text"> 构件图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%9B%BE"><span class="toc-number">4.5.</span> <span class="toc-text"> 部署图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%BA%E5%BA%8F%E5%9B%BE"><span class="toc-number">4.6.</span> <span class="toc-text"> 顺序图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%BA%E5%BA%8F%E5%9B%BE%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-number">4.6.1.</span> <span class="toc-text"> 顺序图的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%BA%E5%BA%8F%E5%9B%BE%E7%9A%84%E6%B6%88%E6%81%AF"><span class="toc-number">4.6.2.</span> <span class="toc-text"> 顺序图的消息</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%8F%E4%BD%9C%E5%9B%BE"><span class="toc-number">4.7.</span> <span class="toc-text"> 协作图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E5%9B%BE"><span class="toc-number">4.8.</span> <span class="toc-text"> 状态图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E5%9B%BE%E7%AC%A6%E5%8F%B7"><span class="toc-number">4.8.1.</span> <span class="toc-text"> 状态图符号</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B4%BB%E5%8A%A8%E5%9B%BE"><span class="toc-number">4.9.</span> <span class="toc-text"> 活动图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%9B%BEsc"><span class="toc-number">5.</span> <span class="toc-text"> 结构图 SC</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96%E8%AE%BE%E8%AE%A1sd"><span class="toc-number">6.</span> <span class="toc-text"> 结构化设计 SD</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E6%8D%A2%E6%98%A0%E5%B0%84"><span class="toc-number">6.1.</span> <span class="toc-text"> 变换映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E6%98%A0%E5%B0%84"><span class="toc-number">6.2.</span> <span class="toc-text"> 事务映射</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#n-s%E5%9B%BE"><span class="toc-number">7.</span> <span class="toc-text"> N-S 图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90%E5%9B%BEpad"><span class="toc-number">8.</span> <span class="toc-text"> 问题分析图 (PAD)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95"><span class="toc-number">9.</span> <span class="toc-text"> 白盒测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E8%A6%86%E7%9B%96%E6%B3%95"><span class="toc-number">9.1.</span> <span class="toc-text"> 逻辑覆盖法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E5%8F%A5%E8%A6%86%E7%9B%96"><span class="toc-number">9.1.1.</span> <span class="toc-text"> 语句覆盖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A4%E5%AE%9A%E8%A6%86%E7%9B%96"><span class="toc-number">9.1.2.</span> <span class="toc-text"> 判定覆盖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E8%A6%86%E7%9B%96"><span class="toc-number">9.1.3.</span> <span class="toc-text"> 条件覆盖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A4%E5%AE%9A%E6%9D%A1%E4%BB%B6%E8%A6%86%E7%9B%96"><span class="toc-number">9.1.4.</span> <span class="toc-text"> 判定 &#x2F; 条件覆盖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E7%BB%84%E5%90%88%E8%A6%86%E7%9B%96"><span class="toc-number">9.1.5.</span> <span class="toc-text"> 条件组合覆盖</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E8%A6%86%E7%9B%96%E6%B3%95"><span class="toc-number">9.2.</span> <span class="toc-text"> 路径覆盖法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%82%B9%E8%A6%86%E7%9B%96"><span class="toc-number">9.2.1.</span> <span class="toc-text"> 点覆盖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%B9%E8%A6%86%E7%9B%96"><span class="toc-number">9.2.2.</span> <span class="toc-text"> 边覆盖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E8%A6%86%E7%9B%96"><span class="toc-number">9.2.3.</span> <span class="toc-text"> 路径覆盖</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95"><span class="toc-number">10.</span> <span class="toc-text"> 黑盒测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AD%89%E4%BB%B7%E5%88%86%E7%B1%BB%E6%B3%95"><span class="toc-number">10.1.</span> <span class="toc-text"> 等价分类法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%B9%E7%95%8C%E5%80%BC%E5%88%86%E6%9E%90%E6%B3%95"><span class="toc-number">10.2.</span> <span class="toc-text"> 边界值分析法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E6%8E%A8%E6%B5%8B%E6%B3%95"><span class="toc-number">10.3.</span> <span class="toc-text"> 错误推测法</span></a></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li><a href="/computer-organization/" rel="bookmark" title="计算机组成原理复习">计算机组成原理复习</a></li><li><a href="/ComputerSystem/" rel="bookmark" title="操作系统复习">操作系统复习</a></li><li><a href="/DataBaseLearning/" rel="bookmark" title="数据库系统概论概念整理">数据库系统概论概念整理</a></li><li><a href="/sql-lab/" rel="bookmark" title="SQL代码复习">SQL代码复习</a></li><li><a href="/computer-network/" rel="bookmark" title="计算机网络">计算机网络</a></li><li><a href="/ai-fundamental/" rel="bookmark" title="人工智能基础">人工智能基础</a></li><li><a href="/Compilers/" rel="bookmark" title="编译技术笔记">编译技术笔记</a></li><li><a href="/computer-graphics/" rel="bookmark" title="计算机图形学">计算机图形学</a></li><li class="active"><a href="/software-engineering/" rel="bookmark" title="软件工程复习">软件工程复习</a></li><li><a href="/cloud-computing/" rel="bookmark" title="cloud_computing">cloud_computing</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="IOyuk1Nya" src="/img/avatar.png"><p class="name" itemprop="name">IOyuk1Nya</p><div class="description" itemprop="description">some notes about computer science</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">50</span><span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">17</span><span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">24</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/ivansnow02" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;ivansnow02"><i class="ic i-github"></i></a><a href="mailto:eone2017@protonmail.com" rel="external nofollow noreferrer" class="item email" title="mailto:eone2017@protonmail.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-user"></i>关于</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于本站</a></li></ul></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/links/" rel="section"><i class="ic i-heart"></i>友链</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/cloud-computing/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/computer-graphics/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/English/" title="分类于English">English</a></div><span><a href="/healthy-lifestyle/">Why Students Should Be Encouraged To Lead A Healthy Lifestyle</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/cs/" title="分类于计算机科学">计算机科学</a><i class="ic i-angle-right"></i><a href="/categories/cs/408/" title="分类于408">408</a><i class="ic i-angle-right"></i><a href="/categories/cs/408/ds/" title="分类于数据结构">数据结构</a></div><span><a href="/cs/408/ds/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%916-28/">哈夫曼树叶子结点的路径长度与权值的乘积之和</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/English/" title="分类于English">English</a></div><span><a href="/Sports-Life-Lesson/">Sports Life Lesson</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Java/" title="分类于Java">Java</a></div><span><a href="/java-learning/">Java学习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/data-structure/" title="分类于data structure">data structure</a></div><span><a href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%87%BD%E6%95%B0%E5%A4%8D%E4%B9%A0/">数据结构函数复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/trash/" title="分类于trash">trash</a></div><span><a href="/MarxistPhilosophy/">马原题目</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/coding/" title="分类于coding">coding</a></div><span><a href="/VIM%E7%9A%84%E5%AD%A6%E4%B9%A0/">VIM的学习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Math/" title="分类于Math">Math</a></div><span><a href="/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/cs/" title="分类于计算机科学">计算机科学</a><i class="ic i-angle-right"></i><a href="/categories/cs/408/" title="分类于408">408</a><i class="ic i-angle-right"></i><a href="/categories/cs/408/ds/" title="分类于数据结构">数据结构</a></div><span><a href="/cs/408/ds/DataStructureNote/">数据结构理论复习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/test/" title="分类于test">test</a></div><span><a href="/TEST/">TEST</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2023 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">IOyuk1Nya @ Code Blog</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">820k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">12:26</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div><script src="https://unpkg.com/busuanzi@2.3.0/bsz.pure.mini.js"></script><div id="busuanzi-wrap"><span class="ic i-eye"></span><span id="busuanzi_container_site_pv">本站访问量 <span id="busuanzi_value_site_pv"></span> 次</span> | <span class="ic i-user"></span><span id="busuanzi_container_site_uv">本站访客量 <span id="busuanzi_value_site_uv"></span> 次</span></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
-    ispost: true,
-    path: `software-engineering/`,
-    favicon: {
-        show: `（●´3｀●）やれやれだぜ`,
-        hide: `(´Д｀)大変だ！`
-    },
-    search: {
-        placeholder: "文章搜索",
-        empty: "关于 「 ${query} 」，什么也没搜到",
-        stats: "${time} ms 内找到 ${hits} 条结果"
-    },
-    nocopy: "false",
-    copyright: `复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。`,
-    copy_tex: false,
-    katex: false,
-    mermaid: false,
-    audio: undefined,
-    fancybox: true,
-    nocopy: false,
-    outime: true,
-    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
-    quiz: {
-        choice: `单选题`,
-        multiple: `多选题`,
-        true_false: `判断题`,
-        essay: `问答题`,
-        gap_fill: `填空题`,
-        mistake: `错题备注`
-    },
-    ignores: [
-        (uri) => uri.includes('#'),
-        (uri) => new RegExp(LOCAL.path + '$').test(uri),
-            []
-    ]
-};
-</script><script src="undefined/undefined" crossorigin="anonymous" fetchpriority="high"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu&#x2F;&#x2F;q5B&#x2F;lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" crossorigin="anonymous" fetchpriority="high"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" integrity="sha384-TOxsBplaL96&#x2F;QDWPIUg+ye3v89qSE3s22XNtJMmCeZEep3cVDmXy1zEfZvVv+y2m" crossorigin="anonymous" fetchpriority="high"></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&amp;features=default,fetch" defer="defer"></script><script src="/js/siteInit.js?v=0.4.25" type="module" fetchpriority="high" defer="defer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-  <script>
-    Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/';
-  </script>
-</body></html>
+<h3 id="错误推测法">错误推测法</h3>
+<p>人们也可以靠经验和直觉推测程序中可能存在的各种错误，从而有针对性地编写检查这些错误的测试用例——错误推测法。</p>
+</div><div class="tags"><a href="/tags/software-engineering/" rel="tag"><i class="icon i-ri-price-tag-3-line"></i>software engineering</a><a href="/tags/computer-science/" rel="tag"><i class="icon i-ri-price-tag-3-line"></i>computer science</a><a href="/tags/learning/" rel="tag"><i class="icon i-ri-price-tag-3-line"></i>learning</a></div></div><footer><div id="copyright"><ul><li class="author"><div class="icon i-ri-account-circle-line"></div><strong>文章作者: </strong>IOyuk1Nya<i class="ic i-ri-at-line"><em>@</em></i>IOyuk1Nya&#39;s Blog</li><li class="link"><div class="icon i-ri-link"></div><strong>文章链接: </strong><a href="https://ivansnow02.github.io/software-engineering/" title="软件工程复习">https://ivansnow02.github.io/software-engineering/</a></li><li class="license"><div class="icon i-ri-copyright-line"></div><strong>版权声明: </strong>本文采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener"><i class="ic i-ri-creative-commons-line"><em>(CC)</em></i>BY-NC-SA 4.0</a>许可协议，转载请注明出处</li></ul></div></footer><div class="hyacine-slot hyacine-slot-post-footer" data-hyacine-slot="post-footer"></div></article></div><div class="post-nav"><div class="item left"><a href="/cloud-computing/" itemprop="url" rel="prev" title="cloud_computing" style="background-image: url(/_astro/cover-6.BQKxIeAM.avif);"><span class="type">上一篇</span><span class="category"><i class="ic i-ri-flag-line"></i>computer science</span><span class="post-nav-title">cloud_computing</span></a></div><div class="item right"><a href="/computer-graphics/" itemprop="url" rel="next" title="计算机图形学" style="background-image: url(/_astro/cover-2.ilPSZSHf.avif);"><span class="type">下一篇</span><span class="category"><i class="ic i-ri-flag-line"></i>computer science</span><span class="post-nav-title">计算机图形学</span></a></div></div><div id="comments" class="comment"><div id="tcomment" aria-label="评论">评论加载中…</div><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script><script>
+  const commentContainer = document.getElementById("tcomment");
+  const unavailable = () => {
+    if (commentContainer) commentContainer.textContent = "评论服务暂时不可用。";
+  };
+  if (window.twikoo && commentContainer) {
+    window.twikoo.init({
+      envId: "https://comment.ivansnow02.xyz",
+      el: "#tcomment",
+      path: window.location.pathname,
+      lang: "zh-CN",
+    }).catch(unavailable);
+  } else {
+    unavailable();
+  }
+</script></div></div><div class="layout-main-widgets"><div class="widgets"><astro-island uid="2mYR90" data-solid-render-id="s5" component-url="/_astro/Widgets.DGSAGqkR.js" component-export="default" renderer-url="/_astro/client.EvYvVR1M.js" props="{&quot;posts&quot;:[1,[[0,{&quot;id&quot;:[0,&quot;ai-fundamental&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;人工智能基础&quot;],&quot;description&quot;:[0,&quot;# 人工智能主要学派 # 符号主义 又称为逻辑主义、心理学派或计算机学派是基于物理符号系统的人工智能学派（谓词逻辑） # 连接主义 又称为仿生学派或生理学派，是基于神经网络与学习算法的人工智能学（神经网络） # 行为主义 又称为进化主义或控制论学派，是基于控制论和 “动作 - 感知” 控制系统的人工智能学派（强化学习） # 知识&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;AlgorithmIntroduction&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;算法导论笔记&quot;],&quot;description&quot;:[0,&quot;# 算法概述 # 算法的定义 算法是由若⼲条指令组成的有穷序列 # 算法的性质 输入、输出、确定性、有限性 # 程序与算法的区别 程序是算法用某种程序设计语言的具体实现 程序可以不满足算法的有限性 # 问题求解 # 算法复杂度 # 复杂性的计量 C=F(N,I,A)⟹T=T(N,I),S=S(N,I) 其中，N 为问题规模，I&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cloud-computing&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;cloud_computing&quot;],&quot;description&quot;:[0,&quot;# 大数据与云计算 # 大数据时代 # 大数据定义 指规模巨大，无法在合理时间内用主流 IT 系统进行采集、存储、管理、处理和分析，以支持决策的海量数据集。 # 大数据特征 (4V+1C) Volume (量): 数据量巨大 (PB 级常见)。 Velocity (速): 数据产生速度快，需要快速处理。 Variety (类):&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Compilers&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;编译技术笔记&quot;],&quot;description&quot;:[0,&quot;# 引论 # 什么是编译程序 # 编译程序 编译程序是翻译程序的一种，它将高级语言程序翻译成等价的目标程序。编译程序的输入是高级语言程序，输出是目标程序。编译程序的主要任务是将源程序翻译成目标程序，使得目标程序能够在计算机上正确运行。 # 解释程序 以源程序为输入，直接执行源程序，不生成目标程序。解释程序的主要任务是解释源程序，&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;computer-graphics&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;计算机图形学&quot;],&quot;description&quot;:[0,&quot;# 基本光栅图形的生成 # 直线的生成算法 画一条从 (x1​,y1​) 到 (x2​,y2​) 的直线。实质上是一个发现最佳逼近直线的像素序列，并填入色彩数据的过程。这一过程称为直线的光栅化。 # DDA 算法 DDA（Digital Differential Analyzer）算法是一种基本的直线生成算法。它的基本思想是：直&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;computer-network&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;计算机网络&quot;],&quot;description&quot;:[0,&quot;# 绪论 # 计算机网络定义 计算机网络是互连的、自治的计算机集合。 计算机网络向用户可以提供连通性和共享服务 # 互联网的组成 # 边缘部分 由各主机构成，用户直接进行信息处理和信息共享；低速连入核心网。 # 客户 / 服务器模式 客户：被用户调用后运行，在打算通信时主动向远地服务器发起通信，必须知道服务器的地址；不需要很特殊&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;computer-organization&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;计算机组成原理复习&quot;],&quot;description&quot;:[0,&quot;# 计算机系统概论 # 计算机的性能指标 吞吐量：表征一台计算机在某一时间间隔内能够处理的信息量。 响应时间：表征从输入有效到系统产生响应之间的时间度量，例如微秒、纳秒。 利用率：表示在给定的时间间隔内，系统被实际使用的时间所占的比率，一般用百分比表示。 处理机字长：指处理机运算器中一次能够完成二进制数运算的位数。当前处理机的字&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;ComputerSystem&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;操作系统复习&quot;],&quot;description&quot;:[0,&quot;# 概论 # 操作系统的定义和功能 # 操作系统的定义 一组计算机程序的集合，主要用以控制和管理 计算机的硬件和软件资源，合理地组织计算机的工作流程，向应用程序和用户提供方便、快捷、友好的使用接口 # 操作系统的功能 😊 进程管理 存储管理 文件管理 设备管理 # 操作系统的特征 😎 并发 共享 虚拟 异步 # 操作系统的发&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/BST&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;二叉搜索树 Binary Search Tree&quot;],&quot;description&quot;:[0,&quot;# 二叉搜索树 Binary Search Tree # 定义 二叉搜索树（二叉排序树或二叉查找树）： 或者是一棵空树； 或者是具有如下特性的二叉树 若它的左子树不空，则左子树上所有节点 的值均小于根节点的值； 若它的右子树不空，则右子树上所有节点 的值均大于等于根节点的值； 它的左、右子树也都分别是二叉搜索树。 # 主要操作&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/DataStructureNote&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;数据结构理论复习&quot;],&quot;description&quot;:[0,&quot;# 绪论 # 数据结构的定义 数据是描述客观事物的数、字符以及所有能输入到计算机中并被计算机程序处理的符号的集合。 数据元素是数据的基本单位（例如，A 班中的每个学生记录都是一个数据元素），也就是说数据元素是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理 数据项是具有独立含义的数据最小单位，也称为成员或域 数据对象&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/DataStructureTest01&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;数据结构题目01&quot;],&quot;description&quot;:[0,&quot;# 1 # 题目描述 新年快到了，天勤准备搞一个聚会，已经知道现有会员 N 人，把会员从 1 到 N 编号，其中会长的号码是 N 号，凡是和会长是老朋友的，那么该会员的号码肯定和 N 有大于 1 的公约数，否则都是新朋友，现在会长想知道究竟有几个新朋友？请你编程序帮会长计算出来。 # 输入 第一行是测试数据的组数CN(Casen&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/DataStructureTest02&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;数据结构题目02&quot;],&quot;description&quot;:[0,&quot;# 1 # 题目描述 给你若干个字符串，请编程输出每个字符串的子串个数。 # 输入 若干个字符串，每个字符串占一行，字符串中不含空格，长度最大为 1000。 # 输出 对应每一行的字符串，输出该字符串子串的个数。 # 样例输入 # 样例输出 # 题解 # 2 # 题目描述 给你一个目标串，请查找在给目标串中是否存在模式串，存在就&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/List&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;数据结构之线性表&quot;],&quot;description&quot;:[0,&quot;这是一系列关于数据结构的笔记博客，为了练习自己的代码能力，咱将尽可能不使用 C++ 来实现这些数据结构 # 线性表的简单介绍 线性表是具有相同特性的数据元素的一个有限序列。 所有数据元素类型相同。 线性表是有限个数据元素构成的。 线性表中数据元素与位置相关，即每个数据元素有唯一的序号。 咱们的线性表需要如下的方法： # 顺序表&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/MST&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;最小生成树 Minimum Spanning Tree&quot;],&quot;description&quot;:[0,&quot;# 最小生成树 Minimum Spanning Tree 加权无向图的最小生成树（Minimum Spanning Tree，简称 MST）是一棵生成树，其权（所有边的权值之和）不会大于其它任何生成树的权。 一个带权连通图 G（假定每条边上的权值均大于零）可能有多棵生成树. 每棵生成树中所有边上的权值之和可能不同。 其中边上的&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/robot-kingdom&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;机器人王国里的路径长度&quot;],&quot;description&quot;:[0,&quot;# 题目描述 在一个机器人王国里，围绕首都分 N 层构建卫星城市。以首都为圆心，以路相连分出两个卫星城在第一个层，然后每个卫星城又有路相连分出两个卫星城在下一层，但每条路的长度不同。第 N 层的卫星城不再分出新的卫星城。现在人类只探知到所有直接相连的城市间的路程，你能计算某个卫星城到达首都的路程吗？ # 输入 第一行为 N，表示&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/SPT&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;最短路径 Shortest Path&quot;],&quot;description&quot;:[0,&quot;# 最短路径 Shortest Path 加权有向图中每条路径都有值，其值是该路径上所有边的权值之和。最短路径 （Shortest Path）问题就是指求出两个给定顶点间权值最小的路径。 # 定义 两个顶点 s 和 t 之间的一条最短路径 是从 s 到 t 的一条有向简单路径，而且此路径 具有以下的性质：不存在另一条这样的路径且&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/stack_and_queue&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;栈与队列&quot;],&quot;description&quot;:[0,&quot;栈和队列可以说是最基本的数据结构了，它们都是在两端进行操作，其中栈在栈顶进行操作，被称为先进后出（LIFO），队列在队头和队尾进行操作，被称为先进先出（FIFO） # 栈 直接来看看 API 吧： # API public class Stack Stack() 构造一个空栈 void push(Item item) 入栈 It&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/TS&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;拓扑排序 Topological Sort&quot;],&quot;description&quot;:[0,&quot;# 拓扑排序 Topological Sort # 拓扑序列 Topological Order 拓扑序列是一个有向无环图（Directed Acyclic Graph，简称 DAG）的所有顶点的线性序列。 设 G=(V，E) 是一个具有 n 个顶点的有向图，V 中顶点序列v1​、v2​、…、vn​ 称为一个拓扑序列，当且仅当该&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/Union-Find&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;并查集&quot;],&quot;description&quot;:[0,&quot;本文来自 Coursera 的 Algorithms, Part I 课程 # 动态连通性 # 我们假设 “相连” 是一种等价关系，这也就意味 着它具有： 自反性：p 和 p 是相连的 对称性：如果 p 和 q 是相连的，那么 q 和 p 也是相连的 传递性：如果 p 和 q 是相连的且 q 和 r 是相连的，那么 p 和 r&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;cs/408/ds/哈夫曼树6-28&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;哈夫曼树叶子结点的路径长度与权值的乘积之和&quot;],&quot;description&quot;:[0,&quot;# 题目描述 哈夫曼树，第一行输入一个数 n，表示叶结点的个数。需要用这些叶结点生成哈夫曼树，根据哈夫曼树的概念，这些结点有权值，即 weight，题目需要输出所有叶子结点的路径长度与权值的乘积之和。 # 输入 输入有多组数据。 每组第一行输入一个数 n，接着输入 n 个叶节点（叶节点权值不超过 100，2&lt;=n&lt;=1000）。&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;DataBaseLearning&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;数据库系统概论概念整理&quot;],&quot;description&quot;:[0,&quot;# 关系 # 域 域是属性的取值范围，是属性的取值集合。 # 笛卡尔积 给定一组域 D1, D2, ..., Dn，它们的笛卡尔积是指所有可能的 n 元组的集合。D1​×D2​×...×Dn​={(d1​,d2​,...,dn​)∣d1​∈D1​,d2​∈D2​,...,dn​∈Dn​} # 关系的数学定义 D1​×D2​×..&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Django公有配置&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Django公有配置&quot;],&quot;description&quot;:[0,&quot;摸了好久（ # BASE_DIR 用于绑定当前项目的绝对路径（动态计算出来的），所有文件夹都可以依赖此路径 # DEBUG 用于配置 Django 项目的启动模式，取值 表示开发环境中使用开发调试模式（用于开发中） 表示当前项目运行在生产环境中 # ALLOWED HOSTS 设置允许访问到本项目的 host 头值 空列表，表示&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Games101-assignment-01&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Games101 作业 01&quot;],&quot;description&quot;:[0,&quot;# 作业要求 完善以下函数： # 作业实现 # 旋转矩阵 绕 z 轴旋转的变换矩阵，只需写出旋转矩阵即可： # 透视投影矩阵 先计算各个参数 再构造正交投影矩阵 将正交投影矩阵转换为透视投影矩阵 # 任意轴旋转矩阵 使用 Rodrigues&#39; rotation formula： R(n,θ)=cos(θ)I+(1−cos(θ))&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Games101-assignment-02&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Games101 作业 02&quot;],&quot;description&quot;:[0,&quot;# 作业要求 完善以下函数： # 作业实现 # 测试点是否在三角形内 把给出的点与三角形的三个顶点分别做叉乘，如果这三个叉乘的结果符号相同，那么这个点在三角形内。 # 三角形栅格化 计算三角形的包围盒 遍历包围盒内的每个像素，判断像素是否在三角形内，顺便加上 MSAA 插值深度时，需要先计算出插值的重心坐标，然后再计算插值的深度&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Games101-assignment-03&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Games101 作业 03&quot;],&quot;description&quot;:[0,&quot;# 作业要求 完善以下函数： # 作业实现 # 三角形光栅化 直接按照注释中的提示，实现三角形光栅化即可。 # 实现 Blinn-Phong 模型计算 Fragment Color L=La​+Ld​+Ls​ 其中 La​=ka​⋅Ia​Ld​=kd​⋅(I/r2)⋅max(0,n⋅l)Ls​=ks​⋅(I/r2)⋅max(0,&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Games101-assignment-04&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Games101 作业 04&quot;],&quot;description&quot;:[0,&quot;# 作业要求 完善以下函数： # 作业实现 # 绘制 Bézier 曲线 过程如下： # de Casteljau 算法 De Casteljau 算法说明如下： 考虑一个 p0, p1, ... pn 为控制点序列的 Bézier 曲线。首先，将相邻的点连接 起来以形成线段。 用 t : (1− t) 的比例细分每个线段，并找&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Games101-assignment-05&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Games101 作业 05&quot;],&quot;description&quot;:[0,&quot;# 作业要求 完善以下函数： # 作业实现 # Render() # rayTriangleIntersect() 使用 Moller-Trumbore 算法实现射线与三角形的相交检测。 computer sciencelearningcomputer graphics&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;healthy-lifestyle&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Why Students Should Be Encouraged To Lead A Healthy Lifestyle&quot;],&quot;description&quot;:[0,&quot;According to the World Health Organization, more than 80% of the world’s adolescents are insufficiently physically active. This alarming statistic shows that many st&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;heimadianping&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Redis实战——黑马点评&quot;],&quot;description&quot;:[0,&quot;就是黑马程序员的 Redis 教程里的黑马点评的项目，前面就不讲了，直接开始正题。 # 基于 Session 实现登录流程 分为三个步骤： 发送验证码 短信验证码登录、注册 校验登录状态 # 发送验证码 # 逻辑： 用户在提交手机号后，会校验手机号是否合法，如果不合法，则要求用户重新输入手机号 如果手机号合法，后台此时生成对应的&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;java-learning&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Java学习&quot;],&quot;description&quot;:[0,&quot;# Java 概述 # Java 语言的主要特点 简单性 面向对象 跨平台 安全性 多线程 动态性 # 初始 Java 程序 Java 源文件以 “java” 结尾，此文件中最多只能有一个类被声明为 public，保存时源文件名需与 public 类名相同，如果文件中不存在 public 类，源文件名无要求。 一个源文件包含几个&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;linear-algebra&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;线性代数&quot;],&quot;description&quot;:[0,&quot;# 1 线性方程组 # 1.1 线性方程组 由于二元一次方程表示平面上的一条直线，所以将一次方程称为线性方程，将一次方程组称为线性方程组 # 1.2 矩阵及其初等变换 # 矩阵的定义 由m×n 个数aij​(i=1,2,…,m;j=1,2,…,n) 排成的m 行n 列的数表，A=​a11​a21​⋮am1​​a12​a22​⋮a&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;making-friends&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;The Best Way For A Student To Make Friends&quot;],&quot;description&quot;:[0,&quot;Friendship is an essential aspect of a student’s life that fosters personal growth and emotional well-being by providing support, encouragement, and companionship. H&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Mao&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;毛概题目&quot;],&quot;description&quot;:[0,&quot;# 导论 练习题 # 一、单选题（共 3 题，30 分） “马克思主义的中国化” 这一命题的正式提出是在 。 党的一大 遵义会议 党的六届六中全会 党的七大 马克思主义中国化时代化的第一次历史性飞跃取得的理论成果是 。 毛泽东思想 邓小平理论 “三个代表” 重要思想 科学发展观 习近平新时代中国特色社会主义思想 被称作是中国特色&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;MarxistPhilosophy&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;马原题目&quot;],&quot;description&quot;:[0,&quot;# 绪论 马克思主义是关于无产阶级和人类解放的科学 # 一、单项选择题 马克思主义理论从狭义上说是 。 无产阶级争取自身解放和整个人类解放的学说体系 关于无产阶级斗争的性质、目的和解放条件的学说 马克思和恩格斯创立的基本理论、基本观点和基本方法构成的科学体系 关于资本主义转化为社会主义以及社会主义和共产主义发展的普遍规律的学说&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;nju-compiler-lab-01-lexer&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;NJU编译原理Lab01-Lexer&quot;],&quot;description&quot;:[0,&quot;本实验为 NJU 编译原理实验 1 # 实验要求 通过标准错误输出（ , 如 等）， 打印程序的所有运行结果。 对于包含词法错误的文件，需要打印所有错误信息，格式为： 对于没有任何词法错误的文件，打印所有识别到的 信息 # .g4 文件编写 按照 SysY 词法规则来编写即可，这里不再赘述。 # 代码实现 在 中，我们需要实现&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Redis-Learning-01-数据类型&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Redis的数据类型&quot;],&quot;description&quot;:[0,&quot;Redis 支持五种数据类型： string hash list set zset # String string 是最基本的类型。string 二进制安全，即可以包含任何数据。 string 一个键最大能存储 512MB。 string 类型的数据结构存储方式有三种 、 、 ： # int Redis 中规定假如存储的是整数型&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Redis-Learning-02-快速入门&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Redis的快速入门&quot;],&quot;description&quot;:[0,&quot;# Redis 命令行客户端 Redis 安装完成后就自带了命令行客户端： ，使用方式如下： 其中常见的 options 有： ：指定要连接的 Redis 节点的 IP 地址，默认是 127.0.0.1 ：指定要连接的 Redis 节点的端口，默认是 6379 ：指定 Redis 的访问密码 其中的 就是 Redis 的操作命令&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Redis-Learning-03-SpringDataRedis&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;SpringDataRedis&quot;],&quot;description&quot;:[0,&quot;# Redis 的 Java 客户端 Redis 的客户端可以在 Redis 官网找到，推荐的客户端包括： Jedis：以 Redis 命令作为方法名称，学习成本低，简单实用。但是 Jedis 实例是线程不安全的，多线程环境下需要基于连接池来使用 Lettuce：Lettuce 是基于 Netty 实现的，支持同步、异步和响应式&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;software-engineering&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;软件工程复习&quot;],&quot;description&quot;:[0,&quot;# 判定表 条件 条件 1 条件取值的组合 条件 2 ... 条件 n 动作 动作 1 动作 动作 2 ... 动作 n # 判定树 # SA 画 DFD # DFD 步骤 从顶层 DFD 开始，把整个系统视为加工处理。 自上而下，逐步对系统分解： 每分解一次，增加系统的加工元素，进一步具体化每个加工的功能。 重复第 2 步，直&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;Sports-Life-Lesson&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;Sports Life Lesson&quot;],&quot;description&quot;:[0,&quot;As Aristotle said, “Life needs sports.” Sport, in its various forms, is an integral part of human culture that transcends geographical, cultural, and linguistic boun&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;sql-lab&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;SQL代码复习&quot;],&quot;description&quot;:[0,&quot;求选修了老师 “王刚” 开课课程且成绩在 90 分以上的学生姓名、课程名称和成绩；（姓名，课程名，成绩） 求选修了 “王刚” 老师所授全部课程的学生姓名和学院名称；（姓名，学院名称） 求没有选修课程 “软件工程” 的学生学号和姓名；（学生学号，姓名） 求至少选修了两门课程的学生学号；（学号） 求课程 “经济学” 不及格学生姓名和&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;TEST&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;TEST&quot;],&quot;description&quot;:[0,&quot;这是一篇测试文章 test&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;TheFallingSoldier&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;The Power of Robert Capa&#39;s The Falling Soldier&quot;],&quot;description&quot;:[0,&quot;Today, I would like to talk about one of the most famous and controversial war photographs ever taken: \&quot;The Falling Soldier\&quot; by Robert Capa. Robert Capa, born Endre&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;VIM的学习&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;VIM的学习&quot;],&quot;description&quot;:[0,&quot;# Vim 的哲学 在编程时，您大部分时间都花在阅读 / 编辑上，而不是写作上。因此，Vim 是一个模态编辑器：它有不同的插入文本和操作文本的模式。Vim 是可编程的（使用 Vimscript 以及 Python 等其他语言），并且 Vim 的界面本身就是一种编程语言：击键（具有助记名称）是命令，并且这些命令是可组合的。Vim&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;XJP&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;习近平新时代中国特色社会主义思想概论&quot;],&quot;description&quot;:[0,&quot;# 第一讲 马克思主义中国化新飞跃 # 一、习近平新时代中国特色社会主义思想如何创立的 # 时代背景：\&quot;两个大局\&quot; 同步交织 两个大局：中华民族伟大复兴的战略全局；世界百年未有之大变局。 世界百年未有之大变局加速演进，世界百年未有之大变局概括起来说就是 ： 当前国际格局和国际体系正在发生深刻调整 全球治理体系正在发生深刻变革 国&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;习近平复习&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;习近平复习&quot;],&quot;description&quot;:[0,&quot;中国特色社会主义的战略布局是（ 四个全面 ） 我国社会主要矛盾的变化 没有改变我们对我国社会主义所处历史阶段的判断 我国仍处于并将长期处于社会主义初级阶段的基本国情没有变 我国是世界最大发展中国家的国际地位没有变 坚持把马克思主义基本原理同（ 中国具体实际相结合、中华优秀传统文化 ）相结合，用马克思主义观察时代、把握时代、引领时&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;思政复习&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;思政复习&quot;],&quot;description&quot;:[0,&quot;道德的（相对独立性）既表现为道德的历史继承性，也表现为道德对社会发展具有能动的反作用。 （奉献社会）要求从业人员在工作岗位上兢兢业业地为社会和他人作贡献，是社会主义职业道德中最高层次的要求，体现了社会主义职业道德的最高目标指向。 加强道德修养，提升个人品德，应借鉴历史上思想家们所提出的学思并重、（省察克治、慎独自律、知行合一、积&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;数据结构函数复习&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;数据结构函数复习&quot;],&quot;description&quot;:[0,&quot;codingalgorithmsdata structure&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;物理复习&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;物理复习&quot;],&quot;description&quot;:[0,&quot;# 运动和力 角加速度: β=dtdω​=dt2d2θ​ 切向加速度: at​​=dtdv​et​​ at​=dtdv​=Rdtdω​=Rβ 法向加速度: an​​=Rdv2​en​​ an​=Rv2​=ωv=ω2R 牛顿第二定律: F合​​=ma=dtdp​​ # 运动的守恒量和守恒定律 动量定理: I=∫t1​t2​​Fdt&quot;]}]}],[0,{&quot;id&quot;:[0,&quot;离散数学&quot;],&quot;data&quot;:[0,{&quot;title&quot;:[0,&quot;离散数学复习&quot;],&quot;description&quot;:[0,&quot;# 集合论 # 集合的基本概念 # 集合的定义 具有某种特定性质事物的全体，通常，用大写的英文字母A,B,C,…… 表示集合 # 集合的元素 组成一个集合的那些对象或单元称为这个集合的元素，通常，用小写的英文字母a,b,c,…，或者a1​,a2​,b1​,b2​… 表示集合中的元素 # 属于 设 A 是一个集合，a 是集合 A&quot;]}]}]]],&quot;enableRandomPosts&quot;:[0,true],&quot;enableRecentComments&quot;:[0,true],&quot;recentCommentsLimit&quot;:[0,10],&quot;walineServerURL&quot;:[0,&quot;&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;Widgets&quot;,&quot;value&quot;:true}" await-children><aside data-hk="s50000" class="widgets bg-body-bg-shadow px-4 flex gap-4 justify-around z-1"><!--$--><!--/--><!--$--><!--/--></aside><!--astro:end--></astro-island></div></div></div></main><footer id="footer" class="text-grey-5 text-sm bg-body-bg-shadow mt-4 py-2" data-astro-cid-63k7wqxu><div class="inner mx-auto w-full max-w-3xl px-4" data-astro-cid-63k7wqxu><div class="status text-center w-full" data-astro-cid-63k7wqxu><!-- Copyright Section --><div class="copyright block my-2" data-astro-cid-63k7wqxu><span data-astro-cid-63k7wqxu>&copy; 2023 -</span><span data-astro-cid-63k7wqxu>2026</span><span class="with-love inline-block mx-0.5 ml-0.5" style="color: var(--color-pink)" data-astro-cid-63k7wqxu><i class="sakura rotate" data-astro-cid-63k7wqxu></i></span><span class="author" data-astro-cid-63k7wqxu>IOyuk1Nya @ IOyuk1Nya&#39;s Blog</span></div><!-- Statistics Section --><div class="count block my-2" data-astro-cid-63k7wqxu><span class="post-meta-item-icon mr-0 inline" data-astro-cid-63k7wqxu><div class="i-ri-line-chart-fill inline-block align-text-bottom text-1rem" data-astro-cid-63k7wqxu></div></span><span title="总字数" data-astro-cid-63k7wqxu>397253 字</span><span class="post-meta-divider mx-2" data-astro-cid-63k7wqxu> | </span><span class="post-meta-item-icon mr-0 inline" data-astro-cid-63k7wqxu><div class="i-ri-cup-fill inline-block align-text-bottom text-1rem" data-astro-cid-63k7wqxu></div></span><span title="预计阅读时间" data-astro-cid-63k7wqxu>1325 分钟</span></div><!-- Powered By Section --><div class="powered-by block my-2 text-xs" data-astro-cid-63k7wqxu>由 <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 border-b border-dashed" data-astro-cid-63k7wqxu>Astro</a> 和 <a href="https://github.com/theme-shoka-x/astro-blog-shokax" target="_blank" rel="noopener noreferrer" aria-label="ShokaX GitHub 项目" class="hover:opacity-80 border-b border-dashed" data-astro-cid-63k7wqxu>ShokaX</a> 主题强力驱动</div><!-- ICP Section --><!-- Hyacine Plugin Outlet: Footer Status --><div class="hyacine-slot hyacine-slot-footer-status" data-hyacine-slot="footer-status"></div></div></div></footer></div><script type="module" src="/_astro/Layout.astro_astro_type_script_index_1_lang.DAO4WjOQ.js"></script><script type="module">var e={family:`LXGW WenKai`,style:`normal`,weight:`400`,display:`optional`};document.addEventListener(`pagereveal`,()=>{document.body.style.fontFamily=e.family,document.documentElement.style.setProperty(`--pf-font`,e.family)}),document.addEventListener(`DOMContentLoaded`,()=>{document.body.style.fontFamily=e.family,document.documentElement.style.setProperty(`--pf-font`,e.family)});</script><div class="hidden" data-astro-cid-ju4pidww><astro-island uid="ZcbViS" data-solid-render-id="s2" component-url="/_astro/CodeBlock.Cq7FIFpj.js" component-export="default" renderer-url="/_astro/client.EvYvVR1M.js" props="{&quot;data-astro-cid-ju4pidww&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;CodeBlock&quot;,&quot;value&quot;:true}"></astro-island><astro-island uid="MPTua" data-solid-render-id="s3" component-url="/_astro/ImageZoom.BmZGIMSh.js" component-export="default" renderer-url="/_astro/client.EvYvVR1M.js" props="{&quot;data-astro-cid-ju4pidww&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;ImageZoom&quot;,&quot;value&quot;:true}"></astro-island></div><astro-island uid="1Bkeg2" data-solid-render-id="s4" component-url="/_astro/FloatingToolbar.CuJvdf-i.js" component-export="default" renderer-url="/_astro/client.EvYvVR1M.js" props="{&quot;hasNyxPlayer&quot;:[0,true],&quot;data-astro-cid-ju4pidww&quot;:[0,true]}" ssr client="idle" opts="{&quot;name&quot;:&quot;FloatingToolbar&quot;,&quot;value&quot;:true}" await-children><ul data-hk="s40000" class="floating-toolbar "><li class="tool top"><button type="button" aria-label="返回顶部"><i class="i-ri-arrow-up-line"></i></button><span class="percent">0%</span></li><!--$--><!--/--><!--$--><li data-hk="s40001" class="tool"><button id="nyx-show-btn" type="button" aria-label="显示或隐藏播放器"><i class="i-ri-music-2-line"></i></button></li><li data-hk="s40002" class="tool"><button id="nyx-play-btn" type="button" aria-label="播放或暂停"><i class="i-ri-play-circle-line"></i></button></li><!--/--><li class="tool mobile-only"><button type="button" aria-label="切换侧栏" aria-pressed="false" class=""><i class="i-ri-layout-right-2-line"></i></button></li></ul><!--astro:end--></astro-island><div class="hyacine-slot hyacine-slot-layout-bottom" data-hyacine-slot="layout-bottom"></div></body></html>

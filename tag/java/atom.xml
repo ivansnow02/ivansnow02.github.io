@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.ivansnow02.icu</id>
+    <id>https://ivansnow02.github.io</id>
     <title>IOyuk1Nya&#39;s Blog • Posts by &#34;java&#34; tag</title>
-    <link href="https://blog.ivansnow02.icu" />
+    <link href="https://ivansnow02.github.io" />
     <updated>2024-11-03T02:59:18.000Z</updated>
     <category term="coding" />
     <category term="algorithms" />
@@ -29,9 +29,9 @@
     <category term="coursera" />
     <category term="tree" />
     <entry>
-        <id>https://blog.ivansnow02.icu/java-learning/</id>
+        <id>https://ivansnow02.github.io/java-learning/</id>
         <title>Java学习</title>
-        <link rel="alternate" href="https://blog.ivansnow02.icu/java-learning/"/>
+        <link rel="alternate" href="https://ivansnow02.github.io/java-learning/"/>
         <content type="html">&lt;h2 id=&#34;java概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java概述&#34;&gt;#&lt;/a&gt; Java 概述&lt;/h2&gt;
 &lt;h3 id=&#34;java语言的主要特点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java语言的主要特点&#34;&gt;#&lt;/a&gt; Java 语言的主要特点&lt;/h3&gt;
 &lt;ul&gt;
@@ -49,7 +49,7 @@
 &lt;h3 id=&#34;常量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常量&#34;&gt;#&lt;/a&gt; 常量&lt;/h3&gt;
 &lt;p&gt;符号常量： &lt;code&gt;final&lt;/code&gt;  修饰的变量，一旦赋值后不可更改。&lt;/p&gt;
 &lt;h3 id=&#34;类型转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类型转换&#34;&gt;#&lt;/a&gt; 类型转换&lt;/h3&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/java-learning/85bfcba51b1dccf3fe9bbad3b7a8e45a96c54baaf89d3ca283296a9c6fb98b96.png&#34; alt=&#34;picture 0&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://ivansnow02.github.io/blog-img/images/java-learning/85bfcba51b1dccf3fe9bbad3b7a8e45a96c54baaf89d3ca283296a9c6fb98b96.png&#34; alt=&#34;picture 0&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;位运算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#位运算&#34;&gt;#&lt;/a&gt; 位运算&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1174,7 +1174,7 @@ Java 中有两种方法抛出异常。&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;事件处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事件处理&#34;&gt;#&lt;/a&gt; 事件处理&lt;/h3&gt;
 &lt;h4 id=&#34;事件处理机制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事件处理机制&#34;&gt;#&lt;/a&gt; 事件处理机制&lt;/h4&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://blog.ivansnow02.icu/blog-img/images/java-learning/682f1687e969c08d804f8b65288b4d48f2f5263df4c9b82726d68296630f5f2f.png&#34; alt=&#34;picture 2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://ivansnow02.github.io/blog-img/images/java-learning/682f1687e969c08d804f8b65288b4d48f2f5263df4c9b82726d68296630f5f2f.png&#34; alt=&#34;picture 2&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;应用委托模型编写事件处理程序一般包含以下几个步骤：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;确定事件源应关注的事件。&lt;/li&gt;
@@ -1472,9 +1472,9 @@ Java 中有两种方法抛出异常。&lt;/p&gt;
         <updated>2024-11-03T02:59:18.000Z</updated>
     </entry>
     <entry>
-        <id>https://blog.ivansnow02.icu/heimadianping/</id>
+        <id>https://ivansnow02.github.io/heimadianping/</id>
         <title>Redis实战——黑马点评</title>
-        <link rel="alternate" href="https://blog.ivansnow02.icu/heimadianping/"/>
+        <link rel="alternate" href="https://ivansnow02.github.io/heimadianping/"/>
         <content type="html">&lt;p&gt;就是黑马程序员的 Redis 教程里的黑马点评的项目，前面就不讲了，直接开始正题。&lt;/p&gt;
 &lt;h1 id=&#34;基于session实现登录流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基于session实现登录流程&#34;&gt;#&lt;/a&gt; 基于 Session 实现登录流程&lt;/h1&gt;
 &lt;p&gt;分为三个步骤：&lt;/p&gt;
@@ -1538,9 +1538,9 @@ Java 中有两种方法抛出异常。&lt;/p&gt;
         <updated>2023-05-12T09:47:54.000Z</updated>
     </entry>
     <entry>
-        <id>https://blog.ivansnow02.icu/Redis-Learning-03-SpringDataRedis/</id>
+        <id>https://ivansnow02.github.io/Redis-Learning-03-SpringDataRedis/</id>
         <title>SpringDataRedis</title>
-        <link rel="alternate" href="https://blog.ivansnow02.icu/Redis-Learning-03-SpringDataRedis/"/>
+        <link rel="alternate" href="https://ivansnow02.github.io/Redis-Learning-03-SpringDataRedis/"/>
         <content type="html">&lt;h1 id=&#34;redis的java客户端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis的java客户端&#34;&gt;#&lt;/a&gt; Redis 的 Java 客户端&lt;/h1&gt;
 &lt;p&gt;Redis 的客户端可以在&lt;a href=&#34;https://redis.io/docs/clients/&#34;&gt; Redis 官网&lt;/a&gt;找到，推荐的客户端包括：&lt;/p&gt;
 &lt;ul&gt;
